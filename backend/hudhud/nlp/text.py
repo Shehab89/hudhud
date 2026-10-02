@@ -94,6 +94,9 @@ def split_sentences(text: str) -> list[str]:
 
 # Arabic proclitics that may attach to a word: conjunctions, prepositions, article.
 _AR_PREFIX = r"(?:[وفبلك]{0,2}(?:ال|لل)?)"
+# Arabic suffixes in normalised form (ة->ه): nisba adjective, plurals, duals and pronouns.
+# A whitelist, not "any 0-3 letters": يمن must not match يمنع or يمنح, nor تعز match تعزيز.
+_AR_SUFFIX = r"(?:يه|يين|يون|يان|ي|ون|ين|ات|ان|ه|ها|هم|هما|هن|كم|نا)?"
 _LATIN_SUFFIX = r"(?:s|es|'s|i|is|n|en|e|ite|ites|ien|iens|ienne|iennes|isch|ische|ischen|í|íes)?"
 
 
@@ -114,7 +117,7 @@ def term_pattern(term: str) -> re.Pattern[str]:
         # feminine ending: غارة (normalised غاره) should also match the plural غارات
         if norm.endswith("ه") and len(norm) > 3 and " " not in norm:
             escaped = re.escape(norm[:-1]) + "(?:ه|ات|ت)"
-        return re.compile(rf"(?<![\w]){_AR_PREFIX}{escaped}(?:\w{{0,3}})(?![\w])")
+        return re.compile(rf"(?<![\w]){_AR_PREFIX}{escaped}{_AR_SUFFIX}(?![\w])")
     if CYRILLIC_CHAR.search(norm):
         return re.compile(rf"(?<![\w]){escaped}\w{{0,4}}(?![\w])")
     if CJK_CHAR.search(norm):
