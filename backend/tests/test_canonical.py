@@ -1,6 +1,6 @@
 import pytest
 
-from observatory.ingest.canonical import canonicalize_url, domain_of, url_hash
+from hudhud.ingest.canonical import canonicalize_url, domain_of, url_hash
 
 
 @pytest.mark.parametrize(

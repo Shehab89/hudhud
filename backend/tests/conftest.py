@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import os
 
-# Configure before anything imports observatory.config (settings are cached).
+# Configure before anything imports hudhud.config (settings are cached).
 TEST_DATABASE_URL = os.environ.get("TEST_DATABASE_URL", "")
 if TEST_DATABASE_URL:
     os.environ["DATABASE_URL"] = TEST_DATABASE_URL
@@ -71,8 +71,8 @@ def db_url() -> str:
     cfg.set_main_option("sqlalchemy.url", TEST_DATABASE_URL.replace("%", "%%"))
     command.upgrade(cfg, "head")
 
-    from observatory.db.session import session_scope
-    from observatory.registry.seed import seed_all
+    from hudhud.db.session import session_scope
+    from hudhud.registry.seed import seed_all
 
     with session_scope() as s:
         seed_all(s)
@@ -90,7 +90,7 @@ def wipe_data(session) -> None:
 
 @pytest.fixture
 def session(db_url):
-    from observatory.db.session import session_factory
+    from hudhud.db.session import session_factory
 
     s = session_factory()()
     wipe_data(s)
@@ -104,9 +104,9 @@ def session(db_url):
 @pytest.fixture(scope="module")
 def demo_db(db_url):
     """A database holding a small DEMO DATA corpus that has been through the whole pipeline."""
-    from observatory import demo
-    from observatory.db.session import session_factory
-    from observatory.pipeline.run import run_pipeline
+    from hudhud import demo
+    from hudhud.db.session import session_factory
+    from hudhud.pipeline.run import run_pipeline
 
     s = session_factory()()
     wipe_data(s)

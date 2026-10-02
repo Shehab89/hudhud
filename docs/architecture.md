@@ -13,7 +13,7 @@ flowchart LR
     I[1 ingest] --> D[2 dedup] --> A[3 analyse] --> T[4 topics] --> M[5 metrics, drift, summary]
   end
   RSS & GN & GD --> I
-  Registry[(YAML registry and vocabularies)] -->|observatory seed| DB
+  Registry[(YAML registry and vocabularies)] -->|hudhud seed| DB
   I & D & A & T & M --> DB[(PostgreSQL 16 + pgvector)]
   LLM[Optional LLM tier] -.low-confidence items only.-> A
   DB --> API[FastAPI /api/v1]
@@ -32,7 +32,7 @@ idempotent, so a crashed or repeated run never corrupts data.
 | Component | Technology | Notes |
 |---|---|---|
 | Database | PostgreSQL 16, pgvector (HNSW, cosine), full-text `tsvector` | single source of truth; about 50 tables |
-| Pipeline | Python 3.11, SQLAlchemy 2, httpx, feedparser, datasketch, rapidfuzz, scikit-learn | `observatory run` |
+| Pipeline | Python 3.11, SQLAlchemy 2, httpx, feedparser, datasketch, rapidfuzz, scikit-learn | `hudhud run` |
 | NLP models | sentence-transformers, transformers (CPU), BERTopic | optional extra `[ml]`; deterministic fallback otherwise |
 | LLM | Anthropic API (Claude Haiku 4.5) | optional extra `[llm]`, budgeted, cached |
 | API | FastAPI, Pydantic 2, slowapi | OpenAPI at `/docs` and `/openapi.json` |
@@ -91,7 +91,7 @@ Every analysis table shares a provenance mixin: `model_version_id`, `method`
 `is_current`, `created_at`. Re-analysis marks old rows `is_current = false` instead of
 deleting them.
 
-The full schema is `backend/observatory/db/models.py`; the migration is
+The full schema is `backend/hudhud/db/models.py`; the migration is
 `backend/alembic/versions/20261002_0001_initial_schema.py`.
 
 ## API and frontend

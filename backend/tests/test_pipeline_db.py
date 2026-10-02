@@ -1,8 +1,8 @@
 import pytest
 from sqlalchemy import func, select
 
-from observatory.db import models as m
-from observatory.pipeline.run import run_pipeline
+from hudhud.db import models as m
+from hudhud.pipeline.run import run_pipeline
 
 pytestmark = pytest.mark.db
 

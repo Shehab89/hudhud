@@ -3,7 +3,7 @@
 * **Sources:** edit `database/seeds/sources/*.yaml` following
   [SCHEMA.md](database/seeds/sources/SCHEMA.md). Feed URLs must be fetched before
   `verified: true`; orientation labels need public evidence URLs. Run
-  `observatory check-sources`.
+  `hudhud check-sources`.
 * **Actors and aliases:** `database/seeds/entities.yaml`. Public actors only; type each
   alias (`official`, `self_designation`, `common`, `descriptive`, `critical`) and note who
   uses it.

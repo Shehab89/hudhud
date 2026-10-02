@@ -1,5 +1,5 @@
 # Next.js frontend (standalone output). Build from the repository root:
-#   docker build -f docker/frontend.Dockerfile -t observatory-frontend .
+#   docker build -f docker/frontend.Dockerfile -t hudhud-frontend .
 FROM node:22-alpine AS deps
 WORKDIR /app
 COPY frontend/package.json frontend/package-lock.json ./

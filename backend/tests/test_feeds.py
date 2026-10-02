@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from observatory.ingest.feeds import (
+from hudhud.ingest.feeds import (
     EXCERPT_MAX_CHARS,
     FeedParseError,
     parse_gdelt,

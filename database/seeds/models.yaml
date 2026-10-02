@@ -57,25 +57,25 @@
   tasks: [topic_labeling, framing, summary, ambiguity_review]
   languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
   description: Optional tier-2 LLM for topic naming, hard cases and summaries. Disabled unless ANTHROPIC_API_KEY is set.
-- name: observatory/hashing-embedding
+- name: hudhud/hashing-embedding
   provider: internal
   license: MIT
   tasks: [embedding]
   languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
   description: Fallback char n-gram hashing embedding (no download). Used only when transformer models are unavailable; lexical, not semantic.
-- name: observatory/lexicon
+- name: hudhud/lexicon
   provider: internal
   license: MIT
   tasks: [sentiment, emotion, tone, framing, category]
   languages: [ar, en, fr, de, es]
   description: Deterministic multilingual lexicon/keyword methods (tier 1 fallback and keyword classifier).
-- name: observatory/gazetteer
+- name: hudhud/gazetteer
   provider: internal
   license: MIT
   tasks: [ner, geo]
   languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
   description: Alias-dictionary entity and location matcher built from database/seeds.
-- name: observatory/rule-events
+- name: hudhud/rule-events
   provider: internal
   license: MIT
   tasks: [event_extraction]

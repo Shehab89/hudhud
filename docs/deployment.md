@@ -18,10 +18,10 @@ models) runs everything with Docker Compose:
 git clone <repo> && cd <repo>
 cp .env.example .env    # strong POSTGRES_PASSWORD and ADMIN_TOKEN, public URLs, CORS origin
 docker compose up -d --build db api frontend
-docker compose run --rm pipeline observatory migrate
-docker compose run --rm pipeline observatory seed
+docker compose run --rm pipeline hudhud migrate
+docker compose run --rm pipeline hudhud seed
 # daily at 03:15 UTC (crontab -e):
-# 15 3 * * * cd /srv/observatory && docker compose run --rm pipeline observatory run >> pipeline.log 2>&1
+# 15 3 * * * cd /srv/hudhud && docker compose run --rm pipeline hudhud run >> pipeline.log 2>&1
 ```
 
 Put a reverse proxy with TLS (Caddy or nginx) in front of ports 3000 and 8000; the
@@ -93,7 +93,7 @@ at all.
 
 ## Operations checklist
 
-* Rotate `ADMIN_TOKEN` and user API keys (`observatory create-user EMAIL` re-issues a key).
+* Rotate `ADMIN_TOKEN` and user API keys (`hudhud create-user EMAIL` re-issues a key).
 * Watch `/quality` (failing feeds, drift flags) and `GET /api/v1/admin/runs`.
 * Review `/api/v1/admin/annotations` weekly.
 * Re-verify unverified feeds in the registry after the first live week.

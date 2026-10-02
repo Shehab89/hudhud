@@ -30,7 +30,7 @@ jobs:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'none' }}
-      USER_AGENT: ${{ vars.USER_AGENT || 'YemenMediaObservatoryBot/0.1 (research crawler; respects robots.txt)' }}
+      USER_AGENT: ${{ vars.USER_AGENT || 'HudhudBot/0.1 (research crawler; respects robots.txt)' }}
       NLP_BACKEND: auto
       HF_HOME: ${{ github.workspace }}/.hf
       LOG_JSON: "true"
@@ -51,14 +51,14 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .hf
-          key: hf-models-${{ hashFiles('database/seeds/models.yaml', 'backend/observatory/config.py') }}
+          key: hf-models-${{ hashFiles('database/seeds/models.yaml', 'backend/hudhud/config.py') }}
           restore-keys: hf-models-
-      - run: observatory migrate
-      - run: observatory seed
+      - run: hudhud migrate
+      - run: hudhud seed
       - name: Run pipeline
         run: |
           if [ -n "${{ inputs.stages }}" ]; then
-            observatory run --trigger github_actions --stages "${{ inputs.stages }}"
+            hudhud run --trigger github_actions --stages "${{ inputs.stages }}"
           else
-            observatory run --trigger github_actions
+            hudhud run --trigger github_actions
           fi

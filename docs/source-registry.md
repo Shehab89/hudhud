@@ -1,8 +1,8 @@
 # Source registry
 
 The registry is a set of YAML files in `database/seeds/sources/` (format:
-[`SCHEMA.md`](../database/seeds/sources/SCHEMA.md)). `observatory seed` loads it
-idempotently; `observatory check-sources` validates it (also run in CI).
+[`SCHEMA.md`](../database/seeds/sources/SCHEMA.md)). `hudhud seed` loads it
+idempotently; `hudhud check-sources` validates it (also run in CI).
 
 ## Contents (as of 2026-10-02)
 
@@ -31,7 +31,7 @@ idempotently; `observatory check-sources` validates it (also run in CI).
 3. Add an orientation label only with evidence URLs (ownership records, academic or
    media-watchdog sources). Otherwise leave `simplified: unknown`.
 4. Set `access_policy: metadata_only` unless the publisher's terms allow more.
-5. `observatory check-sources && observatory seed`.
+5. `hudhud check-sources && hudhud seed`.
 
 ## Health
 

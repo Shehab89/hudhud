@@ -1,7 +1,8 @@
-# Yemen Media Observatory
+<img src="docs/hudhud-logo.svg" alt="Hudhud logo" width="96">
 
-> Working name. The final name and logo are still to be chosen; the Python package is
-> called `observatory` until then.
+# Hudhud · هدهد
+
+Named after the hoopoe, the messenger bird that carried news from the kingdom of Saba.
 
 An open-source, multilingual research platform for monitoring how media cover Yemen:
 what is reported, by whom, in which language, with which words and frames, and how that
@@ -25,7 +26,7 @@ version. Synthetic records are flagged `is_demo` and shown as **DEMO DATA** ever
 ## What is in the repository
 
 ```
-backend/observatory/    Python package: ingestion, NLP, pipeline, API, CLI
+backend/hudhud/    Python package: ingestion, NLP, pipeline, API, CLI
   ingest/               polite fetching (robots.txt, retries), feed parsers, URL canonicalisation, relevance filter
   nlp/                  Arabic-aware text normalisation, language ID, embeddings, taxonomy classifier,
                         sentiment/emotion/tone, framing, gazetteer (actors/places), events, topic models
@@ -60,11 +61,11 @@ docker compose up -d db
 # backend
 python -m venv .venv && . .venv/bin/activate
 pip install -e ".[dev,llm]"                # add ,ml for transformer models (~2 GB, CPU is fine)
-observatory migrate
-observatory seed                           # registry, taxonomy, actors, locations, models
-observatory run                            # fetch and analyse today's coverage
-# or, offline: observatory demo-data && observatory run --stages dedup,analyse,topics,metrics
-observatory serve                          # API on :8000, docs at http://localhost:8000/docs
+hudhud migrate
+hudhud seed                           # registry, taxonomy, actors, locations, models
+hudhud run                            # fetch and analyse today's coverage
+# or, offline: hudhud demo-data && hudhud run --stages dedup,analyse,topics,metrics
+hudhud serve                          # API on :8000, docs at http://localhost:8000/docs
 
 # frontend
 cd frontend && npm ci && npm run dev       # http://localhost:3000
@@ -75,29 +76,29 @@ Everything in Docker:
 ```bash
 cp .env.example .env
 docker compose up -d --build
-docker compose run --rm pipeline observatory migrate
-docker compose run --rm pipeline observatory seed
-docker compose run --rm pipeline observatory run
+docker compose run --rm pipeline hudhud migrate
+docker compose run --rm pipeline hudhud seed
+docker compose run --rm pipeline hudhud run
 ```
 
 ### CLI
 
 | Command | Does |
 |---|---|
-| `observatory migrate` | apply database migrations |
-| `observatory seed` | load/refresh the registry and vocabularies (idempotent) |
-| `observatory check-sources` | validate the YAML source registry |
-| `observatory run [--stages ...]` | run the pipeline; exits non-zero only if every stage failed |
-| `observatory topics [--refit]` | fit or update topic models |
-| `observatory demo-data [--days N] [--purge]` | insert or remove synthetic DEMO DATA |
-| `observatory create-user EMAIL [--role]` | create a researcher/annotator/admin and print an API key once |
-| `observatory serve` | run the API |
+| `hudhud migrate` | apply database migrations |
+| `hudhud seed` | load/refresh the registry and vocabularies (idempotent) |
+| `hudhud check-sources` | validate the YAML source registry |
+| `hudhud run [--stages ...]` | run the pipeline; exits non-zero only if every stage failed |
+| `hudhud topics [--refit]` | fit or update topic models |
+| `hudhud demo-data [--days N] [--purge]` | insert or remove synthetic DEMO DATA |
+| `hudhud create-user EMAIL [--role]` | create a researcher/annotator/admin and print an API key once |
+| `hudhud serve` | run the API |
 
 ### Tests
 
 ```bash
 pytest                                                    # unit tests only
-TEST_DATABASE_URL=postgresql+psycopg://...observatory_test pytest   # + database tests (wipes that DB)
+TEST_DATABASE_URL=postgresql+psycopg://...hudhud_test pytest   # + database tests (wipes that DB)
 ruff check . && ruff format --check .
 cd frontend && npm run lint && npm run typecheck && npm run build
 ```

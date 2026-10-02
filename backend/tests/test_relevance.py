@@ -1,4 +1,4 @@
-from observatory.ingest.relevance import RELEVANCE_THRESHOLD, yemen_relevance
+from hudhud.ingest.relevance import RELEVANCE_THRESHOLD, yemen_relevance
 
 
 def test_yemen_in_title_is_relevant():

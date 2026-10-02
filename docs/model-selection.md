@@ -16,7 +16,7 @@ produced it.
 | **intfloat/multilingual-e5-small** (MIT) | 384 | 118M | ~100 incl. Arabic | low | **default**: good multilingual retrieval for its size, fits the daily batch |
 | Qwen/Qwen3-Embedding-0.6B (Apache-2.0) | up to 1024 (Matryoshka, truncatable to 384) | 600M | 100+ | ~5x e5-small | upgrade candidate; no schema change if truncated to 384 |
 | BAAI/bge-m3 (MIT) | 1024 | 568M | 100+ | ~5x | upgrade candidate; needs a schema change (vector 1024) |
-| observatory/hashing-embedding | 384 | none | any | negligible | fallback only: character n-gram hashing, lexical, **not cross-lingual** |
+| hudhud/hashing-embedding | 384 | none | any | negligible | fallback only: character n-gram hashing, lexical, **not cross-lingual** |
 
 ## Sentiment
 
@@ -24,7 +24,7 @@ produced it.
 |---|---|---|---|
 | **cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual** | ar, en, fr, de, es, it, ... | trained on tweets; domain shift to news expected | **default** for non-Arabic |
 | **CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment** (Apache-2.0) | Arabic (MSA + dialects) | Arabic-specific | **default** for Arabic |
-| observatory/lexicon | ar, en, fr, de, es | transparent, deterministic | fallback |
+| hudhud/lexicon | ar, en, fr, de, es | transparent, deterministic | fallback |
 
 ## Zero-shot (categories, frames, emotions, tone)
 

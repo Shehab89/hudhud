@@ -10,7 +10,7 @@ ADMIN = {"X-Admin-Token": "test-admin-token"}
 
 @pytest.fixture(scope="module")
 def client(demo_db):
-    from observatory.api.main import create_app
+    from hudhud.api.main import create_app
 
     with TestClient(create_app()) as c:
         yield c
@@ -96,8 +96,8 @@ def test_admin_requires_token(client):
 
 
 def test_saved_queries_need_an_api_key(client, demo_db):
-    from observatory.api.deps import hash_api_key
-    from observatory.db import models as m
+    from hudhud.api.deps import hash_api_key
+    from hudhud.db import models as m
 
     assert client.get("/api/v1/saved-queries").status_code == 401
     demo_db.add(
@@ -114,8 +114,8 @@ def test_saved_queries_need_an_api_key(client, demo_db):
 
 
 def test_accepted_correction_becomes_the_current_result(client, demo_db):
-    from observatory.api.deps import hash_api_key
-    from observatory.db import models as m
+    from hudhud.api.deps import hash_api_key
+    from hudhud.db import models as m
 
     demo_db.add(m.User(email="annotator@example.org", api_key_hash=hash_api_key("obs_ann"), role="annotator"))
     demo_db.commit()

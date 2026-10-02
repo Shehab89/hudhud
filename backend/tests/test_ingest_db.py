@@ -3,10 +3,10 @@ import datetime as dt
 import pytest
 from sqlalchemy import func, select
 
-from observatory.db import models as m
-from observatory.ingest.http import FetchError, FetchResult
-from observatory.pipeline.dedup import run_dedup
-from observatory.pipeline.ingest import run_ingest
+from hudhud.db import models as m
+from hudhud.ingest.http import FetchError, FetchResult
+from hudhud.pipeline.dedup import run_dedup
+from hudhud.pipeline.ingest import run_ingest
 
 pytestmark = pytest.mark.db
 

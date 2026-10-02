@@ -36,7 +36,7 @@ September, and which terms did they use for the coalition (terminology)?"*
   `ownership_analysis`, `editorial_analysis`, `hyperlink_network`, `LLM_assisted`,
   `community_annotation`, `unknown`.
 * **Rule:** no label other than `unknown` without at least one public evidence URL
-  (enforced by `observatory check-sources` and the seed loader). Of 193 registered
+  (enforced by `hudhud check-sources` and the seed loader). Of 193 registered
   outlets, 112 are `unknown` today.
 * **Operating base** (`sanaa_controlled`, `government_controlled`, `stc_controlled`,
   `outside_yemen`, `unknown`) records where a newsroom works. It is a location fact

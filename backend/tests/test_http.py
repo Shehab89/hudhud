@@ -2,7 +2,7 @@ import httpx
 import pytest
 import respx
 
-from observatory.ingest.http import Fetcher, FetchError
+from hudhud.ingest.http import Fetcher, FetchError
 
 FEED = "https://feeds.example.org/rss"
 ROBOTS = "https://feeds.example.org/robots.txt"

@@ -1,4 +1,4 @@
-from observatory.nlp.text import (
+from hudhud.nlp.text import (
     content_hash,
     count_terms,
     detect_script,

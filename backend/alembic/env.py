@@ -3,8 +3,8 @@ from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 
 from alembic import context
-from observatory.config import get_settings
-from observatory.db.models import Base
+from hudhud.config import get_settings
+from hudhud.db.models import Base
 
 config = context.config
 if config.config_file_name is not None:

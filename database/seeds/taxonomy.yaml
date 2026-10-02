@@ -1,6 +1,6 @@
 # Yemen-specific hierarchical topic taxonomy.
 # Each node: slug, en, ar, optional kw (keywords per language). Keywords are matched
-# on normalised text with Arabic clitic handling (see observatory/nlp/arabic.py).
+# on normalised text with Arabic clitic handling (see hudhud/nlp/text.py).
 # Arabic keywords are written without the definite article "ال".
 # The taxonomy does NOT constrain topic discovery: BERTopic runs independently, and
 # clusters that match no category are stored as emerging categories.

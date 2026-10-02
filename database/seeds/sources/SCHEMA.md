@@ -2,7 +2,7 @@
 
 Each `*.yaml` file in this folder is a list of source records. Files are loaded into
 the `sources`, `source_feeds` and `source_orientation` tables by
-`python -m observatory.cli seed`. Edit the YAML, not the code.
+`python -m hudhud.cli seed`. Edit the YAML, not the code.
 
 ```yaml
 - id: al-masirah                 # stable slug, unique across all files, [a-z0-9-]

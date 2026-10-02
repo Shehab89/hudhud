@@ -1,3 +1,0 @@
-"""Yemen Media Observatory (working name)."""
-
-__version__ = "0.1.0"
