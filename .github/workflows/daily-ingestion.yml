@@ -1,0 +1,64 @@
+name: daily-ingestion
+
+# Collects, analyses and aggregates the day's coverage.
+# REQUIRES CONFIGURATION: repository secret DATABASE_URL (a reachable PostgreSQL 16 database
+# with pgvector). Optional: ANTHROPIC_API_KEY (enables the LLM tier; set the repository
+# variable LLM_PROVIDER=anthropic as well) and USER_AGENT (variable; include a contact URL).
+
+on:
+  schedule:
+    - cron: "15 3 * * *" # 03:15 UTC = 06:15 in Yemen
+  workflow_dispatch:
+    inputs:
+      stages:
+        description: "Comma-separated stages (ingest,dedup,analyse,topics,metrics); empty = all"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-ingestion
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'none' }}
+      USER_AGENT: ${{ vars.USER_AGENT || 'YemenMediaObservatoryBot/0.1 (research crawler; respects robots.txt)' }}
+      NLP_BACKEND: auto
+      HF_HOME: ${{ github.workspace }}/.hf
+      LOG_JSON: "true"
+    steps:
+      - name: Check configuration
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::error::DATABASE_URL secret is not set (REQUIRES CONFIGURATION)"; exit 1
+          fi
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install (CPU-only torch)
+        run: pip install --extra-index-url https://download.pytorch.org/whl/cpu ".[ml,llm]"
+      - name: Cache models
+        uses: actions/cache@v4
+        with:
+          path: .hf
+          key: hf-models-${{ hashFiles('database/seeds/models.yaml', 'backend/observatory/config.py') }}
+          restore-keys: hf-models-
+      - run: observatory migrate
+      - run: observatory seed
+      - name: Run pipeline
+        run: |
+          if [ -n "${{ inputs.stages }}" ]; then
+            observatory run --trigger github_actions --stages "${{ inputs.stages }}"
+          else
+            observatory run --trigger github_actions
+          fi

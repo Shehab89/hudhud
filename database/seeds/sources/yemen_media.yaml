@@ -1,0 +1,1219 @@
+# Generated from research notes, 2026-10-02. See SCHEMA.md.
+- id: saba-irg
+  name: Saba News Agency (IRG)
+  name_native: وكالة الأنباء اليمنية (سبأ)
+  url: https://www.sabanew.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: yemen_state_irg
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.sabanew.net/rss.php?lang=ar
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'البث العام', 20 items, newest 2026-10-02.
+  - url: https://www.sabanew.net/rss.php?lang=en
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 20 items, newest 2026-10-01. Returns the same channel title as the Arabic feed; check language
+      of items on ingest.
+  ownership:
+    description: State news agency operated by the internationally recognised government (IRG/PLC). Rival of the
+      Sanaa-run Saba at saba.ye since the January 2015 Houthi seizure of the agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Internationally recognised government / Presidential Leadership Council
+        confidence: 0.9
+      conflict_alignment:
+        value: IRG / Saudi-led coalition side
+        confidence: 0.8
+    confidence: 0.9
+    evidence: Wikipedia records the 2015 split into a pro-Hadi/Alimi agency (sabanew.net) and a pro-Houthi one (saba.ye);
+      State Media Monitor classifies the government version as State-Controlled.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/yemen/
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'One of two agencies using the Saba name; do not merge with saba-sanaa. operating_base left unknown: State
+    Media Monitor says it runs ''from exile locations'' and RSF reported its Aden office ransacked by separatists,
+    so whether it works from Aden or Riyadh today is not documented.'
+- id: saba-sanaa
+  name: Saba News Agency (Sanaa)
+  name_native: وكالة الأنباء اليمنية (سبأ) - صنعاء
+  url: https://www.saba.ye/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: yemen_state_sanaa
+  geographic_focus:
+  - national
+  operating_base: sanaa_controlled
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.saba.ye/ar/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: 'Not verifiable from the research environment: WebFetch refused saba.ye because its robots.txt returned
+      HTTP 500. Path is a guess to test from the ingest host.'
+  ownership:
+    description: State news agency in Sanaa under Ansar Allah (Houthi) authorities since they seized it in January
+      2015.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Ansar Allah (Houthi) authorities / Supreme Political Council, Sanaa
+        confidence: 0.9
+      conflict_alignment:
+        value: Ansar Allah (Houthi) side
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia and State Media Monitor identify saba.ye as the Houthi-controlled version of Saba, classified
+      State-Controlled.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/yemen/
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Outlet confirmed by Wikipedia and State Media Monitor. Site could not be fetched (robots.txt error), so
+    no feed is verified yet. Retry from the ingest host before activating.
+- id: 14-october
+  name: 14 October
+  name_native: صحيفة 14 أكتوبر
+  url: https://www.14october.com/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_state_irg
+  geographic_focus:
+  - aden
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.14october.com/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returned HTTP 403 to WebFetch. /feed also 403.
+  ownership:
+    description: Government-run Aden daily; publisher is the 14th October Foundation for Journalism, Printing and
+      Publishing.
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Aden-based state press (IRG)
+        confidence: 0.6
+    confidence: 0.7
+    evidence: Media Landscapes describes 14th October as government-run; the Atlantic Council notes it is formerly
+      state-owned and was taken over by the southern coalition at one point.
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+    - https://www.atlanticcouncil.org/blogs/menasource/the-yemen-war-media-and-propaganda
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage loaded on 2026-10-02 with current government news, but both feed paths returned 403.
+- id: al-ayyam
+  name: Al-Ayyam
+  name_native: صحيفة الأيام
+  url: https://www.alayyam.info/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_independent
+  geographic_focus:
+  - aden
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds: []
+  ownership:
+    description: Private Aden daily.
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+  orientation:
+    simplified: independent
+    confidence: 0.5
+    evidence: Media Landscapes lists Al-Ayyam as independent, noting the government accused it of supporting separatism.
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage active (items dated 2026-10-02) but no feed link; /rss, /feed, /rss.xml and /rss.php all returned
+    404. Candidate for sitemap or HTML scraping.
+- id: aden-al-ghad
+  name: Aden Al-Ghad
+  name_native: عدن الغد
+  url: https://www.adngad.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - aden
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.adngad.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'عدن الغد', 25 items, newest 2026-10-02. adengad.net 302-redirects to adngad.net.
+  ownership:
+    description: Editor-in-chief Fathi Bin Lazraq (CPJ). Offices were stormed on 2026-02-01 by gunmen CPJ says were
+      affiliated with the dissolved STC.
+    evidence_urls:
+    - https://cpj.org/2026/02/gunmen-storm-yemens-aden-al-ghad-offices-injuring-staff/
+  orientation:
+    simplified: independent
+    confidence: 0.6
+    evidence: CPJ describes Aden Al-Ghad as an 'independent Yemen-based media outlet'.
+    evidence_urls:
+    - https://cpj.org/2026/02/gunmen-storm-yemens-aden-al-ghad-offices-injuring-staff/
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: aden-time
+  name: Aden Time
+  name_native: عدن تايم
+  url: https://www.aden-tm.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_local
+  geographic_focus:
+  - aden
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.aden-tm.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 25 items, newest 2026-10-02.
+  ownership:
+    description: Self-described electronic newspaper founded in Aden on 14 October 2015.
+    evidence_urls:
+    - https://www.aden-tm.net/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Orientation not assessed: no independent source found.'
+- id: al-omana
+  name: Al-Omana Net
+  name_native: الأمناء نت
+  url: https://al-omana.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_local
+  geographic_focus:
+  - aden
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://al-omana.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returns RSS mixed with PHP warnings (malformed) and items from 2015 only. Not usable.
+  ownership:
+    description: Self-described independent news site broadcasting from Aden.
+    evidence_urls:
+    - https://al-omana.net/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage active with items dated 2026-10-02/03. www.alomanaa.net redirects to an unrelated site; use al-omana.net.
+- id: south24
+  name: South24 Center for News and Studies
+  name_native: مركز سوث24 للأخبار والدراسات
+  url: https://south24.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_local
+  geographic_focus:
+  - south
+  - aden
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds: []
+  ownership:
+    description: Non-profit registered in Switzerland (Sept 2019, CHE-466.313.874) and licensed in Aden; founder
+      and chairman Ayad Qassem (self-description).
+    evidence_urls:
+    - https://south24.net/news/aboutuse.php
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Self-describes as independent; no third-party assessment found, so orientation left unknown. No feed found
+    (/feed, /rss, /news/rss.php all 404). Articles under /news/news.php?nid= (ar) and /news/newse.php?nid= (en).
+- id: yemen-monitor
+  name: Yemen Monitor
+  name_native: يمن مونيتور
+  url: https://www.yemenmonitor.com/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.yemenmonitor.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Arabic RSS 2.0, 10 items, newest 2026-10-02.
+  - url: https://www.yemenmonitor.com/en/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0, 10 items, newest 2026-09-27.
+  ownership:
+    description: Belongs to the Yemen Monitor Network for Press and Media, described as a private Yemeni media institution
+      (self-description).
+    evidence_urls:
+    - https://www.yemenmonitor.com/about
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: al-masdar-online
+  name: Al-Masdar Online
+  name_native: المصدر أونلاين
+  url: https://almasdaronline.com/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://almasdaronline.com/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: 403 to WebFetch, as were /feed and the homepage. Path untested.
+  ownership:
+    description: Al-Masdar Media Foundation; began as a weekly print paper on 13 Nov 2007, online from 2009 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masdar_Online
+  orientation:
+    simplified: unknown
+    dimensions:
+      conflict_alignment:
+        value: critical of Ansar Allah and the STC (per Wikipedia)
+        confidence: 0.5
+    confidence: 0.0
+    evidence: Wikipedia cites BBC Monitoring as calling its coverage 'largely balanced', but also says it is seen
+      as supportive of Islah and critical of the Houthis and the STC. Evidence is mixed, so left unknown.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masdar_Online
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: The site blocks the research fetcher (403). The domain almasdaronline.info is now an unrelated gambling
+    site; do not use it.
+- id: mareb-press
+  name: Mareb Press
+  name_native: مأرب برس
+  url: https://marebpress.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  - marib
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://marebpress.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but returned an HTML page to WebFetch, not XML.
+  ownership:
+    description: Online newspaper launched 2006 in Marib; headquarters moved to Sanaa in 2012 (Wikipedia). Owner
+      not documented.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mareb_Press
+  orientation:
+    simplified: unknown
+    dimensions:
+      conflict_alignment:
+        value: anti-Houthi / pro-IRG (per Wikipedia, CPJ)
+        confidence: 0.6
+    confidence: 0.0
+    evidence: Wikipedia cites RAND calling it one of the highest-quality independent sources, and also says it is
+      loyal to the IRG and critical of the Houthis. CPJ (2015) lists it among sites blocked as 'critical of the
+      Houthi movement'.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mareb_Press
+    - https://cpj.org/2015/03/media-outlets-raided-and-banned-as-conflict-spiral/
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage active. rss.php may serve XML to a normal client; retest from the ingest host.
+- id: barran-press
+  name: Barran Press
+  name_native: بران برس
+  url: https://barran.press/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  - marib
+  operating_base: government_controlled
+  yemen_coverage: primary
+  feeds:
+  - url: https://barran.press/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS shell with zero items. /feed returns HTML.
+  ownership:
+    description: Affiliated with the Barran Media Foundation (self-description on en.barran.press); based in Marib
+      (CPJ).
+    evidence_urls:
+    - https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/
+  orientation:
+    simplified: independent
+    confidence: 0.6
+    evidence: CPJ calls Barran Press an 'independent media outlet' based in Marib; Houthi-run ISPs blocked it in
+      2025.
+    evidence_urls:
+    - https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Arabic site active (items 2026-10-01). The English site en.barran.press showed newest items from Oct 2025.
+- id: yemen-shabab
+  name: Yemen Shabab Net
+  name_native: يمن شباب نت
+  url: https://www.yemenshabab.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: outside_yemen
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.yemenshabab.net/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, ~70 items, newest 2026-10-02.
+  ownership:
+    description: Website of the Yemen Shabab (Yemen Youth) TV channel, which operates from Turkey and Qatar (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+  orientation:
+    simplified: unknown
+    dimensions:
+      conflict_alignment:
+        value: anti-Houthi (per Wikipedia)
+        confidence: 0.5
+    confidence: 0.0
+    evidence: Self-describes as independent. Wikipedia describes the Yemen Shabab channel as associated with anti-Houthi
+      political currents.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: TV and website share the brand; registered here as a news website because the feed is the website's.
+- id: belqees
+  name: Belqees
+  name_native: بلقيس
+  url: https://www.belqees.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: outside_yemen
+  yemen_coverage: primary
+  feeds:
+  - url: https://rss.belqees.net/feeds
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'Belqees News', 40 items, newest 2026-09-28.
+  ownership:
+    description: Founded and owned by Tawakkol Karman; the TV channel moved from Sanaa to Istanbul and ended broadcasting
+      in late Nov 2025 (Wikipedia). The website belqees.net was still publishing in Sept 2026.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Belqees_TV
+  orientation:
+    simplified: unknown
+    dimensions:
+      institutional_alignment:
+        value: associated with Muslim Brotherhood current; owner Tawakkol Karman (per Wikipedia)
+        confidence: 0.4
+      conflict_alignment:
+        value: anti-Houthi (self-description)
+        confidence: 0.6
+    confidence: 0.0
+    evidence: Wikipedia says the channel was 'known for its affiliation to the Muslim Brotherhood'. The site says
+      it opposes Houthi militias. One source only, so left unknown.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Belqees_TV
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: TV broadcasting reportedly ended Nov 2025; track the website feed only.
+- id: khabar-agency
+  name: Khabar News Agency
+  name_native: وكالة خبر للأنباء
+  url: https://www.khabaragency.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_agency
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.khabaragency.net/rss-1.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'أخبار وتقارير', 20 items, newest 2026-10-02. rss-all.xml returned 404.
+  ownership:
+    description: Self-described as Yemen's first private independent news agency.
+    evidence_urls:
+    - https://www.khabaragency.net/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Orientation not assessed: no third-party source found in this pass.'
+- id: yemen-press-agency
+  name: Yemen Press Agency (YPA)
+  name_native: وكالة الصحافة اليمنية
+  url: https://www.ypagency.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.ypagency.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: WordPress RSS, 10 items, newest 2026-10-02.
+  ownership:
+    description: Not documented.
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: English edition at https://en.ypagency.net (its feed timed out). Item wording ('occupied governorates')
+    suggests a Sanaa-side editorial line, but no documented evidence was found, so orientation is left unknown.
+    Source group is provisional.
+- id: nashwan-news
+  name: Nashwan News
+  name_native: نشوان نيوز
+  url: https://www.nashwannews.com/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.nashwannews.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 20 items, newest 2026-10-02.
+  ownership:
+    description: Self-described independent electronic newspaper founded in 2008.
+    evidence_urls:
+    - https://www.nashwannews.com/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: yemen-future
+  name: Yemen Future
+  name_native: يمن فيوتشر
+  url: https://yemenfuture.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://yemenfuture.net/rss.php
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 30 items, newest 2026-10-02.
+  ownership:
+    description: Self-described independent Yemeni electronic news platform.
+    evidence_urls:
+    - https://yemenfuture.net/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: al-tagheer
+  name: Al-Tagheer Net
+  name_native: التغيير نت
+  url: https://www.al-tagheer.com/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.al-tagheer.com/feed/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: 'RSS 2.0, 50 items. Newest 2026-10-02 but the next is 2026-08-18: publishing is irregular and includes
+      non-Yemen filler.'
+  ownership:
+    description: Self-described as Yemen's first independent news website.
+    evidence_urls:
+    - https://www.al-tagheer.com/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Category feeds are listed at https://www.al-tagheer.com/feeds.
+- id: khuyut
+  name: Khuyut
+  name_native: خيوط
+  url: https://www.khuyut.com/
+  country: YE
+  languages:
+  - ar
+  source_type: investigative
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.khuyut.com/feed
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: '404.'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Khuyut is tagged on CPJ but the homepage and /ar returned 404 to WebFetch on 2026-10-02. Domain not confirmed
+    working; verify before use.
+- id: holm-akhdar
+  name: Holm Akhdar
+  name_native: حلم أخضر
+  url: https://holmakhdar.org/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: investigative
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://holmakhdar.org/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: WordPress RSS, only 3 items; newest 2026-04-05. Low-frequency environmental journalism.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Environmental and climate journalism platform. Feed is valid but infrequent.
+- id: debriefer
+  name: Debriefer
+  name_native: ديبريفر
+  url: https://debriefer.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://debriefer.net/feed
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returns HTML, not a feed.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Self-described news agency covering Yemen. Newest homepage items on 2026-10-02 dated 2023-09-02: appears
+    dormant.'
+- id: al-mawqea-post
+  name: Al-Mawqea Post
+  name_native: الموقع بوست
+  url: https://almawqeapost.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://almawqeapost.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returns RSS-like content the fetcher reported as malformed; newest item 2026-06-01.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: The feed announces that the outlet suspended operations on 2026-06-01; archive remains online. Keep for
+    historical coverage only.
+- id: akhbar-alyom
+  name: Akhbar Al-Youm
+  name_native: صحيفة أخبار اليوم
+  url: https://akhbaralyom.net/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://akhbaralyom.net/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: '404.'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: akhbaralyom-ye.net 302-redirects here. Homepage active (2026-10-02). No feed found. Ownership and affiliation
+    not documented in this pass.
+- id: sidq-yemen
+  name: Sidq
+  name_native: صدق
+  url: https://sidqyem.com/
+  country: YE
+  languages:
+  - ar
+  source_type: fact_checker
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://sidqyem.com/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: WordPress RSS, 5 items, newest 2026-10-01.
+  ownership:
+    description: Fact-checking platform founded 2019 (IJNet).
+    evidence_urls:
+    - https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Qantara calls it 'an independent online platform' (https://qantara.de/en/node/11193). Not a watchdog source,
+    so orientation left unknown.
+- id: hakikah
+  name: Hakikah
+  name_native: حقيقة
+  url: https://hakikah.net/
+  country: YE
+  languages:
+  - ar
+  source_type: fact_checker
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://hakikah.net/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: WordPress RSS, 10 items, newest 2026-09-29.
+  ownership:
+    description: Volunteer fact-checking platform launched in Aug 2021; editor-in-chief Mohammed Mahroos (IJNet).
+    evidence_urls:
+    - https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: yoopyup
+  name: YoopyUp
+  name_native: يوب يوب
+  url: https://yoopyup.com/
+  country: YE
+  languages:
+  - ar
+  source_type: fact_checker
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://yoopyup.com/feed/
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returns the HTML homepage, not a feed.
+  ownership:
+    description: Fact-checking and open-source investigation platform founded late 2023 by Farouq Al-Kamali (IJNet).
+    evidence_urls:
+    - https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: semc-economic-media
+  name: Studies and Economic Media Center (SEMC)
+  name_native: مركز الدراسات والإعلام الاقتصادي
+  url: https://economicmedia.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: think_tank
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://economicmedia.net/ar/?feed=rss2
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage as http://economicmedia.net/ar/?feed=rss2. The https version returned 404; /feed/
+      and /ar/feed/ also 404.
+  ownership:
+    description: Yemeni civil-society organisation founded 2008, working on economic media and transparency (self-description).
+    evidence_urls:
+    - https://economicmedia.net/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Economic outlet: publishes Yemen economic indicators and briefings (newest post 2026-09-29). Retest the
+    http feed from the ingest host.'
+- id: al-khabar-al-yemeni
+  name: Al-Khabar Al-Yemeni
+  name_native: الخبر اليمني
+  url: https://alkhabaralyemeni.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://alkhabaralyemeni.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: WordPress RSS 2.0, 10 items, newest 2026-10-02.
+  ownership:
+    description: Not documented. Self-described as independent.
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Has an English section (alkhabaralyemeni.net/2023/05/19/221918/ is English). Orientation not assessed.
+- id: al-sharea
+  name: Al-Sharea
+  name_native: صحيفة الشارع
+  url: https://www.alsharaeanews.com/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_independent
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.alsharaeanews.com/feed
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS 2.0 but 5 items, all dated 2022-12-23. Stale.
+  ownership:
+    description: Self-described independent daily, founded in Sanaa on 2 June 2007 as a weekly; daily from 2 June
+      2012.
+    evidence_urls:
+    - https://www.alsharaeanews.com/
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Website and feed have not updated since Dec 2022: appears dormant.'
+- id: shabwah-press
+  name: Shabwah Press
+  name_native: شبوة برس
+  url: https://shabwahpress.com/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_local
+  geographic_focus:
+  - south
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://shabwahpress.com/feed
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Timed out on 2026-10-02 (as did /rss).
+  ownership:
+    description: Not documented.
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: shabwaah-press.info redirects here. Homepage active (2026-10-02) with a South Arabia focus. Orientation
+    not assessed.
+- id: al-thawra-sanaa
+  name: Al-Thawra
+  name_native: صحيفة الثورة
+  url: https://althawranews.net/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_state_sanaa
+  geographic_focus:
+  - national
+  - sanaa
+  operating_base: sanaa_controlled
+  yemen_coverage: primary
+  feeds: []
+  ownership:
+    description: State daily of Al-Thawra Press and Publishing, run under the Houthi authorities (Supreme Political
+      Council) since 2015 (State Media Monitor).
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/al-thawra-press-and-publishing/
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Ansar Allah (Houthi) authorities / Supreme Political Council
+        confidence: 0.9
+      conflict_alignment:
+        value: Ansar Allah (Houthi) side
+        confidence: 0.9
+    confidence: 0.9
+    evidence: State Media Monitor classifies Al-Thawra as State-Controlled, 'editorially directed in line with the
+      Supreme Political Council'. The Atlantic Council says the Houthis turned it into a pro-Houthi outlet.
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/al-thawra-press-and-publishing/
+    - https://statemediamonitor.com/yemen/
+    - https://www.atlanticcouncil.org/blogs/menasource/the-yemen-war-media-and-propaganda
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: URL from State Media Monitor. althawranews.net and althawrah.ye both timed out from the research fetcher,
+    so no feed is verified.

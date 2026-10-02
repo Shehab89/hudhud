@@ -1,0 +1,14 @@
+# Supported content languages. Add a row to support a new language; the NLP
+# pipeline reads this list for language detection and keyword matching.
+- {code: ar, en: Arabic, native: العربية, script: Arab, rtl: true}
+- {code: en, en: English, native: English, script: Latn, rtl: false}
+- {code: fr, en: French, native: Français, script: Latn, rtl: false}
+- {code: de, en: German, native: Deutsch, script: Latn, rtl: false}
+- {code: es, en: Spanish, native: Español, script: Latn, rtl: false}
+- {code: it, en: Italian, native: Italiano, script: Latn, rtl: false}
+- {code: tr, en: Turkish, native: Türkçe, script: Latn, rtl: false}
+- {code: fa, en: Persian, native: فارسی, script: Arab, rtl: true}
+- {code: ru, en: Russian, native: Русский, script: Cyrl, rtl: false}
+- {code: zh, en: Chinese, native: 中文, script: Hans, rtl: false}
+- {code: ja, en: Japanese, native: 日本語, script: Jpan, rtl: false, supported: false}
+- {code: ur, en: Urdu, native: اردو, script: Arab, rtl: true, supported: false}

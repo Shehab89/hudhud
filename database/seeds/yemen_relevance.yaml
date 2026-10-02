@@ -1,0 +1,16 @@
+# Terms used to keep only Yemen-relevant items from general (non-Yemen-specific)
+# feeds. Matching is case-insensitive on normalised text with Arabic clitics allowed.
+strong:
+  en: [yemen, yemeni, houthi, houthis, ansar allah, ansarullah, sanaa, sana'a, aden, hodeidah, hudaydah, marib, taiz, hadramawt, hadramout, mukalla, socotra, bab al-mandab, bab el-mandeb, southern transitional council]
+  ar: [اليمن, يمني, اليمنية, الحوثي, الحوثيين, الحوثيون, أنصار الله, صنعاء, عدن, الحديدة, مأرب, تعز, حضرموت, المكلا, سقطرى, باب المندب, الانتقالي الجنوبي]
+  fr: [yémen, yéménite, houthi, houthis, houthistes, sanaa, aden]
+  de: [jemen, jemenitisch, huthi, huthis, houthi, sanaa, aden]
+  es: [yemen, yemení, hutíes, houthi, saná]
+  it: [yemen, yemenita, houthi, huthi]
+  tr: [yemen, husi, husiler, sana]
+  fa: [یمن, یمنی, انصارالله, حوثی]
+  ru: [йемен, йеменск, хусит, хуситы, сана]
+  zh: [也门, 胡塞]
+weak:
+  en: [red sea shipping, gulf of aden]
+  ar: [البحر الأحمر, خليج عدن]

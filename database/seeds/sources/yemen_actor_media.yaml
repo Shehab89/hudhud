@@ -1,0 +1,563 @@
+# Generated from research notes, 2026-10-02. See SCHEMA.md.
+- id: al-masirah
+  name: Al-Masirah
+  name_native: قناة المسيرة
+  url: https://www.masirahtv.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: outside_yemen
+  yemen_coverage: primary
+  feeds:
+  - url: https://english.masirahtv.net/rss.php
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0, 50 items, newest 2026-10-02.
+  - url: https://www.masirahtv.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Arabic site returned 403 to WebFetch; path assumed from the English site.
+  ownership:
+    description: Owned by the Houthi movement; launched Jan 2012 in Beirut; board president Mohammed Abdulsalam,
+      the movement's spokesman. US authorities seized associated domains in June 2021 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masirah
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Ansar Allah (Houthi) movement
+        confidence: 0.95
+      conflict_alignment:
+        value: Ansar Allah (Houthi) side
+        confidence: 0.95
+    confidence: 0.95
+    evidence: 'Wikipedia: ''owned by the Houthi movement''. CPJ (2015) calls it the ''official Houthi-run'' channel;
+      Media Landscapes says it is ''run by the Houthi movement''.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masirah
+    - https://cpj.org/2015/03/media-outlets-raided-and-banned-as-conflict-spiral/
+    - https://medialandscapes.org/country/yemen/media/television
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: operating_base set to outside_yemen because Wikipedia says the channel operates from Beirut (with backup
+    studios at Hezbollah HQ). It also clearly works from Sanaa; recheck whether the main newsroom is now Sanaa (sanaa_controlled).
+    almasirah.net is blocked to the fetcher and almasirah.net.ye has a TLS error; english.almasirah.net.ye redirects
+    to english.masirahtv.net.
+- id: 26-september-sanaa
+  name: 26 September (Sanaa)
+  name_native: 26 سبتمبر نت
+  url: https://www.26sep.net/
+  country: YE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: yemen_state_sanaa
+  geographic_focus:
+  - national
+  - sanaa
+  operating_base: sanaa_controlled
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.26sep.net/index.php?format=feed&type=rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS envelope but zero items on 2026-10-02. /rss and /feed return 404.
+  ownership:
+    description: Armed forces newspaper published by the Moral Guidance Department. Since 2014 the Sanaa edition
+      is the official outlet of the Houthi-aligned side (Wikipedia). The site calls itself the Ministry of Defense's
+      official website.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+    - https://medialandscapes.org/country/yemen/media/print
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Sanaa Ministry of Defense under Ansar Allah (Houthi) authorities
+        confidence: 0.9
+      conflict_alignment:
+        value: Ansar Allah (Houthi) side
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: after taking Sanaa the Houthis made 26 September the official outlet of the Houthi-aligned
+      faction. Media Landscapes says it now backs the Houthis.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+    - https://medialandscapes.org/country/yemen/media/print
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Military media. One of two outlets named 26 September; the IRG version is 26-september-irg. Homepage active;
+    Joomla feed is empty.
+- id: 26-september-irg
+  name: 26 September Net (IRG Armed Forces)
+  name_native: سبتمبر نت
+  url: https://www.26sepnews.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: newspaper
+  source_group: yemen_state_irg
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.26sepnews.net/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Arabic RSS 2.0 'سبتمبر نت', 10 items, newest 2026-10-02.
+  - url: https://en.26sepnews.net/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0 '26 September Net', 10 items, newest 2026-10-01.
+  ownership:
+    description: Self-described official spokesman website of the Yemeni Armed Forces (IRG). Wikipedia lists 26sepnews.net
+      as the government (PLC) version of 26 September.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: IRG Ministry of Defense / armed forces
+        confidence: 0.9
+      conflict_alignment:
+        value: IRG / Saudi-led coalition side
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia names www.26sepnews.net as the IRG/PLC edition of 26 September; the site calls itself the
+      official voice of the armed forces.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Military media. Do not merge with 26-september-sanaa.
+- id: almotamar-net
+  name: Al-Motamar Net
+  name_native: المؤتمر نت
+  url: https://www.almotamar.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  - sanaa
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.almotamar.net/news/rsscatfeed.php?category=1
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 25 items, newest 2026-10-02. Other categories use the same pattern with category=N.
+  ownership:
+    description: Electronic newspaper of the General People's Congress (self-description).
+    evidence_urls:
+    - https://www.almotamar.net/
+    - https://medialandscapes.org/country/yemen/media/print
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: General People's Congress (GPC)
+        confidence: 0.9
+      conflict_alignment:
+        value: appears to follow the Sanaa-based GPC wing (uses 'Saudi aggression' wording); unconfirmed
+        confidence: 0.4
+    confidence: 0.85
+    evidence: The site says it is published by the General People's Congress; Media Landscapes lists Al-Motamar
+      as the GPC paper.
+    evidence_urls:
+    - https://www.almotamar.net/
+    - https://medialandscapes.org/country/yemen/media/print
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: The GPC split after 2017. Item wording on 2026-10-02 ('طيران العدوان السعودي') matches the Sanaa wing,
+    but no documented source confirms which wing runs the site.
+- id: almethaq-net
+  name: Al-Methaq Net
+  name_native: الميثاق نت
+  url: https://www.almethaq.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.almethaq.net/news/rsscatfeed.php?category=2
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: 'RSS 2.0, 8 items, newest 2026-09-26. Other categories: 3, 5, 6, 7, 16.'
+  ownership:
+    description: The feed describes itself as 'لسان حال حزب المؤتمر الشعبي العام' (organ of the General People's
+      Congress).
+    evidence_urls:
+    - https://www.almethaq.net/news/rsscatfeed.php?category=2
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: General People's Congress (GPC)
+        confidence: 0.85
+    confidence: 0.8
+    evidence: The outlet's own feed calls it the voice of the General People's Congress.
+    evidence_urls:
+    - https://www.almethaq.net/news/rsscatfeed.php?category=2
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Which GPC wing runs it is not documented.
+- id: alsahwa-net
+  name: Al-Sahwa Net
+  name_native: الصحوة نت
+  url: https://alsahwa-yemen.net/
+  country: YE
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://alsahwayemen.net/RSS=1
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Latest news. RSS 2.0, 10 items, newest 2026-10-02.
+  - url: https://alsahwayemen.net/RSS=5
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English news category. RSS 2.0, 10 items, newest 2026-09-30. Channel language is tagged ar, but the items
+      are in English.
+  ownership:
+    description: Online edition of Al-Sahwa newspaper, which the site calls 'the official voice of the Yemeni Reform
+      Gathering (Islah)'.
+    evidence_urls:
+    - https://alsahwa-yemen.net/
+    - https://medialandscapes.org/country/yemen/media/print
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Yemeni Congregation for Reform (Islah)
+        confidence: 0.9
+      conflict_alignment:
+        value: IRG / anti-Houthi side
+        confidence: 0.8
+    confidence: 0.9
+    evidence: 'Media Landscapes: ''one of the official media outlets of the Islah Party''. The site describes itself
+      the same way.'
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+    - https://alsahwa-yemen.net/
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Feed list is at https://alsahwa-yemen.net/RSSLink. Feeds are served from alsahwayemen.net (no hyphen).
+- id: alislah-net
+  name: Al-Islah Party Website
+  name_native: موقع التجمع اليمني للإصلاح
+  url: https://alislah-ye.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://alislah-ye.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but WebFetch received HTML.
+  ownership:
+    description: Official website of the Yemeni Congregation for Reform (Islah) (self-description).
+    evidence_urls:
+    - https://alislah-ye.net/
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Yemeni Congregation for Reform (Islah)
+        confidence: 0.95
+    confidence: 0.95
+    evidence: Official party website, by its own description.
+    evidence_urls:
+    - https://alislah-ye.net/
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage active (2026-10-02). Retest rss.php from the ingest host.
+- id: suhail-tv
+  name: Suhail TV
+  name_native: قناة سهيل
+  url: https://suhail.net/
+  country: YE
+  languages:
+  - ar
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: outside_yemen
+  yemen_coverage: primary
+  feeds:
+  - url: https://suhail.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but WebFetch received HTML. /rss is 404.
+  ownership:
+    description: Founded in Sanaa in 2009; moved abroad after a Houthi raid in 2014 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Suhail_TV
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Yemeni Congregation for Reform (Islah)
+        confidence: 0.85
+      conflict_alignment:
+        value: IRG / anti-Houthi side
+        confidence: 0.7
+    confidence: 0.85
+    evidence: 'Wikipedia: ''affiliated with the Al-Islah party''. Media Landscapes: ''operated by Al-Islah political
+      party''.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Suhail_TV
+    - https://medialandscapes.org/country/yemen/media/television
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Website active (2026-10-02).
+- id: stc-official
+  name: Southern Transitional Council official site
+  name_native: المجلس الانتقالي الجنوبي
+  url: https://www.stcaden.com/
+  country: YE
+  languages:
+  - ar
+  source_type: government
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - south
+  - aden
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.stcaden.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'كل الأخبار', 11 items, newest 2026-10-02.
+  ownership:
+    description: Official platform of the Southern Transitional Council (self-description).
+    evidence_urls:
+    - https://www.stcaden.com/
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Southern Transitional Council (STC) / southern separatist movement
+        confidence: 0.9
+      conflict_alignment:
+        value: southern separatist; UAE-backed (per CPJ 2026)
+        confidence: 0.7
+    confidence: 0.9
+    evidence: 'The site presents itself as the council''s official platform. Note: the STC announced its dissolution
+      on 2026-01-10, but the site was still publishing council statements in Oct 2026.'
+    evidence_urls:
+    - https://www.stcaden.com/
+    - https://www.bluewin.ch/en/news/international/large-demonstration-in-yemen-due-to-dissolution-of-separatist-organization-li.3043869
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: The STC's status after the January 2026 dissolution is contested; recheck before labelling outputs. operating_base
+    left unknown for the same reason.
+- id: aic-tv
+  name: Aden Independent Channel (AIC)
+  name_native: قناة عدن المستقلة
+  url: https://www.aicaden.net/
+  country: YE
+  languages:
+  - ar
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - south
+  - aden
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds: []
+  ownership:
+    description: Satellite channel on Eutelsat 7 West A; LyngSat lists website aicaden.net.
+    evidence_urls:
+    - https://www.lyngsat.com/tvchannels/ye/AIC-TV.html
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Southern Transitional Council / southern separatist movement
+        confidence: 0.6
+    confidence: 0.6
+    evidence: A January 2026 news report calls AIC TV a separatist-allied television station. No watchdog source
+      found yet; confidence moderate.
+    evidence_urls:
+    - https://www.bluewin.ch/en/news/international/large-demonstration-in-yemen-due-to-dissolution-of-separatist-organization-li.3043869
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'aicaden.net returned 403 to WebFetch; no feed found. operating_base left unknown rather than stc_controlled:
+    Aden-based, but the STC announced its dissolution on 2026-01-10 and who controls Aden today is not documented
+    here.'
+- id: al-wahdawi-net
+  name: Al-Wahdawi Net
+  name_native: الوحدوي نت
+  url: https://alwahdawi.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://alwahdawi.net/rss_news/rss_1.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Local news. RSS 2.0, 50 items, newest 2026-10-02. Index of 8 category feeds at /rss.
+  ownership:
+    description: Al-Wahdawi is listed by Wikipedia as the 'Organ of the Naseri Unionist People's Organization';
+      RSF calls it an opposition weekly.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/List_of_newspapers_in_Yemen
+    - https://rsf.org/en/editor-opposition-weekly-al-wahdawi-threatened
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Nasserist Unionist People's Organisation
+        confidence: 0.7
+    confidence: 0.7
+    evidence: Wikipedia's list of Yemeni newspapers gives Al-Wahdawi as the organ of the Nasserist Unionist People's
+      Organisation. The website itself does not state the link, so confidence is moderate.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/List_of_newspapers_in_Yemen
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Linked to the party through the print weekly of the same name; the website does not state the affiliation
+    itself.
+- id: al-eshteraki-net
+  name: Al-Eshteraki Net
+  name_native: الاشتراكي نت
+  url: https://www.aleshteraki.net/
+  country: YE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: yemen_actor_affiliated
+  geographic_focus:
+  - national
+  operating_base: unknown
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.aleshteraki.net/?format=feed&type=rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS envelope, zero items.
+  - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS but 3 items, newest 2023-09-23 (stale opinion module).
+  - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS but 3 items, newest 2023-04-07 (stale).
+  ownership:
+    description: Platform of the Yemeni Socialist Party (site self-description).
+    evidence_urls:
+    - https://www.aleshteraki.net/
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Yemeni Socialist Party (YSP)
+        confidence: 0.75
+    confidence: 0.7
+    evidence: The site presents itself as the Yemeni Socialist Party's outlet.
+    evidence_urls:
+    - https://www.aleshteraki.net/
+    method: manual_research
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Homepage active (2026-10-02) but no feed carries current items.

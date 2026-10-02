@@ -1,0 +1,2405 @@
+# Arab, regional, Iranian and Turkish media covering Yemen.
+# Feeds marked verified: true were fetched and parsed on 2026-10-02.
+# yemen_coverage values are estimates. Orientation labels used: state_aligned,
+# state_funded (public-service/state-funded international broadcasters), actor_aligned, unknown.
+- id: spa-saudi-press-agency
+  name: Saudi Press Agency (SPA)
+  name_native: وكالة الأنباء السعودية
+  url: https://www.spa.gov.sa/
+  country: SA
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: State news agency of Saudi Arabia under the Ministry of Media.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saudi_Press_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Saudi Arabia
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia describes SPA as the state news agency of Saudi Arabia, parent agency the Ministry of Media.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saudi_Press_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. spa.gov.sa/en/rss returned an HTML page; homepage lists no feed links.
+- id: asharq-al-awsat
+  name: Asharq Al-Awsat
+  name_native: الشرق الأوسط
+  url: https://aawsat.com/
+  country: GB
+  languages:
+  - ar
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://aawsat.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic site-wide feed (100+ items). Channel title reads 'Mailchimptemplate'.
+  - url: https://english.aawsat.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English edition site-wide feed.
+  ownership:
+    description: Saudi-owned pan-Arab daily headquartered in London; published by Saudi Research and Media Group (SRMG). Wikipedia names Faisal bin Salman Al Saud as owner.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Asharq_Al-Awsat
+    - https://en.wikipedia.org/wiki/Saudi_Research_and_Media_Group
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Saudi Arabia
+        confidence: 0.6
+    confidence: 0.6
+    evidence: 'Wikipedia: founded with the approval of the Saudi royal family and government ministers and noted for its support of the Saudi government. Owned through SRMG, not directly by the state.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Asharq_Al-Awsat
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Based in London but Saudi-owned; country set to GB (base).
+- id: al-arabiya
+  name: Al Arabiya
+  name_native: العربية
+  url: https://www.alarabiya.net/
+  country: SA
+  languages:
+  - ar
+  - en
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.alarabiya.net/feed/rss2/ar.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic homepage feed; small (about 8 items) so poll frequently.
+  - url: https://english.alarabiya.net/feed/rss2/en.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Al Arabiya English homepage feed (about 20 items).
+  ownership:
+    description: Subsidiary of MBC Group, based in Riyadh. Wikipedia reports Saudi Arabia's Public Investment Fund acquired a 54% stake in MBC Group in 2025.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Arabiya
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Saudi Arabia
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Wikipedia describes Al Arabiya as a Saudi state-owned channel; parent MBC Group is majority-owned by the Public Investment Fund since 2025.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Arabiya
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: okaz
+  name: Okaz
+  name_native: عكاظ
+  url: https://www.okaz.com.sa/
+  country: SA
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.okaz.com.sa/rssFeed/0
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Section 0; items seen were Arab/world general news. Section label not confirmed.
+  - url: https://www.okaz.com.sa/rssFeed/1
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Section 1; local Saudi news (included missile-interception items). Section label not confirmed.
+  ownership:
+    description: 'Published by the Okaz Organization for Press and Publication, Jeddah. Wikipedia: one of two major Saudi print outlets without an Al Saud family shareholder; reportedly close to the late
+      Crown Prince Nayef.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Okaz
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'yemen_coverage is an estimate, not measured. Orientation left unknown: only a ''reportedly close to'' claim is documented.'
+- id: al-riyadh
+  name: Al Riyadh
+  name_native: الرياض
+  url: https://www.alriyadh.com/
+  country: SA
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Owned and published by Al Yamamah Press Establishment, Riyadh.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Riyadh_(newspaper)
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Saudi Arabia
+        confidence: 0.6
+    confidence: 0.6
+    evidence: Wikipedia cites a 2023 study saying the paper is under the control of Crown Prince Mohammed bin Salman, and WAN regards it as semi-official.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Riyadh_(newspaper)
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. alriyadh.com/rss blocked by fetch tool (robots); homepage lists no feed links.
+- id: arab-news
+  name: Arab News
+  name_native: عرب نيوز
+  url: https://www.arabnews.com/
+  country: SA
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.arabnews.com/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 60 items). /cat/2/rss.xml returned HTML, not a feed.
+  ownership:
+    description: English-language daily based in Riyadh, published by Saudi Research and Media Group (SRMG).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Arab_News
+    - https://en.wikipedia.org/wiki/Saudi_Research_and_Media_Group
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Saudi Arabia
+        confidence: 0.6
+    confidence: 0.6
+    evidence: Wikipedia cites AP and Haaretz describing it as reflecting official Saudi government positions; owned via SRMG.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Arab_News
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: independent-arabia
+  name: Independent Arabia
+  name_native: إندبندنت عربية
+  url: https://www.independentarabia.com/
+  country: GB
+  languages:
+  - ar
+  source_type: news_website
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Arabic edition of The Independent, operated under licence by Saudi Research and Media Group (SRMG) since 2019.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Independent_Arabia
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. independentarabia.com/rss could not be fetched (robots.txt error). Orientation left unknown:
+    licence arrangement documented, editorial line not.'
+- id: wam-emirates-news-agency
+  name: Emirates News Agency (WAM)
+  name_native: وكالة أنباء الإمارات
+  url: https://www.wam.ae/
+  country: AE
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Official news agency of the UAE; since 2025 under the National Media Authority.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Emirates_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of the United Arab Emirates
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia describes WAM as the official news agency of the UAE, operating under the federal National Media Authority.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Emirates_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. wam.ae/en/rss returned HTML with no feed links.
+- id: al-khaleej
+  name: Al Khaleej
+  name_native: الخليج
+  url: https://www.alkhaleej.ae/
+  country: AE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.alkhaleej.ae/rssFeed/159
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''Arab and World'' (عرب وعالم) section feed, listed on alkhaleej.ae/rss.'
+  ownership:
+    description: Published by Dar Al Khaleej, Sharjah; founded by brothers Taryam and Abdullah Omran Taryam. No government ownership documented in the source consulted.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Khaleej_(newspaper)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-bayan
+  name: Al Bayan
+  name_native: البيان
+  url: https://www.albayan.ae/
+  country: AE
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. albayan.ae/rss and /rss.xml returned 404; homepage lists no feed links. Ownership not yet
+    researched.
+- id: the-national
+  name: The National
+  url: https://www.thenationalnews.com/
+  country: AE
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide Arc outbound feed (about 16 items).
+  ownership:
+    description: Owned by International Media Investments (IMI), owned by Sheikh Mansour bin Zayed Al Nahyan, UAE Vice President.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of the United Arab Emirates (Abu Dhabi)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: owned by IMI (Mansour bin Zayed); ''toes the government line'', and the FT calls it a mouthpiece for Abu Dhabi''s worldview.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: sky-news-arabia
+  name: Sky News Arabia
+  name_native: سكاي نيوز عربية
+  url: https://www.skynewsarabia.com/
+  country: AE
+  languages:
+  - ar
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.skynewsarabia.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''Today''s news'' site-wide feed (50+ items).'
+  ownership:
+    description: 'Headquartered in Abu Dhabi. Wikipedia: fully owned by International Media Investments (UAE government entity) since 31 May 2026, when Sky Group withdrew from the former 50/50 joint venture.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_News_Arabia
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of the United Arab Emirates
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: wholly owned since May 2026 by International Media Investments, listed as a UAE government entity.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_News_Arabia
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-ain-news
+  name: Al Ain News
+  name_native: العين الإخبارية
+  url: https://al-ain.com/
+  country: AE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. al-ain.com/feed returned 404; homepage lists no feed links. Ownership not documented in a
+    source fetched for this file.
+- id: gulf-news
+  name: Gulf News
+  url: https://gulfnews.com/
+  country: AE
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://gulfnews.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 15 items, UAE-heavy).
+  ownership:
+    description: Owned by Al Nisr Publishing, a subsidiary of Al Tayer Group (chaired by former UAE Finance Minister Obaid Al Tayer), Dubai.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Gulf_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Added beyond the requested list because a feed verified. No direct state ownership documented, so orientation unknown.
+- id: ona-oman-news-agency
+  name: Oman News Agency (ONA)
+  name_native: وكالة الأنباء العمانية
+  url: https://omannews.gov.om/
+  country: OM
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Official news agency of the government of Oman.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Oman_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Oman
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia describes ONA as the official news agency of the government of Oman.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Oman_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Homepage mentions an RSS service but exposes no feed URL. Oman mediates in Yemen, so coverage
+    may be higher than estimated.
+- id: times-of-oman
+  name: Times of Oman
+  url: https://timesofoman.com/
+  country: OM
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /rss and /rss/latest returned 404; homepage (live, 2026-10-02) lists no feed links. Ownership
+    not yet researched.
+- id: oman-observer
+  name: Oman Observer
+  url: https://www.omanobserver.om/
+  country: OM
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.omanobserver.om/rssFeed/55
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''World'' section feed (50 items); listed on omanobserver.om/rss.'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: atheer
+  name: Atheer
+  name_native: أثير
+  url: https://www.atheer.om/
+  country: OM
+  languages:
+  - ar
+  source_type: news_website
+  source_group: arab_gulf
+  geographic_focus:
+  - national
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /feed/ returned 404; homepage (Omani outlet, live) lists no feed links.
+- id: qna-qatar-news-agency
+  name: Qatar News Agency (QNA)
+  name_native: وكالة الأنباء القطرية
+  url: https://www.qna.org.qa/
+  country: QA
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://qna.org.qa/en/Pages/RSS-Feeds/General
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English 'General' feed (50 items), listed on qna.org.qa/en/RSS-Feeds.
+  ownership:
+    description: State news agency attached to the Ministry of Information / Ministry of Communications and IT.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Qatar_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Qatar
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: QNA is a state-run agency attached to the Ministry of Information.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Qatar_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-jazeera-arabic
+  name: Al Jazeera Arabic
+  name_native: الجزيرة
+  url: https://www.aljazeera.net/
+  country: QA
+  languages:
+  - ar
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Al Jazeera Net main feed (about 25 items).
+  ownership:
+    description: 'Al Jazeera Media Network: Wikipedia describes it as a private foundation for public benefit primarily funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Qatar
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: owned by Qatar and primarily funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-jazeera-english
+  name: Al Jazeera English
+  url: https://www.aljazeera.com/
+  country: QA
+  languages:
+  - en
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://www.aljazeera.com/xml/rss/all.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 26 items).
+  ownership:
+    description: 'Al Jazeera Media Network: Wikipedia describes it as a private foundation for public benefit primarily funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Qatar
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: owned by Qatar and primarily funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-araby-al-jadeed
+  name: Al-Araby Al-Jadeed
+  name_native: العربي الجديد
+  url: https://www.alaraby.co.uk/
+  country: GB
+  languages:
+  - ar
+  source_type: news_website
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.alaraby.co.uk/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 10 items); poll frequently.
+  ownership:
+    description: London-based pan-Arab outlet owned by Qatari company Fadaat Media; Wikipedia cites academic analysis that it was established by Emir Tamim bin Hamad Al Thani.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Qatar (indirect)
+        confidence: 0.5
+    confidence: 0.5
+    evidence: 'Wikipedia: owned by Qatari company Fadaat Media; academic analysis cited says it was set up by Qatar''s emir. Ownership is indirect.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: the-new-arab
+  name: The New Arab
+  url: https://www.newarab.com/
+  country: GB
+  languages:
+  - en
+  source_type: news_website
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.newarab.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 20 items).
+  ownership:
+    description: English edition of Al-Araby Al-Jadeed. London-based pan-Arab outlet owned by Qatari company Fadaat Media; Wikipedia cites academic analysis that it was established by Emir Tamim bin Hamad
+      Al Thani.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Qatar (indirect)
+        confidence: 0.5
+    confidence: 0.5
+    evidence: 'Wikipedia: parent Al-Araby Al-Jadeed is owned by Qatari company Fadaat Media and was reportedly set up by Qatar''s emir.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: al-sharq-qatar
+  name: Al Sharq
+  name_native: الشرق
+  url: https://al-sharq.com/
+  country: QA
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://al-sharq.com/category/عربي-ودولي/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''Arab and International'' section feed (26 items). URL contains Arabic; percent-encode if the fetcher needs it.'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: the-peninsula
+  name: The Peninsula
+  url: https://thepeninsulaqatar.com/
+  country: QA
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /rss returned a 404 page; homepage lists no feed links.
+- id: kuna-kuwait-news-agency
+  name: Kuwait News Agency (KUNA)
+  name_native: وكالة الأنباء الكويتية
+  url: https://www.kuna.net.kw/
+  country: KW
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Functions in practice as a branch of the Ministry of Information.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Kuwait_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Kuwait
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: KUNA functions in practice as a branch of the Ministry of Information.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Kuwait_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. kuna.net.kw timed out from the fetch tool; site not checked.
+- id: al-qabas
+  name: Al-Qabas
+  name_native: القبس
+  url: https://www.alqabas.com/
+  country: KW
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /feed returned 404; homepage (live) lists no feed links.
+- id: bna-bahrain-news-agency
+  name: Bahrain News Agency (BNA)
+  name_native: وكالة أنباء البحرين
+  url: https://www.bna.bh/
+  country: BH
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Run under the Ministry of Information Affairs.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Bahrain_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Bahrain
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: the agency is run under the Ministry of Information Affairs.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Bahrain_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. bna.bh returned HTTP 405 to the fetch tool.
+- id: al-ayam-bahrain
+  name: Al Ayam
+  name_native: الأيام
+  url: https://www.alayam.com/
+  country: BH
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Homepage live (Bahrain); /rss disallowed by robots.txt for the fetch tool.
+- id: akhbar-al-khaleej
+  name: Akhbar Al Khaleej
+  name_native: أخبار الخليج
+  url: https://www.akhbar-alkhaleej.com/
+  country: BH
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Site returned a CAPTCHA page to the fetch tool.
+- id: al-ahram
+  name: Al-Ahram
+  name_native: الأهرام
+  url: https://gate.ahram.org.eg/
+  country: EG
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_egypt
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Majority owned by the Egyptian government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Ahram
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Egypt
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: Al-Ahram is majority owned by the Egyptian government.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Ahram
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. gate.ahram.org.eg/rss/0.aspx returned 404.
+- id: ahram-online
+  name: Ahram Online
+  url: https://english.ahram.org.eg/
+  country: EG
+  languages:
+  - en
+  source_type: news_website
+  source_group: arab_egypt
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: English-language website of Al-Ahram, which is majority owned by the Egyptian government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Ahram
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Egypt
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: Ahram Online is Al-Ahram''s English website; Al-Ahram is majority owned by the Egyptian government.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Ahram
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. english.ahram.org.eg/rss/0.aspx returned 404; homepage lists no feed links.
+- id: mena-middle-east-news-agency
+  name: Middle East News Agency (MENA)
+  name_native: وكالة أنباء الشرق الأوسط
+  url: https://www.mena.org.eg/
+  country: EG
+  languages:
+  - ar
+  - en
+  - fr
+  source_type: news_agency
+  source_group: arab_egypt
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.mena.org.eg/ar/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Linked from the homepage, but on 2026-10-02 it returned HTML, not a feed.
+  ownership:
+    description: Run and controlled by the Egyptian government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Egypt
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: MENA is run and controlled by the Egyptian government.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: mada-masr
+  name: Mada Masr
+  name_native: مدى مصر
+  url: https://www.madamasr.com/
+  country: EG
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: arab_egypt
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /en/feed/ and /feed/ returned HTTP 403 to the fetch tool; homepage live.
+- id: al-masry-al-youm
+  name: Al-Masry Al-Youm
+  name_native: المصري اليوم
+  url: https://www.almasryalyoum.com/
+  country: EG
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_egypt
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Site blocked for the fetch tool.
+- id: al-mayadeen
+  name: Al Mayadeen
+  name_native: الميادين
+  url: https://www.almayadeen.net/
+  country: LB
+  languages:
+  - ar
+  - en
+  source_type: tv
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Beirut-based channel founded in 2012 by former Al Jazeera staff; ownership opaque (initially 'anonymous Arab businessmen').
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Mayadeen
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Hezbollah / Iran-aligned 'Axis of Resistance' (as characterised by secondary sources)
+        confidence: 0.6
+    confidence: 0.6
+    evidence: 'Wikipedia: categorised by many media outlets as pro-Hezbollah, pro-Assad and Iran-aligned; a 2019 LSE report says it was mooted to be backed by Iranian money.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Mayadeen
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /rss and english.almayadeen.net/rss returned HTTP 403.
+- id: al-akhbar-lebanon
+  name: Al Akhbar
+  name_native: الأخبار
+  url: https://al-akhbar.com/
+  country: LB
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Owned by Akhbar Beirut S.A.L.; founded by Joseph Samaha and Ibrahim Al Amin.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Akhbar_(Lebanon)
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: March 8 alliance (incl. Hezbollah), as perceived
+        confidence: 0.5
+    confidence: 0.5
+    evidence: 'Wikipedia: self-described independent and progressive, but perceived as pro-March 8th (the coalition including Hezbollah).'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Akhbar_(Lebanon)
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /rss returned 404; homepage lists no feed links.
+- id: annahar
+  name: Annahar
+  name_native: النهار
+  url: https://www.annahar.com/
+  country: LB
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://www.annahar.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 8 items); poll frequently.
+  ownership:
+    description: 'Wikipedia: Saudi Prince Al-Waleed bin Talal holds a stake.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Annahar
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'yemen_coverage is an estimate, not measured. Orientation unknown: Wikipedia notes it backed the March 14 alliance in the 2000s; current position not documented.'
+- id: al-quds-al-arabi
+  name: Al-Quds Al-Arabi
+  name_native: القدس العربي
+  url: https://www.alquds.co.uk/
+  country: GB
+  languages:
+  - ar
+  source_type: newspaper
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.alquds.co.uk/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 10 items); poll frequently.
+  ownership:
+    description: London-based; founded by Palestinian expatriates. Wikipedia cites 2013 reports that it is now owned by Qatari media interests through intermediaries, and says Qatar has subsidised it possibly
+      since 1998.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Quds_Al-Arabi
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'yemen_coverage is an estimate, not measured. Orientation left unknown: Qatari ownership is reported via intermediaries, not confirmed.'
+- id: roya-news
+  name: Roya News
+  name_native: رؤيا
+  url: https://royanews.tv/
+  country: JO
+  languages:
+  - ar
+  source_type: tv
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://royanews.tv/rss
+    type: atom
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Atom 1.0 feed (20 entries).
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: jordan-times
+  name: The Jordan Times
+  url: https://jordantimes.com/
+  country: JO
+  languages:
+  - en
+  source_type: newspaper
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://jordantimes.com/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Linked from the homepage footer; robots.txt blocked the fetch tool, so not verified.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: petra-jordan-news-agency
+  name: Jordan News Agency (Petra)
+  name_native: وكالة الأنباء الأردنية - بترا
+  url: https://petra.gov.jo/
+  country: JO
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Established 1969 as an independent body linked to the Ministry of Information.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Jordan_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Jordan
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: Petra is linked to the Ministry of Information, under the Minister of State for Media Affairs.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Jordan_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. robots.txt blocked the fetch tool.
+- id: enab-baladi
+  name: Enab Baladi
+  name_native: عنب بلدي
+  url: https://www.enabbaladi.net/
+  country: SY
+  languages:
+  - ar
+  - en
+  source_type: news_website
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://www.enabbaladi.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic site-wide feed.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Syria-focused; Yemen coverage expected to be rare. Ownership not yet researched.
+- id: ina-iraqi-news-agency
+  name: Iraqi News Agency (INA)
+  name_native: وكالة الأنباء العراقية
+  url: https://www.ina.iq/
+  country: IQ
+  languages:
+  - ar
+  - en
+  source_type: news_agency
+  source_group: arab_iraq
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Revived in 2017 as the state-run news agency of Iraq.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Iraqi_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Iraq
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: since 2017 INA is the state-run news agency of Iraq.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Iraqi_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Homepage lists no feed links.
+- id: shafaq-news
+  name: Shafaq News
+  name_native: شفق نيوز
+  url: https://shafaq.com/
+  country: IQ
+  languages:
+  - ar
+  - en
+  - ku
+  source_type: news_website
+  source_group: arab_iraq
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://shafaq.com/en/Middle-East?rss=1
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English 'Middle East' section feed (25 items); listed in the site footer.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: rudaw
+  name: Rudaw
+  name_native: رووداو
+  url: https://www.rudaw.net/
+  country: IQ
+  languages:
+  - ku
+  - ar
+  - en
+  - tr
+  source_type: tv
+  source_group: arab_iraq
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Funded and supported by Rudaw Company; based in Erbil, Kurdistan Region.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Rudaw_Media_Network
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Kurdistan Democratic Party (KDP) / Barzani family
+        confidence: 0.6
+    confidence: 0.6
+    evidence: 'Wikipedia: multiple sources document connections to the KDP and Nechirvan Barzani; it was temporarily banned in Syrian Kurdistan over partisan reporting.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Rudaw_Media_Network
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. /rss, /english/rss and rudawarabia.net/arabic/rss returned HTML.
+- id: hespress
+  name: Hespress
+  name_native: هسبريس
+  url: https://www.hespress.com/
+  country: MA
+  languages:
+  - ar
+  - en
+  - fr
+  source_type: news_website
+  source_group: arab_maghreb
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://www.hespress.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic site-wide feed (10 items).
+  - url: https://en.hespress.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English edition feed (10 items).
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: tap-tunis-afrique-presse
+  name: Tunis Afrique Presse (TAP)
+  name_native: وكالة تونس إفريقيا للأنباء
+  url: https://www.tap.info.tn/
+  country: TN
+  languages:
+  - ar
+  - fr
+  - en
+  source_type: news_agency
+  source_group: arab_maghreb
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Tunisian national news agency. The Wikipedia article consulted does not state its ownership structure.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Tunis_Afrique_Presse
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. TLS certificate error from the fetch tool. Orientation left unknown because the source consulted
+    did not document ownership.
+- id: aps-algeria-press-service
+  name: Algeria Press Service (APS)
+  name_native: وكالة الأنباء الجزائرية
+  url: https://www.aps.dz/
+  country: DZ
+  languages:
+  - ar
+  - fr
+  - en
+  source_type: news_agency
+  source_group: arab_maghreb
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: 'Owner: Government of Algeria.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Algeria_Press_Service
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Algeria
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia lists the owner as the Government of Algeria.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Algeria_Press_Service
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Homepage live (2026-10-02) but lists no feed links.
+- id: echorouk
+  name: Echorouk Online
+  name_native: الشروق أونلاين
+  url: https://www.echoroukonline.com/
+  country: DZ
+  languages:
+  - ar
+  source_type: news_website
+  source_group: arab_maghreb
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://www.echoroukonline.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (10 items).
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Ownership not yet researched.
+- id: bbc-arabic
+  name: BBC News Arabic
+  name_native: بي بي سي عربي
+  url: https://www.bbc.com/arabic
+  country: GB
+  languages:
+  - ar
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://feeds.bbci.co.uk/arabic/middleeast/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Standard BBC feed path; the fetch tool blocks bbci.co.uk, so not verified. Also try https://feeds.bbci.co.uk/arabic/rss.xml.
+  ownership:
+    description: Part of BBC World Service; funded since 2014 from the UK television licence fee (previously Foreign Office grant-in-aid).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_News_Arabic
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: UK public broadcaster (BBC World Service)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: operated by BBC World Service and funded by the licence fee (Foreign Office grant before 2014). Public funding is not editorial alignment.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_News_Arabic
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: france24-arabic
+  name: France 24 Arabic
+  name_native: فرانس 24
+  url: https://www.france24.com/ar/
+  country: FR
+  languages:
+  - ar
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.france24.com/ar/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: robots.txt blocked the fetch tool, so not verified.
+  ownership:
+    description: France Médias Monde, 100% owned by the French State; funded by state subsidies and, since 2022, VAT revenue.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_24
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: French state (France Médias Monde)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: France 24''s parent France Médias Monde is 100% owned by the French State.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_24
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: dw-arabic
+  name: DW Arabic
+  name_native: دويتشه فيله عربية
+  url: https://www.dw.com/ar/
+  country: DE
+  languages:
+  - ar
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://rss.dw.com/rdf/rss-ar-all
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Standard DW feed path; the fetch tool blocks rss.dw.com, so not verified.
+  ownership:
+    description: Deutsche Welle is funded from federal tax revenue; Arabic service since 1959.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Deutsche_Welle
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: German federal government (public broadcaster)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: DW is funded from federal grants out of tax revenue.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Deutsche_Welle
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: rt-arabic
+  name: RT Arabic
+  name_native: آر تي عربي
+  url: https://arabic.rt.com/
+  country: RU
+  languages:
+  - ar
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://arabic.rt.com/rss/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Returned HTTP 403 to the fetch tool, so not verified.
+  ownership:
+    description: Parent company TV-Novosti, an autonomous non-commercial organisation owned by the Russian Federation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_Arabic
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Russia
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: RT Arabic''s parent TV-Novosti is owned by the Russian Federation.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_Arabic
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: sputnik-arabic
+  name: Sputnik Arabic
+  name_native: سبوتنيك عربي
+  url: https://sarabic.ae/
+  country: RU
+  languages:
+  - ar
+  source_type: news_agency
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://sarabic.ae/export/rss2/archive/index.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide archive feed (50 items).
+  ownership:
+    description: Sputnik is a Russian state-owned agency established by Rossiya Segodnya.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sputnik_(news_agency)
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Russia
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: Sputnik is a Russian state-owned news agency set up by Rossiya Segodnya.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sputnik_(news_agency)
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: cnn-arabic
+  name: CNN Arabic
+  name_native: سي إن إن بالعربية
+  url: https://arabic.cnn.com/
+  country: AE
+  languages:
+  - ar
+  source_type: news_website
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Part of the CNN network (Warner Bros. Discovery); website based in Dubai, launched 2002.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/CNN_Arabic
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Site live; /api/v1/rss/rss.xml disallowed by robots.txt for the fetch tool.
+- id: trt-arabi
+  name: TRT Arabi
+  name_native: تي آر تي عربي
+  url: https://www.trtarabi.com/
+  country: TR
+  languages:
+  - ar
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Arabic service of TRT (Turkish Radio and Television Corporation), a state entity.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TRT_World
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Turkey
+        confidence: 0.7
+    confidence: 0.7
+    evidence: TRT Arabi belongs to TRT; Wikipedia's TRT World article quotes the US DOJ (2019) saying the Turkish government directs and controls TRT. TRT disputes this.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TRT_World
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Site live; /rss returned 404 and the homepage lists no feed links.
+- id: asharq-news
+  name: Asharq News
+  name_native: الشرق للأخبار
+  url: https://asharq.com/
+  country: SA
+  languages:
+  - ar
+  - en
+  source_type: tv
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Launched November 2020; subsidiary of Saudi Research and Media Group (SRMG). Bloomberg partners with SRMG on Asharq Business; SRMG owns the channel.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Asharq_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. asharq.com/rss returned HTTP 403. Orientation left unknown: SRMG shareholders are investment
+    funds and the royal family has no documented direct stake.'
+- id: alhurra
+  name: Alhurra
+  name_native: الحرة
+  url: https://www.alhurra.com/
+  country: US
+  languages:
+  - ar
+  source_type: news_website
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.alhurra.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (10 items). /rss returns the same feed.
+  ownership:
+    description: Run by Middle East Broadcasting Networks (MBN), US government-funded. TV broadcasts ended after the March 2025 funding cut; alhurra.com and social channels continue (digital-only).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Broadcasting_Networks
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: United States government (via MBN/USAGM)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: MBN is US government-funded; after the 2025 funding termination it continues digital-only through Alhurra.com.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Broadcasting_Networks
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'yemen_coverage is an estimate, not measured. Still operating in 2026 as a website only: the homepage and feed had items dated 2026-10-02.'
+- id: monte-carlo-doualiya
+  name: Monte Carlo Doualiya
+  name_native: مونت كارلو الدولية
+  url: https://www.mc-doualiya.com/
+  country: FR
+  languages:
+  - ar
+  source_type: radio
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.mc-doualiya.com/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: robots.txt blocked the fetch tool, so not verified.
+  ownership:
+    description: Subsidiary of France Médias Monde since 2012, 100% owned by the French State via the State Participation Agency (APE).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Monte_Carlo_Doualiya
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: French state (France Médias Monde)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: 'Wikipedia: subsidiary of France Médias Monde, 100% owned by the French State.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Monte_Carlo_Doualiya
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record.
+- id: irna
+  name: Islamic Republic News Agency (IRNA)
+  name_native: خبرگزاری جمهوری اسلامی
+  url: https://en.irna.ir/
+  country: IR
+  languages:
+  - fa
+  - en
+  - ar
+  source_type: news_agency
+  source_group: iran
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Government-funded; controlled under the Ministry of Culture and Islamic Guidance.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Iran
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: IRNA is government-funded and controlled under the Ministry of Culture and Islamic Guidance.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. en.irna.ir and ar.irna.ir timed out from the fetch tool (Iranian hosts often unreachable).
+- id: press-tv
+  name: Press TV
+  name_native: پرس تی وی
+  url: https://www.presstv.ir/
+  country: IR
+  languages:
+  - en
+  source_type: tv
+  source_group: iran
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://www.presstv.co.uk/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: presstv.ir/rss.xml redirects (302) here. Site-wide feed (100+ items).
+  ownership:
+    description: State-funded division of Islamic Republic of Iran Broadcasting (IRIB).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Press_TV
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Iran (IRIB)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: Press TV is state-funded and a division of IRIB.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Press_TV
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.
+- id: tasnim
+  name: Tasnim News Agency
+  name_native: خبرگزاری تسنیم
+  url: https://www.tasnimnews.ir/
+  country: IR
+  languages:
+  - fa
+  - en
+  - ar
+  source_type: news_agency
+  source_group: iran
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: 'Wikipedia: controlled by the IRGC (its largest media outlet). Main domain is tasnimnews.ir since tasnimnews.com went offline in January 2026.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Tasnim_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Islamic Revolutionary Guard Corps (IRGC)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: the IRGC controls Tasnim, its largest media outlet.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Tasnim_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. tasnimnews.com no longer resolves; tasnimnews.ir feed path errored.
+- id: al-alam
+  name: Al-Alam News Network
+  name_native: قناة العالم
+  url: https://www.alalam.ir/
+  country: IR
+  languages:
+  - ar
+  source_type: tv
+  source_group: iran
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: 'Owner: Islamic Republic of Iran Broadcasting (IRIB).'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Alam_News_Network
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Iran (IRIB)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Wikipedia lists the owner as Islamic Republic of Iran Broadcasting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Alam_News_Network
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. alalam.ir/rss returned a stale 2018 page; other paths failed (expired TLS certificate).
+- id: fars
+  name: Fars News Agency
+  name_native: خبرگزاری فارس
+  url: https://www.farsnews.ir/
+  country: IR
+  languages:
+  - fa
+  - en
+  - ar
+  source_type: news_agency
+  source_group: iran
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: 'Wikipedia: news agency close to the Islamic Revolutionary Guard Corps (IRGC).'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Fars_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Islamic Revolutionary Guard Corps (IRGC)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: Wikipedia describes Fars as close to the IRGC.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Fars_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. farsnews.ir timed out from the fetch tool.
+- id: mehr
+  name: Mehr News Agency
+  name_native: خبرگزاری مهر
+  url: https://en.mehrnews.com/
+  country: IR
+  languages:
+  - fa
+  - en
+  - ar
+  source_type: news_agency
+  source_group: iran
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Owned by the Iranian government's Islamic Development Organization.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mehr_News_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Iran (Islamic Development Organization)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: Mehr is owned by the government''s Islamic Development Organization.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mehr_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. mehrnews.com feeds unreachable from the fetch tool.
+- id: anadolu-agency
+  name: Anadolu Agency
+  name_native: Anadolu Ajansı
+  url: https://www.aa.com.tr/
+  country: TR
+  languages:
+  - tr
+  - en
+  - ar
+  source_type: news_agency
+  source_group: turkey
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.aa.com.tr/en/rss/default?cat=middle-east
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English Middle East feed (about 31 items). Channel title is generic 'Anadolu Ajansı Güncel Haberler'.
+  - url: https://www.aa.com.tr/en/rss/default?cat=world
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English World feed.
+  - url: https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic 'Arab countries' feed (Arabic items checked). URL contains Arabic; percent-encode if needed. cat=guncel errored on the ar site.
+  - url: https://www.aa.com.tr/tr/rss/default?cat=dunya
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Turkish World feed (30 items).
+  ownership:
+    description: State-run news agency headquartered in Ankara.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Anadolu_Agency
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Turkey
+        confidence: 0.9
+    confidence: 0.9
+    evidence: 'Wikipedia: Anadolu is a state-run news agency; since the AKP came to power it has been run by officials close to party leadership.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Anadolu_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured. Covers both the Turkey and pan-Arab (Anadolu Arabic) scope.
+- id: trt-world
+  name: TRT World
+  url: https://www.trtworld.com/
+  country: TR
+  languages:
+  - en
+  source_type: tv
+  source_group: turkey
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Owned by TRT (Turkish Radio and Television Corporation), a state entity funded by mandatory taxes and grants.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TRT_World
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: Government of Turkey
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia quotes the US DOJ (2019): the Turkish government directs and controls TRT through its leadership, budget and content. TRT World disputes this.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TRT_World
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02; kept for the record. Site live; /rss and /feed/rss returned 404 and the homepage lists no feed links.
+- id: daily-sabah
+  name: Daily Sabah
+  url: https://www.dailysabah.com/
+  country: TR
+  languages:
+  - en
+  source_type: newspaper
+  source_group: turkey
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.dailysabah.com/rss/world/mid-east
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Middle East section feed (50 items).
+  ownership:
+    description: Owned by Turkuvaz Media Group; Wikipedia says the owner is a friend of President Erdoğan.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Daily_Sabah
+  orientation:
+    simplified: movement_aligned
+    dimensions:
+      institutional_alignment:
+        value: Justice and Development Party (AKP) / Government of Turkey
+        confidence: 0.7
+    confidence: 0.7
+    evidence: Wikipedia cites Foreign Policy describing Daily Sabah as a mouthpiece of the AKP; privately owned by Turkuvaz Media Group.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Daily_Sabah
+    method: media_watchdog
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: yemen_coverage is an estimate, not measured.

@@ -1,0 +1,83 @@
+# Model registry seed. Selection rationale: docs/model-selection.md.
+# The pipeline registers the exact version it ran (backend + parameters) at run time;
+# these rows describe the candidates and defaults.
+- name: intfloat/multilingual-e5-small
+  provider: huggingface
+  license: MIT
+  url: https://huggingface.co/intfloat/multilingual-e5-small
+  tasks: [embedding]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Default embedding model. 118M params, 384 dims, CPU-friendly for daily batch runs.
+- name: Qwen/Qwen3-Embedding-0.6B
+  provider: huggingface
+  license: Apache-2.0
+  url: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+  tasks: [embedding]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Upgrade candidate (stronger multilingual retrieval; Matryoshka output truncated to 384 dims to fit the schema). ~5x slower on CPU.
+- name: BAAI/bge-m3
+  provider: huggingface
+  license: MIT
+  url: https://huggingface.co/BAAI/bge-m3
+  tasks: [embedding]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Upgrade candidate (1024 dims; would need a schema change or projection).
+- name: cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual
+  provider: huggingface
+  license: unspecified
+  url: https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual
+  tasks: [sentiment]
+  languages: [ar, en, fr, de, es, it]
+  description: Default multilingual polarity model. Trained on tweets, so domain shift to news is expected; see benchmark notes.
+- name: CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment
+  provider: huggingface
+  license: Apache-2.0
+  url: https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment
+  tasks: [sentiment]
+  languages: [ar]
+  description: Arabic polarity model (MSA + dialects) used for Arabic text.
+- name: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
+  provider: huggingface
+  license: MIT
+  url: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
+  tasks: [zero_shot, emotion, tone, framing, category]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Zero-shot NLI classifier used as the secondary model for categories, emotions, tone and frames.
+- name: Davlan/xlm-roberta-base-ner-hrl
+  provider: huggingface
+  license: AFL-3.0
+  url: https://huggingface.co/Davlan/xlm-roberta-base-ner-hrl
+  tasks: [ner]
+  languages: [ar, en, fr, de, es, it, zh]
+  description: Optional multilingual NER to surface entities missing from the gazetteer.
+- name: claude-haiku-4-5
+  provider: anthropic
+  license: commercial API
+  url: https://docs.anthropic.com/
+  tasks: [topic_labeling, framing, summary, ambiguity_review]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Optional tier-2 LLM for topic naming, hard cases and summaries. Disabled unless ANTHROPIC_API_KEY is set.
+- name: observatory/hashing-embedding
+  provider: internal
+  license: MIT
+  tasks: [embedding]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Fallback char n-gram hashing embedding (no download). Used only when transformer models are unavailable; lexical, not semantic.
+- name: observatory/lexicon
+  provider: internal
+  license: MIT
+  tasks: [sentiment, emotion, tone, framing, category]
+  languages: [ar, en, fr, de, es]
+  description: Deterministic multilingual lexicon/keyword methods (tier 1 fallback and keyword classifier).
+- name: observatory/gazetteer
+  provider: internal
+  license: MIT
+  tasks: [ner, geo]
+  languages: [ar, en, fr, de, es, it, tr, fa, ru, zh]
+  description: Alias-dictionary entity and location matcher built from database/seeds.
+- name: observatory/rule-events
+  provider: internal
+  license: MIT
+  tasks: [event_extraction]
+  languages: [ar, en, fr, de, es]
+  description: Trigger-word + gazetteer event extractor.

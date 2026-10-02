@@ -1,0 +1,281 @@
+# Yemen actor knowledge base. Only organisations, states and PUBLIC figures acting in
+# a public role. Do not add private individuals.
+#
+# alias: [surface form, language, alias_type, optional framing note]
+# alias_type: official | self_designation | common | descriptive | critical |
+#             transliteration | abbreviation
+# Aliases are deliberately NOT treated as framing-neutral: the terminology view
+# counts which outlets use which form. Framing notes describe typical usage and are
+# research hypotheses, not verdicts.
+
+- slug: ansar-allah
+  type: political_actor
+  subtype: movement
+  en: Ansar Allah (Houthi movement)
+  ar: أنصار الله (الحوثيون)
+  description: Zaydi-revivalist political and armed movement that has controlled Sana'a since 2014.
+  aliases:
+    - [Ansar Allah, en, self_designation]
+    - [Ansarullah, en, transliteration]
+    - [Houthis, en, common]
+    - [Houthi movement, en, common]
+    - [Houthi rebels, en, descriptive, "Frames the movement as insurgent; common in Western and Gulf media"]
+    - [Iran-backed Houthis, en, descriptive, "Foregrounds the Iran link"]
+    - [de facto authorities, en, descriptive, "UN and humanitarian usage; avoids recognising or delegitimising"]
+    - [Sanaa authorities, en, descriptive]
+    - [Sanaa government, en, descriptive, "Usage that treats the Sana'a administration as a government"]
+    - [أنصار الله, ar, self_designation]
+    - [الحوثيون, ar, common]
+    - [الحوثيين, ar, common]
+    - [جماعة الحوثي, ar, common]
+    - [ميليشيا الحوثي, ar, critical, "Common in government-aligned and Gulf media; implies illegitimacy"]
+    - [مليشيا الحوثي, ar, critical, "Spelling variant of the above"]
+    - [الميليشيات الحوثية, ar, critical]
+    - [الانقلابيين, ar, critical, "'Putschists'; government-aligned usage"]
+    - [سلطات الأمر الواقع, ar, descriptive]
+    - [سلطات صنعاء, ar, descriptive]
+    - [حكومة صنعاء, ar, descriptive]
+    - [houthistes, fr, common]
+    - [rebelles houthis, fr, descriptive]
+    - [Huthi-Miliz, de, critical]
+    - [Huthi-Rebellen, de, descriptive]
+    - [Huthis, de, common]
+    - [hutíes, es, common]
+    - [rebeldes hutíes, es, descriptive]
+    - [Husiler, tr, common]
+    - [хуситы, ru, common]
+    - [انصارالله, fa, self_designation]
+    - [حوثی‌ها, fa, common]
+
+- slug: supreme-political-council
+  type: political_actor
+  subtype: governing_body
+  en: Supreme Political Council (Sana'a)
+  ar: المجلس السياسي الأعلى
+  parent: ansar-allah
+  aliases:
+    - [Supreme Political Council, en, official]
+    - [المجلس السياسي الأعلى, ar, official]
+
+- slug: irg
+  type: political_actor
+  subtype: government
+  en: Internationally recognised government of Yemen
+  ar: الحكومة اليمنية المعترف بها دولياً
+  description: The government recognised by the UN, based mainly in Aden.
+  aliases:
+    - [internationally recognized government, en, descriptive]
+    - [internationally recognised government, en, descriptive]
+    - [Yemeni government, en, common]
+    - [legitimate government, en, self_designation]
+    - [Saudi-backed government, en, descriptive, "Foregrounds Saudi sponsorship"]
+    - [Aden-based government, en, descriptive]
+    - [الحكومة الشرعية, ar, self_designation]
+    - [الشرعية, ar, self_designation]
+    - [الحكومة المعترف بها دوليا, ar, descriptive]
+    - [الحكومة اليمنية, ar, common]
+    - [حكومة المرتزقة, ar, critical, "'Mercenary government'; Sana'a-aligned usage"]
+    - [حكومة الفنادق, ar, critical, "'Hotel government'; critical usage"]
+    - [gouvernement yéménite, fr, common]
+    - [jemenitische Regierung, de, common]
+    - [gobierno yemení, es, common]
+
+- slug: plc
+  type: political_actor
+  subtype: governing_body
+  en: Presidential Leadership Council
+  ar: مجلس القيادة الرئاسي
+  parent: irg
+  description: Eight-member council that assumed presidential powers in April 2022.
+  aliases:
+    - [Presidential Leadership Council, en, official]
+    - [Presidential Council, en, common]
+    - [PLC, en, abbreviation]
+    - [مجلس القيادة الرئاسي, ar, official]
+    - [المجلس الرئاسي, ar, common]
+
+- slug: stc
+  type: political_actor
+  subtype: movement
+  en: Southern Transitional Council
+  ar: المجلس الانتقالي الجنوبي
+  description: Southern political body formed in 2017 that seeks restoration of a southern state.
+  aliases:
+    - [Southern Transitional Council, en, official]
+    - [STC, en, abbreviation]
+    - [southern separatists, en, descriptive, "Foregrounds secessionism"]
+    - [UAE-backed separatists, en, descriptive, "Foregrounds UAE sponsorship"]
+    - [المجلس الانتقالي الجنوبي, ar, official]
+    - [الانتقالي الجنوبي, ar, common]
+    - [المجلس الانتقالي, ar, common]
+    - [الانفصاليين, ar, critical]
+    - [Conseil de transition du Sud, fr, official]
+    - [Südlicher Übergangsrat, de, official]
+
+- slug: islah
+  type: political_actor
+  subtype: party
+  en: Islah (Yemeni Congregation for Reform)
+  ar: التجمع اليمني للإصلاح
+  aliases:
+    - [Islah party, en, common]
+    - [Islah, en, common]
+    - [Yemeni Congregation for Reform, en, official]
+    - [التجمع اليمني للإصلاح, ar, official]
+    - [حزب الإصلاح, ar, common]
+    - [إخوان اليمن, ar, critical, "Links Islah to the Muslim Brotherhood; used critically by some UAE- and STC-aligned media"]
+
+- slug: gpc
+  type: political_actor
+  subtype: party
+  en: General People's Congress
+  ar: المؤتمر الشعبي العام
+  aliases:
+    - [General People's Congress, en, official]
+    - [GPC, en, abbreviation]
+    - [المؤتمر الشعبي العام, ar, official]
+
+- slug: ysp
+  type: political_actor
+  subtype: party
+  en: Yemeni Socialist Party
+  ar: الحزب الاشتراكي اليمني
+  aliases:
+    - [Yemeni Socialist Party, en, official]
+    - [الحزب الاشتراكي اليمني, ar, official]
+    - [الحزب الاشتراكي, ar, common]
+
+- slug: southern-movement
+  type: political_actor
+  subtype: movement
+  en: Southern Movement (al-Hirak)
+  ar: الحراك الجنوبي
+  aliases:
+    - [Southern Movement, en, official]
+    - [Hirak, en, transliteration]
+    - [الحراك الجنوبي, ar, official]
+
+- slug: national-resistance
+  type: armed_group
+  en: National Resistance Forces
+  ar: المقاومة الوطنية
+  aliases:
+    - [National Resistance, en, official]
+    - [المقاومة الوطنية, ar, official]
+    - [قوات طارق صالح, ar, descriptive]
+
+- slug: giants-brigades
+  type: armed_group
+  en: Giants Brigades
+  ar: ألوية العمالقة
+  aliases:
+    - [Giants Brigades, en, official]
+    - [Amaliqa, en, transliteration]
+    - [ألوية العمالقة, ar, official]
+    - [قوات العمالقة, ar, common]
+
+- slug: security-belt
+  type: armed_group
+  en: Security Belt Forces
+  ar: قوات الحزام الأمني
+  aliases:
+    - [Security Belt, en, official]
+    - [الحزام الأمني, ar, official]
+
+- slug: hadrami-elite
+  type: armed_group
+  en: Hadrami Elite Forces
+  ar: قوات النخبة الحضرمية
+  aliases:
+    - [Hadrami Elite, en, official]
+    - [النخبة الحضرمية, ar, official]
+
+- slug: aqap
+  type: armed_group
+  subtype: designated_terrorist
+  en: Al-Qaeda in the Arabian Peninsula
+  ar: تنظيم القاعدة في جزيرة العرب
+  aliases:
+    - [AQAP, en, abbreviation]
+    - [al-Qaeda in the Arabian Peninsula, en, official]
+    - [تنظيم القاعدة, ar, common]
+    - [القاعدة في جزيرة العرب, ar, official]
+    - [Ansar al-Sharia, en, common]
+    - [أنصار الشريعة, ar, common]
+
+- slug: isis-yemen
+  type: armed_group
+  subtype: designated_terrorist
+  en: Islamic State in Yemen
+  ar: تنظيم الدولة في اليمن
+  aliases:
+    - [ISIS, en, abbreviation]
+    - [Islamic State, en, common]
+    - [داعش, ar, critical]
+    - [تنظيم الدولة, ar, common]
+
+- slug: saudi-led-coalition
+  type: political_actor
+  subtype: military_coalition
+  en: Saudi-led coalition
+  ar: التحالف بقيادة السعودية
+  aliases:
+    - [Saudi-led coalition, en, descriptive]
+    - [Arab coalition, en, self_designation]
+    - [Coalition to Restore Legitimacy, en, self_designation]
+    - [التحالف العربي, ar, self_designation]
+    - [تحالف دعم الشرعية, ar, self_designation]
+    - [التحالف بقيادة السعودية, ar, descriptive]
+    - [العدوان السعودي الأمريكي, ar, critical, "'Saudi-American aggression'; Sana'a-aligned usage"]
+    - [تحالف العدوان, ar, critical, "'Aggression coalition'; Sana'a-aligned usage"]
+    - [coalition menée par l'Arabie saoudite, fr, descriptive]
+    - [saudisch geführte Koalition, de, descriptive]
+
+# ---- states
+- {slug: yemen, type: country, en: Yemen, ar: اليمن, aliases: [[Yemen, en, official], [اليمن, ar, official], [Yémen, fr, official], [Jemen, de, official], [Йемен, ru, official], [یمن, fa, official]]}
+- {slug: saudi-arabia, type: country, en: Saudi Arabia, ar: السعودية, aliases: [[Saudi Arabia, en, official], [Riyadh, en, common], [السعودية, ar, common], [المملكة العربية السعودية, ar, official], [الرياض, ar, common], [Arabie saoudite, fr, official], [Saudi-Arabien, de, official]]}
+- {slug: uae, type: country, en: United Arab Emirates, ar: الإمارات, aliases: [[United Arab Emirates, en, official], [UAE, en, abbreviation], [Abu Dhabi, en, common], [الإمارات, ar, common], [أبوظبي, ar, common], [Émirats arabes unis, fr, official]]}
+- {slug: iran, type: country, en: Iran, ar: إيران, aliases: [[Iran, en, official], [Tehran, en, common], [إيران, ar, official], [طهران, ar, common], [ایران, fa, official]]}
+- {slug: oman, type: country, en: Oman, ar: سلطنة عمان, aliases: [[Oman, en, official], [Muscat, en, common], [سلطنة عمان, ar, official], [مسقط, ar, common]]}
+- {slug: united-states, type: country, en: United States, ar: الولايات المتحدة, aliases: [[United States, en, official], [Washington, en, common], [U.S., en, abbreviation], [الولايات المتحدة, ar, official], [واشنطن, ar, common], [أمريكا, ar, common], [États-Unis, fr, official], [USA, de, abbreviation]]}
+- {slug: united-kingdom, type: country, en: United Kingdom, ar: المملكة المتحدة, aliases: [[United Kingdom, en, official], [Britain, en, common], [بريطانيا, ar, common], [المملكة المتحدة, ar, official]]}
+- {slug: israel, type: country, en: Israel, ar: إسرائيل, aliases: [[Israel, en, official], [إسرائيل, ar, official], [الكيان الصهيوني, ar, critical, "Non-recognition usage"], [العدو الإسرائيلي, ar, critical]]}
+- {slug: qatar, type: country, en: Qatar, ar: قطر, aliases: [[Qatar, en, official], [قطر, ar, official]]}
+- {slug: egypt, type: country, en: Egypt, ar: مصر, aliases: [[Egypt, en, official], [مصر, ar, official]]}
+- {slug: russia, type: country, en: Russia, ar: روسيا, aliases: [[Russia, en, official], [روسيا, ar, official], [Россия, ru, official]]}
+- {slug: china, type: country, en: China, ar: الصين, aliases: [[China, en, official], [الصين, ar, official], [中国, zh, official]]}
+- {slug: turkey, type: country, en: Türkiye, ar: تركيا, aliases: [[Turkey, en, common], [Türkiye, tr, official], [تركيا, ar, official]]}
+- {slug: somalia, type: country, en: Somalia, ar: الصومال, aliases: [[Somalia, en, official], [الصومال, ar, official]]}
+- {slug: djibouti, type: country, en: Djibouti, ar: جيبوتي, aliases: [[Djibouti, en, official], [جيبوتي, ar, official]]}
+- {slug: eritrea, type: country, en: Eritrea, ar: إريتريا, aliases: [[Eritrea, en, official], [إريتريا, ar, official]]}
+
+# ---- international organisations
+- {slug: united-nations, type: igo, en: United Nations, ar: الأمم المتحدة, aliases: [[United Nations, en, official], [UN, en, abbreviation], [الأمم المتحدة, ar, official], [الأممية, ar, common], [Nations unies, fr, official], [Vereinte Nationen, de, official]]}
+- {slug: un-security-council, type: igo, en: UN Security Council, ar: مجلس الأمن, parent: united-nations, aliases: [[Security Council, en, official], [مجلس الأمن الدولي, ar, official], [مجلس الأمن, ar, common]]}
+- {slug: osesgy, type: igo, en: Office of the UN Special Envoy for Yemen, ar: مكتب المبعوث الأممي, parent: united-nations, aliases: [[UN envoy, en, common], [Special Envoy for Yemen, en, official], [المبعوث الأممي, ar, common]]}
+- {slug: wfp, type: igo, en: World Food Programme, ar: برنامج الأغذية العالمي, parent: united-nations, aliases: [[World Food Programme, en, official], [WFP, en, abbreviation], [برنامج الأغذية العالمي, ar, official]]}
+- {slug: unicef, type: igo, en: UNICEF, ar: يونيسف, parent: united-nations, aliases: [[UNICEF, en, official], [يونيسف, ar, official], [اليونيسف, ar, official]]}
+- {slug: ocha, type: igo, en: OCHA, ar: مكتب تنسيق الشؤون الإنسانية, parent: united-nations, aliases: [[OCHA, en, abbreviation], [أوتشا, ar, transliteration]]}
+- {slug: who, type: igo, en: World Health Organization, ar: منظمة الصحة العالمية, parent: united-nations, aliases: [[World Health Organization, en, official], [WHO, en, abbreviation], [منظمة الصحة العالمية, ar, official]]}
+- {slug: unhcr, type: igo, en: UNHCR, ar: المفوضية السامية لشؤون اللاجئين, parent: united-nations, aliases: [[UNHCR, en, abbreviation], [مفوضية اللاجئين, ar, common]]}
+- {slug: iom, type: igo, en: International Organization for Migration, ar: المنظمة الدولية للهجرة, parent: united-nations, aliases: [[IOM, en, abbreviation], [المنظمة الدولية للهجرة, ar, official]]}
+- {slug: world-bank, type: igo, en: World Bank, ar: البنك الدولي, aliases: [[World Bank, en, official], [البنك الدولي, ar, official]]}
+- {slug: imf, type: igo, en: International Monetary Fund, ar: صندوق النقد الدولي, aliases: [[IMF, en, abbreviation], [صندوق النقد الدولي, ar, official]]}
+- {slug: european-union, type: igo, en: European Union, ar: الاتحاد الأوروبي, aliases: [[European Union, en, official], [الاتحاد الأوروبي, ar, official]]}
+- {slug: gcc, type: igo, en: Gulf Cooperation Council, ar: مجلس التعاون الخليجي, aliases: [[Gulf Cooperation Council, en, official], [GCC, en, abbreviation], [مجلس التعاون الخليجي, ar, official]]}
+- {slug: arab-league, type: igo, en: Arab League, ar: جامعة الدول العربية, aliases: [[Arab League, en, official], [جامعة الدول العربية, ar, official]]}
+- {slug: icrc, type: ngo, en: International Committee of the Red Cross, ar: اللجنة الدولية للصليب الأحمر, aliases: [[ICRC, en, abbreviation], [Red Cross, en, common], [الصليب الأحمر, ar, common]]}
+- {slug: msf, type: ngo, en: Médecins Sans Frontières, ar: أطباء بلا حدود, aliases: [[MSF, en, abbreviation], [Doctors Without Borders, en, common], [أطباء بلا حدود, ar, official]]}
+- {slug: central-bank-aden, type: organization, subtype: state_institution, en: Central Bank of Yemen (Aden), ar: البنك المركزي اليمني في عدن, aliases: [[Central Bank in Aden, en, descriptive], [البنك المركزي في عدن, ar, descriptive], [مركزي عدن, ar, common]]}
+- {slug: central-bank-sanaa, type: organization, subtype: state_institution, en: Central Bank of Yemen (Sana'a), ar: البنك المركزي اليمني في صنعاء, aliases: [[Central Bank in Sanaa, en, descriptive], [البنك المركزي في صنعاء, ar, descriptive], [مركزي صنعاء, ar, common]]}
+
+# ---- public figures (role descriptions kept minimal and dated)
+- {slug: abdul-malik-al-houthi, type: person, en: Abdul-Malik al-Houthi, ar: عبدالملك الحوثي, description: Leader of Ansar Allah., aliases: [[Abdul-Malik al-Houthi, en, official], [Abdulmalik al-Houthi, en, transliteration], [عبدالملك الحوثي, ar, official], [عبد الملك الحوثي, ar, official], [قائد الثورة, ar, self_designation]]}
+- {slug: mahdi-al-mashat, type: person, en: Mahdi al-Mashat, ar: مهدي المشاط, description: Head of the Supreme Political Council in Sana'a., aliases: [[Mahdi al-Mashat, en, official], [مهدي المشاط, ar, official]]}
+- {slug: mohammed-abdulsalam, type: person, en: Mohammed Abdulsalam, ar: محمد عبدالسلام, description: Ansar Allah spokesman and chief negotiator., aliases: [[Mohammed Abdulsalam, en, official], [محمد عبدالسلام, ar, official], [محمد عبد السلام, ar, official]]}
+- {slug: yahya-saree, type: person, en: Yahya Saree, ar: يحيى سريع, description: Military spokesman for Sana'a-based forces., aliases: [[Yahya Saree, en, official], [Yahya Sarea, en, transliteration], [يحيى سريع, ar, official]]}
+- {slug: rashad-al-alimi, type: person, en: Rashad al-Alimi, ar: رشاد العليمي, description: Chairman of the Presidential Leadership Council (since 2022)., aliases: [[Rashad al-Alimi, en, official], [رشاد العليمي, ar, official], [رشاد محمد العليمي, ar, official]]}
+- {slug: aidarous-al-zubaidi, type: person, en: Aidarous al-Zubaidi, ar: عيدروس الزبيدي, description: President of the Southern Transitional Council; PLC member., aliases: [[Aidarous al-Zubaidi, en, official], [Aidarus al-Zubaidi, en, transliteration], [عيدروس الزبيدي, ar, official], [عيدروس قاسم الزبيدي, ar, official]]}
+- {slug: tareq-saleh, type: person, en: Tareq Saleh, ar: طارق صالح, description: Leader of the National Resistance; PLC member., aliases: [[Tareq Saleh, en, official], [Tariq Saleh, en, transliteration], [طارق صالح, ar, official], [طارق محمد عبدالله صالح, ar, official]]}
+- {slug: sultan-al-arada, type: person, en: Sultan al-Arada, ar: سلطان العرادة, description: Governor of Marib; PLC member., aliases: [[Sultan al-Arada, en, official], [سلطان العرادة, ar, official]]}
+- {slug: hans-grundberg, type: person, en: Hans Grundberg, ar: هانس غروندبرغ, description: UN Special Envoy for Yemen (since 2021)., aliases: [[Hans Grundberg, en, official], [Grundberg, en, common], [غروندبرغ, ar, transliteration], [هانس غروندبرغ, ar, transliteration]]}

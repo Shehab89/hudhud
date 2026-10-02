@@ -1,0 +1,2701 @@
+# International (non-Arab) media, humanitarian sources, think tanks and aggregators.
+# Format: see SCHEMA.md. Feeds verified via WebFetch on 2026-10-02; many sites refused the
+# research fetcher (site block / robots.txt) and are recorded verified: false with a note.
+# Orientation labels are analytical metadata (mostly ownership-based), not judgements of accuracy.
+- id: reuters
+  name: Reuters
+  url: https://www.reuters.com/world/middle-east/
+  country: GB
+  languages:
+  - en
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Thomson Reuters Corporation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Reuters
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Reuters discontinued its public RSS feeds in 2020; no public feed found. Coverage reachable via Google News / GDELT.
+- id: associated-press
+  name: Associated Press
+  url: https://apnews.com/hub/yemen
+  country: US
+  languages:
+  - en
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Not-for-profit cooperative owned by US member news organisations.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Associated_Press
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: AP publishes no official public RSS; a Yemen hub page exists at apnews.com/hub/yemen. No public RSS feed found; recorded for reference.
+- id: afp
+  name: Agence France-Presse
+  url: https://www.afp.com/en
+  country: FR
+  languages:
+  - fr
+  - en
+  - ar
+  - es
+  - de
+  - pt
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Autonomous public entity under French statute (1957 law).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Agence_France-Presse
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: AFP sells its wire to subscribers; no public RSS found. No public RSS feed found; recorded for reference.
+- id: ansa
+  name: ANSA
+  name_native: Agenzia Nazionale Stampa Associata
+  url: https://www.ansa.it/
+  country: IT
+  languages:
+  - it
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: World section feed; items dated 2026-10-02.
+  ownership:
+    description: Cooperative owned by Italian newspaper publishers.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ANSA
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: tass
+  name: TASS
+  name_native: ТАСС
+  url: https://tass.com/
+  country: RU
+  languages:
+  - en
+  - ru
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://tass.com/rss/v2.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English all-news feed; items dated 2026-10-02.
+  ownership:
+    description: Russian state news agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TASS
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of the Russian Federation
+        confidence: 0.95
+    confidence: 0.95
+    evidence: Owned/controlled by Government of the Russian Federation (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TASS
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: ria-novosti
+  name: RIA Novosti
+  name_native: РИА Новости
+  url: https://ria.ru/
+  country: RU
+  languages:
+  - ru
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://ria.ru/export/rss2/archive/index.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-02.
+  ownership:
+    description: Operated by Rossiya Segodnya, a Russian state-owned media group.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RIA_Novosti
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Russian state (Rossiya Segodnya)
+        confidence: 0.95
+    confidence: 0.95
+    evidence: Owned/controlled by Russian state (Rossiya Segodnya) (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RIA_Novosti
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: xinhua
+  name: Xinhua News Agency
+  name_native: 新华社
+  url: https://english.news.cn/
+  country: CN
+  languages:
+  - en
+  - zh
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://english.news.cn/rss/worldrss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Parses as RSS 2.0 but newest item is from 2018 (stale) as of 2026-10-02.
+  ownership:
+    description: Official state press agency of the People's Republic of China.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Xinhua_News_Agency
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of the People's Republic of China
+        confidence: 0.95
+    confidence: 0.95
+    evidence: Owned/controlled by Government of the People's Republic of China (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Xinhua_News_Agency
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: No current public RSS confirmed.
+- id: bbc-news
+  name: BBC News
+  url: https://www.bbc.com/news/world/middle_east
+  country: GB
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://feeds.bbci.co.uk/news/world/middle_east/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified.
+  ownership:
+    description: British Broadcasting Corporation, UK public service broadcaster established by Royal Charter.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: UK public broadcaster (BBC, Royal Charter)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: UK public broadcaster (BBC, Royal Charter). Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: bbc-persian
+  name: BBC Persian
+  name_native: بی‌بی‌سی فارسی
+  url: https://www.bbc.com/persian
+  country: GB
+  languages:
+  - fa
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://feeds.bbci.co.uk/persian/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified.
+  ownership:
+    description: Persian-language service of the BBC World Service.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_Persian
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: UK public broadcaster (BBC World Service)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: UK public broadcaster (BBC World Service). Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_Persian
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: deutsche-welle
+  name: Deutsche Welle
+  url: https://www.dw.com/
+  country: DE
+  languages:
+  - en
+  - de
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://rss.dw.com/rdf/rss-en-world
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. English world feed.
+  - url: https://rss.dw.com/xml/rss-de-all
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. German all-news feed.
+  ownership:
+    description: German public international broadcaster funded from the federal budget.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Deutsche_Welle
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: German federal public broadcaster
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: German federal public broadcaster. Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Deutsche_Welle
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: france-24
+  name: France 24
+  url: https://www.france24.com/
+  country: FR
+  languages:
+  - en
+  - fr
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.france24.com/en/middle-east/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: robots.txt disallowed the fetch on 2026-10-02; English Middle East feed, not verified.
+  - url: https://www.france24.com/fr/moyen-orient/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: robots.txt disallowed the fetch on 2026-10-02; French Moyen-Orient feed, not verified.
+  ownership:
+    description: Owned by France Médias Monde, the French state-owned holding for international broadcasting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_M%C3%A9dias_Monde
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: French state (France Médias Monde)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: French state (France Médias Monde). Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_M%C3%A9dias_Monde
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: rfi
+  name: Radio France Internationale
+  name_native: RFI
+  url: https://www.rfi.fr/
+  country: FR
+  languages:
+  - fr
+  - en
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.rfi.fr/fr/moyen-orient/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. French Moyen-Orient feed.
+  ownership:
+    description: Owned by France Médias Monde (French state-owned).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Radio_France_Internationale
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: French state (France Médias Monde)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: French state (France Médias Monde). Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Radio_France_Internationale
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: euronews
+  name: Euronews
+  url: https://www.euronews.com/
+  country: FR
+  languages:
+  - en
+  - fr
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.euronews.com/rss?level=theme&name=news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English news theme feed; items dated 2026-10-01.
+  - url: https://fr.euronews.com/rss?level=theme&name=news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: French news theme feed; items dated 2026-10-01.
+  ownership:
+    description: Majority-owned by Alpac Capital since 2022 (per public reporting).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Euronews
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Headquarters moved to Brussels; country code kept as FR (legal seat Lyon) — verify.
+- id: npr
+  name: NPR
+  url: https://www.npr.org/
+  country: US
+  languages:
+  - en
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.npr.org/1004/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: World section feed; items dated 2026-10-01.
+  ownership:
+    description: US non-profit membership media organisation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/NPR
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: voice-of-america
+  name: Voice of America
+  url: https://www.voanews.com/
+  country: US
+  languages:
+  - en
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: US government-funded international broadcaster under the US Agency for Global Media.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Voice_of_America
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: US government (USAGM)
+        confidence: 0.85
+    confidence: 0.85
+    evidence: Funded by the US government via USAGM (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Voice_of_America
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Operating status uncertain: largely shut down by the administration in 2025; a judge ordered restoration in March 2026 (https://wtop.com/national/2026/03/judge-orders-restoration-of-voice-of-america-putting-hundreds-of-journalists-back-to-work/) and an appeals court later halted that ruling (https://thesun.my/news/world-news/us-court-halts-ruling-ordering-voice-of-america-employees-back-to-work-eg14033153/). Homepage loaded on 2026-10-02 but no RSS URL could be confirmed (API feed returned 403).'
+- id: cnn
+  name: CNN
+  url: https://edition.cnn.com/world/middle-east
+  country: US
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: http://rss.cnn.com/rss/edition_meast.rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Parses as RSS 2.0 but newest dated item is from 2024 (stale/unmaintained) as of 2026-10-02.
+  ownership:
+    description: Owned by Warner Bros. Discovery.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/CNN
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: CNN's legacy RSS feeds are not maintained; no current feed confirmed.
+- id: sky-news
+  name: Sky News
+  url: https://news.sky.com/world
+  country: GB
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.skynews.com/feeds/rss/world.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: World feed; items dated 2026-10-02.
+  ownership:
+    description: Owned by Sky Group (Comcast).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: abc-australia
+  name: ABC News (Australia)
+  url: https://www.abc.net.au/news
+  country: AU
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.abc.net.au/news/feed/51120/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''Just In'' all-news feed; items dated 2026-10-01.'
+  ownership:
+    description: Australian Broadcasting Corporation, national public broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Australian_Broadcasting_Corporation
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: Australian public broadcaster
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: Australian public broadcaster. Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Australian_Broadcasting_Corporation
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: nhk-world
+  name: NHK World-Japan
+  url: https://www3.nhk.or.jp/nhkworld/
+  country: JP
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www3.nhk.or.jp/nhkworld/en/news/rss/all.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified.
+  ownership:
+    description: International service of NHK, Japan's public broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/NHK_World-Japan
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: Japanese public broadcaster (NHK)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Publicly funded/owned broadcaster: Japanese public broadcaster (NHK). Label reflects ownership, not editorial line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/NHK_World-Japan
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: cgtn
+  name: CGTN
+  url: https://www.cgtn.com/
+  country: CN
+  languages:
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.cgtn.com/subscribe/rss/section/world.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: World section feed; items dated 2026-10-02.
+  ownership:
+    description: China Global Television Network, part of China Media Group under the CCP Central Propaganda Department.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/CGTN
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Chinese state (China Media Group)
+        confidence: 0.95
+    confidence: 0.95
+    evidence: Owned/controlled by Chinese state (China Media Group) (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/CGTN
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: radio-farda
+  name: Radio Farda
+  name_native: رادیو فردا
+  url: https://www.radiofarda.com/
+  country: CZ
+  languages:
+  - fa
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Persian service of RFE/RL, funded by the US government via USAGM; based in Prague.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Radio_Farda
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: US government (USAGM / RFE/RL)
+        confidence: 0.85
+    confidence: 0.85
+    evidence: Funded by the US government via USAGM/RFE/RL (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Radio_Farda
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: robots.txt blocked fetches; no feed URL confirmed. RFE/RL funding has also been subject to 2025-26 US cuts — status should be rechecked.
+- id: iran-international
+  name: Iran International
+  name_native: ایران اینترنشنال
+  url: https://www.iranintl.com/
+  country: GB
+  languages:
+  - fa
+  - en
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: low
+  feeds:
+  - url: https://www.iranintl.com/en/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English feed; items dated 2026-10-02.
+  - url: https://www.iranintl.com/fa/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Persian feed; items dated 2026-10-02.
+  ownership:
+    description: Volant Media UK Ltd, London; owned by a Saudi/British citizen. The Guardian (2018) reported Saudi-linked funding; the channel denies government funding.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Iran_International
+  orientation:
+    simplified: opposition_aligned
+    dimensions:
+      institutional_alignment:
+        value: Reported Saudi links (disputed by outlet)
+        confidence: 0.5
+    confidence: 0.5
+    evidence: Documented reporting (Guardian, WSJ, cited on Wikipedia) of Saudi-linked funding and an anti-Islamic Republic line; the channel denies government ties and claims impartiality.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Iran_International
+    method: academic_source
+    last_reviewed: 2026-10-02
+    review_status: disputed
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: the-guardian
+  name: The Guardian
+  url: https://www.theguardian.com/world/yemen
+  country: GB
+  languages:
+  - en
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://www.theguardian.com/world/yemen/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Yemen tag feed.
+  ownership:
+    description: Guardian Media Group, owned by the Scott Trust Ltd.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Guardian
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: new-york-times
+  name: The New York Times
+  url: https://www.nytimes.com/section/world/middleeast
+  country: US
+  languages:
+  - en
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Middle East section feed.
+  ownership:
+    description: The New York Times Company (publicly traded; Ochs-Sulzberger family control).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_New_York_Times
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: washington-post
+  name: The Washington Post
+  url: https://www.washingtonpost.com/world/middle-east/
+  country: US
+  languages:
+  - en
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://feeds.washingtonpost.com/rss/world
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Returned HTTP 403 on 2026-10-02; documented world feed, not verified.
+  ownership:
+    description: Owned by Nash Holdings (Jeff Bezos).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Washington_Post
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: le-monde
+  name: Le Monde
+  url: https://www.lemonde.fr/moyen-orient/
+  country: FR
+  languages:
+  - fr
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.lemonde.fr/international/rss_full.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. International section feed (a Moyen-Orient-specific feed was not confirmed).
+  ownership:
+    description: Groupe Le Monde.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Le_Monde
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: le-figaro
+  name: Le Figaro
+  url: https://www.lefigaro.fr/international
+  country: FR
+  languages:
+  - fr
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.lefigaro.fr/rss/figaro_international.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified.
+  ownership:
+    description: Owned by Groupe Dassault.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Le_Figaro
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: liberation
+  name: Libération
+  url: https://www.liberation.fr/international/
+  country: FR
+  languages:
+  - fr
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Owned by an endowment fund (Fonds pour une presse libre) since 2020, per public reporting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Lib%C3%A9ration
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Site blocked from the research environment; no feed URL confirmed.
+- id: der-spiegel
+  name: Der Spiegel
+  url: https://www.spiegel.de/ausland/
+  country: DE
+  languages:
+  - de
+  source_type: magazine
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.spiegel.de/ausland/index.rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Ausland (foreign) section feed.
+  ownership:
+    description: Spiegel-Verlag (employee KG holds majority stake).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Der_Spiegel
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: faz
+  name: Frankfurter Allgemeine Zeitung
+  name_native: FAZ
+  url: https://www.faz.net/aktuell/politik/ausland/
+  country: DE
+  languages:
+  - de
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.faz.net/rss/aktuell/politik/ausland/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Ausland section feed.
+  ownership:
+    description: Owned by the FAZIT Foundation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Frankfurter_Allgemeine_Zeitung
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: sueddeutsche-zeitung
+  name: Süddeutsche Zeitung
+  url: https://www.sueddeutsche.de/politik
+  country: DE
+  languages:
+  - de
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://rss.sueddeutsche.de/rss/Politik
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Politics section feed.
+  ownership:
+    description: Süddeutscher Verlag (majority Südwestdeutsche Medien Holding).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/S%C3%BCddeutsche_Zeitung
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: die-zeit
+  name: Die Zeit
+  url: https://www.zeit.de/politik/ausland/
+  country: DE
+  languages:
+  - de
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://newsfeed.zeit.de/politik/ausland/index
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Ausland section feed.
+  ownership:
+    description: Zeitverlag Gerd Bucerius (Holtzbrinck group).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Die_Zeit
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: el-pais
+  name: El País
+  url: https://elpais.com/noticias/yemen/
+  country: ES
+  languages:
+  - es
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://feeds.elpais.com/mrss-s/list/ep/site/elpais.com/tag/yemen/a
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Yemen tag feed following El País mrss-s tag pattern; pattern itself not confirmed on this date.
+  ownership:
+    description: Owned by PRISA.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/El_Pa%C3%ADs
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: el-mundo
+  name: El Mundo
+  url: https://www.elmundo.es/internacional.html
+  country: ES
+  languages:
+  - es
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: International section feed; items dated 2026-10-02 (incl. a Yemen item).
+  ownership:
+    description: Unidad Editorial (RCS MediaGroup).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/El_Mundo_(Spain)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: la-repubblica
+  name: La Repubblica
+  url: https://www.repubblica.it/esteri/
+  country: IT
+  languages:
+  - it
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.repubblica.it/rss/esteri/rss2.0.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. Esteri (foreign) section feed.
+  ownership:
+    description: GEDI Gruppo Editoriale (sale to Antenna Group reported 2025-26 — verify).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/La_Repubblica
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: corriere-della-sera
+  name: Corriere della Sera
+  url: https://www.corriere.it/esteri/
+  country: IT
+  languages:
+  - it
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://xml2.corriereobjects.it/rss/esteri.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Parses as RSS 2.0 but newest item dated March 2025 (stale) as of 2026-10-02.
+  ownership:
+    description: RCS MediaGroup (Cairo Communication).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Corriere_della_Sera
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: il-post
+  name: Il Post
+  url: https://www.ilpost.it/
+  country: IT
+  languages:
+  - it
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.ilpost.it/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-02. (The /mondo/feed/ section feed returned 404.)
+  ownership:
+    description: Independent online newspaper founded by Luca Sofri.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Il_Post
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: hurriyet
+  name: Hürriyet
+  url: https://www.hurriyet.com.tr/dunya/
+  country: TR
+  languages:
+  - tr
+  source_type: newspaper
+  source_group: turkey
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.hurriyet.com.tr/rss/anasayfa
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Homepage feed; items dated 2026-10-01. (/rss/dunya returned HTML, not a feed.)
+  ownership:
+    description: Owned by Demirören Holding since 2018.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/H%C3%BCrriyet
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Turkish outlet; may overlap with a turkey-group registry file — check id uniqueness.
+- id: kommersant
+  name: Kommersant
+  name_native: Коммерсантъ
+  url: https://www.kommersant.ru/
+  country: RU
+  languages:
+  - ru
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.kommersant.ru/RSS/section-world.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: World section feed; items dated 2026-10-02 (incl. a Houthi item).
+  ownership:
+    description: Owned by Alisher Usmanov's holding (USM).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Kommersant
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: meduza
+  name: Meduza
+  name_native: Медуза
+  url: https://meduza.io/
+  country: LV
+  languages:
+  - ru
+  - en
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://meduza.io/rss/all
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed (Russian); items dated 2026-10-02.
+  ownership:
+    description: Independent Russian-language outlet based in Riga, Latvia.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Meduza
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: global-times
+  name: Global Times
+  name_native: 环球时报
+  url: https://www.globaltimes.cn/
+  country: CN
+  languages:
+  - en
+  - zh
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.globaltimes.cn/rss/outbrain.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Parses as RSS 2.0 but newest item is from Nov 2025 (stale) as of 2026-10-02.
+  ownership:
+    description: Published by People's Daily, the official newspaper of the Chinese Communist Party.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Global_Times
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Chinese Communist Party (People's Daily)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: Owned/controlled by Chinese Communist Party (People's Daily) (documented ownership).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Global_Times
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: the-hindu
+  name: The Hindu
+  url: https://www.thehindu.com/news/international/
+  country: IN
+  languages:
+  - en
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.thehindu.com/news/international/feeder/default.rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Fetch refused from the research environment on 2026-10-02 (site block / robots.txt); documented feed URL, not verified. International section feed.
+  ownership:
+    description: The Hindu Group (Kasturi & Sons).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Hindu
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: the-intercept
+  name: The Intercept
+  url: https://theintercept.com/
+  country: US
+  languages:
+  - en
+  source_type: investigative
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://theintercept.com/feed/?rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; items dated 2026-10-01.
+  ownership:
+    description: Non-profit newsroom (originally funded by First Look Media).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Intercept
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: middle-east-eye
+  name: Middle East Eye
+  url: https://www.middleeasteye.net/
+  country: GB
+  languages:
+  - en
+  - ar
+  - fr
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.middleeasteye.net/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-01 (incl. Sanaa item).
+  ownership:
+    description: M.E.E. Limited, formally owned by Jamal Bessasso; Saudi Arabia/UAE/Egypt/Bahrain alleged Qatari funding (2017), which MEE denies.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Eye
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Funding allegations are contested; orientation left unknown pending stronger evidence.
+- id: middle-east-monitor
+  name: Middle East Monitor
+  url: https://www.middleeastmonitor.com/
+  country: GB
+  languages:
+  - en
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.middleeastmonitor.com/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-01.
+  ownership:
+    description: London-based not-for-profit; Wikipedia states it is financed by Qatar. Critics characterise it as pro-Hamas/Muslim Brotherhood; contested.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Monitor
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Orientation left unknown: characterisations come mainly from critics and are disputed.'
+- id: al-monitor
+  name: Al-Monitor
+  url: https://www.al-monitor.com/
+  country: US
+  languages:
+  - en
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  feeds:
+  - url: https://www.al-monitor.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-02 (incl. WFP Yemen item).
+  ownership:
+    description: Founded 2012 by Jamal Daniel; operational management partnership with North Base Media since 2018.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Monitor
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: bellingcat
+  name: Bellingcat
+  url: https://www.bellingcat.com/
+  country: NL
+  languages:
+  - en
+  source_type: investigative
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds:
+  - url: https://www.bellingcat.com/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; newest item 2026-10-01.
+  ownership:
+    description: Independent investigative collective, registered as a Dutch foundation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Bellingcat
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: acled
+  name: ACLED
+  url: https://acleddata.com/
+  country: US
+  languages:
+  - en
+  source_type: investigative
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: Armed Conflict Location & Event Data, non-profit.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Armed_Conflict_Location_and_Event_Data
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Conflict-event dataset (API requires registration/key). acleddata.com/feed/ returned 404 on 2026-10-02. No public RSS feed found; recorded for reference.
+- id: airwars
+  name: Airwars
+  url: https://airwars.org/
+  country: GB
+  languages:
+  - en
+  source_type: investigative
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://airwars.org/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; newest item 2026-10-01 (low frequency).
+  ownership:
+    description: UK-based not-for-profit civilian-harm monitor.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Airwars
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: the-new-humanitarian
+  name: The New Humanitarian
+  url: https://www.thenewhumanitarian.org/
+  country: CH
+  languages:
+  - en
+  source_type: news_website
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.thenewhumanitarian.org/rss/all.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; items dated 2026-10-02.
+  ownership:
+    description: Independent non-profit newsroom (formerly IRIN, spun off from UN OCHA in 2015).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_New_Humanitarian
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: responsible-statecraft
+  name: Responsible Statecraft
+  url: https://responsiblestatecraft.org/
+  country: US
+  languages:
+  - en
+  source_type: magazine
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://responsiblestatecraft.org/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; items dated 2026-10-02.
+  ownership:
+    description: Online magazine of the Quincy Institute for Responsible Statecraft (non-profit; refuses foreign-government funding).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Quincy_Institute_for_Responsible_Statecraft
+  orientation:
+    simplified: unknown
+    dimensions:
+      foreign_policy_orientation:
+        value: US foreign-policy restraint (self-described)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: Publisher's stated mission advocates military restraint and diplomacy in US foreign policy.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Quincy_Institute_for_Responsible_Statecraft
+    - https://quincyinst.org/about/
+    method: editorial_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: reliefweb
+  name: ReliefWeb
+  url: https://reliefweb.int/country/yem
+  country: XX
+  languages:
+  - en
+  - ar
+  - fr
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  feeds:
+  - url: https://reliefweb.int/country/yem/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returned HTTP 403 to the research fetcher on 2026-10-02; Yemen country feed, not verified. ReliefWeb API v2 (api.reliefweb.int) is an alternative but requires an approved appname.
+  ownership:
+    description: Information service of UN OCHA.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ReliefWeb
+  orientation:
+    simplified: intergovernmental
+    dimensions:
+      institutional_alignment:
+        value: United Nations (OCHA)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of / run by United Nations (OCHA).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ReliefWeb
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Country XX: UN service, no single national base.'
+- id: un-news
+  name: UN News
+  url: https://news.un.org/en/
+  country: XX
+  languages:
+  - en
+  - ar
+  - fr
+  - es
+  - ru
+  - zh
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Middle East region feed listed by third-party directories but returned 404 on 2026-10-02 (as did the all-news feed); feed paths may have changed.
+  ownership:
+    description: News service of the UN Department of Global Communications.
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: un-ocha
+  name: UN OCHA
+  url: https://www.unocha.org/yemen
+  country: XX
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: UN Office for the Coordination of Humanitarian Affairs.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/United_Nations_Office_for_the_Coordination_of_Humanitarian_Affairs
+  orientation:
+    simplified: intergovernmental
+    dimensions:
+      institutional_alignment:
+        value: United Nations
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of / run by United Nations.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/United_Nations_Office_for_the_Coordination_of_Humanitarian_Affairs
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Yemen page exists; unocha.org/rss.xml returned 403 on 2026-10-02. OCHA Yemen reports are syndicated via ReliefWeb. No public RSS feed found; recorded for reference.
+- id: wfp
+  name: World Food Programme
+  url: https://www.wfp.org/countries/yemen
+  country: XX
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: UN agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/World_Food_Programme
+  orientation:
+    simplified: intergovernmental
+    dimensions:
+      institutional_alignment:
+        value: United Nations
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of / run by United Nations.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/World_Food_Programme
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: No RSS link on wfp.org/news; /rss.xml returned 404. WFP Yemen updates are syndicated via ReliefWeb. No public RSS feed found; recorded for reference.
+- id: unicef
+  name: UNICEF
+  url: https://www.unicef.org/yemen/
+  country: XX
+  languages:
+  - en
+  - ar
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  feeds: []
+  ownership:
+    description: UN agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/UNICEF
+  orientation:
+    simplified: intergovernmental
+    dimensions:
+      institutional_alignment:
+        value: United Nations
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of / run by United Nations.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/UNICEF
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Press-release RSS paths returned 404 on 2026-10-02. Syndicated via ReliefWeb. No public RSS feed found; recorded for reference.
+- id: msf
+  name: Médecins Sans Frontières
+  name_native: MSF
+  url: https://www.msf.org/yemen
+  country: CH
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.msf.org/rss/all
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; newest item 2026-10-01.
+  ownership:
+    description: International medical humanitarian NGO (international office Geneva).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/M%C3%A9decins_Sans_Fronti%C3%A8res
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: icrc
+  name: International Committee of the Red Cross
+  name_native: ICRC
+  url: https://www.icrc.org/en/where-we-work/yemen
+  country: CH
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.icrc.org/en/rss/news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: News feed; newest item 2026-10-01.
+  ownership:
+    description: Private humanitarian institution based in Geneva with a mandate under the Geneva Conventions.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/International_Committee_of_the_Red_Cross
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: human-rights-watch
+  name: Human Rights Watch
+  url: https://www.hrw.org/middle-east/n-africa/yemen
+  country: US
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.hrw.org/rss/news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Global news feed; items dated 2026-10-01. A Yemen-specific country feed (/rss/country/yemen) returned 404.
+  ownership:
+    description: International non-governmental human rights organisation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Human_Rights_Watch
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: amnesty-international
+  name: Amnesty International
+  url: https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/
+  country: GB
+  languages:
+  - en
+  source_type: humanitarian
+  source_group: international_humanitarian
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.amnesty.org/en/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Global news feed; items dated 2026-10-02.
+  ownership:
+    description: International non-governmental human rights organisation (International Secretariat, London).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Amnesty_International
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: sanaa-center
+  name: Sana'a Center for Strategic Studies
+  name_native: مركز صنعاء للدراسات الاستراتيجية
+  url: https://sanaacenter.org/
+  country: YE
+  languages:
+  - en
+  - ar
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  feeds:
+  - url: https://sanaacenter.org/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: All-content feed; newest item 2026-09-16 (all Yemen-focused).
+  ownership:
+    description: Independent Yemeni think tank.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sanaa_Center_for_Strategic_Studies
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: crisis-group
+  name: International Crisis Group
+  url: https://www.crisisgroup.org/middle-east-north-africa/gulf-and-arabian-peninsula/yemen
+  country: BE
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  feeds:
+  - url: https://www.crisisgroup.org/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-content feed; newest item 2026-09-25. Yemen-specific feed not confirmed.
+  ownership:
+    description: Independent non-profit conflict-prevention organisation, Brussels.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/International_Crisis_Group
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: carnegie-endowment
+  name: Carnegie Endowment for International Peace
+  url: https://carnegieendowment.org/
+  country: US
+  languages:
+  - en
+  - ar
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Non-profit foreign-policy think tank; publishes Sada and Diwan on the Middle East.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Carnegie_Endowment_for_International_Peace
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Tried RSS paths returned 'Page Not Found' on 2026-10-02. No public RSS feed found; recorded for reference.
+- id: chatham-house
+  name: Chatham House
+  url: https://www.chathamhouse.org/
+  country: GB
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.chathamhouse.org/path/whatsnew.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''What''s new'' feed (listed on chathamhouse.org/rss.xml); newest item 2026-10-01.'
+  ownership:
+    description: Royal Institute of International Affairs, independent policy institute.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Chatham_House
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: brookings
+  name: Brookings Institution
+  url: https://www.brookings.edu/
+  country: US
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Non-profit public policy organisation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Brookings_Institution
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: /feed/ and /feeds/rss/research/ returned HTML pages, not feeds, on 2026-10-02. No public RSS feed found; recorded for reference.
+- id: ecfr
+  name: European Council on Foreign Relations
+  url: https://ecfr.eu/
+  country: DE
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  feeds:
+  - url: https://ecfr.eu/feed/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Parses as RSS but lastBuildDate is Nov 2020 (stale) as of 2026-10-02.
+  ownership:
+    description: Pan-European think tank (registered in Germany, offices across Europe).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/European_Council_on_Foreign_Relations
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Country code DE reflects legal registration per public sources — verify.
+- id: agsi
+  name: Arab Gulf States Institute in Washington
+  name_native: AGSIW
+  url: https://agsi.org/
+  country: US
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds:
+  - url: https://agsi.org/feed/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Valid RSS shell but contains no items on 2026-10-02.
+  ownership:
+    description: Non-profit research institute in Washington, DC.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Arab_Gulf_States_Institute_in_Washington
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: ''
+- id: washington-institute
+  name: Washington Institute for Near East Policy
+  url: https://www.washingtoninstitute.org/
+  country: US
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Non-profit think tank.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Washington_Institute_for_Near_East_Policy
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: No RSS link on homepage; tried feed paths returned 404 on 2026-10-02. No public RSS feed found; recorded for reference.
+- id: middle-east-institute
+  name: Middle East Institute
+  url: https://www.mei.edu/
+  country: US
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  feeds: []
+  ownership:
+    description: Non-profit think tank, Washington, DC.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Institute
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: mei.edu/feed/ returns only a default WordPress placeholder item (2025); /rss.xml is a sitemap. No public RSS feed found; recorded for reference.
+- id: yemen-policy-center
+  name: Yemen Policy Center
+  url: https://www.yemenpolicy.org/
+  country: DE
+  languages:
+  - en
+  - ar
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  feeds:
+  - url: https://www.yemenpolicy.org/feed/
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Parses as RSS 2.0 but newest item dated 2025-07-15 (stale/low frequency) as of 2026-10-02.
+  ownership:
+    description: Independent research organisation (base reported as Berlin — verify).
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Parseable feed exists; mark verified once a recent item appears. Base country not confirmed from a primary source.
+- id: ctc-west-point
+  name: Combating Terrorism Center at West Point
+  url: https://ctc.westpoint.edu/
+  country: US
+  languages:
+  - en
+  source_type: think_tank
+  source_group: think_tank_research
+  geographic_focus:
+  - global
+  yemen_coverage: low
+  feeds: []
+  ownership:
+    description: Research centre at the US Military Academy, West Point.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Combating_Terrorism_Center
+  orientation:
+    simplified: state_aligned
+    dimensions:
+      institutional_alignment:
+        value: US Military Academy / US Army
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of the US Military Academy (US Army).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Combating_Terrorism_Center
+    method: ownership_analysis
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: /feed/ redirects to a FeedBurner URL whose domain is now parked; no working feed. Publishes CTC Sentinel.
+- id: google-news-yemen-en
+  name: 'Google News: Yemen (English)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - en
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=Yemen&hl=en-US&gl=US&ceid=US:en
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Yemen. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-ar
+  name: 'Google News: اليمن (Arabic)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - ar
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=%D8%A7%D9%84%D9%8A%D9%85%D9%86&hl=ar&gl=EG&ceid=EG:ar
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: اليمن. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-fr
+  name: 'Google News: Yémen (French)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - fr
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=Y%C3%A9men&hl=fr&gl=FR&ceid=FR:fr
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Yémen. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-de
+  name: 'Google News: Jemen (German)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - de
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=Jemen&hl=de&gl=DE&ceid=DE:de
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Jemen. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-es
+  name: 'Google News: Yemen (Spanish)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - es
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=Yemen&hl=es-419&gl=MX&ceid=MX:es-419
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Yemen. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-tr
+  name: 'Google News: Yemen (Turkish)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - tr
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=Yemen&hl=tr&gl=TR&ceid=TR:tr
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Yemen. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-ru
+  name: 'Google News: Йемен (Russian)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - ru
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=%D0%99%D0%B5%D0%BC%D0%B5%D0%BD&hl=ru&gl=RU&ceid=RU:ru
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: Йемен. Aggregator, not an outlet; dedupe against direct publisher feeds.'
+- id: google-news-yemen-fa
+  name: 'Google News: یمن (Persian)'
+  url: https://news.google.com/
+  country: US
+  languages:
+  - fa
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://news.google.com/rss/search?q=%DB%8C%D9%85%D9%86&hl=fa&gl=IR&ceid=IR:fa
+    type: google_news_query
+    verified: false
+    yemen_filter: false
+    notes: 'Google News robots.txt blocked the research fetcher on 2026-10-02, so not verified here; endpoint format is Google''s public News RSS search. Results are third-party links: resolve to the original publisher before attribution.'
+  ownership:
+    description: Google LLC (Alphabet).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Google_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: 'Query term: یمن. Aggregator, not an outlet; dedupe against direct publisher feeds. Note: Google News may not offer a Persian/IR edition; verify that this hl/gl/ceid combination returns results.'
+- id: gdelt-doc-yemen
+  name: 'GDELT DOC 2.0: yemen'
+  url: https://www.gdeltproject.org/
+  country: US
+  languages:
+  - en
+  - ar
+  - fr
+  - de
+  - es
+  - ru
+  - fa
+  - tr
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  yemen_coverage: primary
+  feeds:
+  - url: https://api.gdeltproject.org/api/v2/doc/doc?query=yemen&mode=artlist&format=json
+    type: gdelt_query
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: 'Returned valid JSON with an articles array on 2026-10-02 (multilingual results). Follow-up calls hit HTTP 429: rate-limit to roughly one request per 5+ seconds. Default window is 3 months, max 250 records; add sort=datedesc and timespan for incremental polling.'
+  ownership:
+    description: The GDELT Project (open data, supported by Google Jigsaw).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Global_Database_of_Events,_Language,_and_Tone
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: 2026-10-02
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Metadata only (URL, title, domain, language, seendate).

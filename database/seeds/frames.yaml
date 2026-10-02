@@ -1,0 +1,112 @@
+# Framing typology. Cues are indicative lexical signals used by the tier-1 (lexicon)
+# framer and as hypotheses for the zero-shot model. Frames are NOT exclusive and
+# say nothing about whether the framing is accurate. Discovered frames are added
+# with discovered: true.
+- slug: conflict
+  en: Conflict frame
+  ar: إطار الصراع
+  description: Emphasises fighting, opposing sides, winners and losers.
+  hypothesis: This text is about armed conflict between opposing sides.
+  cues: {en: [clash, fighting, battle, offensive, killed, frontline], ar: [اشتباكات, معارك, هجوم, مقتل, جبهة, قصف]}
+- slug: humanitarian
+  en: Humanitarian frame
+  ar: الإطار الإنساني
+  description: Emphasises civilian suffering, needs and aid.
+  hypothesis: This text is about civilian suffering and humanitarian needs.
+  cues: {en: [civilians, humanitarian, famine, displaced, aid, children, cholera, suffering], ar: [المدنيين, إنسانية, مجاعة, نازحين, مساعدات, الأطفال, كوليرا, معاناة]}
+- slug: security
+  en: Security frame
+  ar: الإطار الأمني
+  description: Presents the issue as a threat to be managed by security means.
+  hypothesis: This text presents the issue as a security threat.
+  cues: {en: [threat, security, terrorist, smuggling, intercepted], ar: [تهديد, أمن, إرهابي, تهريب, ضبط]}
+- slug: economic
+  en: Economic frame
+  ar: الإطار الاقتصادي
+  description: Emphasises costs, prices, livelihoods and economic consequences.
+  hypothesis: This text is about economic costs and consequences.
+  cues: {en: [economy, prices, currency, salaries, inflation, revenue], ar: [اقتصاد, أسعار, عملة, رواتب, تضخم, إيرادات]}
+- slug: sovereignty
+  en: Sovereignty frame
+  ar: إطار السيادة
+  description: Emphasises national sovereignty, independence and foreign violations of it.
+  hypothesis: This text is about national sovereignty and its violation.
+  cues: {en: [sovereignty, violation of sovereignty, independence, occupation], ar: [السيادة, انتهاك السيادة, الاستقلال, الاحتلال]}
+- slug: sectarian
+  en: Sectarian frame
+  ar: الإطار الطائفي
+  description: Presents actors or events through sectarian or religious-communal identity.
+  hypothesis: This text describes the situation in sectarian or religious-group terms.
+  cues: {en: [sectarian, shia, sunni, zaydi, rafida], ar: [طائفي, شيعي, سني, زيدي, روافض, مذهبي]}
+- slug: national-unity
+  en: National unity frame
+  ar: إطار الوحدة الوطنية
+  description: Emphasises Yemeni unity and the integrity of the state.
+  hypothesis: This text emphasises national unity.
+  cues: {en: [national unity, unified yemen, territorial integrity], ar: [الوحدة الوطنية, الوحدة اليمنية, وحدة الأراضي]}
+- slug: separatist
+  en: Separatist / self-determination frame
+  ar: إطار الانفصال / تقرير المصير
+  description: Emphasises southern self-determination, secession or restoration of a southern state.
+  hypothesis: This text is about southern independence or secession.
+  cues: {en: [self-determination, secession, southern state, independence of the south], ar: [تقرير المصير, فك الارتباط, استعادة الدولة, دولة الجنوب, الانفصال]}
+- slug: anti-corruption
+  en: Anti-corruption frame
+  ar: إطار مكافحة الفساد
+  description: Emphasises corruption, embezzlement and accountability.
+  hypothesis: This text is about corruption.
+  cues: {en: [corruption, embezzlement, looting, accountability], ar: [فساد, اختلاس, نهب, محاسبة]}
+- slug: governance
+  en: Governance frame
+  ar: إطار الحوكمة
+  description: Emphasises institutions, administration and service delivery.
+  hypothesis: This text is about governance and public services.
+  cues: {en: [governance, services, institutions, administration, reform], ar: [الخدمات, المؤسسات, الإدارة, إصلاح]}
+- slug: foreign-intervention
+  en: Foreign intervention frame
+  ar: إطار التدخل الخارجي
+  description: Emphasises the role of foreign states in the conflict.
+  hypothesis: This text is about foreign intervention in Yemen.
+  cues: {en: [intervention, foreign forces, coalition, aggression, interference], ar: [تدخل, قوات أجنبية, التحالف, العدوان, تدخلات]}
+- slug: proxy-war
+  en: Proxy-war frame
+  ar: إطار الحرب بالوكالة
+  description: Presents local actors as instruments of regional powers.
+  hypothesis: This text describes a proxy war between regional powers.
+  cues: {en: [proxy, iran-backed, backed by, arms from iran, emirati-backed], ar: [وكيل, ذراع إيران, المدعومة من, أدوات, بالوكالة]}
+- slug: peace
+  en: Peace frame
+  ar: إطار السلام
+  description: Emphasises dialogue, de-escalation and settlement.
+  hypothesis: This text is about peace efforts and dialogue.
+  cues: {en: [peace, dialogue, truce, de-escalation, agreement, roadmap], ar: [السلام, حوار, هدنة, تهدئة, اتفاق, خارطة الطريق]}
+- slug: resistance
+  en: Resistance frame
+  ar: إطار المقاومة
+  description: Presents an actor's actions as resistance to aggression or occupation.
+  hypothesis: This text presents an actor as resisting aggression.
+  cues: {en: [resistance, steadfastness, confronting aggression], ar: [مقاومة, صمود, التصدي للعدوان, المجاهدين]}
+- slug: terrorism
+  en: Terrorism frame
+  ar: إطار الإرهاب
+  description: Presents an actor or act as terrorism.
+  hypothesis: This text describes actions as terrorism.
+  cues: {en: [terrorist, terrorism, terror attack], ar: [إرهابي, إرهاب, عمل إرهابي, الإرهابية]}
+- slug: victimization
+  en: Victimisation frame
+  ar: إطار الضحية
+  description: Emphasises an actor or community as victim.
+  hypothesis: This text portrays a group as victims.
+  cues: {en: [victims, massacre, innocent, targeted civilians], ar: [ضحايا, مجزرة, أبرياء, استهداف المدنيين]}
+- slug: legitimacy
+  en: Legitimacy frame
+  ar: إطار الشرعية
+  description: Emphasises which authority is legitimate or illegitimate.
+  hypothesis: This text is about the legitimacy of an authority.
+  cues: {en: [legitimate, illegitimate, coup, putschists, internationally recognised], ar: [الشرعية, الانقلاب, الانقلابيين, المعترف بها دوليا, غير شرعي]}
+- slug: identity
+  en: Identity frame
+  ar: إطار الهوية
+  description: Emphasises regional, tribal, national or religious identity.
+  hypothesis: This text is about collective identity.
+  cues: {en: [identity, heritage, southern identity, tribal identity], ar: [الهوية, هوية, الموروث]}

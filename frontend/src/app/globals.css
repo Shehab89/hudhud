@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f5f3ee;
+  --surface: #ffffff;
+  --surface-2: #efece4;
+  --ink: #1b2130;
+  --muted: #5a6273;
+  --line: #e1ddd3;
+  --accent: #a94b25;
+  --accent-ink: #ffffff;
+  --accent-2: #1d6a73;
+  --demo: #8a5a00;
+  --demo-bg: #fff4d6;
+  --base-sanaa: #7a5ca6;
+  --base-gov: #2e78bb;
+  --base-stc: #c9851f;
+  --base-outside: #5b8a56;
+  --base-unknown: #8a8f99;
+  --neg: #c0503a;
+  --neu: #98a0ae;
+  --pos: #3c8c68;
+  --unc: #c7b064;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #10131a;
+  --surface: #171b24;
+  --surface-2: #1e2430;
+  --ink: #e8e5de;
+  --muted: #9ba3b2;
+  --line: #2a313e;
+  --accent: #e27b4e;
+  --accent-ink: #10131a;
+  --accent-2: #53b4be;
+  --demo: #ffd479;
+  --demo-bg: #3a2c08;
+  --base-sanaa: #a88ad6;
+  --base-gov: #6aa9e6;
+  --base-stc: #e9ad4d;
+  --base-outside: #8dbf87;
+  --base-unknown: #9aa0aa;
+  --neg: #e2775f;
+  --neu: #7d8594;
+  --pos: #6cc39a;
+  --unc: #d8c27a;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-2: var(--accent-2);
+  --color-demo: var(--demo);
+  --color-demo-bg: var(--demo-bg);
+  --font-sans: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html { background: var(--bg); color: var(--ink); }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; }
+html[dir="rtl"] body { font-family: var(--font-arabic); }
+h1, h2, h3 { text-wrap: balance; }
+.num { font-variant-numeric: tabular-nums; }
+.label-caps { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; }
+html[dir="rtl"] .label-caps { text-transform: none; letter-spacing: 0; font-size: 0.8rem; }
+:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+.skip-link { position: absolute; inset-inline-start: -9999px; }
+.skip-link:focus { inset-inline-start: 1rem; top: 1rem; z-index: 50; background: var(--surface); padding: 0.5rem 0.75rem; }

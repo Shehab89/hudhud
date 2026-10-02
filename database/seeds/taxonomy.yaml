@@ -1,0 +1,342 @@
+# Yemen-specific hierarchical topic taxonomy.
+# Each node: slug, en, ar, optional kw (keywords per language). Keywords are matched
+# on normalised text with Arabic clitic handling (see observatory/nlp/arabic.py).
+# Arabic keywords are written without the definite article "ال".
+# The taxonomy does NOT constrain topic discovery: BERTopic runs independently, and
+# clusters that match no category are stored as emerging categories.
+
+- slug: politics
+  en: Politics
+  ar: السياسة
+  kw: {en: [politic, government, parliament], ar: [سياسي, حكومة], fr: [politique, gouvernement], de: [Politik, Regierung], es: [política, gobierno]}
+  children:
+    - {slug: presidential-politics, en: Presidential politics, ar: الرئاسة, kw: {en: [president, presidential leadership council, PLC], ar: [رئيس الجمهورية, مجلس القيادة الرئاسي, الرئاسي]}}
+    - {slug: government, en: Government, ar: الحكومة, kw: {en: [prime minister, government], ar: [رئيس الوزراء, الحكومة]}}
+    - {slug: parliament, en: Parliament, ar: البرلمان, kw: {en: [parliament, house of representatives, shura council], ar: [مجلس النواب, البرلمان, مجلس الشورى]}}
+    - {slug: cabinet, en: Cabinet, ar: مجلس الوزراء, kw: {en: [cabinet, council of ministers], ar: [مجلس الوزراء]}}
+    - {slug: ministries, en: Ministries, ar: الوزارات, kw: {en: [ministry, minister of], ar: [وزارة, وزير]}}
+    - {slug: political-parties, en: Political parties, ar: الأحزاب السياسية, kw: {en: [political party, general people's congress, GPC, socialist party], ar: [حزب, المؤتمر الشعبي العام, الحزب الاشتراكي, التنظيم الناصري]}}
+    - {slug: political-negotiations, en: Political negotiations, ar: المفاوضات السياسية, kw: {en: [negotiation, talks, dialogue], ar: [مفاوضات, محادثات, حوار]}}
+    - {slug: constitutional-issues, en: Constitutional issues, ar: القضايا الدستورية, kw: {en: [constitution, constitutional], ar: [دستور, دستوري]}}
+    - {slug: elections, en: Elections, ar: الانتخابات, kw: {en: [election, vote, ballot], ar: [انتخابات, اقتراع]}}
+    - {slug: electoral-reform, en: Electoral reform, ar: الإصلاح الانتخابي, kw: {en: [electoral reform, electoral law], ar: [قانون الانتخابات, لجنة الانتخابات]}}
+    - {slug: political-appointments, en: Political appointments, ar: التعيينات السياسية, kw: {en: [appointed, appointment, decree], ar: [تعيين, قرار جمهوري]}}
+    - {slug: governance, en: Governance, ar: الحوكمة, kw: {en: [governance, accountability], ar: [حوكمة, مساءلة]}}
+    - {slug: decentralization, en: Decentralization, ar: اللامركزية, kw: {en: [decentralization, decentralisation], ar: [لامركزية]}}
+    - {slug: federalism, en: Federalism, ar: الفيدرالية, kw: {en: [federal, federalism, six regions], ar: [فيدرالية, اتحادية, الأقاليم]}}
+    - {slug: state-institutions, en: State institutions, ar: مؤسسات الدولة, kw: {en: [state institutions], ar: [مؤسسات الدولة]}}
+    - {slug: political-legitimacy, en: Political legitimacy, ar: الشرعية السياسية, kw: {en: [legitimacy, legitimate government, internationally recognized], ar: [الشرعية, المعترف بها دوليا]}}
+    - {slug: corruption, en: Corruption, ar: الفساد, kw: {en: [corruption, embezzlement, bribery], ar: [فساد, اختلاس, رشوة]}}
+    - {slug: patronage, en: Patronage, ar: المحسوبية, kw: {en: [patronage, nepotism, clientelism], ar: [محسوبية, محاباة]}}
+    - {slug: political-repression, en: Political repression, ar: القمع السياسي, kw: {en: [repression, crackdown], ar: [قمع, حملة اعتقالات]}}
+    - {slug: political-prisoners, en: Political prisoners, ar: المعتقلون السياسيون, kw: {en: [political prisoner, abductee], ar: [معتقلين سياسيين, مختطفين]}}
+    - {slug: civil-society, en: Civil society, ar: المجتمع المدني, kw: {en: [civil society], ar: [المجتمع المدني, منظمات المجتمع المدني]}}
+    - {slug: protests, en: Protests and demonstrations, ar: الاحتجاجات والمظاهرات, kw: {en: [protest, demonstration, rally, sit-in], ar: [احتجاج, مظاهرة, مسيرة, وقفة احتجاجية, اعتصام]}}
+    - {slug: political-movements, en: Political movements, ar: الحركات السياسية, kw: {en: [political movement], ar: [حركة سياسية]}}
+    - {slug: political-alliances, en: Political alliances, ar: التحالفات السياسية, kw: {en: [alliance, coalition], ar: [تحالف, ائتلاف]}}
+    - {slug: elite-politics, en: Elite politics, ar: سياسة النخب, kw: {en: [elite, power struggle], ar: [النخب, صراع النفوذ]}}
+    - {slug: local-governance, en: Local governance, ar: السلطة المحلية, kw: {en: [governor, local authority, local council], ar: [محافظ, السلطة المحلية, المجلس المحلي]}}
+
+- slug: conflict-security
+  en: Conflict and security
+  ar: الصراع والأمن
+  kw: {en: [war, military, security, attack], ar: [حرب, عسكري, أمني, هجوم], fr: [guerre, militaire, attaque], de: [Krieg, Angriff, Militär], es: [guerra, ataque, militar]}
+  children:
+    - {slug: civil-war, en: Civil war, ar: الحرب الأهلية, kw: {en: [civil war, war in yemen], ar: [حرب أهلية, الحرب في اليمن]}}
+    - {slug: ceasefire, en: Ceasefire and truce, ar: وقف إطلاق النار والهدنة, kw: {en: [ceasefire, truce, de-escalation], ar: [وقف إطلاق النار, هدنة, تهدئة]}}
+    - {slug: peace-negotiations, en: Peace negotiations, ar: مفاوضات السلام, kw: {en: [peace talks, peace process, roadmap, UN envoy], ar: [مفاوضات السلام, عملية السلام, خارطة الطريق, المبعوث الأممي]}}
+    - {slug: armed-clashes, en: Armed clashes, ar: الاشتباكات المسلحة, kw: {en: [clash, fighting, frontline], ar: [اشتباكات, معارك, جبهة]}}
+    - {slug: military-operations, en: Military operations, ar: العمليات العسكرية, kw: {en: [military operation, offensive], ar: [عملية عسكرية, هجوم واسع]}}
+    - {slug: airstrikes, en: Airstrikes, ar: الغارات الجوية, kw: {en: [airstrike, air strike, air raid, bombing], ar: [غارة, غارات, قصف جوي]}}
+    - {slug: drones, en: Drones, ar: الطائرات المسيرة, kw: {en: [drone, UAV], ar: [طائرة مسيرة, مسيرة, مسيّرة]}}
+    - {slug: missiles, en: Missiles, ar: الصواريخ, kw: {en: [missile, ballistic], ar: [صاروخ, صواريخ, باليستي]}}
+    - {slug: naval-attacks, en: Naval attacks, ar: الهجمات البحرية, kw: {en: [ship attacked, vessel, tanker attack, merchant ship], ar: [سفينة, ناقلة, سفن تجارية]}}
+    - {slug: red-sea-security, en: Red Sea security, ar: أمن البحر الأحمر, kw: {en: [red sea], ar: [البحر الأحمر]}}
+    - {slug: bab-al-mandab, en: Bab al-Mandab, ar: باب المندب, kw: {en: [bab al-mandab, bab el-mandeb, mandab], ar: [باب المندب]}}
+    - {slug: maritime-security, en: Maritime security, ar: الأمن البحري, kw: {en: [maritime security, shipping lanes, naval], ar: [الأمن البحري, الملاحة]}}
+    - {slug: terrorism, en: Terrorism, ar: الإرهاب, kw: {en: [terrorism, terrorist], ar: [إرهاب, إرهابي]}}
+    - {slug: counterterrorism, en: Counterterrorism, ar: مكافحة الإرهاب, kw: {en: [counterterrorism, counter-terrorism], ar: [مكافحة الإرهاب]}}
+    - {slug: aqap, en: AQAP, ar: القاعدة في جزيرة العرب, kw: {en: [AQAP, al-qaeda, al qaeda], ar: [القاعدة, تنظيم القاعدة]}}
+    - {slug: isis, en: ISIS, ar: داعش, kw: {en: [ISIS, islamic state, ISIL], ar: [داعش, تنظيم الدولة]}}
+    - {slug: militias-armed-groups, en: Militias and armed groups, ar: الميليشيات والجماعات المسلحة, kw: {en: [militia, armed group], ar: [ميليشيا, مليشيا, جماعة مسلحة]}}
+    - {slug: weapons, en: Weapons and arms trafficking, ar: الأسلحة وتهريبها, kw: {en: [weapons, arms smuggling, arms shipment], ar: [أسلحة, تهريب الأسلحة, شحنة أسلحة]}}
+    - {slug: military-recruitment, en: Military recruitment, ar: التجنيد العسكري, kw: {en: [recruitment, recruits, conscription], ar: [تجنيد, مجندين]}}
+    - {slug: child-soldiers, en: Child soldiers, ar: تجنيد الأطفال, kw: {en: [child soldiers, recruitment of children], ar: [تجنيد الأطفال, الأطفال المجندين]}}
+    - {slug: mines-uxo, en: Mines and unexploded ordnance, ar: الألغام والمخلفات, kw: {en: [landmine, mines, unexploded ordnance, UXO, demining, Masam], ar: [ألغام, لغم, مخلفات الحرب, نزع الألغام, مسام]}}
+    - {slug: military-bases, en: Military bases, ar: القواعد العسكرية, kw: {en: [military base, airbase], ar: [قاعدة عسكرية]}}
+    - {slug: security-forces, en: Security forces, ar: القوات الأمنية, kw: {en: [security forces, police, security belt, giants brigades, national resistance], ar: [قوات الأمن, الشرطة, الحزام الأمني, ألوية العمالقة, المقاومة الوطنية, النخبة]}}
+    - {slug: intelligence, en: Intelligence, ar: الاستخبارات, kw: {en: [intelligence, spy, espionage], ar: [استخبارات, تجسس, جاسوس]}}
+    - {slug: detention, en: Detention, ar: الاحتجاز, kw: {en: [detained, detention, arrested, prisoner exchange], ar: [احتجاز, اعتقال, تبادل الأسرى, أسرى]}}
+    - {slug: disappearances, en: Enforced disappearances, ar: الإخفاء القسري, kw: {en: [disappeared, enforced disappearance], ar: [إخفاء قسري, المخفيين]}}
+    - {slug: assassinations, en: Assassinations, ar: الاغتيالات, kw: {en: [assassination, assassinated], ar: [اغتيال, اغتيالات]}}
+    - {slug: political-violence, en: Political violence, ar: العنف السياسي, kw: {en: [political violence], ar: [عنف سياسي]}}
+    - {slug: tribal-conflict, en: Tribal conflict, ar: النزاعات القبلية, kw: {en: [tribal clash, tribal conflict, revenge killing], ar: [اشتباكات قبلية, ثأر, نزاع قبلي]}}
+
+- slug: houthis-ansar-allah
+  en: Houthis / Ansar Allah
+  ar: الحوثيون / أنصار الله
+  kw: {en: [houthi, ansar allah, ansarullah], ar: [حوثي, أنصار الله], fr: [houthi, houthis], de: [Huthi, Houthi], es: [hutíes, houthi]}
+  children:
+    - {slug: houthi-governance, en: Houthi governance, ar: حكم الحوثيين, kw: {en: [de facto authorities, sanaa authorities, supreme political council], ar: [سلطات الأمر الواقع, المجلس السياسي الأعلى, حكومة صنعاء]}}
+    - {slug: houthi-military, en: Houthi military activity, ar: النشاط العسكري للحوثيين, kw: {en: [houthi forces, houthi fighters, houthi attack], ar: [قوات صنعاء, القوات المسلحة اليمنية]}}
+    - {slug: houthi-ideology, en: Houthi ideology, ar: أيديولوجيا الحوثيين, kw: {en: [houthi ideology, sarkha, zamil], ar: [الصرخة, الملازم, المسيرة القرآنية]}}
+    - {slug: houthi-discourse, en: Houthi political discourse, ar: الخطاب السياسي للحوثيين, kw: {en: [abdul-malik al-houthi speech], ar: [خطاب السيد, عبدالملك الحوثي]}}
+    - {slug: houthi-economy, en: Houthi economy and taxation, ar: اقتصاد الحوثيين والجبايات, kw: {en: [houthi taxation, levies, zakat authority], ar: [جبايات, هيئة الزكاة, إتاوات]}}
+    - {slug: houthi-recruitment-education, en: Recruitment and education under the Houthis, ar: التجنيد والتعليم لدى الحوثيين, kw: {en: [summer camps, curriculum changes], ar: [المراكز الصيفية, الدورات الثقافية, تغيير المناهج]}}
+    - {slug: houthi-religious-institutions, en: Religious institutions under the Houthis, ar: المؤسسات الدينية لدى الحوثيين, kw: {en: [general authority of endowments], ar: [هيئة الأوقاف]}}
+    - {slug: houthi-media, en: Houthi media, ar: إعلام الحوثيين, kw: {en: [al-masirah], ar: [قناة المسيرة]}}
+    - {slug: houthi-repression-detention, en: Repression and detention by the Houthis, ar: القمع والاحتجاز لدى الحوثيين, kw: {en: [houthi detention, UN staff detained], ar: [اختطاف موظفي الأمم المتحدة, سجون الحوثي]}}
+    - {slug: houthi-iran-relations, en: Houthi relations with Iran, ar: علاقات الحوثيين بإيران, kw: {en: [iran-backed, iranian support, IRGC], ar: [الدعم الإيراني, الحرس الثوري]}}
+    - {slug: houthi-red-sea-attacks, en: Red Sea attacks, ar: هجمات البحر الأحمر, kw: {en: [houthi attack ship, red sea attack, shipping attack], ar: [استهداف السفن, عمليات البحر الأحمر]}}
+    - {slug: houthi-peace-negotiations, en: Houthi peace negotiations, ar: مفاوضات السلام مع الحوثيين, kw: {en: [houthi negotiators, muscat talks], ar: [وفد صنعاء, مفاوضات مسقط]}}
+    - {slug: sanaa, en: Sanaa, ar: صنعاء, kw: {en: [sanaa, sana'a], ar: [صنعاء]}}
+    - {slug: saada, en: Saada, ar: صعدة, kw: {en: [saada, sa'dah], ar: [صعدة]}}
+    - {slug: northern-yemen, en: Northern Yemen, ar: شمال اليمن, kw: {en: [northern yemen, north yemen], ar: [شمال اليمن]}}
+
+- slug: southern-yemen
+  en: Southern Yemen
+  ar: جنوب اليمن
+  kw: {en: [southern yemen, south yemen], ar: [الجنوب, جنوب اليمن], fr: [sud du yémen], de: [Südjemen]}
+  children:
+    - {slug: stc, en: Southern Transitional Council, ar: المجلس الانتقالي الجنوبي, kw: {en: [southern transitional council, STC, aidarous al-zubaidi], ar: [الانتقالي الجنوبي, المجلس الانتقالي, عيدروس الزبيدي]}}
+    - {slug: southern-independence, en: Southern independence and separatism, ar: استقلال الجنوب والانفصال, kw: {en: [secession, separatist, southern independence, restoring the southern state], ar: [فك الارتباط, انفصال, استعادة الدولة, الانفصاليين]}}
+    - {slug: aden, en: Aden, ar: عدن, kw: {en: [aden], ar: [عدن]}}
+    - {slug: hadramawt, en: Hadramawt, ar: حضرموت, kw: {en: [hadramawt, hadramout, hadhramaut, mukalla], ar: [حضرموت, المكلا]}}
+    - {slug: shabwa, en: Shabwa, ar: شبوة, kw: {en: [shabwa, shabwah], ar: [شبوة]}}
+    - {slug: socotra, en: Socotra, ar: سقطرى, kw: {en: [socotra], ar: [سقطرى]}}
+    - {slug: abyan, en: Abyan, ar: أبين, kw: {en: [abyan], ar: [أبين]}}
+    - {slug: lahj, en: Lahj, ar: لحج, kw: {en: [lahj], ar: [لحج]}}
+    - {slug: dhale, en: Al-Dhale, ar: الضالع, kw: {en: [dhale, dhalea], ar: [الضالع]}}
+    - {slug: southern-identity, en: Southern identity, ar: الهوية الجنوبية, kw: {en: [southern identity, south arabia], ar: [الهوية الجنوبية, الجنوب العربي]}}
+    - {slug: southern-movements, en: Southern political movements, ar: الحركات السياسية الجنوبية, kw: {en: [hirak, southern movement], ar: [الحراك الجنوبي]}}
+    - {slug: uae-influence-south, en: UAE influence in the south, ar: النفوذ الإماراتي في الجنوب, kw: {en: [emirati-backed, uae-backed], ar: [المدعوم إماراتيا, النفوذ الإماراتي]}}
+    - {slug: southern-security-forces, en: Southern security forces, ar: القوات الأمنية الجنوبية, kw: {en: [security belt, shabwani elite, hadrami elite], ar: [الحزام الأمني, النخبة الشبوانية, النخبة الحضرمية, القوات الجنوبية]}}
+
+- slug: international-relations
+  en: International relations
+  ar: العلاقات الدولية
+  kw: {en: [diplomatic, foreign minister, envoy, ambassador], ar: [دبلوماسي, وزير الخارجية, مبعوث, سفير], fr: [diplomatie], de: [Diplomatie], es: [diplomacia]}
+  children:
+    - {slug: saudi-arabia, en: Saudi Arabia, ar: السعودية, kw: {en: [saudi, riyadh], ar: [السعودية, سعودي, الرياض, المملكة]}}
+    - {slug: uae, en: United Arab Emirates, ar: الإمارات, kw: {en: [UAE, emirati, abu dhabi], ar: [الإمارات, إماراتي, أبوظبي]}}
+    - {slug: oman, en: Oman, ar: عمان, kw: {en: [oman, omani, muscat], ar: [سلطنة عمان, عماني, مسقط]}}
+    - {slug: iran, en: Iran, ar: إيران, kw: {en: [iran, iranian, tehran], ar: [إيران, إيراني, طهران]}}
+    - {slug: united-states, en: United States, ar: الولايات المتحدة, kw: {en: [united states, washington, pentagon, US forces, american], ar: [الولايات المتحدة, واشنطن, أمريكا, الأمريكي]}}
+    - {slug: united-kingdom, en: United Kingdom, ar: بريطانيا, kw: {en: [britain, british, UK], ar: [بريطانيا, بريطاني, المملكة المتحدة]}}
+    - {slug: european-union, en: European Union, ar: الاتحاد الأوروبي, kw: {en: [european union, EU], ar: [الاتحاد الأوروبي]}}
+    - {slug: israel, en: Israel, ar: إسرائيل, kw: {en: [israel, israeli], ar: [إسرائيل, الاحتلال الإسرائيلي, الكيان]}}
+    - {slug: china, en: China, ar: الصين, kw: {en: [china, chinese, beijing], ar: [الصين, صيني, بكين]}}
+    - {slug: russia, en: Russia, ar: روسيا, kw: {en: [russia, russian, moscow], ar: [روسيا, روسي, موسكو]}}
+    - {slug: turkey, en: Turkey, ar: تركيا, kw: {en: [turkey, türkiye, turkish, ankara], ar: [تركيا, تركي, أنقرة]}}
+    - {slug: qatar, en: Qatar, ar: قطر, kw: {en: [qatar, doha], ar: [قطر, الدوحة]}}
+    - {slug: kuwait, en: Kuwait, ar: الكويت, kw: {en: [kuwait], ar: [الكويت]}}
+    - {slug: bahrain, en: Bahrain, ar: البحرين, kw: {en: [bahrain], ar: [البحرين]}}
+    - {slug: egypt, en: Egypt, ar: مصر, kw: {en: [egypt, cairo], ar: [مصر, القاهرة]}}
+    - {slug: jordan, en: Jordan, ar: الأردن, kw: {en: [jordan, amman], ar: [الأردن, عمّان]}}
+    - {slug: djibouti, en: Djibouti, ar: جيبوتي, kw: {en: [djibouti], ar: [جيبوتي]}}
+    - {slug: somalia, en: Somalia, ar: الصومال, kw: {en: [somalia, somaliland], ar: [الصومال, أرض الصومال]}}
+    - {slug: eritrea, en: Eritrea, ar: إريتريا, kw: {en: [eritrea], ar: [إريتريا, أريتريا]}}
+    - {slug: horn-of-africa, en: Horn of Africa, ar: القرن الأفريقي, kw: {en: [horn of africa], ar: [القرن الأفريقي]}}
+    - {slug: red-sea-diplomacy, en: Red Sea diplomacy, ar: دبلوماسية البحر الأحمر, kw: {en: [red sea council, red sea states], ar: [مجلس الدول العربية والأفريقية المطلة على البحر الأحمر]}}
+    - {slug: gulf-politics, en: Gulf politics, ar: السياسة الخليجية, kw: {en: [gulf cooperation council, GCC], ar: [مجلس التعاون الخليجي]}}
+    - {slug: regional-competition, en: Regional competition, ar: التنافس الإقليمي, kw: {en: [regional rivalry, regional competition], ar: [التنافس الإقليمي, الصراع الإقليمي]}}
+    - {slug: proxy-politics, en: Proxy politics, ar: حروب الوكالة, kw: {en: [proxy war, proxies], ar: [حرب بالوكالة, وكلاء]}}
+    - {slug: sanctions, en: Sanctions and designations, ar: العقوبات والتصنيفات, kw: {en: [sanctions, designation, terrorist designation, FTO], ar: [عقوبات, تصنيف, منظمة إرهابية]}}
+    - {slug: international-diplomacy, en: International diplomacy and the UN, ar: الدبلوماسية الدولية والأمم المتحدة, kw: {en: [security council, united nations, UN envoy, hans grundberg], ar: [مجلس الأمن, الأمم المتحدة, غروندبرغ]}}
+
+- slug: economy
+  en: Economy
+  ar: الاقتصاد
+  kw: {en: [economy, economic], ar: [اقتصاد, اقتصادي], fr: [économie], de: [Wirtschaft], es: [economía]}
+  children:
+    - {slug: yemeni-rial, en: Yemeni rial and exchange rates, ar: الريال اليمني وأسعار الصرف, kw: {en: [rial, exchange rate, currency], ar: [الريال, سعر الصرف, العملة, الصرف]}}
+    - {slug: inflation, en: Inflation, ar: التضخم, kw: {en: [inflation, price rise], ar: [تضخم, ارتفاع الأسعار]}}
+    - {slug: salaries, en: Salaries and public sector pay, ar: الرواتب, kw: {en: [salaries, unpaid salaries, wages], ar: [رواتب, المرتبات, أجور]}}
+    - {slug: private-sector, en: Private sector and business, ar: القطاع الخاص, kw: {en: [private sector, business, companies, chamber of commerce], ar: [القطاع الخاص, رجال الأعمال, الغرفة التجارية]}}
+    - {slug: banking, en: Banking and the Central Bank, ar: البنوك والبنك المركزي, kw: {en: [central bank, banks, banking, CBY], ar: [البنك المركزي, بنوك, مصارف]}}
+    - {slug: monetary-fiscal-policy, en: Monetary and fiscal policy, ar: السياسة النقدية والمالية, kw: {en: [monetary policy, budget, fiscal], ar: [السياسة النقدية, الموازنة, المالية العامة]}}
+    - {slug: taxation-customs, en: Taxation and customs, ar: الضرائب والجمارك, kw: {en: [tax, customs, tariffs], ar: [ضرائب, جمارك, رسوم جمركية]}}
+    - {slug: oil-gas, en: Oil and gas, ar: النفط والغاز, kw: {en: [oil, gas, crude, LNG, oil exports, safer company], ar: [نفط, غاز, النفط الخام, تصدير النفط, صافر]}}
+    - {slug: ports-trade, en: Ports, trade and imports, ar: الموانئ والتجارة, kw: {en: [port, imports, exports, trade, shipping], ar: [ميناء, واردات, صادرات, تجارة]}}
+    - {slug: food-prices, en: Food prices, ar: أسعار الغذاء, kw: {en: [food prices, wheat price, flour], ar: [أسعار المواد الغذائية, سعر القمح, الدقيق]}}
+    - {slug: fuel-prices, en: Fuel prices and shortages, ar: أسعار الوقود, kw: {en: [fuel, diesel, petrol, gasoline, fuel crisis], ar: [وقود, ديزل, بنزين, مشتقات نفطية, أزمة الوقود]}}
+    - {slug: electricity-economy, en: Electricity supply, ar: الكهرباء, kw: {en: [electricity, power cuts, blackout], ar: [كهرباء, انقطاع الكهرباء]}}
+    - {slug: telecommunications-economy, en: Telecommunications sector, ar: قطاع الاتصالات, kw: {en: [telecom sector, yemen mobile, MTN, YemenNet], ar: [قطاع الاتصالات, يمن موبايل]}}
+    - {slug: banking-restrictions, en: Banking restrictions and split monetary system, ar: القيود المصرفية والانقسام النقدي, kw: {en: [banking split, banks relocate to aden, SWIFT], ar: [نقل البنوك إلى عدن, الانقسام النقدي, سويفت]}}
+    - {slug: remittances, en: Remittances and diaspora economy, ar: التحويلات المالية, kw: {en: [remittances, money transfer], ar: [التحويلات, حوالات, المغتربين]}}
+    - {slug: unemployment-poverty, en: Unemployment and poverty, ar: البطالة والفقر, kw: {en: [unemployment, poverty, jobless], ar: [بطالة, فقر]}}
+    - {slug: informal-economy, en: Informal economy, ar: الاقتصاد غير الرسمي, kw: {en: [informal economy, black market], ar: [الاقتصاد غير الرسمي, السوق السوداء]}}
+    - {slug: investment, en: Investment and entrepreneurship, ar: الاستثمار وريادة الأعمال, kw: {en: [investment, investor, startup, SMEs, entrepreneur], ar: [استثمار, مستثمرين, ريادة الأعمال, المشاريع الصغيرة]}}
+    - {slug: economic-reforms, en: Economic reforms, ar: الإصلاحات الاقتصادية, kw: {en: [economic reform], ar: [إصلاحات اقتصادية]}}
+    - {slug: public-debt, en: Public debt, ar: الدين العام, kw: {en: [public debt, debt], ar: [الدين العام, ديون]}}
+    - {slug: foreign-aid-finance, en: Foreign aid and deposits, ar: المساعدات الخارجية والودائع, kw: {en: [saudi deposit, economic support, grant, world bank, IMF], ar: [وديعة, دعم اقتصادي, منحة, البنك الدولي, صندوق النقد]}}
+
+- slug: humanitarian
+  en: Humanitarian affairs
+  ar: الشؤون الإنسانية
+  kw: {en: [humanitarian, aid], ar: [إنساني, مساعدات], fr: [humanitaire], de: [humanitär], es: [humanitario]}
+  children:
+    - {slug: humanitarian-crisis, en: Humanitarian crisis, ar: الأزمة الإنسانية, kw: {en: [humanitarian crisis, worst humanitarian], ar: [الأزمة الإنسانية, أسوأ أزمة إنسانية]}}
+    - {slug: food-insecurity, en: Food insecurity and famine, ar: انعدام الأمن الغذائي والمجاعة, kw: {en: [food insecurity, famine, hunger, IPC], ar: [انعدام الأمن الغذائي, مجاعة, جوع]}}
+    - {slug: malnutrition, en: Malnutrition, ar: سوء التغذية, kw: {en: [malnutrition, malnourished], ar: [سوء التغذية]}}
+    - {slug: displacement, en: Displacement, refugees and IDPs, ar: النزوح واللاجئون, kw: {en: [displaced, IDP, refugees, displacement camp], ar: [نازحين, النزوح, لاجئين, مخيمات]}}
+    - {slug: humanitarian-aid, en: Humanitarian aid and UN agencies, ar: المساعدات الإنسانية, kw: {en: [humanitarian aid, WFP, UNICEF, OCHA, food aid], ar: [مساعدات إنسانية, برنامج الأغذية العالمي, يونيسف, أوتشا]}}
+    - {slug: ngos, en: NGOs, ar: المنظمات غير الحكومية, kw: {en: [NGO, non-governmental organization, aid workers], ar: [منظمات, منظمة غير حكومية, عمال الإغاثة]}}
+    - {slug: humanitarian-access, en: Humanitarian access and aid diversion, ar: الوصول الإنساني, kw: {en: [humanitarian access, aid diversion, aid obstruction], ar: [وصول المساعدات, نهب المساعدات, عرقلة المساعدات]}}
+    - {slug: humanitarian-funding, en: Humanitarian funding and donors, ar: التمويل الإنساني, kw: {en: [funding gap, donors, response plan, pledging], ar: [فجوة التمويل, المانحين, خطة الاستجابة]}}
+    - {slug: health, en: Health and hospitals, ar: الصحة والمستشفيات, kw: {en: [health, hospital, medical], ar: [صحة, مستشفى, طبي]}}
+    - {slug: maternal-child-health, en: Maternal and child health, ar: صحة الأم والطفل, kw: {en: [maternal health, child health, newborn], ar: [صحة الأم, صحة الطفل]}}
+    - {slug: epidemics, en: Epidemics, ar: الأوبئة, kw: {en: [cholera, dengue, measles, polio, outbreak, COVID], ar: [كوليرا, حمى الضنك, حصبة, شلل الأطفال, وباء, كورونا]}}
+    - {slug: vaccination, en: Vaccination, ar: التطعيم, kw: {en: [vaccination, vaccine, immunization], ar: [تطعيم, لقاح]}}
+    - {slug: wash, en: Water, sanitation and hygiene, ar: المياه والصرف الصحي, kw: {en: [WASH, clean water, sanitation], ar: [المياه النظيفة, الصرف الصحي]}}
+    - {slug: education-humanitarian, en: Education in emergencies, ar: التعليم في الطوارئ, kw: {en: [out of school, schools destroyed], ar: [خارج المدارس, تدمير المدارس]}}
+    - {slug: shelter-protection, en: Shelter and protection, ar: المأوى والحماية, kw: {en: [shelter, protection], ar: [مأوى, الحماية]}}
+    - {slug: gbv, en: Gender-based violence, ar: العنف القائم على النوع الاجتماعي, kw: {en: [gender-based violence, GBV], ar: [العنف القائم على النوع الاجتماعي]}}
+    - {slug: child-protection, en: Child protection, ar: حماية الطفل, kw: {en: [child protection, child marriage, child labour], ar: [حماية الطفل, زواج الأطفال, عمالة الأطفال]}}
+
+- slug: society
+  en: Society
+  ar: المجتمع
+  kw: {en: [society, social], ar: [مجتمع, اجتماعي]}
+  children:
+    - {slug: demographics, en: Demographics and population, ar: السكان, kw: {en: [population, census], ar: [السكان, تعداد]}}
+    - {slug: youth, en: Youth, ar: الشباب, kw: {en: [youth, young people], ar: [الشباب]}}
+    - {slug: women-gender, en: Women and gender, ar: المرأة والنوع الاجتماعي, kw: {en: [women, gender, mahram], ar: [المرأة, النساء, المحرم]}}
+    - {slug: family-marriage, en: Marriage and family, ar: الزواج والأسرة, kw: {en: [marriage, family, dowry], ar: [زواج, الأسرة, المهور]}}
+    - {slug: tribal-society, en: Tribal society, ar: المجتمع القبلي, kw: {en: [tribal society], ar: [المجتمع القبلي]}}
+    - {slug: social-norms-movements, en: Social norms and movements, ar: الأعراف والحركات الاجتماعية, kw: {en: [social norms, social movement], ar: [أعراف, حركة اجتماعية]}}
+    - {slug: education, en: Education, ar: التعليم, kw: {en: [education, school, university, teachers, students, exams], ar: [التعليم, مدرسة, جامعة, المعلمين, الطلاب, الامتحانات]}}
+    - {slug: migration-diaspora, en: Migration and diaspora, ar: الهجرة والمغتربون, kw: {en: [migrants, migration, diaspora, expatriates], ar: [مهاجرين, الهجرة, المغتربين, الجالية]}}
+    - {slug: urban-rural, en: Urban and rural life, ar: الحياة في المدن والأرياف, kw: {en: [urban, rural, villages], ar: [الريف, القرى, المدن]}}
+    - {slug: inequality-labor, en: Inequality and labour, ar: اللامساواة والعمل, kw: {en: [inequality, workers, labour, muhamasheen], ar: [عدم المساواة, العمال, المهمشين]}}
+    - {slug: public-opinion, en: Public opinion, ar: الرأي العام, kw: {en: [public opinion, survey, poll], ar: [الرأي العام, استطلاع]}}
+
+- slug: religion
+  en: Religion
+  ar: الدين
+  kw: {en: [religious, religion, islamic], ar: [ديني, الدين, إسلامي]}
+  children:
+    - {slug: sunni-islam, en: Sunni Islam, ar: الإسلام السني, kw: {en: [sunni], ar: [سني, السنة]}}
+    - {slug: zaydi-thought, en: Zaydi thought, ar: الفكر الزيدي, kw: {en: [zaydi, zaidi, zaydism], ar: [زيدي, الزيدية]}}
+    - {slug: shia-islam, en: Shia Islam, ar: الإسلام الشيعي, kw: {en: [shia, shiite, twelver], ar: [شيعي, الشيعة, اثنا عشري]}}
+    - {slug: salafism, en: Salafism, ar: السلفية, kw: {en: [salafi, salafist], ar: [سلفي, السلفية, السلفيين]}}
+    - {slug: religious-institutions, en: Religious institutions and authority, ar: المؤسسات والمرجعيات الدينية, kw: {en: [mosque, imam, cleric, mufti, fatwa], ar: [مسجد, خطيب, عالم دين, مفتي, فتوى]}}
+    - {slug: religious-education, en: Religious education, ar: التعليم الديني, kw: {en: [religious school, quranic center], ar: [مدارس دينية, مراكز تحفيظ, معاهد علمية]}}
+    - {slug: sectarianism, en: Sectarianism, ar: الطائفية, kw: {en: [sectarian, sectarianism], ar: [طائفي, الطائفية, مذهبي]}}
+    - {slug: religious-occasions, en: Religious occasions, ar: المناسبات الدينية, kw: {en: [ramadan, eid, mawlid, ghadir, hajj], ar: [رمضان, العيد, المولد النبوي, الغدير, الحج]}}
+    - {slug: religious-minorities, en: Religious minorities and freedom, ar: الأقليات الدينية, kw: {en: [baha'i, jews of yemen, christians, religious freedom], ar: [البهائيين, يهود اليمن, المسيحيين, الحرية الدينية]}}
+    - {slug: political-islam, en: Political Islam and Islamist movements, ar: الإسلام السياسي, kw: {en: [political islam, islamist, muslim brotherhood], ar: [الإسلام السياسي, إسلامي, الإخوان]}}
+
+- slug: tribes
+  en: Tribes
+  ar: القبائل
+  kw: {en: [tribe, tribal, sheikh], ar: [قبيلة, قبلي, شيخ, قبائل]}
+  children:
+    - {slug: tribal-politics, en: Tribal politics and alliances, ar: السياسة والتحالفات القبلية, kw: {en: [tribal alliance, hashid, bakil, madhhij], ar: [حاشد, بكيل, مذحج, تحالف قبلي]}}
+    - {slug: tribal-mediation, en: Tribal mediation, ar: الوساطة القبلية, kw: {en: [tribal mediation, mediation, tahkim], ar: [وساطة قبلية, تحكيم, صلح قبلي]}}
+    - {slug: tribal-state-relations, en: Tribal-state relations, ar: علاقة القبيلة بالدولة, kw: {en: [tribes and the state], ar: [القبيلة والدولة]}}
+    - {slug: tribal-leaders, en: Tribal leaders, ar: مشايخ القبائل, kw: {en: [tribal leader, tribal sheikh], ar: [شيخ قبلي, مشايخ]}}
+    - {slug: tribal-economy-identity, en: Tribal economy and identity, ar: الاقتصاد والهوية القبلية, kw: {en: [tribal identity], ar: [الهوية القبلية, الأعراف القبلية]}}
+
+- slug: environment
+  en: Environment
+  ar: البيئة
+  kw: {en: [environment, climate], ar: [بيئة, مناخ], fr: [environnement, climat], de: [Umwelt, Klima]}
+  children:
+    - {slug: climate-change, en: Climate change, ar: التغير المناخي, kw: {en: [climate change, global warming], ar: [التغير المناخي, الاحتباس الحراري]}}
+    - {slug: drought-water-scarcity, en: Drought and water scarcity, ar: الجفاف وشح المياه, kw: {en: [drought, water scarcity, groundwater, aquifer], ar: [جفاف, شح المياه, المياه الجوفية]}}
+    - {slug: desertification, en: Desertification, ar: التصحر, kw: {en: [desertification], ar: [التصحر]}}
+    - {slug: floods-cyclones, en: Floods, cyclones and earthquakes, ar: الفيضانات والأعاصير, kw: {en: [flood, flash flood, cyclone, torrential rain, earthquake], ar: [سيول, فيضانات, إعصار, أمطار غزيرة, زلزال]}}
+    - {slug: pollution, en: Pollution and oil spills, ar: التلوث والتسربات النفطية, kw: {en: [pollution, oil spill], ar: [تلوث, تسرب نفطي]}}
+    - {slug: safer-tanker, en: FSO Safer tanker, ar: خزان صافر, kw: {en: [FSO Safer, safer tanker], ar: [خزان صافر, السفينة صافر]}}
+    - {slug: marine-ecosystem, en: Marine ecosystem and fisheries, ar: البيئة البحرية والمصايد, kw: {en: [marine ecosystem, coral reef, fisheries], ar: [البيئة البحرية, الشعاب المرجانية, الثروة السمكية]}}
+    - {slug: socotra-biodiversity, en: Socotra biodiversity, ar: التنوع البيولوجي في سقطرى, kw: {en: [dragon blood tree, socotra biodiversity], ar: [شجرة دم الأخوين, التنوع الحيوي في سقطرى]}}
+
+- slug: agriculture
+  en: Agriculture
+  ar: الزراعة
+  kw: {en: [agriculture, farmers, crops], ar: [الزراعة, المزارعين, محاصيل]}
+  children:
+    - {slug: qat, en: Qat, ar: القات, kw: {en: [qat, khat], ar: [القات]}}
+    - {slug: coffee, en: Coffee, ar: البن, kw: {en: [yemeni coffee, mocha coffee], ar: [البن اليمني]}}
+    - {slug: food-production, en: Food production and food security, ar: إنتاج الغذاء, kw: {en: [food production, wheat cultivation, harvest], ar: [إنتاج الغذاء, زراعة القمح, الحصاد]}}
+    - {slug: livestock, en: Livestock, ar: الثروة الحيوانية, kw: {en: [livestock, cattle, sheep], ar: [الثروة الحيوانية, المواشي, الأغنام]}}
+    - {slug: fisheries, en: Fisheries, ar: الثروة السمكية, kw: {en: [fishermen, fishing], ar: [الصيادين, الاصطياد]}}
+    - {slug: irrigation, en: Irrigation, ar: الري, kw: {en: [irrigation, dams], ar: [الري, سدود]}}
+    - {slug: agricultural-exports, en: Agricultural exports, ar: الصادرات الزراعية, kw: {en: [agricultural exports], ar: [الصادرات الزراعية]}}
+
+- slug: infrastructure
+  en: Infrastructure
+  ar: البنية التحتية
+  kw: {en: [infrastructure], ar: [البنية التحتية]}
+  children:
+    - {slug: roads, en: Roads and road openings, ar: الطرق وفتحها, kw: {en: [road, highway, road reopening], ar: [طريق, فتح الطرق, الطرقات]}}
+    - {slug: ports-infra, en: Ports, ar: الموانئ, kw: {en: [hodeidah port, aden port, mukalla port], ar: [ميناء الحديدة, ميناء عدن, ميناء المكلا]}}
+    - {slug: airports, en: Airports and flights, ar: المطارات والرحلات, kw: {en: [airport, flights, yemenia], ar: [مطار, رحلات, اليمنية]}}
+    - {slug: power-infra, en: Power plants and grid, ar: محطات الكهرباء, kw: {en: [power plant, power station, solar energy], ar: [محطة كهرباء, طاقة شمسية]}}
+    - {slug: telecom-infra, en: Telecom and internet infrastructure, ar: بنية الاتصالات والإنترنت, kw: {en: [internet outage, submarine cable, internet], ar: [انقطاع الإنترنت, الكابل البحري, الإنترنت]}}
+    - {slug: water-sanitation-infra, en: Water and sanitation networks, ar: شبكات المياه والصرف, kw: {en: [water network, sewage], ar: [شبكة المياه, مياه الصرف]}}
+    - {slug: housing, en: Housing, ar: الإسكان, kw: {en: [housing, homes destroyed], ar: [الإسكان, منازل مدمرة]}}
+    - {slug: reconstruction, en: Reconstruction and damage, ar: إعادة الإعمار, kw: {en: [reconstruction, rebuilding, infrastructure damage], ar: [إعادة الإعمار, ترميم, أضرار البنية التحتية]}}
+
+- slug: media-information
+  en: Media and information
+  ar: الإعلام والمعلومات
+  kw: {en: [journalist, media, press], ar: [صحفي, إعلام, صحافة]}
+  children:
+    - {slug: press-freedom, en: Press freedom and censorship, ar: حرية الصحافة والرقابة, kw: {en: [press freedom, censorship, banned newspaper], ar: [حرية الصحافة, رقابة, حجب]}}
+    - {slug: journalists-safety, en: Journalists and attacks on media, ar: الصحفيون والاعتداءات, kw: {en: [journalist killed, journalist detained, attack on journalists], ar: [مقتل صحفي, اختطاف صحفي, الاعتداء على الصحفيين]}}
+    - {slug: media-ownership, en: Media ownership, ar: ملكية وسائل الإعلام, kw: {en: [media ownership], ar: [ملكية الإعلام]}}
+    - {slug: propaganda-disinformation, en: Propaganda, disinformation and misinformation, ar: الدعاية والتضليل, kw: {en: [propaganda, disinformation, misinformation, fake news, fact-check], ar: [دعاية, تضليل, شائعات, أخبار كاذبة, تحقق]}}
+    - {slug: social-media, en: Social media and digital media, ar: وسائل التواصل الاجتماعي, kw: {en: [social media, twitter, facebook, telegram, tiktok], ar: [مواقع التواصل, تويتر, فيسبوك, تيليجرام, تيك توك]}}
+    - {slug: internet-shutdowns, en: Internet shutdowns, ar: قطع الإنترنت, kw: {en: [internet shutdown, internet blackout], ar: [قطع الإنترنت]}}
+    - {slug: political-communication, en: Political communication, ar: الاتصال السياسي, kw: {en: [statement, spokesman, press conference], ar: [بيان, ناطق, متحدث, مؤتمر صحفي]}}
+
+- slug: sports
+  en: Sports
+  ar: الرياضة
+  kw: {en: [sport, match, tournament], ar: [رياضة, مباراة, بطولة], fr: [sport, match], de: [Sport, Spiel], es: [deporte, partido]}
+  children:
+    - {slug: football, en: Football, ar: كرة القدم, kw: {en: [football, soccer, goal, league], ar: [كرة القدم, هدف, الدوري]}}
+    - {slug: national-team, en: Yemeni national teams, ar: المنتخبات الوطنية, kw: {en: [yemen national team, yemeni team, young team], ar: [المنتخب اليمني, منتخب الناشئين, المنتخب الوطني, منتخب الشباب]}}
+    - {slug: local-football, en: Local clubs and leagues, ar: الأندية والدوري المحلي, kw: {en: [local club, yemeni league], ar: [نادي, الدوري اليمني]}}
+    - {slug: other-sports, en: Other sports, ar: رياضات أخرى, kw: {en: [athletics, boxing, basketball, volleyball, karate, taekwondo, judo, chess], ar: [ألعاب القوى, الملاكمة, كرة السلة, كرة الطائرة, الكاراتيه, التايكواندو, الجودو, الشطرنج]}}
+    - {slug: sports-federations, en: Sports federations and infrastructure, ar: الاتحادات والمنشآت الرياضية, kw: {en: [sports federation, football association, stadium, ministry of youth and sports], ar: [اتحاد كرة القدم, الاتحاد الرياضي, ملعب, وزارة الشباب والرياضة]}}
+    - {slug: olympics, en: Olympic participation and athletes, ar: المشاركة الأولمبية والرياضيون, kw: {en: [olympic, olympics, athlete], ar: [الأولمبية, الأولمبياد, رياضي]}}
+
+- slug: culture
+  en: Culture
+  ar: الثقافة
+  kw: {en: [culture, cultural, heritage], ar: [ثقافة, ثقافي, تراث]}
+  children:
+    - {slug: heritage-architecture, en: Heritage and architecture, ar: التراث والعمارة, kw: {en: [heritage, old city, architecture, shibam, zabid], ar: [التراث, المدينة القديمة, العمارة, شبام, زبيد]}}
+    - {slug: music-poetry-literature, en: Music, poetry and literature, ar: الموسيقى والشعر والأدب, kw: {en: [music, singer, poetry, poet, novel, literature], ar: [موسيقى, فنان, شعر, شاعر, رواية, أدب]}}
+    - {slug: cinema-theatre, en: Cinema and theatre, ar: السينما والمسرح, kw: {en: [film, cinema, theatre, drama series], ar: [فيلم, سينما, مسرح, مسلسل]}}
+    - {slug: food-dress, en: Food and traditional dress, ar: الطعام والأزياء التقليدية, kw: {en: [yemeni cuisine, traditional dress, jambiya], ar: [المطبخ اليمني, الأزياء التقليدية, الجنبية]}}
+    - {slug: language-dialects, en: Language and dialects, ar: اللغة واللهجات, kw: {en: [dialect, mehri, soqotri], ar: [لهجة, المهرية, السقطرية]}}
+    - {slug: archaeology-museums, en: Archaeology, museums and antiquities, ar: الآثار والمتاحف, kw: {en: [archaeology, antiquities, museum, artefacts smuggling], ar: [آثار, متحف, تهريب الآثار]}}
+    - {slug: unesco-preservation, en: UNESCO and cultural preservation, ar: اليونسكو وصون التراث, kw: {en: [UNESCO, world heritage], ar: [اليونسكو, التراث العالمي]}}
+
+- slug: history
+  en: History
+  ar: التاريخ
+  kw: {en: [history, historical, anniversary], ar: [تاريخ, تاريخي, ذكرى]}
+  children:
+    - {slug: ancient-yemen, en: Ancient Yemen (Saba, Himyar), ar: اليمن القديم, kw: {en: [saba, sheba, himyar, ancient yemen, marib dam], ar: [سبأ, حمير, اليمن القديم, سد مأرب, مملكة]}}
+    - {slug: medieval-zaydi-ottoman, en: Medieval, Zaydi imamate and Ottoman periods, ar: العصور الوسطى والإمامة والعثمانيون, kw: {en: [imamate, ottoman, rasulid], ar: [الإمامة, العثماني, الدولة الرسولية]}}
+    - {slug: british-aden, en: British Aden and the South, ar: عدن البريطانية, kw: {en: [british colonial, aden colony], ar: [الاستعمار البريطاني, الاحتلال البريطاني]}}
+    - {slug: revolutions, en: 1962 revolution and 1967 independence, ar: ثورتا سبتمبر وأكتوبر, kw: {en: [26 september revolution, 14 october revolution, 30 november independence], ar: [ثورة 26 سبتمبر, ثورة 14 أكتوبر, عيد الاستقلال, 30 نوفمبر]}}
+    - {slug: unification-1994, en: 1990 unification and 1994 war, ar: الوحدة 1990 وحرب 1994, kw: {en: [unification, 22 may, 1994 war], ar: [الوحدة, 22 مايو, حرب 1994, صيف 94]}}
+    - {slug: uprising-2011, en: 2011 uprising, ar: ثورة 2011, kw: {en: [2011 uprising, 11 february revolution, arab spring], ar: [ثورة 11 فبراير, الربيع العربي]}}
+    - {slug: conflict-2014-2015, en: 2014-2015 conflict, ar: أحداث 2014-2015, kw: {en: [21 september 2014, decisive storm, 2015 intervention], ar: [21 سبتمبر, عاصفة الحزم]}}
+
+- slug: technology
+  en: Technology
+  ar: التكنولوجيا
+  kw: {en: [technology, digital], ar: [تكنولوجيا, تقنية, رقمي]}
+  children:
+    - {slug: internet-telecom-tech, en: Internet and mobile networks, ar: الإنترنت والشبكات, kw: {en: [mobile network, 4G, starlink], ar: [شبكة الهاتف, الجيل الرابع, ستارلينك]}}
+    - {slug: fintech, en: Fintech and digital payments, ar: التكنولوجيا المالية والدفع الإلكتروني, kw: {en: [e-wallet, mobile money, digital payment, fintech], ar: [محفظة إلكترونية, الدفع الإلكتروني]}}
+    - {slug: ai-cyber, en: AI and cybersecurity, ar: الذكاء الاصطناعي والأمن السيبراني, kw: {en: [artificial intelligence, cybersecurity, hacking], ar: [الذكاء الاصطناعي, الأمن السيبراني, اختراق]}}
+    - {slug: digital-government, en: Digital government and startups, ar: الحكومة الرقمية والشركات الناشئة, kw: {en: [e-government, tech startup], ar: [الحكومة الإلكترونية, شركة ناشئة]}}
+    - {slug: surveillance, en: Surveillance and online censorship, ar: المراقبة والرقابة الإلكترونية, kw: {en: [surveillance, spyware, blocked websites], ar: [مراقبة, برامج تجسس, حجب المواقع]}}

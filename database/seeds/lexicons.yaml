@@ -1,0 +1,84 @@
+# Tier-1 fallback lexicons for sentiment, emotion and tone. They run when transformer
+# models are unavailable and as an interpretable cross-check when they are. Each
+# result produced from these lists is stored with method="lexicon" and the matched
+# words as evidence. Lexicons are coarse: treat outputs as indicative only.
+# Arabic entries are written without the definite article; plural forms of words
+# ending in ة are matched automatically.
+
+sentiment:
+  positive:
+    en: [agreement, welcome, welcomed, success, successful, progress, peace, improve, improvement, support, release, released, reopen, reopened, hope, hopeful, positive, stability, recovery, achieve, achievement, celebrate, praised, relief, rebuild, cooperation, breakthrough, resumed, restore, restored]
+    ar: [اتفاق, ترحيب, رحب, نجاح, ناجح, تقدم, سلام, تحسن, دعم, إفراج, الإفراج, افتتاح, أمل, إيجابي, استقرار, تعافي, إنجاز, احتفال, إشادة, إغاثة, إعمار, تعاون, انفراجة, استئناف, استعادة]
+    fr: [accord, salue, succès, progrès, paix, amélioration, soutien, libération, espoir, stabilité, reprise, coopération]
+    de: [Einigung, begrüßt, Erfolg, Fortschritt, Frieden, Verbesserung, Unterstützung, Freilassung, Hoffnung, Stabilität, Zusammenarbeit]
+    es: [acuerdo, acoge, éxito, progreso, paz, mejora, apoyo, liberación, esperanza, estabilidad, cooperación]
+  negative:
+    en: [killed, kill, dead, death, deaths, attack, attacked, strike, airstrike, bombing, war, crisis, collapse, famine, hunger, suffering, violation, violations, condemn, condemned, threat, threatened, destroyed, destruction, injured, wounded, clashes, escalation, fear, failed, failure, corruption, abducted, detained, executed, massacre, victims, catastrophe, deteriorating, shortage, outbreak, terrorist]
+    ar: [قتل, مقتل, قتلى, مصرع, وفاة, هجوم, غارة, قصف, حرب, أزمة, انهيار, مجاعة, جوع, معاناة, انتهاك, إدانة, أدان, تهديد, دمار, تدمير, جرحى, إصابة, اشتباكات, تصعيد, خوف, فشل, فساد, اختطاف, اعتقال, إعدام, مجزرة, ضحايا, كارثة, تدهور, نقص, تفشي, إرهابي, عدوان, استهداف]
+    fr: [tués, mort, morts, attaque, frappe, guerre, crise, famine, souffrance, violation, condamne, menace, destruction, blessés, affrontements, escalade, corruption, massacre, victimes, catastrophe]
+    de: [getötet, Tote, Angriff, Luftangriff, Krieg, Krise, Hungersnot, Leid, Verletzung, verurteilt, Drohung, Zerstörung, Verletzte, Kämpfe, Eskalation, Korruption, Massaker, Opfer, Katastrophe]
+    es: [muertos, ataque, bombardeo, guerra, crisis, hambruna, sufrimiento, violación, condena, amenaza, destrucción, heridos, enfrentamientos, escalada, corrupción, masacre, víctimas, catástrofe]
+
+emotion:
+  anger:
+    en: [outrage, furious, anger, angry, condemn, denounce, crime, aggression]
+    ar: [غضب, سخط, استنكار, تنديد, جريمة, عدوان, غاضب]
+  fear:
+    en: [fear, fears, afraid, panic, threat, warning, warns, danger]
+    ar: [خوف, مخاوف, ذعر, تهديد, تحذير, يحذر, خطر]
+  sadness:
+    en: [grief, mourning, mourn, tragedy, tragic, sorrow, victims]
+    ar: [حزن, حداد, مأساة, مأساوي, ضحايا, فاجعة]
+  joy:
+    en: [celebrate, celebration, joy, happy, delight, festive]
+    ar: [احتفال, فرحة, فرح, سعادة, ابتهاج]
+  disgust:
+    en: [disgusting, heinous, abhorrent, despicable]
+    ar: [بشع, شنيع, مقزز, دنيء]
+  surprise:
+    en: [surprise, unexpected, sudden, shock, shocked]
+    ar: [مفاجأة, مفاجئ, صدمة, غير متوقع]
+  hope:
+    en: [hope, hopeful, optimism, optimistic, breakthrough, promising]
+    ar: [أمل, تفاؤل, متفائل, انفراجة, واعد]
+  frustration:
+    en: [frustration, stalled, deadlock, impasse, stalemate, repeatedly failed]
+    ar: [إحباط, تعثر, جمود, انسداد, طريق مسدود]
+  anxiety:
+    en: [concern, concerned, worry, worried, uncertainty, alarm]
+    ar: [قلق, مخاوف, ترقب, غموض, انزعاج]
+
+tone:
+  threatening:
+    en: [will respond, will not hesitate, warns, retaliation, consequences, legitimate targets]
+    ar: [سنرد, لن نتردد, يتوعد, توعد, رد قاس, أهداف مشروعة, عواقب]
+  accusatory:
+    en: [accused, accuses, blamed, blames, responsible for, crimes of]
+    ar: [اتهم, يتهم, حمل مسؤولية, تحميل, جرائم]
+  conciliatory:
+    en: [dialogue, reconciliation, goodwill, de-escalation, common ground, outstretched hand]
+    ar: [حوار, مصالحة, حسن نية, تهدئة, يد ممدودة, تفاهم]
+  confrontational:
+    en: [confront, defy, challenge, showdown, vowed]
+    ar: [مواجهة, تحدي, التصدي, تصدي]
+  alarmist:
+    en: [catastrophic, unprecedented, collapse imminent, on the brink, worst]
+    ar: [كارثي, غير مسبوق, على حافة, شفا, الأسوأ]
+  reassuring:
+    en: [under control, stable, calm, no cause for concern, normal]
+    ar: [تحت السيطرة, مستقر, هدوء, طبيعي, طمأن]
+  celebratory:
+    en: [victory, triumph, celebrate, glorious, heroic]
+    ar: [انتصار, نصر, احتفال, ملحمة, بطولي]
+  critical:
+    en: [criticised, criticized, failure, mismanagement, slammed]
+    ar: [انتقد, انتقادات, إخفاق, سوء إدارة]
+  defensive:
+    en: [denied, denies, rejected allegations, baseless, fabricated]
+    ar: [نفى, ينفي, رفض الاتهامات, عار عن الصحة, مفبركة, ادعاءات]
+  supportive:
+    en: [support, backs, solidarity, stands with]
+    ar: [دعم, تضامن, يقف إلى جانب, مساندة]
+  dismissive:
+    en: [irrelevant, meaningless, propaganda, so-called]
+    ar: [لا قيمة, دعاية, ما يسمى, المزعوم]

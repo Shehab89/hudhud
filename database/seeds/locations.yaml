@@ -1,0 +1,49 @@
+# Yemen geography gazetteer. Governorates follow ISO 3166-2:YE codes. Coordinates are
+# the governorate capital (point used for map bubbles), not a polygon centroid.
+# aliases: [surface form, language]
+
+governorates:
+  - {slug: abyan, code: YE-AB, en: Abyan, ar: أبين, capital: Zinjibar, lat: 13.13, lon: 45.38, aliases: [[Abyan, en], [أبين, ar], [Zinjibar, en], [زنجبار, ar]]}
+  - {slug: aden, code: YE-AD, en: Aden, ar: عدن, capital: Aden, lat: 12.79, lon: 45.03, aliases: [[Aden, en], [عدن, ar], [كريتر, ar], [المعلا, ar], [Mualla, en], [خور مكسر, ar], [الشيخ عثمان, ar], [البريقة, ar]]}
+  - {slug: al-bayda, code: YE-BA, en: Al Bayda, ar: البيضاء, capital: Al Bayda, lat: 13.99, lon: 45.57, aliases: [[Al Bayda, en], [al-Bayda, en], [Bayda, en], [البيضاء, ar], [رداع, ar], [Rada'a, en]]}
+  - {slug: al-dhale, code: YE-DA, en: Al Dhale, ar: الضالع, capital: Al Dhale, lat: 13.70, lon: 44.73, aliases: [[Dhale, en], [al-Dhale, en], [Dhalea, en], [الضالع, ar], [قعطبة, ar]]}
+  - {slug: al-hudaydah, code: YE-HU, en: Al Hudaydah, ar: الحديدة, capital: Al Hudaydah, lat: 14.80, lon: 42.95, aliases: [[Hodeidah, en], [Hudaydah, en], [Hodeida, en], [Hudayda, en], [الحديدة, ar], [Hodeïda, fr], [Hudaida, de]]}
+  - {slug: al-jawf, code: YE-JA, en: Al Jawf, ar: الجوف, capital: Al Hazm, lat: 16.16, lon: 44.78, aliases: [[Al Jawf, en], [al-Jawf, en], [الجوف, ar], [الحزم, ar]]}
+  - {slug: al-mahrah, code: YE-MR, en: Al Mahrah, ar: المهرة, capital: Al Ghaydah, lat: 16.21, lon: 52.18, aliases: [[Mahrah, en], [al-Mahra, en], [Mahra, en], [المهرة, ar], [الغيضة, ar], [Ghaydah, en]]}
+  - {slug: al-mahwit, code: YE-MW, en: Al Mahwit, ar: المحويت, capital: Al Mahwit, lat: 15.47, lon: 43.55, aliases: [[Mahwit, en], [المحويت, ar]]}
+  - {slug: amanat-al-asimah, code: YE-SA, en: Amanat al-Asimah (Sana'a city), ar: أمانة العاصمة, capital: Sana'a, lat: 15.37, lon: 44.19, aliases: [[Sanaa, en], [Sana'a, en], [Sana’a, en], [صنعاء, ar], [أمانة العاصمة, ar], [Sanaá, es], [Saná, es], [Сана, ru]]}
+  - {slug: amran, code: YE-AM, en: Amran, ar: عمران, capital: Amran, lat: 15.66, lon: 43.94, aliases: [[Amran, en], [عمران, ar]]}
+  - {slug: dhamar, code: YE-DH, en: Dhamar, ar: ذمار, capital: Dhamar, lat: 14.54, lon: 44.40, aliases: [[Dhamar, en], [ذمار, ar]]}
+  - {slug: hadramawt, code: YE-HD, en: Hadramawt, ar: حضرموت, capital: Al Mukalla, lat: 14.54, lon: 49.13, aliases: [[Hadramawt, en], [Hadramout, en], [Hadhramaut, en], [Hadramaut, en], [حضرموت, ar], [Mukalla, en], [المكلا, ar], [Seiyun, en], [سيئون, ar], [Tarim, en], [تريم, ar], [الشحر, ar]]}
+  - {slug: hajjah, code: YE-HJ, en: Hajjah, ar: حجة, capital: Hajjah, lat: 15.69, lon: 43.60, aliases: [[Hajjah, en], [حجة, ar], [ميدي, ar], [عبس, ar], [حرض, ar], [Haradh, en]]}
+  - {slug: ibb, code: YE-IB, en: Ibb, ar: إب, capital: Ibb, lat: 13.97, lon: 44.18, aliases: [[Ibb, en], [إب, ar]]}
+  - {slug: lahj, code: YE-LA, en: Lahj, ar: لحج, capital: Al Hawtah, lat: 13.05, lon: 44.88, aliases: [[Lahj, en], [Lahij, en], [لحج, ar], [الحوطة, ar], [Al Anad, en], [العند, ar]]}
+  - {slug: marib, code: YE-MA, en: Marib, ar: مأرب, capital: Marib, lat: 15.46, lon: 45.33, aliases: [[Marib, en], [Ma'rib, en], [مأرب, ar]]}
+  - {slug: raymah, code: YE-RA, en: Raymah, ar: ريمة, capital: Al Jabin, lat: 14.70, lon: 43.60, aliases: [[Raymah, en], [Rayma, en], [ريمة, ar]]}
+  - {slug: saada, code: YE-SD, en: Saada, ar: صعدة, capital: Saada, lat: 16.94, lon: 43.76, aliases: [[Saada, en], [Sa'dah, en], [Saadah, en], [صعدة, ar]]}
+  - {slug: sanaa-governorate, code: YE-SN, en: Sana'a Governorate, ar: محافظة صنعاء, capital: (rural governorate surrounding the capital), lat: 15.35, lon: 44.45, aliases: [[Sanaa Governorate, en], [محافظة صنعاء, ar], [بني حشيش, ar], [همدان, ar]]}
+  - {slug: shabwah, code: YE-SH, en: Shabwah, ar: شبوة, capital: Ataq, lat: 14.54, lon: 46.83, aliases: [[Shabwa, en], [Shabwah, en], [شبوة, ar], [Ataq, en], [عتق, ar], [بلحاف, ar], [Balhaf, en]]}
+  - {slug: socotra, code: YE-SU, en: Socotra, ar: سقطرى, capital: Hadibu, lat: 12.65, lon: 54.02, aliases: [[Socotra, en], [Soqotra, en], [سقطرى, ar], [Hadibu, en], [حديبو, ar], [Abd al-Kuri, en], [عبد الكوري, ar]]}
+  - {slug: taiz, code: YE-TA, en: Taiz, ar: تعز, capital: Taiz, lat: 13.58, lon: 44.02, aliases: [[Taiz, en], [Ta'izz, en], [Taizz, en], [تعز, ar], [Mocha, en], [Mokha, en], [المخا, ar], [Al-Turbah, en], [التربة, ar]]}
+
+# Strategic places that are not governorates. governorate: the slug they sit in, if any.
+places:
+  - {slug: red-sea, type: sea, en: Red Sea, ar: البحر الأحمر, lat: 15.0, lon: 41.8, aliases: [[Red Sea, en], [البحر الأحمر, ar], [mer Rouge, fr], [Rotes Meer, de], [mar Rojo, es], [Красное море, ru]]}
+  - {slug: gulf-of-aden, type: sea, en: Gulf of Aden, ar: خليج عدن, lat: 12.3, lon: 47.5, aliases: [[Gulf of Aden, en], [خليج عدن, ar], [golfe d'Aden, fr]]}
+  - {slug: arabian-sea, type: sea, en: Arabian Sea, ar: بحر العرب, lat: 14.5, lon: 54.5, aliases: [[Arabian Sea, en], [بحر العرب, ar]]}
+  - {slug: bab-al-mandab, type: strait, en: Bab al-Mandab, ar: باب المندب, lat: 12.58, lon: 43.33, governorate: taiz, aliases: [[Bab al-Mandab, en], [Bab el-Mandeb, en], [باب المندب, ar]]}
+  - {slug: hodeidah-port, type: port, en: Hodeidah port, ar: ميناء الحديدة, lat: 14.83, lon: 42.93, governorate: al-hudaydah, aliases: [[Hodeidah port, en], [port of Hodeidah, en], [ميناء الحديدة, ar]]}
+  - {slug: ras-isa, type: port, en: Ras Isa, ar: رأس عيسى, lat: 15.22, lon: 42.66, governorate: al-hudaydah, aliases: [[Ras Isa, en], [Ras Issa, en], [رأس عيسى, ar]]}
+  - {slug: salif, type: port, en: Salif, ar: الصليف, lat: 15.31, lon: 42.68, governorate: al-hudaydah, aliases: [[Salif, en], [الصليف, ar]]}
+  - {slug: aden-port, type: port, en: Aden port, ar: ميناء عدن, lat: 12.80, lon: 44.95, governorate: aden, aliases: [[Aden port, en], [port of Aden, en], [ميناء عدن, ar]]}
+  - {slug: mukalla-port, type: port, en: Mukalla port, ar: ميناء المكلا, lat: 14.52, lon: 49.15, governorate: hadramawt, aliases: [[Mukalla port, en], [ميناء المكلا, ar]]}
+  - {slug: nishtun, type: port, en: Nishtun, ar: نشطون, lat: 15.82, lon: 52.20, governorate: al-mahrah, aliases: [[Nishtun, en], [نشطون, ar]]}
+  - {slug: sanaa-airport, type: airport, en: Sana'a International Airport, ar: مطار صنعاء, lat: 15.48, lon: 44.22, governorate: amanat-al-asimah, aliases: [[Sanaa airport, en], [Sana'a airport, en], [مطار صنعاء, ar]]}
+  - {slug: aden-airport, type: airport, en: Aden International Airport, ar: مطار عدن, lat: 12.83, lon: 45.03, governorate: aden, aliases: [[Aden airport, en], [مطار عدن, ar]]}
+  - {slug: perim, type: island, en: Perim (Mayun), ar: ميون, lat: 12.65, lon: 43.42, governorate: taiz, aliases: [[Perim, en], [Mayun, en], [ميون, ar]]}
+  - {slug: kamaran, type: island, en: Kamaran, ar: كمران, lat: 15.35, lon: 42.60, governorate: al-hudaydah, aliases: [[Kamaran, en], [كمران, ar]]}
+  - {slug: hanish-islands, type: island, en: Hanish Islands, ar: جزر حنيش, lat: 13.72, lon: 42.73, governorate: al-hudaydah, aliases: [[Hanish, en], [حنيش, ar]]}
+  - {slug: zabid, type: city, en: Zabid, ar: زبيد, lat: 14.20, lon: 43.32, governorate: al-hudaydah, aliases: [[Zabid, en], [زبيد, ar]]}
+  - {slug: al-khawkhah, type: city, en: Al Khawkhah, ar: الخوخة, lat: 13.80, lon: 43.25, governorate: al-hudaydah, aliases: [[Khokha, en], [Khawkhah, en], [الخوخة, ar]]}
+  - {slug: harib, type: city, en: Harib, ar: حريب, lat: 14.93, lon: 45.50, governorate: marib, aliases: [[Harib, en], [حريب, ar]]}
+  - {slug: bayhan, type: city, en: Bayhan, ar: بيحان, lat: 14.80, lon: 45.72, governorate: shabwah, aliases: [[Bayhan, en], [Beihan, en], [بيحان, ar]]}
