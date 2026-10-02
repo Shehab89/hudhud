@@ -1,0 +1,700 @@
+# Outlets in further languages, researched 2026-10-02. See SCHEMA.md.
+# Orientation labels are drafts pending expert review.
+- id: nos
+  name: NOS
+  name_native: Nederlandse Omroep Stichting
+  url: https://nos.nl/
+  country: NL
+  languages:
+  - nl
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.nos.nl/nosnieuwsbuitenland
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: NOS Buitenland (foreign news) RSS 2.0; 20 items, newest 2026-10-02.
+  ownership:
+    description: Dutch public broadcasting foundation responsible for national news under the Dutch Media Act; publicly
+      funded.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Nederlandse_Omroep_Stichting
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: Dutch public broadcasting system (NPO)
+        confidence: 0.85
+    confidence: 0.85
+    evidence: NOS is the statutory news broadcaster within the Dutch public broadcasting system, funded from the
+      state budget.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Nederlandse_Omroep_Stichting
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: svt-nyheter
+  name: SVT Nyheter
+  name_native: Sveriges Television
+  url: https://www.svt.se/nyheter/utrikes/
+  country: SE
+  languages:
+  - sv
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.svt.se/nyheter/utrikes/rss.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Utrikes (foreign) RSS; 100 items, newest 2026-10-02.
+  ownership:
+    description: Sveriges Television AB, Swedish public service television company owned by an independent foundation
+      and funded by a public service fee.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sveriges_Television
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: Swedish public service broadcasting
+        confidence: 0.85
+    confidence: 0.85
+    evidence: SVT is Sweden's national public television broadcaster, owned by a foundation and financed by a public-service
+      fee.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sveriges_Television
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: antara
+  name: Antara News Agency
+  name_native: Kantor Berita Antara
+  url: https://www.antaranews.com/
+  country: ID
+  languages:
+  - id
+  - en
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.antaranews.com/rss/dunia.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Indonesian 'Dunia' (world) RSS; 20 items, newest 2026-09-30.
+  ownership:
+    description: Indonesian state-owned national news agency (Perum LKBN Antara).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Antara_(news_agency)
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of Indonesia
+        confidence: 0.85
+    confidence: 0.85
+    evidence: Antara is Indonesia's state-owned national news agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Antara_(news_agency)
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: ynet
+  name: Ynet
+  name_native: ynet - ידיעות אחרונות
+  url: https://www.ynet.co.il/
+  country: IL
+  languages:
+  - he
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.ynet.co.il/Integration/StoryRss2.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Hebrew main news RSS 2.0; 32 items, newest 2026-10-02.
+  ownership:
+    description: News website of the Yedioth Ahronoth group (Yedioth Ahronoth daily newspaper).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Ynet
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Israeli outlet; covers Houthi missile/drone attacks on Israel and Israeli strikes in Yemen.
+- id: walla-news
+  name: Walla! News
+  name_native: וואלה! חדשות
+  url: https://news.walla.co.il/
+  country: IL
+  languages:
+  - he
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://rss.walla.co.il/feed/2
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Hebrew 'World news' RSS 2.0; 30 items, newest article 2026-09-30 (lastBuildDate 2026-10-02).
+  ownership:
+    description: Israeli news portal; ownership transferred to the Jerusalem Post group controlled by Eli Azur (approved
+      end of 2020).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Walla!
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: maariv
+  name: Maariv
+  name_native: מעריב
+  url: https://www.maariv.co.il/
+  country: IL
+  languages:
+  - he
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Hebrew breaking-news RSS 2.0; 20 items, newest 2026-10-02.
+  ownership:
+    description: Israeli daily newspaper owned by Eli Azur's Jerusalem Post group.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Maariv_(newspaper)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: yonhap
+  name: Yonhap News Agency
+  name_native: 연합뉴스
+  url: https://www.yna.co.kr/
+  country: KR
+  languages:
+  - ko
+  - en
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.yna.co.kr/rss/international.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Yonhap's published Korean 'international' RSS; fetch refused from the research environment on 2026-10-02
+      (site block), not verified.
+  ownership:
+    description: South Korea's key national news agency; largest shareholder is the News Agency Promotion Committee
+      (Yonhap News Agency Act), with KBS and MBC as other shareholders; receives state subsidies.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Yonhap_News_Agency
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: Republic of Korea (statutory national news agency)
+        confidence: 0.7
+    confidence: 0.7
+    evidence: Designated national news agency under the Yonhap News Agency Act, majority-held by a government-appointed
+      committee and receiving annual government subsidies.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Yonhap_News_Agency
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: kyunghyang-shinmun
+  name: Kyunghyang Shinmun
+  name_native: 경향신문
+  url: https://www.khan.co.kr/
+  country: KR
+  languages:
+  - ko
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.khan.co.kr/rss/rssdata/kh_world.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Korean 'International' RSS 2.0; 50 items, newest 2026-10-02.
+  ownership:
+    description: South Korean daily owned by its employees (independent ownership structure since 1998).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Kyunghyang_Shinmun
+  orientation:
+    simplified: independent
+    confidence: 0.6
+    evidence: Employee-owned since 1998; Wikipedia describes its stance as centre to centre-left liberal.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Kyunghyang_Shinmun
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: newsis
+  name: Newsis
+  name_native: 뉴시스
+  url: https://www.newsis.com/
+  country: KR
+  languages:
+  - ko
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.newsis.com/RSS/international.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Korean 'International' RSS 2.0; 15 items, newest 2026-10-02 (included Middle East items).
+  ownership:
+    description: Privately owned South Korean news agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Newsis
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: hankyoreh
+  name: The Hankyoreh
+  name_native: 한겨레
+  url: https://www.hani.co.kr/
+  country: KR
+  languages:
+  - ko
+  - en
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.hani.co.kr/rss/international/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Hankyoreh's published Korean international-section RSS; fetch refused from the research environment on
+      2026-10-02 (site block), not verified.
+  ownership:
+    description: South Korean daily founded in 1988 with capital from tens of thousands of citizen shareholders;
+      no controlling shareholder.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Hankyoreh
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: china-news-service
+  name: China News Service
+  name_native: 中国新闻社
+  url: https://www.chinanews.com.cn/
+  country: CN
+  languages:
+  - zh
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.chinanews.com.cn/rss/world.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Chinese international-news RSS 2.0; 31 items, newest 2026-10-02.
+  ownership:
+    description: Chinese state news agency administered by the CCP Central Committee's United Front Work Department
+      (since 2018).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/China_News_Service
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Chinese Communist Party (United Front Work Department)
+        confidence: 0.95
+    confidence: 0.95
+    evidence: 'Wikipedia: parent organisation is the United Front Work Department of the CCP Central Committee.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/China_News_Service
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: peoples-daily
+  name: People's Daily Online
+  name_native: 人民网
+  url: http://www.people.com.cn/
+  country: CN
+  languages:
+  - zh
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: http://www.people.com.cn/rss/world.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: 'Feed fetched 2026-10-02 and parses (30 items, channel 国际频道) but newest item is 2025-06-05: stale, so
+      not counted as verified. politics.xml is equally stale.'
+  ownership:
+    description: Online edition of People's Daily, the official newspaper of the Central Committee of the Chinese
+      Communist Party.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/People%27s_Daily
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Chinese Communist Party Central Committee
+        confidence: 0.95
+    confidence: 0.95
+    evidence: People's Daily is the official newspaper of the CCP Central Committee.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/People%27s_Daily
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Kept for the record; RSS feeds appear frozen since mid-2025. Use Google News / GDELT for coverage.
+- id: cna-taiwan
+  name: Central News Agency (Taiwan)
+  name_native: 中央通訊社
+  url: https://www.cna.com.tw/
+  country: TW
+  languages:
+  - zh
+  - en
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.feedburner.com/rsscna/intworld
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Traditional-Chinese 'International focus' RSS 2.0 (FeedBurner); 20 items, newest 2026-10-02.
+  ownership:
+    description: National news agency of the Republic of China (Taiwan); owned by the government, partly funded
+      by the Executive Yuan.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Central_News_Agency_(Taiwan)
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: Government of the Republic of China (Taiwan)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: 'Wikipedia: owner Government of the Republic of China; parent organisation Executive Yuan, which provides
+      part of its funding.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Central_News_Agency_(Taiwan)
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rthk
+  name: RTHK
+  name_native: 香港電台
+  url: https://news.rthk.hk/
+  country: HK
+  languages:
+  - zh
+  - en
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: 'Chinese breaking news: International RSS 2.0; 25 items, newest 2026-10-03 (HKT). rthk.hk/... URL 302-redirects
+      here.'
+  ownership:
+    description: Radio Television Hong Kong, Hong Kong's public broadcaster, run as a department of the Hong Kong
+      SAR government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RTHK
+  orientation:
+    simplified: state_funded
+    dimensions:
+      institutional_alignment:
+        value: Hong Kong SAR Government
+        confidence: 0.7
+    confidence: 0.7
+    evidence: RTHK is a government department of Hong Kong; its editorial independence has been curtailed since
+      2021 according to Wikipedia.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RTHK
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: amar-ujala
+  name: Amar Ujala
+  name_native: अमर उजाला
+  url: https://www.amarujala.com/world
+  country: IN
+  languages:
+  - hi
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.amarujala.com/rss/world-news.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Hindi world-news RSS 2.0 (channel title is the generic site title); 50 items, newest 2026-10-03 IST.
+  ownership:
+    description: Hindi daily owned by Rajul Maheshwari and Sneh Maheshwari (Amar Ujala Ltd).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Amar_Ujala
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: ndtv-india
+  name: NDTV India
+  name_native: एनडीटीवी इंडिया
+  url: https://ndtv.in/
+  country: IN
+  languages:
+  - hi
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.feedburner.com/ndtvkhabar-latest
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Hindi 'NDTV India - Latest' all-news RSS (FeedBurner); 40 items, newest 2026-10-03 IST. Mixed content
+      incl. horoscopes; needs the Yemen filter.
+  ownership:
+    description: Hindi channel of New Delhi Television; Adani Group became controlling shareholder (64.71%) in December
+      2022.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/NDTV
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: bbc-hindi
+  name: BBC News Hindi
+  name_native: बीबीसी हिंदी
+  url: https://www.bbc.com/hindi
+  country: GB
+  languages:
+  - hi
+  source_type: news_website
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.bbci.co.uk/hindi/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: BBC World Service language-service feed pattern (same as bbc-persian); fetch refused from the research
+      environment on 2026-10-02 (site block), not verified.
+  ownership:
+    description: Hindi-language service of the BBC World Service, funded mainly by the UK licence fee and FCDO grant.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_Hindi
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: BBC World Service (UK)
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Part of the BBC World Service, the UK public broadcaster's international arm.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/BBC_Hindi
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: dainik-jagran
+  name: Dainik Jagran
+  name_native: दैनिक जागरण
+  url: https://www.jagran.com/world-news-hindi.html
+  country: IN
+  languages:
+  - hi
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.jagran.com/rss/news/world.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Jagran's published world-news RSS URL; fetch refused from the research environment on 2026-10-02 (site
+      block), not verified.
+  ownership:
+    description: Hindi daily published by Jagran Prakashan Ltd.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Dainik_Jagran
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''

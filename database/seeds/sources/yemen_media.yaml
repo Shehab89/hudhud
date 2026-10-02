@@ -56,7 +56,15 @@
   active: true
   notes: 'One of two agencies using the Saba name; do not merge with saba-sanaa. operating_base left unknown: State
     Media Monitor says it runs ''from exile locations'' and RSF reported its Aden office ransacked by separatists,
-    so whether it works from Aden or Riyadh today is not documented.'
+    so whether it works from Aden or Riyadh today is not documented. Newsroom: not documented (unknown). Contested
+    and unresolved. RSF (2019-07-03) places the IRG Saba headquarters in Aden and reports it ransacked by separatists.
+    Arabi21 (2021-06-02) reports STC-affiliated gunmen seizing Saba''s Aden HQ to run it as an "Aden News Agency".
+    The About page (pre-2010 text) records a Riyadh office opened in 2004. State Media Monitor (June 2026) says
+    it works from "government-held and exile/diplomatic locations" and that the PLC is based in Aden. Aden has been
+    government-held since January 2026 (Fall of Aden), so government_controlled (Aden) is plausible for 2026, but
+    no source confirms the newsroom returned to its Aden building. Candidate value: government_controlled, low confidence
+    (about 0.4). Sources: https://rsf.org/fr/actualites/yemen-lagence-de-presse-gouvernementale-saccagee, https://arabi21.com/story/1362638,
+    https://statemediamonitor.com/2026/06/yemen-news-agency-saba/, https://www.sabanew.net/story/ar/1'
 - id: saba-sanaa
   name: Saba News Agency (Sanaa)
   name_native: وكالة الأنباء اليمنية (سبأ) - صنعاء
@@ -119,7 +127,7 @@
   geographic_focus:
   - aden
   - south
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.14october.com/rss
@@ -149,7 +157,13 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage loaded on 2026-10-02 with current government news, but both feed paths returned 403.
+  notes: 'Homepage loaded on 2026-10-02 with current government news, but both feed paths returned 403. Newsroom:
+    Aden (government_controlled). Wikipedia calls it a state-run daily "published in Aden"; Media Landscapes says
+    its "headquarter is in Aden". Wikipedia also says UAE-backed militants occupied its offices in August 2019 and
+    the editor fled Aden. Aden was STC-controlled from about 2019 until 2026-01-07, and PLC/government forces have
+    held it since (Fall of Aden). The 2026 value is government_controlled, but whether the newsroom is back in its
+    own premises is not documented. Confidence about 0.6. Sources: https://en.wikipedia.org/wiki/14_October_(newspaper),
+    https://medialandscapes.org/country/yemen/media/print, https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: al-ayyam
   name: Al-Ayyam
   name_native: صحيفة الأيام
@@ -162,7 +176,7 @@
   geographic_focus:
   - aden
   - south
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds: []
   ownership:
@@ -180,8 +194,11 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage active (items dated 2026-10-02) but no feed link; /rss, /feed, /rss.xml and /rss.php all returned
-    404. Candidate for sitemap or HTML scraping.
+  notes: 'Homepage active (items dated 2026-10-02) but no feed link; /rss, /feed, /rss.xml and /rss.php all returned
+    404. Candidate for sitemap or HTML scraping. Newsroom: Aden (government_controlled). Media Landscapes: "Based
+    in Aden". Aden was under STC de facto control 2019 to January 2026 and under PLC/government control since 2026-01-07,
+    so the territory label changed. The value reflects 2026. Confidence about 0.7. Sources: https://medialandscapes.org/country/yemen/media/print,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: aden-al-ghad
   name: Aden Al-Ghad
   name_native: عدن الغد
@@ -194,7 +211,7 @@
   geographic_focus:
   - aden
   - south
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.adngad.net/feed
@@ -219,7 +236,12 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: ''
+  notes: 'Newsroom: Aden (government_controlled). CPJ (Feb 2026) reports the attack on its Aden headquarters on
+    2026-02-01 by gunmen linked to the dissolved STC. Marsadak reports a raid and closure of the Aden HQ on 2025-09-27
+    (STC period), with editor Fathi bin Lazraq detained at Kabota police station. The Aden office was attacked under
+    both authorities. The value reflects post-January-2026 government control. Confidence about 0.75. Sources: https://cpj.org/2026/02/gunmen-storm-yemens-aden-al-ghad-offices-injuring-staff/,
+    https://marsadak.org/en/marsadak-condemn-the-raid-and-closure-of-aden-al-ghad-newspaper-and-the-detention-of-its-editor-in-chief/,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: aden-time
   name: Aden Time
   name_native: عدن تايم
@@ -232,7 +254,7 @@
   geographic_focus:
   - aden
   - south
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.aden-tm.net/feed
@@ -255,7 +277,10 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: 'Orientation not assessed: no independent source found.'
+  notes: 'Orientation not assessed: no independent source found. Newsroom: Aden (government_controlled). Self-description
+    (fetched 2026-10-02): electronic newspaper founded in Aden on 2015-10-14 and based there. It worked under STC
+    de facto control until January 2026 and under PLC/government control since. Only the outlet''s own word gives
+    the city. Confidence about 0.7. Sources: https://www.aden-tm.net/, https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: al-omana
   name: Al-Omana Net
   name_native: الأمناء نت
@@ -268,7 +293,7 @@
   geographic_focus:
   - aden
   - south
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://al-omana.net/rss.php
@@ -277,9 +302,10 @@
     yemen_filter: false
     notes: Returns RSS mixed with PHP warnings (malformed) and items from 2015 only. Not usable.
   ownership:
-    description: Self-described independent news site broadcasting from Aden.
+    description: Al-Omana Media Foundation in Aden (مؤسسة الأمناء للإعلام بعدن); editor-in-chief Adnan Al-A'jam;
+      online since 2012 with a daily print edition (self-description).
     evidence_urls:
-    - https://al-omana.net/
+    - https://al-omana.net/about.html
   orientation:
     simplified: unknown
     confidence: 0.0
@@ -290,7 +316,11 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage active with items dated 2026-10-02/03. www.alomanaa.net redirects to an unrelated site; use al-omana.net.
+  notes: 'Homepage active with items dated 2026-10-02/03. www.alomanaa.net redirects to an unrelated site; use al-omana.net.
+    Newsroom: Aden (government_controlled). About page: published by "مؤسسة الأمناء للإعلام بعدن" (Al-Omana Media
+    Foundation, Aden), "an independent news site broadcasting from Aden", with a daily print edition; editor-in-chief
+    Adnan Al-A''jam. The territory label reflects 2026 (STC-controlled before January 2026). Confidence about 0.7.
+    Sources: https://al-omana.net/about.html, https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: south24
   name: South24 Center for News and Studies
   name_native: مركز سوث24 للأخبار والدراسات
@@ -304,7 +334,7 @@
   geographic_focus:
   - south
   - aden
-  operating_base: unknown
+  operating_base: outside_yemen
   yemen_coverage: primary
   feeds: []
   ownership:
@@ -322,8 +352,15 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Self-describes as independent; no third-party assessment found, so orientation left unknown. No feed found
+  notes: 'Self-describes as independent; no third-party assessment found, so orientation left unknown. No feed found
     (/feed, /rss, /news/rss.php all 404). Articles under /news/news.php?nid= (ar) and /news/newse.php?nid= (en).
+    Newsroom: Switzerland (head office); regional office in Aden since Feb 2022 (outside_yemen). Self-description:
+    registered in Switzerland (Sept 2019) with its head office there, and a regional office in Aden opened February
+    2022 (licensed by the Ministry of Social Affairs and Labor in Aden, no. 560). Where the editorial work is actually
+    done is not stated, and it is likely split between the two. If the registry means the place reporting is produced,
+    government_controlled (Aden, since Jan 2026; STC-controlled before) is an equally defensible reading. Confidence
+    about 0.5. Note: South24 coverage in June 2026 treats the STC as still existing ("never dissolved"). Sources:
+    https://south24.net/news/aboutuse.php'
 - id: yemen-monitor
   name: Yemen Monitor
   name_native: يمن مونيتور
@@ -1172,8 +1209,9 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: shabwaah-press.info redirects here. Homepage active (2026-10-02) with a South Arabia focus. Orientation
-    not assessed.
+  notes: 'shabwaah-press.info redirects here. Homepage active (2026-10-02) with a South Arabia focus. Orientation
+    not assessed. Newsroom: not documented (unknown). Unresolved. The contact page has only a form and social links;
+    no address, owner or editor. Coverage centres on Shabwah and Aden. No third-party source found. Sources: https://shabwahpress.com/contact-us/'
 - id: al-thawra-sanaa
   name: Al-Thawra
   name_native: صحيفة الثورة

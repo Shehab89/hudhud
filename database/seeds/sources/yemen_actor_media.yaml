@@ -155,7 +155,13 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Military media. Do not merge with 26-september-sanaa.
+  notes: 'Military media. Do not merge with 26-september-sanaa. Newsroom: not documented (unknown). Unresolved.
+    The site calls itself the official spokesman site of the armed forces but gives no address. Wikipedia says only
+    that the IRG "maintains its own separate version", with no city (the Sanaa offices were seized by the Houthis
+    in 2014). The IRG Ministry of Defense and Moral Guidance Department have worked from Marib and Aden, but no
+    source found ties the website''s newsroom to either. Al-Ain (2022, https://al-ain.com/article/brotherhood-yemen-houthis-marib),
+    a UAE outlet hostile to Islah, alleges Islah activists staff the Moral Guidance Department and 26 September.
+    That is an adversarial claim, not used for orientation. Sources: https://www.26sepnews.net/, https://en.wikipedia.org/wiki/26_September_(newspaper)'
 - id: almotamar-net
   name: Al-Motamar Net
   name_native: المؤتمر نت
@@ -168,7 +174,7 @@
   geographic_focus:
   - national
   - sanaa
-  operating_base: unknown
+  operating_base: sanaa_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.almotamar.net/news/rsscatfeed.php?category=1
@@ -186,15 +192,17 @@
     simplified: movement_aligned
     dimensions:
       institutional_alignment:
-        value: General People's Congress (GPC)
-        confidence: 0.9
+        value: General People's Congress, Sanaa wing (Sadiq Abu Ras)
+        confidence: 0.8
       conflict_alignment:
-        value: appears to follow the Sanaa-based GPC wing (uses 'Saudi aggression' wording); unconfirmed
-        confidence: 0.4
+        value: Sanaa / Ansar Allah side (GPC Sanaa wing is a partner in the Sanaa authorities)
+        confidence: 0.7
     confidence: 0.85
-    evidence: The site says it is published by the General People's Congress; Media Landscapes lists Al-Motamar
-      as the GPC paper.
+    evidence: Self-described GPC newspaper; Wikipedia's GPC article ties Al-Motamar to the pro-Houthi faction, and
+      the site names Abu Ras (Sanaa wing) as chairman. This upgrades the existing record's unconfirmed note on which
+      wing runs it.
     evidence_urls:
+    - https://en.wikipedia.org/wiki/General_People%27s_Congress_(Yemen)
     - https://www.almotamar.net/
     - https://medialandscapes.org/country/yemen/media/print
     method: manual_research
@@ -202,8 +210,13 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: The GPC split after 2017. Item wording on 2026-10-02 ('طيران العدوان السعودي') matches the Sanaa wing,
-    but no documented source confirms which wing runs the site.
+  notes: 'The GPC split after 2017. Item wording on 2026-10-02 (''طيران العدوان السعودي'') matches the Sanaa wing,
+    but no documented source confirms which wing runs the site. Newsroom: Sanaa (sanaa_controlled). Wikipedia (GPC
+    article) ties Al-Motamar (almotamar.net) to the pro-Houthi GPC faction that "continued to support the rebel
+    government in Sanaa". On 2026-10-02 the site itself named Sadiq Amin Abu Ras as GPC chairman; Al Jazeera (May
+    2026) calls Abu Ras head of the Sanaa wing, as distinct from the GPC wing abroad (al-Iryani et al.). No street
+    address is published on the site. Confidence about 0.8. Sources: https://en.wikipedia.org/wiki/General_People%27s_Congress_(Yemen),
+    https://www.almotamar.net/, https://www.aljazeera.net/politics/2026/5/13/تيار-استعادة-دور-حزب-المؤتمر-باليمن'
 - id: almethaq-net
   name: Al-Methaq Net
   name_native: الميثاق نت
@@ -215,7 +228,7 @@
   source_group: yemen_actor_affiliated
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: sanaa_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.almethaq.net/news/rsscatfeed.php?category=2
@@ -233,18 +246,27 @@
     simplified: movement_aligned
     dimensions:
       institutional_alignment:
-        value: General People's Congress (GPC)
-        confidence: 0.85
+        value: General People's Congress, Sanaa wing (inferred from the leadership roster it publishes)
+        confidence: 0.6
     confidence: 0.8
-    evidence: The outlet's own feed calls it the voice of the General People's Congress.
+    evidence: The feed calls itself the organ of the GPC (existing record). The leadership it presents (al-Rai as
+      SG) is the Sanaa wing's, per Asharq Al-Awsat, Dec 2025.
     evidence_urls:
-    - https://www.almethaq.net/news/rsscatfeed.php?category=2
+    - https://www.almethaq.net/
+    - https://aawsat.com/node/5215921
+    - https://en.wikipedia.org/wiki/General_People%27s_Congress_(Yemen)
     method: manual_research
     last_reviewed: 2026-10-02
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Which GPC wing runs it is not documented.
+  notes: 'Which GPC wing runs it is not documented. Newsroom: Sanaa (sanaa_controlled). This is an inference with
+    medium confidence (about 0.6). On 2026-10-02 the almethaq.net homepage named Yahya Ali al-Rai as "First Deputy
+    Chairman - Secretary-General" of the GPC. Asharq Al-Awsat (2025-12-04) reports al-Rai was recently appointed
+    Secretary-General of the Sanaa wing (under Abu Ras, and under Houthi pressure). whoweare.php and contactus.php
+    return 404, so the site gives no address. CAUTION: Wikipedia''s GPC article lists a different outlet, "Al-Methaq
+    News" (almethaqnews.com), as the pro-Hadi/Alimi faction''s outlet. Do not merge the two. Sources: https://www.almethaq.net/,
+    https://aawsat.com/node/5215921'
 - id: alsahwa-net
   name: Al-Sahwa Net
   name_native: الصحوة نت
@@ -299,7 +321,13 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Feed list is at https://alsahwa-yemen.net/RSSLink. Feeds are served from alsahwayemen.net (no hyphen).
+  notes: 'Feed list is at https://alsahwa-yemen.net/RSSLink. Feeds are served from alsahwayemen.net (no hyphen).
+    Newsroom: not documented (unknown). Unresolved. The About page (fetched 2026-10-02) gives only "the Republic
+    of Yemen": no city. It says the site belongs to the Al-Sahwa Foundation under Islah''s media and culture department,
+    with editor-in-chief Muhammad al-Yousofi. Wikipedia still says "published in Sana''a" (pre-war text; the 2011
+    office attack), which is not evidence of where it works today. An Islah organ cannot plausibly work openly in
+    Houthi-held Sanaa, but no source says whether it works from Marib, Taiz or abroad, so it is left unknown. Sources:
+    https://alsahwa-yemen.net/page-1, https://en.wikipedia.org/wiki/Al_Sahwa'
 - id: alislah-net
   name: Al-Islah Party Website
   name_native: موقع التجمع اليمني للإصلاح
@@ -338,7 +366,10 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage active (2026-10-02). Retest rss.php from the ingest host.
+  notes: 'Homepage active (2026-10-02). Retest rss.php from the ingest host. Newsroom: not documented (unknown).
+    Unresolved. The homepage footer gives no address. The About page is at content.php?id=1 (not fetched) and the
+    contact page is feedback.php. No third-party source found that says where Islah''s party website is edited (Marib,
+    Taiz, Riyadh or Istanbul are all plausible). Left unknown. Sources: https://alislah-ye.net/'
 - id: suhail-tv
   name: Suhail TV
   name_native: قناة سهيل
@@ -428,8 +459,14 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: The STC's status after the January 2026 dissolution is contested; recheck before labelling outputs. operating_base
-    left unknown for the same reason.
+  notes: 'The STC''s status after the January 2026 dissolution is contested; recheck before labelling outputs. operating_base
+    left unknown for the same reason. Newsroom: Aden (contested) (unknown). Contested, so left unknown. The STC''s
+    main HQ is in Aden. Wikipedia (Fall of Aden 2026) says PLC forces took Aden on 2026-01-07 and the STC announced
+    its dissolution on 2026-01-09. South24 (June 2026) reports the Aden HQ reopening after a two-day closure by
+    "a military force", with the STC rejecting the dissolution. The organisation runs in a government-held city
+    while its legal status is disputed, and part of its leadership (al-Zubaidi) is in the UAE per Wikipedia. stc_controlled
+    no longer fits. government_controlled for the territory, or outside_yemen for leadership, are both arguable.
+    Sources: https://south24.net/news/newse.php?nid=5543, https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: aic-tv
   name: Aden Independent Channel (AIC)
   name_native: قناة عدن المستقلة
@@ -467,7 +504,11 @@
   active: false
   notes: 'aicaden.net returned 403 to WebFetch; no feed found. operating_base left unknown rather than stc_controlled:
     Aden-based, but the STC announced its dissolution on 2026-01-10 and who controls Aden today is not documented
-    here.'
+    here. Newsroom: Aden (pre-2026) (unknown). Unresolved. Bluewin/dpa (Jan 2026) calls AIC "allied with the separatists"
+    and says it filmed the Aden protests, so it was still active in Aden in January 2026. No source found on whether
+    the channel still broadcasts from Aden after the PLC takeover, or moved, for example to the UAE. Arabic and
+    English searches gave nothing on it. Keep unknown. Sources: https://www.bluewin.ch/en/news/international/large-demonstration-in-yemen-due-to-dissolution-of-separatist-organization-li.3043869,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: al-wahdawi-net
   name: Al-Wahdawi Net
   name_native: الوحدوي نت
@@ -510,8 +551,10 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Linked to the party through the print weekly of the same name; the website does not state the affiliation
-    itself.
+  notes: 'Linked to the party through the print weekly of the same name; the website does not state the affiliation
+    itself. Newsroom: not documented (unknown). Unresolved. The About page says it is "issued by the Popular Unionist
+    Nasserist Organization in Yemen" (first online in June 2004) but gives no city. The contact page is a form only.
+    Sources: https://alwahdawi.net/page-1'
 - id: al-eshteraki-net
   name: Al-Eshteraki Net
   name_native: الاشتراكي نت
@@ -560,4 +603,6 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage active (2026-10-02) but no feed carries current items.
+  notes: 'Homepage active (2026-10-02) but no feed carries current items. Newsroom: not documented (unknown). Unresolved.
+    The contact page shows "contact information cannot be found" and the footer has no address. News is datelined
+    from Taiz, Shabwah and Marib. No third-party source on the newsroom location. Sources: https://www.aleshteraki.net/contactus'
