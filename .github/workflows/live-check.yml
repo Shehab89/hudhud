@@ -1,0 +1,64 @@
+name: live-check
+
+# Runs the real pipeline against the live feeds in a throwaway database on the runner, then
+# publishes a report (and a database dump) to the `live-snapshot` branch. Needs no secrets.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", ".github/workflows/live-check.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-check
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: hudhud
+          POSTGRES_PASSWORD: hudhud
+          POSTGRES_DB: hudhud
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U hudhud"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      DATABASE_URL: postgresql+psycopg://hudhud:hudhud@localhost:5432/hudhud
+      NLP_BACKEND: fallback
+      USER_AGENT: "HudhudBot/0.1 (+https://github.com/${{ github.repository }}; research crawler; respects robots.txt)"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e ".[llm]"
+      - run: hudhud migrate
+      - run: hudhud seed
+      - name: Run pipeline on live feeds
+        run: hudhud run --trigger github_actions --stages ingest,dedup,analyse,topics,metrics
+      - name: Report
+        run: |
+          mkdir -p snapshot
+          python scripts/live_report.py snapshot
+          cat snapshot/report.md >> "$GITHUB_STEP_SUMMARY"
+          PGPASSWORD=hudhud pg_dump -h localhost -U hudhud -d hudhud -Fc --no-owner \
+            --exclude-table-data=users --exclude-table-data=saved_queries --exclude-table-data=annotations \
+            -f snapshot/live.dump
+      - name: Publish to live-snapshot branch
+        run: |
+          cd snapshot
+          git init -q -b live-snapshot
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "Live ingestion snapshot $(date -u +%FT%TZ) from ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" live-snapshot

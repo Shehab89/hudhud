@@ -3,41 +3,37 @@ import { Suspense } from "react";
 import type { Dict, Locale } from "@/lib/i18n";
 import LocaleSwitch from "./LocaleSwitch";
 import Logo from "./Logo";
-import Nav from "./Nav";
+import ModulesMenu from "./ModulesMenu";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Header({ l, d }: { l: Locale; d: Dict }) {
   const p = (s: string) => `/${l}${s}`;
-  const items = [
-    { href: p(""), label: d.nav.dashboard, primary: true },
-    { href: p("/news"), label: d.nav.news, primary: true },
-    { href: p("/topics"), label: d.nav.topics, primary: true },
-    { href: p("/sources"), label: d.nav.sources, primary: true },
-    { href: p("/actors"), label: d.nav.actors, primary: true },
-    { href: p("/events"), label: d.nav.events, primary: true },
-    { href: p("/research"), label: d.nav.research, primary: true },
-    { href: p("/geography"), label: d.nav.geography, primary: false },
-    { href: p("/media-landscape"), label: d.nav.landscape, primary: false },
-    { href: p("/methodology"), label: d.nav.methodology, primary: false },
-    { href: p("/quality"), label: d.nav.quality, primary: false },
-    { href: p("/about"), label: d.nav.about, primary: false },
-    { href: p("/admin"), label: d.nav.admin, primary: false },
-  ];
+  const util = "px-2 py-1 rounded hover:text-ink hover:bg-surface-2";
   return (
-    <header className="border-b border-line bg-surface/80 backdrop-blur sticky z-20" style={{ top: "env(safe-area-inset-top, 0px)" }}>
-      <div className="mx-auto max-w-7xl px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-2">
-        <Link href={p("")} className="flex items-center gap-2.5 me-2">
-          <Logo />
-          <span className="flex flex-col leading-tight">
-            <span className="font-semibold">{d.site.name}</span>
-            <span className="text-[0.7rem] text-muted hidden sm:block">{d.site.tagline}</span>
-          </span>
-        </Link>
-        <div className="flex-1 min-w-0"><Nav items={items} moreLabel={d.nav.more} /></div>
-        <div className="flex items-center gap-2">
-          <Suspense fallback={null}><LocaleSwitch locale={l} label={d.nav.language} /></Suspense>
-          <ThemeToggle label={d.nav.theme} />
+    <header className="sticky z-30 bg-surface border-b border-line" style={{ top: "env(safe-area-inset-top, 0px)" }}>
+      <div className="bg-surface-2 border-b border-line text-xs text-muted">
+        <div className="mx-auto max-w-7xl px-4 py-1 flex items-center justify-between gap-3">
+          <span className="hidden sm:block truncate">{d.site.tagline}</span>
+          <nav aria-label="Secondary" className="flex items-center gap-1 ms-auto">
+            <Link href={p("/methodology")} className={util}>{d.nav.methodology}</Link>
+            <Link href={p("/about")} className={util}>{d.nav.about}</Link>
+            <Link href={p("/admin")} className={util}>{d.nav.admin}</Link>
+            <span className="mx-1 h-4 w-px bg-line" aria-hidden />
+            <Suspense fallback={null}><LocaleSwitch locale={l} label={d.nav.language} /></Suspense>
+            <ThemeToggle label={d.nav.theme} />
+          </nav>
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center gap-3">
+        <Link href={p("")} className="flex items-center gap-2.5 me-2" aria-label={d.site.name}>
+          <Logo />
+          <span className="font-semibold text-lg leading-none">{d.site.name}</span>
+        </Link>
+        <ModulesMenu l={l} label={l === "ar" ? "الوحدات" : "Modules"} home={l === "ar" ? "الصفحة الرئيسية" : "Home"} />
+        <form action={p("/news")} method="get" role="search" className="ms-auto flex-1 max-w-sm">
+          <input name="q" type="search" aria-label={d.common.search} placeholder={d.common.search + "…"}
+            className="w-full rounded-md border border-line bg-bg px-3 py-1.5 text-sm" />
+        </form>
       </div>
     </header>
   );

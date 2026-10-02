@@ -1,174 +1,99 @@
 import Link from "next/link";
-import ArticleItem from "@/components/ArticleItem";
 import DemoBanner from "@/components/DemoBanner";
-import EChart from "@/components/EChart";
-import FilterBar from "@/components/FilterBar";
-import { choropleth, groupedBars, stackedArea } from "@/components/charts/options";
-import { BASE_COLORS, Bar, Empty, Kpi, PageHeader, Panel, Section } from "@/components/ui";
-import { filterQuery, tryApi, type ArticleSummary, type Overview, type Paged, type SearchParams, type Timeline, type Trend } from "@/lib/api";
-import { fmtDate, fmtNumber, getDict, hasLocale, pick, type Locale } from "@/lib/i18n";
-import { notFound } from "next/navigation";
+import { tryApi, type Overview } from "@/lib/api";
+import { fmtDate, fmtNumber } from "@/lib/i18n";
+import { MODULES, num2, t } from "@/lib/modules";
+import { setup, type PageProps } from "@/lib/page";
 
-interface Geo { governorates: { slug: string; name_en: string; name_ar: string | null; admin_code: string | null; articles_including_places: number; events: number }[];
-  places: { name_en: string; name_ar: string | null; lat: number | null; lon: number | null; articles: number }[] }
-interface Narr { groups: Record<string, { articles: number; frames: Record<string, number> }>; frames: Record<string, { name_en: string; name_ar: string | null }> }
-interface Actors { items: { slug: string; name_en: string; name_ar: string | null; entity_type: string; articles: number }[] }
+const COPY = {
+  en: { hero: "How is Yemen being covered, and by whom?", sub: "A multilingual, evidence-based tool for tracking media coverage of Yemen: who reports, in which language, with which words and frames. It describes coverage. It does not rank actors or say what is true.",
+    scroll: "Scroll down to select a module", snapshot: "Latest daily summary", discover: "Discover", metrics: "At a glance (last 30 days)",
+    measures: "Five measures, never merged into one score", registry: "outlets in the registry", live: "with a working feed",
+    mA: ["A", "Source orientation", "Who the outlet is, with evidence"], mB: ["B", "Sentiment", "Tone of one article"], mC: ["C", "Framing", "How an issue is presented"],
+    mD: ["D", "Topic", "What it is about"], mE: ["E", "Actor-targeted sentiment", "How sentences naming an actor read"], noRun: "No pipeline run recorded yet." },
+  ar: { hero: "كيف تُغطّى اليمن، ومن يغطيها؟", sub: "أداة متعددة اللغات قائمة على الأدلة لرصد التغطية الإعلامية لليمن: من ينشر وبأي لغة وبأي كلمات وأطر. هي تصف التغطية ولا تصنّف الأطراف ولا تحكم بما هو صحيح.",
+    scroll: "مرّر للأسفل لاختيار وحدة", snapshot: "آخر ملخص يومي", discover: "استكشف", metrics: "نظرة سريعة (آخر ٣٠ يومًا)",
+    measures: "خمسة مقاييس منفصلة لا تُدمج في درجة واحدة", registry: "منفذًا في السجل", live: "لها تغذية عاملة",
+    mA: ["أ", "توجه المصدر", "من هو المنفذ، مع الأدلة"], mB: ["ب", "المشاعر", "نبرة مقال واحد"], mC: ["ج", "التأطير", "كيف تُعرض القضية"],
+    mD: ["د", "الموضوع", "عمّ يتحدث"], mE: ["هـ", "المشاعر تجاه الأطراف", "كيف تُقرأ الجمل التي تذكر طرفًا"], noRun: "لا توجد عملية معالجة مسجلة بعد." },
+};
 
-export default async function Dashboard({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<SearchParams> }) {
-  const { locale } = await params;
-  if (!hasLocale(locale)) notFound();
-  const l: Locale = locale;
-  const d = getDict(l);
-  const sp = await searchParams;
-  const fq = filterQuery(sp);
-  const [ov, tl, trends, actors, latest, geo, narr] = await Promise.all([
-    tryApi<Overview>(`/overview${fq}`),
-    tryApi<Timeline>(`/timeline${filterQuery(sp, { split: "operating_base" })}`),
-    tryApi<Trend[]>(`/trends?limit=8`),
-    tryApi<Actors>(`/actors${filterQuery(sp, { limit: 8 })}`),
-    tryApi<Paged<ArticleSummary>>(`/articles${filterQuery(sp, { limit: 8 })}`),
-    tryApi<Geo>(`/geography${fq}`),
-    tryApi<Narr>(`/compare/narratives${fq}`),
+export default async function Home(props: PageProps) {
+  const { l, d, sp } = await setup(props);
+  const c = COPY[l];
+  const [ov, src] = await Promise.all([
+    tryApi<Overview>("/overview"),
+    tryApi<{ count: number; sources: { active: boolean; articles: number }[] }>("/sources?demo=exclude"),
   ]);
-  const rtl = l === "ar";
-  const bases = d.bases as Record<string, string>;
-  const maxTrend = Math.max(1, ...(trends ?? []).map((t) => t.frequency));
-  const maxActor = Math.max(1, ...(actors?.items ?? []).map((a) => a.articles));
-
-  const frameKeys = narr ? Object.entries(narr.frames).filter(([k]) => Object.values(narr.groups).some((g) => (g.frames[k] ?? 0) > 0))
-    .sort(([a], [b]) => Object.values(narr.groups).reduce((s, g) => s + (g.frames[b] ?? 0), 0) - Object.values(narr.groups).reduce((s, g) => s + (g.frames[a] ?? 0), 0))
-    .slice(0, 8) : [];
-
-  const modules = [
-    ["news", d.nav.news], ["topics", d.nav.topics], ["sources", d.nav.sources], ["actors", d.nav.actors],
-    ["events", d.nav.events], ["media-landscape", d.nav.landscape], ["research", d.nav.research], ["methodology", d.nav.methodology],
-  ] as const;
-  const moduleText = d.modules as Record<string, string>;
-
+  const total = src?.count ?? 0;
+  const registry = src?.sources.filter((s) => s.active).length ?? 0;
+  const metrics: [string, number | undefined][] = [
+    [d.common.articles, ov?.current.articles], [d.common.stories, ov?.current.unique_stories],
+    [d.common.sources, registry], [d.common.languages, ov?.current.languages],
+  ];
+  void sp;
   return (
     <>
-      <PageHeader title={d.dashboard.title} intro={d.dashboard.intro} />
+      <section className="rounded-xl border border-line bg-surface px-6 py-10 md:py-14 mb-8 relative overflow-hidden">
+        <div aria-hidden className="absolute inset-y-0 end-0 w-1/3 opacity-[0.07] bg-[radial-gradient(circle_at_70%_40%,var(--accent),transparent_65%)]" />
+        <p className="label-caps text-accent mb-3">{d.site.name}</p>
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight max-w-3xl text-balance">{c.hero}</h1>
+        <p className="mt-4 text-muted max-w-2xl leading-relaxed">{c.sub}</p>
+        <a href="#modules" className="mt-6 inline-flex items-center gap-2 text-sm text-accent-2">{c.scroll} <span aria-hidden>↓</span></a>
+      </section>
+
       <DemoBanner d={d} show={!!ov?.contains_demo} />
-      <FilterBar d={d} sp={sp} />
 
-      {ov ? (
-        <Panel className="!p-0 mb-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-line [&>*]:border-line [&>*]:border-b lg:[&>*]:border-b-0 lg:[&>*:not(:last-child)]:border-e">
-            <Kpi label={d.common.articles} value={ov.current.articles} previous={ov.previous.articles} l={l} d={d} />
-            <Kpi label={d.common.stories} value={ov.current.unique_stories} previous={ov.previous.unique_stories} l={l} d={d} />
-            <Kpi label={d.common.sources} value={ov.current.sources_active} previous={ov.previous.sources_active} l={l} d={d} />
-            <Kpi label={d.common.languages} value={ov.current.languages} l={l} d={d} />
-            <Kpi label={d.common.events} value={ov.current.events} previous={ov.previous.events} l={l} d={d} />
-            <Kpi label={d.common.actors} value={ov.current.actors_mentioned} l={l} d={d} />
-          </div>
-        </Panel>
-      ) : <Empty d={d} />}
-
-      <div className="grid gap-8 lg:grid-cols-[1fr_2fr] mb-10">
-        <Section title={d.dashboard.summaryTitle} note={d.dashboard.summaryNote}>
-          <Panel className="leading-relaxed text-[0.95rem]">
-            {ov?.summary?.[l]?.content ? (
-              <>
-                <p className="label-caps text-muted mb-2 num">{fmtDate(ov.summary[l].day, l)}</p>
-                <p>{ov.summary[l].content}</p>
-              </>
-            ) : <Empty d={d} />}
-            {ov?.last_pipeline_run && (
-              <p className="mt-4 text-xs text-muted">
-                {d.dashboard.lastRun}: <span className="num">{fmtDate(ov.last_pipeline_run.started_at, l, { dateStyle: "medium", timeStyle: "short" })}</span> · {ov.last_pipeline_run.status}
-              </p>
-            )}
-          </Panel>
-        </Section>
-        <Section title={d.dashboard.timelineTitle} note={d.dashboard.byBase}>
-          <Panel>
-            {tl && tl.keys.length ? (
-              <EChart ariaLabel={d.dashboard.timelineTitle} height={300}
-                option={stackedArea(tl.days, tl.keys.map((k) => ({ name: bases[k] ?? k, data: tl.series[k], color: BASE_COLORS[k] })), rtl)} />
-            ) : <Empty d={d} />}
-          </Panel>
-        </Section>
-      </div>
-
-      <div className="grid gap-8 lg:grid-cols-2 mb-10">
-        <Section title={d.dashboard.trendsTitle} action={<Link className="text-sm text-accent-2" href={`/${l}/topics`}>{d.common.viewAll}</Link>}>
-          <Panel>
-            {trends?.length ? (
-              <ul className="flex flex-col gap-3">
-                {trends.map((t) => (
-                  <li key={t.id} className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-1 items-center">
-                    <Link href={`/${l}/topics/category/${t.slug}`} className="hover:underline truncate">{pick(l, t.label, t.label_ar)}</Link>
-                    <span className="text-xs num text-muted">
-                      {fmtNumber(t.frequency, l)} · <span className={t.status === "emerging" ? "text-accent font-medium" : t.status === "declining" ? "text-accent-2" : ""}>
-                        {(d.trend as Record<string, string>)[t.status]} {t.growth_rate >= 0 ? "+" : ""}{fmtNumber(t.growth_rate, l, { style: "percent", maximumFractionDigits: 0 })}
-                      </span>
-                    </span>
-                    <div className="col-span-2"><Bar value={t.frequency} max={maxTrend} /></div>
-                  </li>
-                ))}
-              </ul>
-            ) : <Empty d={d} />}
-          </Panel>
-        </Section>
-        <Section title={d.dashboard.actorsTitle} action={<Link className="text-sm text-accent-2" href={`/${l}/actors`}>{d.common.viewAll}</Link>}>
-          <Panel>
-            {actors?.items?.length ? (
-              <ul className="flex flex-col gap-3">
-                {actors.items.map((a) => (
-                  <li key={a.slug} className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-1 items-center">
-                    <Link href={`/${l}/actors/${a.slug}`} className="hover:underline truncate">{pick(l, a.name_en, a.name_ar)}</Link>
-                    <span className="text-xs num text-muted">{fmtNumber(a.articles, l)}</span>
-                    <div className="col-span-2"><Bar value={a.articles} max={maxActor} color="var(--accent)" /></div>
-                  </li>
-                ))}
-              </ul>
-            ) : <Empty d={d} />}
-          </Panel>
-        </Section>
-      </div>
-
-      <div className="grid gap-8 lg:grid-cols-2 mb-10">
-        <Section title={d.dashboard.splitTitle} note={d.dashboard.splitNote}>
-          <Panel>
-            {narr && frameKeys.length ? (
-              <EChart ariaLabel={d.dashboard.splitTitle} height={340}
-                option={groupedBars(frameKeys.map(([, f]) => pick(l, f.name_en, f.name_ar)),
-                  Object.entries(narr.groups).filter(([k]) => k !== "unknown").map(([k, g]) => ({ name: bases[k] ?? k, color: BASE_COLORS[k], data: frameKeys.map(([fk]) => g.frames[fk] ?? 0) })),
-                  { percent: true, rtl })} />
-            ) : <Empty d={d} />}
-          </Panel>
-        </Section>
-        <Section title={d.dashboard.mapTitle} action={<Link className="text-sm text-accent-2" href={`/${l}/geography`}>{d.common.viewAll}</Link>}>
-          <Panel>
-            {geo ? (
-              <EChart ariaLabel={d.dashboard.mapTitle} height={340} mapGeoUrl="/geo/yemen-adm1.json"
-                option={choropleth(
-                  geo.governorates.filter((g) => g.admin_code).map((g) => ({ code: g.admin_code as string, name: pick(l, g.name_en, g.name_ar), value: g.articles_including_places })),
-                  [], d.geography.articles)} />
-            ) : <Empty d={d} />}
-          </Panel>
-        </Section>
-      </div>
-
-      <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
-        <Section title={d.dashboard.latestTitle} action={<Link className="text-sm text-accent-2" href={`/${l}/news${fq}`}>{d.common.viewAll}</Link>}>
-          <Panel className="!py-1">
-            {latest?.items.length ? <ul>{latest.items.map((a) => <ArticleItem key={a.id} a={a} l={l} d={d} />)}</ul> : <Empty d={d} />}
-          </Panel>
-        </Section>
-        <Section title={d.dashboard.modules}>
-          <ul className="grid gap-2">
-            {modules.map(([slug, label]) => (
-              <li key={slug}>
-                <Link href={`/${l}/${slug}`} className="block rounded-lg border border-line bg-surface px-4 py-3 hover:border-accent">
-                  <span className="font-medium">{label}</span>
-                  <span className="block text-sm text-muted">{moduleText[slug === "media-landscape" ? "landscape" : slug]}</span>
-                </Link>
-              </li>
+      <div className="grid gap-4 lg:grid-cols-[1.4fr_1fr] mb-10">
+        <div className="rounded-lg border border-line bg-surface p-5">
+          <h2 className="label-caps text-muted mb-3">{c.metrics}</h2>
+          <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {metrics.map(([k, v]) => (
+              <div key={k}><dt className="text-xs text-muted">{k}</dt>
+                <dd className="text-3xl font-semibold num">{v === undefined ? "–" : fmtNumber(v, l)}</dd></div>
             ))}
-          </ul>
-        </Section>
+          </dl>
+          <p className="mt-3 text-xs text-muted">
+            <span className="num">{fmtNumber(total, l)}</span> {c.registry} · <span className="num">{fmtNumber(registry, l)}</span> {c.live}
+          </p>
+        </div>
+        <div className="rounded-lg border border-line bg-surface p-5">
+          <h2 className="label-caps text-muted mb-2">{c.snapshot}</h2>
+          {ov?.summary?.[l]?.content ? (
+            <>
+              <p className="text-xs text-muted num mb-1">{fmtDate(ov.summary[l].day, l)}</p>
+              <p className="text-sm leading-relaxed line-clamp-5">{ov.summary[l].content}</p>
+            </>
+          ) : <p className="text-sm text-muted">{d.common.noData}</p>}
+          <p className="mt-3 text-xs text-muted">
+            {ov?.last_pipeline_run ? <>{d.dashboard.lastRun}: <span className="num">{fmtDate(ov.last_pipeline_run.started_at, l, { dateStyle: "medium", timeStyle: "short" })}</span> · {ov.last_pipeline_run.status}</> : c.noRun}
+          </p>
+        </div>
       </div>
+
+      <section id="modules" className="scroll-mt-32 mb-12">
+        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 list-none p-0">
+          {MODULES.map((m) => (
+            <li key={m.key} className="rounded-lg border border-line bg-surface p-5 flex flex-col gap-3 hover:border-accent transition-colors">
+              <span className="num text-4xl font-semibold text-accent leading-none">{num2(m.n, l)}</span>
+              <h2 className="text-lg font-semibold">{t(m.title, l)}</h2>
+              <p className="text-sm text-muted leading-relaxed flex-1">{t(m.blurb, l)}</p>
+              <Link href={`/${l}${m.href}`} className="text-sm font-medium text-accent-2 hover:underline">{c.discover} →</Link>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="rounded-lg border border-line p-5">
+        <h2 className="text-lg font-semibold mb-3">{c.measures}</h2>
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {[c.mA, c.mB, c.mC, c.mD, c.mE].map(([k, n, s]) => (
+            <li key={k} className="flex gap-2.5"><span className="size-6 shrink-0 rounded bg-surface-2 text-xs font-semibold grid place-items-center">{k}</span>
+              <span><span className="block text-sm font-medium">{n}</span><span className="block text-xs text-muted">{s}</span></span></li>
+          ))}
+        </ul>
+        <Link href={`/${l}/methodology`} className="mt-4 inline-block text-sm text-accent-2">{d.nav.methodology} →</Link>
+      </section>
     </>
   );
 }

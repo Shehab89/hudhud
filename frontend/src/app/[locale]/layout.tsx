@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import "../globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ModuleBar from "@/components/ModuleBar";
 import { themeScript } from "@/components/ThemeToggle";
 import { dirOf, getDict, hasLocale, locales } from "@/lib/i18n";
 
@@ -42,6 +43,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
       <body className="min-h-screen flex flex-col">
         <a href="#main" className="skip-link">{d.site.skip}</a>
         <Header l={locale} d={d} />
+        <ModuleBar l={locale} home={locale === "ar" ? "الرئيسية" : "Home"} />
         <main id="main" className="flex-1 mx-auto w-full max-w-7xl px-4 py-8">{children}</main>
         <Footer l={locale} d={d} />
       </body>

@@ -100,6 +100,9 @@ def list_sources(
                     "simplified": cur.simplified,
                     "confidence": cur.confidence,
                     "method": cur.method,
+                    "review_status": cur.review_status,
+                    "evidence": cur.evidence,
+                    "evidence_items": [{"url": e.url, "type": e.evidence_type} for e in cur.evidence_items],
                 }
                 if cur
                 else None,
