@@ -86,7 +86,8 @@ def _data(session: Session, day: dt.date) -> dict:
                 "growth_rate": t.growth_rate,
             }
             for t in trends
-            if t.status == "emerging"
+            # with no earlier coverage to compare against, "grew markedly" would be meaningless
+            if t.status == "emerging" and t.previous > 0
         ][:3],
         "top_actors": [
             {"name_en": e[0], "name_ar": e[1] or e[0], "articles": e[2], "sources": e[3]} for e in ents
@@ -98,7 +99,7 @@ def render_en(day: dt.date, d: dict) -> str:
     if not d["articles"]:
         return f"No Yemen-related articles were recorded for {day.isoformat()}."
     lines = [
-        f"On {day.isoformat()} the hudhud recorded {d['articles']} Yemen-related articles "
+        f"On {day.isoformat()} Hudhud recorded {d['articles']} Yemen-related articles "
         f"({d['unique_stories']} distinct stories) from {d['sources_active']} outlets in "
         f"{len(d['languages'])} languages."
     ]

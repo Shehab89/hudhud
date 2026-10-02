@@ -14,11 +14,11 @@ export interface Src {
 
 const PAGE = 24;
 const UI = {
-  en: { search: "Search outlets", group: "Source group", base: "Newsroom location", lang: "Language", orient: "Orientation label", evOnly: "Only with cited evidence",
+  en: { search: "Search outlets", filters: "Filters", group: "Source group", base: "Newsroom location", lang: "Language", orient: "Orientation label", evOnly: "Only with cited evidence",
     inactive: "Include outlets with no working feed", showing: "outlets", of: "of", sort: "Sort", sName: "Name", sArt: "Articles", sConf: "Confidence", reset: "Clear filters",
     evidence: "evidence", draft: "draft, pending expert review", feeds: "feeds", noFeed: "no feed", none: "No outlet matches these filters.", open: "Open profile",
     note: "Orientation describes ownership, funding and documented alignment. It is not a rating of accuracy or reliability, and “not assessed” means no public evidence has been recorded yet." },
-  ar: { search: "ابحث في المنافذ", group: "مجموعة المصدر", base: "موقع غرفة الأخبار", lang: "اللغة", orient: "وصف التوجه", evOnly: "فقط ما له أدلة موثقة",
+  ar: { search: "ابحث في المنافذ", filters: "التصفية", group: "مجموعة المصدر", base: "موقع غرفة الأخبار", lang: "اللغة", orient: "وصف التوجه", evOnly: "فقط ما له أدلة موثقة",
     inactive: "تضمين المنافذ بلا تغذية عاملة", showing: "منفذًا", of: "من", sort: "الترتيب", sName: "الاسم", sArt: "المقالات", sConf: "الثقة", reset: "مسح التصفية",
     evidence: "أدلة", draft: "مسودة بانتظار مراجعة الخبراء", feeds: "تغذيات", noFeed: "بلا تغذية", none: "لا يوجد منفذ يطابق هذه التصفية.", open: "فتح الملف",
     note: "يصف التوجه الملكية والتمويل والانحياز الموثق، وليس تقييمًا للدقة أو الموثوقية. «غير مقيَّم» يعني أنه لم تُسجَّل أدلة علنية بعد." },
@@ -39,6 +39,7 @@ export default function SourceRegistry({ sources, l, d }: { sources: Src[]; l: L
   const [inactive, setInactive] = useState(true);
   const [sort, setSort] = useState<"name" | "articles" | "confidence">("name");
   const [page, setPage] = useState(0);
+  const [showFacets, setShowFacets] = useState(false);
 
   const orientOf = (s: Src) => s.orientation?.simplified ?? "unknown";
   const hasEv = (s: Src) => (s.orientation?.evidence_items?.length ?? 0) > 0;
@@ -75,12 +76,16 @@ export default function SourceRegistry({ sources, l, d }: { sources: Src[]; l: L
       <aside className="rounded-lg border border-line bg-surface p-4 flex flex-col gap-5 lg:sticky lg:top-36 lg:max-h-[calc(100vh-10rem)] lg:overflow-y-auto">
         <input type="search" value={q} onChange={(e) => { setQ(e.target.value); setPage(0); }} placeholder={u.search} aria-label={u.search}
           className="w-full rounded-md border border-line bg-bg px-3 py-1.5 text-sm" />
+        <button type="button" aria-expanded={showFacets} onClick={() => setShowFacets((v) => !v)}
+          className="lg:hidden text-sm font-medium text-accent-2 text-start">{u.filters} {showFacets ? "▴" : "▾"}</button>
+        <div className={`${showFacets ? "flex" : "hidden"} lg:flex flex-col gap-5`}>
         <Facet title={u.orient}>{orientC.map(([k, n]) => <Check key={k} id={k} n={n} label={t(ORIENT_LABELS[k] ?? { en: k, ar: k }, l)} on={orient.includes(k)} onChange={toggle(setOrient)} />)}</Facet>
         <Facet title={u.group}>{groupC.map(([k, n]) => <Check key={k} id={k} n={n} label={t(GROUP_LABELS[k] ?? { en: k.replaceAll("_", " "), ar: k }, l)} on={groups.includes(k)} onChange={toggle(setGroups)} />)}</Facet>
         <Facet title={u.base}>{baseC.map(([k, n]) => <Check key={k} id={k} n={n} label={(d.bases as Record<string, string>)[k] ?? k} on={bases.includes(k)} onChange={toggle(setBases)} />)}</Facet>
         <Facet title={u.lang}>{langC.map(([k, n]) => <Check key={k} id={k} n={n} label={LANG_NAMES[k] ? t(LANG_NAMES[k], l) : k.toUpperCase()} on={langs.includes(k)} onChange={toggle(setLangs)} />)}</Facet>
         <label className={box}><input type="checkbox" checked={evOnly} onChange={(e) => { setEvOnly(e.target.checked); setPage(0); }} className="accent-[var(--accent)]" />{u.evOnly}</label>
         <label className={box}><input type="checkbox" checked={inactive} onChange={(e) => { setInactive(e.target.checked); setPage(0); }} className="accent-[var(--accent)]" />{u.inactive}</label>
+        </div>
         {dirty ? <button type="button" className="text-sm text-accent-2 text-start" onClick={() => { setQ(""); setGroups([]); setBases([]); setLangs([]); setOrient([]); setEvOnly(false); setPage(0); }}>{u.reset}</button> : null}
       </aside>
 

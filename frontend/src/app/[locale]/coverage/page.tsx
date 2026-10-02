@@ -95,7 +95,7 @@ export default async function Dashboard({ params, searchParams }: { params: Prom
                     <Link href={`/${l}/topics/category/${t.slug}`} className="hover:underline truncate">{pick(l, t.label, t.label_ar)}</Link>
                     <span className="text-xs num text-muted">
                       {fmtNumber(t.frequency, l)} · <span className={t.status === "emerging" ? "text-accent font-medium" : t.status === "declining" ? "text-accent-2" : ""}>
-                        {(d.trend as Record<string, string>)[t.status]} {t.growth_rate >= 0 ? "+" : ""}{fmtNumber(t.growth_rate, l, { style: "percent", maximumFractionDigits: 0 })}
+                        {t.previous === 0 ? (l === "ar" ? "لا بيانات سابقة للمقارنة" : "no earlier data to compare") : <>{(d.trend as Record<string, string>)[t.status]} {t.growth_rate >= 0 ? "+" : ""}{fmtNumber(t.growth_rate, l, { style: "percent", maximumFractionDigits: 0 })}</>}
                       </span>
                     </span>
                     <div className="col-span-2"><Bar value={t.frequency} max={maxTrend} /></div>
