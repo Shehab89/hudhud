@@ -1126,7 +1126,14 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: ''
+  notes: 'Newsroom: not documented (unknown). Unresolved. The homepage (fetched 2026-10-03) calls Hakikah "منصة
+    يمنية لرصد الشائعات ونشر الحقائق", launched August 2021, and gives no address, city or parent organisation.
+    IJNet (Red Sea crisis story) describes it as a volunteer team under editor-in-chief Mohammed Mahroos and gives
+    no location. An IJNet Arabic piece (node 12576) says SEMC (Taiz-registered; see semc-economic-media) "launched
+    in June 2021 a platform ''حقيقة'' to monitor rumours", headed by Hamdi Ressam. That date and editor differ from
+    hakikah.net''s, so the link between the two is unconfirmed and is not used to set a base. A reviewer could check
+    whether hakikah.net is SEMC''s platform. Sources: https://hakikah.net/, https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis,
+    https://ijnet.org/en/node/12576'
 - id: yoopyup
   name: YoopyUp
   name_native: يوب يوب
@@ -1160,7 +1167,12 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: ''
+  notes: 'Newsroom: not documented (unknown). Unresolved. IJNet names founder Farouq Al-Kamali (operating since
+    late 2023) but gives no newsroom location. His ARIJ profile says he is "a lecturer in investigative journalism
+    at Taiz University", which points to Taiz. That describes the founder, not the platform''s newsroom, so the
+    base is left unknown. The site itself was not fetched this round; its feed URL returned HTML on 2026-10-02.
+    Sources: https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis,
+    https://en.arij.net/faroq-al-kamali/'
 - id: semc-economic-media
   name: Studies and Economic Media Center (SEMC)
   name_native: مركز الدراسات والإعلام الاقتصادي
@@ -1173,7 +1185,7 @@
   source_group: yemen_independent
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://economicmedia.net/ar/?feed=rss2
@@ -1197,7 +1209,13 @@
   access_policy: metadata_only
   active: false
   notes: 'Economic outlet: publishes Yemen economic indicators and briefings (newest post 2026-09-29). Retest the
-    http feed from the ingest host.'
+    http feed from the ingest host. Newsroom: Taiz (government_controlled). The SEMC About page gives its address
+    as "Yemen Republic, Taiz, AlDahee Area" with a +967-4 (Taiz) landline, plus an Egyptian (+20) number. The IATI
+    registry lists "aldahea area, taiz, yemen". Most of Taiz city, including the centre, is held by government-aligned
+    forces, and the Houthis hold the al-Hawban/eastern outskirts. Which side holds the al-Dhahi neighbourhood was
+    not checked against a map, so confidence is about 0.6. The Egyptian phone number may mean some staff work from
+    Cairo. Recent output (2026-09) includes briefings critical of Houthi actions at Bab al-Mandab; that is tone
+    and is not used for orientation. Sources: https://economicmedia.net/en/?p=22, https://iatiregistry.org/publisher/about/semc-yemen'
 - id: al-khabar-al-yemeni
   name: Al-Khabar Al-Yemeni
   name_native: الخبر اليمني
@@ -1232,7 +1250,13 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Has an English section (alkhabaralyemeni.net/2023/05/19/221918/ is English). Orientation not assessed.
+  notes: 'Has an English section (alkhabaralyemeni.net/2023/05/19/221918/ is English). Orientation not assessed.
+    Newsroom: not documented (unknown). Unresolved. The homepage footer (fetched 2026-10-03) shows only "جميع الحقوق
+    محفوظة للخبر اليمني 2025م", with no editor, address or phone. The About page (/home/about-us/) could not be
+    fetched (permission not granted). No third-party source on ownership or location was found in two searches.
+    Headlines use "Saudi coalition" / "Sana''a forces" framing, which suggests a Sanaa-side perspective. That is
+    tone only and is not used for the base or for orientation. Worth a reviewer check of the About page. Sources:
+    https://alkhabaralyemeni.net/'
 - id: al-sharea
   name: Al-Sharea
   name_native: صحيفة الشارع
@@ -1244,7 +1268,7 @@
   source_group: yemen_independent
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.alsharaeanews.com/feed
@@ -1267,7 +1291,15 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: 'Website and feed have not updated since Dec 2022: appears dormant.'
+  notes: 'Website and feed have not updated since Dec 2022: appears dormant. Newsroom: Aden (government_controlled).
+    GC4HR (2019-12-07): "Al-Sharea newspaper is an independent newspaper founded in 2007 and headquartered in the
+    city of Aden, and its publisher and editor-in-chief is Naif Hassan." It was founded in Sanaa (self-description)
+    and later based in Aden. RSF (2019-12-06) reports Islah-linked militiamen banning its distribution in Taiz after
+    it investigated senior Islah officials. That is a press-freedom incident, not an affiliation. The site has been
+    dormant since Dec 2022. While it was active (2019-2022), Aden was under STC de facto control, so stc_controlled
+    is the historical value. The 2026 value follows this file''s Aden convention (PLC/government control since 2026-01-07).
+    Confidence about 0.6. Sources: https://www.gc4hr.org/al-sharea-newspaper-confiscated-in-taiz-after-distributors-arrested/,
+    https://rsf.org/en/al-islah-militiamen-ban-newspaper-yemeni-city, https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: shabwah-press
   name: Shabwah Press
   name_native: شبوة برس

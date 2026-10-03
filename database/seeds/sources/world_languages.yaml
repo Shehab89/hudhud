@@ -1605,3 +1605,184 @@
   access_policy: metadata_only
   active: true
   notes: ''
+- id: afpbb-news
+  name: AFPBB News
+  name_native: AFPBB News
+  url: https://www.afpbb.com/
+  country: JP
+  languages:
+  - ja
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://feeds.afpbb.com/rss/afpbb/afpbbnews
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: 'Feed URL taken from the FeedSpot Japanese news list (https://rss.feedspot.com/japanese_news_rss_feeds/,
+      fetched 2026-10-03). Not fetched: the WebFetch permission request for this URL was not answered, so format,
+      robots status and recency are unchecked.'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-03'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Japanese-language AFP news site. Yemen/Houthi coverage seen in search results, e.g. https://www.afpbb.com/articles/-/3595840
+    (Houthi 'prime minister' killed in Israeli strike) and https://www.afpbb.com/articles/-/3322234. Ownership not
+    researched. Verify the feed and robots.txt before activating.
+- id: zdfheute
+  name: ZDFheute
+  name_native: ZDFheute
+  url: https://www.zdfheute.de/
+  country: DE
+  languages:
+  - de
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.zdfheute.de/rss/zdf/nachrichten
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: RSS link found on the ZDFheute Jemen topic page (https://www.zdfheute.de/thema/jemen-170.html, fetched
+      2026-10-03). The feed itself was not fetched (no WebFetch permission), and robots.txt was not checked.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-03'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'News site of German broadcaster ZDF. Has a dedicated Jemen topic page (https://www.zdfheute.de/thema/jemen-170.html).
+    On 2026-10-03 it listed Houthi attacks on Saudi Arabia and an interview with Yemen''s foreign minister. Ownership
+    not added: no evidence URL was fetched.'
+- id: radio-svoboda
+  name: Radio Svoboda (RFE/RL Russian Service)
+  name_native: Радио Свобода
+  url: https://www.svoboda.org/
+  country: XX
+  languages:
+  - ru
+  source_type: radio
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.svoboda.org/api/z_oqpvl-vomx-tpevkipr
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: '''Новости - мир'' (world news) feed listed on https://www.svoboda.org/rssfeeds (fetched 2026-10-03).
+      The page also lists https://www.svoboda.org/api/z-pqpil-vomx-tper-ipp (all news). Neither feed was fetched
+      (no WebFetch permission).'
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-03'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Russian-language service of RFE/RL. Yemen coverage seen in search results: https://www.svoboda.org/a/husity-obyazali-amerikanskih-i-britanskih-rabotnikov-nko-pokinutj-yemen/32790223.html.
+    Country left as XX: RFE/RL''s base was not confirmed from a fetched source. Ownership and funding not added:
+    no evidence URL was fetched. Check robots.txt before activating.'
+- id: ntv-turkey
+  name: NTV (Turkey)
+  name_native: NTV
+  url: https://www.ntv.com.tr/
+  country: TR
+  languages:
+  - tr
+  source_type: tv
+  source_group: turkey
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.ntv.com.tr/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: RSS link found on the Husiler tag page (https://www.ntv.com.tr/haberleri/husiler, fetched 2026-10-03).
+      The feed itself was not fetched (no WebFetch permission), and robots.txt was not checked.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-03'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: 'Turkish news channel with a dedicated Husiler (Houthis) tag page. On 2026-10-03 its newest items covered
+    Houthi strikes on Riyadh and Saudi air strikes on Taiz. That tag page is a candidate per-topic source if it
+    has its own feed. Ownership not added: no evidence URL was fetched.'
+- id: gazete-vatan
+  name: Gazete Vatan
+  name_native: Gazete Vatan
+  url: https://www.gazetevatan.com/
+  country: TR
+  languages:
+  - tr
+  source_type: newspaper
+  source_group: turkey
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.gazetevatan.com/rss/gundem.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Feed URL (Gündem, the national agenda section) taken from the FeedSpot Turkey news list (https://rss.feedspot.com/turkey_news_rss_feeds/,
+      fetched 2026-10-03). Not fetched (no WebFetch permission). A world-section feed may be a better fit.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-03'
+    review_status: draft
+  access_policy: metadata_only
+  active: false
+  notes: Turkish daily. Has a Husiler tag page that appeared in search results (https://www.gazetevatan.com/haberleri/husiler);
+    the page itself was not fetched. Ownership not researched.
