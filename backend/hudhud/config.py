@@ -5,6 +5,7 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -15,6 +16,16 @@ class Settings(BaseSettings):
 
     database_url: str = "postgresql+psycopg://hudhud:hudhud@localhost:5432/hudhud"
     seeds_dir: Path = REPO_ROOT / "database" / "seeds"
+
+    @field_validator("database_url")
+    @classmethod
+    def _psycopg_driver(cls, v: str) -> str:
+        # Hosting dashboards (Supabase, Render, Neon) hand out postgres:// or postgresql:// URLs;
+        # accept them as pasted and select the psycopg 3 driver.
+        for prefix in ("postgres://", "postgresql://"):
+            if v.startswith(prefix):
+                return "postgresql+psycopg://" + v[len(prefix) :]
+        return v
 
     # Fetching
     user_agent: str = "HudhudBot/0.1 (+https://github.com/; research crawler; respects robots.txt)"
