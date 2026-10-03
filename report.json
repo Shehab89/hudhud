@@ -1,0 +1,2158 @@
+{
+ "articles": 492,
+ "sources_with_articles": 51,
+ "feeds": 143,
+ "feed_health": {
+  "degraded": 26,
+  "healthy": 117
+ },
+ "languages": {
+  "ar": 322,
+  "en": 154,
+  "es": 5,
+  "fa": 4,
+  "tr": 3,
+  "fr": 2,
+  "it": 1,
+  "de": 1
+ },
+ "per_source": [
+  {
+   "slug": "al-masirah",
+   "name": "Al-Masirah",
+   "source_group": "yemen_actor_affiliated",
+   "n": 50,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "belqees",
+   "name": "Belqees",
+   "source_group": "yemen_independent",
+   "n": 50,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (IRG)",
+   "source_group": "yemen_state_irg",
+   "n": 40,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "khabar-agency",
+   "name": "Khabar News Agency",
+   "source_group": "yemen_independent",
+   "n": 38,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "yemen-future",
+   "name": "Yemen Future",
+   "source_group": "yemen_independent",
+   "n": 30,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "aden-time",
+   "name": "Aden Time",
+   "source_group": "yemen_local",
+   "n": 25,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "aden-al-ghad",
+   "name": "Aden Al-Ghad",
+   "source_group": "yemen_independent",
+   "n": 25,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "source_group": "arab_gulf",
+   "n": 24,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "almotamar-net",
+   "name": "Al-Motamar Net",
+   "source_group": "yemen_actor_affiliated",
+   "n": 19,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (IRG Armed Forces)",
+   "source_group": "yemen_state_irg",
+   "n": 19,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "source_group": "turkey",
+   "n": 18,
+   "langs": [
+    "ar",
+    "en",
+    "tr"
+   ]
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "source_group": "yemen_independent",
+   "n": 17,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "okaz",
+   "name": "Okaz",
+   "source_group": "arab_gulf",
+   "n": 16,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "al-khabar-al-yemeni",
+   "name": "Al-Khabar Al-Yemeni",
+   "source_group": "yemen_independent",
+   "n": 10,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "stc-official",
+   "name": "Southern Transitional Council official site",
+   "source_group": "yemen_actor_affiliated",
+   "n": 10,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "yemen-press-agency",
+   "name": "Yemen Press Agency (YPA)",
+   "source_group": "yemen_independent",
+   "n": 10,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "middle-east-eye",
+   "name": "Middle East Eye",
+   "source_group": "international_newspaper",
+   "n": 9,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-araby-al-jadeed",
+   "name": "Al-Araby Al-Jadeed",
+   "source_group": "arab_pan",
+   "n": 8,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "sputnik-arabic",
+   "name": "Sputnik Arabic",
+   "source_group": "international_arabic_service",
+   "n": 5,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "iran-international",
+   "name": "Iran International",
+   "source_group": "international_broadcaster",
+   "n": 5,
+   "langs": [
+    "en",
+    "fa"
+   ]
+  },
+  {
+   "slug": "nashwan-news",
+   "name": "Nashwan News",
+   "source_group": "yemen_independent",
+   "n": 5,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "the-national",
+   "name": "The National",
+   "source_group": "arab_gulf",
+   "n": 4,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "alhurra",
+   "name": "Alhurra",
+   "source_group": "international_arabic_service",
+   "n": 4,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "arab-news",
+   "name": "Arab News",
+   "source_group": "arab_gulf",
+   "n": 4,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "euronews",
+   "name": "Euronews",
+   "source_group": "international_broadcaster",
+   "n": 4,
+   "langs": [
+    "en",
+    "fr"
+   ]
+  },
+  {
+   "slug": "qna-qatar-news-agency",
+   "name": "Qatar News Agency (QNA)",
+   "source_group": "arab_gulf",
+   "n": 4,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "shafaq-news",
+   "name": "Shafaq News",
+   "source_group": "arab_iraq",
+   "n": 4,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "the-new-arab",
+   "name": "The New Arab",
+   "source_group": "arab_pan",
+   "n": 3,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "sky-news-arabia",
+   "name": "Sky News Arabia",
+   "source_group": "arab_gulf",
+   "n": 3,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "almethaq-net",
+   "name": "Al-Methaq Net",
+   "source_group": "yemen_actor_affiliated",
+   "n": 3,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "hispantv",
+   "name": "HispanTV",
+   "source_group": "iran",
+   "n": 2,
+   "langs": [
+    "es"
+   ]
+  },
+  {
+   "slug": "rtp-noticias",
+   "name": "RTP Notícias",
+   "source_group": "international_broadcaster",
+   "n": 2,
+   "langs": [
+    "es"
+   ]
+  },
+  {
+   "slug": "al-jazeera-arabic",
+   "name": "Al Jazeera Arabic",
+   "source_group": "arab_gulf",
+   "n": 2,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "oman-observer",
+   "name": "Oman Observer",
+   "source_group": "arab_gulf",
+   "n": 2,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "sanaa-center",
+   "name": "Sana'a Center for Strategic Studies",
+   "source_group": "think_tank_research",
+   "n": 2,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "sky-tg24",
+   "name": "Sky TG24",
+   "source_group": "international_broadcaster",
+   "n": 1,
+   "langs": [
+    "it"
+   ]
+  },
+  {
+   "slug": "alsahwa-net",
+   "name": "Al-Sahwa Net",
+   "source_group": "yemen_actor_affiliated",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-quds-al-arabi",
+   "name": "Al-Quds Al-Arabi",
+   "source_group": "arab_pan",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "svt-nyheter",
+   "name": "SVT Nyheter",
+   "source_group": "international_broadcaster",
+   "n": 1,
+   "langs": [
+    "de"
+   ]
+  },
+  {
+   "slug": "tvn24",
+   "name": "TVN24",
+   "source_group": "international_broadcaster",
+   "n": 1,
+   "langs": [
+    "tr"
+   ]
+  },
+  {
+   "slug": "utusan-malaysia",
+   "name": "Utusan Malaysia",
+   "source_group": "international_newspaper",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-khaleej",
+   "name": "Al Khaleej",
+   "source_group": "arab_gulf",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "el-mundo",
+   "name": "El Mundo",
+   "source_group": "international_newspaper",
+   "n": 1,
+   "langs": [
+    "es"
+   ]
+  },
+  {
+   "slug": "hakikah",
+   "name": "Hakikah",
+   "source_group": "yemen_independent",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "chatham-house",
+   "name": "Chatham House",
+   "source_group": "think_tank_research",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "annahar",
+   "name": "Annahar",
+   "source_group": "arab_levant",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "press-tv",
+   "name": "Press TV",
+   "source_group": "iran",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-jazeera-english",
+   "name": "Al Jazeera English",
+   "source_group": "arab_gulf",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "roya-news",
+   "name": "Roya News",
+   "source_group": "arab_levant",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "al-sharq-qatar",
+   "name": "Al Sharq",
+   "source_group": "arab_gulf",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "sidq-yemen",
+   "name": "Sidq",
+   "source_group": "yemen_independent",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  }
+ ],
+ "feeds_detail": [
+  {
+   "slug": "gdelt-doc-yemen",
+   "name": "GDELT DOC 2.0: yemen",
+   "source_group": "aggregator",
+   "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=yemen&mode=artlist&format=json",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-ar",
+   "name": "Google News: اليمن (Arabic)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=%D8%A7%D9%84%D9%8A%D9%85%D9%86&hl=ar&gl=EG&ceid=EG:ar",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-de",
+   "name": "Google News: Jemen (German)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=Jemen&hl=de&gl=DE&ceid=DE:de",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-en",
+   "name": "Google News: Yemen (English)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=Yemen&hl=en-US&gl=US&ceid=US:en",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-es",
+   "name": "Google News: Yemen (Spanish)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=Yemen&hl=es-419&gl=MX&ceid=MX:es-419",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-fa",
+   "name": "Google News: یمن (Persian)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=%DB%8C%D9%85%D9%86&hl=fa&gl=IR&ceid=IR:fa",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-fr",
+   "name": "Google News: Yémen (French)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=Y%C3%A9men&hl=fr&gl=FR&ceid=FR:fr",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-ru",
+   "name": "Google News: Йемен (Russian)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=%D0%99%D0%B5%D0%BC%D0%B5%D0%BD&hl=ru&gl=RU&ceid=RU:ru",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "google-news-yemen-tr",
+   "name": "Google News: Yemen (Turkish)",
+   "source_group": "aggregator",
+   "url": "https://news.google.com/rss/search?q=Yemen&hl=tr&gl=TR&ceid=TR:tr",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "livedoor-news",
+   "name": "Livedoor News",
+   "source_group": "aggregator",
+   "url": "https://news.livedoor.com/topics/rss/int.xml",
+   "health_status": "healthy",
+   "last_item_count": 11,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-arabiya",
+   "name": "Al Arabiya",
+   "source_group": "arab_gulf",
+   "url": "https://www.alarabiya.net/feed/rss2/ar.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "al-arabiya",
+   "name": "Al Arabiya",
+   "source_group": "arab_gulf",
+   "url": "https://english.alarabiya.net/feed/rss2/en.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "al-jazeera-arabic",
+   "name": "Al Jazeera Arabic",
+   "source_group": "arab_gulf",
+   "url": "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-jazeera-english",
+   "name": "Al Jazeera English",
+   "source_group": "arab_gulf",
+   "url": "https://www.aljazeera.com/xml/rss/all.xml",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-khaleej",
+   "name": "Al Khaleej",
+   "source_group": "arab_gulf",
+   "url": "https://www.alkhaleej.ae/rssFeed/159",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-sharq-qatar",
+   "name": "Al Sharq",
+   "source_group": "arab_gulf",
+   "url": "https://al-sharq.com/category/عربي-ودولي/feed",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "arab-news",
+   "name": "Arab News",
+   "source_group": "arab_gulf",
+   "url": "https://www.arabnews.com/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "source_group": "arab_gulf",
+   "url": "https://aawsat.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 300,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "source_group": "arab_gulf",
+   "url": "https://english.aawsat.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 300,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "gulf-news",
+   "name": "Gulf News",
+   "source_group": "arab_gulf",
+   "url": "https://gulfnews.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 1,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "okaz",
+   "name": "Okaz",
+   "source_group": "arab_gulf",
+   "url": "https://www.okaz.com.sa/rssFeed/0",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "okaz",
+   "name": "Okaz",
+   "source_group": "arab_gulf",
+   "url": "https://www.okaz.com.sa/rssFeed/1",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "oman-observer",
+   "name": "Oman Observer",
+   "source_group": "arab_gulf",
+   "url": "https://www.omanobserver.om/rssFeed/55",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "qna-qatar-news-agency",
+   "name": "Qatar News Agency (QNA)",
+   "source_group": "arab_gulf",
+   "url": "https://qna.org.qa/en/Pages/RSS-Feeds/General",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sky-news-arabia",
+   "name": "Sky News Arabia",
+   "source_group": "arab_gulf",
+   "url": "https://www.skynewsarabia.com/rss",
+   "health_status": "healthy",
+   "last_item_count": 62,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "the-national",
+   "name": "The National",
+   "source_group": "arab_gulf",
+   "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "shafaq-news",
+   "name": "Shafaq News",
+   "source_group": "arab_iraq",
+   "url": "https://shafaq.com/en/Middle-East?rss=1",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "annahar",
+   "name": "Annahar",
+   "source_group": "arab_levant",
+   "url": "https://www.annahar.com/rss",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "enab-baladi",
+   "name": "Enab Baladi",
+   "source_group": "arab_levant",
+   "url": "https://www.enabbaladi.net/feed",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "roya-news",
+   "name": "Roya News",
+   "source_group": "arab_levant",
+   "url": "https://royanews.tv/rss",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "echorouk",
+   "name": "Echorouk Online",
+   "source_group": "arab_maghreb",
+   "url": "https://www.echoroukonline.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hespress",
+   "name": "Hespress",
+   "source_group": "arab_maghreb",
+   "url": "https://www.hespress.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 12,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hespress",
+   "name": "Hespress",
+   "source_group": "arab_maghreb",
+   "url": "https://en.hespress.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-araby-al-jadeed",
+   "name": "Al-Araby Al-Jadeed",
+   "source_group": "arab_pan",
+   "url": "https://www.alaraby.co.uk/rss",
+   "health_status": "healthy",
+   "last_item_count": 138,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-quds-al-arabi",
+   "name": "Al-Quds Al-Arabi",
+   "source_group": "arab_pan",
+   "url": "https://www.alquds.co.uk/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "the-new-arab",
+   "name": "The New Arab",
+   "source_group": "arab_pan",
+   "url": "https://www.newarab.com/rss",
+   "health_status": "healthy",
+   "last_item_count": 92,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "alhurra",
+   "name": "Alhurra",
+   "source_group": "international_arabic_service",
+   "url": "https://www.alhurra.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sputnik-arabic",
+   "name": "Sputnik Arabic",
+   "source_group": "international_arabic_service",
+   "url": "https://sarabic.ae/export/rss2/archive/index.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "abc-australia",
+   "name": "ABC News (Australia)",
+   "source_group": "international_broadcaster",
+   "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "ary-news-urdu",
+   "name": "ARY News Urdu",
+   "source_group": "international_broadcaster",
+   "url": "https://urdu.arynews.tv/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "bbc-hindi",
+   "name": "BBC News Hindi",
+   "source_group": "international_broadcaster",
+   "url": "https://feeds.bbci.co.uk/hindi/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 40,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "cgtn",
+   "name": "CGTN",
+   "source_group": "international_broadcaster",
+   "url": "https://www.cgtn.com/subscribe/rss/section/world.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "euronews",
+   "name": "Euronews",
+   "source_group": "international_broadcaster",
+   "url": "https://www.euronews.com/rss?level=theme&name=news",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "euronews",
+   "name": "Euronews",
+   "source_group": "international_broadcaster",
+   "url": "https://fr.euronews.com/rss?level=theme&name=news",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "iran-international",
+   "name": "Iran International",
+   "source_group": "international_broadcaster",
+   "url": "https://www.iranintl.com/fa/feed",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "iran-international",
+   "name": "Iran International",
+   "source_group": "international_broadcaster",
+   "url": "https://www.iranintl.com/en/feed",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "ndtv-india",
+   "name": "NDTV India",
+   "source_group": "international_broadcaster",
+   "url": "https://feeds.feedburner.com/ndtvkhabar-latest",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "nos",
+   "name": "NOS",
+   "source_group": "international_broadcaster",
+   "url": "https://feeds.nos.nl/nosnieuwsbuitenland",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "npr",
+   "name": "NPR",
+   "source_group": "international_broadcaster",
+   "url": "https://feeds.npr.org/1004/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "polsat-news",
+   "name": "Polsat News",
+   "source_group": "international_broadcaster",
+   "url": "https://www.polsatnews.pl/rss/swiat.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rainews",
+   "name": "RaiNews",
+   "source_group": "international_broadcaster",
+   "url": "https://www.rainews.it/rss/esteri",
+   "health_status": "healthy",
+   "last_item_count": 41,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rmf24",
+   "name": "RMF24",
+   "source_group": "international_broadcaster",
+   "url": "https://www.rmf24.pl/fakty/swiat/feed",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rt-espanol",
+   "name": "RT en Español",
+   "source_group": "international_broadcaster",
+   "url": "https://actualidad-rt.com/feeds/all.rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rthk",
+   "name": "RTHK",
+   "source_group": "international_broadcaster",
+   "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rtp-noticias",
+   "name": "RTP Notícias",
+   "source_group": "international_broadcaster",
+   "url": "https://www.rtp.pt/noticias/rss/mundo",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sky-news",
+   "name": "Sky News",
+   "source_group": "international_broadcaster",
+   "url": "https://feeds.skynews.com/feeds/rss/world.xml",
+   "health_status": "healthy",
+   "last_item_count": 8,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sky-tg24",
+   "name": "Sky TG24",
+   "source_group": "international_broadcaster",
+   "url": "https://tg24.sky.it/rss/tg24_mondo.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "svt-nyheter",
+   "name": "SVT Nyheter",
+   "source_group": "international_broadcaster",
+   "url": "https://www.svt.se/nyheter/utrikes/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "tgcom24",
+   "name": "TGCom24",
+   "source_group": "international_broadcaster",
+   "url": "https://www.tgcom24.mediaset.it/rss/mondo.xml",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "tvn24",
+   "name": "TVN24",
+   "source_group": "international_broadcaster",
+   "url": "https://tvn24.pl/swiat.xml",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "amnesty-international",
+   "name": "Amnesty International",
+   "source_group": "international_humanitarian",
+   "url": "https://www.amnesty.org/en/feed/",
+   "health_status": "healthy",
+   "last_item_count": 12,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "human-rights-watch",
+   "name": "Human Rights Watch",
+   "source_group": "international_humanitarian",
+   "url": "https://www.hrw.org/rss/news",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "icrc",
+   "name": "International Committee of the Red Cross",
+   "source_group": "international_humanitarian",
+   "url": "https://www.icrc.org/en/rss/news",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "msf",
+   "name": "Médecins Sans Frontières",
+   "source_group": "international_humanitarian",
+   "url": "https://www.msf.org/rss/all",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "the-new-humanitarian",
+   "name": "The New Humanitarian",
+   "source_group": "international_humanitarian",
+   "url": "https://www.thenewhumanitarian.org/rss/all.xml",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-monitor",
+   "name": "Al-Monitor",
+   "source_group": "international_newspaper",
+   "url": "https://www.al-monitor.com/rss",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "amar-ujala",
+   "name": "Amar Ujala",
+   "source_group": "international_newspaper",
+   "url": "https://www.amarujala.com/rss/world-news.xml",
+   "health_status": "healthy",
+   "last_item_count": 40,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "bellingcat",
+   "name": "Bellingcat",
+   "source_group": "international_newspaper",
+   "url": "https://www.bellingcat.com/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "dainik-jagran",
+   "name": "Dainik Jagran",
+   "source_group": "international_newspaper",
+   "url": "https://www.jagran.com/rss/news/world.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "eldiario-es",
+   "name": "elDiario.es",
+   "source_group": "international_newspaper",
+   "url": "https://www.eldiario.es/rss/internacional/",
+   "health_status": "healthy",
+   "last_item_count": 27,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "el-mundo",
+   "name": "El Mundo",
+   "source_group": "international_newspaper",
+   "url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
+   "health_status": "healthy",
+   "last_item_count": 53,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "express-urdu",
+   "name": "Daily Express (Express News Urdu)",
+   "source_group": "international_newspaper",
+   "url": "https://www.express.pk/world/feed/",
+   "health_status": "healthy",
+   "last_item_count": 27,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "folha-de-s-paulo",
+   "name": "Folha de S.Paulo",
+   "source_group": "international_newspaper",
+   "url": "https://feeds.folha.uol.com.br/mundo/rss091.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hankyoreh",
+   "name": "The Hankyoreh",
+   "source_group": "international_newspaper",
+   "url": "https://www.hani.co.kr/rss/international/",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "il-post",
+   "name": "Il Post",
+   "source_group": "international_newspaper",
+   "url": "https://www.ilpost.it/feed/",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "kommersant",
+   "name": "Kommersant",
+   "source_group": "international_newspaper",
+   "url": "https://www.kommersant.ru/RSS/section-world.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "kyunghyang-shinmun",
+   "name": "Kyunghyang Shinmun",
+   "source_group": "international_newspaper",
+   "url": "https://www.khan.co.kr/rss/rssdata/kh_world.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "la-jornada",
+   "name": "La Jornada",
+   "source_group": "international_newspaper",
+   "url": "https://www.jornada.com.mx/rss/mundo.xml",
+   "health_status": "healthy",
+   "last_item_count": 11,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "maariv",
+   "name": "Maariv",
+   "source_group": "international_newspaper",
+   "url": "https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "malaysiakini-bm",
+   "name": "Malaysiakini (Bahasa Malaysia)",
+   "source_group": "international_newspaper",
+   "url": "https://www.malaysiakini.com/rss/my/news.rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "meduza",
+   "name": "Meduza",
+   "source_group": "international_newspaper",
+   "url": "https://meduza.io/rss/all",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "middle-east-eye",
+   "name": "Middle East Eye",
+   "source_group": "international_newspaper",
+   "url": "https://www.middleeasteye.net/rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "middle-east-monitor",
+   "name": "Middle East Monitor",
+   "source_group": "international_newspaper",
+   "url": "https://www.middleeastmonitor.com/feed/",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "observador-pt",
+   "name": "Observador",
+   "source_group": "international_newspaper",
+   "url": "https://observador.pt/seccao/mundo/feed/",
+   "health_status": "healthy",
+   "last_item_count": 51,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "publico-pt",
+   "name": "Público",
+   "source_group": "international_newspaper",
+   "url": "https://feeds.feedburner.com/PublicoMundo",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "rzeczpospolita",
+   "name": "Rzeczpospolita",
+   "source_group": "international_newspaper",
+   "url": "https://www.rp.pl/rss_main",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "the-intercept",
+   "name": "The Intercept",
+   "source_group": "international_newspaper",
+   "url": "https://theintercept.com/feed/?rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "toyo-keizai-online",
+   "name": "Toyo Keizai Online",
+   "source_group": "international_newspaper",
+   "url": "https://toyokeizai.net/list/feed/rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "utusan-malaysia",
+   "name": "Utusan Malaysia",
+   "source_group": "international_newspaper",
+   "url": "https://www.utusan.com.my/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "walla-news",
+   "name": "Walla! News",
+   "source_group": "international_newspaper",
+   "url": "https://rss.walla.co.il/feed/2",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "ynet",
+   "name": "Ynet",
+   "source_group": "international_newspaper",
+   "url": "https://www.ynet.co.il/Integration/StoryRss2.xml",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "agencia-brasil",
+   "name": "Agência Brasil",
+   "source_group": "international_wire",
+   "url": "https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "agenzia-nova",
+   "name": "Agenzia Nova",
+   "source_group": "international_wire",
+   "url": "https://www.agenzianova.com/news/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "ansa",
+   "name": "ANSA",
+   "source_group": "international_wire",
+   "url": "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 47,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "antara",
+   "name": "Antara News Agency",
+   "source_group": "international_wire",
+   "url": "https://www.antaranews.com/rss/dunia.xml",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "app-pakistan-urdu",
+   "name": "Associated Press of Pakistan (Urdu)",
+   "source_group": "international_wire",
+   "url": "https://urdu.app.com.pk/urdu/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "bernama-bm",
+   "name": "Bernama (Bahasa Malaysia)",
+   "source_group": "international_wire",
+   "url": "https://www.bernama.com/bm/rssfeed.php",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "china-news-service",
+   "name": "China News Service",
+   "source_group": "international_wire",
+   "url": "https://www.chinanews.com.cn/rss/world.xml",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "cna-taiwan",
+   "name": "Central News Agency (Taiwan)",
+   "source_group": "international_wire",
+   "url": "https://feeds.feedburner.com/rsscna/intworld",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "newsis",
+   "name": "Newsis",
+   "source_group": "international_wire",
+   "url": "https://www.newsis.com/RSS/international.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "ria-novosti",
+   "name": "RIA Novosti",
+   "source_group": "international_wire",
+   "url": "https://ria.ru/export/rss2/archive/index.xml",
+   "health_status": "healthy",
+   "last_item_count": 96,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "tass",
+   "name": "TASS",
+   "source_group": "international_wire",
+   "url": "https://tass.com/rss/v2.xml",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yonhap",
+   "name": "Yonhap News Agency",
+   "source_group": "international_wire",
+   "url": "https://www.yna.co.kr/rss/international.xml",
+   "health_status": "healthy",
+   "last_item_count": 120,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hispantv",
+   "name": "HispanTV",
+   "source_group": "iran",
+   "url": "https://www.hispantv.com/services/news.asmx/Rss?category=18,26,27,28,29,30,32,34",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "press-tv",
+   "name": "Press TV",
+   "source_group": "iran",
+   "url": "https://www.presstv.co.uk/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 107,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "airwars",
+   "name": "Airwars",
+   "source_group": "think_tank_research",
+   "url": "https://airwars.org/feed/",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "chatham-house",
+   "name": "Chatham House",
+   "source_group": "think_tank_research",
+   "url": "https://www.chathamhouse.org/path/whatsnew.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "crisis-group",
+   "name": "International Crisis Group",
+   "source_group": "think_tank_research",
+   "url": "https://www.crisisgroup.org/rss",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "responsible-statecraft",
+   "name": "Responsible Statecraft",
+   "source_group": "think_tank_research",
+   "url": "https://responsiblestatecraft.org/feed/",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sanaa-center",
+   "name": "Sana'a Center for Strategic Studies",
+   "source_group": "think_tank_research",
+   "url": "https://sanaacenter.org/feed",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/tr/rss/default?cat=dunya",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/en/rss/default?cat=middle-east",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/en/rss/default?cat=world",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "daily-sabah",
+   "name": "Daily Sabah",
+   "source_group": "turkey",
+   "url": "https://www.dailysabah.com/rss/world/mid-east",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hurriyet",
+   "name": "Hürriyet",
+   "source_group": "turkey",
+   "url": "https://www.hurriyet.com.tr/rss/anasayfa",
+   "health_status": "healthy",
+   "last_item_count": 70,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-masirah",
+   "name": "Al-Masirah",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.masirahtv.net/rss.php",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "al-masirah",
+   "name": "Al-Masirah",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://english.masirahtv.net/rss.php",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "almethaq-net",
+   "name": "Al-Methaq Net",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.almethaq.net/news/rsscatfeed.php?category=2",
+   "health_status": "healthy",
+   "last_item_count": 8,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "almotamar-net",
+   "name": "Al-Motamar Net",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.almotamar.net/news/rsscatfeed.php?category=1",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "alsahwa-net",
+   "name": "Al-Sahwa Net",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://alsahwayemen.net/RSS=5",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "alsahwa-net",
+   "name": "Al-Sahwa Net",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://alsahwayemen.net/RSS=1",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "al-wahdawi-net",
+   "name": "Al-Wahdawi Net",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://alwahdawi.net/rss_news/rss_1.xml",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "stc-official",
+   "name": "Southern Transitional Council official site",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.stcaden.com/rss",
+   "health_status": "healthy",
+   "last_item_count": 11,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "aden-al-ghad",
+   "name": "Aden Al-Ghad",
+   "source_group": "yemen_independent",
+   "url": "https://www.adngad.net/feed",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-khabar-al-yemeni",
+   "name": "Al-Khabar Al-Yemeni",
+   "source_group": "yemen_independent",
+   "url": "https://alkhabaralyemeni.net/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "al-tagheer",
+   "name": "Al-Tagheer Net",
+   "source_group": "yemen_independent",
+   "url": "https://www.al-tagheer.com/feed/rss.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "belqees",
+   "name": "Belqees",
+   "source_group": "yemen_independent",
+   "url": "https://rss.belqees.net/feeds",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "hakikah",
+   "name": "Hakikah",
+   "source_group": "yemen_independent",
+   "url": "https://hakikah.net/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "holm-akhdar",
+   "name": "Holm Akhdar",
+   "source_group": "yemen_independent",
+   "url": "https://holmakhdar.org/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "khabar-agency",
+   "name": "Khabar News Agency",
+   "source_group": "yemen_independent",
+   "url": "https://www.khabaragency.net/rss-1.xml",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "nashwan-news",
+   "name": "Nashwan News",
+   "source_group": "yemen_independent",
+   "url": "https://www.nashwannews.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "sidq-yemen",
+   "name": "Sidq",
+   "source_group": "yemen_independent",
+   "url": "https://sidqyem.com/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yemen-future",
+   "name": "Yemen Future",
+   "source_group": "yemen_independent",
+   "url": "https://yemenfuture.net/rss.php",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "source_group": "yemen_independent",
+   "url": "https://www.yemenmonitor.com/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "source_group": "yemen_independent",
+   "url": "https://www.yemenmonitor.com/en/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yemen-press-agency",
+   "name": "Yemen Press Agency (YPA)",
+   "source_group": "yemen_independent",
+   "url": "https://www.ypagency.net/feed",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "yemen-shabab",
+   "name": "Yemen Shabab Net",
+   "source_group": "yemen_independent",
+   "url": "https://www.yemenshabab.net/rss",
+   "health_status": "degraded",
+   "last_item_count": null,
+   "consecutive_failures": 1
+  },
+  {
+   "slug": "aden-time",
+   "name": "Aden Time",
+   "source_group": "yemen_local",
+   "url": "https://www.aden-tm.net/feed",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (IRG Armed Forces)",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.26sepnews.net/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (IRG Armed Forces)",
+   "source_group": "yemen_state_irg",
+   "url": "https://en.26sepnews.net/feed/",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (IRG)",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.sabanew.net/rss.php?lang=ar",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (IRG)",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.sabanew.net/rss.php?lang=en",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0
+  }
+ ],
+ "sample": [
+  {
+   "source": "26 September Net (IRG Armed Forces)",
+   "title": "القوات المسلحة تنفذ 71 عملية استهداف ضد مليشيا الحوثي في عدة مناطق بتعز",
+   "url": "https://www.26sepnews.net/2026/10/03/1-16953/",
+   "language": "ar",
+   "published_at": "2026-10-03 01:33:44+00:00"
+  },
+  {
+   "source": "Aden Al-Ghad",
+   "title": "الجزائر وتونس تتجهان لإنجاز محطة كهرباء بقدرة 1400 ميغاواط",
+   "url": "https://www.adngad.net/news/885578",
+   "language": "ar",
+   "published_at": "2026-10-02 23:40:00+00:00"
+  },
+  {
+   "source": "Aden Time",
+   "title": "اشتعال الجبهات يعيد دق ناقوس الخطر من «شرائح الاتصالات» واستخدامها في الخطوط الأمامية «انتحار محقق»",
+   "url": "https://www.aden-tm.net/news/375453",
+   "language": "ar",
+   "published_at": "2026-10-02 22:42:34+00:00"
+  },
+  {
+   "source": "Al-Araby Al-Jadeed",
+   "title": "خريطة الجبهات المشتعلة في تعز وأهداف الحوثيين",
+   "url": "https://www.alaraby.co.uk/politics/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%AC%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B9%D9%84%D8%A9-%D9%81%D9%8A-%D8%AA%D8%B9%D8%B2-%D9%88%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%8A%D9%86",
+   "language": "ar",
+   "published_at": "2026-10-03 01:00:04+00:00"
+  },
+  {
+   "source": "Alhurra",
+   "title": "نذر تصعيد غير مسبوق في اليمن الجولات المقبلة في حرب اليمن قد تختلف تماما عن المعارك السابقة.",
+   "url": "https://alhurra.com/44134",
+   "language": "ar",
+   "published_at": "2026-10-02 21:25:10+00:00"
+  },
+  {
+   "source": "Al Jazeera Arabic",
+   "title": "اليمن مباشر.. القوات الحكومية تعلن تحييد 1540 حوثيا.. وإصابة شخص بشظايا صاروخ باليستي في عسير",
+   "url": "https://www.aljazeera.net/news/liveblog/2026/10/3/%d8%a7%d9%84%d9%8a%d9%85%d9%86-%d9%85%d8%a8%d8%a7%d8%b4%d8%b1-%d8%a7%d9%84%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d9%83%d9%88%d9%85%d9%8a%d8%a9-%d8%aa%d8%b9%d9%84%d9%86?traffic_source=rss",
+   "language": "ar",
+   "published_at": "2026-10-02 18:01:58+00:00"
+  },
+  {
+   "source": "Al Jazeera English",
+   "title": "Iran war live: Fighting intensifies in Yemen, hundreds killed or injured",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/3/iran-war-live-fighting-intensifies-in-yemen-hundreds-killed-or-injured?traffic_source=rss",
+   "language": "en",
+   "published_at": "2026-10-03 00:00:00+00:00"
+  },
+  {
+   "source": "Al-Khabar Al-Yemeni",
+   "title": "After December 8: How Sana’a Thwarted the Cloning of the Takfiri Experiment in Yemen",
+   "url": "https://alkhabaralyemeni.net/2026/10/03/357360/",
+   "language": "en",
+   "published_at": "2026-10-03 01:09:20+00:00"
+  },
+  {
+   "source": "Al Khaleej",
+   "title": "الدفاع المدني السعودي: سقوط مقذوف حوثي على مدرسة في نجران",
+   "url": "https://www.alkhaleej.ae/2026-10-02/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%B3%D9%82%D9%88%D8%B7-%D9%85%D9%82%D8%B0%D9%88%D9%81-%D8%AD%D9%88%D8%AB%D9%8A-%D8%B9%D9%84%D9%89-%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D9%81%D9%8A-%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+   "language": "ar",
+   "published_at": "2026-10-02 19:21:00+00:00"
+  },
+  {
+   "source": "Al-Masirah",
+   "title": "Iraq Allows 40 Daily Iranian Flights to and from Najaf After Protests Over US Sanctions",
+   "url": "https://english.masirahtv.net/post/58607/",
+   "language": "en",
+   "published_at": "2026-10-02 22:46:51+00:00"
+  },
+  {
+   "source": "Al-Methaq Net",
+   "title": "طيران العدوان السعودي يشن 94 غارة جوية وصاروخًا",
+   "url": "http://www.almethaq.net/news/news-69499.htm",
+   "language": "ar",
+   "published_at": "2026-10-02 23:53:54+00:00"
+  },
+  {
+   "source": "Al-Motamar Net",
+   "title": "طيران العدوان السعودي يشن 94 غارة جوية وصاروخًا",
+   "url": "https://www.almotamar.net/news/187612.htm",
+   "language": "ar",
+   "published_at": "2026-10-02 22:17:36+00:00"
+  },
+  {
+   "source": "Al-Quds Al-Arabi",
+   "title": "الدفاع المدني السعودي: شظايا صاروخ باليستي تم اعتراضه في عسير أصابت شخصا",
+   "url": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%af%d9%81%d8%a7%d8%b9-%d8%a7%d9%84%d9%85%d8%af%d9%86%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a-%d8%b4%d8%b8%d8%a7%d9%8a%d8%a7-%d8%b5%d8%a7%d8%b1%d9%88%d8%ae-%d8%a8%d8%a7%d9%84/",
+   "language": "ar",
+   "published_at": "2026-10-02 22:48:34+00:00"
+  },
+  {
+   "source": "Al-Sahwa Net",
+   "title": "Child Killed, Woman Injured In Houthi Mortar Shelling Of Taiz Homes",
+   "url": "https://alsahwayemen.net/p-96100",
+   "language": "en",
+   "published_at": "2026-09-30 14:59:00+00:00"
+  },
+  {
+   "source": "Al Sharq",
+   "title": "الدفاع المدني السعودي: سقوط مقذوف معادٍ على مدرسة في مدينة نجران نتج عنه أضرار مادية",
+   "url": "https://al-sharq.com/article/02/10/2026/الدفاع-المدني-السعودي-سقوط-مقذوف-معاد-على-مدرسة-في-مدينة-نجران-نتج-عنه-أضرار-مادية",
+   "language": "ar",
+   "published_at": "2026-10-02 19:06:41+00:00"
+  },
+  {
+   "source": "Anadolu Agency",
+   "title": "Houthi projectile hits school in Saudi Arabia's Najran: Civil Defense",
+   "url": "https://www.aa.com.tr/en/middle-east/houthi-projectile-hits-school-in-saudi-arabias-najran-civil-defense/4076564",
+   "language": "en",
+   "published_at": "2026-10-02 19:26:55+00:00"
+  },
+  {
+   "source": "Annahar",
+   "title": "الدفاع المدني السعودي: سقوط شظايا صاروخ باليستي في منطقة عسير... هل من إصابات؟",
+   "url": "https://www.annahar.com/arab-world/arabian-gulf/353654/الدفاع-المدني-السعودي-سقوط-شظايا-صاروخ-باليستي-في-منطقة-عسير-هل-من-إصابات",
+   "language": "ar",
+   "published_at": "2026-10-02 22:30:00+00:00"
+  },
+  {
+   "source": "Arab News",
+   "title": "Shrapnel from intercepted Houthi missile injures resident in Asir",
+   "url": "https://www.arabnews.com/saudi-arabia/shrapnel-from-intercepted-houthi-missile-injures-resident-in-asir-3004351",
+   "language": "en",
+   "published_at": "2026-10-02 23:13:36+00:00"
+  },
+  {
+   "source": "Asharq Al-Awsat",
+   "title": "جبهات القتال في تعزتفتك بحشود الحوثيين",
+   "url": "https://aawsat.com/node/5325337",
+   "language": "ar",
+   "published_at": "2026-10-02 23:47:31+00:00"
+  },
+  {
+   "source": "Belqees",
+   "title": "'الحرة': الحوثيون وسّعوا نشاطهم في العراق بالتنسيق مع فصائل مسلحة موالية لإيران",
+   "url": "https://www.belqees.net/reports/%D8%A7%D9%84%D8%AD%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%88%D8%B3%D8%B9%D9%88%D8%A7-%D9%86%D8%B4%D8%A7%D8%B7%D9%87%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82-%D9%85%D8%B9-%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D9%85%D8%B3%D9%84%D8%AD%D8%A9-%D9%85%D9%88%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D8%A7%D9%8A%D8%B1%D8%A7%D9%86",
+   "language": "ar",
+   "published_at": "2026-10-03 01:39:10.766653+00:00"
+  },
+  {
+   "source": "Chatham House",
+   "title": "Why the Houthis' Red Sea power play makes Iran even stronger",
+   "url": "https://www.chathamhouse.org/2026/10/houthis-red-sea-power-play-makes-iran-stronger-independent-thinking-podcast",
+   "language": "en",
+   "published_at": "2026-10-02 09:58:15+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Arabia Saudí bombardea Yemen en la nueva andada de choques contra los hutíes",
+   "url": "https://www.elmundo.es/internacional/2026/10/02/6abfadf821efa0996a8b45bd.html",
+   "language": "es",
+   "published_at": "2026-10-02 13:26:38+00:00"
+  },
+  {
+   "source": "Euronews",
+   "title": "Les Houthis rejettent les accusations saoudiennes de ciblage des lieux saints de Médine",
+   "url": "https://fr.euronews.com/2026/10/02/les-houthis-rejettent-les-accusations-saoudiennes-de-ciblage-des-lieux-saints-de-medine",
+   "language": "fr",
+   "published_at": "2026-10-02 08:33:36+00:00"
+  },
+  {
+   "source": "Hakikah",
+   "title": "فيديوهات قديمة وليست لتحركات حوثيـ.ـة في تعز والتربة",
+   "url": "https://hakikah.net/old-videos-not-footage-of-houthi-movements-in-taiz-and-al-turbah/",
+   "language": "ar",
+   "published_at": "2026-10-02 23:49:17+00:00"
+  },
+  {
+   "source": "HispanTV",
+   "title": "Yemen desmiente “mentiras” saudíes sobre un ataque a Medina",
+   "url": "https://www.hispantv.com/noticias/yemen/661533/desmiente-mentiras-saudies-ataque-medina",
+   "language": "es",
+   "published_at": "2026-10-02 11:47:58+00:00"
+  },
+  {
+   "source": "Iran International",
+   "title": "بسیج بیش از ۱۰۰ هزار نیروی یمنی؛ گزارش رویترز از تدارک حمله گسترده عربستان به حوثیها",
+   "url": "https://www.iranintl.com/202610028185",
+   "language": "fa",
+   "published_at": "2026-10-02 18:06:00+00:00"
+  },
+  {
+   "source": "Khabar News Agency",
+   "title": "الصحة اليمنية: 80% من المرافق الصحية في 5 مديريات ساحلية بتعز خارج الخدمة",
+   "url": "https://www.khabaragency.net/news253742.html",
+   "language": "ar",
+   "published_at": "2026-10-02 23:16:36+00:00"
+  },
+  {
+   "source": "Middle East Eye",
+   "title": "UK condemns Houthi attacks on Taiz, minister says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-condemns-houthi-attacks-saudi-arabias-taiz-minister-says",
+   "language": "en",
+   "published_at": "2026-10-02 23:22:26+00:00"
+  },
+  {
+   "source": "Nashwan News",
+   "title": "لا تخذلوا تعز بسوء التقدير!",
+   "url": "https://nashwannews.com/270410",
+   "language": "ar",
+   "published_at": "2026-10-02 22:26:00+00:00"
+  },
+  {
+   "source": "Okaz",
+   "title": "القوات اليمنية تعلن تنفيذ 71 عملية استهداف ضد مليشيا الحوثي في تعز",
+   "url": "https://www.okaz.com.sa/politics/na/2269021",
+   "language": "ar",
+   "published_at": "2026-10-03 01:14:30+00:00"
+  },
+  {
+   "source": "Oman Observer",
+   "title": "Saudi plans assault to end Red Sea chokehold",
+   "url": "https://www.omanobserver.om/article/1197144/world/region/saudi-plans-assault-to-end-red-sea-chokehold",
+   "language": "en",
+   "published_at": "2026-10-02 13:49:41+00:00"
+  },
+  {
+   "source": "Press TV",
+   "title": "Yemenis decry Saudi hypocrisy as kingdom welcomes Zionists, strikes Yemen",
+   "url": "https://presstv.co.uk/Detail/2026/10/02/777424/Saudi-Arabia-exposed--Welcoming-Israelis-with-open-arms,-keeping-Yemenis-under-siege",
+   "language": "en",
+   "published_at": "2026-10-03 01:39:10.766653+00:00"
+  },
+  {
+   "source": "Qatar News Agency (QNA)",
+   "title": "Saudi Civil Defense: Hostile Projectile Strikes School in Najran, Causes Material Damage",
+   "url": "https://qna.org.qa/en/News-Area/News/2026-10/2/saudi-civil-defense-hostile-projectile-strikes-school-in-najran-causes-material-damage",
+   "language": "en",
+   "published_at": "2026-10-02 23:40:41+00:00"
+  },
+  {
+   "source": "Roya News",
+   "title": "برنامج الأغذية العالمي يحذر من انهيار الأمن الغذائي في اليمن",
+   "url": "https://royanews.tv/news/396615",
+   "language": "ar",
+   "published_at": "2026-10-02 18:06:44+00:00"
+  },
+  {
+   "source": "RTP Notícias",
+   "title": "Combates no Iémen fazem mais de 80 mortos em 24 horas",
+   "url": "https://www.rtp.pt/noticias/guerra-no-medio-oriente/combates-no-iemen-fazem-mais-de-80-mortos-em-24-horas_n1769268",
+   "language": "es",
+   "published_at": "2026-10-02 22:10:24+00:00"
+  },
+  {
+   "source": "Saba News Agency (IRG)",
+   "title": "السعودية: سقوط مقذوف معادٍ على مدرسة في مدينة نجران نتج عنه أضرار مادية",
+   "url": "http://www.sabanew.net/viewstory/153395",
+   "language": "ar",
+   "published_at": "2026-10-02 21:16:31+00:00"
+  },
+  {
+   "source": "Sana'a Center for Strategic Studies",
+   "title": "The Battle for Taiz and the Struggle for Yemen",
+   "url": "https://sanaacenter.org/publications/perspectives-and-analyses/28435",
+   "language": "en",
+   "published_at": "2026-10-02 10:56:01+00:00"
+  },
+  {
+   "source": "Shafaq News",
+   "title": "Houthis report 94 Saudi strikes, Riyadh intercepts missiles",
+   "url": "https://shafaq.com/en/Middle-East/Houthis-report-94-Saudi-strikes-Riyadh-intercepts-missiles",
+   "language": "en",
+   "published_at": "2026-10-02 19:15:31+00:00"
+  },
+  {
+   "source": "Sidq",
+   "title": "فيديو يُزعم أنّه يوثّق إلقاء القبض على قنّاص حوثي في تعز.. ما حقيقته؟",
+   "url": "https://sidqyem.com/19750/",
+   "language": "ar",
+   "published_at": "2026-10-01 20:53:36+00:00"
+  },
+  {
+   "source": "Sky News Arabia",
+   "title": "السعودية تعلن اعتراض وتدمير 3 صواريخ بالستية حوثية",
+   "url": "https://www.skynewsarabia.com/middle-east/1895948-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%88%D8%AA%D8%AF%D9%85%D9%8A%D8%B1-3-%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A8%D8%A7%D9%84%D8%B3%D8%AA%D9%8A%D8%A9-%D8%AD%D9%88%D8%AB%D9%8A%D8%A9",
+   "language": "ar",
+   "published_at": "2026-10-02 18:42:28+00:00"
+  },
+  {
+   "source": "Sky TG24",
+   "title": "Guerra Iran USA, colpita superpetroliera a Hormuz. Yemen, Houthi: \"Attaccata Sana'a\"",
+   "url": "https://tg24.sky.it/mondo/2026/10/01/guerra-iran-usa-trump-news-diretta",
+   "language": "it",
+   "published_at": "2026-10-03 01:39:10.766653+00:00"
+  },
+  {
+   "source": "Sputnik Arabic",
+   "title": "السعودية تعلن تدمير 3 صواريخ باليستية أطلقتها \"أنصار الله\" نحو خميس مشيط",
+   "url": "https://sarabic.ae/20261002/السعودية-تعلن-تدمير-3-صواريخ-باليستية-أطلقتها-أنصار-الله-نحو-خميس-مشيط-1117494188.html",
+   "language": "ar",
+   "published_at": "2026-10-02 18:52:32+00:00"
+  },
+  {
+   "source": "Southern Transitional Council official site",
+   "title": "الحالمي: ثابتون على العهد ولن نساوم على حقنا في استعادة دولتنا وسيادتنا",
+   "url": "https://stcaden.com/posts/34101",
+   "language": "ar",
+   "published_at": "2026-10-02 13:11:43+00:00"
+  },
+  {
+   "source": "SVT Nyheter",
+   "title": "Sju dödade i skottlossning mot buss i Syrien",
+   "url": "https://www.svt.se/nyheter/utrikes/sju-dodade-i-skottlossning-mot-buss-i-syrien",
+   "language": "de",
+   "published_at": "2026-09-30 20:53:13+00:00"
+  },
+  {
+   "source": "The National",
+   "title": "Italy willing to boost Red Sea naval mission if Europe matches commitment, Defence Minister says",
+   "url": "https://www.thenationalnews.com/news/mena/2026/10/02/italy-willing-to-boost-red-sea-naval-mission-if-europe-matches-commitment-defence-minister-says/",
+   "language": "en",
+   "published_at": "2026-10-02 08:23:18+00:00"
+  },
+  {
+   "source": "The New Arab",
+   "title": "Yemen hunger crisis could become 'absolutely devastating': UN",
+   "url": "https://www.newarab.com/news/yemen-hunger-crisis-could-become-absolutely-devastating-un",
+   "language": "en",
+   "published_at": "2026-10-02 15:03:31+00:00"
+  },
+  {
+   "source": "TVN24",
+   "title": "Chcesz tu zamieszkać, sięgnij głębiej do kieszeni. 20-krotny wzrost opłaty",
+   "url": "https://tvn24.pl/swiat/japonia-20-krotny-wzrost-oplaty-dla-cudzoziemcow-japonia-zmienia-zasady-st9264884?source=rss",
+   "language": "tr",
+   "published_at": "2026-10-02 09:09:19+00:00"
+  },
+  {
+   "source": "Utusan Malaysia",
+   "title": "Ketegangan meningkat selepas dron Houthi serang Madinah",
+   "url": "https://www.utusan.com.my/luar-negara/2026/10/ketegangan-meningkat-selepas-dron-houthi-serang-madinah/?utm_source=rss&utm_medium=rss&utm_campaign=ketegangan-meningkat-selepas-dron-houthi-serang-madinah",
+   "language": "en",
+   "published_at": "2026-10-03 01:30:50+00:00"
+  },
+  {
+   "source": "Yemen Future",
+   "title": "نيويورك: الأمم المتحدة تخصص 18 مليون دولار لتوسيع نطاق المساعدات الإنسانية في اليمن",
+   "url": "https://yemenfuture.net/news/41650",
+   "language": "ar",
+   "published_at": "2026-10-02 19:08:34+00:00"
+  },
+  {
+   "source": "Yemen Monitor",
+   "title": "Military Meeting to Raise Readiness in Aden",
+   "url": "https://www.yemenmonitor.com/en/Details/ArtMID/908/ArticleID/183693?utm_source=rss&utm_medium=rss&utm_campaign=military-meeting-to-raise-readiness-in-aden",
+   "language": "en",
+   "published_at": "2026-10-02 22:09:33+00:00"
+  },
+  {
+   "source": "Yemen Press Agency (YPA)",
+   "title": "عاجل | مصادر طبية في غزة: 3 شهداء جراء قصف طائرات الكيان شقة سكنية غربي مدينة غزة",
+   "url": "https://www.ypagency.net/895218",
+   "language": "ar",
+   "published_at": "2026-10-02 22:55:14+00:00"
+  }
+ ],
+ "errors": [
+  {
+   "stage": "fetch",
+   "type": "robots_disallowed",
+   "n": 14
+  },
+  {
+   "stage": "fetch",
+   "type": "access_restricted",
+   "n": 8
+  },
+  {
+   "stage": "fetch",
+   "type": "http_error",
+   "n": 3
+  },
+  {
+   "stage": "fetch",
+   "type": "rate_limited",
+   "n": 1
+  }
+ ]
+}
