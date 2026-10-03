@@ -698,3 +698,910 @@
   access_policy: metadata_only
   active: true
   notes: ''
+- id: toyo-keizai-online
+  name: Toyo Keizai Online
+  name_native: 東洋経済オンライン
+  url: https://toyokeizai.net/
+  country: JP
+  languages:
+  - ja
+  source_type: magazine
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://toyokeizai.net/list/feed/rss
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Site-wide RSS 2.0 (business/economy heavy, some international); 20 items, newest 2026-10-03 JST.
+  ownership:
+    description: Published by Toyo Keizai Inc., a privately held Japanese business publisher (Weekly Toyo Keizai).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Toyo_Keizai
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: livedoor-news
+  name: Livedoor News
+  name_native: ライブドアニュース
+  url: https://news.livedoor.com/
+  country: JP
+  languages:
+  - ja
+  source_type: aggregator
+  source_group: aggregator
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://news.livedoor.com/topics/rss/int.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: International topics (海外トピックス) RSS 2.0; 12 items, newest 2026-10-02 JST. Aggregates Japanese outlets'
+      wire/agency copy; NHK, Asahi, Mainichi, Sankei, Yomiuri, Kyodo/47news feeds were all blocked or robots-disallowed
+      from the research environment.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: Japanese news portal; items republish content from Japanese publishers, so attribute to original publisher
+    where possible.
+- id: express-urdu
+  name: Daily Express (Express News Urdu)
+  name_native: ایکسپریس اردو
+  url: https://www.express.pk/
+  country: PK
+  languages:
+  - ur
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.express.pk/world/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: International (انٹر نیشنل) section RSS 2.0; 15 items, newest 2026-10-01. Site-wide https://www.express.pk/feed/
+      also parses (10 items, newest 2026-10-02).
+  ownership:
+    description: Lakson Group, which owns Express News TV and the Urdu daily Daily Express.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Express_News_(Pakistan)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: ary-news-urdu
+  name: ARY News Urdu
+  name_native: اے آر وائی نیوز
+  url: https://urdu.arynews.tv/
+  country: PK
+  languages:
+  - ur
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://urdu.arynews.tv/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Site-wide RSS 2.0 (WordPress); 10 items, newest 2026-10-02. Mostly Pakistani domestic news; keyword filter
+      needed.
+  ownership:
+    description: Private Pakistani news channel of the ARY Digital Network; Wikipedia lists Salman Iqbal as owner.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ARY_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: app-pakistan-urdu
+  name: Associated Press of Pakistan (Urdu)
+  name_native: اے پی پی
+  url: https://urdu.app.com.pk/
+  country: PK
+  languages:
+  - ur
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://urdu.app.com.pk/urdu/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Urdu service RSS 2.0; 10 items, newest 2026-10-02.
+  ownership:
+    description: State news agency owned and controlled by the Government of Pakistan under the Ministry of Information
+      & Broadcasting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of Pakistan
+        confidence: 0.85
+    confidence: 0.85
+    evidence: APP is owned and controlled by the Government of Pakistan through the Ministry of Information & Broadcasting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: utusan-malaysia
+  name: Utusan Malaysia
+  url: https://www.utusan.com.my/
+  country: MY
+  languages:
+  - ms
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.utusan.com.my/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Site-wide RSS 2.0; 10 items, newest 2026-10-02. World section feed https://www.utusan.com.my/dunia/feed/
+      also parses but updates slowly (newest 2026-09-26).
+  ownership:
+    description: Owned by Media Mulia since a 2020 takeover after the paper's financial collapse; historically closely
+      tied to UMNO.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Utusan_Malaysia
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: malaysiakini-bm
+  name: Malaysiakini (Bahasa Malaysia)
+  url: https://www.malaysiakini.com/my
+  country: MY
+  languages:
+  - ms
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.malaysiakini.com/rss/my/news.rss
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Malay-language news RSS 2.0; 10 items, newest 2026-10-02.
+  ownership:
+    description: Subscription-funded online news portal; see Wikipedia for shareholding.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Malaysiakini
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: bernama-bm
+  name: Bernama (Bahasa Malaysia)
+  name_native: Pertubuhan Berita Nasional Malaysia
+  url: https://www.bernama.com/bm/
+  country: MY
+  languages:
+  - ms
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.bernama.com/bm/rssfeed.php
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Linked as the RSS feed from the bernama.com/bm footer; returned HTTP 500 on 2026-10-02, not verified.
+  ownership:
+    description: Malaysia's national news agency, a statutory body under the federal government's communications
+      ministry.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Bernama
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of Malaysia
+        confidence: 0.8
+    confidence: 0.8
+    evidence: Bernama is the statutory national news agency of Malaysia established by Act of Parliament and overseen
+      by the federal government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Bernama
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rmf24
+  name: RMF24
+  url: https://www.rmf24.pl/
+  country: PL
+  languages:
+  - pl
+  source_type: news_website
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.rmf24.pl/fakty/swiat/feed
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: World (Świat) section RSS 2.0; 50 items, newest 2026-10-02.
+  ownership:
+    description: News portal of the private radio station RMF FM, owned by the German Bauer Media Group.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RMF_FM
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: polsat-news
+  name: Polsat News
+  url: https://www.polsatnews.pl/
+  country: PL
+  languages:
+  - pl
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.polsatnews.pl/rss/swiat.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: World (Świat) RSS; 50 items, newest 2026-10-02.
+  ownership:
+    description: Private news channel of the Polsat media group (Cyfrowy Polsat).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Polsat_News
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: tvn24
+  name: TVN24
+  url: https://tvn24.pl/
+  country: PL
+  languages:
+  - pl
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://tvn24.pl/swiat.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: TVN24's published world-news RSS URL; returned HTTP 403 to the research fetcher on 2026-10-02, not verified.
+  ownership:
+    description: Private news channel of TVN Group, owned by Warner Bros. Discovery.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TVN24
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rzeczpospolita
+  name: Rzeczpospolita
+  url: https://www.rp.pl/
+  country: PL
+  languages:
+  - pl
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.rp.pl/rss_main
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Responded on 2026-10-02 but the fetcher received undecodable (likely compressed) data, so items could
+      not be checked; re-verify with a real RSS client.
+  ownership:
+    description: Polish national daily published by Gremi Media.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Rzeczpospolita_(newspaper)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rtp-noticias
+  name: RTP Notícias
+  name_native: Rádio e Televisão de Portugal
+  url: https://www.rtp.pt/noticias/
+  country: PT
+  languages:
+  - pt
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.rtp.pt/noticias/rss/mundo
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: World (Mundo) RSS 2.0; 50 items, newest 2026-10-02.
+  ownership:
+    description: Portugal's state-owned public service broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/R%C3%A1dio_e_Televis%C3%A3o_de_Portugal
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: Portuguese public service broadcasting
+        confidence: 0.8
+    confidence: 0.8
+    evidence: RTP is Portugal's public service broadcaster, owned by the Portuguese state.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/R%C3%A1dio_e_Televis%C3%A3o_de_Portugal
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: agencia-brasil
+  name: Agência Brasil
+  url: https://agenciabrasil.ebc.com.br/
+  country: BR
+  languages:
+  - pt
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: International (Internacional) RSS 2.0; 10 items, newest 2026-10-01.
+  ownership:
+    description: Public news agency run by Empresa Brasil de Comunicação (EBC), a federal state-owned company.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Ag%C3%AAncia_Brasil
+    - https://en.wikipedia.org/wiki/Empresa_Brasil_de_Comunica%C3%A7%C3%A3o
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Federal Government of Brazil (EBC)
+        confidence: 0.75
+    confidence: 0.75
+    evidence: Agência Brasil is operated by EBC, a company owned by the Brazilian federal government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Empresa_Brasil_de_Comunica%C3%A7%C3%A3o
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: publico-pt
+  name: Público
+  url: https://www.publico.pt/mundo
+  country: PT
+  languages:
+  - pt
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.feedburner.com/PublicoMundo
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: PÚBLICO - Mundo RSS 2.0 via FeedBurner; 10 items, newest 2026-10-02.
+  ownership:
+    description: Portuguese daily owned by the Sonae group.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/P%C3%BAblico_(Portugal)
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: observador-pt
+  name: Observador
+  url: https://observador.pt/
+  country: PT
+  languages:
+  - pt
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://observador.pt/seccao/mundo/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Parses (50 items, newest 2026-10-03) but the channel title is 'Observador - Últimas', so it appears to
+      return the all-news stream rather than only the Mundo section.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: folha-de-s-paulo
+  name: Folha de S.Paulo
+  url: https://www1.folha.uol.com.br/mundo/
+  country: BR
+  languages:
+  - pt
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://feeds.folha.uol.com.br/mundo/rss091.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Folha's long-standing Mundo RSS URL; feeds.folha.uol.com.br was blocked from the research environment
+      on 2026-10-02, not verified.
+  ownership:
+    description: Brazilian daily owned by Grupo Folha.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Folha_de_S.Paulo
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: agenzia-nova
+  name: Agenzia Nova
+  url: https://www.agenzianova.com/
+  country: IT
+  languages:
+  - it
+  source_type: news_agency
+  source_group: international_wire
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://www.agenzianova.com/news/feed/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Site-wide RSS 2.0 advertised via rel=alternate; 10 items, newest 2026-10-02. Italian agency with dense
+      Middle East / Gulf / Africa desks.
+  ownership:
+    description: ''
+    evidence_urls: []
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: tgcom24
+  name: TGCom24
+  url: https://www.tgcom24.mediaset.it/
+  country: IT
+  languages:
+  - it
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.tgcom24.mediaset.it/rss/mondo.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: World (Mondo) RSS 2.0; 40 items, newest 2026-10-02.
+  ownership:
+    description: All-news channel and portal of Mediaset (MFE-MediaForEurope).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/TGcom24
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: sky-tg24
+  name: Sky TG24
+  url: https://tg24.sky.it/
+  country: IT
+  languages:
+  - it
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://tg24.sky.it/rss/tg24_mondo.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Parses (100 items, newest 2026-10-03) but the channel title is generic 'Sky Tg24', so may not be restricted
+      to the Mondo section.
+  ownership:
+    description: All-news channel of Sky Italia (Comcast's Sky Group).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_TG24
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rainews
+  name: RaiNews
+  url: https://www.rainews.it/
+  country: IT
+  languages:
+  - it
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.rainews.it/rss/esteri
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: RaiNews foreign-news (Esteri) RSS path; rainews.it was blocked from the research environment on 2026-10-02,
+      not verified.
+  ownership:
+    description: News service of RAI, Italy's state-owned public broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Rai_News_24
+  orientation:
+    simplified: public_service
+    dimensions:
+      institutional_alignment:
+        value: RAI (Italian public broadcasting)
+        confidence: 0.75
+    confidence: 0.75
+    evidence: RaiNews is the news channel/portal of RAI, Italy's state-owned public service broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Rai_News_24
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: eldiario-es
+  name: elDiario.es
+  url: https://www.eldiario.es/internacional/
+  country: ES
+  languages:
+  - es
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.eldiario.es/rss/internacional/
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Internacional RSS 2.0; only 4 items at fetch time, newest 2026-10-02 (short window; poll often).
+  ownership:
+    description: Spanish digital daily largely owned by its journalists/founders and funded by member subscriptions.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ElDiario.es
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: la-jornada
+  name: La Jornada
+  url: https://www.jornada.com.mx/
+  country: MX
+  languages:
+  - es
+  source_type: newspaper
+  source_group: international_newspaper
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: low
+  feeds:
+  - url: https://www.jornada.com.mx/rss/mundo.xml
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: Mundo RSS 2.0; 15 items, newest 2026-09-29 (edition-based, updates less often).
+  ownership:
+    description: Mexico City daily published by Desarrollo de Medios S.A. de C.V.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/La_Jornada
+  orientation:
+    simplified: unknown
+    confidence: 0.0
+    evidence: ''
+    evidence_urls: []
+    method: unknown
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: rt-espanol
+  name: RT en Español
+  url: https://actualidad.rt.com/
+  country: RU
+  languages:
+  - es
+  source_type: tv
+  source_group: international_broadcaster
+  geographic_focus:
+  - global
+  operating_base: outside_yemen
+  yemen_coverage: medium
+  feeds:
+  - url: https://actualidad-rt.com/feeds/all.rss
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: actualidad.rt.com/feeds/all.rss 302-redirects to the mirror domain actualidad-rt.com; RSS 2.0, 10 items,
+      newest 2026-10-02. Mirror domain may change.
+  ownership:
+    description: Spanish-language service of RT, run by TV-Novosti, an autonomous non-profit organisation funded
+      by the Russian state.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_en_Espa%C3%B1ol
+    - https://en.wikipedia.org/wiki/RT_(TV_network)
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of the Russian Federation
+        confidence: 0.9
+    confidence: 0.9
+    evidence: RT is funded by the Russian federal budget through TV-Novosti and is widely documented as Russian
+      state media.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_(TV_network)
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''
+- id: hispantv
+  name: HispanTV
+  url: https://www.hispantv.com/
+  country: IR
+  languages:
+  - es
+  source_type: tv
+  source_group: iran
+  geographic_focus:
+  - global
+  - regional_mena
+  operating_base: outside_yemen
+  yemen_coverage: high
+  feeds:
+  - url: https://www.hispantv.com/services/news.asmx/Rss?category=18,26,27,28,29,30,32,34
+    type: rss
+    verified: true
+    verified_at: '2026-10-02'
+    yemen_filter: true
+    notes: '''Asia Occidental'' (Middle East) feed listed on hispantv.com/rss; 100 items, newest 2026-10-02, includes
+      Yemen items. Latest-news feed: https://www.hispantv.com/services/news.asmx/Rss?category=-1 (not fetched).'
+  ownership:
+    description: Spanish-language channel of Islamic Republic of Iran Broadcasting (IRIB).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/HispanTV
+  orientation:
+    simplified: state_media
+    dimensions:
+      institutional_alignment:
+        value: Government of Iran (IRIB)
+        confidence: 0.9
+    confidence: 0.9
+    evidence: HispanTV is owned and operated by IRIB, Iran's state broadcaster.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/HispanTV
+    method: ownership_analysis
+    last_reviewed: '2026-10-02'
+    review_status: draft
+  access_policy: metadata_only
+  active: true
+  notes: ''

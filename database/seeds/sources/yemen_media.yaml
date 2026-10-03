@@ -403,7 +403,9 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: ''
+  notes: 'Newsroom: not documented (unknown). Unresolved. The English homepage (fetched 2026-10-02) shows no about
+    page, address, publisher or editor, only social links. The guessed Arabic about URL returned 404. English and
+    Arabic searches found no third-party profile (CPJ, RSF, Wikipedia) that gives a location. Sources: https://www.yemenmonitor.com/en/'
 - id: al-masdar-online
   name: Al-Masdar Online
   name_native: المصدر أونلاين
@@ -444,8 +446,14 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: The site blocks the research fetcher (403). The domain almasdaronline.info is now an unrelated gambling
-    site; do not use it.
+  notes: 'The site blocks the research fetcher (403). The domain almasdaronline.info is now an unrelated gambling
+    site; do not use it. Newsroom: not documented (unknown). Partly resolved: the newsroom is not in Sanaa-controlled
+    territory, but the city is not documented. Wikipedia says the Houthis ransacked its Sanaa offices on 2015-03-26
+    and that it "resumed operations in a digital-only format based outside of Houthi-controlled Yemen where it is
+    banned". That wording does not say whether it is in government-held Yemen or abroad. The site returns 403 to
+    the fetcher, so its own about/contact page could not be checked. A search for a named city found nothing. Publisher:
+    Al-Masdar Media Foundation (Wikipedia). Orientation left as is (the existing unknown with dimension reflects
+    mixed evidence). Sources: https://en.wikipedia.org/wiki/Al-Masdar_Online'
 - id: mareb-press
   name: Mareb Press
   name_native: مأرب برس
@@ -458,7 +466,7 @@
   geographic_focus:
   - national
   - marib
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://marebpress.net/rss.php
@@ -489,7 +497,16 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Homepage active. rss.php may serve XML to a normal client; retest from the ingest host.
+  notes: 'Homepage active. rss.php may serve XML to a normal client; retest from the ingest host. Newsroom: Marib
+    (government_controlled). GCHR''s defender profile names Mohammed Al-Salihi as editor-in-chief of Marib Press
+    and places him and the outlet in Marib (an arrest warrant was issued against him in Marib on 2023-06-07 over
+    reports on judicial corruption there). Wikipedia says it was founded in Marib in 2006 and moved its HQ to Sanaa
+    in 2012. It still says the HQ is in Sanaa, but it also says Houthi-run YemenNet has blocked the site since March
+    2015, so the Sanaa claim looks out of date. The homepage (fetched 2026-10-02) gives no address, and the about
+    page is blocked by robots.txt. CAVEAT: CPJ (Sept 2025, https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/)
+    names Mohamed al-Salhi as editor-in-chief of a different outlet, Barran Press, also based in Marib. GCHR may
+    have mixed up the outlet names, or al-Salhi may edit both. Searches did not settle this. Confidence about 0.5.
+    Sources: https://www.gc4hr.org/defenders/mohammed-al-salihi/, https://en.wikipedia.org/wiki/Mareb_Press, https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/'
 - id: barran-press
   name: Barran Press
   name_native: بران برس
@@ -649,7 +666,12 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: 'Orientation not assessed: no third-party source found in this pass.'
+  notes: 'Orientation not assessed: no third-party source found in this pass. Newsroom: not documented (unknown).
+    Unresolved. The about page (fetched 2026-10-02) says only "the first independent private news agency in Yemen",
+    with no address, founding date, owner or editor. The contact page lists email addresses and a WhatsApp number
+    but no city. (The fetcher rendered the number with a +976 prefix, probably garbled, so it is not used as evidence.)
+    Arabic and English searches (CPJ, RSF, news) gave no third-party location. Sources: https://www.khabaragency.net/aboutUs.html,
+    https://www.khabaragency.net/contactUs.html'
 - id: yemen-press-agency
   name: Yemen Press Agency (YPA)
   name_native: وكالة الصحافة اليمنية
@@ -662,7 +684,7 @@
   source_group: yemen_independent
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: sanaa_controlled
   yemen_coverage: primary
   feeds:
   - url: https://www.ypagency.net/feed
@@ -684,9 +706,14 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: English edition at https://en.ypagency.net (its feed timed out). Item wording ('occupied governorates')
+  notes: 'English edition at https://en.ypagency.net (its feed timed out). Item wording (''occupied governorates'')
     suggests a Sanaa-side editorial line, but no documented evidence was found, so orientation is left unknown.
-    Source group is provisional.
+    Source group is provisional. Newsroom: Sanaa (sanaa_controlled). Self-description on the English About page
+    (fetched 2026-10-02): "headquartered in Sanaa, the capital of Yemen", founded January 2018, and calls itself
+    an "independent news and media corporation". It gives an email but no street address or editor. The Arabic homepage
+    shows no about/contact details. This rests only on the outlet''s own word. No third-party profile was found.
+    Orientation is left unknown: self-described independence is not affiliation evidence, and the existing note
+    on ''occupied governorates'' wording is tone, not documentation. Confidence about 0.7. Sources: https://en.ypagency.net/about-us/'
 - id: nashwan-news
   name: Nashwan News
   name_native: نشوان نيوز
@@ -708,9 +735,10 @@
     yemen_filter: false
     notes: RSS 2.0, 20 items, newest 2026-10-02.
   ownership:
-    description: Self-described independent electronic newspaper founded in 2008.
+    description: Published by the Nashwan al-Himyari Center for Studies and Media (مركز نشوان الحميري للدراسات والإعلام);
+      founded 2008-08-25 (self-description).
     evidence_urls:
-    - https://www.nashwannews.com/
+    - https://nashwannews.com/about
   orientation:
     simplified: unknown
     confidence: 0.0
@@ -721,7 +749,10 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: ''
+  notes: 'Newsroom: not documented (unknown). Unresolved. The about page (fetched 2026-10-02) calls it an independent
+    e-newspaper launched 2008-08-25 by the Nashwan al-Himyari Center for Studies and Media, and lists editorial
+    staff, but gives no city or address. The contact information is email only. An Arabic search for a third-party
+    profile found nothing. Sources: https://nashwannews.com/about'
 - id: yemen-future
   name: Yemen Future
   name_native: يمن فيوتشر
@@ -743,9 +774,10 @@
     yemen_filter: false
     notes: RSS 2.0, 30 items, newest 2026-10-02.
   ownership:
-    description: Self-described independent Yemeni electronic news platform.
+    description: Headed by journalist Thuraya Dammaj (ثريا دماج); launched 2020-04-02, Arabic website from 2020-06-14
+      (self-description).
     evidence_urls:
-    - https://yemenfuture.net/
+    - https://yemenfuture.net/about/1
   orientation:
     simplified: unknown
     confidence: 0.0
@@ -756,7 +788,11 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: ''
+  notes: 'Newsroom: not documented (unknown). Unresolved. The about page (fetched 2026-10-02) says it launched on
+    2020-04-02, timed to coincide with the first suspected COVID-19 case "in the Yemeni capital Sanaa". That sentence
+    dates the launch and does not say where the newsroom is, so it is not used as a location claim. The page says
+    the outlet is headed by journalist Thuraya Dammaj and calls itself a non-governmental Yemeni news site. The
+    contact page is a form only, with no address. Sources: https://yemenfuture.net/about/1, https://yemenfuture.net/contact'
 - id: al-tagheer
   name: Al-Tagheer Net
   name_native: التغيير نت
@@ -779,9 +815,11 @@
     notes: 'RSS 2.0, 50 items. Newest 2026-10-02 but the next is 2026-08-18: publishing is irregular and includes
       non-Yemen filler.'
   ownership:
-    description: Self-described as Yemen's first independent news website.
+    description: Founded 2003-01-13 by journalist Arafat Madabesh (deceased); now run by an independent editorial
+      board, editor-in-chief Wail Abdulsalam (self-description).
     evidence_urls:
-    - https://www.al-tagheer.com/
+    - https://www.al-tagheer.com/content.php?id=1
+    - https://www.al-tagheer.com/content.php?id=6
   orientation:
     simplified: unknown
     confidence: 0.0
@@ -792,7 +830,11 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Category feeds are listed at https://www.al-tagheer.com/feeds.
+  notes: 'Category feeds are listed at https://www.al-tagheer.com/feeds. Newsroom: not documented (unknown). Unresolved.
+    The about page (fetched 2026-10-02) says it was founded on 2003-01-13 by the late journalist Arafat Madabesh
+    and is now run by an independent editorial board. The team page names Wail Abdulsalam as editor-in-chief. Neither
+    page gives a city or address. The contact information is email only. Sources: https://www.al-tagheer.com/content.php?id=1,
+    https://www.al-tagheer.com/content.php?id=6'
 - id: khuyut
   name: Khuyut
   name_native: خيوط
@@ -825,8 +867,14 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: Khuyut is tagged on CPJ but the homepage and /ar returned 404 to WebFetch on 2026-10-02. Domain not confirmed
-    working; verify before use.
+  notes: 'Khuyut is tagged on CPJ but the homepage and /ar returned 404 to WebFetch on 2026-10-02. Domain not confirmed
+    working; verify before use. Newsroom: not documented (unknown). Unresolved. https://khuyut.com/en loaded on
+    2026-10-02 (the domain is live, which answers the seed note''s doubt). It links About/Editorial Board/Contact
+    pages, but /en/about-us returned 403 to the fetcher. An IMS interview names co-founders Ryan Al-Shibany and
+    Ahmed Al-Wali and former editor-in-chief Lutf Al-Sarari, with no location. CPJ (March 2025) calls it a "local
+    news site" a missing journalist contributed to, also with no location. Arabic and English searches gave no city.
+    Sources: https://khuyut.com/en, https://mediasupport.org/the-yemeni-story-in-english-is-usually-quoted-by-experts-travellers-or-visiting-journalists,
+    https://cpj.org/2025/03/yemeni-journalist-disappears-after-threats-from-houthi-group/'
 - id: holm-akhdar
   name: Holm Akhdar
   name_native: حلم أخضر
@@ -839,7 +887,7 @@
   source_group: yemen_independent
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: government_controlled
   yemen_coverage: primary
   feeds:
   - url: https://holmakhdar.org/feed/
@@ -849,8 +897,10 @@
     yemen_filter: false
     notes: WordPress RSS, only 3 items; newest 2026-04-05. Low-frequency environmental journalism.
   ownership:
-    description: ''
-    evidence_urls: []
+    description: Holm Akhdar Foundation (مؤسسة حلم أخضر), founded 2012 as an environmental reporting platform; HQ
+      in Aden with a Sanaa office (self-description).
+    evidence_urls:
+    - https://holmakhdar.org/contnt/
   orientation:
     simplified: unknown
     confidence: 0.0
@@ -861,7 +911,13 @@
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Environmental and climate journalism platform. Feed is valid but infrequent.
+  notes: 'Environmental and climate journalism platform. Feed is valid but infrequent. Newsroom: Aden (HQ, Al-Buraiqeh);
+    second office in Sanaa (government_controlled). Contact page (fetched 2026-10-02) gives the headquarters as
+    "Emma St., Al Buraiqeh District. Interim Capital, Aden, Yemen" and a "Sana''a Office" on the first floor of
+    Al Mutahar Towers, Haddah St. Phone +967 738 163 163. The site calls itself the Holm Akhdar Foundation, founded
+    2012. So it is split across both territories, with the HQ in Aden. The territory label reflects 2026 (Aden was
+    STC-controlled before January 2026). Confidence about 0.7. Sources: https://holmakhdar.org/contnt/, https://holmakhdar.org/,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
 - id: debriefer
   name: Debriefer
   name_native: ديبريفر
@@ -874,7 +930,7 @@
   source_group: yemen_independent
   geographic_focus:
   - national
-  operating_base: unknown
+  operating_base: outside_yemen
   yemen_coverage: primary
   feeds:
   - url: https://debriefer.net/feed
@@ -896,7 +952,12 @@
   access_policy: metadata_only
   active: false
   notes: 'Self-described news agency covering Yemen. Newest homepage items on 2026-10-02 dated 2023-09-02: appears
-    dormant.'
+    dormant. Newsroom: Chatou, France (stated regional office) (outside_yemen). The about page (fetched 2026-10-02)
+    says it is a news agency founded in early 2018 "by a group of independent journalists from ... the United States,
+    Canada, and Yemen". The only address it gives is a "regional office" at 14 Avenue Guy de Maupassant, 78400 Chatou,
+    France, and it mentions correspondents in conflict zones. Where the editors actually sit is not stated, so outside_yemen
+    rests only on the one address the outlet publishes. The contact page returned a 453 error. The seed notes the
+    site looks dormant (newest items 2023). Confidence about 0.5. Sources: https://debriefer.net/page.php?id=2'
 - id: al-mawqea-post
   name: Al-Mawqea Post
   name_native: الموقع بوست
@@ -929,8 +990,13 @@
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: The feed announces that the outlet suspended operations on 2026-06-01; archive remains online. Keep for
-    historical coverage only.
+  notes: 'The feed announces that the outlet suspended operations on 2026-06-01; archive remains online. Keep for
+    historical coverage only. Newsroom: not documented (unknown). Unresolved. The about page (fetched 2026-10-02)
+    describes an independent news site with an advisory board and "a network of correspondents inside Yemen and
+    abroad", but gives no city, owner or address. Copyright runs 2015-2026. A notice dated 2026-06-01 says publication
+    has stopped and the archive stays online. The homepage footer links two sister sites (alminasapress.com, alkhabarnow.com),
+    but no ownership statement was found. An Arabic search found no third-party profile. Sources: https://almawqeapost.net/about/1,
+    https://almawqeapost.net/'
 - id: akhbar-alyom
   name: Akhbar Al-Youm
   name_native: صحيفة أخبار اليوم
@@ -955,16 +1021,28 @@
     evidence_urls: []
   orientation:
     simplified: unknown
+    dimensions:
+      conflict_alignment:
+        value: editorially aligned with the internationally recognised government (per CPJ)
+        confidence: 0.6
     confidence: 0.0
-    evidence: ''
-    evidence_urls: []
-    method: unknown
+    evidence: CPJ (Aug 2019) calls Akhbar al-Youm an "independent daily" that is "editorially aligned with the internationally
+      recognized Yemeni government based in Aden". This is a watchdog characterisation of editorial line, not institutional
+      ownership, so simplified stays unknown, the same treatment as mareb-press. A reviewer could raise it to state_aligned.
+    evidence_urls:
+    - https://cpj.org/2019/08/in-yemen-gunmen-abduct-former-journalist-abdel-haf/
+    method: media_watchdog
     last_reviewed: 2026-10-02
     review_status: draft
   access_policy: metadata_only
   active: false
-  notes: akhbaralyom-ye.net 302-redirects here. Homepage active (2026-10-02). No feed found. Ownership and affiliation
-    not documented in this pass.
+  notes: 'akhbaralyom-ye.net 302-redirects here. Homepage active (2026-10-02). No feed found. Ownership and affiliation
+    not documented in this pass. Newsroom: not documented (unknown). Unresolved. The homepage footer (fetched 2026-10-02)
+    gives phone +967 6300864 and info@akhbaralyom.net, with no city. Yemen''s 06 area code covers several governorates
+    (Marib, Dhamar, al-Bayda, al-Jawf), so it cannot place the newsroom. CPJ (2019) describes it but gives no base.
+    GCHR (2023) records threats in Sanaa against Saif al-Hadari, director of the Al-Shumou'' Media Foundation (the
+    publisher, per general knowledge; not documented here). That shows he was present in Sanaa, not where the newsroom
+    is. An Arabic search found nothing further. Sources: https://akhbaralyom.net/, https://cpj.org/2019/08/in-yemen-gunmen-abduct-former-journalist-abdel-haf/'
 - id: sidq-yemen
   name: Sidq
   name_native: صدق
@@ -986,21 +1064,34 @@
     yemen_filter: false
     notes: WordPress RSS, 5 items, newest 2026-10-01.
   ownership:
-    description: Fact-checking platform founded 2019 (IJNet).
+    description: 'Individual for-profit establishment ''Sidq Al-Yemeniyah for Media'' (commercial reg. 15561/4,
+      Ministry of Industry and Commerce). Named grant funders: IN2 (2020, 2026), Meta (2024-2025), QAF Lab (2025),
+      ARIJ (2024), DT Global (2021-2023), JOSA (2023), Arabic Fact-Checking Hub (self-published funding policy).'
     evidence_urls:
-    - https://ijnet.org/en/story/yemeni-fact-checkers-dispel-false-information-surrounding-red-sea-crisis
+    - https://sidqyem.com/funding/
+    - https://sidqyem.com/about/
   orientation:
-    simplified: unknown
-    confidence: 0.0
-    evidence: ''
-    evidence_urls: []
-    method: unknown
+    simplified: independent
+    confidence: 0.5
+    evidence: A self-described independent fact-checking and investigative platform that publishes a funding policy.
+      That policy lists only media-development and platform funders (IN2, Meta, ARIJ, DT Global, JOSA, AFH) and
+      rules out political or propaganda work. Qantara calls it "an independent online platform". No party, government
+      or movement ownership was found. The evidence is mostly self-reported, so confidence is moderate.
+    evidence_urls:
+    - https://sidqyem.com/funding/
+    - https://sidqyem.com/about/
+    - https://qantara.de/en/node/11193
+    method: ownership_analysis
     last_reviewed: 2026-10-02
     review_status: draft
   access_policy: metadata_only
   active: true
-  notes: Qantara calls it 'an independent online platform' (https://qantara.de/en/node/11193). Not a watchdog source,
-    so orientation left unknown.
+  notes: 'Qantara calls it ''an independent online platform'' (https://qantara.de/en/node/11193). Not a watchdog
+    source, so orientation left unknown. Newsroom: not documented (unknown). Unresolved. The about page (fetched
+    2026-10-02) describes a team spread across several Yemeni governorates, with some members outside Yemen, and
+    no HQ city or address. It is registered with "the Ministry of Industry and Commerce" (commercial registration
+    15561/4) as Sidq Al-Yemeniyah for Media, but the page does not say whether that is the Sanaa or the Aden ministry.
+    Founded August 2019. Sources: https://sidqyem.com/about/, https://sidqyem.com/funding/'
 - id: hakikah
   name: Hakikah
   name_native: حقيقة
