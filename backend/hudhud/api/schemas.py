@@ -34,6 +34,12 @@ class SourceRef(BaseModel):
     operating_base: str
     country: str | None = None
     is_demo: bool = False
+    category: str = "MEDIA"
+    tier: str | None = None
+    region: str | None = None
+    # journalism | official_statement | institutional_publication | political_statement |
+    # social_post | analysis: official text is labelled, never presented as reporting.
+    content_type: str = "journalism"
 
 
 class ArticleSummary(BaseModel):

@@ -175,13 +175,13 @@
   },
   "sources": {
     "title": "Sources",
-    "intro": "Every outlet the platform monitors, where its newsroom operates, and the evidence behind any orientation label.",
+    "intro": "A small, curated set of top sources about Yemen: high-impact media and public figures (tier A, chosen for audience and influence) and official, diplomatic and international institutions (tier B, chosen for institutional importance). Each source shows why it was selected and the evidence behind any classification. Official sources are analysed as statements of what an institution says, not as independent reporting.",
     "orientationNote": "Orientation describes ownership, funding and stated editorial alignment, documented with evidence. It is not a measure of accuracy or reliability.",
     "history": "Orientation history",
     "feeds": "Feeds",
     "ownership": "Ownership",
-    "compare": "Compare outlets",
-    "compareHint": "Pick two to six outlets.",
+    "compare": "Compare sources",
+    "compareHint": "Pick two to six sources.",
     "verified": "Verified",
     "inactive": "Inactive",
     "storiesShared": "Stories covered by all selected outlets"

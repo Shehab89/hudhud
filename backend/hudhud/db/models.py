@@ -107,6 +107,42 @@ class Source(TimestampMixin, SoftDeleteMixin, Base):
     # Synthetic sources created by `hudhud demo-data`; everything they own is DEMO DATA.
     is_demo: Mapped[bool] = mapped_column(Boolean, default=False, server_default="false", index=True)
 
+    # Curated registry (v2, database/seeds/sources/SCHEMA.md). Influence and institutional
+    # importance are separate attributes; reliability is NULL (not assessed) and is never
+    # derived from category or official status.
+    category: Mapped[str] = mapped_column(String(40), default="MEDIA", server_default="MEDIA", index=True)
+    tier: Mapped[str | None] = mapped_column(String(1), index=True)
+    region: Mapped[str | None] = mapped_column(String(30), index=True)
+    platform: Mapped[str | None] = mapped_column(String(20))
+    # journalism | official_statement | institutional_publication | political_statement |
+    # social_post | analysis. Shown on every item so official text is never read as reporting.
+    content_type: Mapped[str] = mapped_column(
+        String(30), default="journalism", server_default="journalism", index=True
+    )
+    wikidata: Mapped[str | None] = mapped_column(String(20))
+    yemen_political_alignment: Mapped[str] = mapped_column(
+        String(40), default="unknown", server_default="unknown", index=True
+    )
+    sub_alignment: Mapped[str | None] = mapped_column(Text)
+    regional_alignment: Mapped[str] = mapped_column(
+        String(40), default="unknown", server_default="unknown", index=True
+    )
+    domestic_political_orientation: Mapped[str | None] = mapped_column(String(40))
+    institutional_importance: Mapped[str | None] = mapped_column(String(10), index=True)
+    influence_score: Mapped[float | None] = mapped_column(Float)
+    reliability_score: Mapped[float | None] = mapped_column(Float)
+    classification_confidence: Mapped[float | None] = mapped_column(Float)
+    assessment_date: Mapped[dt.date | None] = mapped_column(Date)
+    # Selection record: reason, audience/influence evidence, Yemen coverage, institutional
+    # importance note, and the influence score components.
+    selection: Mapped[dict[str, Any]] = mapped_column(JSONB, default=dict, server_default="{}")
+    accounts: Mapped[list[Any]] = mapped_column(JSONB, default=list, server_default="[]")
+    holder: Mapped[dict[str, Any] | None] = mapped_column(JSONB)
+    # curated (in the current registry) | archived (from an earlier registry, not collected)
+    registry_status: Mapped[str] = mapped_column(
+        String(20), default="curated", server_default="curated", index=True
+    )
+
     languages: Mapped[list[SourceLanguage]] = relationship(cascade="all, delete-orphan")
     feeds: Mapped[list[SourceFeed]] = relationship(back_populates="source", cascade="all, delete-orphan")
     orientations: Mapped[list[SourceOrientation]] = relationship(

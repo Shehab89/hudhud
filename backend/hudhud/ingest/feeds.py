@@ -1,7 +1,11 @@
 """Parsers that turn feed payloads into RawItems.
 
-Supported: RSS/Atom (feedparser), Google News RSS search feeds, and the GDELT DOC 2.0
-article-list API. Malformed feeds raise FeedParseError rather than crashing a run.
+Supported: RSS/Atom (feedparser), YouTube channel feeds (Atom), the public web preview of
+public Telegram channels (t.me/s/<channel>), Google News RSS search feeds, and the GDELT
+DOC 2.0 article-list API. Malformed feeds raise FeedParseError rather than crashing a run.
+
+X (Twitter) is not collected: its API is paid and scraping it is not permitted
+(REQUIRES CONFIGURATION).
 """
 
 from __future__ import annotations
@@ -167,6 +171,69 @@ def parse_gdelt(content: bytes) -> list[RawItem]:
     return items
 
 
+TELEGRAM_TITLE_MAX = 140
+
+
+def _first_line(text: str, limit: int = TELEGRAM_TITLE_MAX) -> str:
+    line = next((ln.strip() for ln in text.splitlines() if ln.strip()), "")
+    if len(line) <= limit:
+        return line
+    cut = line[:limit]
+    return (cut[: cut.rfind(" ")] if " " in cut else cut) + " …"
+
+
+def parse_telegram_preview(content: bytes) -> list[RawItem]:
+    """Posts from the public web preview of a public Telegram channel (t.me/s/<channel>).
+
+    Only what the public page shows: post link, date and the start of the text (the same
+    excerpt limit as feeds). Posts without text (photos, videos) are skipped.
+    """
+    from lxml import etree
+    from lxml import html as lxml_html
+
+    try:
+        # t.me serves UTF-8; decode first so lxml does not guess a legacy charset.
+        doc = lxml_html.fromstring(content.decode("utf-8", errors="replace"))
+    except (ValueError, etree.ParserError) as exc:
+        raise FeedParseError(f"unreadable Telegram preview: {exc}") from exc
+    posts = doc.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " tgme_widget_message ")]')
+    if not posts and not doc.xpath('//*[contains(@class, "tgme_channel_info")]'):
+        raise FeedParseError("not a Telegram channel preview page")
+    items = []
+    for post in posts:
+        ref = post.get("data-post")
+        if not ref:
+            continue
+        text_nodes = post.xpath(
+            './/div[contains(@class, "tgme_widget_message_text")'
+            ' and not(ancestor::*[contains(@class, "tgme_widget_message_reply")])]'
+        )
+        if not text_nodes:
+            continue
+        for br in text_nodes[0].xpath(".//br"):
+            br.tail = "\n" + (br.tail or "")
+        text = text_nodes[0].text_content().strip()
+        if not text:
+            continue
+        published = None
+        times = post.xpath('.//a[contains(@class, "tgme_widget_message_date")]//time/@datetime')
+        if times:
+            try:
+                published = dt.datetime.fromisoformat(times[0]).astimezone(dt.UTC)
+            except ValueError:
+                published = None
+        items.append(
+            RawItem(
+                url=f"https://t.me/{ref}",
+                title=_first_line(text),
+                published_at=published,
+                summary=_excerpt(text),
+                extra={"platform": "telegram", "post": ref},
+            )
+        )
+    return items
+
+
 def parse_http_date(value: str | None) -> dt.datetime | None:
     if not value:
         return None
@@ -179,6 +246,8 @@ def parse_http_date(value: str | None) -> dt.datetime | None:
 PARSERS = {
     "rss": parse_rss,
     "atom": parse_rss,
+    "youtube": parse_rss,
+    "telegram_public": parse_telegram_preview,
     "google_news_query": parse_google_news,
     "gdelt_query": parse_gdelt,
 }

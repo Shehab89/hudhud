@@ -136,6 +136,12 @@ def get_article(db: DB, article_id: int) -> dict:
             "source_group": src.source_group,
             "operating_base": src.operating_base,
             "is_demo": src.is_demo,
+            "category": src.category,
+            "tier": src.tier,
+            # official_statement / institutional_publication / ... : what kind of text this is.
+            "content_type": src.content_type,
+            "yemen_political_alignment": src.yemen_political_alignment,
+            "regional_alignment": src.regional_alignment,
             "orientation": {
                 "simplified": orientation.simplified,
                 "confidence": orientation.confidence,

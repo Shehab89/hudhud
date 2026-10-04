@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import DemoBanner from "@/components/DemoBanner";
-import { BaseBadge, DemoBadge, Panel, Prov, SENTIMENT_COLORS, Section } from "@/components/ui";
+import { BaseBadge, ContentTypeBadge, DemoBadge, Panel, Prov, SENTIMENT_COLORS, Section } from "@/components/ui";
 import { tryApi, type ArticleDetail } from "@/lib/api";
 import { fmtDate, fmtNumber, pick } from "@/lib/i18n";
+import { L } from "@/lib/registry";
 import { setup, type PageProps } from "@/lib/page";
 
 function Scores({ scores, colors }: { scores: Record<string, number>; colors?: Record<string, string> }) {
@@ -21,6 +22,11 @@ function Scores({ scores, colors }: { scores: Record<string, number>; colors?: R
   );
 }
 
+const CONTENT_NOTICE = {
+  en: (kind: string, who: string) => `${kind} from ${who}. It records what the institution or account says. It is not an independent account of what happened, and Hudhud does not treat it as more or less reliable than other sources.`,
+  ar: (kind: string, who: string) => `${kind} صادر عن ${who}. يسجّل ما تقوله الجهة أو الحساب، وليس رواية مستقلة لما حدث، ولا يعدّه هدهد أكثر أو أقل موثوقية من المصادر الأخرى.`,
+};
+
 export default async function ArticlePage(props: PageProps<{ id: string }>) {
   const { l, d, p } = await setup(props);
   const a = await tryApi<ArticleDetail>(`/articles/${encodeURIComponent(p.id)}`);
@@ -33,6 +39,7 @@ export default async function ArticlePage(props: PageProps<{ id: string }>) {
       <header className="flex flex-col gap-3 border-b border-line pb-6">
         <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
           <Link href={`/${l}/sources/${a.source.slug}`} className="font-medium text-ink hover:underline">{a.publisher_name || a.source.name}</Link>
+          <ContentTypeBadge type={a.source.content_type} l={l} />
           <BaseBadge base={a.source.operating_base} d={d} />
           <time className="num" dateTime={a.published_at ?? undefined}>{fmtDate(a.published_at, l, { dateStyle: "long", timeStyle: "short" })}</time>
           <span className="uppercase">{a.language.code}</span>
@@ -41,6 +48,9 @@ export default async function ArticlePage(props: PageProps<{ id: string }>) {
         </div>
         <h1 className="text-2xl md:text-3xl font-semibold leading-tight" lang={a.language.code ?? undefined} dir={rtl ? "rtl" : "ltr"}>{a.title}</h1>
         {a.excerpt && <p className={`text-lg text-muted max-w-3xl leading-relaxed ${rtl ? "self-end" : ""}`} lang={a.language.code ?? undefined} dir={rtl ? "rtl" : "ltr"}>{a.excerpt}</p>}
+        {a.source.content_type && a.source.content_type !== "journalism" && (
+          <p className="text-sm rounded-md border border-official/40 bg-official-bg text-official px-3 py-2 max-w-3xl">{CONTENT_NOTICE[l](L.contentType(a.source.content_type, l), a.source.name)}</p>
+        )}
         <p className="text-xs text-muted">{d.article.excerptNote} {!a.is_demo && <a className="text-accent-2 underline" href={a.url} rel="noopener noreferrer" target="_blank">{d.common.readOriginal} ↗</a>}</p>
       </header>
 
@@ -51,6 +61,7 @@ export default async function ArticlePage(props: PageProps<{ id: string }>) {
             {a.source.orientation ? (
               <p className="text-sm">{a.source.orientation.simplified.replaceAll("_", " ")} <span className="text-muted">({d.common.confidence} {a.source.orientation.confidence.toFixed(2)}, {a.source.orientation.method})</span></p>
             ) : <p className="text-sm text-muted">{d.common.unknown}</p>}
+            {a.source.category && <p className="text-xs text-muted mt-1">{L.category(a.source.category, l)}{a.source.yemen_political_alignment && !["unknown", "not_applicable"].includes(a.source.yemen_political_alignment) ? ` · ${L.yemen(a.source.yemen_political_alignment, l)}` : ""}{a.source.regional_alignment && !["unknown", "not_applicable", "none_documented"].includes(a.source.regional_alignment) ? ` · ${L.regional(a.source.regional_alignment, l)}` : ""}</p>}
             <Link className="text-xs text-accent-2" href={`/${l}/sources/${a.source.slug}`}>{d.sources.history} →</Link>
           </Panel>
           <Panel>

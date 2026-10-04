@@ -21,32 +21,91 @@ A typical research question combines them explicitly: *"How did outlets based in
 Sana'a-controlled areas (A, operating base) frame (C) Red Sea shipping coverage (D) in
 September, and which terms did they use for the coalition (terminology)?"*
 
-## 2. Source orientation (A)
+## 2. Source selection and classification (A)
 
-* Recorded in `source_orientation` with a simplified label, optional dimensions
-  (institutional alignment, conflict alignment, ...), an overall confidence, the
-  evidence text, evidence URLs, the method and validity dates (`valid_from`,
-  `valid_to`). A change of ownership adds a new row; history is not rewritten.
-* Labels: `state_aligned`, `movement_aligned`, `state_funded`, `public_service`,
-  `intergovernmental`, `opposition_aligned`, `independent`, `mixed`, the ideological
-  labels (`left` ... `far_right`, `islamist`, `secular`, `nationalist`, ...) and
-  `unknown`. Ideological labels are rarely appropriate for Yemeni outlets, where
-  institutional alignment with a conflict party is the documented fact.
+### A curated universe, not every outlet
+
+Hudhud monitors a small, curated set of top sources rather than every outlet that ever
+mentions Yemen. The registry (`database/seeds/sources/`, format in `SCHEMA.md`) holds:
+
+| category | selected for | content label |
+|---|---|---|
+| `MEDIA` | audience and sustained Yemen coverage (tier A) | Journalism |
+| `SOCIAL_ACCOUNT` | public figures: officials (tier B), journalists and analysts (tier A) | Social post |
+| `OFFICIAL_GOVERNMENT` | institutional importance (tier B) | Official statement |
+| `DIPLOMATIC_MISSION` | institutional importance (tier B) | Official statement |
+| `INTERNATIONAL_INSTITUTION` | institutional importance (tier B) | Institutional publication |
+| `POLITICAL_ORGANIZATION` | institutional importance (tier B) | Political statement |
+| `THINK_TANK`, `RESEARCH_ORGANIZATION` | influence on Yemen analysis (tier A) | Analysis |
+
+Every record carries a **selection record**: the reason it was selected, audience
+evidence (each figure with its source URL and date), influence evidence, how often it
+covers Yemen, and its institutional importance with a note. The earlier broad registry
+is kept in `sources/archive/` for reference and is not collected.
+
+### Influence and institutional importance are different things
+
+* **Influence** (0 to 100) is computed by the loader from the evidence (rubric
+  `influence-v1` in `SCHEMA.md`): reach from the largest cited audience figure, Yemen
+  coverage frequency, citations by other media, and for tier A sources regional and
+  historical importance. There is no score without a citable audience figure.
+* **Institutional importance** (high, medium, low) records whether a source speaks for
+  an institution whose position matters, whatever its audience. A Saudi embassy can
+  have high institutional importance and low influence.
+* For tier B sources, regional and historical importance are recorded but not scored,
+  so being official can never raise the influence score.
+* **Reliability** is not assessed (empty) unless a record cites evidence for it. It is
+  never derived from category, and official sources are not treated as more reliable.
+
+### Official sources are analysed as discourse
+
+Ministries, embassies, UN offices and party channels go through the same analysis as
+media (topics, actors, tone, places, framing, events), and every item from them is
+labelled as an official statement, institutional publication or political statement.
+An official statement shows what an institution says; it does not show what happened.
+
+### Classification (measure A)
+
+* `yemen_political_alignment`: the Yemeni camp a source belongs to or is documented to
+  back (`plc_government`, `ansar_allah`, `stc`, `islah`, `gpc_sanaa`, `gpc_plc`,
+  `national_resistance`, `hadramawt`, `southern_other`, `independent`, `mixed`,
+  `none_documented`, `not_applicable`, `unknown`).
+* `regional_alignment`: the foreign state or axis it belongs to or is documented to back
+  (`saudi`, `uae`, `qatar`, `oman`, `iran_axis`, `us`, `uk`, ...).
+* `sub_alignment` (free text) and `domestic_political_orientation` (a label from the list
+  below), with a confidence, the evidence text and URLs, the method, an assessment date
+  and a review status.
+* Stored in `source_orientation` with validity dates (`valid_from`, `valid_to`): a
+  change adds a new row and history is not rewritten.
+* Labels for `domestic_political_orientation`: `state_aligned`, `movement_aligned`,
+  `state_funded`, `public_service`, `intergovernmental`, `opposition_aligned`,
+  `independent`, `mixed`, the ideological labels (`left` ... `far_right`, `islamist`,
+  `secular`, `nationalist`, ...) and `unknown`.
 * Methods: `manual_research`, `academic_source`, `media_watchdog`,
-  `ownership_analysis`, `editorial_analysis`, `hyperlink_network`, `LLM_assisted`,
+  `ownership_analysis`, `editorial_analysis`, `self_description`, `LLM_assisted`,
   `community_annotation`, `unknown`.
-* **Rule:** no label other than `unknown` without at least one public evidence URL
-  (enforced by `hudhud check-sources` and the seed loader). Of 193 registered
-  outlets, 112 are `unknown` today.
+* **Rule:** no alignment other than `unknown`, `not_applicable` or `none_documented`
+  without at least one public evidence URL (enforced by `hudhud check-sources` and the
+  seed loader). `none_documented` must say what was checked.
 * **Operating base** (`sanaa_controlled`, `government_controlled`, `stc_controlled`,
-  `outside_yemen`, `unknown`) records where a newsroom works. It is a location fact
-  used to split charts, not an orientation; an outlet based in Aden is not assumed to
-  support any party.
+  `outside_yemen`, `unknown`) records where a Yemeni newsroom works. It is a location
+  fact used to split charts, not an orientation.
+
+### Comparison
+
+`/compare/groups` compares groups of sources defined by these attributes, with presets
+for Saudi media against Saudi government statements, Government/PLC against Houthi
+against STC, Saudi against UAE against Iran against the US and UK (official voices),
+and international media against foreign ministries against embassies. Groups are
+compared on what they published; no group is treated as more truthful than another.
 
 ## 3. Collection
 
-* Inputs: publisher RSS/Atom feeds, Google News RSS search queries and the GDELT DOC
-  2.0 API. Aggregator items are attributed to the original publisher when its domain is
+* Inputs: publisher RSS/Atom feeds, official YouTube channel feeds, the public web
+  preview of public Telegram channels (`t.me/s/<channel>`, only where robots.txt
+  allows), Google News RSS search queries and the GDELT DOC 2.0 API. X (Twitter)
+  accounts are registered but not collected: the X API is paid and scraping X is not
+  permitted (REQUIRES CONFIGURATION). Aggregator items are attributed to the original publisher when its domain is
   in the registry.
 * Politeness: robots.txt honoured, identifying user agent with a contact URL,
   conditional requests (ETag / Last-Modified), concurrency cap, retries only on

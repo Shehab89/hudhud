@@ -5,7 +5,8 @@ export const PUBLIC_API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localh
 
 export type SearchParams = Record<string, string | string[] | undefined>;
 
-export const FILTER_KEYS = ["date_from", "date_to", "language", "source", "source_group", "operating_base", "category", "entity", "demo"] as const;
+export const FILTER_KEYS = ["date_from", "date_to", "language", "source", "source_group", "operating_base", "category", "entity", "demo",
+  "source_category", "source_tier", "source_region", "source_country", "yemen_alignment", "regional_alignment", "content_type"] as const;
 
 export function filterQuery(sp: SearchParams, extra: Record<string, string | number | undefined> = {}) {
   const q = new URLSearchParams();
@@ -45,7 +46,8 @@ export async function tryApi<T>(path: string, init?: { revalidate?: number }): P
 
 // ---- response types (subset of the OpenAPI contract the UI uses)
 
-export interface SourceRef { slug: string; name: string; source_group: string; operating_base: string; country: string | null; is_demo: boolean }
+export interface SourceRef { slug: string; name: string; source_group: string; operating_base: string; country: string | null; is_demo: boolean;
+  category?: string; tier?: string | null; content_type?: string; region?: string | null }
 
 export interface ArticleSummary {
   id: number; title: string; url: string; published_at: string | null; language: string | null; excerpt: string | null;
@@ -79,6 +81,7 @@ export interface ArticleDetail {
   language: { code: string | null; confidence: number | null; script: string | null; mixed: boolean; method: string | null };
   quality: { score: number | null; detail: Record<string, number>; note: string };
   source: { slug: string; name: string; source_group: string; operating_base: string; is_demo: boolean;
+    category?: string; tier?: string | null; content_type?: string; yemen_political_alignment?: string; regional_alignment?: string;
     orientation: { simplified: string; confidence: number; method: string } | null };
   sentiment: (Prov & { polarity: string; scores: Record<string, number>; intensity: number | null })[];
   emotions: (Prov & { kind: string; dominant: string | null; scores: Record<string, number> })[];

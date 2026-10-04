@@ -23,6 +23,8 @@
   --neu: #98a0ae;
   --pos: #3c8c68;
   --unc: #c7b064;
+  --official: #2f4f7f;
+  --official-bg: #e7edf6;
   color-scheme: light;
 }
 
@@ -47,6 +49,8 @@
   --neu: #7d8594;
   --pos: #6cc39a;
   --unc: #d8c27a;
+  --official: #a9c1e6;
+  --official-bg: #1b2535;
   color-scheme: dark;
 }
 
@@ -62,6 +66,8 @@
   --color-accent-2: var(--accent-2);
   --color-demo: var(--demo);
   --color-demo-bg: var(--demo-bg);
+  --color-official: var(--official);
+  --color-official-bg: var(--official-bg);
   --font-sans: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", sans-serif;
   --font-arabic: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;

@@ -75,3 +75,62 @@ def test_gdelt_articles_and_bad_json():
     assert item.extra["published_at_is_seen_date"] is True
     with pytest.raises(FeedParseError):
         parse_gdelt(b"<html>rate limited</html>")
+
+
+TELEGRAM = """<html><body>
+<div class="tgme_channel_info"><div class="tgme_channel_info_header_title">Example channel</div></div>
+<div class="tgme_widget_message_wrap js-widget_message_wrap">
+ <div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="examplechan/101">
+  <a class="tgme_widget_message_reply" href="https://t.me/examplechan/99">
+   <div class="tgme_widget_message_text js-message_reply_text">Quoted earlier post</div></a>
+  <div class="tgme_widget_message_text js-message_text" dir="auto">بيان صحفي حول الوضع في الحديدة<br/>نص البيان الكامل هنا</div>
+  <div class="tgme_widget_message_footer"><span class="tgme_widget_message_meta">
+   <a class="tgme_widget_message_date" href="https://t.me/examplechan/101"><time datetime="2026-10-01T08:00:00+00:00" class="time">08:00</time></a>
+  </span></div>
+ </div>
+</div>
+<div class="tgme_widget_message_wrap js-widget_message_wrap">
+ <div class="tgme_widget_message js-widget_message" data-post="examplechan/102">
+  <div class="tgme_widget_message_photo_wrap"></div>
+  <a class="tgme_widget_message_date" href="https://t.me/examplechan/102"><time datetime="2026-10-01T09:00:00+00:00"></time></a>
+ </div>
+</div>
+</body></html>""".encode()
+
+
+def test_parse_telegram_preview_takes_text_posts_only():
+    from hudhud.ingest.feeds import parse_telegram_preview
+
+    items = parse_telegram_preview(TELEGRAM)
+    assert len(items) == 1  # the photo-only post is skipped
+    item = items[0]
+    assert item.url == "https://t.me/examplechan/101"
+    assert item.title == "بيان صحفي حول الوضع في الحديدة"  # first line, not the quoted reply
+    assert "نص البيان الكامل" in item.summary
+    assert item.published_at.isoformat() == "2026-10-01T08:00:00+00:00"
+
+
+def test_parse_telegram_preview_rejects_other_pages():
+    from hudhud.ingest.feeds import parse_telegram_preview
+
+    with pytest.raises(FeedParseError):
+        parse_telegram_preview(b"<html><body><p>Log in to continue</p></body></html>")
+
+
+YOUTUBE = b"""<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <title>Example Channel</title>
+ <entry><id>yt:video:abc</id><title>Press briefing on Yemen</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=abc"/>
+  <published>2026-10-01T08:00:00+00:00</published>
+  <media:group><media:description>Briefing on the humanitarian situation.</media:description></media:group>
+ </entry>
+</feed>"""
+
+
+def test_youtube_channel_feed_parses_as_atom():
+    from hudhud.ingest.feeds import PARSERS
+
+    items = PARSERS["youtube"](YOUTUBE)
+    assert items[0].url == "https://www.youtube.com/watch?v=abc"
+    assert items[0].title == "Press briefing on Yemen"

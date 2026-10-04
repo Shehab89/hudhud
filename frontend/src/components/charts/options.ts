@@ -68,3 +68,17 @@ export function choropleth(regions: { code: string; name: string; value: number 
     ],
   };
 }
+
+export function multiLine(days: string[], series: { name: string; data: number[]; color?: string }[], rtl = false): EChartsOption {
+  return {
+    tooltip: { trigger: "axis" },
+    legend: { top: 0 },
+    grid: { top: 36 },
+    xAxis: { type: "category", data: days, boundaryGap: false, inverse: rtl, ...AXIS, splitLine: { show: false } },
+    yAxis: { type: "value", position: rtl ? "right" : "left", minInterval: 1, ...AXIS },
+    series: series.map((s) => ({
+      name: s.name, type: "line", smooth: 0.25, symbol: "none", data: s.data, lineStyle: { width: 2 },
+      itemStyle: s.color ? { color: s.color } : undefined,
+    })),
+  };
+}

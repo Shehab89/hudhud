@@ -12,6 +12,7 @@ from hudhud.config import get_settings
 from hudhud.db import models as m
 from hudhud.nlp.events import EVENT_TRIGGERS
 from hudhud.nlp.registry import ANALYSIS_VERSION
+from hudhud.registry import curation
 
 router = APIRouter(tags=["meta"])
 
@@ -31,6 +32,12 @@ def meta(db: DB) -> dict:
             db.scalars(select(m.Source.source_group).distinct().order_by(m.Source.source_group))
         ),
         "operating_bases": OPERATING_BASES,
+        "source_categories": sorted(curation.CATEGORIES),
+        "content_types": sorted(curation.CONTENT_TYPES),
+        "regions": sorted(curation.REGIONS),
+        "yemen_alignments": sorted(curation.YEMEN_ALIGNMENTS),
+        "regional_alignments": sorted(curation.REGIONAL_ALIGNMENTS),
+        "influence_rubric": curation.RUBRIC_VERSION,
         "frames": [
             {"slug": f.slug, "name_en": f.name_en, "name_ar": f.name_ar, "description": f.description}
             for f in db.scalars(select(m.Frame).order_by(m.Frame.name_en))

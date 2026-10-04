@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", ".github/workflows/live-check.yml"]
+    paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", ".github/workflows/live-check.yml"]
 
 permissions:
   contents: write
@@ -44,6 +44,12 @@ jobs:
       - run: pip install -e ".[llm]"
       - run: hudhud migrate
       - run: hudhud seed
+      - name: Registry check (every listed feed, and Wikidata cross-check)
+        continue-on-error: true
+        run: |
+          mkdir -p snapshot
+          python scripts/registry_check.py snapshot
+          cat snapshot/registry_check.md >> "$GITHUB_STEP_SUMMARY"
       - name: Run pipeline on live feeds
         run: hudhud run --trigger github_actions --stages ingest,dedup,analyse,topics,metrics
       - name: Report

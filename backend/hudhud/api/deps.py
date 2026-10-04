@@ -5,7 +5,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import hmac
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Annotated, Literal
 
 from fastapi import Depends, Header, HTTPException, Query
@@ -31,6 +31,27 @@ class Filters:
     category: str | None
     entity: str | None
     demo: str
+    source_categories: list[str] = field(default_factory=list)
+    source_tiers: list[str] = field(default_factory=list)
+    source_regions: list[str] = field(default_factory=list)
+    source_countries: list[str] = field(default_factory=list)
+    yemen_alignments: list[str] = field(default_factory=list)
+    regional_alignments: list[str] = field(default_factory=list)
+    content_types: list[str] = field(default_factory=list)
+
+    def source_filtered(self) -> bool:
+        return bool(
+            self.sources
+            or self.source_groups
+            or self.operating_bases
+            or self.source_categories
+            or self.source_tiers
+            or self.source_regions
+            or self.source_countries
+            or self.yemen_alignments
+            or self.regional_alignments
+            or self.content_types
+        )
 
     @property
     def start(self) -> dt.datetime:
@@ -74,6 +95,21 @@ def filters(
     demo: Annotated[
         Literal["include", "exclude", "only"], Query(description="Synthetic DEMO DATA handling.")
     ] = "include",
+    source_category: Annotated[
+        list[str] | None,
+        Query(description="Source category: MEDIA, OFFICIAL_GOVERNMENT, DIPLOMATIC_MISSION, ..."),
+    ] = None,
+    source_tier: Annotated[list[str] | None, Query(description="A (influence) or B (institutional).")] = None,
+    source_region: Annotated[list[str] | None, Query(description="yemen, gulf, iran, europe, ...")] = None,
+    source_country: Annotated[list[str] | None, Query(description="ISO country of the source.")] = None,
+    yemen_alignment: Annotated[
+        list[str] | None, Query(description="plc_government, ansar_allah, stc, islah, ...")
+    ] = None,
+    regional_alignment: Annotated[list[str] | None, Query(description="saudi, uae, iran_axis, ...")] = None,
+    content_type: Annotated[
+        list[str] | None,
+        Query(description="journalism, official_statement, institutional_publication, ..."),
+    ] = None,
 ) -> Filters:
     today = dt.datetime.now(dt.UTC).date()
     date_to = date_to or today
@@ -92,6 +128,13 @@ def filters(
         category,
         entity,
         demo,
+        [c.upper() for c in _split(source_category)],
+        [t.upper() for t in _split(source_tier)],
+        _split(source_region),
+        [c.upper() for c in _split(source_country)],
+        _split(yemen_alignment),
+        _split(regional_alignment),
+        _split(content_type),
     )
 
 
@@ -110,15 +153,8 @@ def apply_filters(stmt: Select, f: Filters, *, dedupe: bool = True) -> Select:
         stmt = stmt.where(A.is_demo.is_(False))
     elif f.demo == "only":
         stmt = stmt.where(A.is_demo.is_(True))
-    if f.sources or f.source_groups or f.operating_bases:
-        src = select(m.Source.id)
-        if f.sources:
-            src = src.where(m.Source.slug.in_(f.sources))
-        if f.source_groups:
-            src = src.where(m.Source.source_group.in_(f.source_groups))
-        if f.operating_bases:
-            src = src.where(m.Source.operating_base.in_(f.operating_bases))
-        stmt = stmt.where(A.source_id.in_(src))
+    if f.source_filtered():
+        stmt = stmt.where(A.source_id.in_(source_id_query(f)))
     if f.category:
         root = select(m.Category.id).where(m.Category.slug == f.category).scalar_subquery()
         cats = select(m.Category.id).where((m.Category.id == root) | (m.Category.parent_id == root))
@@ -135,6 +171,27 @@ def apply_filters(stmt: Select, f: Filters, *, dedupe: bool = True) -> Select:
             A.id.in_(select(m.EntityMention.article_id).where(m.EntityMention.entity_id == ent))
         )
     return stmt
+
+
+def source_id_query(f: Filters) -> Select:
+    """Source ids matching the source-level filters (registry attributes)."""
+    S = m.Source
+    src = select(S.id)
+    for values, col in (
+        (f.sources, S.slug),
+        (f.source_groups, S.source_group),
+        (f.operating_bases, S.operating_base),
+        (f.source_categories, S.category),
+        (f.source_tiers, S.tier),
+        (f.source_regions, S.region),
+        (f.source_countries, S.country),
+        (f.yemen_alignments, S.yemen_political_alignment),
+        (f.regional_alignments, S.regional_alignment),
+        (f.content_types, S.content_type),
+    ):
+        if values:
+            src = src.where(col.in_(values))
+    return src
 
 
 def hash_api_key(key: str) -> str:

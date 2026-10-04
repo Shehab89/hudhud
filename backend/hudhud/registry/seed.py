@@ -20,6 +20,7 @@ from sqlalchemy.orm import Session
 from hudhud.config import get_settings
 from hudhud.db import models as m
 from hudhud.nlp.text import normalize_for_matching
+from hudhud.registry import curation
 
 log = structlog.get_logger()
 
@@ -67,6 +68,7 @@ METHODS = {
     "hyperlink_network",
     "LLM_assisted",
     "community_annotation",
+    "self_description",
     "unknown",
 }
 OPERATING_BASES = {"sanaa_controlled", "government_controlled", "stc_controlled", "outside_yemen", "unknown"}
@@ -105,10 +107,10 @@ def seed_languages(session: Session, seeds: Path) -> int:
 def validate_source(rec: dict[str, Any]) -> list[str]:
     """Return a list of problems with one source record (empty when valid)."""
     problems = []
-    for key in ("id", "name", "url", "source_type", "source_group"):
+    for key in ("id", "name", "url", "source_type"):
         if not rec.get(key):
             problems.append(f"missing {key}")
-    o = rec.get("orientation") or {}
+    o = _orientation_block(rec)
     label = LABEL_ALIASES.get(o.get("simplified", "unknown"), o.get("simplified", "unknown"))
     if label not in SIMPLIFIED_LABELS:
         problems.append(f"unknown orientation label {label!r}")
@@ -118,7 +120,39 @@ def validate_source(rec: dict[str, Any]) -> list[str]:
         problems.append(f"unknown orientation method {o.get('method')!r}")
     if rec.get("operating_base", "unknown") not in OPERATING_BASES:
         problems.append(f"unknown operating_base {rec.get('operating_base')!r}")
+    problems += curation.validate_curated(rec)
     return problems
+
+
+def _orientation_block(rec: dict[str, Any]) -> dict[str, Any]:
+    """The orientation row for a record.
+
+    Curated records describe classification in ``alignment``; it is stored in the
+    orientation history table so changes over time stay visible. ``simplified`` is the
+    domestic political orientation label (measure A shorthand).
+    """
+    al = rec.get("alignment")
+    if not al:
+        return rec.get("orientation") or {}
+    dims: dict[str, Any] = {}
+    conf = float(al.get("classification_confidence") or 0.0)
+    for key in ("yemen_political_alignment", "regional_alignment", "domestic_political_orientation"):
+        if al.get(key) and al[key] != "unknown":
+            dims[key] = {"value": al[key], "confidence": conf}
+    if al.get("sub_alignment"):
+        dims["sub_alignment"] = {"value": al["sub_alignment"], "confidence": conf}
+    simplified = al.get("domestic_political_orientation") or "unknown"
+    simplified = LABEL_ALIASES.get(simplified, simplified)
+    return {
+        "simplified": simplified if simplified in SIMPLIFIED_LABELS else "unknown",
+        "dimensions": dims,
+        "confidence": conf,
+        "evidence": al.get("classification_evidence") or "",
+        "evidence_urls": list(al.get("evidence_urls") or []),
+        "method": al.get("method", "unknown"),
+        "last_reviewed": al.get("assessment_date"),
+        "review_status": al.get("review_status", "draft"),
+    }
 
 
 def _default_operating_base(rec: dict[str, Any]) -> str:
@@ -143,7 +177,7 @@ def upsert_source(session: Session, rec: dict[str, Any], today: dt.date | None =
     src.domain = (urlparse(rec["url"]).hostname or "").removeprefix("www.") or None
     src.country = (rec.get("country") or None) if rec.get("country") != "XX" else None
     src.source_type = rec["source_type"]
-    src.source_group = rec["source_group"]
+    src.source_group = curation.default_source_group(rec)
     src.geographic_focus = list(rec.get("geographic_focus") or [])
     src.operating_base = _default_operating_base(rec)
     src.yemen_coverage = rec.get("yemen_coverage")
@@ -153,6 +187,7 @@ def upsert_source(session: Session, rec: dict[str, Any], today: dt.date | None =
     src.access_policy = rec.get("access_policy", "metadata_only")
     src.active = bool(rec.get("active", True))
     src.notes = rec.get("notes") or None
+    _apply_curation(src, rec)
     if not src.active:
         src.health_status = "inactive"
     session.flush()
@@ -176,8 +211,53 @@ def upsert_source(session: Session, rec: dict[str, Any], today: dt.date | None =
         feed.active = bool(f.get("active", True)) and src.active
         feed.notes = f.get("notes") or None
 
-    _upsert_orientation(session, src, rec.get("orientation") or {}, today)
+    _upsert_orientation(session, src, _orientation_block(rec), today)
     return src
+
+
+def _apply_curation(src: m.Source, rec: dict[str, Any]) -> None:
+    sel = dict(rec.get("selection") or {})
+    al = rec.get("alignment") or {}
+    score, components = curation.influence(sel, rec.get("tier"))
+    sel["influence_components"] = components
+    src.category = rec.get("category", "MEDIA")
+    src.tier = rec.get("tier")
+    src.region = rec.get("region")
+    src.platform = rec.get("platform")
+    src.content_type = curation.content_type_for(rec)
+    src.wikidata = rec.get("wikidata")
+    src.yemen_political_alignment = al.get("yemen_political_alignment", "unknown")
+    src.regional_alignment = al.get("regional_alignment", "unknown")
+    src.sub_alignment = al.get("sub_alignment") or None
+    src.domestic_political_orientation = al.get("domestic_political_orientation")
+    src.classification_confidence = (
+        float(al["classification_confidence"]) if al.get("classification_confidence") is not None else None
+    )
+    src.assessment_date = _as_date(al.get("assessment_date"))
+    src.institutional_importance = (sel.get("institutional_importance") or {}).get("level")
+    src.influence_score = score
+    scores = rec.get("scores") or {}
+    # Reliability is NOT ASSESSED unless evidence is cited; never inferred from category.
+    src.reliability_score = (
+        float(scores["reliability_score"])
+        if scores.get("reliability_score") is not None and scores.get("reliability_evidence_urls")
+        else None
+    )
+    src.selection = _jsonable(sel)
+    src.accounts = _jsonable(list(rec.get("accounts") or []))
+    src.holder = _jsonable(rec.get("holder")) if rec.get("holder") else None
+    src.registry_status = "curated"
+
+
+def _jsonable(value: Any) -> Any:
+    """YAML gives dates as date objects; JSONB columns need strings."""
+    if isinstance(value, dict):
+        return {k: _jsonable(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_jsonable(v) for v in value]
+    if isinstance(value, dt.date):
+        return value.isoformat()
+    return value
 
 
 def _upsert_orientation(session: Session, src: m.Source, o: dict[str, Any], today: dt.date) -> None:
@@ -224,7 +304,12 @@ def _upsert_orientation(session: Session, src: m.Source, o: dict[str, Any], toda
 
 
 def seed_sources(session: Session, seeds: Path) -> dict[str, int]:
-    stats = {"sources": 0, "invalid": 0}
+    """Load ``sources/*.yaml`` (not ``sources/archive/``) and archive everything else.
+
+    A non-demo source that is no longer in the curated registry is marked archived and
+    inactive, so it stops being collected; its articles and history are kept.
+    """
+    stats = {"sources": 0, "invalid": 0, "archived": 0}
     seen: set[str] = set()
     for path in sorted((seeds / "sources").glob("*.yaml")):
         for rec in _load(path) or []:
@@ -241,6 +326,20 @@ def seed_sources(session: Session, seeds: Path) -> dict[str, int]:
             seen.add(rec["id"])
             upsert_source(session, rec)
             stats["sources"] += 1
+    session.flush()
+    if seen:
+        stale = session.scalars(
+            select(m.Source).where(
+                m.Source.slug.not_in(seen),
+                m.Source.is_demo.is_(False),
+                m.Source.registry_status != "archived",
+            )
+        )
+        for src in stale:
+            src.registry_status, src.active, src.health_status = "archived", False, "inactive"
+            for feed in src.feeds:
+                feed.active = False
+            stats["archived"] += 1
     session.flush()
     return stats
 

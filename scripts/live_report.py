@@ -19,9 +19,24 @@ with eng.connect() as c:
     feeds = (
         c.execute(
             text("""
-        select s.slug, s.name, s.source_group, f.url, f.health_status, f.last_item_count, f.consecutive_failures
+        select s.slug, s.name, s.category, s.source_group, f.url, f.feed_type, f.health_status,
+               f.last_item_count, f.consecutive_failures,
+               (select e.error_type || ': ' || left(e.message, 160) from pipeline_errors e
+                 where e.feed_id = f.id order by e.id desc limit 1) last_error
         from source_feeds f join sources s on s.id = f.source_id
-        where not s.is_demo and f.active order by s.source_group, s.slug""")
+        where not s.is_demo and f.active order by s.category, s.slug""")
+        )
+        .mappings()
+        .all()
+    )
+    per_category = (
+        c.execute(
+            text("""
+        select s.category, count(distinct s.id) sources,
+               count(distinct s.id) filter (where s.active) collected,
+               count(a.id) filter (where not a.is_demo) articles
+        from sources s left join articles a on a.source_id = s.id
+        where not s.is_demo and s.registry_status = 'curated' group by 1 order by 1""")
         )
         .mappings()
         .all()
@@ -29,10 +44,11 @@ with eng.connect() as c:
     per_source = (
         c.execute(
             text("""
-        select s.slug, s.name, s.source_group, count(a.id) n,
+        select s.slug, s.name, s.category, s.content_type, s.source_group, count(a.id) n,
                array_agg(distinct a.language) filter (where a.language is not null) langs
         from sources s join articles a on a.source_id = s.id
-        where not a.is_demo group by s.slug, s.name, s.source_group order by n desc""")
+        where not a.is_demo group by s.slug, s.name, s.category, s.content_type, s.source_group
+        order by n desc""")
         )
         .mappings()
         .all()
@@ -58,14 +74,19 @@ with eng.connect() as c:
     total = c.execute(text("select count(*) from articles where not is_demo")).scalar()
 
 health: dict[str, int] = {}
+by_type: dict[str, dict[str, int]] = {}
 for f in feeds:
     health[f["health_status"]] = health.get(f["health_status"], 0) + 1
+    t = by_type.setdefault(f["feed_type"], {})
+    t[f["health_status"]] = t.get(f["health_status"], 0) + 1
 
 data = {
     "articles": total,
     "sources_with_articles": len(per_source),
     "feeds": len(feeds),
     "feed_health": health,
+    "feed_health_by_type": by_type,
+    "per_category": [dict(r) for r in per_category],
     "languages": {lang: n for lang, n in langs},
     "per_source": [dict(r) for r in per_source],
     "feeds_detail": [dict(r) for r in feeds],
@@ -78,22 +99,23 @@ md = [
     "# Live ingestion report\n",
     f"Real (non-demo) articles: **{total}** from **{len(per_source)}** outlets.",
     f"Active feeds: {len(feeds)}; health: {health}.",
+    f"Feed health by type: {by_type}.",
     f"Languages: {dict(langs)}.\n",
-    "## Articles per outlet\n",
-    "| Outlet | Group | Articles | Languages |",
+    "## Curated sources by category\n",
+    "| Category | Sources | Collected | Articles |",
     "|---|---|---|---|",
 ]
-md += [
-    f"| {r['name']} | {r['source_group']} | {r['n']} | {', '.join(r['langs'] or [])} |" for r in per_source
-]
+md += [f"| {r['category']} | {r['sources']} | {r['collected']} | {r['articles']} |" for r in per_category]
+md += ["\n## Articles per source\n", "| Source | Category | Articles | Languages |", "|---|---|---|---|"]
+md += [f"| {r['name']} | {r['category']} | {r['n']} | {', '.join(r['langs'] or [])} |" for r in per_source]
 md += ["\n## One recent article per outlet\n", "| Outlet | Lang | Title |", "|---|---|---|"]
 md += [
     f"| {r['source']} | {r['language']} | [{(r['title'] or '').replace('|', '/')[:120]}]({r['url']}) |"
     for r in sample
 ]
-md += ["\n## Failing feeds\n", "| Outlet | Feed | Status |", "|---|---|---|"]
+md += ["\n## Failing feeds\n", "| Source | Type | Feed | Status | Last error |", "|---|---|---|---|---|"]
 md += [
-    f"| {f['name']} | {f['url']} | {f['health_status']} |"
+    f"| {f['name']} | {f['feed_type']} | {f['url']} | {f['health_status']} | {(f['last_error'] or '').replace('|', '/')} |"
     for f in feeds
     if f["health_status"] not in ("healthy", "ok")
 ]

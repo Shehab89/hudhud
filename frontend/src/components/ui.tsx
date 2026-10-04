@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Dict, Locale } from "@/lib/i18n";
 import { fmtNumber } from "@/lib/i18n";
+import { L } from "@/lib/registry";
 
 export const BASE_COLORS: Record<string, string> = {
   sanaa_controlled: "var(--base-sanaa)",
@@ -111,6 +112,18 @@ export function Prov({ p, d }: { p: { method: string; model: string | null; mode
       {d.common.method}: {p.method}
       {p.model ? ` · ${p.model}${p.model_version ? `@${p.model_version}` : ""}` : ""}
       {p.confidence !== null && p.confidence !== undefined ? ` · ${d.common.confidence} ${p.confidence.toFixed(2)}` : ""}
+    </span>
+  );
+}
+
+/** Marks text that is not journalism (an official statement, a UN publication, a party
+ * statement, a social post) so it is never read as independent reporting. */
+export function ContentTypeBadge({ type, l }: { type: string | null | undefined; l: Locale }) {
+  if (!type || type === "journalism") return null;
+  const official = type === "official_statement" || type === "institutional_publication" || type === "political_statement";
+  return (
+    <span className={`inline-flex items-center rounded px-1.5 py-0.5 text-[0.68rem] font-semibold border ${official ? "bg-official-bg text-official border-official/40" : "border-line text-muted"}`}>
+      {L.contentType(type, l)}
     </span>
   );
 }

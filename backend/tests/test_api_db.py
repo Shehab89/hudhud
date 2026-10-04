@@ -40,6 +40,9 @@ def client(demo_db):
         "/api/v1/geography",
         "/api/v1/media-landscape",
         "/api/v1/compare/narratives",
+        "/api/v1/compare/presets",
+        "/api/v1/compare/groups?preset=media-vs-diplomacy",
+        "/api/v1/sources?source_category=OFFICIAL_GOVERNMENT",
         "/api/v1/meta",
         "/api/v1/models",
         "/api/v1/quality",
@@ -139,3 +142,35 @@ def test_accepted_correction_becomes_the_current_result(client, demo_db):
         ).status_code
         == 409
     )
+
+
+def test_camp_comparison_keeps_groups_apart(client):
+    body = client.get("/api/v1/compare/groups?preset=yemeni-camps&demo=only").json()
+    groups = {g["key"]: g for g in body["groups"]}
+    assert set(groups) == {"plc", "ansar_allah", "stc"}
+    # DEMO DATA outlets carry synthetic camp attributes so the view can be exercised.
+    assert all(g["articles"] > 0 for g in groups.values())
+    assert "not what happened" in body["note"]
+    for story in body["shared_stories"]:
+        assert set(story["headlines"]) == set(groups)
+
+
+def test_custom_group_comparison_validates(client):
+    bad = client.post("/api/v1/compare/groups", json={"groups": [{"key": "x", "label": {"en": "x"}, "any": [{}]}]})
+    assert bad.status_code == 422  # at least two groups
+    ok = client.post(
+        "/api/v1/compare/groups?demo=only",
+        json={
+            "groups": [
+                {"key": "north", "label": {"en": "North"}, "any": [{"slug": ["demo-outlet-north"]}]},
+                {"key": "aden", "label": {"en": "Aden"}, "any": [{"slug": ["demo-outlet-aden"]}]},
+            ]
+        },
+    )
+    assert ok.status_code == 200, ok.text[:300]
+    assert [g["source_count"] for g in ok.json()["groups"]] == [1, 1]
+
+
+def test_articles_carry_content_type(client):
+    item = client.get("/api/v1/articles?limit=1").json()["items"][0]
+    assert item["source"]["content_type"] == "journalism"

@@ -374,6 +374,18 @@ def _loc_names(session: Session) -> dict[str, tuple[str, str]]:
     return out
 
 
+# Registry attributes of the synthetic outlets, so comparison views can be tried on DEMO
+# DATA. They describe the synthetic voices above, not any real organisation.
+DEMO_PROFILE = {
+    "demo-outlet-north": ("yemen", "ansar_allah"),
+    "demo-outlet-aden": ("yemen", "plc_government"),
+    "demo-outlet-south": ("yemen", "stc"),
+    "demo-outlet-gulf": ("gulf", "unknown"),
+    "demo-wire": ("global", "unknown"),
+    "demo-outlet-intl": ("europe", "unknown"),
+}
+
+
 def ensure_demo_sources(session: Session) -> dict[str, m.Source]:
     out = {}
     for v in VOICES:
@@ -398,6 +410,9 @@ def ensure_demo_sources(session: Session) -> dict[str, m.Source]:
             session.add(src)
             session.flush()
             session.merge(m.SourceLanguage(source_id=src.id, language_code=v.language))
+        region, alignment = DEMO_PROFILE.get(v.slug, (None, "unknown"))
+        src.category, src.tier, src.region, src.content_type = "MEDIA", "A", region, "journalism"
+        src.yemen_political_alignment = alignment
         out[v.slug] = src
     return out
 

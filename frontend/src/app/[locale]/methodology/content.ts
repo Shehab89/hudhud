@@ -9,13 +9,15 @@ export const en: Block[] = [
     "D. Topic: what the article is about, from a curated taxonomy and from data-driven topic models.",
     "E. Actor-targeted sentiment: how a specific sentence that names an actor reads, with that sentence kept as evidence. It describes wording, not the actor's conduct.",
   ] },
-  { id: "sources", title: "Source registry", body: [
-    "Only real, verified outlets are registered. Feed URLs are checked before they are added; outlets without a usable feed are kept as inactive records rather than given invented URLs.",
-    "Each outlet records where its newsroom operates (Sana'a-controlled areas, government-controlled areas, STC-controlled areas, outside Yemen, or unknown). This is a fact about location used for split views, not an orientation.",
-    "Orientation labels require evidence links. Where evidence is thin the label is \"unknown\" with low confidence. Orientation rows have validity dates, so a change of ownership does not rewrite history.",
+  { id: "sources", title: "Source selection", body: [
+    "Hudhud monitors a small, curated set of top sources, not every outlet that mentions Yemen: high-impact media and public figures (tier A, selected for audience and influence) and official, diplomatic and international institutions and political organisations (tier B, selected for institutional importance).",
+    "Every source has a selection record: why it was chosen, audience figures with their source and date, how often it covers Yemen, and its institutional importance. Sources are not added to fill a quota.",
+    "Influence (0 to 100) is computed from the evidence and needs a citable audience figure. Institutional importance is a separate attribute: an embassy can matter a great deal with a small audience. For institutional sources, regional and historical importance are recorded but not scored, so official status cannot raise influence. Reliability is not assessed, and no source is treated as more reliable for being official.",
+    "Official sources are analysed like any other discourse (topics, actors, tone, places, framing, events) and every item is labelled as an official statement, institutional publication or political statement. It shows what an institution says, not what happened.",
+    "Each source records the Yemeni camp and the foreign state it belongs to or is documented to back, with evidence links, a confidence and an assessment date. Without evidence the value is \"not assessed\". Classifications keep their history.",
   ] },
   { id: "collection", title: "Collection", body: [
-    "Articles come from publishers' RSS/Atom feeds and from Google News and GDELT queries about Yemen; aggregator items are attributed to the original publisher when its domain is registered.",
+    "Items come from publishers' RSS/Atom feeds, official YouTube channel feeds, the public web preview of public Telegram channels (only where robots.txt allows), and Google News and GDELT queries about Yemen. X accounts are listed but not collected, because the X API is paid and scraping X is not permitted.",
     "The collector respects robots.txt, identifies itself, uses conditional requests, and never bypasses paywalls, logins, CAPTCHAs or other access controls. It stores metadata and the feed's short excerpt, not full texts; readers are linked to the publisher.",
     "General-interest feeds are filtered for Yemen relevance using a multilingual term list. Collection runs daily; failures are retried with backoff and logged per feed, and one failing source never stops the run.",
   ] },
@@ -71,13 +73,15 @@ export const ar: Block[] = [
     "د. الموضوع: عمّ يتحدث المقال، من تصنيف مُعدّ مسبقاً ومن نماذج مواضيع مستخلصة من البيانات.",
     "هـ. المشاعر تجاه الفاعلين: كيف تُصاغ جملة بعينها تذكر فاعلاً ما، مع الاحتفاظ بالجملة دليلاً. تصف الصياغة لا سلوك الفاعل.",
   ] },
-  { id: "sources", title: "سجل المصادر", body: [
-    "لا تُسجَّل إلا منافذ حقيقية متحقَّق منها. تُفحص روابط الخلاصات قبل إضافتها، والمنافذ التي لا تملك خلاصة صالحة تبقى سجلات غير نشطة بدلاً من اختلاق روابط لها.",
-    "يسجّل كل منفذ مكان عمل غرفة أخباره (مناطق سيطرة صنعاء، مناطق سيطرة الحكومة، مناطق سيطرة الانتقالي، خارج اليمن، أو غير معروف). هذه معلومة عن الموقع تُستخدم في العروض المقارنة، وليست توجّهاً.",
-    "تتطلب أوصاف التوجّه روابط أدلة. وحين تكون الأدلة ضعيفة يكون الوصف «غير معروف» بثقة منخفضة. ولسجلات التوجّه تواريخ صلاحية، فلا يعيد تغيير الملكية كتابة التاريخ.",
+  { id: "sources", title: "اختيار المصادر", body: [
+    "يرصد هدهد مجموعة صغيرة منتقاة من أهم المصادر، لا كل منفذ يذكر اليمن: وسائل إعلام وشخصيات عامة عالية التأثير (الفئة أ، تُختار لجمهورها وتأثيرها)، وجهات رسمية ودبلوماسية ومؤسسات دولية وتنظيمات سياسية (الفئة ب، تُختار لأهميتها المؤسسية).",
+    "لكل مصدر سجل اختيار: سبب اختياره، وأرقام جمهوره مع مصدرها وتاريخها، وتواتر تغطيته لليمن، وأهميته المؤسسية. لا تُضاف المصادر لملء حصة.",
+    "تُحسب درجة التأثير (من ٠ إلى ١٠٠) من الأدلة وتتطلب رقم جمهور قابلاً للاستشهاد. الأهمية المؤسسية صفة منفصلة: قد تكون سفارةٌ مهمة جدًا بجمهور صغير. وللمصادر المؤسسية تُسجَّل الأهمية الإقليمية والتاريخية دون احتسابها، كي لا ترفع الصفة الرسمية درجة التأثير. لا تُقيَّم الموثوقية، ولا يُعدّ أي مصدر أكثر موثوقية لكونه رسميًا.",
+    "تُحلَّل المصادر الرسمية كأي خطاب آخر (المواضيع والفاعلون والنبرة والأماكن والتأطير والأحداث)، وتُوسَم كل مادة منها بأنها بيان رسمي أو منشور مؤسسي أو بيان سياسي. وهي تُظهر ما تقوله الجهة لا ما حدث.",
+    "يسجّل كل مصدر المعسكر اليمني والدولة الأجنبية التي ينتمي إليها أو يُوثَّق دعمه لها، مع روابط الأدلة ودرجة الثقة وتاريخ التقييم. ومن دون أدلة تكون القيمة «غير مقيَّمة». وتحتفظ التصنيفات بتاريخها.",
   ] },
   { id: "collection", title: "الجمع", body: [
-    "تأتي المقالات من خلاصات RSS/Atom للناشرين ومن استعلامات Google News وGDELT عن اليمن، وتُنسب مواد المجمّعات إلى الناشر الأصلي متى كان نطاقه مسجّلاً.",
+    "تأتي المواد من خلاصات RSS/Atom للناشرين، وخلاصات قنوات يوتيوب الرسمية، والمعاينة العامة لقنوات تيليغرام العامة (حيث يسمح ملف robots.txt فقط)، واستعلامات Google News وGDELT عن اليمن. حسابات إكس مسجلة لكنها لا تُجمع، لأن واجهة إكس مدفوعة ولا يُسمح بكشط الموقع.",
     "يحترم الجامع ملف robots.txt ويعرّف بنفسه ويستخدم الطلبات المشروطة، ولا يتجاوز أبداً جدران الدفع أو تسجيل الدخول أو CAPTCHA أو أي ضوابط وصول. ويحفظ البيانات الوصفية والمقتطف القصير من الخلاصة، لا النصوص الكاملة، ويُحال القارئ إلى الناشر.",
     "تُصفّى الخلاصات العامة بحسب صلتها باليمن عبر قائمة مصطلحات متعددة اللغات. يعمل الجمع يومياً، وتُعاد المحاولة عند الفشل مع تأخير متزايد ويُسجَّل لكل خلاصة، ولا يوقف تعطّل مصدر واحد التشغيل.",
   ] },

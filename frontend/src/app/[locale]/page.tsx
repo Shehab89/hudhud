@@ -4,16 +4,17 @@ import { tryApi, type Overview } from "@/lib/api";
 import { fmtDate, fmtNumber } from "@/lib/i18n";
 import { MODULES, num2, t } from "@/lib/modules";
 import { setup, type PageProps } from "@/lib/page";
+import { CATEGORY_ORDER, L } from "@/lib/registry";
 
 const COPY = {
   en: { hero: "How is Yemen being covered, and by whom?", sub: "A multilingual, evidence-based tool for tracking media coverage of Yemen: who reports, in which language, with which words and frames. It describes coverage. It does not rank actors or say what is true.",
     scroll: "Scroll down to select a module", snapshot: "Latest daily summary", discover: "Discover", metrics: "At a glance (last 30 days)",
-    measures: "Five measures, never merged into one score", registry: "outlets in the registry", live: "with a working feed",
+    measures: "Five measures, never merged into one score", registry: "curated sources", live: "collected now",
     mA: ["A", "Source orientation", "Who the outlet is, with evidence"], mB: ["B", "Sentiment", "Tone of one article"], mC: ["C", "Framing", "How an issue is presented"],
     mD: ["D", "Topic", "What it is about"], mE: ["E", "Actor-targeted sentiment", "How sentences naming an actor read"], noRun: "No pipeline run recorded yet." },
   ar: { hero: "كيف تُغطّى اليمن، ومن يغطيها؟", sub: "أداة متعددة اللغات قائمة على الأدلة لرصد التغطية الإعلامية لليمن: من ينشر وبأي لغة وبأي كلمات وأطر. هي تصف التغطية ولا تصنّف الأطراف ولا تحكم بما هو صحيح.",
     scroll: "مرّر للأسفل لاختيار وحدة", snapshot: "آخر ملخص يومي", discover: "استكشف", metrics: "نظرة سريعة (آخر ٣٠ يومًا)",
-    measures: "خمسة مقاييس منفصلة لا تُدمج في درجة واحدة", registry: "منفذًا في السجل", live: "لها تغذية عاملة",
+    measures: "خمسة مقاييس منفصلة لا تُدمج في درجة واحدة", registry: "مصدرًا منتقى", live: "تُجمع حاليًا",
     mA: ["أ", "توجه المصدر", "من هو المنفذ، مع الأدلة"], mB: ["ب", "المشاعر", "نبرة مقال واحد"], mC: ["ج", "التأطير", "كيف تُعرض القضية"],
     mD: ["د", "الموضوع", "عمّ يتحدث"], mE: ["هـ", "المشاعر تجاه الأطراف", "كيف تُقرأ الجمل التي تذكر طرفًا"], noRun: "لا توجد عملية معالجة مسجلة بعد." },
 };
@@ -23,10 +24,12 @@ export default async function Home(props: PageProps) {
   const c = COPY[l];
   const [ov, src] = await Promise.all([
     tryApi<Overview>("/overview"),
-    tryApi<{ count: number; sources: { active: boolean; articles: number }[] }>("/sources?demo=exclude"),
+    tryApi<{ count: number; sources: { active: boolean; articles: number; category: string; feeds: number }[] }>("/sources?demo=exclude"),
   ]);
   const total = src?.count ?? 0;
-  const registry = src?.sources.filter((s) => s.active).length ?? 0;
+  const registry = src?.sources.filter((s) => s.active && s.feeds > 0).length ?? 0;
+  const byCat = new Map<string, number>();
+  for (const s of src?.sources ?? []) byCat.set(s.category, (byCat.get(s.category) ?? 0) + 1);
   const metrics: [string, number | undefined][] = [
     [d.common.articles, ov?.current.articles], [d.common.stories, ov?.current.unique_stories],
     [d.common.sources, registry], [d.common.languages, ov?.current.languages],
@@ -56,6 +59,11 @@ export default async function Home(props: PageProps) {
           <p className="mt-3 text-xs text-muted">
             <span className="num">{fmtNumber(total, l)}</span> {c.registry} · <span className="num">{fmtNumber(registry, l)}</span> {c.live}
           </p>
+          {byCat.size > 0 && (
+            <p className="mt-1 text-xs text-muted">
+              {CATEGORY_ORDER.filter((k) => byCat.get(k)).map((k, i) => <span key={k}>{i ? " · " : ""}<span className="num">{fmtNumber(byCat.get(k) ?? 0, l)}</span> {L.category(k, l)}</span>)}
+            </p>
+          )}
         </div>
         <div className="rounded-lg border border-line bg-surface p-5">
           <h2 className="label-caps text-muted mb-2">{c.snapshot}</h2>
