@@ -44,7 +44,10 @@ def test_valid_official_record():
 
 def test_official_status_does_not_raise_influence():
     # 2k followers + monthly Yemen statements: low influence, high institutional importance.
-    sel = {**_rec()["selection"], "influence_evidence": {"regional_importance": "high", "historical_importance": "high"}}
+    sel = {
+        **_rec()["selection"],
+        "influence_evidence": {"regional_importance": "high", "historical_importance": "high"},
+    }
     score, parts = curation.influence(sel, "B")
     assert score == 11.0  # reach 3 + monthly 8; institutional ratings are not scored for tier B
     assert parts["reach"] == 3.0

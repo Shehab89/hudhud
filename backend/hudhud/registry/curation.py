@@ -135,7 +135,9 @@ def _number(v: Any) -> float | None:
 INSTITUTIONAL_HALO = ("regional_importance", "historical_importance")
 
 
-def influence(selection: dict[str, Any] | None, tier: str | None = "A") -> tuple[float | None, dict[str, Any]]:
+def influence(
+    selection: dict[str, Any] | None, tier: str | None = "A"
+) -> tuple[float | None, dict[str, Any]]:
     """Score 0-100 from the evidence in a selection record, with its components.
 
     Influence is first of all reach, so there is no score without a citable audience figure,

@@ -40,7 +40,9 @@ def test_curated_record_is_stored_with_separate_scores(session, tmp_path):
     from hudhud.db import models as m
     from hudhud.registry.seed import seed_sources
 
-    old = m.Source(slug="test-old", name="Old", url="https://old.example/", source_type="tv", source_group="x")
+    old = m.Source(
+        slug="test-old", name="Old", url="https://old.example/", source_type="tv", source_group="x"
+    )
     session.add(old)
     session.flush()
     (tmp_path / "sources").mkdir()

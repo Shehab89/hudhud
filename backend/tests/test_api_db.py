@@ -156,7 +156,9 @@ def test_camp_comparison_keeps_groups_apart(client):
 
 
 def test_custom_group_comparison_validates(client):
-    bad = client.post("/api/v1/compare/groups", json={"groups": [{"key": "x", "label": {"en": "x"}, "any": [{}]}]})
+    bad = client.post(
+        "/api/v1/compare/groups", json={"groups": [{"key": "x", "label": {"en": "x"}, "any": [{}]}]}
+    )
     assert bad.status_code == 422  # at least two groups
     ok = client.post(
         "/api/v1/compare/groups?demo=only",
