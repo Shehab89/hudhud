@@ -32,6 +32,9 @@ jobs:
       LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'none' }}
       USER_AGENT: ${{ vars.USER_AGENT || 'HudhudBot/0.1 (research crawler; respects robots.txt)' }}
       NLP_BACKEND: auto
+      # Embedding and story matching always cover every new article; the slower per-article
+      # analysis stops after this budget and the rest is picked up by the next run.
+      ANALYSE_MAX_SECONDS: "4800"
       HF_HOME: ${{ github.workspace }}/.hf
       LOG_JSON: "true"
     steps:

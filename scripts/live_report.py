@@ -82,6 +82,41 @@ with eng.connect() as c:
         group by 1, 2 order by 3 desc limit 20""")
     ).all()
     total = c.execute(text("select count(*) from articles where not is_demo")).scalar()
+    # The stories behind those counts, so the matching can be read and judged, not just counted.
+    story_rows = (
+        c.execute(
+            text("""
+        select a.story_cluster_id cid, s.name source, s.yemen_political_alignment camp, a.title, a.url
+        from articles a join sources s on s.id = a.source_id
+        where not a.is_demo and a.story_cluster_id in (
+            select story_cluster_id from articles where not is_demo and story_cluster_id is not null
+            group by 1 having count(distinct source_id) > 1)
+        order by a.story_cluster_id, a.published_at""")
+        )
+        .mappings()
+        .all()
+    )
+    status = dict(
+        c.execute(
+            text("select processing_status, count(*) from articles where not is_demo group by 1")
+        ).all()
+    )
+    # what actually produced the stored results: method and model per analysis table
+    produced = c.execute(
+        text("""
+        select t, a.method, coalesce(mo.name, '-') model, count(*) n from (
+            select 'sentiment' t, method, model_version_id from sentiment_analysis where is_current
+            union all select 'emotion/tone', method, model_version_id from emotion_analysis where is_current
+            union all select 'frames', method, model_version_id from framing_analysis where is_current
+            union all select 'categories', method, model_version_id from category_assignments where is_current
+        ) a left join model_versions mv on mv.id = a.model_version_id
+            left join models mo on mo.id = mv.model_id
+        group by 1, 2, 3 order by 1, 4 desc""")
+    ).all()
+    last_analyse = c.execute(
+        text("""select stats->'analyse'->'result' from pipeline_runs
+        where stats ? 'analyse' order by id desc limit 1""")
+    ).scalar()
 
 health: dict[str, int] = {}
 by_type: dict[str, dict[str, int]] = {}
@@ -102,6 +137,9 @@ data = {
     "feeds_detail": [dict(r) for r in feeds],
     "sample": [{**dict(r), "published_at": str(r["published_at"])} for r in sample],
     "errors": [{"stage": s, "type": t, "n": n} for s, t, n in errors],
+    "processing_status": status,
+    "analysis_produced_by": [{"table": t, "method": mth, "model": mo, "n": n} for t, mth, mo, n in produced],
+    "analyse_stage": last_analyse,
 }
 (out / "report.json").write_text(json.dumps(data, ensure_ascii=False, indent=1, default=str))
 
@@ -126,6 +164,35 @@ md += [
     f"| {r['source']} | {r['language']} | [{(r['title'] or '').replace('|', '/')[:120]}]({r['url']}) |"
     for r in sample
 ]
+md += ["\n## Analysis\n", f"Articles by processing status: {status}."]
+if last_analyse:
+    md.append(
+        f"Analyse stage: analysed {last_analyse.get('analysed')}, deferred to the next run "
+        f"{last_analyse.get('deferred')}, embedder {last_analyse.get('embedder')}, transformer models "
+        f"{last_analyse.get('transformer_models')}; seconds by part {last_analyse.get('seconds_by_part')}."
+    )
+md += ["", "| Result | Method | Model | Rows |", "|---|---|---|---:|"]
+md += [f"| {t} | {mth} | {mo} | {n} |" for t, mth, mo, n in produced]
+
+stories: dict[int, list[dict]] = {}
+for r in story_rows:
+    stories.setdefault(r["cid"], []).append(r)
+CAMPS = {"plc_government", "ansar_allah", "stc"}
+ranked = sorted(stories.values(), key=lambda rs: (-len({r["camp"] for r in rs} & CAMPS), -len(rs)))
+md += [
+    "\n## Stories reported by more than one source\n",
+    "Grouped by the matching the comparison pages use (title similarity, plus embedding similarity when "
+    "the models run). A group is a claim that these articles are about the same story; read them to judge it.",
+    "Camp is the source's documented Yemeni affiliation, not a judgement of what it reported.\n",
+]
+for rs in ranked[:20]:
+    camps = sorted({r["camp"] for r in rs} & CAMPS)
+    md.append(f"**{len(rs)} articles, {len({r['source'] for r in rs})} sources; camps: {camps or 'none'}**\n")
+    md += [
+        f"- {r['source']} ({r['camp']}): [{(r['title'] or '').replace('|', '/')[:110]}]({r['url']})"
+        for r in rs[:6]
+    ]
+    md.append("")
 md += ["\n## Failing feeds\n", "| Source | Type | Feed | Status | Last error |", "|---|---|---|---|---|"]
 md += [
     f"| {f['name']} | {f['feed_type']} | {f['url']} | {f['health_status']} | {(f['last_error'] or '').replace('|', '/')} |"

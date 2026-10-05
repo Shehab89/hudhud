@@ -38,9 +38,10 @@ class AffectResult:
     label: str
     scores: dict[str, float]
     confidence: float
-    method: str
+    method: str  # model | lexicon; the model's name goes in ``model``, not here (the column is 40 chars)
     intensity: float | None = None
     evidence: list[str] = field(default_factory=list)
+    model: str | None = None  # name of the transformer that produced the result, when method == "model"
 
 
 @lru_cache
@@ -139,7 +140,7 @@ def transformer_sentiment(text: str, language: str | None) -> AffectResult:
             scores[key] = round(float(r["score"]), 4)
     label = max(scores, key=scores.get)
     intensity = round(abs(scores["positive"] - scores["negative"]), 4)
-    return AffectResult(label, scores, scores[label], f"model:{model}", intensity)
+    return AffectResult(label, scores, scores[label], "model", intensity, model=model)
 
 
 def zero_shot_distribution(kind: str, text: str) -> AffectResult:
@@ -154,7 +155,7 @@ def zero_shot_distribution(kind: str, text: str) -> AffectResult:
     )
     scores = {lab: round(float(sc), 4) for lab, sc in zip(out["labels"], out["scores"], strict=True)}
     label = max(scores, key=scores.get)
-    return AffectResult(label, scores, scores[label], f"model:{get_settings().zero_shot_model}")
+    return AffectResult(label, scores, scores[label], "model", model=get_settings().zero_shot_model)
 
 
 # ---------------------------------------------------------------- facade

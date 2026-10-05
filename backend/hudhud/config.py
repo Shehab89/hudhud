@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     zero_shot_model: str = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
     ner_model: str = "Davlan/xlm-roberta-base-ner-hrl"
     use_transformer_ner: bool = False
+    # The per-article analysis stops after this many seconds (0 = no limit); articles it did not
+    # reach are analysed by the next run. Results are committed every ``analyse_commit_every``.
+    analyse_max_seconds: float = 0
+    analyse_commit_every: int = 8
 
     # Confidence routing thresholds
     accept_threshold: float = 0.85

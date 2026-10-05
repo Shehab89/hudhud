@@ -7,12 +7,14 @@ instead of deleting them, so historical results stay reproducible.
 
 from __future__ import annotations
 
+import datetime as dt
 import time
+from contextlib import contextmanager
 from dataclasses import dataclass, field
 
 import numpy as np
 import structlog
-from sqlalchemy import delete, select, update
+from sqlalchemy import delete, func, select, update
 from sqlalchemy.orm import Session
 
 from hudhud.config import get_settings
@@ -24,7 +26,7 @@ from hudhud.nlp.events import extract_events
 from hudhud.nlp.framing import FrameSpec, detect_frames
 from hudhud.nlp.gazetteer import Gazetteer
 from hudhud.nlp.registry import ANALYSIS_VERSION, model_version_id, use_transformers
-from hudhud.pipeline.dedup import semantic_links
+from hudhud.pipeline.dedup import rebuild_story_clusters, semantic_links
 
 log = structlog.get_logger()
 TARGET_TYPES = ("political_actor", "armed_group", "country", "igo", "person")
@@ -38,7 +40,6 @@ class Context:
     lexicon_mv: int
     gazetteer_mv: int
     events_mv: int
-    sentiment_mv: int
     zero_shot_mv: int | None
     use_models: bool
     gazetteer: Gazetteer
@@ -50,6 +51,22 @@ class Context:
     stats: dict = field(
         default_factory=lambda: {"analysed": 0, "embedded": 0, "llm_reviews": 0, "uncertain": 0}
     )
+    model_mvs: dict[str, int] = field(default_factory=dict)
+    timings: dict[str, float] = field(default_factory=dict)
+
+    def model_mv(self, name: str) -> int:
+        """Model version of the transformer that produced a result (one row per model name)."""
+        if name not in self.model_mvs:
+            self.model_mvs[name] = model_version_id(self.session, name, "default")
+        return self.model_mvs[name]
+
+    @contextmanager
+    def timed(self, part: str):
+        t = time.monotonic()
+        try:
+            yield
+        finally:
+            self.timings[part] = round(self.timings.get(part, 0.0) + time.monotonic() - t, 1)
 
 
 def build_context(session: Session) -> Context:
@@ -66,7 +83,6 @@ def build_context(session: Session) -> Context:
     lexicon_mv = model_version_id(session, "hudhud/lexicon", ANALYSIS_VERSION, provider="internal")
     gazetteer_mv = model_version_id(session, "hudhud/gazetteer", ANALYSIS_VERSION, provider="internal")
     events_mv = model_version_id(session, "hudhud/rule-events", ANALYSIS_VERSION, provider="internal")
-    sentiment_mv = model_version_id(session, s.sentiment_model, "default") if use_models else lexicon_mv
     zero_shot_mv = model_version_id(session, s.zero_shot_model, "default") if use_models else None
     frames = [
         FrameSpec(
@@ -92,7 +108,6 @@ def build_context(session: Session) -> Context:
         lexicon_mv,
         gazetteer_mv,
         events_mv,
-        sentiment_mv,
         zero_shot_mv,
         use_models,
         Gazetteer.from_db(session),
@@ -112,8 +127,24 @@ def _retire(session: Session, model, article_id: int) -> None:
     )
 
 
-def run_analyse(session: Session, run_id: int | None, batch_size: int = 64, limit: int | None = None) -> dict:
+def run_analyse(
+    session: Session,
+    run_id: int | None,
+    batch_size: int = 64,
+    limit: int | None = None,
+    max_seconds: float | None = None,
+) -> dict:
+    """Embed and link every new article, then analyse them one by one within a time budget.
+
+    The first pass is cheap (one embedding per article) and always covers every article, so
+    story matching across outlets never depends on how far the slower second pass got. The
+    second pass commits every few articles and stops when ``max_seconds`` (default
+    ``ANALYSE_MAX_SECONDS``, 0 = no limit) is used up; articles it did not reach keep their
+    status and are analysed by the next run.
+    """
     started = time.monotonic()
+    s = get_settings()
+    budget = s.analyse_max_seconds if max_seconds is None else max_seconds
     ctx = build_context(session)
     context_seconds = round(time.monotonic() - started, 1)
     q = (
@@ -128,29 +159,76 @@ def run_analyse(session: Session, run_id: int | None, batch_size: int = 64, limi
         models=ctx.use_models,
         embedder=ctx.embedder.name,
         context_seconds=context_seconds,
+        budget_seconds=budget or None,
     )
+
+    # pass 1: embeddings + same-story links, then regroup stories so the new links count now
+    todo_ids: list[int] = []
     for start in range(0, len(ids), batch_size):
         batch = [session.get(m.Article, i) for i in ids[start : start + batch_size]]
+        todo_ids += [a.id for a in _embed_batch(ctx, batch)]
+        session.commit()
+    if todo_ids:
+        earliest = session.scalar(select(func.min(m.Article.published_at)).where(m.Article.id.in_(todo_ids)))
+        rebuild_story_clusters(session, earliest - dt.timedelta(days=s.dedup_window_days))
+        session.commit()
+    log.info("embedded_all", articles=ctx.stats["embedded"], seconds=round(time.monotonic() - started, 1))
+
+    # pass 2: the per-article analysis, in small committed steps, within the time budget
+    pass2 = time.monotonic()
+    step = max(1, s.analyse_commit_every)
+    done = 0
+    for start in range(0, len(todo_ids), step):
+        if budget and time.monotonic() - pass2 >= budget:
+            break
+        batch = [session.get(m.Article, i) for i in todo_ids[start : start + step]]
         _analyse_batch(ctx, batch, run_id)
         session.commit()
-        log.info(
-            "analyse_progress",
-            done=min(start + batch_size, len(ids)),
-            total=len(ids),
-            elapsed_seconds=round(time.monotonic() - started, 1),
+        done = min(start + step, len(todo_ids))
+        if done % (step * 8) == 0 or done == len(todo_ids):
+            log.info(
+                "analyse_progress",
+                done=done,
+                total=len(todo_ids),
+                elapsed_seconds=round(time.monotonic() - started, 1),
+            )
+    deferred = len(todo_ids) - done
+    if deferred:
+        log.warning(
+            "analyse_budget_reached",
+            analysed=done,
+            deferred=deferred,
+            budget_seconds=budget,
+            note="deferred articles keep their status and are analysed by the next run",
         )
-    log.info("analyse_done", **ctx.stats, models=ctx.use_models, embedder=ctx.embedder.name)
-    return ctx.stats | {"embedder": ctx.embedder.name, "transformer_models": ctx.use_models}
+    log.info(
+        "analyse_done",
+        **ctx.stats,
+        deferred=deferred,
+        seconds_by_part=ctx.timings,
+        models=ctx.use_models,
+        embedder=ctx.embedder.name,
+    )
+    return ctx.stats | {
+        "embedder": ctx.embedder.name,
+        "transformer_models": ctx.use_models,
+        "deferred": deferred,
+        "seconds_by_part": ctx.timings,
+    }
 
 
-def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> None:
+def _embed_batch(ctx: Context, batch: list[m.Article]) -> list[m.Article]:
+    """Embed the batch's articles that still need analysis and link them to similar stories.
+
+    Returns those articles; the others (exact duplicates, unchanged text) are marked analysed.
+    """
     session = ctx.session
     todo = [a for a in batch if a.duplicate_of_id is None and a.analysed_content_hash != a.content_hash]
     for a in batch:
         if a not in todo:
             a.processing_status = "analysed"
     if not todo:
-        return
+        return []
     # embeddings (cached by content hash)
     have = {
         aid: h
@@ -162,7 +240,6 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
         )
     }
     need = [a for a in todo if have.get(a.id) != a.content_hash]
-    vectors: dict[int, np.ndarray] = {}
     if need:
         t_embed = time.monotonic()
         vecs = ctx.embedder.embed_documents([article_text(a.title, a.excerpt) for a in need])
@@ -176,19 +253,23 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
                     content_hash=a.content_hash,
                 )
             )
-            vectors[a.id] = v
         ctx.stats["embedded"] += len(need)
-    for a in todo:
-        if a.id not in vectors:
-            emb = session.scalar(
-                select(m.ArticleEmbedding.embedding).where(
-                    m.ArticleEmbedding.article_id == a.id, m.ArticleEmbedding.model_version_id == ctx.embed_mv
-                )
-            )
-            vectors[a.id] = np.asarray(emb, dtype=np.float32)
     session.flush()
     semantic_links(session, [a.id for a in todo], ctx.embed_mv, getattr(ctx.embedder, "semantic", False))
+    return todo
 
+
+def _analyse_batch(ctx: Context, todo: list[m.Article], run_id: int | None) -> None:
+    session = ctx.session
+    vectors = {
+        aid: np.asarray(emb, dtype=np.float32)
+        for aid, emb in session.execute(
+            select(m.ArticleEmbedding.article_id, m.ArticleEmbedding.embedding).where(
+                m.ArticleEmbedding.article_id.in_([a.id for a in todo]),
+                m.ArticleEmbedding.model_version_id == ctx.embed_mv,
+            )
+        )
+    }
     t_articles = time.monotonic()
     for a in todo:
         try:
@@ -210,7 +291,12 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
                 )
             )
             a.processing_status = "error"
-    log.info("analysed_batch", articles=len(todo), seconds=round(time.monotonic() - t_articles, 1))
+    ctx.timings["articles"] = round(ctx.timings.get("articles", 0.0) + time.monotonic() - t_articles, 1)
+
+
+def _affect_mv(ctx: Context, res: affect.AffectResult) -> int:
+    """Model version of the transformer that produced ``res`` (lexicon results use the lexicon's)."""
+    return ctx.model_mv(res.model) if res.model else ctx.lexicon_mv
 
 
 def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
@@ -256,7 +342,8 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
         candidates = sorted(cls.scores, key=lambda k: -cls.scores[k])[:6]
         labels = {cid: ctx.classifier.nodes[cid].name_en for cid in candidates}
         try:
-            best, p, zs = zero_shot_rerank(text, labels)
+            with ctx.timed("category_zero_shot"):
+                best, p, zs = zero_shot_rerank(text, labels)
             if p >= get_settings().secondary_threshold:
                 primary, conf, route, method, mv = (
                     best,
@@ -312,28 +399,30 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
         ctx.stats["uncertain"] += 1
 
     # ---- sentiment / emotion / tone (separate dimensions)
-    sent = affect.analyse_sentiment(text, a.language, ctx.use_models)
+    with ctx.timed("sentiment"):
+        sent = affect.analyse_sentiment(text, a.language, ctx.use_models)
     session.add(
         m.SentimentAnalysis(
             article_id=a.id,
             polarity=sent.label if sent.confidence >= 0.35 else "uncertain",
             scores=sent.scores,
             intensity=sent.intensity,
-            model_version_id=ctx.sentiment_mv if sent.method != "lexicon" else ctx.lexicon_mv,
+            model_version_id=_affect_mv(ctx, sent),
             method=sent.method,
             confidence=sent.confidence,
             analysis_version=ANALYSIS_VERSION,
         )
     )
     for kind in ("emotion", "tone"):
-        res = affect.analyse_distribution(kind, text, ctx.use_models)
+        with ctx.timed(kind):
+            res = affect.analyse_distribution(kind, text, ctx.use_models)
         session.add(
             m.EmotionAnalysis(
                 article_id=a.id,
                 kind=kind,
                 scores=res.scores | ({"_evidence": res.evidence} if res.evidence else {}),
                 dominant=res.label,
-                model_version_id=ctx.zero_shot_mv if res.method.startswith("model") else ctx.lexicon_mv,
+                model_version_id=_affect_mv(ctx, res),
                 method=res.method,
                 confidence=res.confidence,
                 analysis_version=ANALYSIS_VERSION,
@@ -341,7 +430,9 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
         )
 
     # ---- frames
-    for fh in detect_frames(text, ctx.frames, ctx.use_models):
+    with ctx.timed("frames"):
+        frame_hits = detect_frames(text, ctx.frames, ctx.use_models)
+    for fh in frame_hits:
         session.add(
             m.FramingAnalysis(
                 article_id=a.id,
@@ -361,7 +452,8 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
         if mm.entity_type not in TARGET_TYPES or (mm.entity_id, mm.sentence) in seen:
             continue
         seen.add((mm.entity_id, mm.sentence))
-        ss = affect.analyse_sentiment(mm.sentence, a.language, ctx.use_models)
+        with ctx.timed("targeted_sentiment"):
+            ss = affect.analyse_sentiment(mm.sentence, a.language, ctx.use_models)
         polar = ss.scores.get("positive", 0) - ss.scores.get("negative", 0)
         if ss.label == "neutral" or abs(polar) < 0.25 or ss.confidence < 0.45:
             continue  # do not infer unsupported sentiment
@@ -373,7 +465,7 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
                 score=round(polar, 4),
                 evidence_sentence=mm.sentence[:1000],
                 method=f"sentence_{ss.method}",
-                model_version_id=ctx.sentiment_mv if ss.method != "lexicon" else ctx.lexicon_mv,
+                model_version_id=_affect_mv(ctx, ss),
                 confidence=ss.confidence,
                 analysis_version=ANALYSIS_VERSION,
             )
@@ -386,8 +478,6 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
 
 
 def _store_event(session: Session, a: m.Article, ev, model_version: int) -> None:
-    import datetime as dt
-
     day = a.published_at.date()
     event = session.scalar(
         select(m.Event)
