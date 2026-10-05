@@ -79,6 +79,7 @@ REGIONAL_ALIGNMENTS = {
     "iran_axis",
     "turkey",
     "egypt",
+    "israel",
     "us",
     "uk",
     "eu",

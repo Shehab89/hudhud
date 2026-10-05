@@ -135,7 +135,7 @@ back: `plc_government`, `ansar_allah`, `stc`, `islah`, `gpc_sanaa`, `gpc_plc`,
 `unknown`.
 
 `regional_alignment` is the foreign state or axis a source belongs to or is documented to
-back: `saudi`, `uae`, `qatar`, `oman`, `kuwait`, `iran_axis`, `turkey`, `egypt`, `us`,
+back: `saudi`, `uae`, `qatar`, `oman`, `kuwait`, `iran_axis`, `turkey`, `egypt`, `israel`, `us`,
 `uk`, `eu`, `russia`, `china`, `none_documented`, `not_applicable`, `unknown`.
 
 Every value other than `unknown`, `not_applicable` and `none_documented` needs at least

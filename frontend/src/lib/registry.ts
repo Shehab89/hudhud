@@ -63,7 +63,7 @@ export const YEMEN_ALIGNMENT: Record<string, T> = {
 export const REGIONAL_ALIGNMENT: Record<string, T> = {
   saudi: { en: "Saudi Arabia", ar: "السعودية" }, uae: { en: "UAE", ar: "الإمارات" }, qatar: { en: "Qatar", ar: "قطر" },
   oman: { en: "Oman", ar: "عُمان" }, kuwait: { en: "Kuwait", ar: "الكويت" }, iran_axis: { en: "Iran and allies", ar: "إيران وحلفاؤها" },
-  turkey: { en: "Turkey", ar: "تركيا" }, egypt: { en: "Egypt", ar: "مصر" }, us: { en: "United States", ar: "الولايات المتحدة" },
+  turkey: { en: "Turkey", ar: "تركيا" }, egypt: { en: "Egypt", ar: "مصر" }, israel: { en: "Israel", ar: "إسرائيل" }, us: { en: "United States", ar: "الولايات المتحدة" },
   uk: { en: "United Kingdom", ar: "المملكة المتحدة" }, eu: { en: "European Union", ar: "الاتحاد الأوروبي" },
   russia: { en: "Russia", ar: "روسيا" }, china: { en: "China", ar: "الصين" },
   none_documented: { en: "None documented", ar: "لا انحياز موثق" }, not_applicable: { en: "Not applicable", ar: "لا ينطبق" },
