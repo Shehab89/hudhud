@@ -815,6 +815,7 @@
     Follower count from the rattibha mirror (976.6K); another mirror (twstalker) showed 1.2M, snapshot dates not
     shown, lower figure used. Alive and active: azat.tv reports him in Muscat contacts on 14 Sep 2026. X is registered,
     not collected.'
+  wikidata: Q126164520
 - id: mohammed-ali-al-houthi
   name: Mohammed Ali al-Houthi
   name_native: محمد علي الحوثي
@@ -852,8 +853,8 @@
   feeds:
   - url: https://t.me/s/Mohammadlhouthi
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; public preview of the channel that describes itself as the official channel of Mohammed Ali
       al-Houthi and cross-posts @Moh_Alhouthi; the X profile bio links to it; robots.txt not yet checked
@@ -1143,6 +1144,7 @@
     the Houthis took Mocha; this is unconfirmed, and on 10 Sep Basha Report flagged an AI-fabricated audio of him
     as a psyop. Treat his position as contested until confirmed. Follower count from the twstalker mirror (snapshot
     date not shown); handle named in Basha Report posts. X is registered, not collected.'
+  wikidata: Q22683225
 - id: aidarous-al-zubaidi
   name: Aidarous al-Zubaidi
   name_native: عيدروس قاسم الزبيدي
@@ -1730,6 +1732,7 @@
   notes: Wikipedia's ambassador list shows no successor after him; the rattibha bio still reads ambassador and SDRPY
     supervisor. The embassy account (@KSAembassyYE) is under the saudi-embassy-yemen record, the programme under
     sdrpy. X is registered, not collected.
+  wikidata: Q58312930
 - id: abda-sharif
   name: Abda Sharif
   name_native: ''
@@ -2370,6 +2373,7 @@
   active: false
   notes: Handle and bio read in the twstalker profile directory (snapshot date not shown); Wikipedia does not list
     the handle. X is registered, not collected.
+  wikidata: Q21572915
 - id: afrah-nasser
   name: Afrah Nasser
   name_native: أفراح ناصر
@@ -2687,8 +2691,8 @@
   feeds:
   - url: https://t.me/s/army21ye
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; public preview of the Telegram channel titled 'Brigadier Yahya Saree / Official Spokesman
       of the Yemeni Armed Forces' (261K subscribers, read 2026-10-05); the X handle army21yemen was supplied by

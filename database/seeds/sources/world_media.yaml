@@ -712,6 +712,12 @@
     notes: candidate; channel id UCQqkDCzglMefUmIl6rcE0eA shown on https://socialblade.com/youtube/c/alainnews for
       the channel linked from al-ain.com (seen 2026-10-04).
     active: false
+  - url: https://t.me/s/alain4u
+    type: telegram_public
+    verified: true
+    verified_at: 2026-10-05
+    yemen_filter: true
+    notes: 'found by the registry check on 2026-10-05: public preview of https://t.me/alain4u'
   selection:
     reason: Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories
       a day, including exclusives from Taiz and on the Southern Transitional Council.
@@ -762,7 +768,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: Existing id with no verified feed in the old registry; no site RSS link found on the homepage. active false
     until the YouTube feed (or a site feed) is verified. yemen_coverage is an estimate, not measured. No working
     feed found on 2026-10-02; kept for the record. al-ain.com/feed returned 404; homepage lists no feed links. Ownership
@@ -1258,6 +1264,12 @@
       (seen 2026-10-05); documented YouTube channel-feed pattern. No Reuters site RSS feed was found in this pass
       (reuters.com was blocked to the fetch tool).
     active: false
+  - url: https://t.me/s/ReutersWorldChannel
+    type: telegram_public
+    verified: true
+    verified_at: 2026-10-05
+    yemen_filter: true
+    notes: 'found by the registry check on 2026-10-05: public preview of https://t.me/ReutersWorldChannel'
   selection:
     reason: The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping,
       Yemen government statements) are syndicated across the press and are among the most-cited English-language
@@ -1315,7 +1327,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or another feed)
     is verified. Traffic is the Semrush figure for the whole reuters.com domain. Semrush page title read 'August
     2026'. reuters.com and apnews.com blocked the fetch tool, so Yemen frequency rests on syndicated copies. Reuters
@@ -2027,6 +2039,7 @@
     notes: candidate; RSS link listed on the jpost.com page https://www.jpost.com/tags/houthi (seen 2026-10-05);
       site-wide index, so Yemen items need keyword filtering. The Houthi tag page itself (https://www.jpost.com/tags/houthi)
       is a page, not a feed.
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCLLLdCANnMAdMyrXdYbSlxg
     type: youtube
     verified: false

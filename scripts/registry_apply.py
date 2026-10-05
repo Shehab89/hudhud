@@ -50,6 +50,11 @@ HANDLE_SHAPE = {
     "x": re.compile(r"^[A-Za-z0-9_]{1,15}$"),
     "telegram": re.compile(r"^[A-Za-z][A-Za-z0-9_]{4,31}$"),
 }
+# Records whose Wikidata item cannot vouch for their accounts, with the reason.
+NO_WIKIDATA_ACCOUNTS = {
+    "yemen-tv-government": "the item describes the state broadcaster from before the 2015 split, "
+    "so its handles may belong to the Sanaa-run channel",
+}
 # Counts older than this are reported but not used as current audience evidence.
 MAX_AGE_DAYS = 3 * 365
 GONE = {"robots_disallowed", "access_restricted", "parse_error"}
@@ -172,6 +177,8 @@ def apply_wikidata(recs: dict[str, dict], wiki: dict, today: dt.date, log: list[
             )
             log.append(f"audience  {sid}: {metric}={f['value']} as of {as_of} ({cite})")
 
+        if sid in NO_WIKIDATA_ACCOUNTS:
+            continue
         platforms = {a.get("platform") for a in rec.get("accounts") or []}
         for platform, handles in (info.get("handles") or {}).items():
             if platform in platforms or len(handles) != 1 or platform not in ACCOUNT_URL:

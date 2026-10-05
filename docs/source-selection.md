@@ -15,9 +15,9 @@ Sources: **138**. Influence scored: 83. Collected by the pipeline now: 41.
 
 | Category | Tier A | Tier B | Collected |
 |---|---:|---:|---:|
-| Media | 33 | 6 | 24 |
+| Media | 33 | 6 | 25 |
 | Social accounts (public figures) | 22 | 29 | 2 |
-| Political organisations | 0 | 4 | 4 |
+| Political organisations | 0 | 4 | 3 |
 | Official government sources | 0 | 20 | 5 |
 | Diplomatic missions | 0 | 7 | 1 |
 | International institutions | 0 | 12 | 3 |
@@ -33,25 +33,25 @@ Sources: **138**. Influence scored: 83. Collected by the pipeline now: 41.
 | Al Jazeera English | QA | A | 100.0 | none | none_documented | qatar | rss | Global English-language news channel with a dedicated Yemen page and daily Yemen reporting, including explainers and on-the-ground features during the 2026 fig… |
 | Asharq Al-Awsat | GB | A | 97.4 | none | none_documented | saudi | rss | Saudi-owned pan-Arab daily of record with a dedicated Yemen tag carrying several Yemen stories a day, including exclusive comment from the coalition. |
 | Associated Press | US | A | 90.0 | none | none_documented | none_documented | no | US-based global wire cooperative with a long-standing Yemen bureau tradition; its Yemen dispatches (Houthi attacks on Saudi Arabia and shipping, front-line fig… |
-| Reuters | GB | A | 90.0 | none | none_documented | none_documented | no | The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping, Yemen government statements) are syndicated across the… |
+| Reuters | GB | A | 90.0 | none | none_documented | none_documented | telegram_public | The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping, Yemen government statements) are syndicated across the… |
 | Sky News Arabia | AE | A | 90.0 | none | none_documented | uae | rss | Abu Dhabi-based 24-hour Arabic news channel, now fully UAE-owned, with a Yemen news category that carried several Yemen stories a day in October 2026. |
 | Al Hadath | SA | A | 88.4 | none | none_documented | saudi | no | Saudi-owned 24-hour political news channel (Al Arabiya's sister) with a dedicated Yemen section updated daily during the 2026 fighting. |
 | Agence France-Presse | FR | A | 84.3 | none | none_documented | none_documented | no | Global wire with a Middle East and North Africa hub and a full Arabic service; its Yemen dispatches (Saudi strikes, Houthi-run health ministry casualty counts,… |
 | Anadolu Agency | TR | A | 83.9 | none | none_documented | turkey | rss | Turkey's state news agency, whose English and Arabic services file frequent Yemen wire reports (Taiz front, Saudi strikes, Houthi claims) that are widely re-us… |
-| The Jerusalem Post | IL | A | 82.9 | none | none_documented | none_documented | rss,telegram_public | Israel's long-running English daily, whose Houthi tag carried about ten stories between 22 September and 2 October 2026 on the Saudi-Houthi escalation, Israeli… |
-| Suhail TV | YE | A | 79.3 | low | islah | unknown | rss | Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day Yemen news on 2026-10-04; the main broadcast voice of th… |
+| The Jerusalem Post | IL | A | 82.9 | none | none_documented | none_documented | telegram_public | Israel's long-running English daily, whose Houthi tag carried about ten stories between 22 September and 2 October 2026 on the Saudi-Houthi escalation, Israeli… |
+| Suhail TV | YE | A | 79.3 | low | islah | unknown | no | Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day Yemen news on 2026-10-04; the main broadcast voice of th… |
 | Yemen Shabab TV / Yemen Shabab Net | YE | A | 78.9 | none | islah | qatar | telegram_public | Satellite news channel with the second-largest YouTube audience of any Yemeni channel (3.84M subscribers, Social Blade Yemen rank 2) and daily Yemen news outpu… |
 | Belqees TV / Belqees Net | YE | A | 74.4 | none | islah | qatar | rss | Major Yemeni news brand (1.37M YouTube subscribers) that kept publishing on digital platforms after its satellite broadcast was suspended on 2025-11-28; YouTub… |
 | Al-Mahriah TV | YE | A | 73.6 | none | islah | qatar | no | Satellite channel with the largest YouTube audience of any Yemeni news channel after Yemen Shabab (3.59M main channel plus 741K news channel); on air in 2026 a… |
 | France 24 Arabic | FR | A | 72.0 | none | none_documented | eu | rss | The Arabic service of the French state international broadcaster, reaching Yemen's neighbourhood and diaspora, with regular dated reporting on the 2026 Houthi-… |
-| Al Ain News | AE | A | 71.5 | none | none_documented | uae | no | Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories a day, including exclusives from Taiz and on the Southern… |
+| Al Ain News | AE | A | 71.5 | none | none_documented | uae | telegram_public | Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories a day, including exclusives from Taiz and on the Southern… |
 | Yemen Today TV | YE | A | 69.6 | low | gpc_plc | unknown | no | The GPC/Saleh-family satellite channel, relaunched outside Yemen after the Houthis seized its Sanaa headquarters in December 2017; 460K YouTube subscribers and… |
 | The Times of Israel | IL | A | 68.0 | none | none_documented | none_documented | no | Israel's leading English-language news site; its live blog carries frequent Yemen entries (Houthi claims against Saudi Arabia and Israel, Saudi strikes), many… |
 | Al-Araby Al-Jadeed | GB | A | 66.5 | none | none_documented | qatar | rss | London-based, Qatari-owned pan-Arab daily with a Yemen section in its navigation and several Yemen stories a day during the 2026 fighting. |
 | Middle East Eye | GB | A | 65.3 | none | none_documented | none_documented | rss | London-based English-language news site with a dedicated Yemen country page and a Yemen war topic, running live-blog updates and reporting on the 2026 Saudi-Ho… |
 | Al Mayadeen | LB | A | 64.9 | none | none_documented | iran_axis | no | Beirut-based pan-Arab channel of the Iran-aligned axis, with a dedicated Yemen country page and regular reports and interviews from Sanaa authorities, Saudi an… |
 | Press TV | IR | A | 62.7 | low | none_documented | iran_axis | rss,telegram_public | Iranian state broadcaster's English-language channel, the main English outlet of the Iran-aligned axis, with frequent Yemen coverage that relays the Sanaa auth… |
-| Mareb Press | YE | A | 61.3 | none | plc_government | unknown | rss,telegram_public | One of Yemen's oldest online newspapers (launched 2006), described by International Media Support as among the serious outlets with significant audiences and b… |
+| Mareb Press | YE | A | 61.3 | none | plc_government | unknown | telegram_public | One of Yemen's oldest online newspapers (launched 2006), described by International Media Support as among the serious outlets with significant audiences and b… |
 | Aden Independent Channel (AIC) | YE | A | 59.3 | low | stc | unknown | no | The main broadcast voice of the southern separatist camp (Southern Transitional Council); 272K YouTube subscribers and 78,500 videos. Went off air for nearly t… |
 | RT Arabic | RU | A | 56.5 | none | none_documented | russia | rss | Russian state-funded Arabic channel with a steady stream of reports on the 2026 Houthi-Saudi escalation, US contacts with the Houthis and Saudi military prepar… |
 | Al-Monitor | US | A | 53.6 | none | none_documented | none_documented | no | Washington-based Middle East news and analysis site with a Yemen country page that carried about ten Yemen stories between September and 5 October 2026 on the… |
@@ -130,7 +130,7 @@ Sources: **138**. Influence scored: 83. Collected by the pipeline now: 41.
 |---|---|---|---:|---|---|---|---|---|
 | Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website) | YE | B |  | medium | plc_government | none_documented | telegram_public | Website of the Nasserist Unionist People's Organisation, one of the anti-Houthi parties of the pro-government alliance, strong in Taiz; carries party statement… |
 | Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site | YE | B |  | high | stc | uae | rss,telegram_public | Official platform of the main southern separatist organisation; publishes statements of its presidency, General Secretariat and local bodies, which remain cent… |
-| Yemeni Congregation for Reform (Islah), official party website | YE | B |  | high | islah | saudi | rss | Official website of Islah, the largest party in the anti-Houthi camp and a pillar of the PLC government; publishes the party's statements and positions of its… |
+| Yemeni Congregation for Reform (Islah), official party website | YE | B |  | high | islah | saudi | no | Official website of Islah, the largest party in the anti-Houthi camp and a pillar of the PLC government; publishes the party's statements and positions of its… |
 | Yemeni Socialist Party (Al-Eshteraki Net, party platform) | YE | B |  | medium | plc_government | none_documented | rss | Platform of the Yemeni Socialist Party, the historic ruling party of South Yemen and a member of the anti-Houthi party alliance; publishes party statements and… |
 
 ## Official government sources

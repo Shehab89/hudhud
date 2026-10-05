@@ -371,6 +371,7 @@
     verified: false
     yemen_filter: false
     notes: Linked from the homepage, but WebFetch received HTML. /rss is 404.
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCdwvdJ8RAp4CUORuUUCRzVA
     type: youtube
     verified: false
@@ -427,7 +428,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry (suhail.net; its rss.php candidate carries over). operating_base outside_yemen:
     Wikipedia says it moved abroad after the 2014 Houthi raid; Wikipedia''s Television in Yemen page says headquartered
     in Riyadh (not independently confirmed for 2026). Regional alignment left unknown: being hosted in Riyadh is
@@ -1279,6 +1280,7 @@
     verified: false
     yemen_filter: false
     notes: Linked from the homepage, but returned an HTML page to WebFetch, not XML.
+    active: false
   - url: https://t.me/s/marebpress1
     type: telegram_public
     verified: true

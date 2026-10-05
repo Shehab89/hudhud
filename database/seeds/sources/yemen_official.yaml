@@ -535,6 +535,7 @@
     verified: false
     yemen_filter: false
     notes: Linked from the homepage, but WebFetch received HTML.
+    active: false
   selection:
     reason: Official website of Islah, the largest party in the anti-Houthi camp and a pillar of the PLC government;
       publishes the party's statements and positions of its branches.
@@ -571,7 +572,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Old id kept (alislah-net); its candidate RSS http://alislah-ye.net/rss.php (linked from the homepage)
     carries over and still needs testing from the ingest host. YouTube link is a legacy /Islahyem user URL with
     no visible channel id, so no YouTube feed is listed. Islah''s newspaper Al-Sahwa (alsahwa-net) and Suhail TV

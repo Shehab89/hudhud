@@ -57,6 +57,16 @@ with eng.connect() as c:
         text("""select coalesce(language,'?') l, count(*) n from articles
         where not is_demo group by 1 order by 2 desc""")
     ).all()
+    # Stories reported by more than one source, and by sources of more than one Yemeni camp:
+    # what the comparison pages' "shared stories" are built from.
+    shared = c.execute(
+        text("""select count(*) filter (where n_sources > 1), count(*) filter (where n_camps > 1)
+        from (select a.story_cluster_id, count(distinct a.source_id) n_sources,
+                     count(distinct s.yemen_political_alignment) filter (
+                       where s.yemen_political_alignment in ('plc_government', 'ansar_allah', 'stc')) n_camps
+              from articles a join sources s on s.id = a.source_id
+              where not a.is_demo and a.story_cluster_id is not null group by 1) x""")
+    ).one()
     sample = (
         c.execute(
             text("""
@@ -101,7 +111,9 @@ md = [
     f"published in the last {os.environ.get('LOOKBACK_DAYS', '3')} days.",
     f"Active feeds: {len(feeds)}; health: {health}.",
     f"Feed health by type: {by_type}.",
-    f"Languages: {dict(langs)}.\n",
+    f"Languages: {dict(langs)}.",
+    f"NLP backend: {os.environ.get('NLP_BACKEND', 'auto')}. Stories reported by more than one source: "
+    f"{shared[0]}; by more than one Yemeni camp (PLC, Ansar Allah, STC): {shared[1]}.\n",
     "## Curated sources by category\n",
     "| Category | Sources | Collected | Articles |",
     "|---|---|---|---|",

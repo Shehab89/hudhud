@@ -5,6 +5,12 @@ name: live-check
 
 on:
   workflow_dispatch:
+    inputs:
+      nlp:
+        description: "NLP backend: fallback (fast) or auto (the transformer models the daily run uses)"
+        type: choice
+        default: fallback
+        options: [fallback, auto]
   push:
     branches: [main]
     paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", "scripts/live_report.py", ".github/workflows/live-check.yml"]
@@ -33,10 +39,11 @@ jobs:
           --health-interval 5s --health-timeout 5s --health-retries 20
     env:
       DATABASE_URL: postgresql+psycopg://hudhud:hudhud@localhost:5432/hudhud
-      NLP_BACKEND: fallback
+      NLP_BACKEND: ${{ inputs.nlp || 'fallback' }}
       # Official sources publish weekly rather than hourly; a two-week window lets one run
       # show them. The daily pipeline keeps the default window and accumulates instead.
       LOOKBACK_DAYS: "14"
+      HF_HOME: ${{ github.workspace }}/.hf
       USER_AGENT: "HudhudBot/0.1 (+https://github.com/${{ github.repository }}; research crawler; respects robots.txt)"
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +51,18 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e ".[llm]"
+      - if: env.NLP_BACKEND == 'fallback'
+        run: pip install -e ".[llm]"
+      - name: Install transformer models (CPU-only torch)
+        if: env.NLP_BACKEND != 'fallback'
+        run: pip install --extra-index-url https://download.pytorch.org/whl/cpu -e ".[ml,llm]"
+      - name: Cache models
+        if: env.NLP_BACKEND != 'fallback'
+        uses: actions/cache@v4
+        with:
+          path: .hf
+          key: hf-models-${{ hashFiles('database/seeds/models.yaml', 'backend/hudhud/config.py') }}
+          restore-keys: hf-models-
       - run: hudhud migrate
       - run: hudhud seed
       - name: Registry check (every listed feed, and Wikidata cross-check)
