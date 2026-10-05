@@ -11,6 +11,9 @@ on:
         type: choice
         default: fallback
         options: [fallback, auto]
+      stages:
+        description: "Pipeline stages (ingest,dedup is enough to test story clustering with the models)"
+        default: ingest,dedup,analyse,topics,metrics
   push:
     branches: [main]
     paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", "scripts/live_report.py", ".github/workflows/live-check.yml"]
@@ -72,7 +75,7 @@ jobs:
           python scripts/registry_check.py snapshot
           cat snapshot/registry_check.md >> "$GITHUB_STEP_SUMMARY"
       - name: Run pipeline on live feeds
-        run: hudhud run --trigger github_actions --stages ingest,dedup,analyse,topics,metrics
+        run: hudhud run --trigger github_actions --stages "${{ inputs.stages || 'ingest,dedup,analyse,topics,metrics' }}"
       - name: Report
         run: |
           mkdir -p snapshot
