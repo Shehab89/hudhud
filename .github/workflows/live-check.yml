@@ -14,6 +14,9 @@ on:
       stages:
         description: "Pipeline stages (ingest,dedup is enough to test story clustering with the models)"
         default: ingest,dedup,analyse,topics,metrics
+      lookback_days:
+        description: "Collect items published in the last N days"
+        default: "14"
   push:
     branches: [main]
     paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", "scripts/live_report.py", ".github/workflows/live-check.yml"]
@@ -28,7 +31,7 @@ concurrency:
 jobs:
   live:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     services:
       postgres:
         image: pgvector/pgvector:pg16
@@ -45,7 +48,7 @@ jobs:
       NLP_BACKEND: ${{ inputs.nlp || 'fallback' }}
       # Official sources publish weekly rather than hourly; a two-week window lets one run
       # show them. The daily pipeline keeps the default window and accumulates instead.
-      LOOKBACK_DAYS: "14"
+      LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
       HF_HOME: ${{ github.workspace }}/.hf
       USER_AGENT: "HudhudBot/0.1 (+https://github.com/${{ github.repository }}; research crawler; respects robots.txt)"
     steps:
