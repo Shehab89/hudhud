@@ -3,11 +3,15 @@
 1. Feeds: fetch every listed feed (candidates included) the same way the pipeline does
    (robots.txt honoured, identifying user agent, no bypassing), parse it, and record the
    status, item count, newest item date and the share of Yemen-relevant items.
-2. Wikidata: for each source, find its Wikidata item (the record's `wikidata` id, or a
+2. Discovery: for sources where no listed feed worked, look for feeds the source itself
+   publishes: feed links its homepage declares (<link rel="alternate">), the public preview
+   of its listed Telegram channels, and the channel feed of its listed YouTube channels.
+   Every candidate is fetched and parsed the same way; nothing is guessed from URL patterns.
+3. Wikidata: for each source, find its Wikidata item (the record's `wikidata` id, or a
    name search accepted only when the item's official website or a social handle matches
    the record) and read its social handles and dated follower counts (P8687).
 
-Writes feeds_check.json, wikidata.json and registry_check.md into the directory given as
+Writes feeds_check.json, discovered.json, wikidata.json and registry_check.md into the directory given as
 the first argument. It changes nothing in the registry: results are folded in by hand,
 with the Wikidata item cited as the source of any figure taken from it.
 """
@@ -16,10 +20,11 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import httpx
 import yaml
@@ -61,42 +66,128 @@ def domain(url: str | None) -> str:
 # ---------------------------------------------------------------- feeds
 
 
-def check_feeds(records: list[dict]) -> list[dict]:
-    fetcher = Fetcher(sleep=time.sleep)
-    results = []
+def check_one(fetcher: Fetcher, sid: str, url: str, ftype: str) -> dict:
+    row = {"id": sid, "url": url, "type": ftype, "checked_at": dt.date.today().isoformat()}
     try:
-        for rec in records:
-            for f in rec.get("feeds") or []:
-                row = {
-                    "id": rec["id"],
-                    "url": f["url"],
-                    "type": f.get("type", "rss"),
-                    "checked_at": dt.date.today().isoformat(),
-                }
-                try:
-                    res = fetcher.get(f["url"])
-                    items = PARSERS.get(row["type"], PARSERS["rss"])(res.content)
-                    dates = [i.published_at for i in items if i.published_at]
-                    relevant = sum(
-                        1 for i in items if yemen_relevance(i.title, i.summary) >= RELEVANCE_THRESHOLD
+        res = fetcher.get(url)
+        items = PARSERS.get(ftype, PARSERS["rss"])(res.content)
+        dates = [i.published_at for i in items if i.published_at]
+        relevant = sum(1 for i in items if yemen_relevance(i.title, i.summary) >= RELEVANCE_THRESHOLD)
+        row.update(
+            ok=True,
+            status=res.status,
+            items=len(items),
+            newest=max(dates).isoformat() if dates else None,
+            yemen_relevant=relevant,
+            sample=[i.title[:140] for i in items[:3]],
+        )
+    except FetchError as exc:
+        row.update(ok=False, error=exc.error_type, detail=str(exc)[:200], status=exc.status)
+    except FeedParseError as exc:
+        row.update(ok=False, error="parse_error", detail=str(exc)[:200])
+    except Exception as exc:  # report, never crash the check
+        row.update(ok=False, error=type(exc).__name__, detail=str(exc)[:200])
+    return row
+
+
+def check_feeds(fetcher: Fetcher, records: list[dict]) -> list[dict]:
+    return [
+        check_one(fetcher, rec["id"], f["url"], f.get("type", "rss"))
+        for rec in records
+        for f in rec.get("feeds") or []
+    ]
+
+
+# ---------------------------------------------------------------- discovery
+
+SOCIAL_HOSTS = {"x.com", "twitter.com", "t.me", "youtube.com", "facebook.com", "instagram.com", "tiktok.com"}
+FEED_TYPES = {"application/rss+xml": "rss", "application/atom+xml": "atom"}
+YT_CHANNEL = re.compile(r"(UC[0-9A-Za-z_-]{22})")
+MAX_AUTODISCOVERED = 3
+
+
+def _homepage_feeds(fetcher: Fetcher, url: str) -> list[tuple[str, str, str]]:
+    from lxml import html as lxml_html
+
+    res = fetcher.get(url)
+    doc = lxml_html.fromstring(res.content)
+    out = []
+    for link in doc.xpath('//link[@rel="alternate"][@href]'):
+        ftype = FEED_TYPES.get((link.get("type") or "").lower())
+        href = urljoin(res.url or url, link.get("href"))
+        if ftype and "comment" not in href.lower() and href not in [o[0] for o in out]:
+            out.append((href, ftype, f"declared by {url}"))
+    return out[:MAX_AUTODISCOVERED]
+
+
+def _youtube_feed(fetcher: Fetcher, account: dict) -> tuple[str, str, str] | None:
+    url = account.get("url") or ""
+    m = YT_CHANNEL.search(url)
+    if not m:
+        res = fetcher.get(url)
+        page = res.content.decode("utf-8", errors="replace")
+        canon = re.search(
+            r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[0-9A-Za-z_-]{22})"', page
+        )
+        m = canon or re.search(r'"externalId":"(UC[0-9A-Za-z_-]{22})"', page)
+    if not m:
+        return None
+    return (
+        f"https://www.youtube.com/feeds/videos.xml?channel_id={m.group(1)}",
+        "youtube",
+        f"channel feed of {url}",
+    )
+
+
+def discover(fetcher: Fetcher, records: list[dict], checked: list[dict]) -> list[dict]:
+    working = {r["id"] for r in checked if r.get("ok") and r.get("items")}
+    results = []
+    for rec in records:
+        if rec["id"] in working:
+            continue
+        known = {f["url"] for f in rec.get("feeds") or []}
+        cands: list[tuple[str, str, str]] = []
+        if domain(rec.get("url")) not in SOCIAL_HOSTS:
+            try:
+                cands += _homepage_feeds(fetcher, rec["url"])
+            except Exception as exc:  # unreachable homepages are reported by the feed check
+                results.append(
+                    {
+                        "id": rec["id"],
+                        "url": rec["url"],
+                        "ok": False,
+                        "stage": "homepage",
+                        "error": getattr(exc, "error_type", type(exc).__name__),
+                    }
+                )
+        for acc in rec.get("accounts") or []:
+            try:
+                if acc.get("platform") == "telegram" and acc.get("handle"):
+                    handle = acc["handle"].lstrip("@")
+                    cands.append(
+                        (f"https://t.me/s/{handle}", "telegram_public", f"public preview of {acc['url']}")
                     )
-                    row.update(
-                        ok=True,
-                        status=res.status,
-                        items=len(items),
-                        newest=max(dates).isoformat() if dates else None,
-                        yemen_relevant=relevant,
-                        sample=[i.title[:140] for i in items[:3]],
-                    )
-                except FetchError as exc:
-                    row.update(ok=False, error=exc.error_type, detail=str(exc)[:200], status=exc.status)
-                except FeedParseError as exc:
-                    row.update(ok=False, error="parse_error", detail=str(exc)[:200])
-                except Exception as exc:  # report, never crash the check
-                    row.update(ok=False, error=type(exc).__name__, detail=str(exc)[:200])
-                results.append(row)
-    finally:
-        fetcher.close()
+                elif acc.get("platform") == "youtube" and acc.get("url"):
+                    found = _youtube_feed(fetcher, acc)
+                    if found:
+                        cands.append(found)
+            except Exception as exc:
+                results.append(
+                    {
+                        "id": rec["id"],
+                        "url": acc.get("url"),
+                        "ok": False,
+                        "stage": "account",
+                        "error": getattr(exc, "error_type", type(exc).__name__),
+                    }
+                )
+        for url, ftype, how in cands:
+            if url in known:
+                continue
+            known.add(url)
+            row = check_one(fetcher, rec["id"], url, ftype)
+            row["found_by"] = how
+            results.append(row)
     return results
 
 
@@ -233,27 +324,44 @@ def main() -> None:
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
     out.mkdir(parents=True, exist_ok=True)
     records = load_registry()
-    feeds = check_feeds(records)
-    (out / "feeds_check.json").write_text(json.dumps(feeds, ensure_ascii=False, indent=1))
+    fetcher = Fetcher(sleep=time.sleep)
+    try:
+        feeds = check_feeds(fetcher, records)
+        (out / "feeds_check.json").write_text(json.dumps(feeds, ensure_ascii=False, indent=1))
+        found = discover(fetcher, records, feeds)
+        (out / "discovered.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    finally:
+        fetcher.close()
     wiki = enrich(records)
     (out / "wikidata.json").write_text(json.dumps(wiki, ensure_ascii=False, indent=1))
 
     ok = [f for f in feeds if f.get("ok")]
+    new = [f for f in found if f.get("ok") and f.get("items")]
     md = [
         "# Registry check\n",
         f"Sources: {len(records)}. Feeds checked: {len(feeds)}, parsed: {len(ok)}.",
+        f"Feeds discovered and parsed for sources without a working feed: {len(new)}.",
         f"Wikidata items matched: {len([k for k in wiki if not k.startswith('_')])}.\n",
+        "## Listed feeds\n",
         "| Source | Type | Feed | Result | Items | Yemen-relevant | Newest |",
         "|---|---|---|---|---|---|---|",
     ]
-    for f in feeds:
+    for f in feeds + [{"id": "", "url": ""}] + found:
+        if not f["id"]:
+            md += [
+                "",
+                "## Discovered feeds\n",
+                "| Source | Type | Feed | Result | Items | Yemen-relevant | Newest |",
+                "|---|---|---|---|---|---|---|",
+            ]
+            continue
         result = "ok" if f.get("ok") else f"{f.get('error')} {f.get('status') or ''}".strip()
         md.append(
-            f"| {f['id']} | {f['type']} | {f['url']} | {result} | {f.get('items', '')} | "
+            f"| {f['id']} | {f.get('type', f.get('stage', ''))} | {f['url']} | {result} | {f.get('items', '')} | "
             f"{f.get('yemen_relevant', '')} | {(f.get('newest') or '')[:10]} |"
         )
     (out / "registry_check.md").write_text("\n".join(md) + "\n")
-    print("\n".join(md[:3]))
+    print("\n".join(md[:4]))
 
 
 if __name__ == "__main__":
