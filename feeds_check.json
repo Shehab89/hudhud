@@ -1,0 +1,1524 @@
+[
+ {
+  "id": "ksrelief",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2NqaSOEk6SAmTt4kqnA7Vw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "uae-mofa",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCaLi43UPoOiV7t3w17uQsxA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "oman-mofa",
+  "url": "https://www.fm.gov.om/en/wp-json/wp/v2/posts",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "malformed feed: <unknown>:2:0: syntax error"
+ },
+ {
+  "id": "oman-mofa",
+  "url": "https://www.fm.gov.om/en/feed/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 15,
+  "newest": "2026-10-04T14:42:27+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "Minister welcomes Ambassadors and WHO representative",
+   "His Majesty issues two Royal Decrees",
+   "Ministry opens Senior Diplomatic Course"
+  ]
+ },
+ {
+  "id": "us-embassy-yemen",
+  "url": "https://ye.usembassy.gov/wp-json/wp/v2/posts",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "us-mission-un",
+  "url": "https://usun.usmission.gov/wp-json/wp/v2/posts",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "uk-fcdo",
+  "url": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office&world_locations%5B%5D=yemen",
+  "type": "atom",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-09-25T12:52:00+00:00",
+  "yemen_relevant": 18,
+  "sample": [
+   "UK steps up humanitarian support for vulnerable civilians in Yemen following Houthi escalation",
+   "G7 Statement on Bab al-Mandab and Navigational Rights and Freedoms",
+   "The Houthis bear full responsibility for the escalation in Yemen: UK statement at the UN Security Council"
+  ]
+ },
+ {
+  "id": "british-embassy-yemen",
+  "url": "https://www.gov.uk/world/yemen/news.atom",
+  "type": "atom",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "http_error",
+  "detail": "HTTP 404",
+  "status": 404
+ },
+ {
+  "id": "uk-mission-un",
+  "url": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=uk-mission-to-the-united-nations-new-york&keywords=Yemen",
+  "type": "atom",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 0,
+  "newest": null,
+  "yemen_relevant": 0,
+  "sample": []
+ },
+ {
+  "id": "qatar-mofa",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCmrI7PgmVvVERMp1TbvFBIQ",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "israel-idf",
+  "url": "https://t.me/s/idfofficial",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 18,
+  "newest": "2026-10-05T08:25:25+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "IDF: The IDF eliminated two terrorists who infiltrated Israel during the October 7th Massacre: One of the terrorists infiltrated Kibbutz …",
+   "IDF: The IDF reveals: 170 of those killed during the war, who were presented to the world as innocent journalists, were also military …",
+   "Joint IDF and ISA Announcement:"
+  ]
+ },
+ {
+  "id": "russia-mission-un",
+  "url": "https://t.me/s/russiaun",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 18,
+  "newest": "2026-10-04T12:50:23+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "🇷🇺🇺🇳24 сентября 2026 г. в штаб-квартире ООН в Нью-Йорке заместитель Министра иностранных дел Российской Федерации А.А.Панкин принял участие ",
+   "🗓️24 сентября в штаб-квартире ООН «на полях» недели высокого уровня ГА ООН заместитель Постоянного представителя России при ООН Д.С.Чумаков ",
+   "🇺🇳 Российская делегация под руководством Министра иностранных дел России Сергея Лаврова продолжает держать высочайший темп …"
+  ]
+ },
+ {
+  "id": "osesgy",
+  "url": "https://t.me/s/OSESGY1",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 18,
+  "newest": "2026-10-01T18:42:56+00:00",
+  "yemen_relevant": 18,
+  "sample": [
+   "بيان من المبعوث الخاص للأمم المتحدة إلى اليمن بشأن التصعيد الأخير",
+   "\"The United Nations condemns Ansar Allah’s latest missile and drone attacks on the Kingdom of Saudi Arabia, which struck civilian and …",
+   "\"تدين الأمم المتحدة الهجمات الأخيرة التي شنّتها أنصار الله بالصواريخ والطائرات المسيّرة على المملكة العربية السعودية، والتي استهدفت بنى …"
+  ]
+ },
+ {
+  "id": "osesgy",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDuoMw3Nywwg5b1ncFbr3sg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "un-news",
+  "url": "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-02T12:00:00+00:00",
+  "yemen_relevant": 12,
+  "sample": [
+   "Escalating fighting in Yemen deepens food security crisis",
+   "Gaza: WHO appeals for massive aid influx ahead of winter",
+   "Palestinians yearn for ‘a return to normal life’, says top Middle East peace envoy"
+  ]
+ },
+ {
+  "id": "un-news",
+  "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T12:00:00+00:00",
+  "yemen_relevant": 8,
+  "sample": [
+   "Sudan: Driver killed in aerial attack on aid trucks in South Kordofan",
+   "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
+   "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East"
+  ]
+ },
+ {
+  "id": "un-news",
+  "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-02T12:00:00+00:00",
+  "yemen_relevant": 5,
+  "sample": [
+   "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East",
+   "Gaza: WHO appeals for massive aid influx ahead of winter",
+   "World News in Brief: Marshall Islands nuclear legacy, FlyDubai attack condemned, Ukraine update, breast cancer treatment expanded in West Ba"
+  ]
+ },
+ {
+  "id": "un-ocha",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=OCHA",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "reliefweb",
+  "url": "https://reliefweb.int/country/yem/rss.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "not a feed"
+ },
+ {
+  "id": "reliefweb",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=primary_country.iso3&filter[conditions][0][value]=yem",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "wfp",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=WFP",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "unicef",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=UNICEF",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "iom-yemen",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=IOM",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "unhcr-yemen",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=UNHCR",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "who-yemen",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=WHO",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "icrc",
+  "url": "https://www.icrc.org/en/rss/news",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-02T20:56:06+00:00",
+  "yemen_relevant": 1,
+  "sample": [
+   "Statement at the UN General Assembly's Third Committee General Debate",
+   "ICRC submits Working Paper to the United Nations General Assembly First Committee on Disarmament and International Security, 81st session (2",
+   "ICRC-IFRC joint statement on the occasion of the International Day for the Total Elimination of Nuclear Weapons"
+  ]
+ },
+ {
+  "id": "icrc",
+  "url": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=ICRC",
+  "type": "api",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "human-rights-watch",
+  "url": "https://www.hrw.org/rss/news",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "human-rights-watch",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCoS-mm5bC5eY07AaKntKzgw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "acled",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbN6PMoEeDcfOGkKHvz-1cw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "rashad-al-alimi",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCul1Hqh-4RSa5u67w1b5LVA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "mohammed-ali-al-houthi",
+  "url": "https://t.me/s/Mohammadlhouthi",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 6,
+  "newest": "2026-10-04T15:42:37+00:00",
+  "yemen_relevant": 5,
+  "sample": [
+   "🔘 ‌‌‏الطموحات والمؤامرات..",
+   "🔘 ‌‌‏التآمر لإخلاء ساحة التغيير",
+   "🔘 ‌‌‏اغتيال الكفاءات الوطنية والثوار"
+  ]
+ },
+ {
+  "id": "yahya-saree",
+  "url": "https://t.me/s/army21ye",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 18,
+  "newest": "2026-10-04T17:50:31+00:00",
+  "yemen_relevant": 18,
+  "sample": [
+   "شن الطيران الحربي السعودي خلال الـ24 ساعة الماضية 60 غارةً جويةً وصاروخاً استهدف بها الأعيان المدنية في محافظات صنعاء وصعدة وتعز وحجة ومأرب ",
+   "بيان مهم للقوات المسلحة اليمنية للإعلان عن عملية عسكرية نوعية، في تمام الساعة 9:50م، بعد قليل.",
+   "بيانٌ صادرٌ عن القواتِ المسلحةِ اليمنيةِ"
+  ]
+ },
+ {
+  "id": "al-jazeera-arabic",
+  "url": "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 25,
+  "newest": "2026-10-05T06:13:55+00:00",
+  "yemen_relevant": 2,
+  "sample": [
+   "من غارة غزة إلى أرشيف الجزيرة.. علي العمودي وحوار سابق عن القسام",
+   "نوبل 2026 تبدأ من الطب وإعلان الفائز اليوم",
+   "انكماش في مصر ونمو قوي للقطاع غير النفطي في الخليج"
+  ]
+ },
+ {
+  "id": "al-jazeera-arabic",
+  "url": "https://t.me/s/AjaNews",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:34:57+00:00",
+  "yemen_relevant": 6,
+  "sample": [
+   "عاجل | القوات الحكومية اليمنية: مطار ذو باب غرب #تعز تحت سيطرتنا",
+   "عاجل | الجيش الإسرائيلي: بلاغ أولي عن محاولة دهس في منطقة بني نعيم جنوب الضفة الغربية دون وقوع إصابات",
+   "عاجل | إذاعة الجيش الإسرائيلي: 3 فلسطينيين كانوا داخل مركبة وحاولوا دهس جنود عند منطقة بني نعيم قرب الخليل"
+  ]
+ },
+ {
+  "id": "al-jazeera-english",
+  "url": "https://www.aljazeera.com/xml/rss/all.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 25,
+  "newest": "2026-10-05T09:02:06+00:00",
+  "yemen_relevant": 2,
+  "sample": [
+   "Formula One to probe software bug behind Bahrain GP chaos in Sepang",
+   "‘If I didn’t write what moved me, it’d be like putting myself in prison’",
+   "Spain’s PM Pedro Sanchez calls snap election amid housing crisis"
+  ]
+ },
+ {
+  "id": "al-arabiya",
+  "url": "https://www.alarabiya.net/feed/rss2/ar.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "access_restricted",
+  "detail": "HTTP 403 (access restricted; not bypassed)",
+  "status": 403
+ },
+ {
+  "id": "al-arabiya",
+  "url": "https://english.alarabiya.net/feed/rss2/en.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "access_restricted",
+  "detail": "HTTP 403 (access restricted; not bypassed)",
+  "status": 403
+ },
+ {
+  "id": "al-arabiya",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCahpxixMCwoANAftn6IxkTg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-arabiya",
+  "url": "https://t.me/s/alarabiya",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:23:33+00:00",
+  "yemen_relevant": 4,
+  "sample": [
+   "جريمة تهز شيكاغو.. طفلة تلقى حتفها طعناً وسط الشارع https://ara.tv/a8x0h",
+   "نجل رئيس سابق ومقرب من ترامب.. من هو منافس فلافيو  بولسونارو المرشح لرئاسة البرازيل؟ https://ara.tv/lhs4q",
+   "القوات اليمنية تنفذ 1122 عملية دقيقة ضد ميليشيا الحوثي https://ara.tv/bgo98"
+  ]
+ },
+ {
+  "id": "al-hadath",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrj5BGAhtWxDfqbza9T9hqA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "asharq-al-awsat",
+  "url": "https://aawsat.com/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 300,
+  "newest": "2026-10-05T09:34:45+00:00",
+  "yemen_relevant": 15,
+  "sample": [
+   "إجراءات احترازية في روسيا عقب وفاة باحثة بمختبر لأبحاث الطاعون",
+   "«دورة بكين»: شفيونتيك تعود من بعيد وتبلغ ثُمن النهائي",
+   "زيادة 40% خلال عام في الصور المولّدة بالذكاء الاصطناعي لاعتداءات جنسية على الأطفال"
+  ]
+ },
+ {
+  "id": "asharq-al-awsat",
+  "url": "https://english.aawsat.com/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 300,
+  "newest": "2026-10-05T09:27:26+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "Israel Extends ‘Sufa 53’ Project in Southern Quneitra, Seizing Farmland",
+   "Egypt Seeks Regional, International Support for Political Solution in Sudan",
+   "Israeli Army Takes Logistical Steps to Entrench Presence in South Lebanon"
+  ]
+ },
+ {
+  "id": "sky-news-arabia",
+  "url": "https://www.skynewsarabia.com/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 82,
+  "newest": "2026-10-05T08:50:15+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "إيران تدرب نساءها على السلاح استعدادا لمواجهة جديدة",
+   "ناغل: مرونة المركزي الأوروبي ضرورية في مواجهة مخاطر التضخم",
+   "النووي على القمر.. سباق أميركي روسي صيني يثير المخاوف"
+  ]
+ },
+ {
+  "id": "sky-news-arabia",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIJXOvggjKtCagMfxvcCzAA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-ain-news",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQqkDCzglMefUmIl6rcE0eA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-ain-news",
+  "url": "https://t.me/s/alain4u",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-04-28T12:28:19+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "#الإمارات تستدعي نائب السفير الإسرائيلي وتبعث برسائل قوية عقب الهجوم على #قطر",
+   "«غزو #غزة».. #إسرائيل تنهي الاستعدادات و #حماس تعيد ترتيب صفوف قادتها",
+   "الشيخ #محمد_بن_زايد آل نهيان رئيس دولة الإمارات: بمناسبة اليوم الوطني السعودي الخامس والتسعين، أهنئ خادم الحرمين الشريفين وولي العهد الأمير "
+  ]
+ },
+ {
+  "id": "al-araby-al-jadeed",
+  "url": "https://www.alaraby.co.uk/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 161,
+  "newest": "2026-10-05T09:30:07+00:00",
+  "yemen_relevant": 12,
+  "sample": [
+   "توقف خط أنابيب شرق غرب في السعودية بعد اعتداء حوثي",
+   "كيت ألفيس.. حكاية نجمة برازيلية في الكرة الطائرة",
+   "الاحتلال يصيب ثلاثة فلسطينيين بجراح خطيرة بزعم تنفيذ عملية دعس"
+  ]
+ },
+ {
+  "id": "al-araby-al-jadeed",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQ2BzTiRUbL3z4K22dTB5dg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "press-tv",
+  "url": "https://www.presstv.co.uk/rss.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 107,
+  "newest": null,
+  "yemen_relevant": 11,
+  "sample": [
+   "UAE cooperation in release of Iranian prisoners shows Israel’s failure to isolate Iran: Official",
+   "World Teachers’ Day: Iranian teachers turn war-torn classrooms into symbols of courage, resilience",
+   "Two police officers killed in terrorist attack in southeastern Iran"
+  ]
+ },
+ {
+  "id": "press-tv",
+  "url": "https://t.me/s/presstv",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 16,
+  "newest": "2026-10-05T09:34:25+00:00",
+  "yemen_relevant": 1,
+  "sample": [
+   "🇮🇷 24-year-old police sergeants Nezam Dastgoshadeh and Amir Hossein Ghasemi who were martyred in a terrorist attack in Iran’s southeastern …",
+   "A senior Iranian military official says the Hormuz Strait is under Iran's full control and, for the first time since 1853, there are no …",
+   "Karachi families join Gaza march in solidarity with Palestinians"
+  ]
+ },
+ {
+  "id": "al-mayadeen",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9YbjpvsFZytS0DnO1FnTKw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-mayadeen",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZCFHCU-2eGF7V5ciMkoPHw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "anadolu-agency",
+  "url": "https://www.aa.com.tr/en/rss/default?cat=middle-east",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T09:01:05+00:00",
+  "yemen_relevant": 8,
+  "sample": [
+   "3 Palestinians injured in fresh Israeli attacks in Gaza despite ceasefire",
+   "Iran says it disabled Starlink terminals during January protests",
+   "Yemeni government forces claim control of Bab el-Mandeb Strait from Houthis"
+  ]
+ },
+ {
+  "id": "anadolu-agency",
+  "url": "https://www.aa.com.tr/en/rss/default?cat=world",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T09:30:40+00:00",
+  "yemen_relevant": 7,
+  "sample": [
+   "Saudi-led coalition says 100 fighter jets involved in Yemen operation against Houthis",
+   "German spy chief warns of violent conflict risk with Russia",
+   "Yemeni government forces claim control of Bab el-Mandeb Strait from Houthis"
+  ]
+ },
+ {
+  "id": "anadolu-agency",
+  "url": "https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T08:54:16+00:00",
+  "yemen_relevant": 7,
+  "sample": [
+   "الجيش الإسرائيلي يشدد الحصار على غزة بخندق واسع وساتر ترابي",
+   "الضفة.. الجيش الإسرائيلي يهدم منزلا يؤوي عائلتين في الخليل",
+   "العليمي يعلن انطلاق عملية \"فجر اليمن\" لاستعادة صنعاء"
+  ]
+ },
+ {
+  "id": "anadolu-agency",
+  "url": "https://www.aa.com.tr/tr/rss/default?cat=dunya",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T09:31:08+00:00",
+  "yemen_relevant": 3,
+  "sample": [
+   "Yemen ordusu: Babulmendeb'in kontrolünü ele geçirdik",
+   "KKTC'de batan yolcu gemisindeki kayıpları arama çalışmalarında bir kişinin daha cesedine ulaşıldı",
+   "İsrail hapishanelerinde gerekçesiz alıkonulan Suriyeli gençler yaşadıkları esareti anlattı"
+  ]
+ },
+ {
+  "id": "anadolu-agency",
+  "url": "https://www.aa.com.tr/en/rss/default?cat=live",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 30,
+  "newest": "2026-10-05T09:30:40+00:00",
+  "yemen_relevant": 5,
+  "sample": [
+   "Saudi-led coalition says 100 fighter jets involved in Yemen operation against Houthis",
+   "Istanbul Airport remains Europe’s busiest with 1,587 daily flights",
+   "Nolo becomes typhoon after crossing International Date Line"
+  ]
+ },
+ {
+  "id": "reuters",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChqUTb7kYRX8-EiaN3XFrSQ",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "reuters",
+  "url": "https://t.me/s/ReutersWorldChannel",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-07-18T17:00:01+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "Trio win Nobel prize for revealing quantum physics in action",
+   "Gaza aid flotilla says Israeli forces intercepted its boats",
+   "Israel and Hamas agree to Gaza ceasefire and return of hostages"
+  ]
+ },
+ {
+  "id": "associated-press",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC52X5wxOL_s5yw0dQk7NtgA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "afp",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC86dbj-lbDks_hZ5gRKL49Q",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "france24-arabic",
+  "url": "https://www.france24.com/ar/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 24,
+  "newest": "2026-10-05T09:16:06+00:00",
+  "yemen_relevant": 5,
+  "sample": [
+   "اليمن: التحالف بقيادة السعودية يعلن توفير حماية جوية لمضيق باب المندب بمشاركة 100 طائرة مقاتلة",
+   "مراهقون يغلقون مئات المدارس... ما الذي يؤجج احتجاجات الطلاب في فرنسا؟",
+   "الحكومة اليمنية تطلق عملية لاستعادة \"أراضي الجمهورية\" من الحوثيين.. هل هي خطة سعودية؟"
+  ]
+ },
+ {
+  "id": "france24-arabic",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdTyuXgmJkG_O8_75eqej-w",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "rt-arabic",
+  "url": "https://arabic.rt.com/rss/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 100,
+  "newest": "2026-10-05T09:31:53+00:00",
+  "yemen_relevant": 6,
+  "sample": [
+   "أول ظهور لكريستيانو رونالدو بعد مغادرته المعسكر وأزمته مع جيسوس (صور)",
+   "القوات اليمنية تعلن السيطرة على باب المندب والحوثيون ينفون",
+   "لوكاشينكو يتحدث عن \"حج\" البيلاروسيين إلى موسكو"
+  ]
+ },
+ {
+  "id": "middle-east-eye",
+  "url": "https://www.middleeasteye.net/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T07:51:25+00:00",
+  "yemen_relevant": 6,
+  "sample": [
+   "Is Ethiopia repeating its oldest mistake?",
+   "Toilet seats, toys and hair clips: The strangest items Israel still barred from Gaza",
+   "'We're waiting to sweep up their votes': Three days inside the Green Party conference"
+  ]
+ },
+ {
+  "id": "middle-east-eye",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCR0fZh5SBxxMNYdg0VzRFkg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-monitor",
+  "url": "https://www.al-monitor.com/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "jerusalem-post",
+  "url": "https://www.jpost.com/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "malformed feed: <unknown>:2:4172: not well-formed (invalid token)"
+ },
+ {
+  "id": "jerusalem-post",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLLLdCANnMAdMyrXdYbSlxg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "jerusalem-post",
+  "url": "https://t.me/s/The_Jerusalem_Post",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:15:23+00:00",
+  "yemen_relevant": 4,
+  "sample": [
+   "IDF strikes southern Lebanon per local media reports",
+   "Yemen's Houthis say they struck Saudi Aramco sites in Riyadh, Khurais",
+   "Attacks on oil infrastructure endangering marine life in Persian Gulf, research finds"
+  ]
+ },
+ {
+  "id": "yemen-shabab",
+  "url": "https://www.yemenshabab.net/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "access_restricted",
+  "detail": "HTTP 403 (access restricted; not bypassed)",
+  "status": 403
+ },
+ {
+  "id": "yemen-shabab",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0tSaXfJ_YIXshmvFlEsUcg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "yemen-shabab",
+  "url": "https://t.me/s/YemenShababNet",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:19:31+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "أخبار| #اليمن #Yemen",
+   "أخبار| #اليمن #Yemen",
+   "أخبار| #اليمن #Yemen"
+  ]
+ },
+ {
+  "id": "al-mahriah-tv",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuP3I0KTQqLR0z9GT6mls9w",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "belqees",
+  "url": "https://rss.belqees.net/feeds",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 50,
+  "newest": null,
+  "yemen_relevant": 42,
+  "sample": [
+   "الرئيس العليمي يعلن اطلاق عملية \"فجر اليمن\" لتحرير صنعاء وانهاء الانقلاب",
+   "القوات المسلحة تهاجم الحوثيين في ذوباب المطلة على باب المندب",
+   "القوات المسلحة: تنفيذ 1122 عملية وتحييد 1747 حوثياً وتدمير وإعطاب 364 آلية ومعدة ووسيلة نقل وإمداد"
+  ]
+ },
+ {
+  "id": "belqees",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxA_zZwALQMmVMSZyLKC-Nw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "suhail-tv",
+  "url": "https://suhail.net/rss.php",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "malformed feed: <unknown>:23:0: undefined entity"
+ },
+ {
+  "id": "suhail-tv",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdwvdJ8RAp4CUORuUUCRzVA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "yemen-today-tv",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8__N8LvNWsdJFrxUCRS9Jw",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-joumhouriya-tv",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCUWogsiH6pvmJlXJ1IvTMxQ",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-masirah",
+  "url": "https://english.masirahtv.net/rss.php",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 50,
+  "newest": "2026-10-05T12:20:20+00:00",
+  "yemen_relevant": 28,
+  "sample": [
+   "Al-Dhale'e Acting Governor Renews Call for Deceived to Return",
+   "Brazil Election Goes to Runoff as Bolsonaro and Lula Miss Outright Win",
+   "Israeli Forces, Settlers Conduct Nearly 63,000 Attacks in West Bank"
+  ]
+ },
+ {
+  "id": "al-masirah",
+  "url": "https://www.masirahtv.net/rss.php",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "saba-sanaa",
+  "url": "https://www.saba.ye/ar/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "access_restricted",
+  "detail": "HTTP 403 (access restricted; not bypassed)",
+  "status": 403
+ },
+ {
+  "id": "saba-irg",
+  "url": "https://www.sabanew.net/rss.php?lang=ar",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:18:31+00:00",
+  "yemen_relevant": 12,
+  "sample": [
+   "رئيس مجلس القيادة يعلن انطلاق عملية \"فجر اليمن\" لاستعادة مؤسسات الدولة وتحرير العاصمة صنعاء",
+   "رئيس مجلس القيادة يعلن بدء العمليات العسكرية لاستعادة مؤسسات الدولة وبسط سلطتها على كامل التراب الوطني",
+   "تحالف دعم الشرعية: دمرنا 324 هدفاً عالي القيمة مع انطلاق عملية \"فجر اليمن\" ونؤمن الحماية الجوية لمضيق باب المندب"
+  ]
+ },
+ {
+  "id": "saba-irg",
+  "url": "https://www.sabanew.net/rss.php?lang=en",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-04T14:52:03+00:00",
+  "yemen_relevant": 15,
+  "sample": [
+   "President al-Alimi Declares Military Operations to Restore State Institutions, Take Control Over Entire National Territory",
+   "'MASAM' Removes 1,256 Houthi-Laid Landmines In Four Days",
+   "Houthi Militias Documented in 61 Violations in Taiz Over 24 Hours"
+  ]
+ },
+ {
+  "id": "saba-irg",
+  "url": "https://t.me/s/sabanewa",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:18:30+00:00",
+  "yemen_relevant": 13,
+  "sample": [
+   "وزارة الداخلية تشدد على ضرورة الالتزام الصارم بضوابط النشر وعدم تداول أي معلومات عسكرية وأمنية  عدن – سبأنت",
+   "وزيرة الخارجية تبحث مع نظيرها الأردني العلاقات الثنائية وتطورات الأوضاع في اليمن والمنطقة عمّان - سبأنت",
+   "التحالف: مستمرون في دعم الحكومة اليمنية والقوات المسلحة في كافة المسارات لاستعادة الدولة وانهاء الانقلاب الحوثي"
+  ]
+ },
+ {
+  "id": "aic-tv",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbFmpx9BeQBf4H6mIYLpZXQ",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "aden-al-ghad",
+  "url": "https://www.adngad.net/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 25,
+  "newest": "2026-10-05T09:36:00+00:00",
+  "yemen_relevant": 19,
+  "sample": [
+   "صور حصرية من باب المندب بالتزامن مع تقدم قوات العمالقة الجنوبية",
+   "تحالف دعم الشرعية: دمرنا 324 هدفاً عالي القيمة مع انطلاق عملية \"فجر اليمن\" ونؤمن الحماية الجوية لمضيق باب المندب",
+   "رئيس مجلس القيادة يعلن بدء العمليات العسكرية لاستعادة مؤسسات الدولة وبسط سلطتها على كامل التراب الوطني"
+  ]
+ },
+ {
+  "id": "aden-al-ghad",
+  "url": "https://t.me/s/adenalghad_news",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:36:02+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "عدن الغد",
+   "عدن الغد",
+   "عدن الغد"
+  ]
+ },
+ {
+  "id": "al-ayyam",
+  "url": "https://t.me/s/AlayyamAden",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2025-10-07T07:24:49+00:00",
+  "yemen_relevant": 4,
+  "sample": [
+   "صحيفة الأيام - أخبار",
+   "صحيفة الأيام - أخبار",
+   "صحيفة الأيام - رياضة محلية"
+  ]
+ },
+ {
+  "id": "al-ayyam",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCW2R6JM7V_AibLc9dABVlnA",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "mareb-press",
+  "url": "https://marebpress.net/rss.php",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "malformed feed: <unknown>:5:14: not well-formed (invalid token)"
+ },
+ {
+  "id": "mareb-press",
+  "url": "https://t.me/s/marebpress1",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T09:18:08+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "أعلن رئيس مجلس القيادة الرئاسي اليمني رشاد العليمي، الأحد، بدء عمليات عسكرية لاستعادة ما تبقى من أراضي اليمن، مؤكداً انتقال الحكومة من …",
+   "دخلت عناصر جماعة الحوثي اليوم الأحد، منزل رئيس مجلس النواب اليمني الشيخ سلطان البركاني في منطقة البركاني بريف محافظة #تعز الغربي.",
+   "رئيس مجلس القيادة اليمني:"
+  ]
+ },
+ {
+  "id": "yemen-monitor",
+  "url": "https://www.yemenmonitor.com/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-05T09:12:17+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "اليمن ومعركة الدولة",
+   "ناطق الجيش اليمني: المئات من الحوثيين محاصرون في ذوباب",
+   "العليمي يعلن انطلاق عملية «فجر اليمن» لاستعادة مؤسسات الدولة وتحرير صنعاء"
+  ]
+ },
+ {
+  "id": "yemen-monitor",
+  "url": "https://www.yemenmonitor.com/en/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-04T22:26:32+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "Coalition Forces: Our Operations to Support the Yemeni Government Will Continue Until the Houthi Coup Is Ended",
+   "Fierce Battles in Lahj… “Al-Amalika” Announces Confronting a Houthi Attack and Inflicting Heavy Losses",
+   "Yemeni Prime Minister Urges Urgent Humanitarian Response to Counter Houthi Escalation During Meeting with UN Official"
+  ]
+ },
+ {
+  "id": "al-masdar-online",
+  "url": "https://almasdaronline.com/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "26-september-irg",
+  "url": "https://www.26sepnews.net/feed/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-05T09:26:13+00:00",
+  "yemen_relevant": 8,
+  "sample": [
+   "تحالف دعم الشرعية: دمرنا 324 هدفاً عالي القيمة مع انطلاق عملية “فجر اليمن” ونؤمن الحماية الجوية لمضيق باب المندب",
+   "القوات المسلحة تدحر مليشيا الحوثي من باب المندب وتحاصر المئات من عناصرها وفرار آخرين عبر البحر",
+   "رئيس مجلس القيادة يعلن انطلاق عملية “فجر اليمن” لاستعادة مؤسسات الدولة وتحرير العاصمة صنعاء"
+  ]
+ },
+ {
+  "id": "26-september-irg",
+  "url": "https://en.26sepnews.net/feed/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-05T00:59:54+00:00",
+  "yemen_relevant": 9,
+  "sample": [
+   "Armed Forces Regain the Initiative Across Multiple Fronts in Taiz, Inflicting Heavy Losses on Houthi Militia",
+   "Armed Forces Launch Liberation Battle to Restore State Institutions and End Houthi Coup",
+   "President al-Alimi Declares Military Operations to Restore State Institutions, Take Control Over Entire National Territory"
+  ]
+ },
+ {
+  "id": "26-september-sanaa",
+  "url": "https://www.26sep.net/index.php?format=feed&type=rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 0,
+  "newest": null,
+  "yemen_relevant": 0,
+  "sample": []
+ },
+ {
+  "id": "26-september-sanaa",
+  "url": "https://t.me/s/yemseb",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-04T20:41:13+00:00",
+  "yemen_relevant": 13,
+  "sample": [
+   "سريع : 94 غارة وصاروخا سعوديا استهدفت 6 محافظات خلال 24 ساعة",
+   "ناطق الحكومة يدعو المخدوعين من أبناء تعز للعودة الى صف الوطن",
+   "26 غارة للعدو السعودي تستهدف العاصمة صنعاء"
+  ]
+ },
+ {
+  "id": "yemen-tv-government",
+  "url": "https://yementv.tv/feed/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-05T09:06:47+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "التكتل الوطني للأحزاب يعلن تأييده لقرارات رئيس مجلس القيادة وإسناد المعركة الحاسمة لاستعادة الدولة وإنهاء الانقلاب",
+   "القوات المسلحة تدحر مليشيات الحوثي من باب المندب وتحاصر المئات من عناصرها وفرار آخرين عبر البحر",
+   "رئيس مجلس القيادة يعلن انطلاق عملية “فجر اليمن” لاستعادة مؤسسات الدولة وتحرير العاصمة"
+  ]
+ },
+ {
+  "id": "sanaa-center",
+  "url": "https://sanaacenter.org/feed",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-02T10:56:01+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "The Battle for Taiz and the Struggle for Yemen",
+   "Yemen’s Aid Workers Keep the Country Afloat, They Urgently Need Protection",
+   "The Perennial Problem of the Houthis"
+  ]
+ },
+ {
+  "id": "sanaa-center",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCw9jgwgCvj4oFT7Rq196qug",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "south24",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqnCqHHLQgD70-jiGZ6hT4A",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "abaad-studies",
+  "url": "https://t.me/s/abaadstudies",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-09-23T20:58:44+00:00",
+  "yemen_relevant": 20,
+  "sample": [
+   "دراسة جديدة ترصد تحولات دور القبيلة اليمنية في ظل الحرب وسيطرة الحوثيين",
+   "New Abaad Study Examines the Changing Role of Yemen’s Tribes During War",
+   "مركز أبعاد يعزز إنتاجه البحثي خلال يوليو بملفات السيادة والقبيلة والصراع الإقليمي"
+  ]
+ },
+ {
+  "id": "yemen-pmo",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvl55RnNu0L4S80dgEZcrKQ",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "yemen-cby-aden",
+  "url": "https://t.me/s/cby_hq",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 18,
+  "newest": "2026-09-24T14:26:31+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "محافظ البنك المركزي: شركة الشبكة الموحدة للأموال ركيزة أساسية لتطوير منظومة المدفوعات وتعزيز الشمول المالي",
+   "اللجنة الوطنية لتنظيم وتمويل الاستيراد تعقد اجتماعها السادس لعام 2026 وتناقش عدداً من الملفات التنظيمية والاقتصادية",
+   "مجلس إدارة البنك المركزي اليمني يعقد اجتماعه الدوري السابع لعام 2026"
+  ]
+ },
+ {
+  "id": "stc-official",
+  "url": "https://www.stcaden.com/rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 11,
+  "newest": "2026-10-04T21:32:12+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "رئيس تنفيذية انتقالي رخية يتفقد مجمع رخية التعليمي ويطلع على سير العملية التعليمية",
+   "مجلس المستشارين ينعي وفاة عضو المجلس والمناضل الوطني محمد هادي محمد مرشد الأمير",
+   "الرئيس الزُبيدي يُعزّي في وفاة عضو مجلس المستشارين المناضل محمد هادي الأمير"
+  ]
+ },
+ {
+  "id": "stc-official",
+  "url": "https://t.me/s/STCSouthArabia",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-04T21:23:01+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "تنفيذية انتقالي جحاف تعقد اجتماعًا موسعًا لرفع الجاهزية وإسناد القوات المسلحة الجنوبية",
+   "هيئة الشؤون الاجتماعية تناقش مستجدات العمل المجتمعي والإنساني في محافظات الجنوب",
+   "هرهرة يلتقي رئيس تنفيذية انتقالي التواهي ويؤكد: لن نقف مكتوفي الأيدي أمام المساس برموز الجنوب"
+  ]
+ },
+ {
+  "id": "alislah-net",
+  "url": "https://alislah-ye.net/rss.php",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "parse_error",
+  "detail": "malformed feed: <unknown>:9:0: undefined entity"
+ },
+ {
+  "id": "al-eshteraki-net",
+  "url": "https://www.aleshteraki.net/?format=feed&type=rss",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 0,
+  "newest": null,
+  "yemen_relevant": 0,
+  "sample": []
+ },
+ {
+  "id": "al-eshteraki-net",
+  "url": "https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 3,
+  "newest": "2023-09-23T13:32:41+00:00",
+  "yemen_relevant": 1,
+  "sample": [
+   "مقتطف.. من ليلة الزينة الضوئية للقرى.. ( التنصير)",
+   "في الذكرى الثالثة لرحيل العملاق ابوخالد",
+   "الأستاذ أحمد علي السلامي.. ثبات على العهد وحكمة الخبرة والمعرفة"
+  ]
+ },
+ {
+  "id": "al-eshteraki-net",
+  "url": "https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 3,
+  "newest": "2023-04-06T21:51:37+00:00",
+  "yemen_relevant": 0,
+  "sample": [
+   "في الذكرى العشرين لرحيل المناضل مهيوب الشّقب",
+   "صباح البلاد",
+   "صورتان"
+  ]
+ },
+ {
+  "id": "al-eshteraki-net",
+  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXaVL8G6Q5dWiHN3y5WsaFg",
+  "type": "youtube",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "robots_disallowed",
+  "detail": "disallowed by robots.txt",
+  "status": null
+ },
+ {
+  "id": "al-wahdawi-net",
+  "url": "https://alwahdawi.net/rss_news/rss_1.xml",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": false,
+  "error": "access_restricted",
+  "detail": "HTTP 403 (access restricted; not bypassed)",
+  "status": 403
+ },
+ {
+  "id": "al-wahdawi-net",
+  "url": "https://t.me/s/alwahdawinet2004",
+  "type": "telegram_public",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 20,
+  "newest": "2026-10-05T08:45:08+00:00",
+  "yemen_relevant": 16,
+  "sample": [
+   "رياضة: منتخب اليمن للناشئين ينهي الشوط الأول متقدماً على نظيره الإماراتي بهدفين مقابل هدف، في نصف نهائي بطولة غرب آسيا.",
+   "أقرت جامعة تعز تعليق الدراسة في كلياتها ومراكزها الواقعة بمدينة تعز لمدة أسبوع، ابتداءً من الأحد 4 أكتوبر وحتى الخميس 8 أكتوبر 2026، على …",
+   "تأهل المنتخب اليمني للناشئين إلى نهائي بطولة غرب آسيا تحت 17 عاماً، عقب فوزه على نظيره الإماراتي بنتيجة 2-1، مساء اليوم السبت، على ملعب …"
+  ]
+ },
+ {
+  "id": "yemen-mopic",
+  "url": "https://mopicyemen.org/feed/",
+  "type": "rss",
+  "checked_at": "2026-10-05",
+  "ok": true,
+  "status": 200,
+  "items": 10,
+  "newest": "2026-10-04T13:54:00+00:00",
+  "yemen_relevant": 10,
+  "sample": [
+   "وزير التخطيط يبحث مع “اليونيبس” أولويات المشاريع التنموية والاحتياجات الإنسانية",
+   "الوزير الفقمي يبحث مع مستشار وكيل الأمين العام للأمم المتحدة للشؤون الإنسانية تعزيز الاستجابة الإنسانية في اليمن",
+   "انعقاد لجنة تسيير مشروع تعزيز الصمود الاقتصادي في اليمن (المرحلة الثانية) بعمّان"
+  ]
+ }
+]

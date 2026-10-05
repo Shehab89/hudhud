@@ -1,0 +1,1381 @@
+{
+ "articles": 477,
+ "sources_with_articles": 29,
+ "feeds": 59,
+ "feed_health": {
+  "healthy": 59
+ },
+ "feed_health_by_type": {
+  "telegram_public": {
+   "healthy": 21
+  },
+  "rss": {
+   "healthy": 37
+  },
+  "atom": {
+   "healthy": 1
+  }
+ },
+ "per_category": [
+  {
+   "category": "DIPLOMATIC_MISSION",
+   "sources": 7,
+   "collected": 1,
+   "articles": 0
+  },
+  {
+   "category": "INTERNATIONAL_INSTITUTION",
+   "sources": 12,
+   "collected": 3,
+   "articles": 1
+  },
+  {
+   "category": "MEDIA",
+   "sources": 39,
+   "collected": 25,
+   "articles": 418
+  },
+  {
+   "category": "OFFICIAL_GOVERNMENT",
+   "sources": 20,
+   "collected": 5,
+   "articles": 1
+  },
+  {
+   "category": "POLITICAL_ORGANIZATION",
+   "sources": 4,
+   "collected": 3,
+   "articles": 35
+  },
+  {
+   "category": "RESEARCH_ORGANIZATION",
+   "sources": 3,
+   "collected": 1,
+   "articles": 0
+  },
+  {
+   "category": "SOCIAL_ACCOUNT",
+   "sources": 51,
+   "collected": 2,
+   "articles": 20
+  },
+  {
+   "category": "THINK_TANK",
+   "sources": 2,
+   "collected": 1,
+   "articles": 2
+  }
+ ],
+ "languages": {
+  "ar": 329,
+  "en": 142,
+  "tr": 3,
+  "es": 3
+ },
+ "per_source": [
+  {
+   "slug": "al-masirah",
+   "name": "Al-Masirah TV",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_actor_affiliated",
+   "n": 50,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "belqees",
+   "name": "Belqees TV / Belqees Net",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_independent",
+   "n": 50,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (government)",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_state_irg",
+   "n": 49,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "aden-al-ghad",
+   "name": "Aden Al-Ghad",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_independent",
+   "n": 45,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_gulf",
+   "n": 26,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "turkey",
+   "n": 22,
+   "langs": [
+    "ar",
+    "en",
+    "tr"
+   ]
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (Yemeni Armed Forces, government)",
+   "category": "MEDIA",
+   "content_type": "official_statement",
+   "source_group": "yemen_state_irg",
+   "n": 20,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "26-september-sanaa",
+   "name": "26 September (Sanaa)",
+   "category": "MEDIA",
+   "content_type": "official_statement",
+   "source_group": "yemen_state_sanaa",
+   "n": 20,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "al-wahdawi-net",
+   "name": "Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website)",
+   "category": "POLITICAL_ORGANIZATION",
+   "content_type": "political_statement",
+   "source_group": "yemen_actor_affiliated",
+   "n": 20,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "mareb-press",
+   "name": "Mareb Press",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_independent",
+   "n": 20,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_independent",
+   "n": 20,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "yemen-shabab",
+   "name": "Yemen Shabab TV / Yemen Shabab Net",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "yemen_independent",
+   "n": 20,
+   "langs": [
+    "ar",
+    "en",
+    "es"
+   ]
+  },
+  {
+   "slug": "yahya-saree",
+   "name": "Yahya Saree",
+   "category": "SOCIAL_ACCOUNT",
+   "content_type": "social_post",
+   "source_group": "social_account",
+   "n": 18,
+   "langs": [
+    "ar",
+    "en"
+   ]
+  },
+  {
+   "slug": "stc-official",
+   "name": "Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site",
+   "category": "POLITICAL_ORGANIZATION",
+   "content_type": "political_statement",
+   "source_group": "yemen_actor_affiliated",
+   "n": 15,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "al-araby-al-jadeed",
+   "name": "Al-Araby Al-Jadeed",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_pan",
+   "n": 12,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "press-tv",
+   "name": "Press TV",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "iran",
+   "n": 11,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "sky-news-arabia",
+   "name": "Sky News Arabia",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_gulf",
+   "n": 10,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "yemen-tv-government",
+   "name": "Yemen TV (government)",
+   "category": "MEDIA",
+   "content_type": "official_statement",
+   "source_group": "yemen_media",
+   "n": 10,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "al-jazeera-arabic",
+   "name": "Al Jazeera Arabic",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_gulf",
+   "n": 7,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "rt-arabic",
+   "name": "RT Arabic",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "international_arabic_service",
+   "n": 6,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "middle-east-eye",
+   "name": "Middle East Eye",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "international_newspaper",
+   "n": 6,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "france24-arabic",
+   "name": "France 24 Arabic",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "international_arabic_service",
+   "n": 4,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "jerusalem-post",
+   "name": "The Jerusalem Post",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "levant_media",
+   "n": 4,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-arabiya",
+   "name": "Al Arabiya",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_gulf",
+   "n": 4,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "sanaa-center",
+   "name": "Sana'a Center for Strategic Studies",
+   "category": "THINK_TANK",
+   "content_type": "analysis",
+   "source_group": "think_tank_research",
+   "n": 2,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "al-jazeera-english",
+   "name": "Al Jazeera English",
+   "category": "MEDIA",
+   "content_type": "journalism",
+   "source_group": "arab_gulf",
+   "n": 2,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "mohammed-ali-al-houthi",
+   "name": "Mohammed Ali al-Houthi",
+   "category": "SOCIAL_ACCOUNT",
+   "content_type": "social_post",
+   "source_group": "social_account",
+   "n": 2,
+   "langs": [
+    "ar"
+   ]
+  },
+  {
+   "slug": "un-news",
+   "name": "UN News",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "content_type": "institutional_publication",
+   "source_group": "international_humanitarian",
+   "n": 1,
+   "langs": [
+    "en"
+   ]
+  },
+  {
+   "slug": "yemen-mopic",
+   "name": "Ministry of Planning and International Cooperation, Republic of Yemen (PLC government)",
+   "category": "OFFICIAL_GOVERNMENT",
+   "content_type": "official_statement",
+   "source_group": "official_government",
+   "n": 1,
+   "langs": [
+    "ar"
+   ]
+  }
+ ],
+ "feeds_detail": [
+  {
+   "slug": "russia-mission-un",
+   "name": "Permanent Mission of the Russian Federation to the United Nations",
+   "category": "DIPLOMATIC_MISSION",
+   "source_group": "diplomatic_mission",
+   "url": "https://t.me/s/russiaun",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 18,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "icrc",
+   "name": "International Committee of the Red Cross (ICRC), Yemen delegation",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "source_group": "international_humanitarian",
+   "url": "https://www.icrc.org/en/rss/news",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "osesgy",
+   "name": "Office of the Special Envoy of the Secretary-General for Yemen (OSESGY)",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "source_group": "international_institution",
+   "url": "https://t.me/s/OSESGY1",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 18,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "un-news",
+   "name": "UN News",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "source_group": "international_humanitarian",
+   "url": "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "un-news",
+   "name": "UN News",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "source_group": "international_humanitarian",
+   "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "un-news",
+   "name": "UN News",
+   "category": "INTERNATIONAL_INSTITUTION",
+   "source_group": "international_humanitarian",
+   "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (Yemeni Armed Forces, government)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.26sepnews.net/feed/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "26-september-irg",
+   "name": "26 September Net (Yemeni Armed Forces, government)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_irg",
+   "url": "https://en.26sepnews.net/feed/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "26-september-sanaa",
+   "name": "26 September (Sanaa)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_sanaa",
+   "url": "https://t.me/s/yemseb",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "26-september-sanaa",
+   "name": "26 September (Sanaa)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_sanaa",
+   "url": "https://www.26sep.net/index.php?format=feed&type=rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": null,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "aden-al-ghad",
+   "name": "Aden Al-Ghad",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://t.me/s/adenalghad_news",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "aden-al-ghad",
+   "name": "Aden Al-Ghad",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://www.adngad.net/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-ain-news",
+   "name": "Al Ain News",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://t.me/s/alain4u",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-arabiya",
+   "name": "Al Arabiya",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://t.me/s/alarabiya",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-araby-al-jadeed",
+   "name": "Al-Araby Al-Jadeed",
+   "category": "MEDIA",
+   "source_group": "arab_pan",
+   "url": "https://www.alaraby.co.uk/rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 161,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-ayyam",
+   "name": "Al-Ayyam",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://t.me/s/AlayyamAden",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-jazeera-arabic",
+   "name": "Al Jazeera Arabic",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://t.me/s/AjaNews",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-jazeera-arabic",
+   "name": "Al Jazeera Arabic",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-jazeera-english",
+   "name": "Al Jazeera English",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://www.aljazeera.com/xml/rss/all.xml",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 25,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-masirah",
+   "name": "Al-Masirah TV",
+   "category": "MEDIA",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://english.masirahtv.net/rss.php",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/en/rss/default?cat=middle-east",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/en/rss/default?cat=world",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/en/rss/default?cat=live",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/tr/rss/default?cat=dunya",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 28,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "anadolu-agency",
+   "name": "Anadolu Agency",
+   "category": "MEDIA",
+   "source_group": "turkey",
+   "url": "https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 30,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://english.aawsat.com/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 300,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "asharq-al-awsat",
+   "name": "Asharq Al-Awsat",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://aawsat.com/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 300,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "belqees",
+   "name": "Belqees TV / Belqees Net",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://rss.belqees.net/feeds",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 50,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "france24-arabic",
+   "name": "France 24 Arabic",
+   "category": "MEDIA",
+   "source_group": "international_arabic_service",
+   "url": "https://www.france24.com/ar/rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 24,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "jerusalem-post",
+   "name": "The Jerusalem Post",
+   "category": "MEDIA",
+   "source_group": "levant_media",
+   "url": "https://t.me/s/The_Jerusalem_Post",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "mareb-press",
+   "name": "Mareb Press",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://t.me/s/marebpress1",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "middle-east-eye",
+   "name": "Middle East Eye",
+   "category": "MEDIA",
+   "source_group": "international_newspaper",
+   "url": "https://www.middleeasteye.net/rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "press-tv",
+   "name": "Press TV",
+   "category": "MEDIA",
+   "source_group": "iran",
+   "url": "https://t.me/s/presstv",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 16,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "press-tv",
+   "name": "Press TV",
+   "category": "MEDIA",
+   "source_group": "iran",
+   "url": "https://www.presstv.co.uk/rss.xml",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 107,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "reuters",
+   "name": "Reuters",
+   "category": "MEDIA",
+   "source_group": "international_wire",
+   "url": "https://t.me/s/ReutersWorldChannel",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "rt-arabic",
+   "name": "RT Arabic",
+   "category": "MEDIA",
+   "source_group": "international_arabic_service",
+   "url": "https://arabic.rt.com/rss/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 100,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (government)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.sabanew.net/rss.php?lang=en",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (government)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_irg",
+   "url": "https://www.sabanew.net/rss.php?lang=ar",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "saba-irg",
+   "name": "Saba News Agency (government)",
+   "category": "MEDIA",
+   "source_group": "yemen_state_irg",
+   "url": "https://t.me/s/sabanewa",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "sky-news-arabia",
+   "name": "Sky News Arabia",
+   "category": "MEDIA",
+   "source_group": "arab_gulf",
+   "url": "https://www.skynewsarabia.com/rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 82,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://www.yemenmonitor.com/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-monitor",
+   "name": "Yemen Monitor",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://www.yemenmonitor.com/en/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-shabab",
+   "name": "Yemen Shabab TV / Yemen Shabab Net",
+   "category": "MEDIA",
+   "source_group": "yemen_independent",
+   "url": "https://t.me/s/YemenShababNet",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-tv-government",
+   "name": "Yemen TV (government)",
+   "category": "MEDIA",
+   "source_group": "yemen_media",
+   "url": "https://yementv.tv/feed/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "israel-idf",
+   "name": "Israel Defense Forces (IDF Spokesperson's Unit)",
+   "category": "OFFICIAL_GOVERNMENT",
+   "source_group": "official_government",
+   "url": "https://t.me/s/idfofficial",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 18,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "oman-mofa",
+   "name": "Ministry of Foreign Affairs of the Sultanate of Oman",
+   "category": "OFFICIAL_GOVERNMENT",
+   "source_group": "official_government",
+   "url": "https://www.fm.gov.om/en/feed/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 15,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "uk-fcdo",
+   "name": "Foreign, Commonwealth & Development Office (FCDO), United Kingdom",
+   "category": "OFFICIAL_GOVERNMENT",
+   "source_group": "official_government",
+   "url": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office&world_locations%5B%5D=yemen",
+   "feed_type": "atom",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-cby-aden",
+   "name": "Central Bank of Yemen (Aden headquarters)",
+   "category": "OFFICIAL_GOVERNMENT",
+   "source_group": "official_government",
+   "url": "https://t.me/s/cby_hq",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 18,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yemen-mopic",
+   "name": "Ministry of Planning and International Cooperation, Republic of Yemen (PLC government)",
+   "category": "OFFICIAL_GOVERNMENT",
+   "source_group": "official_government",
+   "url": "https://mopicyemen.org/feed/",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-eshteraki-net",
+   "name": "Yemeni Socialist Party (Al-Eshteraki Net, party platform)",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 3,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-eshteraki-net",
+   "name": "Yemeni Socialist Party (Al-Eshteraki Net, party platform)",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.aleshteraki.net/?format=feed&type=rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": null,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-eshteraki-net",
+   "name": "Yemeni Socialist Party (Al-Eshteraki Net, party platform)",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 3,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "al-wahdawi-net",
+   "name": "Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website)",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://t.me/s/alwahdawinet2004",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "stc-official",
+   "name": "Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://t.me/s/STCSouthArabia",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 10,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "stc-official",
+   "name": "Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site",
+   "category": "POLITICAL_ORGANIZATION",
+   "source_group": "yemen_actor_affiliated",
+   "url": "https://www.stcaden.com/rss",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 11,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "abaad-studies",
+   "name": "Abaad Studies and Research Center",
+   "category": "RESEARCH_ORGANIZATION",
+   "source_group": "research_organization",
+   "url": "https://t.me/s/abaadstudies",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "mohammed-ali-al-houthi",
+   "name": "Mohammed Ali al-Houthi",
+   "category": "SOCIAL_ACCOUNT",
+   "source_group": "social_account",
+   "url": "https://t.me/s/Mohammadlhouthi",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 6,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "yahya-saree",
+   "name": "Yahya Saree",
+   "category": "SOCIAL_ACCOUNT",
+   "source_group": "social_account",
+   "url": "https://t.me/s/army21ye",
+   "feed_type": "telegram_public",
+   "health_status": "healthy",
+   "last_item_count": 18,
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  {
+   "slug": "sanaa-center",
+   "name": "Sana'a Center for Strategic Studies",
+   "category": "THINK_TANK",
+   "source_group": "think_tank_research",
+   "url": "https://sanaacenter.org/feed",
+   "feed_type": "rss",
+   "health_status": "healthy",
+   "last_item_count": 20,
+   "consecutive_failures": 0,
+   "last_error": null
+  }
+ ],
+ "sample": [
+  {
+   "source": "26 September Net (Yemeni Armed Forces, government)",
+   "title": "تحالف دعم الشرعية: دمرنا 324 هدفاً عالي القيمة مع انطلاق عملية “فجر اليمن” ونؤمن الحماية الجوية لمضيق باب المندب",
+   "url": "https://www.26sepnews.net/2026/10/05/1-16978/",
+   "language": "ar",
+   "published_at": "2026-10-05 09:26:13+00:00"
+  },
+  {
+   "source": "26 September (Sanaa)",
+   "title": "الانسحاب الأمريكي من العراق وإعادة ترتيب أدوات الهيمنة",
+   "url": "https://t.me/yemseb/28803",
+   "language": "ar",
+   "published_at": "2026-10-04 20:41:13+00:00"
+  },
+  {
+   "source": "Aden Al-Ghad",
+   "title": "عدن الغد",
+   "url": "https://t.me/adenalghad_news/819301",
+   "language": "ar",
+   "published_at": "2026-10-05 09:42:06+00:00"
+  },
+  {
+   "source": "Al Arabiya",
+   "title": "التحالف: 100 طائرة مقاتلة شاركت في عملية \"فجر اليمن\" https://ara.tv/c5qei",
+   "url": "https://t.me/Alarabiya/166758",
+   "language": "ar",
+   "published_at": "2026-10-05 09:23:33+00:00"
+  },
+  {
+   "source": "Al-Araby Al-Jadeed",
+   "title": "توقف خط أنابيب شرق غرب في السعودية بعد اعتداء حوثي",
+   "url": "https://www.alaraby.co.uk/economy/%D8%AA%D9%88%D9%82%D9%81-%D8%AE%D8%B7-%D8%A3%D9%86%D8%A7%D8%A8%D9%8A%D8%A8-%D8%B4%D8%B1%D9%82-%D8%BA%D8%B1%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%AD%D9%88%D8%AB%D9%8A",
+   "language": "ar",
+   "published_at": "2026-10-05 09:30:07+00:00"
+  },
+  {
+   "source": "Al Jazeera Arabic",
+   "title": "عاجل | القوات الحكومية اليمنية: طائرات مسيرة تستهدف المليشيات الحوثية في الجبهة الغربية لمدينة #تعز",
+   "url": "https://t.me/AjaNews/515480",
+   "language": "ar",
+   "published_at": "2026-10-05 09:21:27+00:00"
+  },
+  {
+   "source": "Al Jazeera English",
+   "title": "Yemen gov’t forces commence major combat operation against Houthis",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/yemen-govt-forces-commence-major-combat-operation-against-houthis?traffic_source=rss",
+   "language": "en",
+   "published_at": "2026-10-05 03:11:03+00:00"
+  },
+  {
+   "source": "Al-Masirah TV",
+   "title": "Al-Dhale'e Acting Governor Renews Call for Deceived to Return",
+   "url": "https://english.masirahtv.net/post/58665/",
+   "language": "en",
+   "published_at": "2026-10-05 12:20:20+00:00"
+  },
+  {
+   "source": "Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website)",
+   "title": "تمكنت قوات درع الوطن وألوية العمالقة، مسنودة بالمقاومة الشعبية، اليوم الاثنين، من السيطرة على مديرية ذوباب ومواقع استراتيجية في محيط مضيق …",
+   "url": "https://t.me/alwahdawinet2004/16279",
+   "language": "ar",
+   "published_at": "2026-10-05 08:45:08+00:00"
+  },
+  {
+   "source": "Anadolu Agency",
+   "title": "Yemen ordusu: Babulmendeb'in kontrolünü ele geçirdik",
+   "url": "https://www.aa.com.tr/tr/live-blog/yemen-ordusu-babulmendebin-kontrolunu-ele-gecirdik/6733",
+   "language": "tr",
+   "published_at": "2026-10-05 09:31:15+00:00"
+  },
+  {
+   "source": "Asharq Al-Awsat",
+   "title": "«التحالف»: 100 مقاتلة شاركت في «فجر اليمن» وتدمير 324 هدفاً عالي القيمة",
+   "url": "https://aawsat.com/node/5326102",
+   "language": "ar",
+   "published_at": "2026-10-05 09:21:57+00:00"
+  },
+  {
+   "source": "Belqees TV / Belqees Net",
+   "title": "إدارة أمن عدن تؤكد استتباب الأوضاع وتشدد على عدم نشر التحركات العسكرية",
+   "url": "https://www.belqees.net/locals/%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%85%D9%86-%D8%B9%D8%AF%D9%86-%D8%AA%D8%A4%D9%83%D8%AF-%D8%A7%D8%B3%D8%AA%D8%AA%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%A7%D9%88%D8%B6%D8%A7%D8%B9-%D9%88%D8%AA%D8%B4%D8%AF%D8%AF-%D8%B9%D9%84%D9%89-%D8%B9%D8%AF%D9%85-%D9%86%D8%B4%D8%B1-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9",
+   "language": "ar",
+   "published_at": "2026-10-05 09:42:23.189575+00:00"
+  },
+  {
+   "source": "France 24 Arabic",
+   "title": "مباشر: التحالف بقيادة السعودية يوفر حماية جوية للعمليات العسكرية في باب المندب بنحو 100 طائرة مقاتلة",
+   "url": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261005-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A-%D9%88%D8%B3%D8%B7-%D8%B6%D8%BA%D9%88%D8%B7-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9",
+   "language": "ar",
+   "published_at": "2026-10-05 09:16:06+00:00"
+  },
+  {
+   "source": "The Jerusalem Post",
+   "title": "Saudi Arabia turns to Pakistan, Turkey as US refuses to intervene against Houthi threat - analysis",
+   "url": "https://t.me/The_Jerusalem_Post/17709",
+   "language": "en",
+   "published_at": "2026-10-05 09:15:23+00:00"
+  },
+  {
+   "source": "Mareb Press",
+   "title": "عاجل | عدة غارات قبل قليل للطيران الحربي على #صنعاء.",
+   "url": "https://t.me/marebpress1/127260",
+   "language": "ar",
+   "published_at": "2026-10-05 09:40:50+00:00"
+  },
+  {
+   "source": "Middle East Eye",
+   "title": "Morning update",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-634",
+   "language": "en",
+   "published_at": "2026-10-05 06:59:46+00:00"
+  },
+  {
+   "source": "Mohammed Ali al-Houthi",
+   "title": "🔘 ‌‌‏تحييد #تعز",
+   "url": "https://t.me/Mohammadlhouthi/23877",
+   "language": "ar",
+   "published_at": "2026-10-04 15:42:37+00:00"
+  },
+  {
+   "source": "Press TV",
+   "title": "Fighting intensifies as Sana'a forces advance in Yemen's Taiz, Lahij",
+   "url": "https://presstv.co.uk/Detail/2026/10/05/777636/Fighting-intensifies-as-Yemeni-forces-advamce-in-Taiz-Lahij",
+   "language": "en",
+   "published_at": "2026-10-05 09:42:23.189575+00:00"
+  },
+  {
+   "source": "RT Arabic",
+   "title": "القوات اليمنية تعلن السيطرة على باب المندب والحوثيون ينفون",
+   "url": "https://rtarabic.com/middle_east/1840045-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%A8-%D9%88%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D9%86%D9%81%D9%88%D9%86/",
+   "language": "ar",
+   "published_at": "2026-10-05 09:30:40+00:00"
+  },
+  {
+   "source": "Saba News Agency (government)",
+   "title": "تحالف دعم الشرعية: دمرنا 324 هدفاً عالي القيمة مع انطلاق عملية \"فجر اليمن\" ونؤمن الحماية الجوية لمضيق باب المندب",
+   "url": "http://www.sabanew.net/viewstory/153480",
+   "language": "ar",
+   "published_at": "2026-10-05 09:18:31+00:00"
+  },
+  {
+   "source": "Sana'a Center for Strategic Studies",
+   "title": "The Battle for Taiz and the Struggle for Yemen",
+   "url": "https://sanaacenter.org/publications/perspectives-and-analyses/28435",
+   "language": "en",
+   "published_at": "2026-10-02 10:56:01+00:00"
+  },
+  {
+   "source": "Sky News Arabia",
+   "title": "اليمن.. القوات الحكومية تطلق عملية لاستعادة باب المندب",
+   "url": "https://www.skynewsarabia.com/middle-east/1896292-%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9-%D8%AA%D8%B7%D9%84%D9%82-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%A8",
+   "language": "ar",
+   "published_at": "2026-10-05 08:03:27+00:00"
+  },
+  {
+   "source": "Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site",
+   "title": "رئيس تنفيذية انتقالي رخية يتفقد مجمع رخية التعليمي ويطلع على سير العملية التعليمية",
+   "url": "https://stcaden.com/posts/34114",
+   "language": "ar",
+   "published_at": "2026-10-04 21:32:12+00:00"
+  },
+  {
+   "source": "UN News",
+   "title": "Escalating fighting in Yemen deepens food security crisis",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168509",
+   "language": "en",
+   "published_at": "2026-10-02 12:00:00+00:00"
+  },
+  {
+   "source": "Yahya Saree",
+   "title": "شن الطيران الحربي السعودي خلال الـ24 ساعة الماضية 106 غارات جوية وصواريخ، استهدف بها الأعيان المدنية في العاصمة صنعاء ومحافظات الجوف وتعز …",
+   "url": "https://t.me/army21ye/3807",
+   "language": "ar",
+   "published_at": "2026-10-04 17:50:31+00:00"
+  },
+  {
+   "source": "Yemen Monitor",
+   "title": "اليمن ومعركة الدولة",
+   "url": "https://www.yemenmonitor.com/Details/ArtMID/908/ArticleID/183905?utm_source=rss&utm_medium=rss&utm_campaign=%25d8%25a7%25d9%2584%25d9%258a%25d9%2585%25d9%2586-%25d9%2588%25d9%2585%25d8%25b9%25d8%25b1%25d9%2583%25d8%25a9-%25d8%25a7%25d9%2584%25d8%25af%25d9%2588%25d9%2584%25d8%25a9",
+   "language": "ar",
+   "published_at": "2026-10-05 09:12:17+00:00"
+  },
+  {
+   "source": "Ministry of Planning and International Cooperation, Republic of Yemen (PLC government)",
+   "title": "وزير التخطيط يبحث مع “اليونيبس” أولويات المشاريع التنموية والاحتياجات الإنسانية",
+   "url": "https://mopicyemen.org/blog/2026/10/04/4615/",
+   "language": "ar",
+   "published_at": "2026-10-04 13:54:00+00:00"
+  },
+  {
+   "source": "Yemen Shabab TV / Yemen Shabab Net",
+   "title": "أخبار| #اليمن #Yemen",
+   "url": "https://t.me/YemenShababNet/50685",
+   "language": "en",
+   "published_at": "2026-10-05 09:19:31+00:00"
+  },
+  {
+   "source": "Yemen TV (government)",
+   "title": "التكتل الوطني للأحزاب يعلن تأييده لقرارات رئيس مجلس القيادة وإسناد المعركة الحاسمة لاستعادة الدولة وإنهاء الانقلاب",
+   "url": "https://yementv.tv/%d8%a7%d9%84%d8%aa%d9%83%d8%aa%d9%84-%d8%a7%d9%84%d9%88%d8%b7%d9%86%d9%8a-%d9%84%d9%84%d8%a3%d8%ad%d8%b2%d8%a7%d8%a8-%d9%8a%d8%b9%d9%84%d9%86-%d8%aa%d8%a3%d9%8a%d9%8a%d8%af%d9%87-%d9%84%d9%82%d8%b1/",
+   "language": "ar",
+   "published_at": "2026-10-05 09:06:47+00:00"
+  }
+ ],
+ "errors": [],
+ "processing_status": {
+  "deduped": 279,
+  "analysed": 198
+ },
+ "analysis_produced_by": [
+  {
+   "table": "categories",
+   "method": "keywords+embedding",
+   "model": "hudhud/lexicon",
+   "n": 232
+  },
+  {
+   "table": "categories",
+   "method": "zero_shot",
+   "model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "n": 57
+  },
+  {
+   "table": "emotion/tone",
+   "method": "lexicon",
+   "model": "hudhud/lexicon",
+   "n": 352
+  },
+  {
+   "table": "frames",
+   "method": "lexicon+zero_shot",
+   "model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "n": 133
+  },
+  {
+   "table": "sentiment",
+   "method": "model",
+   "model": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+   "n": 109
+  },
+  {
+   "table": "sentiment",
+   "method": "model",
+   "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+   "n": 67
+  }
+ ],
+ "analyse_stage": {
+  "analysed": 176,
+  "deferred": 279,
+  "embedded": 455,
+  "embedder": "intfloat/multilingual-e5-small",
+  "uncertain": 19,
+  "llm_reviews": 0,
+  "seconds_by_part": {
+   "tone": 0.0,
+   "frames": 213.6,
+   "emotion": 0.0,
+   "articles": 1510.2,
+   "sentiment": 28.7,
+   "category_zero_shot": 1227.8,
+   "targeted_sentiment": 37.5
+  },
+  "transformer_models": true
+ }
+}

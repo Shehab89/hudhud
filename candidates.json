@@ -1,0 +1,2103 @@
+{
+ "queries": {
+  "office_holders": 11,
+  "yemeni_public_figures": 106,
+  "diplomatic_missions": 46
+ },
+ "candidates": [
+  {
+   "qid": "Q4120565",
+   "wikidata": "https://www.wikidata.org/wiki/Q4120565",
+   "label_en": "Habib Ali al-Jufri",
+   "label_ar": "علي الجفري",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "preacher"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "alhabibali"
+    ],
+    "youtube": [
+     "UC9AGtdHF1KIrx_ql9INA8cg"
+    ],
+    "telegram": [
+     "alhabibali"
+    ],
+    "facebook": [
+     "alhabibali"
+    ],
+    "instagram": [
+     "alhabib.ali"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 5954877,
+     "as_of": "2023-02-04"
+    },
+    "youtube": {
+     "value": 545000,
+     "as_of": "2025-01-25"
+    }
+   },
+   "max_followers": 5954877,
+   "enwiki": "Ali al-Jifri"
+  },
+  {
+   "qid": "Q12199113",
+   "wikidata": "https://www.wikidata.org/wiki/Q12199113",
+   "label_en": "Balqees",
+   "label_ar": "بلقيس",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "actor",
+    "singer"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "BalqeesFathi"
+    ],
+    "youtube": [
+     "UCQd1_s2J6NvI-7YYN6MkIxA"
+    ],
+    "facebook": [
+     "BalqeesOfficial"
+    ],
+    "instagram": [
+     "balqeesfathi"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 2848727,
+     "as_of": "2023-02-05"
+    },
+    "youtube": {
+     "value": 2250000,
+     "as_of": "2025-04-27"
+    }
+   },
+   "max_followers": 2848727,
+   "enwiki": "Balqees (singer)"
+  },
+  {
+   "qid": "Q14799310",
+   "wikidata": "https://www.wikidata.org/wiki/Q14799310",
+   "label_en": "Omar Hussein",
+   "label_ar": "عمر حسين",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "YouTuber",
+    "actor",
+    "comedian"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "omarhuss"
+    ],
+    "facebook": [
+     "omarhuss"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 2497805,
+     "as_of": "2023-02-07"
+    }
+   },
+   "max_followers": 2497805,
+   "enwiki": "Omar Hussein"
+  },
+  {
+   "qid": "Q28715088",
+   "wikidata": "https://www.wikidata.org/wiki/Q28715088",
+   "label_en": null,
+   "label_ar": "محمد الربع",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "comedian",
+    "presenter"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "malrubaa"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 826144,
+     "as_of": "2023-02-10"
+    }
+   },
+   "max_followers": 826144,
+   "enwiki": null
+  },
+  {
+   "qid": "Q71254729",
+   "wikidata": "https://www.wikidata.org/wiki/Q71254729",
+   "label_en": null,
+   "label_ar": "محمد جميح",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "mjumeh"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 711097,
+     "as_of": "2023-02-06"
+    }
+   },
+   "max_followers": 711097,
+   "enwiki": null
+  },
+  {
+   "qid": "Q4059062",
+   "wikidata": "https://www.wikidata.org/wiki/Q4059062",
+   "label_en": "Ayoob Tarish",
+   "label_ar": "أيوب طارش",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "composer",
+    "singer"
+   ],
+   "websites": [
+    "https://ayoubtareshabsi.com/"
+   ],
+   "handles": {
+    "youtube": [
+     "UCWIic0-d4fRj3hy5xq-0Duw"
+    ],
+    "telegram": [
+     "ayoubtareshabsi"
+    ],
+    "facebook": [
+     "ayoubtareshabsi"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 645000,
+     "as_of": "2025-08-02"
+    }
+   },
+   "max_followers": 645000,
+   "enwiki": "Ayoob Tarish"
+  },
+  {
+   "qid": "Q6399485",
+   "wikidata": "https://www.wikidata.org/wiki/Q6399485",
+   "label_en": "Khaled Bahah",
+   "label_ar": "خالد محفوظ بحاح",
+   "found_by": [
+    "office_holders",
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "ambassador of Yemen",
+    "diplomat",
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "KhaledBahah"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 445758,
+     "as_of": "2023-02-04"
+    }
+   },
+   "max_followers": 445758,
+   "enwiki": "Khaled Bahah"
+  },
+  {
+   "qid": "Q60565242",
+   "wikidata": "https://www.wikidata.org/wiki/Q60565242",
+   "label_en": "Hussein Moheb",
+   "label_ar": "حسين محب",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "singer"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UCYp6UnPMUxg0kMUaTt3yNVg"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 309000,
+     "as_of": "2025-05-31"
+    }
+   },
+   "max_followers": 309000,
+   "enwiki": "Hussein Moheb"
+  },
+  {
+   "qid": "Q4119168",
+   "wikidata": "https://www.wikidata.org/wiki/Q4119168",
+   "label_en": "Arwa",
+   "label_ar": "أروى",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "actor",
+    "singer"
+   ],
+   "websites": [
+    "https://arwaofficial.com/"
+   ],
+   "handles": {
+    "x": [
+     "ArwaOnline"
+    ],
+    "youtube": [
+     "UCQ1CNMyOCa8QgWr8QliWSuQ"
+    ],
+    "facebook": [
+     "ArwaOnline"
+    ],
+    "instagram": [
+     "arwaonline"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 256228,
+     "as_of": "2023-02-11"
+    },
+    "youtube": {
+     "value": 267000,
+     "as_of": "2025-01-25"
+    }
+   },
+   "max_followers": 267000,
+   "enwiki": "Arwa (singer)"
+  },
+  {
+   "qid": "Q106875171",
+   "wikidata": "https://www.wikidata.org/wiki/Q106875171",
+   "label_en": "Abdul Hakim Al-Hakimi",
+   "label_ar": "عبد الحكيم الحكيمي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "actor",
+    "author",
+    "director",
+    "film producer",
+    "public figure",
+    "screenwriter",
+    "television producer"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UC43HyKMaKU1AOZQBaM9bntw"
+    ],
+    "facebook": [
+     "hakemhakemy"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 249000,
+     "as_of": "2025-12-06"
+    }
+   },
+   "max_followers": 249000,
+   "enwiki": null
+  },
+  {
+   "qid": "Q4678423",
+   "wikidata": "https://www.wikidata.org/wiki/Q4678423",
+   "label_en": "Umar bin Hafiz",
+   "label_ar": "عمر بن حفيظ",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "teacher",
+    "ulema"
+   ],
+   "websites": [
+    "https://alhabibumar.com/"
+   ],
+   "handles": {
+    "x": [
+     "habibomar"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 218974,
+     "as_of": "2023-02-05"
+    }
+   },
+   "max_followers": 218974,
+   "enwiki": "Umar bin Hafiz"
+  },
+  {
+   "qid": "Q106920312",
+   "wikidata": "https://www.wikidata.org/wiki/Q106920312",
+   "label_en": "Ahmed Ghazi",
+   "label_ar": "احمد غازي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "journalist"
+   ],
+   "websites": [
+    "https://ahmedghaziye.com/"
+   ],
+   "handles": {
+    "youtube": [
+     "UCy77dX8TWyKTwAXYjgRPeXw"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 185000,
+     "as_of": "2025-11-28"
+    }
+   },
+   "max_followers": 185000,
+   "enwiki": null
+  },
+  {
+   "qid": "Q104601317",
+   "wikidata": "https://www.wikidata.org/wiki/Q104601317",
+   "label_en": "Mohamed Ahmed Shabiba",
+   "label_ar": "محمد عيضة شبيبة",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "alshabebah"
+    ],
+    "facebook": [
+     "Alshabibahm"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 165999,
+     "as_of": "2023-02-09"
+    }
+   },
+   "max_followers": 165999,
+   "enwiki": null
+  },
+  {
+   "qid": "Q124984322",
+   "wikidata": "https://www.wikidata.org/wiki/Q124984322",
+   "label_en": "Muhammad Al-Hawri",
+   "label_ar": "محمد الحاوري",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "actor"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UCBXff4Ljl88Vq0WwEhkkQQQ"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 134000,
+     "as_of": "2025-01-13"
+    }
+   },
+   "max_followers": 134000,
+   "enwiki": null
+  },
+  {
+   "qid": "Q113455852",
+   "wikidata": "https://www.wikidata.org/wiki/Q113455852",
+   "label_en": "Mohammed Nasser Al-Emad",
+   "label_ar": "محمد ناصر العماد",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "singer"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UCKtWuGveJ5EEzcCNnWoSObA"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 123000,
+     "as_of": "2025-07-01"
+    }
+   },
+   "max_followers": 123000,
+   "enwiki": null
+  },
+  {
+   "qid": "Q16125531",
+   "wikidata": "https://www.wikidata.org/wiki/Q16125531",
+   "label_en": "Sagheer Hamoud Aziz",
+   "label_ar": "صغير حمود أحمد عزيز",
+   "found_by": [
+    "office_holders",
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "Chief of the Staff of the Yemeni Army",
+    "military leader"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "AzizSagheir"
+    ],
+    "facebook": [
+     "AzizSagheir"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 104806,
+     "as_of": "2022-08-23"
+    }
+   },
+   "max_followers": 104806,
+   "enwiki": "Sagheer Hamoud Aziz"
+  },
+  {
+   "qid": "Q17007872",
+   "wikidata": "https://www.wikidata.org/wiki/Q17007872",
+   "label_en": "Nada al-Ahdal",
+   "label_ar": "قضية ندى الأهدل",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "human rights defender"
+   ],
+   "websites": [
+    "https://nadaalahdal.com"
+   ],
+   "handles": {
+    "x": [
+     "nadalahdal"
+    ],
+    "facebook": [
+     "Nada Alahdal"
+    ],
+    "instagram": [
+     "nadalahdal"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 65375,
+     "as_of": "2023-10-23"
+    }
+   },
+   "max_followers": 65375,
+   "enwiki": "Nada al-Ahdal"
+  },
+  {
+   "qid": "Q16148711",
+   "wikidata": "https://www.wikidata.org/wiki/Q16148711",
+   "label_en": "Atiaf Alwazir",
+   "label_ar": "أطياف الوزير",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "author",
+    "blogger",
+    "human rights defender",
+    "journalist",
+    "political scientist",
+    "researcher"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "WomanfromYemen"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 24737,
+     "as_of": "2023-02-10"
+    }
+   },
+   "max_followers": 24737,
+   "enwiki": "Atiaf Alwazir"
+  },
+  {
+   "qid": "Q924397",
+   "wikidata": "https://www.wikidata.org/wiki/Q924397",
+   "label_en": "Ali Nasir Muhammad",
+   "label_ar": "علي ناصر محمد",
+   "found_by": [
+    "office_holders",
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "Secretary General of the Yemeni Socialist Party",
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "AliNasserMohmd"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 22210,
+     "as_of": "2023-02-12"
+    }
+   },
+   "max_followers": 22210,
+   "enwiki": "Ali Nasir Muhammad"
+  },
+  {
+   "qid": "Q6822196",
+   "wikidata": "https://www.wikidata.org/wiki/Q6822196",
+   "label_en": "Ahmed Fathi",
+   "label_ar": "أحمد فتحي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "singer"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "ahmedfathioud"
+    ],
+    "facebook": [
+     "ahmedfathimusic"
+    ],
+    "instagram": [
+     "ahmedfathi_official2"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 18962,
+     "as_of": "2023-02-07"
+    }
+   },
+   "max_followers": 18962,
+   "enwiki": "Ahmed Fathi"
+  },
+  {
+   "qid": "Q59334777",
+   "wikidata": "https://www.wikidata.org/wiki/Q59334777",
+   "label_en": "Mohammed Mohsen Askar",
+   "label_ar": "محمد محسن عسكر",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "YemenAskar"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 18480,
+     "as_of": "2023-02-09"
+    }
+   },
+   "max_followers": 18480,
+   "enwiki": null
+  },
+  {
+   "qid": "Q99162706",
+   "wikidata": "https://www.wikidata.org/wiki/Q99162706",
+   "label_en": "Muna Luqman",
+   "label_ar": "منى شوقي محمد لقمان",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "human rights defender",
+    "peace activist"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "munaluqman"
+    ],
+    "instagram": [
+     "munaluqman"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 17115,
+     "as_of": "2023-02-12"
+    }
+   },
+   "max_followers": 17115,
+   "enwiki": "Muna Luqman"
+  },
+  {
+   "qid": "Q106206",
+   "wikidata": "https://www.wikidata.org/wiki/Q106206",
+   "label_en": "Tarek Al-Wazir",
+   "label_ar": "طارق الوزير",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "council member",
+    "minister",
+    "political scientist",
+    "politician"
+   ],
+   "websites": [
+    "https://www.al-wazir.de/"
+   ],
+   "handles": {
+    "x": [
+     "talwazir"
+    ],
+    "facebook": [
+     "tarek.al.wazir"
+    ],
+    "instagram": [
+     "tarekalwazir"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 13470,
+     "as_of": "2023-02-05"
+    },
+    "facebook": {
+     "value": 5630,
+     "as_of": "2024-02-29"
+    }
+   },
+   "max_followers": 13470,
+   "enwiki": "Tarek Al-Wazir"
+  },
+  {
+   "qid": "Q106405629",
+   "wikidata": "https://www.wikidata.org/wiki/Q106405629",
+   "label_en": "Hani Alademi",
+   "label_ar": "هاني الأديمي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "journalist"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UCFbA27d0eQi-sohJ8IADEww"
+    ],
+    "facebook": [
+     "AlademiHani"
+    ],
+    "instagram": [
+     "alademih"
+    ]
+   },
+   "followers": {
+    "youtube": {
+     "value": 9930,
+     "as_of": "2025-08-01"
+    }
+   },
+   "max_followers": 9930,
+   "enwiki": null
+  },
+  {
+   "qid": "Q50874956",
+   "wikidata": "https://www.wikidata.org/wiki/Q50874956",
+   "label_en": "Rafat al-Akhali",
+   "label_ar": "رأفت الأكحلي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "ymnraf"
+    ],
+    "facebook": [
+     "rafat.ali.alakhali"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 6004,
+     "as_of": "2021-01-06"
+    }
+   },
+   "max_followers": 6004,
+   "enwiki": "Rafat Al-Akhali"
+  },
+  {
+   "qid": "Q15844022",
+   "wikidata": "https://www.wikidata.org/wiki/Q15844022",
+   "label_en": "Sara Ishaq",
+   "label_ar": "سارة إسحاق",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "film director",
+    "film producer"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "SaraHJIshaq"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 5118,
+     "as_of": "2021-01-04"
+    }
+   },
+   "max_followers": 5118,
+   "enwiki": "Sara Ishaq"
+  },
+  {
+   "qid": "Q29054472",
+   "wikidata": "https://www.wikidata.org/wiki/Q29054472",
+   "label_en": "Adel Saleh",
+   "label_ar": "عادل جمال (لاعب كرة قدم)",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "association football player"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "adel_al_saleh"
+    ]
+   },
+   "followers": {
+    "x": {
+     "value": 3544,
+     "as_of": "2021-01-02"
+    }
+   },
+   "max_followers": 3544,
+   "enwiki": "Adel Gamal"
+  },
+  {
+   "qid": "Q55436193",
+   "wikidata": "https://www.wikidata.org/wiki/Q55436193",
+   "label_en": "Ahmed al-Maisari",
+   "label_ar": "أحمد الميسري",
+   "found_by": [
+    "office_holders",
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "Minister of Interior of Yemen",
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "AhmedAlmysari"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Ahmed al-Maisari"
+  },
+  {
+   "qid": "Q57158407",
+   "wikidata": "https://www.wikidata.org/wiki/Q57158407",
+   "label_en": "Amr Gamal",
+   "label_ar": "عمرو جمال",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "film director",
+    "screenwriter",
+    "short story writer",
+    "theatre director"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "_AmrGamal"
+    ],
+    "instagram": [
+     "_amr_gamal"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Amr Gamal (director)"
+  },
+  {
+   "qid": "Q140517414",
+   "wikidata": "https://www.wikidata.org/wiki/Q140517414",
+   "label_en": "Suha Al-Masri",
+   "label_ar": "سهى المصري",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "composer",
+    "singer",
+    "writer"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UCIl4acKuifU1SqY3dibAGGg"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q138389036",
+   "wikidata": "https://www.wikidata.org/wiki/Q138389036",
+   "label_en": "Yousef Lashuel",
+   "label_ar": null,
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "entrepreneur"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "TheInfowiz"
+    ],
+    "youtube": [
+     "UC-PQuGJC4bi84xKXGsTsVbQ"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q138856409",
+   "wikidata": "https://www.wikidata.org/wiki/Q138856409",
+   "label_en": "Hamed Almaqtary",
+   "label_ar": null,
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "film actor"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "hamedhmcoffical"
+    ],
+    "instagram": [
+     "hamedhscoffical"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q108732732",
+   "wikidata": "https://www.wikidata.org/wiki/Q108732732",
+   "label_en": "Samy Al-Shatby",
+   "label_ar": "سامي الشاطبي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "writer"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "QwJF32PTGWeDgzv"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q123572112",
+   "wikidata": "https://www.wikidata.org/wiki/Q123572112",
+   "label_en": "Mohamed Al-Ghoom",
+   "label_ar": "محمد القحوم",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "composer",
+    "maestro",
+    "musician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "mohamedalghoom"
+    ],
+    "facebook": [
+     "mohamedalghoom"
+    ],
+    "instagram": [
+     "mohamedalghoom"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Mohamed al-Ghoom"
+  },
+  {
+   "qid": "Q131823699",
+   "wikidata": "https://www.wikidata.org/wiki/Q131823699",
+   "label_en": "Saber Bamatraf",
+   "label_ar": "صابر بامطرف",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "composer",
+    "cultural activist",
+    "humanitarian",
+    "musician"
+   ],
+   "websites": [
+    "https://www.SaberBamatraf.com/"
+   ],
+   "handles": {
+    "x": [
+     "SaberBamatraf"
+    ],
+    "youtube": [
+     "UCpkfaEGksG5Ca6k06LARGSg"
+    ],
+    "facebook": [
+     "Saber.Bamatraf"
+    ],
+    "instagram": [
+     "saberbamatraf"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Saber Bamatraf"
+  },
+  {
+   "qid": "Q59334773",
+   "wikidata": "https://www.wikidata.org/wiki/Q59334773",
+   "label_en": "Fahad Selim Kafain",
+   "label_ar": "فهد سليم كفاين",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "politician"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "fahdkfayan"
+    ],
+    "facebook": [
+     "100000051164416"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q124802984",
+   "wikidata": "https://www.wikidata.org/wiki/Q124802984",
+   "label_en": null,
+   "label_ar": "مختار الرحبي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "journalist",
+    "politician"
+   ],
+   "websites": [
+    "https://almahriah.net/"
+   ],
+   "handles": {
+    "x": [
+     "alrahbi5"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q116680793",
+   "wikidata": "https://www.wikidata.org/wiki/Q116680793",
+   "label_en": "Saba Hamzah",
+   "label_ar": "سبأ حمزة",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "poet",
+    "researcher"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "Saba_Hamzah"
+    ],
+    "instagram": [
+     "saba.hamzah"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Saba Hamzah"
+  },
+  {
+   "qid": "Q117466847",
+   "wikidata": "https://www.wikidata.org/wiki/Q117466847",
+   "label_en": "Aboud Khawaja",
+   "label_ar": "عبود خواجه",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "singer"
+   ],
+   "websites": [],
+   "handles": {
+    "youtube": [
+     "UC5eG9Uzj_S2aY1pdhlGT6bA"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q99300071",
+   "wikidata": "https://www.wikidata.org/wiki/Q99300071",
+   "label_en": "Yahya ibn Hussein al-Daylami",
+   "label_ar": "يحيى بن حسين الديلمي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "ulema"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "Yahiaaldailami2"
+    ],
+    "youtube": [
+     "UCUhGillZPD8bCEjwUbOE61Q"
+    ],
+    "telegram": [
+     "yahiaaldailami"
+    ],
+    "facebook": [
+     "117907541652766"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q110509912",
+   "wikidata": "https://www.wikidata.org/wiki/Q110509912",
+   "label_en": "Shatha Altowai",
+   "label_ar": "شذى التوي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "artist"
+   ],
+   "websites": [
+    "https://www.ShathaAltowai.com/"
+   ],
+   "handles": {
+    "x": [
+     "ShathaAltowai"
+    ],
+    "facebook": [
+     "shattha.altowai"
+    ],
+    "instagram": [
+     "shatha.altowai"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Shatha Altowai"
+  },
+  {
+   "qid": "Q30466246",
+   "wikidata": "https://www.wikidata.org/wiki/Q30466246",
+   "label_en": "Eqbal Dauqan",
+   "label_ar": "إقبال دعقان",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "biochemist",
+    "chemist"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "EDauqan"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Eqbal Dauqan"
+  },
+  {
+   "qid": "Q121830025",
+   "wikidata": "https://www.wikidata.org/wiki/Q121830025",
+   "label_en": "AbdulRazzaq Al-Azazi",
+   "label_ar": "عبدالرزاق العزعزي",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [
+    "human rights defender",
+    "journalist",
+    "peace activist"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "ThoRazzaq"
+    ],
+    "facebook": [
+     "ThoRazzaq"
+    ],
+    "instagram": [
+     "thorazzaq"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q134589298",
+   "wikidata": "https://www.wikidata.org/wiki/Q134589298",
+   "label_en": null,
+   "label_ar": "خالد عبدالله أحمد خليل",
+   "found_by": [
+    "yemeni_public_figures"
+   ],
+   "roles": [],
+   "websites": [],
+   "handles": {
+    "x": [
+     "khlidkhalil"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q2841698",
+   "wikidata": "https://www.wikidata.org/wiki/Q2841698",
+   "label_en": "Embassy of France, Sana'a",
+   "label_ar": "سفارة فرنسا في صنعاء",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://www.ambafrance-ye.org"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q2841888",
+   "wikidata": "https://www.wikidata.org/wiki/Q2841888",
+   "label_en": "Embassy of Yemen, Paris",
+   "label_ar": "سفارة اليمن في باريس",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q4374003",
+   "wikidata": "https://www.wikidata.org/wiki/Q4374003",
+   "label_en": "Embassy of Yemen, Moscow",
+   "label_ar": "سفارة اليمن في موسكو",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q68170152",
+   "wikidata": "https://www.wikidata.org/wiki/Q68170152",
+   "label_en": "embassy of Yemen in Saudi Arabia",
+   "label_ar": "سفارة اليمن لدى السعودية",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.yemenembassy-sa.org"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q68170367",
+   "wikidata": "https://www.wikidata.org/wiki/Q68170367",
+   "label_en": "Embassy of Yemen in Bahrain",
+   "label_ar": "سفارة اليمن لدى البحرين",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q28114147",
+   "wikidata": "https://www.wikidata.org/wiki/Q28114147",
+   "label_en": "Embassy of the State of Palestine in Yemen",
+   "label_ar": "سفارة دولة فلسطين في اليمن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Embassy of Palestine, Sana'a"
+  },
+  {
+   "qid": "Q61999110",
+   "wikidata": "https://www.wikidata.org/wiki/Q61999110",
+   "label_en": "Embassy of Spain, Aden",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q62007398",
+   "wikidata": "https://www.wikidata.org/wiki/Q62007398",
+   "label_en": "Embassy of Poland, Sana'a",
+   "label_ar": "سفارة جمهورية بولندا في صنعاء",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q5369918",
+   "wikidata": "https://www.wikidata.org/wiki/Q5369918",
+   "label_en": "Embassy of Yemen, London",
+   "label_ar": "سفارة اليمن في لندن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://www.yemenembassy.co.uk"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": "Embassy of Yemen, London"
+  },
+  {
+   "qid": "Q5369916",
+   "wikidata": "https://www.wikidata.org/wiki/Q5369916",
+   "label_en": "Embassy of Yemen, Washington, D.C.",
+   "label_ar": "سفارة اليمن في واشنطن العاصمة",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.yemenembassy.org/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q11685571",
+   "wikidata": "https://www.wikidata.org/wiki/Q11685571",
+   "label_en": "Embassy of Yemen, Warsaw",
+   "label_ar": "سفارة اليمن في بولندا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://www.embassy-of-yemen.pl"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q12216179",
+   "wikidata": "https://www.wikidata.org/wiki/Q12216179",
+   "label_en": "Embassy of Egypt, in Sana'a",
+   "label_ar": "سفارة مصر في اليمن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q12216177",
+   "wikidata": "https://www.wikidata.org/wiki/Q12216177",
+   "label_en": "Embassy of the People's Republic of China, Sanaa",
+   "label_ar": "سفارة الصين في صنعاء",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://ye.chineseembassy.org/eng/",
+    "http://ye.chineseembassy.org/chn/",
+    "http://ye.chineseembassy.org/ara/"
+   ],
+   "handles": {
+    "x": [
+     "ChineseEmbtoYEM"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q61911599",
+   "wikidata": "https://www.wikidata.org/wiki/Q61911599",
+   "label_en": "Embassy of Yemen, Tokyo",
+   "label_ar": "سفارة اليمن في اليابان",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.yemen.jp/index.php",
+    "https://www.yemen.jp/index_j.php"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q67408014",
+   "wikidata": "https://www.wikidata.org/wiki/Q67408014",
+   "label_en": "embassy of Yemen in Belgium",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q58571627",
+   "wikidata": "https://www.wikidata.org/wiki/Q58571627",
+   "label_en": "Embassy of Germany, Sanaa",
+   "label_ar": "السفارة الألمانية في صنعاء",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://sanaa.diplo.de"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q106731011",
+   "wikidata": "https://www.wikidata.org/wiki/Q106731011",
+   "label_en": "embassy of Yemen in South Africa",
+   "label_ar": "سفارة اليمن في جنوب افريقيا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q54857268",
+   "wikidata": "https://www.wikidata.org/wiki/Q54857268",
+   "label_en": "Embassy of Saudi Arabia, Sana'a",
+   "label_ar": "السفارة السعودية في اليمن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://embassies.mofa.gov.sa/sites/Yemen"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q54168833",
+   "wikidata": "https://www.wikidata.org/wiki/Q54168833",
+   "label_en": "embassy of Yemen in Austria",
+   "label_ar": "سفارة اليمن في النمسا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q79576378",
+   "wikidata": "https://www.wikidata.org/wiki/Q79576378",
+   "label_en": "Embassy of Iran, Sana'a",
+   "label_ar": "سفارة ايران",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q105061885",
+   "wikidata": "https://www.wikidata.org/wiki/Q105061885",
+   "label_en": "embassy of Italy in Yemen",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://ambsanaa.esteri.it"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q136334257",
+   "wikidata": "https://www.wikidata.org/wiki/Q136334257",
+   "label_en": "Embassy of Japan, Sanaa",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.ye.emb-japan.go.jp"
+   ],
+   "handles": {
+    "x": [
+     "JapanYemen39355"
+    ],
+    "facebook": [
+     "Embassy-of-Japan-in-Yemen-100064643654417"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q105358047",
+   "wikidata": "https://www.wikidata.org/wiki/Q105358047",
+   "label_en": "embassy of Yemen in Spain",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://www.embyemenesp.com/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q105704333",
+   "wikidata": "https://www.wikidata.org/wiki/Q105704333",
+   "label_en": "embassy of Yemen in Cuba",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {
+    "facebook": [
+     "Yemenembassy.CUBA"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q106512440",
+   "wikidata": "https://www.wikidata.org/wiki/Q106512440",
+   "label_en": "embassy of Yemen in Indonesia",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q101069905",
+   "wikidata": "https://www.wikidata.org/wiki/Q101069905",
+   "label_en": "embassy of Yemen to Switzerland",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q103950579",
+   "wikidata": "https://www.wikidata.org/wiki/Q103950579",
+   "label_en": "embassy of Yemen in Italy",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://yemenembassy.it/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q73169729",
+   "wikidata": "https://www.wikidata.org/wiki/Q73169729",
+   "label_en": "embassy of Yemen in Germany",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://yemenembassy.de/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q79637889",
+   "wikidata": "https://www.wikidata.org/wiki/Q79637889",
+   "label_en": "Embassy of Yemen, Addis Ababa",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q100276129",
+   "wikidata": "https://www.wikidata.org/wiki/Q100276129",
+   "label_en": "Embassy of Yemen, Beijing",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {
+    "x": [
+     "ye_embassy_cn"
+    ]
+   },
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q100605534",
+   "wikidata": "https://www.wikidata.org/wiki/Q100605534",
+   "label_en": "embassy of Yemen, The Hague",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.yemenembassynl.org/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q106824188",
+   "wikidata": "https://www.wikidata.org/wiki/Q106824188",
+   "label_en": "embassy of Yemen in Canada",
+   "label_ar": "سفارة اليمن في كندا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://www.yemenembassy.ca/"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q107119226",
+   "wikidata": "https://www.wikidata.org/wiki/Q107119226",
+   "label_en": "embassy of Yemen in the Czech Republic",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q107790543",
+   "wikidata": "https://www.wikidata.org/wiki/Q107790543",
+   "label_en": "embassy of Yemen in Libya",
+   "label_ar": "سفارة اليمن في ليبيا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q109327808",
+   "wikidata": "https://www.wikidata.org/wiki/Q109327808",
+   "label_en": "embassy of Yemen in Bulgaria",
+   "label_ar": "سفارة اليمن في بلغاريا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q111039490",
+   "wikidata": "https://www.wikidata.org/wiki/Q111039490",
+   "label_en": "Embassy of Yemen in Ankara",
+   "label_ar": "سفارة اليمن في تركيا",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q112671343",
+   "wikidata": "https://www.wikidata.org/wiki/Q112671343",
+   "label_en": "embassy of Yemen in India",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q100269355",
+   "wikidata": "https://www.wikidata.org/wiki/Q100269355",
+   "label_en": "Embassy of Algeria, Sana'a",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q109341835",
+   "wikidata": "https://www.wikidata.org/wiki/Q109341835",
+   "label_en": "embassy of Bulgaria in Yemen",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://www.mfa.bg/embassies/yemen"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q110044655",
+   "wikidata": "https://www.wikidata.org/wiki/Q110044655",
+   "label_en": "embassy of Russia in Yemen",
+   "label_ar": "سفارة روسيا في اليمن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://yemen.mid.ru"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q112780645",
+   "wikidata": "https://www.wikidata.org/wiki/Q112780645",
+   "label_en": "embassy of India in Yemen",
+   "label_ar": "سفارة الهند في اليمن",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "http://eoiyemen.gov.in"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q114634083",
+   "wikidata": "https://www.wikidata.org/wiki/Q114634083",
+   "label_en": null,
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q124062598",
+   "wikidata": "https://www.wikidata.org/wiki/Q124062598",
+   "label_en": "Embassy of Romania in Sana'a, Yemen",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q131447698",
+   "wikidata": "https://www.wikidata.org/wiki/Q131447698",
+   "label_en": "Embassy of Turkey, Sanaa",
+   "label_ar": null,
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [
+    "https://sana-be.mfa.gov.tr"
+   ],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  },
+  {
+   "qid": "Q131551709",
+   "wikidata": "https://www.wikidata.org/wiki/Q131551709",
+   "label_en": null,
+   "label_ar": "سفارة سوريا في صنعاء",
+   "found_by": [
+    "diplomatic_missions"
+   ],
+   "roles": [
+    "embassy"
+   ],
+   "websites": [],
+   "handles": {},
+   "followers": {},
+   "max_followers": 0,
+   "enwiki": null
+  }
+ ]
+}

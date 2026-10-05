@@ -1,0 +1,1513 @@
+{
+ "saudi-mofa": {
+  "qid": "Q6867032",
+  "matched_by": "record",
+  "websites": [
+   "http://www.mofa.gov.sa"
+  ],
+  "handles": {
+   "x": [
+    "ksamofa",
+    "ksamofaen",
+    "KSAmofaFRA"
+   ],
+   "facebook": [
+    "ksamofa"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 3355594,
+    "as_of": "2022-03-02"
+   }
+  },
+  "label_en": "Ministry of Foreign Affairs of Saudi Arabia",
+  "enwiki": "Ministry of Foreign Affairs (Saudi Arabia)"
+ },
+ "ksrelief": {
+  "qid": "Q132472730",
+  "matched_by": "record",
+  "websites": [
+   "https://www.ksrelief.org/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": null,
+  "enwiki": null
+ },
+ "us-state-department": {
+  "qid": "Q789915",
+  "matched_by": "record",
+  "websites": [
+   "https://www.state.gov/"
+  ],
+  "handles": {
+   "x": [
+    "StateDept"
+   ],
+   "youtube": [
+    "UC6ZhpmNnLxlOYipqh8wbM3A"
+   ],
+   "facebook": [
+    "statedept"
+   ],
+   "instagram": [
+    "statedept"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 6403452,
+    "as_of": "2023-02-06"
+   },
+   "youtube": {
+    "value": 444000,
+    "as_of": "2025-05-11"
+   }
+  },
+  "label_en": "United States Department of State",
+  "enwiki": "United States Department of State"
+ },
+ "us-centcom": {
+  "qid": "Q1476046",
+  "matched_by": "record",
+  "websites": [
+   "https://www.centcom.mil/"
+  ],
+  "handles": {
+   "x": [
+    "CENTCOM",
+    "CENTCOMFarsi"
+   ],
+   "youtube": [
+    "UCNEEHeS9Y2yFVLbWGeHhbYA"
+   ],
+   "facebook": [
+    "CENTCOMArabic",
+    "CENTCOM"
+   ],
+   "instagram": [
+    "uscentcom"
+   ]
+  },
+  "followers": {},
+  "label_en": "United States Central Command",
+  "enwiki": "United States Central Command"
+ },
+ "us-mission-un": {
+  "qid": "Q7890766",
+  "matched_by": "record",
+  "websites": [
+   "https://usun.usmission.gov"
+  ],
+  "handles": {
+   "x": [
+    "USUN"
+   ],
+   "facebook": [
+    "USattheUN"
+   ],
+   "instagram": [
+    "usun"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 433748,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "United States Mission to the United Nations",
+  "enwiki": "United States Mission to the United Nations"
+ },
+ "uk-fcdo": {
+  "qid": "Q358834",
+  "matched_by": "record",
+  "websites": [
+   "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office"
+  ],
+  "handles": {
+   "x": [
+    "FCDOGovUK"
+   ],
+   "youtube": [
+    "UCWl6ZVke4P2GYpk6eq4BPIQ"
+   ],
+   "facebook": [
+    "foreignoffice"
+   ],
+   "instagram": [
+    "foreignanddevelopmentoffice"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 1071765,
+    "as_of": "2023-02-08"
+   },
+   "youtube": {
+    "value": 28000,
+    "as_of": "2025-05-31"
+   }
+  },
+  "label_en": "Foreign, Commonwealth and Development Office",
+  "enwiki": "Foreign, Commonwealth and Development Office"
+ },
+ "british-embassy-yemen": {
+  "qid": "Q59290392",
+  "matched_by": "record",
+  "websites": [
+   "https://www.gov.uk/world/organisations/british-embassy-sana-a"
+  ],
+  "handles": {
+   "x": [
+    "ukinyemen"
+   ],
+   "facebook": [
+    "ukinyemen"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 49904,
+    "as_of": "2023-02-03"
+   }
+  },
+  "label_en": "British Embassy Sana’a",
+  "enwiki": null
+ },
+ "israel-idf": {
+  "qid": "Q58967",
+  "matched_by": "record",
+  "websites": [
+   "https://www.idf.il",
+   "https://www.idf.il/en",
+   "https://www.idf.il/ar",
+   "https://www.idf.il/fr",
+   "https://www.idf.il/es"
+  ],
+  "handles": {
+   "x": [
+    "idfonline",
+    "IDF",
+    "FDIonline",
+    "Tsahal_IDF",
+    "IdfRussian"
+   ],
+   "youtube": [
+    "UCjBj9fgK60mlAH-nvtSOojg",
+    "UCawNWlihdgaycQpO3zi-jYg",
+    "UChQeMsM8ux6kyq0WRncOerg",
+    "UClYnPWe0HmXx3WKQuXQBtNA",
+    "UCMloI43rEzG7pod3s4mvfZg",
+    "UCifQ8WDg0zpCItTeTWBHsNA"
+   ],
+   "telegram": [
+    "idf_telegram",
+    "idfRus",
+    "idfinturkish",
+    "idfofficial"
+   ],
+   "facebook": [
+    "tzahalonline",
+    "idfonline",
+    "FDIespanol",
+    "tsahalfr"
+   ],
+   "instagram": [
+    "idfonline",
+    "idf",
+    "tsahal_fr",
+    "fdionline",
+    "tsahal_rus"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 210000,
+    "as_of": "2025-02-09"
+   },
+   "x": {
+    "value": 217498,
+    "as_of": "2023-02-07"
+   }
+  },
+  "label_en": "Israel Defense Forces",
+  "enwiki": "Israel Defense Forces"
+ },
+ "eu-delegation-yemen": {
+  "qid": "Q131381464",
+  "matched_by": "record",
+  "websites": [
+   "https://eeas.europa.eu/delegations/yemen_en"
+  ],
+  "handles": {
+   "x": [
+    "euinyemen"
+   ],
+   "facebook": [
+    "EUinYemen"
+   ],
+   "instagram": [
+    "euinyemen"
+   ]
+  },
+  "followers": {},
+  "label_en": "Delegation of the European Union to Yemen",
+  "enwiki": null
+ },
+ "russia-mission-un": {
+  "qid": "Q56326903",
+  "matched_by": "record",
+  "websites": [
+   "http://russiaun.ru/en",
+   "https://russiaun.ru/ru"
+  ],
+  "handles": {
+   "x": [
+    "RussiaUN"
+   ],
+   "youtube": [
+    "UCuaffByM7QuNdZ2L4TScVFA"
+   ],
+   "facebook": [
+    "RussiaUN"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 107222,
+    "as_of": "2023-02-09"
+   },
+   "youtube": {
+    "value": 5680,
+    "as_of": "2025-07-14"
+   }
+  },
+  "label_en": "Permanent Mission of the Russian Federation to the United Nations in New York",
+  "enwiki": "Permanent Mission of Russia to the United Nations"
+ },
+ "osesgy": {
+  "qid": "Q85790324",
+  "matched_by": "record",
+  "websites": [
+   "https://osesgy.unmissions.org/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Office of the Special Envoy of the Secretary-General for Yemen",
+  "enwiki": "Office of the Special Envoy of the Secretary-General for Yemen"
+ },
+ "un-ocha": {
+  "qid": "Q1065854",
+  "matched_by": "record",
+  "websites": [
+   "https://www.unocha.org/"
+  ],
+  "handles": {
+   "x": [
+    "unocha"
+   ],
+   "facebook": [
+    "unocha"
+   ],
+   "instagram": [
+    "un_ocha"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 562194,
+    "as_of": "2022-08-23"
+   }
+  },
+  "label_en": "United Nations Office for the Coordination of Humanitarian Affairs",
+  "enwiki": "United Nations Office for the Coordination of Humanitarian Affairs"
+ },
+ "reliefweb": {
+  "qid": "Q11348577",
+  "matched_by": "record",
+  "websites": [
+   "https://reliefweb.int/"
+  ],
+  "handles": {
+   "x": [
+    "reliefweb"
+   ],
+   "telegram": [
+    "8QT4PI32MbY3MDdh"
+   ],
+   "facebook": [
+    "reliefweb"
+   ],
+   "instagram": [
+    "reliefweb1996"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 123482,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "ReliefWeb",
+  "enwiki": "ReliefWeb"
+ },
+ "wfp": {
+  "qid": "Q204344",
+  "matched_by": "record",
+  "websites": [
+   "https://www.wfp.org/",
+   "https://fr.wfp.org/",
+   "https://es.wfp.org/",
+   "https://ar.wfp.org/",
+   "https://zh.wfp.org/",
+   "https://da.wfp.org/",
+   "https://fa.wfp.org/",
+   "https://fi.wfp.org/",
+   "https://de.wfp.org/",
+   "https://it.wfp.org/",
+   "https://ja.wfp.org/",
+   "https://ko.wfp.org/",
+   "https://no.wfp.org/",
+   "https://ru.wfp.org/",
+   "https://sv.wfp.org/"
+  ],
+  "handles": {
+   "x": [
+    "wfp"
+   ],
+   "youtube": [
+    "UCT-FJ4sgZ-0OCTmyf1tmKwQ"
+   ],
+   "facebook": [
+    "WorldFoodProgramme"
+   ],
+   "instagram": [
+    "worldfoodprogramme"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 2052488,
+    "as_of": "2023-02-03"
+   },
+   "youtube": {
+    "value": 71200,
+    "as_of": "2025-02-01"
+   }
+  },
+  "label_en": "World Food Programme",
+  "enwiki": "World Food Programme"
+ },
+ "icrc": {
+  "qid": "Q5987345",
+  "matched_by": "record",
+  "websites": [
+   "https://icrc.org"
+  ],
+  "handles": {
+   "x": [
+    "ICRC"
+   ],
+   "youtube": [
+    "UCZyACOXbNnPs2RXA_Iv9pxA"
+   ],
+   "facebook": [
+    "ICRC"
+   ],
+   "instagram": [
+    "icrc"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 2300710,
+    "as_of": "2023-02-09"
+   },
+   "youtube": {
+    "value": 176000,
+    "as_of": "2025-05-18"
+   }
+  },
+  "label_en": "International Committee of the Red Cross",
+  "enwiki": "International Committee of the Red Cross"
+ },
+ "human-rights-watch": {
+  "qid": "Q187052",
+  "matched_by": "record",
+  "websites": [
+   "https://www.hrw.org/"
+  ],
+  "handles": {
+   "x": [
+    "hrw",
+    "hrw_espanol"
+   ],
+   "youtube": [
+    "UCI_UEa7e-Umig6N-4ZylopQ"
+   ],
+   "facebook": [
+    "HumanRightsWatch"
+   ],
+   "instagram": [
+    "humanrightswatch"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 5068969,
+    "as_of": "2023-02-03"
+   }
+  },
+  "label_en": "Human Rights Watch",
+  "enwiki": "Human Rights Watch"
+ },
+ "acled": {
+  "qid": "Q18354074",
+  "matched_by": "record",
+  "websites": [
+   "https://acleddata.com/"
+  ],
+  "handles": {
+   "x": [
+    "ACLEDINFO"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 55525,
+    "as_of": "2024-10-28"
+   }
+  },
+  "label_en": "Armed Conflict Location & Event Data Project",
+  "enwiki": "Armed Conflict Location and Event Data"
+ },
+ "rashad-al-alimi": {
+  "qid": "Q12213376",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "PresidentRashad"
+   ]
+  },
+  "followers": {},
+  "label_en": "Rashad al-Alimi",
+  "enwiki": "Rashad al-Alimi"
+ },
+ "moammar-al-eryani": {
+  "qid": "Q16127851",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "eryanim",
+    "ERYANIM"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 375566,
+    "as_of": "2023-02-05"
+   }
+  },
+  "label_en": "Moammar Al-Eryani",
+  "enwiki": null
+ },
+ "elisabeth-kendall": {
+  "qid": "Q106201207",
+  "matched_by": "record",
+  "websites": [
+   "https://www.pmb.ox.ac.uk/person/dr-elisabeth-kendall"
+  ],
+  "handles": {
+   "x": [
+    "Dr_E_Kendall"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 18310,
+    "as_of": "2022-12-06"
+   }
+  },
+  "label_en": "Elisabeth Kendall",
+  "enwiki": "Elisabeth Kendall"
+ },
+ "mohammed-abdulsalam": {
+  "qid": "Q126164520",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "abdusalamsalah"
+   ]
+  },
+  "followers": {},
+  "label_en": "Mohammed Abdulsalam",
+  "enwiki": null
+ },
+ "tareq-saleh": {
+  "qid": "Q22683225",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "tarikyemen"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 1000186,
+    "as_of": "2023-02-10"
+   }
+  },
+  "label_en": "Tareq Saleh",
+  "enwiki": "Tareq Saleh"
+ },
+ "mohammed-al-jaber": {
+  "qid": "Q58312930",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "mohdsalj"
+   ]
+  },
+  "followers": {},
+  "label_en": "Mohammed Al-Jaber",
+  "enwiki": "Mohammed Saeed Al-Jaber"
+ },
+ "tawakkol-karman": {
+  "qid": "Q104622",
+  "matched_by": "record",
+  "websites": [
+   "http://www.tawakkolkarman.net",
+   "https://tkif.org/en/"
+  ],
+  "handles": {
+   "x": [
+    "tawakkolkarman",
+    "TawakkolKarman"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 1233028,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "Tawakkol Karman",
+  "enwiki": "Tawakkol Karman"
+ },
+ "iona-craig": {
+  "qid": "Q21572915",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "ionacraig"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 51332,
+    "as_of": "2023-02-04"
+   }
+  },
+  "label_en": "Iona Craig",
+  "enwiki": "Iona Craig"
+ },
+ "afrah-nasser": {
+  "qid": "Q28779341",
+  "matched_by": "record",
+  "websites": [
+   "http://afrahnasser.blogspost.com"
+  ],
+  "handles": {
+   "x": [
+    "afrahnasser"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 60163,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "Afrah Nasser",
+  "enwiki": "Afrah Nasser"
+ },
+ "yahya-saree": {
+  "qid": "Q123819200",
+  "matched_by": "record",
+  "websites": [
+   "https://mmy.ye/"
+  ],
+  "handles": {
+   "x": [
+    "army21yemen",
+    "Yahya_Saree"
+   ],
+   "telegram": [
+    "army21ye"
+   ]
+  },
+  "followers": {},
+  "label_en": "Yahya Saree",
+  "enwiki": "Yahya Saree"
+ },
+ "ahmed-obaid-bin-daghr": {
+  "qid": "Q20385886",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "ahmedbindaghar"
+   ],
+   "facebook": [
+    "AhmedObaidBinDaghar"
+   ],
+   "instagram": [
+    "ahmedbindaghar"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 747143,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "Ahmed Obaid Bin Dagher",
+  "enwiki": "Ahmed Obaid Bin Dagher"
+ },
+ "abdulmalik-al-mekhlafi": {
+  "qid": "Q12223818",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "almekhlafi59"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 485791,
+    "as_of": "2022-12-06"
+   }
+  },
+  "label_en": "Abdulmalik al-Mekhlafi",
+  "enwiki": "Abdulmalik Al-Mekhlafi"
+ },
+ "ali-mohsen-al-ahmar": {
+  "qid": "Q979788",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "alimohsnalahmar"
+   ],
+   "facebook": [
+    "alimohsensalehalahmar"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 676703,
+    "as_of": "2023-02-11"
+   }
+  },
+  "label_en": "Ali Mohsen al-Ahmar",
+  "enwiki": "Ali Mohsen al-Ahmar"
+ },
+ "radhya-al-mutawakel": {
+  "qid": "Q33037293",
+  "matched_by": "record",
+  "websites": [
+   "http://mwatana.org/en"
+  ],
+  "handles": {
+   "x": [
+    "RAlmutawakel"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 24982,
+    "as_of": "2023-02-09"
+   }
+  },
+  "label_en": "Razia Al-Mutawakil",
+  "enwiki": "Radhya Al-Mutawakel"
+ },
+ "basheer-al-harethi": {
+  "qid": "Q81939561",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "balharithy"
+   ],
+   "youtube": [
+    "UC7_xt9JfLN2rUVXcVeCw8Ow"
+   ],
+   "facebook": [
+    "basheer.alharthy"
+   ],
+   "instagram": [
+    "basheeralharthy"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 259226,
+    "as_of": "2023-02-04"
+   }
+  },
+  "label_en": "Basheer Al-Harethi",
+  "enwiki": null
+ },
+ "hani-bin-braik": {
+  "qid": "Q66823347",
+  "matched_by": "record",
+  "websites": [],
+  "handles": {
+   "x": [
+    "HaniBinbrek"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 607815,
+    "as_of": "2023-02-06"
+   }
+  },
+  "label_en": "Hani ben brek",
+  "enwiki": null
+ },
+ "al-jazeera-arabic": {
+  "qid": "Q13477",
+  "matched_by": "record",
+  "websites": [
+   "https://www.aljazeera.com/",
+   "https://www.aljazeera.net/",
+   "https://chinese.aljazeera.net/",
+   "http://aljazeera.com.tr/"
+  ],
+  "handles": {
+   "x": [
+    "AJArabic",
+    "AJABreaking",
+    "aljazeera"
+   ],
+   "youtube": [
+    "UCfiwzLy-8yKzIbsmZTzxDgw"
+   ],
+   "facebook": [
+    "aljazeerachannel",
+    "aljazeerapr"
+   ],
+   "instagram": [
+    "aljazeera"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 21800000,
+    "as_of": "2025-09-20"
+   }
+  },
+  "label_en": "Al Jazeera",
+  "enwiki": "Al Jazeera Arabic"
+ },
+ "al-jazeera-english": {
+  "qid": "Q4727585",
+  "matched_by": "record",
+  "websites": [
+   "https://www.aljazeera.net/",
+   "http://aljazeera.net/",
+   "https://www.aljazeera.com"
+  ],
+  "handles": {
+   "x": [
+    "ajenglish",
+    "AJENews"
+   ],
+   "youtube": [
+    "UCNye-wNBqNL5ZzHSJj3l8Bg"
+   ],
+   "facebook": [
+    "aljazeera"
+   ],
+   "instagram": [
+    "aljazeeraenglish"
+   ]
+  },
+  "followers": {},
+  "label_en": "aljazeera.com",
+  "enwiki": "Aljazeera.com"
+ },
+ "al-arabiya": {
+  "qid": "Q310172",
+  "matched_by": "record",
+  "websites": [
+   "https://www.alarabiya.net/"
+  ],
+  "handles": {
+   "x": [
+    "AlArabiya_Brk",
+    "AlArabiya",
+    "AlArabiya_Eng",
+    "AlArabiya_Iraq",
+    "AlArabiya_spt",
+    "AlArabiya_EGY",
+    "AlArabiya_KSA",
+    "alarabiya_rpt",
+    "AlArabiya_Taqs",
+    "AlArabiya_Bn"
+   ],
+   "youtube": [
+    "UCahpxixMCwoANAftn6IxkTg"
+   ],
+   "telegram": [
+    "Alarabiya"
+   ],
+   "facebook": [
+    "AlArabiya"
+   ],
+   "instagram": [
+    "alarabiya"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 17300000,
+    "as_of": "2025-03-10"
+   }
+  },
+  "label_en": "Al Arabiya",
+  "enwiki": "Al Arabiya"
+ },
+ "al-hadath": {
+  "qid": "Q4702436",
+  "matched_by": "record",
+  "websites": [
+   "http://www.al-hadath.com/"
+  ],
+  "handles": {
+   "x": [
+    "alhadathh",
+    "AlHadath"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 210672,
+    "as_of": "2023-02-10"
+   }
+  },
+  "label_en": "Al-Hadath",
+  "enwiki": null
+ },
+ "asharq-al-awsat": {
+  "qid": "Q724844",
+  "matched_by": "record",
+  "websites": [
+   "https://aawsat.com/",
+   "https://english.aawsat.com",
+   "https://turkish.aawsat.com",
+   "https://urdu.aawsat.com",
+   "https://persian.aawsat.com"
+  ],
+  "handles": {
+   "x": [
+    "aawsat_News"
+   ],
+   "facebook": [
+    "asharqalawsat.e"
+   ],
+   "instagram": [
+    "asharqalawsat"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 4905987,
+    "as_of": "2023-02-04"
+   }
+  },
+  "label_en": "Asharq Al-Awsat",
+  "enwiki": "Asharq Al-Awsat"
+ },
+ "sky-news-arabia": {
+  "qid": "Q2201035",
+  "matched_by": "record",
+  "websites": [
+   "https://www.skynewsarabia.com/"
+  ],
+  "handles": {
+   "x": [
+    "skynewsarabia",
+    "SkyNewsArabia_B"
+   ],
+   "youtube": [
+    "UCIJXOvggjKtCagMfxvcCzAA"
+   ],
+   "facebook": [
+    "SkyNewsArabia"
+   ],
+   "instagram": [
+    "skynewsarabia"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 6396095,
+    "as_of": "2021-01-04"
+   },
+   "youtube": {
+    "value": 6980000,
+    "as_of": "2025-09-20"
+   }
+  },
+  "label_en": "Sky News Arabia",
+  "enwiki": "Sky News Arabia"
+ },
+ "al-ain-news": {
+  "qid": "Q54965476",
+  "matched_by": "record",
+  "websites": [
+   "https://al-ain.com/"
+  ],
+  "handles": {
+   "x": [
+    "alain_4u"
+   ],
+   "telegram": [
+    "alain4u"
+   ],
+   "facebook": [
+    "AlAinNews"
+   ],
+   "instagram": [
+    "alainnews"
+   ]
+  },
+  "followers": {},
+  "label_en": "Al Ain News",
+  "enwiki": null
+ },
+ "al-araby-al-jadeed": {
+  "qid": "Q20389499",
+  "matched_by": "record",
+  "websites": [
+   "http://www.alaraby.co.uk",
+   "https://www.newarab.com/"
+  ],
+  "handles": {
+   "x": [
+    "alaraby_ar",
+    "The_newarab"
+   ],
+   "youtube": [
+    "UCQ2BzTiRUbL3z4K22dTB5dg",
+    "UCtTSYCBRRUStmL2oQLaqbDQ"
+   ],
+   "facebook": [
+    "AlAraby.ar",
+    "AlAraby.en"
+   ],
+   "instagram": [
+    "alaraby_ar",
+    "thenewarab"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 2160199,
+    "as_of": "2023-02-06"
+   },
+   "youtube": {
+    "value": 203000,
+    "as_of": "2024-01-15"
+   }
+  },
+  "label_en": "The New Arab",
+  "enwiki": "The New Arab"
+ },
+ "press-tv": {
+  "qid": "Q912429",
+  "matched_by": "record",
+  "websites": [
+   "https://presstv.ir"
+  ],
+  "handles": {
+   "x": [
+    "presstv",
+    "PressTV"
+   ],
+   "telegram": [
+    "presstv"
+   ],
+   "facebook": [
+    "PressTV.Highlights"
+   ],
+   "instagram": [
+    "presstvchannel"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 278274,
+    "as_of": "2023-02-07"
+   }
+  },
+  "label_en": "Press TV",
+  "enwiki": "Press TV"
+ },
+ "al-mayadeen": {
+  "qid": "Q4704414",
+  "matched_by": "record",
+  "websites": [
+   "https://www.almayadeen.net/",
+   "https://english.almayadeen.net/",
+   "https://espanol.almayadeen.net/"
+  ],
+  "handles": {
+   "x": [
+    "AlMayadeenNews"
+   ],
+   "youtube": [
+    "UCZCFHCU-2eGF7V5ciMkoPHw"
+   ],
+   "instagram": [
+    "almayadeen.tv"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 1480000,
+    "as_of": "2025-04-13"
+   }
+  },
+  "label_en": "Al Mayadeen",
+  "enwiki": "Al Mayadeen"
+ },
+ "anadolu-agency": {
+  "qid": "Q477436",
+  "matched_by": "record",
+  "websites": [
+   "https://www.aa.com.tr/tr",
+   "https://www.aa.com.tr/en",
+   "https://www.aa.com.tr/fr"
+  ],
+  "handles": {
+   "x": [
+    "anadoluajansi",
+    "aa_arabic",
+    "anadoluagency",
+    "aa_french"
+   ],
+   "youtube": [
+    "UCVbZYhcirOke2vipxs4lT2w"
+   ],
+   "telegram": [
+    "anadoluajansi"
+   ],
+   "facebook": [
+    "anadoluajansi"
+   ],
+   "instagram": [
+    "anadoluajansi"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 752000,
+    "as_of": "2025-01-25"
+   }
+  },
+  "label_en": "Anadolu Agency",
+  "enwiki": "Anadolu Agency"
+ },
+ "reuters": {
+  "qid": "Q130879",
+  "matched_by": "record",
+  "websites": [
+   "https://www.reuters.com/",
+   "https://jp.reuters.com/",
+   "https://uk.reuters.com/",
+   "https://fr.reuters.com/",
+   "https://ru.reuters.com/",
+   "https://in.reuters.com/",
+   "https://cn.reuters.com/"
+  ],
+  "handles": {
+   "x": [
+    "Reuters",
+    "ReutersUK",
+    "ReutersVzla",
+    "ReutersIran",
+    "reutersbiz",
+    "ReutersLegal",
+    "reuterspictures",
+    "ReutersWorld",
+    "ReutersScience",
+    "ReutersIndia",
+    "reuters_russia",
+    "ReutersJapan",
+    "ReutersJapanBiz",
+    "ReutersJpTech"
+   ],
+   "youtube": [
+    "UChqUTb7kYRX8-EiaN3XFrSQ"
+   ],
+   "telegram": [
+    "ReutersWorldChannel"
+   ],
+   "facebook": [
+    "Reuters"
+   ],
+   "instagram": [
+    "reuters"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 3870000,
+    "as_of": "2025-08-24"
+   }
+  },
+  "label_en": "Reuters",
+  "enwiki": "Reuters"
+ },
+ "afp": {
+  "qid": "Q40464",
+  "matched_by": "record",
+  "websites": [
+   "https://www.afp.com"
+  ],
+  "handles": {
+   "x": [
+    "AFP",
+    "afpfr",
+    "afptehran",
+    "AFPespanol",
+    "AFPar",
+    "AFPde",
+    "afpbbcom"
+   ],
+   "youtube": [
+    "UCckz6n8QccTd6K_xdwKqa0A"
+   ],
+   "facebook": [
+    "AFPfra",
+    "AFPnewsenglish"
+   ],
+   "instagram": [
+    "afpphoto"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 1770000,
+    "as_of": "2025-10-04"
+   }
+  },
+  "label_en": "Agence France-Presse",
+  "enwiki": "Agence France-Presse"
+ },
+ "france24-arabic": {
+  "qid": "Q138823366",
+  "matched_by": "record",
+  "websites": [
+   "https://www.france24.com/ar/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "France 24 Arabic",
+  "enwiki": null
+ },
+ "rt-arabic": {
+  "qid": "Q2988616",
+  "matched_by": "record",
+  "websites": [
+   "https://arabic.rt.com/"
+  ],
+  "handles": {
+   "x": [
+    "RTarabic_Bn",
+    "RTarabic",
+    "RTArNewsRoom",
+    "Rt_araby"
+   ],
+   "youtube": [
+    "UCsP3Clx2qtH2mNZ6KolVoZQ"
+   ],
+   "telegram": [
+    "rtarabictelegram"
+   ],
+   "facebook": [
+    "rtarabic.ru",
+    "روسيا بالعربية"
+   ],
+   "instagram": [
+    "rtarabic_ru"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 6160000,
+    "as_of": "2021-11-17"
+   }
+  },
+  "label_en": "RT Arabic",
+  "enwiki": "RT Arabic"
+ },
+ "middle-east-eye": {
+  "qid": "Q18085829",
+  "matched_by": "record",
+  "websites": [
+   "https://www.middleeasteye.net/",
+   "http://middleeasteye.net"
+  ],
+  "handles": {
+   "x": [
+    "MiddleEastEye"
+   ],
+   "facebook": [
+    "middleeasteye"
+   ],
+   "instagram": [
+    "middleeasteye"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 355985,
+    "as_of": "2023-02-03"
+   }
+  },
+  "label_en": "Middle East Eye",
+  "enwiki": "Middle East Eye"
+ },
+ "al-monitor": {
+  "qid": "Q4702909",
+  "matched_by": "record",
+  "websites": [
+   "http://al-monitor.com/"
+  ],
+  "handles": {
+   "x": [
+    "almonitor"
+   ],
+   "youtube": [
+    "UC9oLvlUBxIKkd2nNLyjmmew"
+   ],
+   "facebook": [
+    "almonitor"
+   ],
+   "instagram": [
+    "almonitor"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 5150,
+    "as_of": "2025-01-25"
+   }
+  },
+  "label_en": "Al-Monitor",
+  "enwiki": "Al-Monitor"
+ },
+ "times-of-israel": {
+  "qid": "Q6449319",
+  "matched_by": "record",
+  "websites": [
+   "https://www.timesofisrael.com/",
+   "https://fr.timesofisrael.com/",
+   "https://ar.timesofisrael.com/",
+   "https://fa.timesofisrael.com/"
+  ],
+  "handles": {
+   "x": [
+    "TimesofIsrael",
+    "TOIAlerts",
+    "timesofisraelHB",
+    "TimesofIsraelAR"
+   ],
+   "youtube": [
+    "UCKM3VQFIITaRegPDkLlLeKA"
+   ],
+   "facebook": [
+    "timesofisrael",
+    "timesofisraelarabic"
+   ],
+   "instagram": [
+    "timesofisrael",
+    "timesofisraelar",
+    "timesofisraelfr"
+   ]
+  },
+  "followers": {
+   "youtube": {
+    "value": 46800,
+    "as_of": "2025-07-05"
+   }
+  },
+  "label_en": "The Times of Israel",
+  "enwiki": "The Times of Israel"
+ },
+ "jerusalem-post": {
+  "qid": "Q35438",
+  "matched_by": "record",
+  "websites": [
+   "https://jpost.com/"
+  ],
+  "handles": {
+   "x": [
+    "Jerusalem_Post"
+   ],
+   "youtube": [
+    "UCLLLdCANnMAdMyrXdYbSlxg"
+   ],
+   "telegram": [
+    "The_Jerusalem_Post"
+   ],
+   "facebook": [
+    "TheJerusalemPost"
+   ]
+  },
+  "followers": {
+   "x": {
+    "value": 582981,
+    "as_of": "2023-02-09"
+   },
+   "youtube": {
+    "value": 62100,
+    "as_of": "2025-11-08"
+   }
+  },
+  "label_en": "The Jerusalem Post",
+  "enwiki": "The Jerusalem Post"
+ },
+ "saba-sanaa": {
+  "qid": "Q7395787",
+  "matched_by": "official_website",
+  "websites": [
+   "https://www.saba.ye",
+   "https://sabanew.net"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Saba News Agency",
+  "enwiki": "Saba News Agency"
+ },
+ "saba-irg": {
+  "qid": "Q7395787",
+  "matched_by": "official_website",
+  "websites": [
+   "https://www.saba.ye",
+   "https://sabanew.net"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Saba News Agency",
+  "enwiki": "Saba News Agency"
+ },
+ "26-september-sanaa": {
+  "qid": "Q6488083",
+  "matched_by": "record",
+  "websites": [
+   "https://www.26sep.net/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "26 September",
+  "enwiki": "26 September (newspaper)"
+ },
+ "yemen-tv-government": {
+  "qid": "Q3572152",
+  "matched_by": "record",
+  "websites": [
+   "https://yementv.tv/",
+   "https://en.yementv.tv/",
+   "https://fr.yementv.tv/",
+   "https://fa.yementv.tv/",
+   "https://zh.yementv.tv/"
+  ],
+  "handles": {
+   "x": [
+    "yementvyem"
+   ],
+   "youtube": [
+    "UCmdgAcBW7sMCOFUoRDpclmQ"
+   ],
+   "facebook": [
+    "yementvyem"
+   ],
+   "instagram": [
+    "yementvyem"
+   ]
+  },
+  "followers": {},
+  "label_en": "Yemen TV",
+  "enwiki": "Yemen TV"
+ },
+ "sanaa-center": {
+  "qid": "Q130298890",
+  "matched_by": "record",
+  "websites": [
+   "https://sanaacenter.org/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Sana'a Center for Strategic Studies",
+  "enwiki": "Sana'a Center for Strategic Studies"
+ },
+ "stc-official": {
+  "qid": "Q30314807",
+  "matched_by": "record",
+  "websites": [
+   "http://stcaden.com"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Southern Transitional Council",
+  "enwiki": "Southern Transitional Council"
+ },
+ "alislah-net": {
+  "qid": "Q285388",
+  "matched_by": "record",
+  "websites": [
+   "https://alislah-ye.net/?lng=english"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Al-Islah",
+  "enwiki": "Al-Islah (Yemen)"
+ },
+ "al-eshteraki-net": {
+  "qid": "Q1149512",
+  "matched_by": "record",
+  "websites": [
+   "http://www.aleshteraki.net"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Yemeni Socialist Party",
+  "enwiki": "Yemeni Socialist Party"
+ },
+ "al-wahdawi-net": {
+  "qid": "Q4118233",
+  "matched_by": "record",
+  "websites": [
+   "http://www.alwahdawi.net/"
+  ],
+  "handles": {},
+  "followers": {},
+  "label_en": "Nasserist Unionist People's Organisation",
+  "enwiki": "Nasserist Unionist People's Organisation"
+ }
+}

@@ -1,0 +1,247 @@
+[2m2026-10-05T09:42:23.189442Z[0m [[32m[1minfo     [0m] [1mstage_start                   [0m [36mrun_id[0m=[35m1[0m [36mstage[0m=[35mingest[0m
+HTTP Request: GET https://t.me/robots.txt "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://www.gov.uk/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/robots.txt "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://t.me/robots.txt "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://news.un.org/robots.txt "HTTP/1.1 308 robots"
+HTTP Request: GET https://news.un.org/robots.txt "HTTP/1.1 308 robots"
+HTTP Request: GET https://news.un.org/robots.txt "HTTP/1.1 308 robots"
+HTTP Request: GET https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office&world_locations%5B%5D=yemen "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/russiaun "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/OSESGY1 "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/idfofficial "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.icrc.org/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/en/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.icrc.org/en/rss/news "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/en/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/en/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aljazeera.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9 "HTTP/1.1 200 OK"
+HTTP Request: GET https://aawsat.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aljazeera.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aljazeera.com/xml/rss/all.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/Mohammadlhouthi "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/army21ye "HTTP/1.1 200 OK"
+HTTP Request: GET https://aawsat.com/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.skynewsarabia.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.alaraby.co.uk/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.alaraby.co.uk/rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/alain4u "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.fm.gov.om/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.skynewsarabia.com/rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/AjaNews "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/alarabiya "HTTP/1.1 200 OK"
+HTTP Request: GET https://english.aawsat.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.fm.gov.om/en/feed/ "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/presstv "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/ReutersWorldChannel "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.presstv.co.uk/robots.txt "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://www.presstv.co.uk/rss.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://english.aawsat.com/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.france24.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.france24.com/ar/rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.middleeasteye.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.middleeasteye.net/rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/The_Jerusalem_Post "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/YemenShababNet "HTTP/1.1 200 OK"
+HTTP Request: GET https://english.masirahtv.net/robots.txt "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://rss.belqees.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://english.masirahtv.net/rss.php "HTTP/1.1 302 Found"
+HTTP Request: GET https://english.masirahtv.net/rss.xml "HTTP/1.1 200 OK"
+HTTP Request: GET https://arabic.rt.com/robots.txt "HTTP/1.1 301 Moved Permanently"
+HTTP Request: GET https://www.sabanew.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://rss.belqees.net/feeds "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.sabanew.net/rss.php?lang=ar "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/tr/rss/default?cat=dunya "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/en/rss/default?cat=world "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/en/rss/default?cat=middle-east "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/ar/rss/default?cat=%D8%A7%D9%84%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9 "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aa.com.tr/en/rss/default?cat=live "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.sabanew.net/rss.php?lang=en "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.adngad.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/sabanewa "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.adngad.net/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://rtarabic.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/adenalghad_news "HTTP/1.1 200 OK"
+HTTP Request: GET https://arabic.rt.com/rss/ "HTTP/1.1 301 Moved Permanently"
+HTTP Request: GET https://www.yemenmonitor.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.26sep.net/robots.txt "HTTP/1.1 301 Moved Permanently"
+HTTP Request: GET https://t.me/s/marebpress1 "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.yemenmonitor.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://26sep.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://rtarabic.com/rss/ "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/AlayyamAden "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.26sepnews.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.yemenmonitor.com/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/yemseb "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.26sep.net/index.php?format=feed&type=rss "HTTP/1.1 301 Moved Permanently"
+HTTP Request: GET https://sanaacenter.org/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.yemenmonitor.com/en/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://26sep.net/index.php?format=feed&type=rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://sanaacenter.org/feed "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/abaadstudies "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.stcaden.com/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/cby_hq "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aleshteraki.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/STCSouthArabia "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aleshteraki.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aleshteraki.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aleshteraki.net/?format=feed&type=rss "HTTP/1.1 200 OK"
+HTTP Request: GET https://yementv.tv/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://t.me/s/alwahdawinet2004 "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.stcaden.com/rss "HTTP/1.1 301 Moved Permanently"
+HTTP Request: GET https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240 "HTTP/1.1 200 OK"
+HTTP Request: GET https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241 "HTTP/1.1 200 OK"
+HTTP Request: GET https://yementv.tv/feed/ "HTTP/1.1 200 OK"
+HTTP Request: GET https://mopicyemen.org/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://stcaden.com/feed/categories "HTTP/1.1 200 OK"
+HTTP Request: GET https://mopicyemen.org/feed/ "HTTP/1.1 200 OK"
+HTTP Request: GET https://en.26sepnews.net/robots.txt "HTTP/1.1 200 OK"
+HTTP Request: GET https://en.26sepnews.net/feed/ "HTTP/1.1 200 OK"
+[2m2026-10-05T09:42:48.720963Z[0m [[32m[1minfo     [0m] [1mfetch_retry                   [0m [36mattempt[0m=[35m1[0m [36merror[0m=[35mReadTimeout[0m [36murl[0m=[35mhttps://www.26sepnews.net/feed/[0m
+HTTP Request: GET https://www.26sepnews.net/feed/ "HTTP/1.1 200 OK"
+[2m2026-10-05T09:43:00.632989Z[0m [[32m[1minfo     [0m] [1mingest_done                   [0m [36mby_language[0m=[35m{'en': 142, 'ar': 329, 'tr': 3, 'es': 3}[0m [36mfeeds_failed[0m=[35m0[0m [36mfeeds_not_modified[0m=[35m0[0m [36mfeeds_ok[0m=[35m59[0m [36mfiltered_irrelevant[0m=[35m1080[0m [36mfiltered_old[0m=[35m502[0m [36minserted[0m=[35m477[0m [36mitems_seen[0m=[35m2071[0m [36munchanged[0m=[35m11[0m [36mupdated[0m=[35m1[0m
+[2m2026-10-05T09:43:00.634048Z[0m [[32m[1minfo     [0m] [1mstage_start                   [0m [36mrun_id[0m=[35m1[0m [36mstage[0m=[35mdedup[0m
+[2m2026-10-05T09:43:02.142848Z[0m [[32m[1minfo     [0m] [1mdedup_done                    [0m [36mclusters[0m=[35m424[0m [36mexact_duplicates[0m=[35m3[0m [36mnear_duplicates[0m=[35m19[0m [36mnew[0m=[35m477[0m [36msame_story[0m=[35m55[0m [36msyndicated[0m=[35m0[0m
+[2m2026-10-05T09:43:02.144396Z[0m [[32m[1minfo     [0m] [1mstage_start                   [0m [36mrun_id[0m=[35m1[0m [36mstage[0m=[35manalyse[0m
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/modules.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2Fmain%2Fmodules.json=&etag=%22ac2039abdf6ff023b27c919bb9675cfe378cb10f%22 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/config_sentence_transformers.json "HTTP/1.1 404 Not Found"
+Loading SentenceTransformer model from intfloat/multilingual-e5-small.
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/config_sentence_transformers.json "HTTP/1.1 404 Not Found"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2Fmain%2FREADME.md=&etag=%22e56327af55e9742caf76bff9ba83b6904cd2003d%22 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/modules.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2Fmain%2Fmodules.json=&etag=%22ac2039abdf6ff023b27c919bb9675cfe378cb10f%22 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentence_bert_config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%224eca68d85ecd3034cf4174d8a4033a75344ea62d%22 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3582.31it/s]
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/1_Pooling%2Fconfig.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22acbd4014202bf4dbc6c03229bcbeef7c4feafb58%22 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+/home/runner/work/hudhud/hudhud/backend/hudhud/nlp/embeddings.py:41: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  native = self.model.get_sentence_embedding_dimension()
+[2m2026-10-05T09:43:14.163437Z[0m [[32m[1minfo     [0m] [1manalyse_start                 [0m [36marticles[0m=[35m477[0m [36mbudget_seconds[0m=[35m1500.0[0m [36mcontext_seconds[0m=[35m12.0[0m [36membedder[0m=[35mintfloat/multilingual-e5-small[0m [36mmodels[0m=[35mTrue[0m
+[2m2026-10-05T09:43:17.318756Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m59[0m [36mseconds[0m=[35m3.1[0m
+[2m2026-10-05T09:43:20.253696Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m64[0m [36mseconds[0m=[35m2.1[0m
+[2m2026-10-05T09:43:26.072453Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m64[0m [36mseconds[0m=[35m4.8[0m
+[2m2026-10-05T09:43:28.218609Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m63[0m [36mseconds[0m=[35m1.1[0m
+[2m2026-10-05T09:43:31.681047Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m52[0m [36mseconds[0m=[35m2.5[0m
+[2m2026-10-05T09:43:35.254510Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m64[0m [36mseconds[0m=[35m2.8[0m
+[2m2026-10-05T09:43:39.407493Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m63[0m [36mseconds[0m=[35m3.1[0m
+[2m2026-10-05T09:43:42.191040Z[0m [[32m[1minfo     [0m] [1membedded_batch                [0m [36marticles[0m=[35m26[0m [36mseconds[0m=[35m1.9[0m
+[2m2026-10-05T09:43:42.932206Z[0m [[32m[1minfo     [0m] [1membedded_all                  [0m [36marticles[0m=[35m455[0m [36mseconds[0m=[35m40.8[0m
+HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 "HTTP/1.1 200 OK"
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 3521.14it/s]
+HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 10651.22it/s]
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/commits/main "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/discussions?p=0 "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/commits/refs%2Fpr%2F5 "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/resolve/refs%2Fpr%2F5/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual/resolve/refs%2Fpr%2F5/model.safetensors "HTTP/1.1 302 Found"
+HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/commits/main "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 15920.52it/s]
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/discussions?p=0 "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/commits/refs%2Fpr%2F1 "HTTP/1.1 200 OK"
+HTTP Request: GET https://huggingface.co/api/models/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+HTTP Request: HEAD https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/resolve/refs%2Fpr%2F1/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+HTTP Request: HEAD https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment/resolve/refs%2Fpr%2F1/model.safetensors "HTTP/1.1 302 Found"
+[2m2026-10-05T09:52:07.331712Z[0m [[32m[1minfo     [0m] [1manalyse_progress              [0m [36mdone[0m=[35m64[0m [36melapsed_seconds[0m=[35m545.2[0m [36mtotal[0m=[35m455[0m
+[2m2026-10-05T09:59:11.355169Z[0m [[32m[1minfo     [0m] [1manalyse_progress              [0m [36mdone[0m=[35m128[0m [36melapsed_seconds[0m=[35m969.2[0m [36mtotal[0m=[35m455[0m
+[2m2026-10-05T10:08:53.203522Z[0m [[33m[1mwarning  [0m] [1manalyse_budget_reached        [0m [36manalysed[0m=[35m176[0m [36mbudget_seconds[0m=[35m1500.0[0m [36mdeferred[0m=[35m279[0m [36mnote[0m=[35m'deferred articles keep their status and are analysed by the next run'[0m
+[2m2026-10-05T10:08:53.203639Z[0m [[32m[1minfo     [0m] [1manalyse_done                  [0m [36manalysed[0m=[35m176[0m [36mdeferred[0m=[35m279[0m [36membedded[0m=[35m455[0m [36membedder[0m=[35mintfloat/multilingual-e5-small[0m [36mllm_reviews[0m=[35m0[0m [36mmodels[0m=[35mTrue[0m [36mseconds_by_part[0m=[35m{'category_zero_shot': 1227.8, 'sentiment': 28.7, 'emotion': 0.0, 'tone': 0.0, 'frames': 213.6, 'targeted_sentiment': 37.5, 'articles': 1510.2}[0m [36muncertain[0m=[35m19[0m
+[2m2026-10-05T10:08:53.206501Z[0m [[32m[1minfo     [0m] [1mpipeline_done                 [0m [36mfailed[0m=[35m[][0m [36mrun_id[0m=[35m1[0m [36mstatus[0m=[35msuccess[0m
+{
+  "run_id": 1,
+  "status": "success",
+  "stats": {
+    "ingest": {
+      "status": "ok",
+      "result": {
+        "feeds_ok": 59,
+        "feeds_failed": 0,
+        "feeds_not_modified": 0,
+        "items_seen": 2071,
+        "inserted": 477,
+        "updated": 1,
+        "unchanged": 11,
+        "filtered_irrelevant": 1080,
+        "filtered_old": 502,
+        "by_language": {
+          "en": 142,
+          "ar": 329,
+          "tr": 3,
+          "es": 3
+        }
+      },
+      "seconds": 37.4
+    },
+    "dedup": {
+      "status": "ok",
+      "result": {
+        "new": 477,
+        "exact_duplicates": 3,
+        "near_duplicates": 19,
+        "syndicated": 0,
+        "same_story": 55,
+        "clusters": 424
+      },
+      "seconds": 1.5
+    },
+    "analyse": {
+      "status": "ok",
+      "result": {
+        "analysed": 176,
+        "embedded": 455,
+        "llm_reviews": 0,
+        "uncertain": 19,
+        "embedder": "intfloat/multilingual-e5-small",
+        "transformer_models": true,
+        "deferred": 279,
+        "seconds_by_part": {
+          "category_zero_shot": 1227.8,
+          "sentiment": 28.7,
+          "emotion": 0.0,
+          "tone": 0.0,
+          "frames": 213.6,
+          "targeted_sentiment": 37.5,
+          "articles": 1510.2
+        }
+      },
+      "seconds": 1551.1
+    }
+  }
+}

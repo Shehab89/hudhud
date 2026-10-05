@@ -1,0 +1,142 @@
+[
+ {
+  "id": "saudi-mofa",
+  "url": "https://www.mofa.gov.sa/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "network_error"
+ },
+ {
+  "id": "sdrpy",
+  "url": "https://www.sdrpy.gov.sa/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "network_error"
+ },
+ {
+  "id": "us-state-department",
+  "url": "https://www.state.gov/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "us-embassy-yemen",
+  "url": "https://ye.usembassy.gov/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "us-centcom",
+  "url": "https://www.centcom.mil/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "us-mission-un",
+  "url": "https://usun.usmission.gov/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "ukmto",
+  "url": "https://ukmto.org/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "reliefweb",
+  "url": "https://reliefweb.int/country/yem",
+  "ok": false,
+  "stage": "homepage",
+  "error": "ParserError"
+ },
+ {
+  "id": "unhcr-yemen",
+  "url": "https://www.unhcr.org/countries/yemen",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "human-rights-watch",
+  "url": "https://www.hrw.org/middle-east/n-africa/yemen",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "al-hadath",
+  "url": "https://www.alhadath.net/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "access_restricted"
+ },
+ {
+  "id": "al-mayadeen",
+  "url": "https://www.almayadeen.net/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "associated-press",
+  "url": "https://apnews.com/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "access_restricted"
+ },
+ {
+  "id": "al-monitor",
+  "url": "https://www.al-monitor.com/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "times-of-israel",
+  "url": "https://www.timesofisrael.com/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "access_restricted"
+ },
+ {
+  "id": "saba-sanaa",
+  "url": "https://www.saba.ye/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "access_restricted"
+ },
+ {
+  "id": "aic-tv",
+  "url": "https://www.aicaden.net/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "al-masdar-online",
+  "url": "https://almasdaronline.com/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "robots_disallowed"
+ },
+ {
+  "id": "al-thawra-sanaa",
+  "url": "https://althawranews.net/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "network_error"
+ },
+ {
+  "id": "sanaa-mofa",
+  "url": "https://mofa.gov.ye/",
+  "ok": false,
+  "stage": "homepage",
+  "error": "network_error"
+ }
+]
