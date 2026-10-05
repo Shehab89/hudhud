@@ -43,13 +43,13 @@
   - url: https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Al Jazeera Net main feed (about 25 items).
   - url: https://t.me/s/AjaNews
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; public channel @AjaNews is linked in the aljazeera.net footer (seen 2026-10-04); documented
       t.me/s pattern. Site RSS carried over from old registry.
@@ -117,6 +117,7 @@
   notes: YouTube count from vidiq top-Qatar chart as displayed 2026-10-04 (no date on page). A Facebook page 'الجزيرة
     - اليمن' (facebook.com/AJArabic.Yemen) appeared in search results but could not be confirmed as official (robots
     blocked), so it is not listed. yemen_coverage is an estimate, not measured.
+  wikidata: Q13477
 - id: al-jazeera-english
   name: Al Jazeera English
   category: MEDIA
@@ -152,7 +153,7 @@
   - url: https://www.aljazeera.com/xml/rss/all.xml
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Site-wide feed (about 26 items).
   selection:
@@ -213,6 +214,7 @@
   notes: No Yemen-specific RSS found; site-wide feed https://www.aljazeera.com/xml/rss/all.xml (yemen_filter true)
     is carried over from the old registry. YouTube count from vidiq top-Qatar chart as displayed 2026-10-04. yemen_coverage
     is an estimate, not measured.
+  wikidata: Q4727585
 - id: al-arabiya
   name: Al Arabiya
   name_native: العربية
@@ -260,16 +262,18 @@
   feeds:
   - url: https://www.alarabiya.net/feed/rss2/ar.xml
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: true
     notes: Arabic homepage feed; small (about 8 items) so poll frequently.
+    active: false
   - url: https://english.alarabiya.net/feed/rss2/en.xml
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: true
     notes: Al Arabiya English homepage feed (about 20 items).
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCahpxixMCwoANAftn6IxkTg
     type: youtube
     verified: false
@@ -277,10 +281,11 @@
     yemen_filter: true
     notes: candidate; channel id UCahpxixMCwoANAftn6IxkTg shown on https://socialblade.com/youtube/handle/alarabiya
       (seen 2026-10-04); documented YouTube channel-feed pattern.
+    active: false
   - url: https://t.me/s/alarabiya
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; telegram.me/alarabiya is linked from alarabiya.net (seen 2026-10-04); documented t.me/s pattern.
   selection:
@@ -345,6 +350,7 @@
   notes: Headquarters moved from Dubai to Riyadh (completed July 2025, per Wikipedia). English edition (english.alarabiya.net)
     kept under this record; its Yemen tag is updated irregularly. Site feeds carried over from the old registry.
     yemen_coverage is an estimate, not measured.
+  wikidata: Q310172
 - id: al-hadath
   name: Al Hadath
   name_native: الحدث
@@ -385,6 +391,7 @@
     yemen_filter: true
     notes: candidate; channel id linked from the alhadath.net footer and the feed link shown on https://www.youtube.com/@AlHadath
       (seen 2026-10-04).
+    active: false
   selection:
     reason: Saudi-owned 24-hour political news channel (Al Arabiya's sister) with a dedicated Yemen section updated
       daily during the 2026 fighting.
@@ -432,6 +439,7 @@
     account @Alhadath_Ymn ('الحدث اليمني') appeared in search results but could not be confirmed as an official
     Al Hadath account (X blocked fetching), so it is not listed. Much Yemen copy is shared with alarabiya.net; expect
     syndication duplicates.
+  wikidata: Q4702436
 - id: asharq-al-awsat
   name: Asharq Al-Awsat
   name_native: الشرق الأوسط
@@ -470,13 +478,13 @@
   - url: https://aawsat.com/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Arabic site-wide feed (100+ items). Channel title reads 'Mailchimptemplate'.
   - url: https://english.aawsat.com/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: English edition site-wide feed.
   selection:
@@ -534,6 +542,7 @@
     citable figure found. No Yemen-tag RSS found; site feeds (aawsat.com/feed, english.aawsat.com/feed) carried
     over from the old registry. No YouTube or Telegram link on the homepage. yemen_coverage is an estimate, not
     measured. Based in London but Saudi-owned; country set to GB (base).
+  wikidata: Q724844
 - id: sky-news-arabia
   name: Sky News Arabia
   name_native: سكاي نيوز عربية
@@ -574,7 +583,7 @@
   - url: https://www.skynewsarabia.com/rss
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: '''Today''s news'' site-wide feed (50+ items).'
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCIJXOvggjKtCagMfxvcCzAA
@@ -584,6 +593,7 @@
     yemen_filter: true
     notes: candidate; channel id UCIJXOvggjKtCagMfxvcCzAA shown on https://socialblade.com/youtube/handle/skynewsarabia
       for the youtube.com/skynewsarabia channel linked from skynewsarabia.com (seen 2026-10-04).
+    active: false
   selection:
     reason: Abu Dhabi-based 24-hour Arabic news channel, now fully UAE-owned, with a Yemen news category that carried
       several Yemen stories a day in October 2026.
@@ -644,6 +654,7 @@
     The site still uses the Sky News Arabia brand as of 2026-10-04 despite Sky's exit; watch for a rebrand. The
     exact URL of the Yemen category was not extractable. Site RSS (skynewsarabia.com/rss) carried over from the
     old registry. yemen_coverage is an estimate, not measured.
+  wikidata: Q2201035
 - id: al-ain-news
   name: Al Ain News
   name_native: العين الإخبارية
@@ -688,6 +699,10 @@
     handle: alainnews
     url: https://www.tiktok.com/@alainnews
     handle_evidence: https://al-ain.com/
+  - platform: telegram
+    handle: alain4u
+    url: https://t.me/alain4u
+    handle_evidence: https://www.wikidata.org/wiki/Q54965476
   feeds:
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQqkDCzglMefUmIl6rcE0eA
     type: youtube
@@ -696,6 +711,7 @@
     yemen_filter: true
     notes: candidate; channel id UCQqkDCzglMefUmIl6rcE0eA shown on https://socialblade.com/youtube/c/alainnews for
       the channel linked from al-ain.com (seen 2026-10-04).
+    active: false
   selection:
     reason: Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories
       a day, including exclusives from Taiz and on the Southern Transitional Council.
@@ -751,6 +767,7 @@
     until the YouTube feed (or a site feed) is verified. yemen_coverage is an estimate, not measured. No working
     feed found on 2026-10-02; kept for the record. al-ain.com/feed returned 404; homepage lists no feed links. Ownership
     not documented in a source fetched for this file.
+  wikidata: Q54965476
 - id: al-araby-al-jadeed
   name: Al-Araby Al-Jadeed
   name_native: العربي الجديد
@@ -783,7 +800,7 @@
   - url: https://www.alaraby.co.uk/rss
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Site-wide feed (about 10 items); poll frequently.
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQ2BzTiRUbL3z4K22dTB5dg
@@ -792,6 +809,7 @@
     verified_at: null
     yemen_filter: true
     notes: candidate; channel id from a vidiq stats page whose channel links to www.alaraby.co.uk (seen 2026-10-04).
+    active: false
   selection:
     reason: London-based, Qatari-owned pan-Arab daily with a Yemen section in its navigation and several Yemen stories
       a day during the 2026 fighting.
@@ -844,6 +862,7 @@
   notes: Audience figure is YouTube only (vidiq, displayed 2026-10-04); no current web-traffic figure found. Site
     RSS (alaraby.co.uk/rss) carried over from the old registry; no Yemen-section RSS found. English edition The
     New Arab is not selected separately (see excluded list). yemen_coverage is an estimate, not measured.
+  wikidata: Q20389499
 - id: press-tv
   name: Press TV
   name_native: پرس تی وی
@@ -884,13 +903,13 @@
   - url: https://www.presstv.co.uk/rss.xml
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: presstv.ir/rss.xml redirects (302) here. Site-wide feed (100+ items).
   - url: https://t.me/s/presstv
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; t.me/presstv is linked from the Press TV homepage (presstv.ir redirects to presstv.co.uk,
       seen 2026-10-04); documented t.me/s pattern. Site RSS presstv.co.uk/rss.xml carried over from the old registry.
@@ -946,6 +965,7 @@
   notes: presstv.ir redirects (302) to presstv.co.uk. Audience evidence is Telegram only; X follower count not retrievable.
     The Telegram preview showed posts up to 24 September 2026 when fetched, so it may lag. yemen_coverage is an
     estimate, not measured.
+  wikidata: Q912429
 - id: al-mayadeen
   name: Al Mayadeen
   name_native: الميادين
@@ -978,6 +998,10 @@
     followers: 1510000
     followers_as_of: 2026-10
     followers_source: https://socialblade.com/youtube/handle/almayadeennews
+  - platform: x
+    handle: AlMayadeenNews
+    url: https://x.com/AlMayadeenNews
+    handle_evidence: https://www.wikidata.org/wiki/Q4704414
   feeds:
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9YbjpvsFZytS0DnO1FnTKw
     type: youtube
@@ -987,6 +1011,7 @@
     notes: candidate; channel id UC9YbjpvsFZytS0DnO1FnTKw (Al Mayadeen News, @almayadeennews) shown on https://socialblade.com/youtube/handle/almayadeennews
       (seen 2026-10-05); documented YouTube channel-feed pattern. Official status of the channel is inferred from
       its title and Lebanon location, not from a link on almayadeen.net.
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCZCFHCU-2eGF7V5ciMkoPHw
     type: youtube
     verified: false
@@ -994,6 +1019,7 @@
     yemen_filter: true
     notes: candidate; channel id UCZCFHCU-2eGF7V5ciMkoPHw (Al Mayadeen Channel) shown on https://vidiq.com/youtube-stats/channel/UCZCFHCU-2eGF7V5ciMkoPHw
       (seen 2026-10-05); documented YouTube channel-feed pattern.
+    active: false
   selection:
     reason: Beirut-based pan-Arab channel of the Iran-aligned axis, with a dedicated Yemen country page and regular
       reports and interviews from Sanaa authorities, Saudi and Israeli strikes and the 2026 Aramco attacks.
@@ -1060,6 +1086,7 @@
     be evidenced (almayadeen.net homepage links were not extractable; search budget ran out). Semrush has no usable
     almayadeen.net traffic page. yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02;
     kept for the record. /rss and english.almayadeen.net/rss returned HTTP 403.
+  wikidata: Q4704414
 - id: anadolu-agency
   name: Anadolu Agency
   name_native: وكالة الأناضول
@@ -1095,36 +1122,40 @@
     handle: anadoluagency
     url: https://www.instagram.com/anadoluagency
     handle_evidence: https://www.aa.com.tr/en
+  - platform: telegram
+    handle: anadoluajansi
+    url: https://t.me/anadoluajansi
+    handle_evidence: https://www.wikidata.org/wiki/Q477436
   feeds:
   - url: https://www.aa.com.tr/en/rss/default?cat=middle-east
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: English Middle East feed (about 31 items). Channel title is generic 'Anadolu Ajansı Güncel Haberler'.
   - url: https://www.aa.com.tr/en/rss/default?cat=world
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: English World feed.
   - url: https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Arabic 'Arab countries' feed (Arabic items checked). URL contains Arabic; percent-encode if needed. cat=guncel
       errored on the ar site.
   - url: https://www.aa.com.tr/tr/rss/default?cat=dunya
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: Turkish World feed (30 items).
   - url: https://www.aa.com.tr/en/rss/default?cat=live
     type: rss
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; RSS link shown on the aa.com.tr/en homepage (seen 2026-10-05); general live feed, so Yemen
       items need keyword filtering. Verified feeds of the old registry (4) carry over.
@@ -1136,6 +1167,10 @@
       value: 7800000
       as_of: 2026-08
       source_url: https://www.semrush.com/website/aa.com.tr/overview/
+    - metric: youtube_subscribers
+      value: 752000
+      as_of: 2025-01-25
+      source_url: https://www.wikidata.org/wiki/Q477436
     influence_evidence:
       regional_importance: high
       cited_by_other_media: high
@@ -1183,6 +1218,7 @@
   notes: Existing id with 4 verified feeds in the old registry. Traffic is the Semrush figure for the whole aa.com.tr
     domain (all languages, Turkey rank 239), not Yemen or Arabic only. No Arabic-edition URL was verified in this
     pass. yemen_coverage is an estimate, not measured. Covers both the Turkey and pan-Arab (Anadolu Arabic) scope.
+  wikidata: Q477436
 - id: reuters
   name: Reuters
   name_native: رويترز
@@ -1208,6 +1244,10 @@
     followers: 4330000
     followers_as_of: 2026-10
     followers_source: https://socialblade.com/youtube/handle/reuters
+  - platform: telegram
+    handle: ReutersWorldChannel
+    url: https://t.me/ReutersWorldChannel
+    handle_evidence: https://www.wikidata.org/wiki/Q130879
   feeds:
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UChqUTb7kYRX8-EiaN3XFrSQ
     type: youtube
@@ -1217,6 +1257,7 @@
     notes: candidate; channel id UChqUTb7kYRX8-EiaN3XFrSQ shown on https://socialblade.com/youtube/handle/reuters
       (seen 2026-10-05); documented YouTube channel-feed pattern. No Reuters site RSS feed was found in this pass
       (reuters.com was blocked to the fetch tool).
+    active: false
   selection:
     reason: The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping,
       Yemen government statements) are syndicated across the press and are among the most-cited English-language
@@ -1279,6 +1320,7 @@
     is verified. Traffic is the Semrush figure for the whole reuters.com domain. Semrush page title read 'August
     2026'. reuters.com and apnews.com blocked the fetch tool, so Yemen frequency rests on syndicated copies. Reuters
     discontinued its public RSS feeds in 2020; no public feed found. Coverage reachable via Google News / GDELT.
+  wikidata: Q130879
 - id: associated-press
   name: Associated Press
   name_native: أسوشيتد برس
@@ -1313,6 +1355,7 @@
     yemen_filter: true
     notes: candidate; channel id UC52X5wxOL_s5yw0dQk7NtgA shown on https://socialblade.com/youtube/handle/associatedpress
       (seen 2026-10-05); documented YouTube channel-feed pattern.
+    active: false
   selection:
     reason: US-based global wire cooperative with a long-standing Yemen bureau tradition; its Yemen dispatches (Houthi
       attacks on Saudi Arabia and shipping, front-line fighting) are syndicated by hundreds of outlets.
@@ -1408,6 +1451,7 @@
     yemen_filter: true
     notes: candidate; channel id UC86dbj-lbDks_hZ5gRKL49Q ('AFP News Agency', @afp) shown on https://socialblade.com/youtube/handle/afp
       (seen 2026-10-05); documented YouTube channel-feed pattern.
+    active: false
   selection:
     reason: Global wire with a Middle East and North Africa hub and a full Arabic service; its Yemen dispatches
       (Saudi strikes, Houthi-run health ministry casualty counts, Taiz fighting) are re-used across Arabic, French
@@ -1467,6 +1511,7 @@
     is verified. Only YouTube reach could be cited (no usable web-traffic page for afp.com, which is a corporate
     site). afp.com and the AFP Arabic service pages were not fetchable in this pass. AFP sells its wire to subscribers;
     no public RSS found. No public RSS feed found; recorded for reference.
+  wikidata: Q40464
 - id: france24-arabic
   name: France 24 Arabic
   name_native: فرانس 24
@@ -1494,9 +1539,10 @@
   feeds:
   - url: https://www.france24.com/ar/rss
     type: rss
-    verified: false
+    verified: true
     yemen_filter: true
     notes: robots.txt blocked the fetch tool, so not verified.
+    verified_at: 2026-10-05
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCdTyuXgmJkG_O8_75eqej-w
     type: youtube
     verified: false
@@ -1505,6 +1551,7 @@
     notes: candidate; channel id UCdTyuXgmJkG_O8_75eqej-w (channel title 'France 24 Arabic', @france24_ar) shown
       on https://socialblade.com/youtube/handle/france24_ar/achievements (seen 2026-10-05); documented YouTube channel-feed
       pattern.
+    active: false
   selection:
     reason: The Arabic service of the French state international broadcaster, reaching Yemen's neighbourhood and
       diaspora, with regular dated reporting on the 2026 Houthi-Saudi escalation and the Taiz front.
@@ -1560,12 +1607,13 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or a site feed)
     is verified. No France 24 Arabic RSS URL was seen in this pass. YouTube count from Social Blade as displayed
     2026-10-05. The france24.com/ar homepage could not be fetched (permission not granted), so social links beyond
     YouTube were not evidenced. yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02;
     kept for the record.
+  wikidata: Q138823366
 - id: rt-arabic
   name: RT Arabic
   name_native: روسيا اليوم
@@ -1582,13 +1630,18 @@
   geographic_focus:
   - regional_mena
   yemen_coverage: high
-  accounts: []
+  accounts:
+  - platform: telegram
+    handle: rtarabictelegram
+    url: https://t.me/rtarabictelegram
+    handle_evidence: https://www.wikidata.org/wiki/Q2988616
   feeds:
   - url: https://arabic.rt.com/rss/
     type: rss
-    verified: false
+    verified: true
     yemen_filter: true
     notes: Returned HTTP 403 to the fetch tool, so not verified.
+    verified_at: 2026-10-05
   selection:
     reason: Russian state-funded Arabic channel with a steady stream of reports on the 2026 Houthi-Saudi escalation,
       US contacts with the Houthis and Saudi military preparations.
@@ -1640,12 +1693,13 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: Existing id; old registry had no verified feed, so active false until a feed is found and verified. The
     official YouTube handle and channel id were not evidenced (the qoruz page gives only the name and 701.7K subscribers,
     shown as 'as of October 2026'), and no RT Arabic RSS or Telegram link was seen, so no account or feed is listed.
     arabic.rt.com homepage required permission and could not be fetched. yemen_coverage is an estimate, not measured.
     No working feed found on 2026-10-02; kept for the record.
+  wikidata: Q2988616
 - id: middle-east-eye
   name: Middle East Eye
   name_native: ميدل إيست آي
@@ -1687,7 +1741,7 @@
   - url: https://www.middleeasteye.net/rss
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: All-news feed; items dated 2026-10-01 (incl. Sanaa item).
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCR0fZh5SBxxMNYdg0VzRFkg
@@ -1698,6 +1752,7 @@
     notes: candidate; channel id UCR0fZh5SBxxMNYdg0VzRFkg is linked from the middleeasteye.net homepage (seen 2026-10-05);
       documented YouTube channel-feed pattern. The site has Yemen pages (middleeasteye.net/countries/yemen and /topics/yemen-war)
       but no RSS link was found on the homepage; the old registry's verified feed carries over.
+    active: false
   selection:
     reason: London-based English-language news site with a dedicated Yemen country page and a Yemen war topic, running
       live-blog updates and reporting on the 2026 Saudi-Houthi fighting, Taiz and displacement.
@@ -1756,6 +1811,7 @@
   notes: Existing id with 1 verified feed in the old registry (carried over). Social links are those listed on the
     middleeasteye.net homepage on 2026-10-05; no follower counts were retrieved. Semrush page read August 2026.
     Funding allegations are contested; orientation left unknown pending stronger evidence.
+  wikidata: Q18085829
 - id: al-monitor
   name: Al-Monitor
   category: MEDIA
@@ -1771,14 +1827,19 @@
   geographic_focus:
   - regional_mena
   yemen_coverage: high
-  accounts: []
+  accounts:
+  - platform: x
+    handle: almonitor
+    url: https://x.com/almonitor
+    handle_evidence: https://www.wikidata.org/wiki/Q4702909
   feeds:
   - url: https://www.al-monitor.com/rss
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: true
     notes: All-news feed; items dated 2026-10-02 (incl. WFP Yemen item).
+    active: false
   selection:
     reason: Washington-based Middle East news and analysis site with a Yemen country page that carried about ten
       Yemen stories between September and 5 October 2026 on the Saudi-Houthi escalation, the Yemeni government offensive
@@ -1788,6 +1849,10 @@
       value: 363980
       as_of: 2026-08
       source_url: https://www.semrush.com/website/al-monitor.com/overview/
+    - metric: youtube_subscribers
+      value: 5150
+      as_of: 2025-01-25
+      source_url: https://www.wikidata.org/wiki/Q4702909
     influence_evidence:
       regional_importance: medium
       cited_by_other_media: medium
@@ -1831,9 +1896,10 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: Existing id with 1 verified feed in the old registry (carried over). The homepage fetch showed no social-account
     links, so no accounts are listed. Semrush page read August 2026.
+  wikidata: Q4702909
 - id: times-of-israel
   name: The Times of Israel
   category: MEDIA
@@ -1872,6 +1938,10 @@
       value: 11160000
       as_of: 2026-08
       source_url: https://www.semrush.com/website/timesofisrael.com/overview/
+    - metric: youtube_subscribers
+      value: 46800
+      as_of: 2025-07-05
+      source_url: https://www.wikidata.org/wiki/Q6449319
     influence_evidence:
       regional_importance: medium
       cited_by_other_media: medium
@@ -1914,6 +1984,7 @@
     and active is false until one is added and verified. Social links are those on the timesofisrael.com homepage
     on 2026-10-05; no follower counts. Semrush extract gave no month label for this page (others fetched the same
     day read August 2026). The site also publishes Hebrew, Arabic, French and Persian editions.
+  wikidata: Q6449319
 - id: jerusalem-post
   name: The Jerusalem Post
   name_native: ג'רוזלם פוסט
@@ -1963,10 +2034,11 @@
     yemen_filter: true
     notes: candidate; channel id UCLLLdCANnMAdMyrXdYbSlxg linked from the jpost.com page https://www.jpost.com/tags/houthi
       (seen 2026-10-05); documented YouTube channel-feed pattern.
+    active: false
   - url: https://t.me/s/The_Jerusalem_Post
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; t.me/The_Jerusalem_Post is linked from jpost.com (seen 2026-10-05); documented t.me/s pattern.
   selection:
@@ -1977,6 +2049,10 @@
       value: 9820000
       as_of: 2026-08
       source_url: https://www.semrush.com/website/jpost.com/overview/
+    - metric: youtube_subscribers
+      value: 62100
+      as_of: 2025-11-08
+      source_url: https://www.wikidata.org/wiki/Q35438
     influence_evidence:
       regional_importance: medium
       cited_by_other_media: medium
@@ -2015,7 +2091,8 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: New id (not in old registry). active false until a feed is verified. Social links are those listed on the
     jpost.com Houthi tag page on 2026-10-05; no follower counts. Semrush extract gave no month label for this page
     (others fetched the same day read August 2026). The jpost.com homepage itself required permission to fetch.
+  wikidata: Q35438

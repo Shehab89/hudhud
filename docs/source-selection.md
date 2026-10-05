@@ -11,67 +11,81 @@ evidence is too thin to score, not that the source has no influence. Being offic
 influence nor reliability, and reliability is not assessed for any source unless evidence is cited.
 Alignment records documented affiliation or editorial position; it says nothing about accuracy.
 
-Sources: **98**. Influence scored: 37. Collected by the pipeline now: 55.
+Sources: **138**. Influence scored: 83. Collected by the pipeline now: 41.
 
 | Category | Tier A | Tier B | Collected |
 |---|---:|---:|---:|
-| Media | 33 | 6 | 26 |
-| Social accounts (public figures) | 8 | 3 | 1 |
+| Media | 33 | 6 | 24 |
+| Social accounts (public figures) | 22 | 29 | 2 |
 | Political organisations | 0 | 4 | 4 |
-| Official government sources | 0 | 20 | 7 |
-| Diplomatic missions | 0 | 7 | 2 |
-| International institutions | 0 | 12 | 10 |
-| Think tanks | 2 | 0 | 2 |
-| Research organisations | 3 | 0 | 3 |
+| Official government sources | 0 | 20 | 5 |
+| Diplomatic missions | 0 | 7 | 1 |
+| International institutions | 0 | 12 | 3 |
+| Think tanks | 2 | 0 | 1 |
+| Research organisations | 3 | 0 | 1 |
 
 ## Media
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
-| Al Arabiya | SA | A | 100.0 | none | plc_government | saudi | rss,telegram_public,youtube | Leading Saudi-owned pan-Arab news channel with a dedicated Yemen section updated several times a day and a correspondent network inside Yemen. |
+| Al Arabiya | SA | A | 100.0 | none | plc_government | saudi | telegram_public | Leading Saudi-owned pan-Arab news channel with a dedicated Yemen section updated several times a day and a correspondent network inside Yemen. |
 | Al Jazeera Arabic | QA | A | 100.0 | none | none_documented | qatar | rss,telegram_public | Most-watched pan-Arab news channel; runs a dedicated Yemen section that published several Yemen items a day in October 2026. |
 | Al Jazeera English | QA | A | 100.0 | none | none_documented | qatar | rss | Global English-language news channel with a dedicated Yemen page and daily Yemen reporting, including explainers and on-the-ground features during the 2026 fig… |
 | Asharq Al-Awsat | GB | A | 97.4 | none | none_documented | saudi | rss | Saudi-owned pan-Arab daily of record with a dedicated Yemen tag carrying several Yemen stories a day, including exclusive comment from the coalition. |
 | Associated Press | US | A | 90.0 | none | none_documented | none_documented | no | US-based global wire cooperative with a long-standing Yemen bureau tradition; its Yemen dispatches (Houthi attacks on Saudi Arabia and shipping, front-line fig… |
 | Reuters | GB | A | 90.0 | none | none_documented | none_documented | no | The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping, Yemen government statements) are syndicated across the… |
-| Sky News Arabia | AE | A | 90.0 | none | none_documented | uae | rss,youtube | Abu Dhabi-based 24-hour Arabic news channel, now fully UAE-owned, with a Yemen news category that carried several Yemen stories a day in October 2026. |
+| Sky News Arabia | AE | A | 90.0 | none | none_documented | uae | rss | Abu Dhabi-based 24-hour Arabic news channel, now fully UAE-owned, with a Yemen news category that carried several Yemen stories a day in October 2026. |
 | Al Hadath | SA | A | 88.4 | none | none_documented | saudi | no | Saudi-owned 24-hour political news channel (Al Arabiya's sister) with a dedicated Yemen section updated daily during the 2026 fighting. |
 | Agence France-Presse | FR | A | 84.3 | none | none_documented | none_documented | no | Global wire with a Middle East and North Africa hub and a full Arabic service; its Yemen dispatches (Saudi strikes, Houthi-run health ministry casualty counts,… |
 | Anadolu Agency | TR | A | 83.9 | none | none_documented | turkey | rss | Turkey's state news agency, whose English and Arabic services file frequent Yemen wire reports (Taiz front, Saudi strikes, Houthi claims) that are widely re-us… |
-| The Jerusalem Post | IL | A | 82.9 | none | none_documented | none_documented | no | Israel's long-running English daily, whose Houthi tag carried about ten stories between 22 September and 2 October 2026 on the Saudi-Houthi escalation, Israeli… |
-| Suhail TV | YE | A | 79.3 | low | islah | unknown | rss,youtube | Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day Yemen news on 2026-10-04; the main broadcast voice of th… |
-| Yemen Shabab TV / Yemen Shabab Net | YE | A | 78.9 | none | islah | qatar | rss,telegram_public,youtube | Satellite news channel with the second-largest YouTube audience of any Yemeni channel (3.84M subscribers, Social Blade Yemen rank 2) and daily Yemen news outpu… |
-| Belqees TV / Belqees Net | YE | A | 74.4 | none | islah | qatar | rss,youtube | Major Yemeni news brand (1.37M YouTube subscribers) that kept publishing on digital platforms after its satellite broadcast was suspended on 2025-11-28; YouTub… |
-| Al-Mahriah TV | YE | A | 73.6 | none | islah | qatar | youtube | Satellite channel with the largest YouTube audience of any Yemeni news channel after Yemen Shabab (3.59M main channel plus 741K news channel); on air in 2026 a… |
-| France 24 Arabic | FR | A | 72.0 | none | none_documented | eu | no | The Arabic service of the French state international broadcaster, reaching Yemen's neighbourhood and diaspora, with regular dated reporting on the 2026 Houthi-… |
+| The Jerusalem Post | IL | A | 82.9 | none | none_documented | none_documented | rss,telegram_public | Israel's long-running English daily, whose Houthi tag carried about ten stories between 22 September and 2 October 2026 on the Saudi-Houthi escalation, Israeli… |
+| Suhail TV | YE | A | 79.3 | low | islah | unknown | rss | Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day Yemen news on 2026-10-04; the main broadcast voice of th… |
+| Yemen Shabab TV / Yemen Shabab Net | YE | A | 78.9 | none | islah | qatar | telegram_public | Satellite news channel with the second-largest YouTube audience of any Yemeni channel (3.84M subscribers, Social Blade Yemen rank 2) and daily Yemen news outpu… |
+| Belqees TV / Belqees Net | YE | A | 74.4 | none | islah | qatar | rss | Major Yemeni news brand (1.37M YouTube subscribers) that kept publishing on digital platforms after its satellite broadcast was suspended on 2025-11-28; YouTub… |
+| Al-Mahriah TV | YE | A | 73.6 | none | islah | qatar | no | Satellite channel with the largest YouTube audience of any Yemeni news channel after Yemen Shabab (3.59M main channel plus 741K news channel); on air in 2026 a… |
+| France 24 Arabic | FR | A | 72.0 | none | none_documented | eu | rss | The Arabic service of the French state international broadcaster, reaching Yemen's neighbourhood and diaspora, with regular dated reporting on the 2026 Houthi-… |
 | Al Ain News | AE | A | 71.5 | none | none_documented | uae | no | Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories a day, including exclusives from Taiz and on the Southern… |
-| Yemen Today TV | YE | A | 69.6 | low | gpc_plc | unknown | youtube | The GPC/Saleh-family satellite channel, relaunched outside Yemen after the Houthis seized its Sanaa headquarters in December 2017; 460K YouTube subscribers and… |
+| Yemen Today TV | YE | A | 69.6 | low | gpc_plc | unknown | no | The GPC/Saleh-family satellite channel, relaunched outside Yemen after the Houthis seized its Sanaa headquarters in December 2017; 460K YouTube subscribers and… |
 | The Times of Israel | IL | A | 68.0 | none | none_documented | none_documented | no | Israel's leading English-language news site; its live blog carries frequent Yemen entries (Houthi claims against Saudi Arabia and Israel, Saudi strikes), many… |
-| Al-Araby Al-Jadeed | GB | A | 66.5 | none | none_documented | qatar | rss,youtube | London-based, Qatari-owned pan-Arab daily with a Yemen section in its navigation and several Yemen stories a day during the 2026 fighting. |
-| Middle East Eye | GB | A | 65.3 | none | none_documented | none_documented | rss,youtube | London-based English-language news site with a dedicated Yemen country page and a Yemen war topic, running live-blog updates and reporting on the 2026 Saudi-Ho… |
+| Al-Araby Al-Jadeed | GB | A | 66.5 | none | none_documented | qatar | rss | London-based, Qatari-owned pan-Arab daily with a Yemen section in its navigation and several Yemen stories a day during the 2026 fighting. |
+| Middle East Eye | GB | A | 65.3 | none | none_documented | none_documented | rss | London-based English-language news site with a dedicated Yemen country page and a Yemen war topic, running live-blog updates and reporting on the 2026 Saudi-Ho… |
 | Al Mayadeen | LB | A | 64.9 | none | none_documented | iran_axis | no | Beirut-based pan-Arab channel of the Iran-aligned axis, with a dedicated Yemen country page and regular reports and interviews from Sanaa authorities, Saudi an… |
 | Press TV | IR | A | 62.7 | low | none_documented | iran_axis | rss,telegram_public | Iranian state broadcaster's English-language channel, the main English outlet of the Iran-aligned axis, with frequent Yemen coverage that relays the Sanaa auth… |
 | Mareb Press | YE | A | 61.3 | none | plc_government | unknown | rss,telegram_public | One of Yemen's oldest online newspapers (launched 2006), described by International Media Support as among the serious outlets with significant audiences and b… |
-| Aden Independent Channel (AIC) | YE | A | 59.3 | low | stc | unknown | youtube | The main broadcast voice of the southern separatist camp (Southern Transitional Council); 272K YouTube subscribers and 78,500 videos. Went off air for nearly t… |
-| RT Arabic | RU | A | 56.5 | none | none_documented | russia | no | Russian state-funded Arabic channel with a steady stream of reports on the 2026 Houthi-Saudi escalation, US contacts with the Houthis and Saudi military prepar… |
-| Al-Monitor | US | A | 53.6 | none | none_documented | none_documented | rss | Washington-based Middle East news and analysis site with a Yemen country page that carried about ten Yemen stories between September and 5 October 2026 on the… |
-| Al-Joumhouriya TV | YE | A | 51.1 | none | unknown | unknown | youtube | Yemeni 24-hour news channel on Nilesat with 412K YouTube subscribers (Social Blade Yemen rank 66-68); one of the few TV channels of the anti-Houthi republican… |
+| Aden Independent Channel (AIC) | YE | A | 59.3 | low | stc | unknown | no | The main broadcast voice of the southern separatist camp (Southern Transitional Council); 272K YouTube subscribers and 78,500 videos. Went off air for nearly t… |
+| RT Arabic | RU | A | 56.5 | none | none_documented | russia | rss | Russian state-funded Arabic channel with a steady stream of reports on the 2026 Houthi-Saudi escalation, US contacts with the Houthis and Saudi military prepar… |
+| Al-Monitor | US | A | 53.6 | none | none_documented | none_documented | no | Washington-based Middle East news and analysis site with a Yemen country page that carried about ten Yemen stories between September and 5 October 2026 on the… |
+| Al-Joumhouriya TV | YE | A | 51.1 | none | unknown | unknown | no | Yemeni 24-hour news channel on Nilesat with 412K YouTube subscribers (Social Blade Yemen rank 66-68); one of the few TV channels of the anti-Houthi republican… |
 | Aden Al-Ghad | YE | A | 46.9 | none | southern_other | unknown | rss,telegram_public | Aden-based news site (founded 2007) listed by Fanack among Yemen's main outlets, with same-day Yemen and Aden reporting (site last updated 2026-10-04). Its off… |
-| Al-Ayyam | YE | A | 36.7 | none | independent | unknown | telegram_public,youtube | Aden's historic independent daily (founded 1958 by the Bashraheel family), most widely read in the south according to Media Landscapes, with the website publis… |
-| Al-Masdar Online | YE | A |  | none | islah | unknown | rss | One of Yemen's leading independent news websites (print weekly from 2007, daily website from 2009), banned in Houthi-held areas and operating from abroad since… |
+| Al-Ayyam | YE | A | 36.7 | none | independent | unknown | telegram_public | Aden's historic independent daily (founded 1958 by the Bashraheel family), most widely read in the south according to Media Landscapes, with the website publis… |
+| Al-Masdar Online | YE | A |  | none | islah | unknown | no | One of Yemen's leading independent news websites (print weekly from 2007, daily website from 2009), banned in Houthi-held areas and operating from abroad since… |
 | Al-Masirah TV | YE | A |  | medium | ansar_allah | iran_axis | rss | The Houthi movement's own satellite channel and the primary outlet of Ansar Allah; routinely quoted by international wires as the source for Houthi claims and… |
 | Yemen Monitor | YE | A |  | none | unknown | unknown | rss | Yemeni news and analysis site in Arabic and English with a very large archive (about 36,850 local-news articles) and same-day coverage of the 2026 military esc… |
 | Saba News Agency (government) | YE | B | 40.2 | high | plc_government | unknown | rss,telegram_public | Official news agency of the internationally recognised government / Presidential Leadership Council; publishes presidential, cabinet and ministry statements da… |
-| 26 September (Sanaa) | YE | B | 25.0 | medium | ansar_allah | unknown | no | Weekly newspaper and news site of the Ministry of Defense in Sanaa, the Houthi-run armed-forces outlet (editor-in-chief listed on the site as Brigadier Yahya Q… |
+| 26 September (Sanaa) | YE | B | 25.0 | medium | ansar_allah | unknown | rss,telegram_public | Weekly newspaper and news site of the Ministry of Defense in Sanaa, the Houthi-run armed-forces outlet (editor-in-chief listed on the site as Brigadier Yahya Q… |
 | 26 September Net (Yemeni Armed Forces, government) | YE | B |  | medium | plc_government | unknown | rss | Official news site and spokesperson outlet of the government's Armed Forces under the Ministry of Defense Moral Guidance Directorate; the channel through which… |
 | Al-Thawra (Sanaa) | YE | B |  | medium | ansar_allah | unknown | no | Yemen's historic state daily (founded 1962), controlled by the Houthi authorities in Sanaa since 2014; State Media Monitor (June 2026) classes it State-Control… |
-| Saba News Agency (Sanaa) | YE | B |  | high | ansar_allah | unknown | rss | Official news agency of the Sanaa (Ansar Allah) authorities; the wire through which the Supreme Political Council and Sanaa ministries publish statements, quot… |
-| Yemen TV (government) | YE | B |  | medium | plc_government | unknown | no | State broadcaster of the internationally recognised government and the Presidential Leadership Council, one of two rival 'Yemen TV' operations since the 2015 s… |
+| Saba News Agency (Sanaa) | YE | B |  | high | ansar_allah | unknown | no | Official news agency of the Sanaa (Ansar Allah) authorities; the wire through which the Supreme Political Council and Sanaa ministries publish statements, quot… |
+| Yemen TV (government) | YE | B |  | medium | plc_government | unknown | rss | State broadcaster of the internationally recognised government and the Presidential Leadership Council, one of two rival 'Yemen TV' operations since the 2015 s… |
 
 ## Social accounts (public figures)
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
+| Tawakkol Karman | TR | A | 80.4 | none | none_documented | none_documented | no | The best-known Yemeni voice abroad; comments on the Houthis, the Saudi-UAE coalition and Yemeni politics alongside wider Arab causes. |
+| Ali al-Bukhaiti | GB | A | 63.4 | none | none_documented | none_documented | no | One of the largest Arabic-language Yemeni political accounts; debates the Houthis, the government and the coalition with a very wide audience. |
+| Ahmed Obaid bin Daghr | YE | A | 62.1 | low | plc_government | saudi | no | Senior government-camp politician with a very large following; his posts frame the Shura Council's and the government's positions on military operations and te… |
+| Ali Mohsen al-Ahmar | XX | A | 59.5 | low | none_documented | none_documented | no | Senior military and political figure of the anti-Houthi camp for two decades; his posts mark national occasions and signal positions of the old republican elit… |
+| Hani Mashhour | AE | A | 51.0 | none | none_documented | none_documented | no | High-reach commentator on southern Yemen and Saudi-Houthi relations; his February 2026 posts argue Riyadh shifted towards understanding with the Houthis. |
+| Hisham Al-Omeisy | US | A | 41.7 | none | none_documented | none_documented | no | Prolific English-language commentator on the Houthis, the military situation and the humanitarian toll; widely read by journalists and diplomats. |
+| Iona Craig | GB | A | 41.6 | none | none_documented | none_documented | no | Prize-winning Yemen reporter whose posts and investigations (drone strikes, civilian casualties, the war economy) are widely cited. |
+| Basheer al-Harethi | YE | A | 40.6 | none | independent | none_documented | no | Large Arabic-language Yemeni journalist account that comments on Yemeni politics alongside cultural and historical content. |
+| Basha Report | US | A | 39.9 | none | none_documented | none_documented | no | One of the most active English-language accounts on the 2026 Yemen war; analysts and journalists share its maps, translations of Arabic reporting and fact-chec… |
+| Afrah Nasser | US | A | 38.1 | none | none_documented | none_documented | no | Yemeni journalist-researcher whose commentary on UN mediation, women-led protests and civil society reaches an Arabic- and English-speaking audience. |
+| Radhya al-Mutawakel | YE | A | 34.9 | low | none_documented | none_documented | no | Head of Yemen's main independent human-rights documentation group; her posts report detentions, disappearances and civilian casualties, notably in Houthi-held… |
+| Ahmed Nagi | TR | A | 30.8 | low | none_documented | none_documented | no | Crisis Group's Yemen analyst; his conflict analysis of the Houthis, the south and the PLC is cited by diplomats and media. |
+| Adam Baron | US | A | 28.4 | none | none_documented | none_documented | no | Veteran Yemen analyst and former journalist whose posts are followed by diplomats and reporters. |
+| Fatima Alasrar | US | A | 28.3 | none | none_documented | none_documented | no | Yemeni analyst whose commentary on the Houthis, Iran and the anti-Houthi camp appears in Foreign Policy and the Washington Report. |
 | Abdulghani al-Iryani | YE | A |  | low | none_documented | none_documented | no | Veteran Yemeni analyst of the peace process; posts commentary on negotiations and governance. |
 | Elisabeth Kendall | GB | A |  | low | none_documented | none_documented | no | UK academic on Yemen (AQAP, the Houthis, information warfare) with extensive fieldwork; her account posts on Yemeni security. |
 | Farea al-Muslimi | GB | A |  | low | none_documented | none_documented | no | Yemeni analyst at Chatham House whose account comments on Yemeni politics, the Houthis and Gulf policy. |
@@ -80,84 +94,110 @@ Sources: **98**. Influence scored: 37. Collected by the pipeline now: 55.
 | Maysaa Shuja al-Deen | YE | A |  | low | none_documented | none_documented | no | Specialist on the Houthi movement whose analysis appears in Arabic and English outlets; posts on Yemeni politics. |
 | Nadwa al-Dawsari | US | A |  | low | none_documented | none_documented | no | Yemen conflict analyst (tribal politics, the Houthis) at the Middle East Institute; her account posts mostly on Yemen. |
 | Thomas Juneau | CA | A |  | low | none_documented | none_documented | no | Academic who publishes on Yemen, the Houthis and Iran's role; Sana'a Center non-resident fellow. |
+| Mohammed Abdulsalam | OM | B | 64.9 | high | ansar_allah | iran_axis | no | Chief negotiator and spokesman of the movement that controls Sanaa; his posts announce positions towards Saudi Arabia, the UN and the US and are reported by wi… |
 | Moammar al-Eryani | YE | B | 61.3 | high | plc_government | saudi | no | The government's chief information official and its most prolific poster on X; his threads on the Houthis and Iran are routinely quoted by Arab News, Al Arabiy… |
+| Mohammed Ali al-Houthi | YE | B | 60.0 | medium | ansar_allah | iran_axis | telegram_public | Senior Ansar Allah leader (former head of the Supreme Revolutionary Committee and of the Supreme Political Council) whose X account and Telegram channel carry… |
+| Yahya Saree | YE | B | 59.2 | high | ansar_allah | iran_axis | telegram_public | The voice through which the Houthi forces announce missile, drone and naval operations, now including claimed strikes on Saudi targets; his announcements are c… |
+| Tareq Saleh | YE | B | 55.4 | high | national_resistance | unknown | no | PLC member and commander of the main armed force on the Red Sea coast; his X posts and interviews are the voice of the National Resistance camp. |
+| Mohammed Al Jaber | SA | B | 51.9 | high | not_applicable | saudi | no | Saudi Arabia's principal envoy on Yemen since 2014; his posts announce Saudi mediation, aid and political positions on Yemen. |
+| Hani bin Braik | XX | B | 48.0 | medium | stc | uae | no | Prominent southern separatist figure with a large following whose posts attack Islah and defend the southern cause. |
+| Hussein al-Ezzi | YE | B | 47.5 | medium | ansar_allah | iran_axis | no | Houthi diplomat whose X account carries the movement's positions on Saudi Arabia, the Red Sea and the UN. |
+| Abdulmalik al-Mekhlafi | YE | B | 47.1 | medium | plc_government | saudi | no | Senior figure of the government camp, close to the Taiz front, who comments on military and political developments. |
+| Abdullah al-Alimi Bawazir | YE | B | 46.7 | high | plc_government | saudi | no | PLC vice-president who represented the government at the 81st UN General Assembly in September 2026; his account carries the government's foreign-policy and an… |
+| Abdulmalik al-Ajri | YE | B | 45.3 | medium | ansar_allah | iran_axis | no | Houthi political-bureau member and negotiator whose posts on Saudi Arabia, Iran and negotiations are widely read in the Houthi-aligned sphere. |
+| Mohammed al-Yadoumi | YE | B | 43.6 | high | islah | saudi | no | Head of Islah, the largest party in the government camp; his account carries the party's positions on the PLC, the Houthis and the south. |
+| Aidarous al-Zubaidi | AE | B | 43.0 | medium | stc | uae | no | Leader of the main southern separatist movement; central figure of the December 2025 to January 2026 events in Hadramawt and Aden and of the dispute over the S… |
+| Hezam al-Asad | YE | B | 41.6 | medium | ansar_allah | iran_axis | no | Houthi political-bureau member whose posts, including Hebrew-language threats, are widely quoted by Israeli and international media. |
+| Nasr al-Din Amer | YE | B | 41.5 | medium | ansar_allah | iran_axis | no | Senior Houthi media official who runs the Sanaa-side news agency; his account amplifies the movement's narratives. |
+| Sultan al-Arada | YE | B | 38.1 | high | plc_government | saudi | no | PLC member and governor of Marib, the government's main northern front; his posts announce Marib's security and political positions. |
+| Anwar al-Tamimi | AE | B | 36.3 | medium | stc | uae | no | Voice of the STC faction that rejects the dissolution; his statements are the council's official line after January 2026. |
+| Shaya al-Zindani | YE | B | 35.1 | high | plc_government | saudi | no | Head of the internationally recognised government's cabinet; his account announces cabinet decisions and diplomatic contacts. |
+| Sultan al-Barakani | YE | B | 33.2 | high | gpc_plc | saudi | no | Head of the legislature of the government camp and leading GPC politician; his account carries parliamentary and party positions. |
+| Afrah al-Zouba | YE | B | 32.8 | high | plc_government | saudi | no | The government's chief diplomat since July 2026; her account reports meetings with envoys and ambassadors and the government's positions on the UN process. |
+| Amr bin Habrish | YE | B | 32.3 | medium | hadramawt | none_documented | no | Leader of the Hadramawt tribal movement that opposed the STC's December 2025 advance and demands Hadrami self-rule; his statements shape the Hadramawt camp. |
+| Esmaeil Baghaei | IR | B | 31.5 | high | not_applicable | iran_axis | no | Voice of Iran's foreign ministry, whose statements on the Houthis, the Red Sea and Saudi-Houthi escalation frame Iran's position towards Yemen. |
+| Abu Zaraa al-Mahrami | YE | B | 29.7 | high | plc_government | uae | no | Commander of the UAE-backed Giants Brigades and PLC member; his position in the Saudi-UAE dispute over the south matters for the camp's cohesion. |
+| Othman Mujalli | YE | B | 28.5 | high | plc_government | saudi | no | PLC member from Sa'dah, the Houthi heartland; his April 2026 interview with Okaz signalled a possible return of ground operations. |
+| Salem al-Khanbashi | YE | B | 24.5 | high | plc_government | saudi | no | Governor of Hadramawt, the province at the centre of the December 2025 crisis, who joined the PLC when the STC members were removed; his account reports local… |
+| Mahmoud al-Subaihi | YE | B | 18.8 | high | plc_government | saudi | no | Southern general who joined the PLC when the STC members were removed in January 2026; his account carries the council's military and southern messaging. |
+| Abda Sharif | GB | B |  | medium | not_applicable | uk | no | British ambassador to Yemen; the UK holds the pen on Yemen at the UN Security Council, and her posts convey UK positions on the government, the PLC and the Hou… |
 | Badr Albusaidi | OM | B |  | high | not_applicable | oman | no | Oman is the main channel to Ansar Allah (its negotiators are based in Muscat); the foreign minister's posts announce and frame mediation steps on Yemen and the… |
-| Rashad al-Alimi | YE | B |  | high | plc_government | saudi | youtube | Personal/official accounts of the head of the Presidential Leadership Council; his posts are the top-level statements of the internationally recognised governm… |
+| Rashad al-Alimi | YE | B |  | high | plc_government | saudi | no | Personal/official accounts of the head of the Presidential Leadership Council; his posts are the top-level statements of the internationally recognised governm… |
 
 ## Political organisations
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
-| Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website) | YE | B |  | medium | plc_government | none_documented | rss,telegram_public | Website of the Nasserist Unionist People's Organisation, one of the anti-Houthi parties of the pro-government alliance, strong in Taiz; carries party statement… |
+| Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website) | YE | B |  | medium | plc_government | none_documented | telegram_public | Website of the Nasserist Unionist People's Organisation, one of the anti-Houthi parties of the pro-government alliance, strong in Taiz; carries party statement… |
 | Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site | YE | B |  | high | stc | uae | rss,telegram_public | Official platform of the main southern separatist organisation; publishes statements of its presidency, General Secretariat and local bodies, which remain cent… |
 | Yemeni Congregation for Reform (Islah), official party website | YE | B |  | high | islah | saudi | rss | Official website of Islah, the largest party in the anti-Houthi camp and a pillar of the PLC government; publishes the party's statements and positions of its… |
-| Yemeni Socialist Party (Al-Eshteraki Net, party platform) | YE | B |  | medium | plc_government | none_documented | rss,youtube | Platform of the Yemeni Socialist Party, the historic ruling party of South Yemen and a member of the anti-Houthi party alliance; publishes party statements and… |
+| Yemeni Socialist Party (Al-Eshteraki Net, party platform) | YE | B |  | medium | plc_government | none_documented | rss | Platform of the Yemeni Socialist Party, the historic ruling party of South Yemen and a member of the anti-Houthi party alliance; publishes party statements and… |
 
 ## Official government sources
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
-| King Salman Humanitarian Aid and Relief Centre (KSrelief) | SA | B | 41.0 | medium | not_applicable | saudi | youtube | Saudi Arabia's state humanitarian agency; Yemen is its largest country programme (38 projects and about USD 107 million, about 54 percent of its 2026 spending). |
+| United States Department of State (Bureau of Near Eastern Affairs and Office of the Spokesperson) | US | B | 44.5 | high | not_applicable | us | no | US foreign-policy voice on Yemen (Houthi terrorist designations and sanctions, Red Sea security, support to the PLC government, contacts with Saudi Arabia, Oma… |
+| King Salman Humanitarian Aid and Relief Centre (KSrelief) | SA | B | 41.0 | medium | not_applicable | saudi | no | Saudi Arabia's state humanitarian agency; Yemen is its largest country programme (38 projects and about USD 107 million, about 54 percent of its 2026 spending). |
+| Israel Defense Forces (IDF Spokesperson's Unit) | IL | B | 33.2 | high | not_applicable | israel | telegram_public | Israeli military that struck Houthi ports, power plants and leadership in Yemen in 2024-2025 (including the August 2025 strike that killed the Houthi prime min… |
+| Foreign, Commonwealth & Development Office (FCDO), United Kingdom | GB | B | 32.5 | high | not_applicable | uk | atom | UK foreign ministry; the UK is the penholder on Yemen at the UN Security Council and issues regular statements on the Houthis, the Red Sea and humanitarian aid… |
 | Central Bank of Yemen (Aden headquarters) | YE | B |  | high | plc_government | none_documented | telegram_public | Central bank of the internationally recognised government (Aden headquarters); its circulars, licence suspensions and exchange-rate measures are a core source… |
-| Foreign, Commonwealth & Development Office (FCDO), United Kingdom | GB | B |  | high | not_applicable | uk | atom | UK foreign ministry; the UK is the penholder on Yemen at the UN Security Council and issues regular statements on the Houthis, the Red Sea and humanitarian aid… |
 | Humanitarian Operations Coordination Center (HOCC), Sanaa authorities | YE | B |  | high | ansar_allah | iran_axis | no | Body of the Ansar Allah-led authorities in Sanaa that issues the Red Sea and Gulf of Aden shipping bans, sanctions lists, press releases and notices to shipown… |
-| Israel Defense Forces (IDF Spokesperson's Unit) | IL | B |  | high | not_applicable | israel | no | Israeli military that struck Houthi ports, power plants and leadership in Yemen in 2024-2025 (including the August 2025 strike that killed the Houthi prime min… |
 | Joint Forces Command of the Coalition to Restore Legitimacy in Yemen | SA | B |  | high | not_applicable | saudi | no | Military command of the Saudi-led coalition; its official spokesperson announces strikes, interceptions and warnings, and it is a direct party to the July-Sept… |
 | Ministry of Foreign Affairs and Expatriates, Republic of Yemen (PLC government) | YE | B |  | high | plc_government | saudi | no | Foreign ministry of the internationally recognised government; publishes the government's diplomatic positions, statements on UN processes and Red Sea and Hout… |
 | Ministry of Foreign Affairs and Expatriates, Sanaa authorities | YE | B |  | medium | ansar_allah | iran_axis | no | Foreign ministry of the Ansar Allah-led Sanaa authorities; issues their diplomatic positions (e.g. on Red Sea navigation, the UN process and Saudi Arabia), whi… |
 | Ministry of Foreign Affairs of Saudi Arabia | SA | B |  | high | not_applicable | saudi | no | Foreign-policy voice of the state that leads the Coalition to Restore Legitimacy in Yemen and is the main external backer of the PLC government; a direct party… |
 | Ministry of Foreign Affairs of the Islamic Republic of Iran (including the Spokesperson's office) | IR | B |  | high | not_applicable | iran_axis | no | Foreign ministry of the Houthis' main external backer and the only state that treats the Sanaa authorities as Yemen's government; its spokesperson answers on Y… |
-| Ministry of Foreign Affairs of the State of Qatar | QA | B |  | medium | not_applicable | qatar | youtube | Gulf state outside the Saudi-led coalition since 2017 whose foreign ministry issues recurring statements on Yemen (prisoner-exchange welcomes, the southern iss… |
-| Ministry of Foreign Affairs of the Sultanate of Oman | OM | B |  | high | not_applicable | oman | api | Oman is the principal mediator between the Houthis, Saudi Arabia, the US and the UN; Muscat hosts the Houthi negotiating delegation and Yemen-related talks. |
-| Ministry of Foreign Affairs of the United Arab Emirates | AE | B |  | high | not_applicable | uae | youtube | Foreign ministry of the coalition's second military power in Yemen from 2015 until its withdrawal on 30 December 2025; its December 2025 statements disputing S… |
-| Ministry of Planning and International Cooperation, Republic of Yemen (PLC government) | YE | B |  | medium | plc_government | none_documented | no | The government ministry that coordinates international aid, donor relations and development planning; its statements on humanitarian response, donor meetings a… |
+| Ministry of Foreign Affairs of the State of Qatar | QA | B |  | medium | not_applicable | qatar | no | Gulf state outside the Saudi-led coalition since 2017 whose foreign ministry issues recurring statements on Yemen (prisoner-exchange welcomes, the southern iss… |
+| Ministry of Foreign Affairs of the Sultanate of Oman | OM | B |  | high | not_applicable | oman | rss | Oman is the principal mediator between the Houthis, Saudi Arabia, the US and the UN; Muscat hosts the Houthi negotiating delegation and Yemen-related talks. |
+| Ministry of Foreign Affairs of the United Arab Emirates | AE | B |  | high | not_applicable | uae | no | Foreign ministry of the coalition's second military power in Yemen from 2015 until its withdrawal on 30 December 2025; its December 2025 statements disputing S… |
+| Ministry of Planning and International Cooperation, Republic of Yemen (PLC government) | YE | B |  | medium | plc_government | none_documented | rss | The government ministry that coordinates international aid, donor relations and development planning; its statements on humanitarian response, donor meetings a… |
 | Presidency of the Republic of Yemen / Presidential Leadership Council (office of the chairman) | YE | B |  | high | plc_government | saudi | no | Official website of the chairman of the Presidential Leadership Council, the head of state of the internationally recognised government; publishes republican d… |
-| Prime Minister's Office / Council of Ministers, Republic of Yemen (PLC government) | YE | B |  | high | plc_government | saudi | youtube | Official portal of the prime minister and cabinet of the internationally recognised government (cabinet decisions, statements, press conferences). |
+| Prime Minister's Office / Council of Ministers, Republic of Yemen (PLC government) | YE | B |  | high | plc_government | saudi | no | Official portal of the prime minister and cabinet of the internationally recognised government (cabinet decisions, statements, press conferences). |
 | Saudi Development and Reconstruction Program for Yemen (SDRPY) | SA | B |  | high | not_applicable | saudi | no | Saudi state program created by royal decree in 2018 that channels Saudi development money, fuel grants and deposits into Yemen; its announcements are a main ve… |
 | UK Maritime Trade Operations (UKMTO) | GB | B |  | medium | not_applicable | uk | no | The UK maritime security information centre whose incident reports and warnings are the main public source for Houthi attacks and suspicious approaches on ship… |
 | United States Central Command (CENTCOM) | US | B |  | high | not_applicable | us | no | US combatant command that ran the 2024-2025 strike campaigns against the Houthis (including Operation Rough Rider from 15 March 2025) and reports interdictions… |
-| United States Department of State (Bureau of Near Eastern Affairs and Office of the Spokesperson) | US | B |  | high | not_applicable | us | no | US foreign-policy voice on Yemen (Houthi terrorist designations and sanctions, Red Sea security, support to the PLC government, contacts with Saudi Arabia, Oma… |
 
 ## Diplomatic missions
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
+| Permanent Mission of the Russian Federation to the United Nations | RU | B | 7.5 | medium | not_applicable | russia | telegram_public | Russia is a permanent Security Council member that opposes expanding Yemen sanctions on the Houthis and speaks at the Council's Yemen meetings, giving the Russ… |
 | British Embassy Sana'a (UK Mission to Yemen, operating from Riyadh and Amman) | GB | B |  | medium | not_applicable | uk | no | The UK diplomatic mission dedicated to Yemen; carries British messaging to the PLC government and Yemeni parties and publishes the UK Yemen news page. |
 | Delegation of the European Union to Yemen | JO | B |  | medium | not_applicable | eu | no | The EU's resident diplomatic mission for Yemen and the channel for EU statements, humanitarian and stabilisation funding and meetings with the PLC government a… |
 | Embassy of the Kingdom of Saudi Arabia to the Republic of Yemen | SA | B |  | high | not_applicable | saudi | no | The embassy headed by Ambassador Mohammed Al Jaber is the main channel of Saudi political engagement with Yemeni parties (PLC, government, STC, tribes) and of… |
-| Permanent Mission of the Russian Federation to the United Nations | RU | B |  | medium | not_applicable | russia | no | Russia is a permanent Security Council member that opposes expanding Yemen sanctions on the Houthis and speaks at the Council's Yemen meetings, giving the Russ… |
-| U.S. Mission to Yemen (U.S. Embassy Sanaa, operating from Riyadh) | US | B |  | high | not_applicable | us | api | The US diplomatic mission dedicated to Yemen; its statements and the head of mission's meetings with the PLC and government express US policy toward the Yemeni… |
+| U.S. Mission to Yemen (U.S. Embassy Sanaa, operating from Riyadh) | US | B |  | high | not_applicable | us | no | The US diplomatic mission dedicated to Yemen; its statements and the head of mission's meetings with the PLC and government express US policy toward the Yemeni… |
 | UK Mission to the United Nations (New York) | GB | B |  | high | not_applicable | uk | no | Delivers the UK's monthly statements at Security Council meetings on Yemen; the UK is the penholder on Yemen, drafting Council resolutions and press statements. |
-| United States Mission to the United Nations (USUN) | US | B |  | medium | not_applicable | us | api | US statements at the monthly Security Council meetings on Yemen and on the 2140 sanctions regime, the Hodeidah mission (UNMHA) and Red Sea resolutions. |
+| United States Mission to the United Nations (USUN) | US | B |  | medium | not_applicable | us | no | US statements at the monthly Security Council meetings on Yemen and on the 2140 sanctions regime, the Hodeidah mission (UNMHA) and Red Sea resolutions. |
 
 ## International institutions
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
-| International Committee of the Red Cross (ICRC), Yemen delegation | CH | B |  | high | not_applicable | not_applicable | api,rss | Neutral intermediary in Yemen's detainee releases and a frontline medical-aid actor; its statements on detainees and civilian harm carry weight with all partie… |
-| International Organization for Migration (IOM) Yemen, incl. Displacement Tracking Matrix (DTM) | XX | B |  | medium | not_applicable | not_applicable | api | IOM's DTM is the reference count of new displacement in Yemen; its weekly figures were the most-cited displacement numbers during the 2026 West Coast and Taiz… |
-| Office of the Special Envoy of the Secretary-General for Yemen (OSESGY) | XX | B |  | high | not_applicable | not_applicable | telegram_public,youtube | The UN mediation office for Yemen; its statements and the Envoy's monthly Security Council briefings set the international framing of the peace process. |
-| ReliefWeb (Yemen updates) | XX | B |  | medium | not_applicable | not_applicable | api,rss | OCHA's information service and the main public repository of humanitarian reports on Yemen from UN agencies, NGOs and authorities. |
+| International Committee of the Red Cross (ICRC), Yemen delegation | CH | B | 40.5 | high | not_applicable | not_applicable | rss | Neutral intermediary in Yemen's detainee releases and a frontline medical-aid actor; its statements on detainees and civilian harm carry weight with all partie… |
+| World Food Programme (WFP), Yemen | XX | B | 36.5 | high | not_applicable | not_applicable | no | Runs the largest food-assistance operation in Yemen; its statements on food insecurity, funding cuts and access shape the humanitarian narrative. |
+| International Organization for Migration (IOM) Yemen, incl. Displacement Tracking Matrix (DTM) | XX | B |  | medium | not_applicable | not_applicable | no | IOM's DTM is the reference count of new displacement in Yemen; its weekly figures were the most-cited displacement numbers during the 2026 West Coast and Taiz… |
+| Office of the Special Envoy of the Secretary-General for Yemen (OSESGY) | XX | B |  | high | not_applicable | not_applicable | telegram_public | The UN mediation office for Yemen; its statements and the Envoy's monthly Security Council briefings set the international framing of the peace process. |
+| ReliefWeb (Yemen updates) | XX | B |  | medium | not_applicable | not_applicable | no | OCHA's information service and the main public repository of humanitarian reports on Yemen from UN agencies, NGOs and authorities. |
 | UN News | XX | B |  | medium | not_applicable | not_applicable | rss | Official news service of the UN Secretariat; publishes the Secretary-General's, Envoy's and agencies' Yemen statements in eight languages, including Arabic. |
-| UN Office for the Coordination of Humanitarian Affairs (OCHA), Yemen | XX | B |  | high | not_applicable | not_applicable | api | Coordinates the humanitarian response in Yemen and publishes the Humanitarian Needs and Response Plan, humanitarian updates and flash updates that set the figu… |
-| UNHCR Yemen | XX | B |  | medium | not_applicable | not_applicable | api | UN refugee agency in Yemen (protection and shelter cluster lead; refugees and asylum seekers from the Horn of Africa); issues statements on mass displacement. |
-| UNICEF Yemen | XX | B |  | medium | not_applicable | not_applicable | api | Main UN voice on children in Yemen (casualties, malnutrition, cholera, education); its Yemen press releases are frequently quoted. |
+| UN Office for the Coordination of Humanitarian Affairs (OCHA), Yemen | XX | B |  | high | not_applicable | not_applicable | no | Coordinates the humanitarian response in Yemen and publishes the Humanitarian Needs and Response Plan, humanitarian updates and flash updates that set the figu… |
+| UNHCR Yemen | XX | B |  | medium | not_applicable | not_applicable | no | UN refugee agency in Yemen (protection and shelter cluster lead; refugees and asylum seekers from the Horn of Africa); issues statements on mass displacement. |
+| UNICEF Yemen | XX | B |  | medium | not_applicable | not_applicable | no | Main UN voice on children in Yemen (casualties, malnutrition, cholera, education); its Yemen press releases are frequently quoted. |
 | United Nations in Yemen (Office of the Resident and Humanitarian Coordinator) | XX | B |  | high | not_applicable | not_applicable | no | Voice of the UN country team in Yemen; the Resident and Humanitarian Coordinator speaks for the UN system on access, detained UN staff and the humanitarian pla… |
 | United Nations Security Council (Yemen file, incl. 2140 Sanctions Committee and Panel of Experts) | XX | B |  | high | not_applicable | not_applicable | no | The Council's resolutions, press statements and monthly Yemen meetings are the legal and diplomatic frame of the conflict (resolution 2216, the 2140 sanctions… |
-| World Food Programme (WFP), Yemen | XX | B |  | high | not_applicable | not_applicable | api | Runs the largest food-assistance operation in Yemen; its statements on food insecurity, funding cuts and access shape the humanitarian narrative. |
-| World Health Organization (WHO) Yemen | XX | B |  | medium | not_applicable | not_applicable | api | Lead UN health agency in Yemen; its cholera, measles and health-system statements drive health coverage of the conflict. |
+| World Health Organization (WHO) Yemen | XX | B |  | medium | not_applicable | not_applicable | no | Lead UN health agency in Yemen; its cholera, measles and health-system statements drive health coverage of the conflict. |
 
 ## Think tanks
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
-| Sana'a Center for Strategic Studies | YE | A | 47.1 | none | none_documented | none_documented | rss,youtube | A Yemen-focused think tank that describes itself as independent (founded 2014): publishes The Yemen Review, policy research and analysis in English and Arabic,… |
-| South24 Center for News and Studies | CH | A | 19.8 | none | unknown | unknown | youtube | News and research centre specialised in southern Yemen, publishing in Arabic and English (latest items on Houthi advances at Bab al-Mandab and conflict maps in… |
+| Sana'a Center for Strategic Studies | YE | A | 47.1 | none | none_documented | none_documented | rss | A Yemen-focused think tank that describes itself as independent (founded 2014): publishes The Yemen Review, policy research and analysis in English and Arabic,… |
+| South24 Center for News and Studies | CH | A | 19.8 | none | unknown | unknown | no | News and research centre specialised in southern Yemen, publishing in Arabic and English (latest items on Houthi advances at Bab al-Mandab and conflict maps in… |
 
 ## Research organisations
 
 | Source | Country | Tier | Influence | Institutional | Yemeni camp | Regional | Collected | Why selected |
 |---|---|---|---:|---|---|---|---|---|
+| Armed Conflict Location & Event Data (ACLED) | US | A | 60.4 | none | none_documented | none_documented | no | Runs a dedicated Yemen Conflict Monitor; its event data and analyses (Houthi activity, Red Sea and Bab al-Mandab, AQAP/IS) are the standard quantitative refere… |
 | Abaad Studies and Research Center | YE | A | 15.0 | none | unknown | unknown | telegram_public | Yemeni research centre (licensed 2010) publishing Arabic and English analysis on the Houthi movement, tribes, the Red Sea and Bab al-Mandab security; output co… |
-| Armed Conflict Location & Event Data (ACLED) | US | A |  | none | none_documented | none_documented | youtube | Runs a dedicated Yemen Conflict Monitor; its event data and analyses (Houthi activity, Red Sea and Bab al-Mandab, AQAP/IS) are the standard quantitative refere… |
-| Human Rights Watch | US | A |  | none | none_documented | none_documented | rss,youtube | Sustained documentation of violations by all parties in Yemen (Houthi detentions of UN and civil-society staff, attacks on civilians in Yemen and Saudi Arabia,… |
+| Human Rights Watch | US | A |  | none | none_documented | none_documented | no | Sustained documentation of violations by all parties in Yemen (Houthi detentions of UN and civil-society staff, attacks on civilians in Yemen and Saudi Arabia,… |

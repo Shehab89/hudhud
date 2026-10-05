@@ -44,10 +44,11 @@
   feeds:
   - url: https://www.yemenshabab.net/rss
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: false
     notes: RSS 2.0, ~70 items, newest 2026-10-02.
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC0tSaXfJ_YIXshmvFlEsUcg
     type: youtube
     verified: false
@@ -55,10 +56,11 @@
     yemen_filter: false
     notes: candidate; channel id UC0tSaXfJ_YIXshmvFlEsUcg seen on Social Blade (handle tvyemenshabab) and vidIQ;
       the channel is linked from yemenshabab.net (youtube.com/user/yemenshabab).
+    active: false
   - url: https://t.me/s/YemenShababNet
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram link telegram.me/YemenShababNet is in the yemenshabab.net header/footer (fetched
       2026-10-04). Public status not checked.
@@ -162,6 +164,7 @@
     yemen_filter: false
     notes: candidate; channel id UCuP3I0KTQqLR0z9GT6mls9w seen on Social Blade (handle almahriahtv, 'قناة المهرية
       الفضائية', created 2019-10-15).
+    active: false
   selection:
     reason: Satellite channel with the largest YouTube audience of any Yemeni news channel after Yemen Shabab (3.59M
       main channel plus 741K news channel); on air in 2026 and the subject of an April 2026 suspension order in
@@ -211,7 +214,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: New record (not in old registry). Official website not found (web search budget exhausted before it could
     be checked), so url is the YouTube channel; add the site and X/Facebook accounts once evidenced. operating_base
     outside_yemen from New Lines and South24 (Istanbul/Turkey); 2026 location not reconfirmed. Second YouTube channel
@@ -254,7 +257,7 @@
   - url: https://rss.belqees.net/feeds
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: RSS 2.0 'Belqees News', 40 items, newest 2026-09-28.
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCxA_zZwALQMmVMSZyLKC-Nw
@@ -264,6 +267,7 @@
     yemen_filter: false
     notes: candidate; channel id seen on SocialCounts and Social Blade ('قناة بلقيس الفضائية Belqees TV'); Social
       Blade shows daily uploads into October 2026.
+    active: false
   selection:
     reason: Major Yemeni news brand (1.37M YouTube subscribers) that kept publishing on digital platforms after
       its satellite broadcast was suspended on 2025-11-28; YouTube uploads continue daily in Oct 2026.
@@ -374,6 +378,7 @@
     yemen_filter: false
     notes: candidate; channel id UCdwvdJ8RAp4CUORuUUCRzVA read from youtube.com/user/SuhailChannel1 (linked from
       suhail.net) and Social Blade.
+    active: false
   selection:
     reason: Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day
       Yemen news on 2026-10-04; the main broadcast voice of the Islah camp.
@@ -456,6 +461,7 @@
     yemen_filter: false
     notes: candidate; channel id from Social Blade (handle yementdy, created 2018-03-09) and SocialCounts; Social
       Blade shows uploads on 2026-10-04.
+    active: false
   selection:
     reason: The GPC/Saleh-family satellite channel, relaunched outside Yemen after the Houthis seized its Sanaa
       headquarters in December 2017; 460K YouTube subscribers and daily uploads in Oct 2026. Main broadcast voice
@@ -506,7 +512,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: New record. Official website and X/Facebook handles not found before the web-search budget ran out; url
     is the YouTube channel. operating_base outside_yemen from Wikipedia (Egypt); 2026 base not reconfirmed. gpc_plc
     is used for the anti-Houthi GPC current; it is a camp label, not a claim of formal PLC control. Do not confuse
@@ -548,6 +554,7 @@
     yemen_filter: false
     notes: candidate; channel id UCUWogsiH6pvmJlXJ1IvTMxQ seen on the channel page youtube.com/@aljoumhouriyaTV
       and on Social Blade.
+    active: false
   selection:
     reason: Yemeni 24-hour news channel on Nilesat with 412K YouTube subscribers (Social Blade Yemen rank 66-68);
       one of the few TV channels of the anti-Houthi republican camp outside Islah and the GPC.
@@ -592,7 +599,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: New record, kept as the most likely National Resistance (Tareq Saleh) broadcast outlet, but the link is
     NOT yet evidenced. Candidate value national_resistance (confidence about 0.4) once a direct source is found.
     Handles come from a TV-directory page (altkia.com) and the channel's own YouTube page (which names @aljoumhouriyatv);
@@ -621,7 +628,7 @@
   - url: https://english.masirahtv.net/rss.php
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: English RSS 2.0, 50 items, newest 2026-10-02.
   - url: https://www.masirahtv.net/rss.php
@@ -629,6 +636,7 @@
     verified: false
     yemen_filter: false
     notes: Arabic site returned 403 to WebFetch; path assumed from the English site.
+    active: false
   selection:
     reason: The Houthi movement's own satellite channel and the primary outlet of Ansar Allah; routinely quoted
       by international wires as the source for Houthi claims and strike reports.
@@ -717,6 +725,7 @@
     yemen_filter: false
     notes: 'Not verifiable from the research environment: WebFetch refused saba.ye because its robots.txt returned
       HTTP 500. Path is a guess to test from the ingest host.'
+    active: false
   selection:
     reason: Official news agency of the Sanaa (Ansar Allah) authorities; the wire through which the Supreme Political
       Council and Sanaa ministries publish statements, quoted by international media as 'Houthi-run Saba'.
@@ -761,7 +770,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry. Tier B (institutional importance): no audience figure found, and saba.ye
     could not be fetched (robots.txt HTTP 500), so its social accounts could not be read from its own site. State
     Media Monitor notes Houthi-linked accounts have faced platform action. Do not merge with saba-irg. Outlet confirmed
@@ -802,20 +811,20 @@
   - url: https://www.sabanew.net/rss.php?lang=ar
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: RSS 2.0 'البث العام', 20 items, newest 2026-10-02.
   - url: https://www.sabanew.net/rss.php?lang=en
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: RSS 2.0, 20 items, newest 2026-10-01. Returns the same channel title as the Arabic feed; check language
       of items on ingest.
   - url: https://t.me/s/sabanewa
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram channel linked from sabanew.net (fetched 2026-10-04); public preview loaded, but
       the newest visible post was dated 2026-08-15, so the channel may be updated irregularly. The site RSS feeds
@@ -925,6 +934,7 @@
     yemen_filter: false
     notes: candidate; channel id UCbFmpx9BeQBf4H6mIYLpZXQ seen on SocialCounts ('قناة عدن المستقلة AIC HDTV', 'صوت
       شعب الجنوب').
+    active: false
   selection:
     reason: The main broadcast voice of the southern separatist camp (Southern Transitional Council); 272K YouTube
       subscribers and 78,500 videos. Went off air for nearly two months after the December 2025 to January 2026
@@ -982,7 +992,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry (aicaden.net, no verified feed); the YouTube feed is new. The website aicaden.net
     was not fetched, so whether it still updates is unconfirmed. Handles from a TV directory (altkia) only; official
     pages not checked. operating_base left unknown: the channel broadcasts from Aden (The New Arab, Feb 2026), but
@@ -1036,13 +1046,13 @@
   - url: https://www.adngad.net/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: RSS 2.0 'عدن الغد', 25 items, newest 2026-10-02. adengad.net 302-redirects to adngad.net.
   - url: https://t.me/s/adenalghad_news
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram handle adenalghad_news linked from adngad.net (fetched 2026-10-05); public preview
       loaded with posts. The site's own RSS feeds verified in the old registry carry over.
@@ -1155,8 +1165,8 @@
   feeds:
   - url: https://t.me/s/AlayyamAden
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram handle AlayyamAden linked from alayyam.info (fetched 2026-10-05); public preview
       loaded.
@@ -1167,6 +1177,7 @@
     yemen_filter: false
     notes: candidate; channel id UCW2R6JM7V_AibLc9dABVlnA listed on alayyam.info and SocialCounts ('صحيفة الأيام');
       small channel (98 videos).
+    active: false
   selection:
     reason: Aden's historic independent daily (founded 1958 by the Bashraheel family), most widely read in the south
       according to Media Landscapes, with the website publishing same-day political coverage on 2026-10-03. Kept
@@ -1270,8 +1281,8 @@
     notes: Linked from the homepage, but returned an HTML page to WebFetch, not XML.
   - url: https://t.me/s/marebpress1
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram handle marebpress1 linked from marebpress.net (fetched 2026-10-05). The preview's
       newest visible post looked old (December 2023 per the fetch summary), so the channel may be dormant; the site
@@ -1363,13 +1374,13 @@
   - url: https://www.yemenmonitor.com/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: Arabic RSS 2.0, 10 items, newest 2026-10-02.
   - url: https://www.yemenmonitor.com/en/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: English RSS 2.0, 10 items, newest 2026-09-27.
   selection:
@@ -1446,6 +1457,7 @@
     verified: false
     yemen_filter: false
     notes: 403 to WebFetch, as were /feed and the homepage. Path untested.
+    active: false
   selection:
     reason: One of Yemen's leading independent news websites (print weekly from 2007, daily website from 2009),
       banned in Houthi-held areas and operating from abroad since the Houthis raided its Sanaa offices in March
@@ -1491,7 +1503,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry (no verified feed there, so active depends on a new feed being found; the
     site returned HTTP 403 to the fetch tool, which may mean bot protection). No accounts or feeds listed because
     none were evidenced. Wikipedia says it operates from outside Yemen. Do not confuse with Al-Masdar News (Syria-focused).
@@ -1538,13 +1550,13 @@
   - url: https://www.26sepnews.net/feed/
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: Arabic RSS 2.0 'سبتمبر نت', 10 items, newest 2026-10-02.
   - url: https://en.26sepnews.net/feed/
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: English RSS 2.0 '26 September Net', 10 items, newest 2026-10-01.
   selection:
@@ -1644,8 +1656,8 @@
     notes: Valid RSS envelope but zero items on 2026-10-02. /rss and /feed return 404.
   - url: https://t.me/s/yemseb
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram handle yemseb linked from 26sep.net (fetched 2026-10-05); public preview loaded (newest
       visible post about 26 September), 439 subscribers.
@@ -1700,11 +1712,12 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: 'Same id as the old registry (no verified feed there, hence active false until the Telegram or a site feed
     is verified). Publishes PDF editions. Tier B: analyse as an official/armed-forces statement. Do not merge with
     26-september-irg. Military media. One of two outlets named 26 September; the IRG version is 26-september-irg.
     Homepage active; Joomla feed is empty.'
+  wikidata: Q6488083
 - id: yemen-tv-government
   name: Yemen TV (government)
   name_native: قناة اليمن الفضائية (الحكومة)
@@ -1721,7 +1734,13 @@
   content_type: official_statement
   operating_base: government_controlled
   accounts: []
-  feeds: []
+  feeds:
+  - url: https://yementv.tv/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-05
+    yemen_filter: false
+    notes: 'found by the registry check on 2026-10-05: declared by https://yementv.tv/'
   selection:
     reason: State broadcaster of the internationally recognised government and the Presidential Leadership Council,
       one of two rival 'Yemen TV' operations since the 2015 split; classed State-Controlled by State Media Monitor
@@ -1760,12 +1779,13 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: 'New record. active false: no feed or social handle was evidenced, and yementv.tv could not be fetched.
     The Wikipedia Yemen TV page gives yementv.tv as the pro-government site but does not give separate Sanaa-version
     URLs, so the Houthi-run Sanaa Yemen TV is not recorded (see excluded list). Wikipedia dates the split to January
     2015 and the Sanaa version to the Houthi seizure; State Media Monitor says the Sanaa operation is controlled
     by the Supreme Political Council.'
+  wikidata: Q3572152
 - id: al-thawra-sanaa
   name: Al-Thawra (Sanaa)
   name_native: صحيفة الثورة
@@ -1882,7 +1902,7 @@
   - url: https://sanaacenter.org/feed
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: All-content feed; newest item 2026-09-16 (all Yemen-focused).
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCw9jgwgCvj4oFT7Rq196qug
@@ -1892,6 +1912,7 @@
     yemen_filter: false
     notes: candidate; channel id UCw9jgwgCvj4oFT7Rq196qug seen on Social Blade (handle sanaacenter, created 2014-11-29).
       The site feed verified in the old registry carries over.
+    active: false
   selection:
     reason: 'A Yemen-focused think tank that describes itself as independent (founded 2014): publishes The Yemen
       Review, policy research and analysis in English and Arabic, with new items on 2026-10-02 (Taiz battle, aid
@@ -1948,6 +1969,7 @@
     (Chairperson), Yasmeen Al-Eryani and Osamah Al-Rawhani (executive directors); public roles only. Its 2026 base
     (Sanaa vs abroad) was not documented, so operating_base unknown. The YouTube count is the only audience figure
     found.'
+  wikidata: Q130298890
 - id: south24
   name: South24 Center for News and Studies
   name_native: مركز سوث24 للأخبار والدراسات
@@ -1995,6 +2017,7 @@
     yemen_filter: false
     notes: candidate; channel id UCqnCqHHLQgD70-jiGZ6hT4A listed on south24.net and SocialCounts ('مركز سوث 24 للأخبار
       والدراسات'). No site feed URL was captured.
+    active: false
   selection:
     reason: News and research centre specialised in southern Yemen, publishing in Arabic and English (latest items
       on Houthi advances at Bab al-Mandab and conflict maps in 2026); English- and Arabic-language coverage of the
@@ -2042,7 +2065,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry (no verified feed there; a site RSS feed should be looked for). country CH
     from the site footer (HQ Switzerland, office in Aden); the old registry had YE. Earlier records in this file
     (al-mahriah-tv) describe South24 as STC-aligned; that is the earlier run''s reading and is not backed by an
@@ -2088,8 +2111,8 @@
   feeds:
   - url: https://t.me/s/abaadstudies
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram handle abaadstudies linked from abaadstudies.org (fetched 2026-10-05); public preview
       loaded with September 2026 posts. The site says an RSS feed exists but its URL was not captured.

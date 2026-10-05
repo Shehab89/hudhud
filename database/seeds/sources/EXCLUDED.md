@@ -150,3 +150,37 @@ Note: the session-wide WebSearch budget (200 calls) ran out midway through this 
 - Ahmed al-Rahawi (Houthi PM), Jamal Amer (Houthi FM), Hashem Sharaf al-Din (Houthi information minister) and other ministers: killed in the Israeli strike on Sanaa, 28 Aug 2025 (Wikipedia, August 2025 Israeli attack on Sanaa).
 - Muhammad Abd al-Karim al-Ghamari (Houthi chief of staff): death confirmed 16 Oct 2025.
 - Salem bin Braik (PM May 2025 to Jan 2026): replaced by Shaya al-Zindani on 15 Jan 2026; no longer holds national office.
+
+### Run 2 (2026-10-05): rejected or not verified (WebSearch budget ran out; later checks used profile mirrors twstalker/rattibha, t.me previews and cached Wikipedia)
+
+- Mahdi al-Mashat (SPC president): no verifiable official X account; the profile directory lists several competing accounts (@mahdialmashat 14K with 66 posts, @Mahdi_ALmashat 9K claiming to be "the only authentic account", parody-style variants); Wikipedia lists none. Not verified.
+- Mohammed al-Bukhaiti (Ansar Allah political bureau): only a self-described backup account (@moo0sai, 32K) found; main account and 2026 role not verified.
+- Peter Salisbury: @peterjsalisbury (22K) found, but his bio no longer names Yemen ("political economy of war and peace"; Crisis Group lists him as former Yemen analyst), and sustained 2026 Yemen output was not evidenced.
+- Gregory Johnsen: no X handle evidenced (guesses @gregorydjohnsen, @gjohnsen returned nothing; directory has no profile). Not verified.
+- Baraa Shiban: handle not evidenced (guesses returned empty profiles). Not verified.
+- Fernando Carvajal: no matching profile in the directory. Not verified.
+- Helen Lackner: only @helenlackner with 14 followers; no measurable audience.
+- April Longley Alley: Crisis Group lists her as former; no handle found.
+- Ibrahim Jalal: @ibrahimjalal returned a 2-follower profile (not the analyst); not verified.
+- Nawal al-Maghafi (BBC), Casey Coombs, Ghaidaa al-Rashidy: directory lookups timed out; not verified.
+- Michael Knights: handle @Mikeknightsiraq confirmed by Washington Institute, but his bio now reads Iraq/Kurdistan analyst and Chief Product Officer of a company; not Yemen-focused.
+- Katherine Zimmerman: AEI page lists her as a fellow, but the directory shows she moved to a new counter-terrorism post; handle @KatieZimmerman; not verified as current Yemen voice.
+- Elana DeLozier (@ElanaGulf, 5K): audience too small.
+- Hakim Almasmari (@HakimAlmasmari, 7K): audience too small.
+- Abdulrahman al-Rashed (@aalrashed): Saudi columnist; Yemen is occasional, not sustained.
+- Khalid bin Salman (@kbsalsaud, Saudi defence minister): no Yemen-specific posts could be evidenced; not verified.
+- Hans Grundberg (UN Special Envoy): no personal account found; the office account @OSE_Yemen is on the osesgy record.
+- Steven Fagin (US ambassador): term ended 3 July 2026 (see foreign_official.yaml); Neil Hop (chargé since 5 Aug 2026): no personal account found.
+- Gabriele Visentin (EU ambassador), French and other ambassadors: not checked (search budget exhausted).
+- Turki al-Maliki (coalition spokesman): only a 453-follower account matched; official handle not evidenced.
+- Abdullah Alsaadi (Yemen's UN representative): no account found.
+- Sadiq Amin Abu Ras (GPC-Sanaa head), Aref al-Zoka: no verifiable official account (best match 365 followers).
+- Ahmed Ali Abdullah Saleh (@Ahmedaliye22, 9K): no current office documented; audience small.
+- Faraj al-Bahsani: dismissed from the PLC on 15 Jan 2026 (Wikipedia); not pursued.
+- Sagheer bin Aziz (@AzizSagheir, 252K): bio gives Chief of the General Staff, but Wikipedia's text dates from about 2022 and no 2026 source confirms the post (a Basha Report post of 13 May 2026 refers to the army chief with the name cut off). Not verified.
+- Khaled Bahah (@KhaledBahah): last office was vice-president/prime minister (dismissed April 2016); no current role found.
+- Mohamed Ahmed Shabiba (@alshabebah, 206K): the directory shows religious-interpretation commentary; religious preachers are outside the slice and no political role was evidenced.
+- Ali Nasir Muhammad (former president of South Yemen, 22K): no current role; not pursued.
+- Mohammed Jumeh (@MJumeh, 893K, coordinator Q71254729): identified as Dr Mohammed Jumeh, a commentator on Yemeni political and military affairs, but his role and affiliation could not be evidenced (Arabic Wikipedia not fetchable); skipped.
+- Sanaa-side prime minister and foreign minister after the 28 Aug 2025 strike, Houthi Mahdi al-Mashat's office, Islah deputy chairman Abdulwahab al-Ansi, Hamoud al-Mikhlafi, STC's Ali al-Kathiri and Nasser al-Khubaji: could not be checked (search budget exhausted, directory timeouts). Not verified.
+- YouTube channels: none searched (the coordinator reports YouTube feeds are blocked by robots.txt).

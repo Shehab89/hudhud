@@ -34,8 +34,8 @@
   feeds:
   - url: https://t.me/s/OSESGY1
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; public preview of the Telegram channel t.me/OSESGY1 linked from https://osesgy.unmissions.org/en/contact-us
       (documented t.me/s/ pattern).
@@ -48,6 +48,7 @@
       result), which describes itself as the official YouTube page of OSESGY. CAUTION: the OSESGY website links
       a different-looking handle (@osesgycomms1496) whose channel id was not obtained; CI should confirm which channel
       is current.'
+    active: false
   selection:
     reason: The UN mediation office for Yemen; its statements and the Envoy's monthly Security Council briefings
       set the international framing of the peace process.
@@ -91,6 +92,7 @@
   notes: 'Country XX: UN office; media contacts listed on the contact page use Amman (+962) numbers. No RSS link
     found on the website (checked contact page and news pages). A WhatsApp channel is also linked from the site
     (not collectable). Follower counts not collected: no citable page found.'
+  wikidata: Q85790324
 - id: un-security-council
   name: United Nations Security Council (Yemen file, incl. 2140 Sanctions Committee and Panel of Experts)
   category: INTERNATIONAL_INSTITUTION
@@ -187,14 +189,15 @@
   feeds:
   - url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml
     type: rss
-    verified: false
+    verified: true
     yemen_filter: true
     notes: Middle East region feed listed by third-party directories but returned 404 on 2026-10-02 (as did the
       all-news feed); feed paths may have changed.
+    verified_at: 2026-10-05
   - url: https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml
     type: rss
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; listed by feed directories (rss.feedspot.com/unnews_rss_feeds, feedbagel.com/site/un.org).
       Returned 404 to the research WebFetch on 2026-10-04, as did the Middle East region feed already in the old
@@ -202,8 +205,8 @@
       CI to test.
   - url: https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml
     type: rss
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate; listed by feed directories (rss.feedspot.com/unnews_rss_feeds, feedbagel.com/site/un.org).
       Same 404 caveat as above.
@@ -274,7 +277,11 @@
   geographic_focus:
   - national
   yemen_coverage: high
-  accounts: []
+  accounts:
+  - platform: x
+    handle: unocha
+    url: https://x.com/unocha
+    handle_evidence: https://www.wikidata.org/wiki/Q1065854
   feeds:
   - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=OCHA
     type: api
@@ -285,6 +292,7 @@
       + source filter; source.shortname field per https://apidoc.reliefweb.int/fields-tables). REQUIRES CONFIGURATION:
       since 1 Nov 2025 the ReliefWeb API needs a pre-approved appname. The ReliefWeb source shortname ''OCHA'' is
       assumed and must be confirmed by CI.'
+    active: false
   selection:
     reason: Coordinates the humanitarian response in Yemen and publishes the Humanitarian Needs and Response Plan,
       humanitarian updates and flash updates that set the figures other actors quote.
@@ -329,13 +337,14 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Weekly frequency is a judgement from 2026 outputs (HNRP, updates, statements during the September escalation);
     OCHA Yemen''s own channel list was not found. Old registry noted unocha.org/rss.xml returned 403. No OCHA Yemen
     X handle evidenced (the yemen.un.org OCHA page lists only UN-in-Yemen accounts, recorded under un-yemen-rchc).
     Operating base left unknown: OCHA has offices in both Sanaa and Aden areas, but UN operations in Houthi-controlled
     areas were paused (see wfp record). Yemen page exists; unocha.org/rss.xml returned 403 on 2026-10-02. OCHA Yemen
     reports are syndicated via ReliefWeb. No public RSS feed found; recorded for reference.'
+  wikidata: Q1065854
 - id: reliefweb
   name: ReliefWeb (Yemen updates)
   category: INTERNATIONAL_INSTITUTION
@@ -355,7 +364,11 @@
   geographic_focus:
   - national
   yemen_coverage: primary
-  accounts: []
+  accounts:
+  - platform: x
+    handle: reliefweb
+    url: https://x.com/reliefweb
+    handle_evidence: https://www.wikidata.org/wiki/Q11348577
   feeds:
   - url: https://reliefweb.int/country/yem/rss.xml
     type: rss
@@ -363,6 +376,7 @@
     yemen_filter: false
     notes: Returned HTTP 403 to the research fetcher on 2026-10-02; Yemen country feed, not verified. ReliefWeb
       API v2 (api.reliefweb.int) is an alternative but requires an approved appname.
+    active: false
   - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=primary_country.iso3&filter[conditions][0][value]=yem
     type: api
     verified: false
@@ -372,6 +386,7 @@
       filter syntax at https://apidoc.reliefweb.int/parameters and the primary_country field at https://apidoc.reliefweb.int/fields-tables.
       REQUIRES CONFIGURATION: pre-approved appname needed since 1 Nov 2025. The country RSS feed (reliefweb.int/country/yem/rss.xml)
       is carried over from the old registry.'
+    active: false
   selection:
     reason: OCHA's information service and the main public repository of humanitarian reports on Yemen from UN agencies,
       NGOs and authorities.
@@ -416,10 +431,11 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Overlap: agency records in this file (un-ocha, wfp, unicef, who-yemen, unhcr-yemen, iom-yemen) use source-filtered
     ReliefWeb API queries; deduplicate by ReliefWeb report id and attribute items to the agency record. Weekly is
     a conservative frequency; volume is likely higher. Country XX: UN service, no single national base.'
+  wikidata: Q11348577
 - id: un-yemen-rchc
   name: United Nations in Yemen (Office of the Resident and Humanitarian Coordinator)
   category: INTERNATIONAL_INSTITUTION
@@ -529,6 +545,7 @@
     notes: 'candidate; built from the documented example query at https://apidoc.reliefweb.int/parameters. REQUIRES
       CONFIGURATION (pre-approved appname). Source shortname ''WFP'' assumed; CI to confirm. wfp.org has no RSS
       link (old registry: /rss.xml returned 404).'
+    active: false
   selection:
     reason: Runs the largest food-assistance operation in Yemen; its statements on food insecurity, funding cuts
       and access shape the humanitarian narrative.
@@ -551,6 +568,11 @@
       level: high
       note: UN food agency; operational decisions (suspension in Houthi areas, ration cuts) are contested by the
         parties.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 71200
+      as_of: 2025-02-01
+      source_url: https://www.wikidata.org/wiki/Q204344
   alignment:
     yemen_political_alignment: not_applicable
     sub_alignment: ''
@@ -570,11 +592,12 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: X handle recorded as listed on the WFP Yemen country page (twitter.com/WFPYemen); not WFP_Yemen. Follower
     counts not collected. Monthly is conservative; output rose during the 2026 escalation. No RSS link on wfp.org/news;
     /rss.xml returned 404. WFP Yemen updates are syndicated via ReliefWeb. No public RSS feed found; recorded for
     reference.
+  wikidata: Q204344
 - id: unicef
   name: UNICEF Yemen
   category: INTERNATIONAL_INSTITUTION
@@ -619,6 +642,7 @@
     notes: 'candidate; built from the documented example at https://apidoc.reliefweb.int/parameters (the fields
       table cites UNICEF as a source.shortname example). REQUIRES CONFIGURATION (pre-approved appname). Old registry:
       UNICEF press-release RSS paths returned 404.'
+    active: false
   selection:
     reason: Main UN voice on children in Yemen (casualties, malnutrition, cholera, education); its Yemen press releases
       are frequently quoted.
@@ -659,7 +683,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: The September 2026 press releases were read as related links on the cited UNICEF Yemen page. A YouTube
     feed needs the channel id of youtube.com/user/UNICEFYemen, which was not obtained. Press-release RSS paths returned
     404 on 2026-10-02. Syndicated via ReliefWeb. No public RSS feed found; recorded for reference.
@@ -687,6 +711,7 @@
     notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
       (pre-approved appname). IOM DTM Yemen weekly Rapid Displacement Tracking updates are published on ReliefWeb
       (see yemen_coverage urls). Source shortname 'IOM' assumed; CI to confirm.
+    active: false
   selection:
     reason: IOM's DTM is the reference count of new displacement in Yemen; its weekly figures were the most-cited
       displacement numbers during the 2026 West Coast and Taiz fighting.
@@ -727,7 +752,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'URL yemen.iom.int is the IOM Yemen domain seen in a search result (a 2023 appeal PDF under yemen.iom.int);
     the homepage itself was not fetched. Account evidence is weak and not recorded: a yemen.un.org video page credits
     ''@IOMYemen'' (platform not stated, probably YouTube) and a 2018 web-archive capture shows twitter.com/iom_yemen;
@@ -755,6 +780,7 @@
     yemen_filter: false
     notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
       (pre-approved appname). Source shortname 'UNHCR' assumed; CI to confirm.
+    active: false
   selection:
     reason: UN refugee agency in Yemen (protection and shelter cluster lead; refugees and asylum seekers from the
       Horn of Africa); issues statements on mass displacement.
@@ -790,7 +816,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'No UNHCR Yemen social account evidenced (unhcr.org fetch blocked by robots rate limiting on 2026-10-04).
     Borderline inclusion: keep only if the ReliefWeb feed yields regular Yemen items.'
 - id: who-yemen
@@ -817,6 +843,7 @@
     notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
       (pre-approved appname). Source shortname 'WHO' assumed; CI to confirm. The EMRO Yemen news page mentions RSS
       feeds but no feed URL could be read.
+    active: false
   selection:
     reason: Lead UN health agency in Yemen; its cholera, measles and health-system statements drive health coverage
       of the conflict.
@@ -855,7 +882,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'URL is the EMRO Yemen country section (the who.int Yemen pages seen were publications). Accounts not recorded:
     the only evidence is a yemen.un.org video page crediting ''@WHOYEMEN'' as a YouTube reference, without a channel
     id. The cited UN News story on cholera and measles (Sept 2026) is known only by its title; WHO attribution not
@@ -892,7 +919,7 @@
   - url: https://www.icrc.org/en/rss/news
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: News feed; newest item 2026-10-01.
   - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=ICRC
@@ -903,6 +930,7 @@
     notes: candidate Yemen-specific alternative to the global ICRC news feed (https://www.icrc.org/en/rss/news,
       verified in the old registry with yemen_filter true and carried over). Built from the documented example at
       https://apidoc.reliefweb.int/parameters; REQUIRES CONFIGURATION (pre-approved appname); shortname 'ICRC' assumed.
+    active: false
   selection:
     reason: Neutral intermediary in Yemen's detainee releases and a frontline medical-aid actor; its statements
       on detainees and civilian harm carry weight with all parties.
@@ -925,6 +953,11 @@
       level: high
       note: Holds a mandate under the Geneva Conventions; Head of Delegation in Yemen Christine Cipolla (named in
         the May 2026 release).
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 176000
+      as_of: 2025-05-18
+      source_url: https://www.wikidata.org/wiki/Q5987345
   alignment:
     yemen_political_alignment: not_applicable
     sub_alignment: ''
@@ -950,6 +983,7 @@
   notes: 'Same id as the old registry; its verified global news RSS is carried over. X handle as linked from the
     ICRC Yemen page (twitter.com/icrc_ye?lang=en). Not intergovernmental: recorded as INTERNATIONAL_INSTITUTION
     because of its treaty-based mandate.'
+  wikidata: Q5987345
 - id: human-rights-watch
   name: Human Rights Watch
   category: RESEARCH_ORGANIZATION
@@ -988,11 +1022,12 @@
   feeds:
   - url: https://www.hrw.org/rss/news
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: true
     notes: Global news feed; items dated 2026-10-01. A Yemen-specific country feed (/rss/country/yemen) returned
       404.
+    active: false
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCoS-mm5bC5eY07AaKntKzgw
     type: youtube
     verified: false
@@ -1001,6 +1036,7 @@
     notes: candidate; channel id read on https://www.youtube.com/user/HumanRightsWatch (linked from the HRW Yemen
       page). Global channel, Yemen filter needed. The verified global news RSS (https://www.hrw.org/rss/news) is
       carried over from the old registry.
+    active: false
   selection:
     reason: Sustained documentation of violations by all parties in Yemen (Houthi detentions of UN and civil-society
       staff, attacks on civilians in Yemen and Saudi Arabia, excessive force against protesters); widely quoted
@@ -1044,12 +1080,13 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Same id as the old registry (feeds and ownership carried over). AUDIENCE EVIDENCE MISSING: the session''s
     web-search budget ran out before follower counts could be sourced, and the YouTube page did not expose a subscriber
     count; add x_followers / youtube_subscribers with a source_url before relying on the influence score. HRW also
     has Bluesky, LinkedIn and TikTok accounts linked from its site (not recorded: platforms outside the schema list
     or not collectable).'
+  wikidata: Q187052
 - id: acled
   name: Armed Conflict Location & Event Data (ACLED)
   category: RESEARCH_ORGANIZATION
@@ -1089,10 +1126,15 @@
     notes: 'candidate; channel id from the YouTube link on https://acleddata.com/ (documented YouTube feed pattern).
       Global channel, low Yemen share expected. No RSS on acleddata.com or the Yemen Conflict Monitor page (old
       registry: /feed/ returned 404).'
+    active: false
   selection:
     reason: Runs a dedicated Yemen Conflict Monitor; its event data and analyses (Houthi activity, Red Sea and Bab
       al-Mandab, AQAP/IS) are the standard quantitative reference on political violence in Yemen.
-    audience_evidence: []
+    audience_evidence:
+    - metric: x_followers
+      value: 55525
+      as_of: 2024-10-28
+      source_url: https://www.wikidata.org/wiki/Q18354074
     influence_evidence:
       regional_importance: high
       cited_by_other_media: high
@@ -1129,9 +1171,10 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: Same id as the old registry. AUDIENCE EVIDENCE MISSING (web-search budget exhausted); add a sourced follower
     count before relying on the influence score. ACLED data API needs registration and is not a publication feed.
     The YouTube account handle field holds the channel id because no @handle was shown. Conflict-event dataset (API
     requires registration/key). acleddata.com/feed/ returned 404 on 2026-10-02. No public RSS feed found; recorded
     for reference.
+  wikidata: Q18354074

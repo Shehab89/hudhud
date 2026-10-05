@@ -38,6 +38,7 @@
     verified_at: null
     yemen_filter: false
     notes: candidate; channel id linked from the footer of the official presidential website presidentalalimi.net
+    active: false
   selection:
     reason: Personal/official accounts of the head of the Presidential Leadership Council; his posts are the top-level
       statements of the internationally recognised government.
@@ -74,9 +75,10 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: Accounts taken from the official presidential website footer. No follower count found from a citable source;
     audience_evidence left empty. X is registered, not collected.
+  wikidata: Q12213376
 - id: moammar-al-eryani
   name: Moammar al-Eryani
   name_native: معمر الإرياني
@@ -150,6 +152,7 @@
   notes: Handle confirmed by an Arab News embed of his tweet (Jan 2023). Follower count read from the rattibha.com
     mirror of the X profile on 2026-10-04; the mirror's snapshot date is not shown, so treat as approximate. X is
     registered, not collected.
+  wikidata: Q16127851
 - id: badr-albusaidi
   name: Badr Albusaidi
   name_native: بدر بن حمد البوسعيدي
@@ -474,6 +477,7 @@
   notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
     profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
     collected.
+  wikidata: Q106201207
 - id: abdulghani-al-iryani
   name: Abdulghani al-Iryani
   name_native: عبدالغني الإرياني
@@ -730,3 +734,2961 @@
   notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
     profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
     collected.
+- id: mohammed-abdulsalam
+  name: Mohammed Abdulsalam
+  name_native: محمد عبد السلام
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/abdusalamsalah
+  country: OM
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Spokesman of Ansar Allah, head of its national (negotiating) delegation and board chairman of the Al-Masirah
+      media network (per his X bio); Muscat-based; sanctioned by US Treasury (OFAC) in March 2025
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: abdusalamsalah
+    url: https://x.com/abdusalamsalah
+    handle_evidence: https://x.com/BashaReport/status/1897311163957801039
+    followers: 976600
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/abdusalamsalah
+  feeds: []
+  selection:
+    reason: Chief negotiator and spokesman of the movement that controls Sanaa; his posts announce positions towards
+      Saudi Arabia, the UN and the US and are reported by wire and regional media.
+    audience_evidence:
+    - metric: x_followers
+      value: 976600
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/abdusalamsalah
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: medium
+      note: Iran International (25 Jul 2026) reports his X post warning Riyadh of 'serious consequences'; Arab News
+        and Basha Report report his statements.
+      urls:
+      - https://x.com/IranIntl_En/status/2080903869492539809
+      - https://arab.news/mva6s
+      - https://x.com/BashaReport/status/1983543480958734490
+    yemen_coverage:
+      frequency: daily
+      evidence: The profile mirror shows 3,200 to 5,000 posts since the account opened in December 2023 (more than
+        three a day on average); content concerns Yemen, negotiations, Saudi Arabia and the Red Sea.
+      urls:
+      - https://en.rattibha.com/abdusalamsalah
+      - https://x.com/IranIntl_En/status/2080903869492539809
+    institutional_importance:
+      level: high
+      note: Named as the Houthi chief negotiator in Sana'a Center (Nov 2023) and still the movement's negotiator
+        in Muscat in September 2026 (azat.tv, talks with US embassy staff 14 Sep 2026).
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Ansar Allah spokesman and chief negotiator
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: 'He is the movement''s own spokesman and negotiator and chairs the board of its media
+      network (profile bio; Sana''a Center). Iran-axis label: reporting on the Houthis as Iran''s ally and his meetings
+      with Iran''s foreign minister in Muscat (confidence for that dimension about 0.7).'
+    evidence_urls:
+    - https://sanaacenter.org/files/The_Houthi_Delegates_to_Riyadh_en.pdf
+    - https://en.wikipedia.org/wiki/Houthis
+    - https://south24.net/news/news.php?nid=3922
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Handle named in a Basha Report post (5 Mar 2025, OFAC designation) and bio read on the rattibha mirror.
+    Follower count from the rattibha mirror (976.6K); another mirror (twstalker) showed 1.2M, snapshot dates not
+    shown, lower figure used. Alive and active: azat.tv reports him in Muscat contacts on 14 Sep 2026. X is registered,
+    not collected.'
+- id: mohammed-ali-al-houthi
+  name: Mohammed Ali al-Houthi
+  name_native: محمد علي الحوثي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/Moh_Alhouthi
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: sanaa_controlled
+  holder:
+    kind: person
+    role: Member of the Supreme Political Council of the Sanaa authorities (per the description of his official
+      Telegram channel); senior Ansar Allah figure
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Moh_Alhouthi
+    url: https://x.com/Moh_Alhouthi
+    handle_evidence: https://t.me/s/Mohammadlhouthi
+    followers: 998000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/Moh_Alhouthi
+  - platform: telegram
+    handle: Mohammadlhouthi
+    url: https://t.me/Mohammadlhouthi
+    handle_evidence: https://twstalker.com/Moh_Alhouthi
+    followers: 32900
+    followers_as_of: '2026-10-05'
+    followers_source: https://t.me/s/Mohammadlhouthi
+  feeds:
+  - url: https://t.me/s/Mohammadlhouthi
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; public preview of the channel that describes itself as the official channel of Mohammed Ali
+      al-Houthi and cross-posts @Moh_Alhouthi; the X profile bio links to it; robots.txt not yet checked
+  selection:
+    reason: Senior Ansar Allah leader (former head of the Supreme Revolutionary Committee and of the Supreme Political
+      Council) whose X account and Telegram channel carry the movement's political messaging.
+    audience_evidence:
+    - metric: x_followers
+      value: 998000
+      as_of: 2026-10
+      source_url: https://twstalker.com/Moh_Alhouthi
+    - metric: telegram_subscribers
+      value: 32900
+      as_of: 2026-10
+      source_url: https://t.me/s/Mohammadlhouthi
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Led the Houthi governing bodies in 2015 to 2018; his statements are quoted by Arab and international
+        media.
+      urls:
+      - https://en.wikipedia.org/wiki/Mohammed_al-Houthi
+      - https://www.counterextremism.com/extremists/mohammed-ali-al-houthi
+      - https://www.arabnews.com/node/961001/amp
+    yemen_coverage:
+      frequency: daily
+      evidence: The Telegram preview shows several posts within a single day; content is political commentary and
+        excerpts of his book on the Yemeni revolution.
+      urls:
+      - https://t.me/s/Mohammadlhouthi
+    institutional_importance:
+      level: medium
+      note: Member of the Supreme Political Council (Sanaa); no formal negotiating or spokesman role found.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Supreme Political Council member
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: His own Telegram channel calls itself the official channel of a Supreme Political Council
+      member; the SPC is the Ansar Allah-led authority. Iran-axis label from reporting on the Houthis as Iran's
+      ally (about 0.7).
+    evidence_urls:
+    - https://t.me/s/Mohammadlhouthi
+    - https://en.wikipedia.org/wiki/Houthis
+    - https://www.counterextremism.com/extremists/mohammed-ali-al-houthi
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Status check: no report of his death or removal was found (not named among the Houthi officials killed
+    in 2025: Rahawi, Amer, Sharaf al-Din, Ghamari), but the Telegram preview shows no dates, so 2026 activity is
+    not independently dated. Follower count from the twstalker mirror (snapshot date not shown). X is registered,
+    not collected.'
+- id: abdulmalik-al-ajri
+  name: Abdulmalik al-Ajri
+  name_native: عبدالملك العجري
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/alejri77
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Member of the Ansar Allah political bureau and of its national (negotiating) delegation; deputy chief
+      negotiator (Sana'a Center, Nov 2023)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: alejri77
+    url: https://x.com/alejri77
+    handle_evidence: https://en.rattibha.com/alejri77
+    followers: 341200
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/alejri77
+  feeds: []
+  selection:
+    reason: Houthi political-bureau member and negotiator whose posts on Saudi Arabia, Iran and negotiations are
+      widely read in the Houthi-aligned sphere.
+    audience_evidence:
+    - metric: x_followers
+      value: 341200
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/alejri77
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Listed as deputy chief negotiator of the Houthi delegation to Riyadh (Sana'a Center, 2023); named as
+        a participant in Muscat contacts reported in September 2026.
+      urls:
+      - https://sanaacenter.org/files/The_Houthi_Delegates_to_Riyadh_en.pdf
+      - https://azat.tv/en/us-houthi-secret-talks-oman-red-sea/
+    yemen_coverage:
+      frequency: weekly
+      evidence: About 8,000 posts on the account (mirror); topics are Yemeni politics, Saudi Arabia, Iran and Palestine.
+      urls:
+      - https://en.rattibha.com/alejri77
+    institutional_importance:
+      level: medium
+      note: Member of the Houthi negotiating delegation; second to Mohammed Abdulsalam.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Political bureau member, negotiating delegation
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: Sana'a Center lists him as deputy chief negotiator of the Houthi delegation; his profile
+      bio says member of the Sanaa national delegation. Iran-axis label from reporting on the Houthis as Iran's
+      ally (about 0.7).
+    evidence_urls:
+    - https://sanaacenter.org/files/The_Houthi_Delegates_to_Riyadh_en.pdf
+    - https://en.wikipedia.org/wiki/Houthis
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle and bio ('member of the national delegation, Sanaa') read on the rattibha mirror; the handle was
+    returned for his name by the twstalker profile directory. Named (as 'Abdelmalik al-Ajiri') in azat.tv's September
+    2026 report on Muscat talks, so alive and active. X is registered, not collected.
+- id: hussein-al-ezzi
+  name: Hussein al-Ezzi
+  name_native: حسين العزي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/hussinalezzi5
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: sanaa_controlled
+  holder:
+    kind: person
+    role: Senior Ansar Allah official; Deputy Foreign Minister of the Sanaa authorities (Sana'a Center, Nov 2023;
+      current 2026 post not verified)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: hussinalezzi5
+    url: https://x.com/hussinalezzi5
+    handle_evidence: https://en.rattibha.com/hussinalezzi5
+    followers: 567500
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/hussinalezzi5
+  feeds: []
+  selection:
+    reason: Houthi diplomat whose X account carries the movement's positions on Saudi Arabia, the Red Sea and the
+      UN.
+    audience_evidence:
+    - metric: x_followers
+      value: 567500
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/hussinalezzi5
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Member of the Houthi delegation to Riyadh in 2023 (Sana'a Center).
+      urls:
+      - https://sanaacenter.org/files/The_Houthi_Delegates_to_Riyadh_en.pdf
+    yemen_coverage:
+      frequency: weekly
+      evidence: About 13,000 to 18,000 posts on the account (mirrors); content concerns Ansar Allah, Saudi Arabia
+        and Yemeni sovereignty.
+      urls:
+      - https://en.rattibha.com/hussinalezzi5
+      - https://twstalker.com/hussinalezzi5
+    institutional_importance:
+      level: medium
+      note: Deputy foreign minister of the Sanaa authorities in 2023; the Sanaa foreign ministry leadership changed
+        after the 28 Aug 2025 strike that killed Jamal Amer, and his current title was not verified.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Sanaa-side diplomat
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: Profile bio reads 'Ansar Allah - Yemen'; Sana'a Center lists him in the Houthi delegation.
+      Iran-axis label from reporting on the Houthis as Iran's ally (about 0.7).
+    evidence_urls:
+    - https://sanaacenter.org/files/The_Houthi_Delegates_to_Riyadh_en.pdf
+    - https://en.wikipedia.org/wiki/Houthis
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN: his post in 2026 and alive status could not be confirmed from a dated 2026 source; he is not
+    among the Houthi officials reported killed in 2025, and the twstalker mirror shows recent posts on Saudi-related
+    matters. Follower counts differ by mirror (rattibha 567.5K, twstalker 945K); lower figure used. X is registered,
+    not collected.'
+- id: tareq-saleh
+  name: Tareq Saleh
+  name_native: طارق محمد صالح
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/tarikyemen
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Vice-President of the Presidential Leadership Council and commander of the National Resistance Forces
+      (nephew of Ali Abdullah Saleh)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: tarikyemen
+    url: https://x.com/tarikyemen
+    handle_evidence: https://x.com/BashaReport/status/2098191694315290733
+    followers: 1100000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/tarikyemen
+  feeds: []
+  selection:
+    reason: PLC member and commander of the main armed force on the Red Sea coast; his X posts and interviews are
+      the voice of the National Resistance camp.
+    audience_evidence:
+    - metric: x_followers
+      value: 1100000
+      as_of: 2026-10
+      source_url: https://twstalker.com/tarikyemen
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: CENTCOM publicly credited his forces with a record seizure of Iranian weapons (Jul 2025); in September
+        2026 Basha Report quotes him on US support (CNN interview).
+      urls:
+      - https://x.com/CENTCOM/status/1945507629100638655
+      - https://x.com/BashaReport/status/2098191694315290733
+      - https://x.com/USEmbassyYemen/status/1921946476613087634
+    yemen_coverage:
+      frequency: weekly
+      evidence: Statements on the Houthis, the west coast and the PLC; the account holds about 3,000 posts since
+        2010 (mirror), with active statements reported on 10 Sep 2026.
+      urls:
+      - https://twstalker.com/tarikyemen
+      - https://x.com/BashaReport/status/2098191694315290733
+    institutional_importance:
+      level: high
+      note: PLC vice-president (Wikipedia, 2026); commander of the National Resistance Forces.
+  alignment:
+    yemen_political_alignment: national_resistance
+    sub_alignment: National Resistance Forces; PLC vice-president
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'He leads the National Resistance Forces and sits on the PLC (Wikipedia PLC table).
+      Regional alignment left unknown: historically UAE-linked, but arabi21 (Jan 2026) reports him in Riyadh after
+      refusing to expel Emirati forces, so no single axis is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    - https://arabi21.com/story/1729360/طارق-صالح-في-الرياض-بعد-أيام-من-رفضه-طرد-القوات-الإماراتية-صورة
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'STATUS CAUTION: on 13 Sep 2026 an X post by Somali Guardian reported that he had fled to Somaliland after
+    the Houthis took Mocha; this is unconfirmed, and on 10 Sep Basha Report flagged an AI-fabricated audio of him
+    as a psyop. Treat his position as contested until confirmed. Follower count from the twstalker mirror (snapshot
+    date not shown); handle named in Basha Report posts. X is registered, not collected.'
+- id: aidarous-al-zubaidi
+  name: Aidarous al-Zubaidi
+  name_native: عيدروس قاسم الزبيدي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/AidrosAlzubidi
+  country: AE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: President of the Southern Transitional Council (its January 2026 dissolution is disputed); dismissed from
+      the Presidential Leadership Council on 7 January 2026 and accused of treason by the PLC; reported to be in
+      the UAE
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AidrosAlzubidi
+    url: https://x.com/AidrosAlzubidi
+    handle_evidence: https://x.com/BashaReport/status/2074279841315131460
+    followers: 316000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/AidrosAlzubidi
+  feeds: []
+  selection:
+    reason: Leader of the main southern separatist movement; central figure of the December 2025 to January 2026
+      events in Hadramawt and Aden and of the dispute over the STC's status.
+    audience_evidence:
+    - metric: x_followers
+      value: 316000
+      as_of: 2026-10
+      source_url: https://twstalker.com/AidrosAlzubidi
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Al Jazeera, Al-Monitor and the New Arab covered his dismissal and flight in January 2026; Basha Report
+        (6 Jul 2026) still refers to him as the STC's president.
+      urls:
+      - https://www.aljazeera.com/amp/news/liveblog/2026/1/7/live-yemens-stc-leader-al-zubaidi-dismissed-after-fleeing-overnight
+      - https://x.com/AJEnglish/status/2008791308278919674
+      - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    yemen_coverage:
+      frequency: monthly
+      evidence: His account addresses southern Yemen exclusively, but posting frequency since January 2026 was not
+        verified.
+      urls:
+      - https://twstalker.com/AidrosAlzubidi
+    institutional_importance:
+      level: medium
+      note: No state office since 7 Jan 2026; leader of an STC whose dissolution (announced in Riyadh on 9 Jan)
+        is rejected by UAE-based officials (Wikipedia).
+  alignment:
+    yemen_political_alignment: stc
+    sub_alignment: STC president (status disputed)
+    regional_alignment: uae
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: Founder and head of the STC; Wikipedia describes the STC as UAE-backed and says he
+      fled to the UAE in January 2026.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    - https://www.aljazeera.com/amp/news/liveblog/2026/1/7/live-yemens-stc-leader-al-zubaidi-dismissed-after-fleeing-overnight
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: '2026 status verified: PLC removed him on 7 Jan 2026 (Wikipedia, Presidential Leadership Council) and charged
+    him with high treason; the STC delegation in Riyadh announced the council''s dissolution on 9 Jan but UAE-based
+    officials called it invalid. The profile bio on the mirror (STC president, PLC vice-president) predates these
+    events. Follower count from the twstalker mirror. X is registered, not collected.'
+- id: sultan-al-arada
+  name: Sultan al-Arada
+  name_native: سلطان بن علي العرادة
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/sultan_alaradah
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Member of the Presidential Leadership Council and governor of Marib
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: sultan_alaradah
+    url: https://x.com/sultan_alaradah
+    handle_evidence: https://twstalker.com/search/Sultan%20Alaradah
+    followers: 64000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Sultan%20Alaradah
+  feeds: []
+  selection:
+    reason: PLC member and governor of Marib, the government's main northern front; his posts announce Marib's security
+      and political positions.
+    audience_evidence:
+    - metric: x_followers
+      value: 64000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Sultan%20Alaradah
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Wikipedia lists him as PLC vice-president and Marib governor since 2012; promoted to lieutenant general
+        in June 2026 (X post by a Marib supporter).
+      urls:
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+      - https://en.wikipedia.org/wiki/Sultan_al-Arada
+      - https://x.com/Abo_Saad_aa/status/2066256141152297452
+    yemen_coverage:
+      frequency: weekly
+      evidence: Posts concern Marib governance, the Houthi front and PLC business; frequency not measured.
+      urls:
+      - https://x.com/Marib_gov/status/2081032136669179914
+    institutional_importance:
+      level: high
+      note: PLC member (Wikipedia, 2026) and governor of Marib.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Marib governor; Wikipedia's PLC table links him to the Islah party
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: Serving PLC member; the PLC is the Saudi-backed internationally recognised government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Profile bio on the mirror reads 'official page of Brig. Gen. Sultan bin Ali al-Arada, member of the PLC,
+    governor of Marib'. Follower count read in the twstalker profile directory (snapshot date not shown). Handle
+    evidence is the mirror only; no official site linking to it was found. X is registered, not collected.
+- id: abdullah-al-alimi-bawazir
+  name: Abdullah al-Alimi Bawazir
+  name_native: عبدالله العليمي باوزير
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/ALalimiBawzer
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Vice-President of the Presidential Leadership Council
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: ALalimiBawzer
+    url: https://x.com/ALalimiBawzer
+    handle_evidence: https://twstalker.com/ALalimiBawzer
+    followers: 469000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/ALalimiBawzer
+  feeds: []
+  selection:
+    reason: PLC vice-president who represented the government at the 81st UN General Assembly in September 2026;
+      his account carries the government's foreign-policy and anti-Houthi messaging.
+    audience_evidence:
+    - metric: x_followers
+      value: 469000
+      as_of: 2026-10
+      source_url: https://twstalker.com/ALalimiBawzer
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Posts report meetings with the UN Secretary-General, IMF and US officials at UNGA 81 (profile directory
+        snapshot).
+      urls:
+      - https://twstalker.com/search/Abdullah%20Al-Alimi%20Bawazir
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    yemen_coverage:
+      frequency: weekly
+      evidence: Roughly 1,000 posts since 2016 (mirror) but active around UNGA 81; all content concerns Yemen.
+      urls:
+      - https://twstalker.com/ALalimiBawzer
+    institutional_importance:
+      level: high
+      note: PLC vice-president (Wikipedia, 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: PLC vice-president; Wikipedia's PLC table links him to the Islah party
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: Serving PLC member; the PLC is the Saudi-backed internationally recognised government.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle and bio read on the twstalker mirror (snapshot date not shown); no official page linking to it was
+    found. Distinct from PLC chairman Rashad al-Alimi (separate record). X is registered, not collected.
+- id: othman-mujalli
+  name: Othman Mujalli
+  name_native: عثمان حسين مجلي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/OthmanMujalli
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Member of the Presidential Leadership Council (described as vice-president by Basha Report); tribal leader
+      from Sa'dah
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: OthmanMujalli
+    url: https://x.com/OthmanMujalli
+    handle_evidence: https://x.com/BashaReport/status/2039842560080748572
+    followers: 7000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/OthmanMujalli
+  feeds: []
+  selection:
+    reason: PLC member from Sa'dah, the Houthi heartland; his April 2026 interview with Okaz signalled a possible
+      return of ground operations.
+    audience_evidence:
+    - metric: x_followers
+      value: 7000
+      as_of: 2026-10
+      source_url: https://twstalker.com/OthmanMujalli
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Basha Report (2 Apr 2026) cites his Okaz interview as a sign that ground operations may return.
+      urls:
+      - https://x.com/BashaReport/status/2039842560080748572
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    yemen_coverage:
+      frequency: weekly
+      evidence: Account opened September 2025 with few posts; content is anti-Houthi and anti-Iran messaging.
+      urls:
+      - https://twstalker.com/OthmanMujalli
+    institutional_importance:
+      level: high
+      note: PLC member (Wikipedia, 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: PLC member from Sa'dah
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: Serving PLC member; the PLC is the Saudi-backed internationally recognised government;
+      he gave an interview to Saudi daily Okaz.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    - https://x.com/BashaReport/status/2039842560080748572
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Small audience (7K, twstalker mirror) and recent account; kept for institutional importance (PLC member).
+    Wikipedia lists him as a member, Basha Report as vice-president. X is registered, not collected.
+- id: shaya-al-zindani
+  name: Shaya al-Zindani
+  name_native: شائع محسن الزنداني
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/Shaya_Zindani
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Prime Minister of Yemen (appointed 15 January 2026; cabinet formed 6 February 2026); foreign minister
+      until July 2026
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Shaya_Zindani
+    url: https://x.com/Shaya_Zindani
+    handle_evidence: https://twstalker.com/search/Shaya%20Zindani
+    followers: 32000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Shaya%20Zindani
+  feeds: []
+  selection:
+    reason: Head of the internationally recognised government's cabinet; his account announces cabinet decisions
+      and diplomatic contacts.
+    audience_evidence:
+    - metric: x_followers
+      value: 32000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Shaya%20Zindani
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Al Jazeera reported his appointment and the new cabinet.
+      urls:
+      - https://www.aljazeera.com/news/2026/2/6/new-yemen-government-formed-with-shaya-mohsin-al-zindani-as-prime-minister
+      - https://en.wikipedia.org/wiki/Shaya_al-Zindani
+    yemen_coverage:
+      frequency: weekly
+      evidence: Account bio gives his office; posts cover government business and the Houthi threat.
+      urls:
+      - https://twstalker.com/search/Shaya%20Zindani
+    institutional_importance:
+      level: high
+      note: Prime minister since January 2026 (Wikipedia; Al Jazeera). The institutional account of the office (@Yemen_PM)
+        is under the yemen-pmo record.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Prime minister
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: Prime minister of the Saudi-backed PLC government, appointed by PLC decree.
+    evidence_urls:
+    - https://www.aljazeera.com/news/2026/2/6/new-yemen-government-formed-with-shaya-mohsin-al-zindani-as-prime-minister
+    - https://en.wikipedia.org/wiki/Shaya_al-Zindani
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Wikipedia gives his foreign-minister term as 27 Mar 2024 to 23 Jul 2026 (replaced by Afrah al-Zouba). Handle
+    and bio ('Prime Minister') read in the twstalker profile directory, which also lists @Yemen_PM for the office;
+    snapshot date not shown. X is registered, not collected.
+- id: afrah-al-zouba
+  name: Afrah al-Zouba
+  name_native: أفراح الزوبة
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/afrah_alzouba
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Minister of Foreign Affairs and Expatriates of the internationally recognised government (appointed 23-24
+      July 2026, first woman in the post); previously Minister of Planning and International Cooperation
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: afrah_alzouba
+    url: https://x.com/afrah_alzouba
+    handle_evidence: https://twstalker.com/search/Afrah%20Zouba
+    followers: 19000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Afrah%20Zouba
+  feeds: []
+  selection:
+    reason: The government's chief diplomat since July 2026; her account reports meetings with envoys and ambassadors
+      and the government's positions on the UN process.
+    audience_evidence:
+    - metric: x_followers
+      value: 19000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Afrah%20Zouba
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: The National reported her appointment; the British ambassador publicly congratulated her on X.
+      urls:
+      - https://www.thenationalnews.com/news/mena/2026/07/24/yemen-appoints-first-female-foreign-minister/
+    yemen_coverage:
+      frequency: weekly
+      evidence: Account bio gives her office; posts report diplomatic meetings (profile directory snapshot).
+      urls:
+      - https://twstalker.com/search/Afrah%20Zouba
+    institutional_importance:
+      level: high
+      note: Foreign minister since July 2026 (The National, 24 Jul 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Foreign minister
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: Serving minister in the Saudi-backed PLC government (presidential decree of 23 July
+      2026).
+    evidence_urls:
+    - https://www.thenationalnews.com/news/mena/2026/07/24/yemen-appoints-first-female-foreign-minister/
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Replaces Shaya al-Zindani, who became prime minister in January 2026 and had kept the foreign portfolio.
+    Handle and bio ('Minister of Foreign Affairs and Expatriates') read in the twstalker profile directory (snapshot
+    date not shown); no official page linking to it was found. The ministry's own accounts are under the yemen-mofa
+    record. X is registered, not collected.
+- id: anwar-al-tamimi
+  name: Anwar al-Tamimi
+  name_native: أنور التميمي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/anwaraltamimi71
+  country: AE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Official spokesman of the Southern Transitional Council (UAE-based), who rejected the January 2026 dissolution
+      announcement
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: anwaraltamimi71
+    url: https://x.com/anwaraltamimi71
+    handle_evidence: https://en.rattibha.com/anwaraltamimi71
+    followers: 43000
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/anwaraltamimi71
+  feeds: []
+  selection:
+    reason: Voice of the STC faction that rejects the dissolution; his statements are the council's official line
+      after January 2026.
+    audience_evidence:
+    - metric: x_followers
+      value: 43000
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/anwaraltamimi71
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Wikipedia's STC article quotes him calling the Riyadh dissolution announcement 'ridiculous'; he gives
+        interviews to Sky News Arabia.
+      urls:
+      - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    yemen_coverage:
+      frequency: weekly
+      evidence: Issues STC statements on security and political developments in the south.
+      urls:
+      - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    institutional_importance:
+      level: medium
+      note: Spokesman of a movement whose legal status is disputed after 9 Jan 2026.
+  alignment:
+    yemen_political_alignment: stc
+    sub_alignment: STC spokesman (faction rejecting the dissolution)
+    regional_alignment: uae
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.8
+    classification_evidence: Wikipedia identifies him as the UAE-based official STC spokesman and describes the
+      STC as UAE-backed.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN HANDLE: matched only by name through the twstalker directory; the rattibha bio reads ''advisor
+    at Al-Ghad Al-Mushriq channel'' (not ''spokesman''), so confirm the account is the spokesman''s before collection.
+    Follower count from the rattibha mirror. X is registered, not collected.'
+- id: mohammed-al-jaber
+  name: Mohammed Al Jaber
+  name_native: محمد آل جابر
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/mohdsalj
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Ambassador of Saudi Arabia to Yemen and supervisor of the Saudi Development and Reconstruction Program
+      for Yemen (SDRPY)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: mohdsalj
+    url: https://x.com/mohdsalj
+    handle_evidence: https://x.com/BashaReport/status/1969176289077796930
+    followers: 493000
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/mohdsalj
+  feeds: []
+  selection:
+    reason: Saudi Arabia's principal envoy on Yemen since 2014; his posts announce Saudi mediation, aid and political
+      positions on Yemen.
+    audience_evidence:
+    - metric: x_followers
+      value: 493000
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/mohdsalj
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Basha Report (Sep 2025) lists him among the envoys who mediated within the PLC; his April 2023 Sanaa
+        visit is discussed by Yemeni commentators (Feb 2026).
+      urls:
+      - https://x.com/BashaReport/status/1969176289077796930
+      - https://x.com/hsom67/status/2022653982926340492
+    yemen_coverage:
+      frequency: weekly
+      evidence: Bio and account concern only Yemen (embassy and SDRPY); about 11,200 posts since 2017 (mirror).
+      urls:
+      - https://en.rattibha.com/mohdsalj
+    institutional_importance:
+      level: high
+      note: Saudi ambassador to Yemen since September 2014 (Wikipedia list of ambassadors); Saudi Arabia leads the
+        coalition.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: Serving Saudi ambassador and head of a Saudi state programme (profile bio; SDRPY).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/List_of_ambassadors_of_Saudi_Arabia_to_Yemen
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Wikipedia's ambassador list shows no successor after him; the rattibha bio still reads ambassador and SDRPY
+    supervisor. The embassy account (@KSAembassyYE) is under the saudi-embassy-yemen record, the programme under
+    sdrpy. X is registered, not collected.
+- id: abda-sharif
+  name: Abda Sharif
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/abda_sharif
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: His Majesty's Ambassador to the Republic of Yemen (since September 2023)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: abda_sharif
+    url: https://x.com/abda_sharif
+    handle_evidence: https://x.com/BashaReport/status/1969176289077796930
+  feeds: []
+  selection:
+    reason: British ambassador to Yemen; the UK holds the pen on Yemen at the UN Security Council, and her posts
+      convey UK positions on the government, the PLC and the Houthis.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: low
+      note: The National (24 Jul 2026) cites her X post on the new foreign minister's appointment.
+      urls:
+      - https://www.thenationalnews.com/news/mena/2026/07/24/yemen-appoints-first-female-foreign-minister/
+      - https://www.gov.uk/government/people/abda-sharif
+    yemen_coverage:
+      frequency: weekly
+      evidence: All her diplomatic output concerns Yemen.
+      urls:
+      - https://www.gov.uk/government/people/abda-sharif
+    institutional_importance:
+      level: medium
+      note: UK ambassador to Yemen (GOV.UK profile); the UK is the Security Council penholder on Yemen.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uk
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: Serving British ambassador (GOV.UK).
+    evidence_urls:
+    - https://www.gov.uk/government/people/abda-sharif
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle taken from a Basha Report post that tags '@abda_sharif' among the envoys who mediated within the
+    PLC (Sep 2025); no follower count obtained, so audience_evidence is empty. The embassy account (@UKinYemen)
+    is under the british-embassy-yemen record. X is registered, not collected.
+- id: esmaeil-baghaei
+  name: Esmaeil Baghaei
+  name_native: اسماعیل بقائی
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/IRIMFA_SPOX
+  country: IR
+  region: iran
+  languages:
+  - fa
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Spokesperson of Iran's Ministry of Foreign Affairs and head of its Center for Public Diplomacy
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: IRIMFA_SPOX
+    url: https://x.com/IRIMFA_SPOX
+    handle_evidence: https://twstalker.com/IRIMFA_SPOX
+    followers: 140000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/IRIMFA_SPOX
+  feeds: []
+  selection:
+    reason: Voice of Iran's foreign ministry, whose statements on the Houthis, the Red Sea and Saudi-Houthi escalation
+      frame Iran's position towards Yemen.
+    audience_evidence:
+    - metric: x_followers
+      value: 140000
+      as_of: 2026-10
+      source_url: https://twstalker.com/IRIMFA_SPOX
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: low
+      note: Weekly press briefings are reported by Iranian and international media.
+      urls:
+      - https://en.wikipedia.org/wiki/Esmaeil_Baghaei
+    yemen_coverage:
+      frequency: occasional
+      evidence: General foreign-ministry account; Yemen comes up when asked at briefings and during Red Sea or Houthi
+        escalations. Collection needs a Yemen keyword filter.
+      urls:
+      - https://twstalker.com/IRIMFA_SPOX
+    institutional_importance:
+      level: high
+      note: Spokesman of the foreign ministry of the Houthis' main regional backer; Wikipedia shows him in post
+        through March 2026 under Foreign Minister Abbas Araghchi.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: iran_axis
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: Serving spokesperson of the Iranian foreign ministry (profile bio; Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Esmaeil_Baghaei
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Latest dated evidence of him in post is March 2026 (Wikipedia); the profile bio read on the mirror still
+    gives the post. Institutional accounts of the ministry are under the iran-mfa record. Follower count from the
+    twstalker mirror (snapshot date not shown). X is registered, not collected.
+- id: mohammed-al-yadoumi
+  name: Mohammed al-Yadoumi
+  name_native: محمد عبدالله اليدومي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/MohAlydomi
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Chairman of the Supreme Authority of the Yemeni Congregation for Reform (Islah)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: MohAlydomi
+    url: https://x.com/MohAlydomi
+    handle_evidence: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%85%D9%8A
+    followers: 231000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%85%D9%8A
+  feeds: []
+  selection:
+    reason: Head of Islah, the largest party in the government camp; his account carries the party's positions on
+      the PLC, the Houthis and the south.
+    audience_evidence:
+    - metric: x_followers
+      value: 231000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%85%D9%8A
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Leads Islah, which holds 44 of 301 parliamentary seats (Wikipedia); Saudi Arabia repaired relations
+        with the party because of its role against the Houthis.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Islah_(Yemen)
+    yemen_coverage:
+      frequency: weekly
+      evidence: Account posts party and national statements; frequency not measured.
+      urls:
+      - https://twstalker.com/search/%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%85%D9%8A
+    institutional_importance:
+      level: high
+      note: Chairman of Islah (Wikipedia, 2026); the party holds seats and posts in the PLC camp. Party channels
+        are under the alislah-net record.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: Party chairman
+    regional_alignment: saudi
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'He leads the Islah party (Wikipedia). Saudi alignment: Wikipedia records Saudi repair
+      of relations with Islah because of its anti-Houthi role, and his tweets express thanks to Saudi Arabia and
+      the UAE.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Islah_(Yemen)
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle, bio ('chairman of the Supreme Authority of the Reform party') and follower count read in the twstalker
+    profile directory (snapshot date not shown); no party page linking to the account was found. X is registered,
+    not collected.
+- id: basha-report
+  name: Basha Report
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/BashaReport
+  country: US
+  region: north_america
+  languages:
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Washington-based risk analyst and OSINT account on Middle East conflicts; since 2025-2026 a daily commentator
+      on Yemen's front lines and Red Sea (identifies as an analyst, not a journalist)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: BashaReport
+    url: https://x.com/BashaReport
+    handle_evidence: https://twstalker.com/BashaReport
+    followers: 31000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/BashaReport
+  feeds: []
+  selection:
+    reason: One of the most active English-language accounts on the 2026 Yemen war; analysts and journalists share
+      its maps, translations of Arabic reporting and fact-checks.
+    audience_evidence:
+    - metric: x_followers
+      value: 31000
+      as_of: 2026-10
+      source_url: https://twstalker.com/BashaReport
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media was not measured. Its posts of 2026 cover the Houthi offensive, Perim Island,
+        PLC infighting and the Saudi Supreme Military Committee.
+      urls:
+      - https://x.com/BashaReport/status/2098191694315290733
+      - https://x.com/BashaReport/status/2057539805974790614
+      - https://x.com/BashaReport/status/2048399523702083692
+    yemen_coverage:
+      frequency: daily
+      evidence: The mirror shows 28,000 posts; its recent posts concentrate heavily on Yemen (Taiz, Bab al-Mandab,
+        Mocha) and the search index returned more than a dozen Yemen posts dated April to September 2026.
+      urls:
+      - https://twstalker.com/BashaReport
+      - https://x.com/BashaReport/status/2088115427943571938
+    institutional_importance:
+      level: none
+      note: Independent analyst account.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked the account''s profile summary and a sample of 2026 posts: it reports on all
+      sides (including fact-checks of anti-Houthi propaganda and a disclaimer on Arabi21''s anti-UAE stance); no
+      party or state affiliation found.'
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The person behind the account is not named on any page read, so only the professional handle is recorded.
+    Follower count from the twstalker mirror (snapshot date not shown). X is registered, not collected.
+- id: tawakkol-karman
+  name: Tawakkol Karman
+  name_native: توكل كرمان
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/TawakkolKarman
+  country: TR
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q104622
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Yemeni journalist, activist and Nobel Peace Prize laureate (2011); member of Meta's Oversight Board; lives
+      in Istanbul
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: TawakkolKarman
+    url: https://x.com/TawakkolKarman
+    handle_evidence: https://twstalker.com/TawakkolKarman
+    followers: 1100000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/TawakkolKarman
+  feeds: []
+  selection:
+    reason: The best-known Yemeni voice abroad; comments on the Houthis, the Saudi-UAE coalition and Yemeni politics
+      alongside wider Arab causes.
+    audience_evidence:
+    - metric: x_followers
+      value: 1100000
+      as_of: 2026-10
+      source_url: https://twstalker.com/TawakkolKarman
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Nobel laureate (2011), a leading figure of the 2011 uprising; founded Belqees TV (Wikipedia).
+      urls:
+      - https://en.wikipedia.org/wiki/Tawakkol_Karman
+    yemen_coverage:
+      frequency: weekly
+      evidence: Her feed mixes Yemen with Palestine, Iran and wider rights issues; Yemen is a recurring but not
+        the only topic.
+      urls:
+      - https://twstalker.com/TawakkolKarman
+      - https://en.wikipedia.org/wiki/Tawakkol_Karman
+    institutional_importance:
+      level: none
+      note: No office; selected for audience and historical weight.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: Suspended from Islah in 2018 (Wikipedia)
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Wikipedia: she was suspended from the Islah party in February 2018 after criticising
+      the Saudi-led coalition, opposes the Houthis and condemns the coalition''s war; no current party role or state
+      sponsor documented.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Tawakkol_Karman
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Wikipedia reports Belqees TV, which she founded, ceased operations in late 2024; the separate belqees record
+    in the media slice should be checked for activity. Follower count from the twstalker mirror (snapshot date not
+    shown). X is registered, not collected.
+- id: hisham-al-omeisy
+  name: Hisham Al-Omeisy
+  name_native: هشام العميسي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/omeisy
+  country: US
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Yemeni conflict analyst based in Washington, DC; Senior Advisor at Eurpeace and at Yemen Pathways (per
+      his X bio); former security manager at the International Rescue Committee
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: omeisy
+    url: https://x.com/omeisy
+    handle_evidence: https://twstalker.com/omeisy
+    followers: 47000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/omeisy
+  feeds: []
+  selection:
+    reason: Prolific English-language commentator on the Houthis, the military situation and the humanitarian toll;
+      widely read by journalists and diplomats.
+    audience_evidence:
+    - metric: x_followers
+      value: 47000
+      as_of: 2026-10
+      source_url: https://twstalker.com/omeisy
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media was not measured; account active since 2011 with 44,000 posts (mirror).
+      urls:
+      - https://twstalker.com/omeisy
+    yemen_coverage:
+      frequency: daily
+      evidence: 44,000 posts; recent posts examine military operations, Houthi capabilities and civilian casualties.
+      urls:
+      - https://twstalker.com/omeisy
+    institutional_importance:
+      level: none
+      note: Independent analyst; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked his X bio (conflict analyst, advisory roles at peacebuilding groups); no Yemeni
+      party or state affiliation documented.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read on the twstalker mirror only (snapshot date not shown); no institutional page
+    names the handle. X is registered, not collected.
+- id: adam-baron
+  name: Adam Baron
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/adammbaron
+  country: US
+  region: north_america
+  languages:
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Advisor on Yemen and the Gulf at the Centre for Humanitarian Dialogue (HD) and fellow of New America (per
+      his X bio); former Yemen correspondent
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: adammbaron
+    url: https://x.com/adammbaron
+    handle_evidence: https://twstalker.com/adammbaron
+    followers: 22000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/adammbaron
+  feeds: []
+  selection:
+    reason: Veteran Yemen analyst and former journalist whose posts are followed by diplomats and reporters.
+    audience_evidence:
+    - metric: x_followers
+      value: 22000
+      as_of: 2026-10
+      source_url: https://twstalker.com/adammbaron
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media was not measured.
+      urls:
+      - https://twstalker.com/adammbaron
+    yemen_coverage:
+      frequency: weekly
+      evidence: Bio names Yemen and the Gulf as his advisory focus; 18,000 posts since 2009 (mirror).
+      urls:
+      - https://twstalker.com/adammbaron
+    institutional_importance:
+      level: none
+      note: Analyst; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked his X bio: adviser at a mediation NGO and a think-tank fellow; no party or
+      state affiliation documented.'
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read on the twstalker mirror only (snapshot date not shown); his HD Centre staff
+    page could not be fetched. X is registered, not collected.
+- id: fatima-alasrar
+  name: Fatima Alasrar
+  name_native: فاطمة العسرار
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/YemeniFatima
+  country: US
+  region: north_america
+  languages:
+  - en
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Researcher and author on Yemen and Iran; non-resident scholar at the Middle East Institute (per her X
+      bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: YemeniFatima
+    url: https://x.com/YemeniFatima
+    handle_evidence: https://en.rattibha.com/YemeniFatima
+    followers: 21400
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/YemeniFatima
+  feeds: []
+  selection:
+    reason: Yemeni analyst whose commentary on the Houthis, Iran and the anti-Houthi camp appears in Foreign Policy
+      and the Washington Report.
+    audience_evidence:
+    - metric: x_followers
+      value: 21400
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/YemeniFatima
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Bio lists Foreign Policy and the Washington Report on Middle East Affairs; citation by other media not
+        measured.
+      urls:
+      - https://en.rattibha.com/YemeniFatima
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Bio: researcher and author on #Yemen and #Iran.'
+      urls:
+      - https://en.rattibha.com/YemeniFatima
+    institutional_importance:
+      level: none
+      note: Analyst; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.4
+    classification_evidence: Checked her X bio (think-tank scholar); no Yemeni party or state affiliation documented.
+      Her posts criticise the Houthis and Iran, but no source classifies her.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read on the rattibha mirror only (snapshot date not shown); the Middle East Institute
+    expert page could not be fetched. Handle also seen on an X post (2018). X is registered, not collected.
+- id: iona-craig
+  name: Iona Craig
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/ionacraig
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Journalist who has reported mostly on Yemen and the Arabian Peninsula since 2010; co-founder of Yemen
+      Data (per her X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: ionacraig
+    url: https://x.com/ionacraig
+    handle_evidence: https://twstalker.com/search/Iona%20Craig
+    followers: 46000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Iona%20Craig
+  feeds: []
+  selection:
+    reason: Prize-winning Yemen reporter whose posts and investigations (drone strikes, civilian casualties, the
+      war economy) are widely cited.
+    audience_evidence:
+    - metric: x_followers
+      value: 46000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Iona%20Craig
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Wikipedia lists the Martha Gellhorn Prize (2014), the Orwell Prize (2016) and the George Polk Award
+        (2018) for her Yemen reporting.
+      urls:
+      - https://en.wikipedia.org/wiki/Iona_Craig
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Bio: ''Journalist. Mostly Yemen/Arabian Peninsula.'''
+      urls:
+      - https://twstalker.com/search/Iona%20Craig
+      - https://en.wikipedia.org/wiki/Iona_Craig
+    institutional_importance:
+      level: none
+      note: Independent journalist; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked Wikipedia and her X bio: freelance journalist for The Times, Intercept, Foreign
+      Policy and others; no party or state affiliation documented.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Iona_Craig
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle and bio read in the twstalker profile directory (snapshot date not shown); Wikipedia does not list
+    the handle. X is registered, not collected.
+- id: afrah-nasser
+  name: Afrah Nasser
+  name_native: أفراح ناصر
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/Afrahnasser
+  country: US
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q28779341
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Yemeni journalist and researcher; fellow at Arab Center Washington DC; formerly with the Office of the
+      UN Special Envoy for Yemen and Human Rights Watch (per her X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Afrahnasser
+    url: https://x.com/Afrahnasser
+    handle_evidence: https://twstalker.com/search/Afrah%20Nasser
+    followers: 64000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Afrah%20Nasser
+  feeds: []
+  selection:
+    reason: Yemeni journalist-researcher whose commentary on UN mediation, women-led protests and civil society
+      reaches an Arabic- and English-speaking audience.
+    audience_evidence:
+    - metric: x_followers
+      value: 64000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Afrah%20Nasser
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: medium
+      note: Press-freedom awardee and past UN envoy-office staff (X bio); citation by other media not measured.
+      urls:
+      - https://twstalker.com/search/Afrah%20Nasser
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Her posts and research concern Yemen: UN mediation, protests in Sanaa and Aden, environmental crises.'
+      urls:
+      - https://twstalker.com/search/Afrah%20Nasser
+    institutional_importance:
+      level: none
+      note: Researcher-journalist; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked her X bio (think-tank fellow, ex-UN and HRW staff, press-freedom awardee);
+      no party or state affiliation documented.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read in the twstalker profile directory (snapshot date not shown); no institutional
+    page naming the handle was fetched. X is registered, not collected.
+- id: ahmed-nagi
+  name: Ahmed Nagi
+  name_native: أحمد ناجي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/AhmedNagiYE
+  country: TR
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Senior Analyst, Yemen, International Crisis Group (based in Istanbul); formerly non-resident scholar at
+      the Carnegie Middle East Center
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AhmedNagiYE
+    url: https://x.com/AhmedNagiYE
+    handle_evidence: https://www.crisisgroup.org/who-we-are/people/ahmed-nagi
+    followers: 12000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/Ahmed%20Nagi
+  feeds: []
+  selection:
+    reason: Crisis Group's Yemen analyst; his conflict analysis of the Houthis, the south and the PLC is cited by
+      diplomats and media.
+    audience_evidence:
+    - metric: x_followers
+      value: 12000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/Ahmed%20Nagi
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Crisis Group's Yemen analysis is a standard reference for policymakers and media.
+      urls:
+      - https://www.crisisgroup.org/who-we-are/people/ahmed-nagi
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Crisis Group profile: covers conflict dynamics, politics, security and the regional role of Yemen;
+        his tweets follow Houthi advances and Red Sea shipping.'
+      urls:
+      - https://www.crisisgroup.org/who-we-are/people/ahmed-nagi
+    institutional_importance:
+      level: low
+      note: Analyst at an independent crisis-monitoring organisation.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked his Crisis Group profile: independent conflict-prevention organisation; no
+      party or state affiliation documented.'
+    evidence_urls:
+    - https://www.crisisgroup.org/who-we-are/people/ahmed-nagi
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle confirmed by the Crisis Group profile page. Follower count from the twstalker directory (snapshot
+    date not shown). X is registered, not collected.
+- id: ali-al-bukhaiti
+  name: Ali al-Bukhaiti
+  name_native: علي البخيتي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/Ali_Albukhaiti
+  country: GB
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: 'Yemeni political commentator based in London (X bio: ''Yemen lives in him and he lives in London'')'
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Ali_Albukhaiti
+    url: https://x.com/Ali_Albukhaiti
+    handle_evidence: https://en.rattibha.com/Ali_Albukhaiti
+    followers: 1100000
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/Ali_Albukhaiti
+  feeds: []
+  selection:
+    reason: One of the largest Arabic-language Yemeni political accounts; debates the Houthis, the government and
+      the coalition with a very wide audience.
+    audience_evidence:
+    - metric: x_followers
+      value: 1100000
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/Ali_Albukhaiti
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media was not measured; 43,000 posts since 2011 (mirror).
+      urls:
+      - https://en.rattibha.com/Ali_Albukhaiti
+    yemen_coverage:
+      frequency: daily
+      evidence: 43,300 posts since 2011; recent posts are Yemeni political debates (profile directory).
+      urls:
+      - https://en.rattibha.com/Ali_Albukhaiti
+      - https://twstalker.com/search/%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D8%A8%D8%AE%D9%8A%D8%AA%D9%8A
+    institutional_importance:
+      level: none
+      note: No office; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.3
+    classification_evidence: 'Checked only his X bio and the profile directory: no current party or state role is
+      stated. His position has changed over time and no watchdog or academic source was read, so no camp is assigned.'
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Follower counts differ by mirror (rattibha 1.1M, twstalker 1.3M); lower used. Bio and counts from mirrors
+    only; no institutional page naming the handle was fetched. X is registered, not collected.
+- id: hani-mashhour
+  name: Hani Mashhour
+  name_native: هاني مسهور
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/hsom67
+  country: AE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: 'Yemeni journalist and writer based in the UAE (X bio: ''press writer''); commentator on southern Yemen
+      and the STC'
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: hsom67
+    url: https://x.com/hsom67
+    handle_evidence: https://en.rattibha.com/hsom67
+    followers: 399800
+    followers_as_of: '2026-10-05'
+    followers_source: https://en.rattibha.com/hsom67
+  feeds: []
+  selection:
+    reason: High-reach commentator on southern Yemen and Saudi-Houthi relations; his February 2026 posts argue Riyadh
+      shifted towards understanding with the Houthis.
+    audience_evidence:
+    - metric: x_followers
+      value: 399800
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/hsom67
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media was not measured; 43,000 posts since 2013 (mirror).
+      urls:
+      - https://x.com/hsom67/status/2022653982926340492
+    yemen_coverage:
+      frequency: daily
+      evidence: 43,400 posts; his content focuses on Yemen's south, the STC and Saudi policy (mirror and profile
+        directory).
+      urls:
+      - https://en.rattibha.com/hsom67
+    institutional_importance:
+      level: none
+      note: No office; selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.3
+    classification_evidence: Checked his X bio and a February 2026 post critical of Saudi policy; no watchdog or
+      academic source on his affiliation was read, so no camp is assigned.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Followers differ by mirror (rattibha 399.8K, twstalker 468K); lower used. UAE location from the rattibha
+    profile. X is registered, not collected.
+- id: yahya-saree
+  name: Yahya Saree
+  name_native: يحيى سريع
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://t.me/army21ye
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: telegram
+  source_type: person
+  content_type: social_post
+  wikidata: Q123819200
+  operating_base: sanaa_controlled
+  holder:
+    kind: person
+    role: Military spokesman of the armed forces of the Sanaa authorities (Ansar Allah) and director of the Moral
+      Guidance Department (per Wikipedia and his Telegram channel)
+    public_figure: true
+  accounts:
+  - platform: telegram
+    handle: army21ye
+    url: https://t.me/army21ye
+    handle_evidence: https://t.me/s/army21ye
+    followers: 261000
+    followers_as_of: '2026-10-05'
+    followers_source: https://t.me/s/army21ye
+  - platform: x
+    handle: army21yemen
+    url: https://x.com/army21yemen
+    handle_evidence: https://en.wikipedia.org/wiki/Yahya_Saree
+  feeds:
+  - url: https://t.me/s/army21ye
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; public preview of the Telegram channel titled 'Brigadier Yahya Saree / Official Spokesman
+      of the Yemeni Armed Forces' (261K subscribers, read 2026-10-05); the X handle army21yemen was supplied by
+      the coordinator's Wikidata query; robots.txt not yet checked
+  selection:
+    reason: The voice through which the Houthi forces announce missile, drone and naval operations, now including
+      claimed strikes on Saudi targets; his announcements are carried by wire and regional media.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 261000
+      as_of: 2026-10
+      source_url: https://t.me/s/army21ye
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: medium
+      note: Reported by L'Orient-Le Jour and Lebanese news feeds in August 2026 (Marib and Mocha strikes, 12 Aug
+        2026); his X account has been suspended repeatedly, most recently in 2026 (Wikipedia).
+      urls:
+      - https://live.libnanews.com/event/ev-1786511829961-a1eb
+      - https://today.lorientlejour.com/article/1543740/houthis-say-attacks-on-yemen-forces-response-to-saudi-military-buildup.html
+      - https://en.wikipedia.org/wiki/Yahya_Saree
+    yemen_coverage:
+      frequency: daily
+      evidence: The channel's recent posts are military statements on strikes against Saudi targets and air-defence
+        engagements; Saree announced strikes on Marib and Mocha on 12 Aug 2026.
+      urls:
+      - https://t.me/s/army21ye
+      - https://live.libnanews.com/event/ev-1786511829961-a1eb
+    institutional_importance:
+      level: high
+      note: Official spokesman of the Sanaa authorities' armed forces. His statements are claims by a party to the
+        conflict, not verified facts.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Military spokesman, Sanaa armed forces
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: The channel presents him as the official spokesman of the armed forces of the Ansar
+      Allah-led authorities; Wikipedia lists his post. Iran-axis label from reporting on the Houthis as Iran's ally
+      (about 0.7).
+    evidence_urls:
+    - https://t.me/s/army21ye
+    - https://en.wikipedia.org/wiki/Yahya_Saree
+    - https://en.wikipedia.org/wiki/Houthis
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'The Telegram channel is the collectable voice (X is suspended: Wikipedia cites a suspension dated 13 Aug
+    2026; twstalker lists @army21yemn with 512 followers, a different handle, so the X handle army21yemen is coordinator-supplied
+    and unverified by me). Alive and in role on 12 Aug 2026 (libnanews). Wikidata Q123819200 comes from the coordinator''s
+    CI query, not fetched here. X is registered, not collected.'
+- id: ahmed-obaid-bin-daghr
+  name: Ahmed Obaid bin Daghr
+  name_native: أحمد عبيد بن دغر
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/ahmedbindaghar
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q20385886
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Speaker of the Shura Council of Yemen (since January 2021); former prime minister
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: ahmedbindaghar
+    url: https://x.com/ahmedbindaghar
+    handle_evidence: https://twstalker.com/search/ahmedbindaghar
+    followers: 818000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/ahmedbindaghar
+  feeds: []
+  selection:
+    reason: Senior government-camp politician with a very large following; his posts frame the Shura Council's and
+      the government's positions on military operations and territorial recovery.
+    audience_evidence:
+    - metric: x_followers
+      value: 818000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/ahmedbindaghar
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Former prime minister; the New Arab noted the Shura Council speakership is honorary.
+      urls:
+      - https://en.wikipedia.org/wiki/Ahmed_Obeid_bin_Daghr
+    yemen_coverage:
+      frequency: weekly
+      evidence: The account's recent posts relay Shura Council statements on military operations and territorial
+        recovery (profile directory).
+      urls:
+      - https://twstalker.com/search/ahmedbindaghar
+    institutional_importance:
+      level: low
+      note: Shura Council speaker (Wikipedia); the council is an honorary, powerless body, so institutional weight
+        is low despite his rank.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Shura Council speaker; GPC background (Wikipedia)
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.7
+    classification_evidence: Holds a state office under the PLC government (account bio); Wikipedia records past
+      membership of the GPC and the Yemeni Socialist Party. Saudi label from the PLC government's Saudi backing.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Ahmed_Obeid_bin_Daghr
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Account bio read in the twstalker profile directory: ''official account of the Speaker of the Yemeni Shura
+    Council''. Follower count from the same mirror (snapshot date not shown); the coordinator''s Wikidata figure
+    was 747,143 (2023-02). Wikidata Q20385886 from the coordinator''s CI query. Wikipedia''s text dates from about
+    2022, so the 2026 office rests on the account bio. X is registered, not collected.'
+- id: abdulmalik-al-mekhlafi
+  name: Abdulmalik al-Mekhlafi
+  name_native: عبدالملك المخلافي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/almekhlafi59
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q12223818
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Adviser to the head of state and deputy chairman of the Consultation and Reconciliation Commission; former
+      deputy prime minister and foreign minister
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: almekhlafi59
+    url: https://x.com/almekhlafi59
+    handle_evidence: https://twstalker.com/search/almekhlafi59
+    followers: 512000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/almekhlafi59
+  feeds: []
+  selection:
+    reason: Senior figure of the government camp, close to the Taiz front, who comments on military and political
+      developments.
+    audience_evidence:
+    - metric: x_followers
+      value: 512000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/almekhlafi59
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Former foreign minister; citation by other media not measured.
+      urls:
+      - https://twstalker.com/search/almekhlafi59
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: frequent comments on Yemeni political and military matters, notably Taiz.'
+      urls:
+      - https://twstalker.com/search/almekhlafi59
+    institutional_importance:
+      level: medium
+      note: Presidential adviser and deputy head of the reconciliation commission (account bio).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Adviser to the PLC chairman; Taiz
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.7
+    classification_evidence: Account bio gives an adviser post to the head of state in the PLC government; Saudi
+      label from that government's Saudi backing.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read in the twstalker profile directory (snapshot date not shown); 'the President'
+    in his bio is taken to mean the PLC chairman. The coordinator's Wikidata figure was 485,791 (2022-12). Wikidata
+    Q12223818 from the coordinator's CI query. X is registered, not collected.
+- id: ali-mohsen-al-ahmar
+  name: Ali Mohsen al-Ahmar
+  name_native: علي محسن صالح الأحمر
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/alimohsnalahmar
+  country: XX
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q979788
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: General and former Vice-President of Yemen (2016 until relieved by decree on 7 April 2022); long-time
+      senior military commander
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: alimohsnalahmar
+    url: https://x.com/alimohsnalahmar
+    handle_evidence: https://twstalker.com/search/alimohsnalahmar
+    followers: 706000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/alimohsnalahmar
+  feeds: []
+  selection:
+    reason: Senior military and political figure of the anti-Houthi camp for two decades; his posts mark national
+      occasions and signal positions of the old republican elite.
+    audience_evidence:
+    - metric: x_followers
+      value: 706000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/alimohsnalahmar
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Wikipedia records his removal as vice-president on 7 April 2022; he remains a reference figure in the
+        government camp.
+      urls:
+      - https://en.wikipedia.org/wiki/Ali_Mohsen_al-Ahmar
+    yemen_coverage:
+      frequency: monthly
+      evidence: The account posts occasionally; the profile directory shows an anniversary post for the 26 September
+        revolution (64th anniversary, 2026).
+      urls:
+      - https://twstalker.com/search/alimohsnalahmar
+    institutional_importance:
+      level: low
+      note: No current office; former vice-president.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: Former vice-president; GPC member (Wikipedia)
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.4
+    classification_evidence: 'Checked Wikipedia: former GPC member and vice-president, removed in April 2022; no
+      current party role or state sponsor was read in the sources available, so no camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Ali_Mohsen_al-Ahmar
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Active in late September 2026 per the profile directory (post for the 26 September anniversary), so alive.
+    Residence not verified (country XX). Follower count from the twstalker mirror; coordinator's Wikidata figure
+    676,703 (2023-02). Wikidata Q979788 from the coordinator's CI query. X is registered, not collected.
+- id: radhya-al-mutawakel
+  name: Radhya al-Mutawakel
+  name_native: راضية المتوكل
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/RAlmutawakel
+  country: YE
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q33037293
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Chairperson of Mwatana for Human Rights, the Yemeni organisation that documents abuses by all parties
+      (per her X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: RAlmutawakel
+    url: https://x.com/RAlmutawakel
+    handle_evidence: https://twstalker.com/search/RAlmutawakel
+    followers: 31000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/RAlmutawakel
+  feeds: []
+  selection:
+    reason: Head of Yemen's main independent human-rights documentation group; her posts report detentions, disappearances
+      and civilian casualties, notably in Houthi-held Sanaa.
+    audience_evidence:
+    - metric: x_followers
+      value: 31000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/RAlmutawakel
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: medium
+      note: Citation of Mwatana by other media was not measured here.
+      urls:
+      - https://twstalker.com/search/RAlmutawakel
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: posts on arbitrary detention, forced disappearance and civilian harm in Yemen.'
+      urls:
+      - https://twstalker.com/search/RAlmutawakel
+    institutional_importance:
+      level: low
+      note: Head of a human-rights NGO; selected for influence.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked her X bio and post summary: heads a human-rights NGO that documents abuses
+      by several parties; no party or state affiliation documented.'
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Bio and follower count read in the twstalker profile directory (snapshot date not shown); the Mwatana website
+    could not be fetched. Coordinator's Wikidata figure 24,982 (2023-02). Wikidata Q33037293 from the coordinator's
+    CI query. X is registered, not collected.
+- id: basheer-al-harethi
+  name: Basheer al-Harethi
+  name_native: بشير الحارثي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/balharithy
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q81939561
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Independent Yemeni journalist and television news presenter, podcast host and human-rights activist (per
+      his X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: balharithy
+    url: https://x.com/balharithy
+    handle_evidence: https://twstalker.com/search/balharithy
+    followers: 361000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/balharithy
+  feeds: []
+  selection:
+    reason: Large Arabic-language Yemeni journalist account that comments on Yemeni politics alongside cultural
+      and historical content.
+    audience_evidence:
+    - metric: x_followers
+      value: 361000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/balharithy
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media not measured.
+      urls:
+      - https://twstalker.com/search/balharithy
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: commentary on Yemeni politics mixed with cultural, sports and genealogy podcast
+        content, so Yemen politics is not the only subject.'
+      urls:
+      - https://twstalker.com/search/balharithy
+    institutional_importance:
+      level: none
+      note: Journalist; selected for audience.
+  alignment:
+    yemen_political_alignment: independent
+    sub_alignment: Self-described independent
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.3
+    classification_evidence: His own bio calls him an independent Yemeni journalist; no outside source on his editorial
+      lean was read.
+    evidence_urls:
+    - https://twstalker.com/search/balharithy
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Bio and follower count read in the twstalker profile directory (snapshot date not shown). Mixed content:
+    filter for Yemen politics if collected. Coordinator''s Wikidata figure 259,226 (2023-02). Wikidata Q81939561
+    from the coordinator''s CI query. X is registered, not collected.'
+- id: salem-al-khanbashi
+  name: Salem al-Khanbashi
+  name_native: سالم أحمد الخنبشي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/alkhnbshys3
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Member of the Presidential Leadership Council (appointed 15 January 2026) and governor of Hadramawt
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: alkhnbshys3
+    url: https://x.com/alkhnbshys3
+    handle_evidence: https://twstalker.com/search/%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AE%D9%86%D8%A8%D8%B4%D9%8A
+    followers: 9000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AE%D9%86%D8%A8%D8%B4%D9%8A
+  feeds: []
+  selection:
+    reason: Governor of Hadramawt, the province at the centre of the December 2025 crisis, who joined the PLC when
+      the STC members were removed; his account reports local governance and security.
+    audience_evidence:
+    - metric: x_followers
+      value: 9000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AE%D9%86%D8%A8%D8%B4%D9%8A
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: low
+      note: Wikipedia's PLC article lists him as appointed on 15 January 2026 to replace an STC member.
+      urls:
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: posts on Hadramawt projects, electricity, border security and meetings with
+        diplomats.'
+      urls:
+      - https://twstalker.com/search/%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AE%D9%86%D8%A8%D8%B4%D9%8A
+    institutional_importance:
+      level: high
+      note: PLC member and governor of Hadramawt (Wikipedia, 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Hadramawt governor; PLC member since Jan 2026
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: Serving PLC member; the PLC is the Saudi-backed internationally recognised government
+      and his appointment followed the Saudi-backed counter-offensive against the STC.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Small audience (9K, mirror) kept for institutional importance. Handle matched through the twstalker directory,
+    which reports it as his official account; other accounts with similar names exist, so confirm before collection.
+    X is registered, not collected.
+- id: mahmoud-al-subaihi
+  name: Mahmoud al-Subaihi
+  name_native: محمود أحمد سالم الصبيحي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/malsubihi1
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Member of the Presidential Leadership Council (appointed 15 January 2026); lieutenant general and former
+      defence minister
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: malsubihi1
+    url: https://x.com/malsubihi1
+    handle_evidence: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D9%8A%D8%AD%D9%8A
+    followers: 12000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D9%8A%D8%AD%D9%8A
+  feeds: []
+  selection:
+    reason: Southern general who joined the PLC when the STC members were removed in January 2026; his account carries
+      the council's military and southern messaging.
+    audience_evidence:
+    - metric: x_followers
+      value: 12000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D9%8A%D8%AD%D9%8A
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: low
+      note: Wikipedia's PLC article lists him as appointed on 15 January 2026; southern critics attack him on X
+        (profile directory).
+      urls:
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    yemen_coverage:
+      frequency: monthly
+      evidence: Account bio gives his PLC post; posting frequency not measured.
+      urls:
+      - https://twstalker.com/search/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D9%8A%D8%AD%D9%8A
+    institutional_importance:
+      level: high
+      note: PLC member (Wikipedia, 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: PLC member since Jan 2026
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: Serving PLC member appointed after the Saudi-backed counter-offensive against the STC.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Account bio read in the profile directory: ''official account of Lt Gen Mahmoud Ahmed Salem al-Subaihi,
+    member of the PLC'' (snapshot date not shown). Small audience, kept for institutional importance. X is registered,
+    not collected.'
+- id: abu-zaraa-al-mahrami
+  name: Abu Zaraa al-Mahrami
+  name_native: عبدالرحمن أبو زرعة المحرمي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/AbuZar3a
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Member of the Presidential Leadership Council and commander of the Giants Brigades
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AbuZar3a
+    url: https://x.com/AbuZar3a
+    handle_evidence: https://x.com/BashaReport/status/1892250094239383682
+    followers: 47000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D8%A3%D8%A8%D9%88%20%D8%B2%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%85%D9%8A
+  feeds: []
+  selection:
+    reason: Commander of the UAE-backed Giants Brigades and PLC member; his position in the Saudi-UAE dispute over
+      the south matters for the camp's cohesion.
+    audience_evidence:
+    - metric: x_followers
+      value: 47000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D8%A3%D8%A8%D9%88%20%D8%B2%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%85%D9%8A
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Basha Report (Feb 2025) calls him a UAE ally; Wikipedia's PLC table lists him as a member leading the
+        UAE-backed Giants Brigades.
+      urls:
+      - https://x.com/BashaReport/status/1892250094239383682
+      - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    yemen_coverage:
+      frequency: monthly
+      evidence: 'Account bio: ''official account of a PLC member''; posting frequency not measured.'
+      urls:
+      - https://twstalker.com/search/%D8%A3%D8%A8%D9%88%20%D8%B2%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%85%D9%8A
+    institutional_importance:
+      level: high
+      note: PLC member (Wikipedia, 2026) and commander of the Giants Brigades.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: PLC member; Giants Brigades commander
+    regional_alignment: uae
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.6
+    classification_evidence: Serving PLC member; Wikipedia and Basha Report describe his Giants Brigades as UAE-backed.
+      UAE label is low confidence because Saudi-UAE relations changed after January 2026.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    - https://x.com/BashaReport/status/1892250094239383682
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle named in a Basha Report post (19 Feb 2025) and returned with the PLC-member bio in the twstalker
+    directory (snapshot date not shown). The directory summary also called him a deputy head of the STC; that was
+    not confirmed by any other source and is not used. X is registered, not collected.
+- id: nasr-al-din-amer
+  name: Nasr al-Din Amer
+  name_native: نصر الدين عامر
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/Nasr_Amer1
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: sanaa_controlled
+  holder:
+    kind: person
+    role: Deputy head of the Ansar Allah Media Authority and chairman of the board of the Saba news agency in Sanaa
+      (per his X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Nasr_Amer1
+    url: https://x.com/Nasr_Amer1
+    handle_evidence: https://twstalker.com/search/%D9%86%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B9%D8%A7%D9%85%D8%B1
+    followers: 449000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D9%86%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B9%D8%A7%D9%85%D8%B1
+  feeds: []
+  selection:
+    reason: Senior Houthi media official who runs the Sanaa-side news agency; his account amplifies the movement's
+      narratives.
+    audience_evidence:
+    - metric: x_followers
+      value: 449000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D9%86%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B9%D8%A7%D9%85%D8%B1
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Citation by other media not measured; critics and supporters both engage with his posts (profile directory).
+      urls:
+      - https://twstalker.com/search/%D9%86%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B9%D8%A7%D9%85%D8%B1
+    yemen_coverage:
+      frequency: weekly
+      evidence: Posts relay Houthi positions; frequency not measured.
+      urls:
+      - https://twstalker.com/search/%D9%86%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B9%D8%A7%D9%85%D8%B1
+    institutional_importance:
+      level: medium
+      note: Head of the board of Saba (Sanaa), the news agency of the Sanaa authorities (see saba-sanaa record).
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Media Authority deputy head; Saba (Sanaa) board chairman
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: His bio names him deputy head of the Ansar Allah media authority and head of Saba's
+      board. Iran-axis label from reporting on the Houthis as Iran's ally (about 0.7).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Houthis
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN: alive status and current posts in 2026 could not be confirmed from a dated 2026 source; he
+    is not among Houthi officials reported killed in 2025. A backup account @Nasr_Amer11 (779 followers) exists.
+    Bio and followers from the twstalker directory (snapshot date not shown). X is registered, not collected.'
+- id: hezam-al-asad
+  name: Hezam al-Asad
+  name_native: حزام الأسد
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/hezamalasad
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - he
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: sanaa_controlled
+  holder:
+    kind: person
+    role: Member of the Ansar Allah political bureau, known for Hebrew-language posts
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: hezamalasad
+    url: https://x.com/hezamalasad
+    handle_evidence: https://twstalker.com/search/%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B3%D8%AF
+    followers: 143000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B3%D8%AF
+  feeds: []
+  selection:
+    reason: Houthi political-bureau member whose posts, including Hebrew-language threats, are widely quoted by
+      Israeli and international media.
+    audience_evidence:
+    - metric: x_followers
+      value: 143000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B3%D8%AF
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Ynet reported over 117,000 followers in March 2025 and quotes his posts; Iran International quoted him
+        on 22 Jun 2025 as a political-bureau member.
+      urls:
+      - https://ynetnews.com/article/skxkm1xtjl
+      - https://www.iranintl.com/en/202506226808
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: posts on Taiz, military operations and Saudi operations.'
+      urls:
+      - https://twstalker.com/search/%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B3%D8%AF
+    institutional_importance:
+      level: medium
+      note: Political-bureau member (Iran International, 2025).
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Political bureau member
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: Iran International identifies him as a member of the Houthi political bureau. Iran-axis
+      label from reporting on the Houthis as Iran's ally (about 0.7).
+    evidence_urls:
+    - https://www.iranintl.com/en/202506226808
+    - https://en.wikipedia.org/wiki/Houthis
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN STATUS: Ynet (25 Mar 2025) reported that he fell silent after 20 Mar 2025 and asked whether
+    he had been killed; no confirmation of death was found, and the twstalker directory later shows posts on military
+    operations and Saudi operations, which fit the 2026 war but are undated. Handle matched through the directory
+    (an underscore variant @hezam_alasad returned an empty profile). X is registered, not collected.'
+- id: amr-bin-habrish
+  name: Amr bin Habrish
+  name_native: عمرو بن حبريش
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/AmarBinhabresh
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Head of the Hadramawt Tribal Alliance and of the Hadramawt Inclusive Conference; first deputy governor
+      of Hadramawt (per his X bio)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AmarBinhabresh
+    url: https://x.com/AmarBinhabresh
+    handle_evidence: https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+    followers: 17000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+  feeds: []
+  selection:
+    reason: Leader of the Hadramawt tribal movement that opposed the STC's December 2025 advance and demands Hadrami
+      self-rule; his statements shape the Hadramawt camp.
+    audience_evidence:
+    - metric: x_followers
+      value: 17000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Wikipedia describes a PLC-Hadramawt Tribal Alliance counter-offensive that reversed the STC's December
+        2025 gains; the profile directory shows wide discussion of his statements.
+      urls:
+      - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+      - https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+    yemen_coverage:
+      frequency: weekly
+      evidence: Hadramawt politics; the profile directory shows recurring discussion of his statements, though some
+        users report restrictions on his movement.
+      urls:
+      - https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+    institutional_importance:
+      level: medium
+      note: Chief of the Hadramawt Tribal Alliance (bio); no national office.
+  alignment:
+    yemen_political_alignment: hadramawt
+    sub_alignment: Hadramawt Tribal Alliance
+    regional_alignment: none_documented
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.7
+    classification_evidence: His bio names him head of the Hadramawt Tribal Alliance and Hadramawt Inclusive Conference.
+      No foreign sponsor was documented in the sources read.
+    evidence_urls:
+    - https://twstalker.com/search/%D8%B9%D9%85%D8%B1%D9%88%20%D8%A8%D9%86%20%D8%AD%D8%A8%D8%B1%D9%8A%D8%B4
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN: bio titles (deputy governor) may predate the January 2026 changes and no news page confirming
+    his 2026 role was fetched. Small audience (17K, mirror). X is registered, not collected.'
+- id: hani-bin-braik
+  name: Hani bin Braik
+  name_native: هاني بن بريك
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/HaniBinbrek
+  country: XX
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  wikidata: Q66823347
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Vice-chairman of the presidency of the Southern Transitional Council (per his account bio; his 2026 status
+      after the contested dissolution was not verified)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: HaniBinbrek
+    url: https://x.com/HaniBinbrek
+    handle_evidence: https://twstalker.com/search/HaniBinbrek
+    followers: 632000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/HaniBinbrek
+  feeds: []
+  selection:
+    reason: Prominent southern separatist figure with a large following whose posts attack Islah and defend the
+      southern cause.
+    audience_evidence:
+    - metric: x_followers
+      value: 632000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/HaniBinbrek
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Citation by other media not measured; the account has been a principal STC-leadership voice on X.
+      urls:
+      - https://twstalker.com/search/HaniBinbrek
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Profile directory: recent posts on Islamists and national defence; frequency not measured.'
+      urls:
+      - https://twstalker.com/search/HaniBinbrek
+    institutional_importance:
+      level: medium
+      note: STC presidency vice-chairman by his own bio; the council's dissolution (9 Jan 2026) is disputed (Wikipedia,
+        Southern Transitional Council).
+  alignment:
+    yemen_political_alignment: stc
+    sub_alignment: STC presidency vice-chairman (self-described)
+    regional_alignment: uae
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.75
+    classification_evidence: His bio names him vice-chairman of the STC presidency; Wikipedia describes the STC
+      as UAE-backed.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'UNCERTAIN STATUS: Wikipedia''s page for him could not be fetched and the directory''s recent posts are
+    undated; the bio may predate the January 2026 events. The coordinator''s Wikidata figure was 607,815 (2023-02);
+    Wikidata Q66823347 comes from the coordinator''s CI query. Country set to XX because his location is unclear.
+    X is registered, not collected.'
+- id: sultan-al-barakani
+  name: Sultan al-Barakani
+  name_native: سلطان سعيد البركاني
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/AlbarkaniS
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Speaker of the House of Representatives of the internationally recognised government (since 13 April 2019);
+      General People's Congress
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AlbarkaniS
+    url: https://x.com/AlbarkaniS
+    handle_evidence: https://twstalker.com/search/%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D9%86%D9%8A
+    followers: 334000
+    followers_as_of: '2026-10-05'
+    followers_source: https://twstalker.com/search/%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D9%86%D9%8A
+  feeds: []
+  selection:
+    reason: Head of the legislature of the government camp and leading GPC politician; his account carries parliamentary
+      and party positions.
+    audience_evidence:
+    - metric: x_followers
+      value: 334000
+      as_of: 2026-10
+      source_url: https://twstalker.com/search/%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D9%86%D9%8A
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: medium
+      note: Elected speaker in Seiyun in 2019, the first session of the recognised parliament since 2015 (Wikipedia).
+      urls:
+      - https://en.wikipedia.org/wiki/Sultan_al-Barakani
+    yemen_coverage:
+      frequency: monthly
+      evidence: Official account of the speaker; posting frequency not measured.
+      urls:
+      - https://twstalker.com/search/%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D9%86%D9%8A
+    institutional_importance:
+      level: high
+      note: Speaker of the House of Representatives (Wikipedia; account bio).
+  alignment:
+    yemen_political_alignment: gpc_plc
+    sub_alignment: GPC; parliament speaker
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.7
+    classification_evidence: Wikipedia gives him as a General People's Congress politician and speaker of the recognised
+      parliament, which sits under the Saudi-backed government. Saudi label inferred from that setting.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sultan_al-Barakani
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Account bio ('official account of the Speaker of the Yemeni House of Representatives') read in the twstalker
+    directory (snapshot date not shown); Wikipedia's text does not show 2025-2026 changes, so continued tenure in
+    October 2026 rests on that bio. X is registered, not collected.

@@ -93,6 +93,7 @@
     verified_at: null
     yemen_filter: false
     notes: candidate; channel id from the YouTube link on https://pmo-ye.net/ (seen 2026-10-04).
+    active: false
   selection:
     reason: Official portal of the prime minister and cabinet of the internationally recognised government (cabinet
       decisions, statements, press conferences).
@@ -124,7 +125,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: 'Wikipedia''s Cabinet of Yemen article names pmo-ye.net as the PM office site. No RSS link seen; only the
     YouTube feed is a candidate. Contact mediaoffice@pmo-ye.net. PM history: Salem bin Breik (2025) resigned January
     2026; al-Zindani appointed by PLC decree (presidentalalimi.net/en/news1549.html).'
@@ -228,8 +229,8 @@
   feeds:
   - url: https://t.me/s/cby_hq
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; public preview of the Telegram channel linked from the header of https://www.cby-ye.com/ (seen
       2026-10-04). Check robots.txt before collection.
@@ -423,13 +424,13 @@
   - url: https://www.stcaden.com/rss
     type: rss
     verified: true
-    verified_at: 2026-10-02
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: RSS 2.0 'كل الأخبار', 11 items, newest 2026-10-02.
   - url: https://t.me/s/STCSouthArabia
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; stcaden.com links Telegram as the malformed URL http://t.me/telegram.me/STCSouthArabia (seen
       2026-10-04); handle STCSouthArabia inferred from it and from the matching X and Facebook handles. Check the
@@ -496,6 +497,7 @@
     is disputed, and part of its leadership (al-Zubaidi) is in the UAE per Wikipedia. stc_controlled no longer fits.
     government_controlled for the territory, or outside_yemen for leadership, are both arguable. Sources: https://south24.net/news/newse.php?nid=5543,
     https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
+  wikidata: Q30314807
 - id: alislah-net
   name: Yemeni Congregation for Reform (Islah), official party website
   name_native: التجمع اليمني للإصلاح
@@ -578,6 +580,7 @@
     not documented (unknown). Unresolved. The homepage footer gives no address. The About page is at content.php?id=1
     (not fetched) and the contact page is feedback.php. No third-party source found that says where Islah''s party
     website is edited (Marib, Taiz, Riyadh or Istanbul are all plausible). Left unknown. Sources: https://alislah-ye.net/'
+  wikidata: Q285388
 - id: al-eshteraki-net
   name: Yemeni Socialist Party (Al-Eshteraki Net, party platform)
   name_native: الحزب الاشتراكي اليمني - الاشتراكي نت
@@ -613,14 +616,16 @@
     notes: Valid RSS envelope, zero items.
   - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240
     type: rss
-    verified: false
+    verified: true
     yemen_filter: false
     notes: Valid RSS but 3 items, newest 2023-09-23 (stale opinion module).
+    verified_at: 2026-10-05
   - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241
     type: rss
-    verified: false
+    verified: true
     yemen_filter: false
     notes: Valid RSS but 3 items, newest 2023-04-07 (stale).
+    verified_at: 2026-10-05
   - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCXaVL8G6Q5dWiHN3y5WsaFg
     type: youtube
     verified: false
@@ -628,6 +633,7 @@
     yemen_filter: false
     notes: candidate; channel id from the YouTube link on https://www.aleshteraki.net/ (seen 2026-10-04). Activity
       of the channel not checked.
+    active: false
   selection:
     reason: Platform of the Yemeni Socialist Party, the historic ruling party of South Yemen and a member of the
       anti-Houthi party alliance; publishes party statements and political-bureau positions.
@@ -674,6 +680,7 @@
     current items. Newsroom: not documented (unknown). Unresolved. The contact page shows "contact information cannot
     be found" and the footer has no address. News is datelined from Taiz, Shabwah and Marib. No third-party source
     on the newsroom location. Sources: https://www.aleshteraki.net/contactus'
+  wikidata: Q1149512
 - id: al-wahdawi-net
   name: Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website)
   name_native: التنظيم الوحدوي الشعبي الناصري - الوحدوي نت
@@ -708,14 +715,15 @@
   feeds:
   - url: https://alwahdawi.net/rss_news/rss_1.xml
     type: rss
-    verified: true
+    verified: false
     verified_at: 2026-10-02
     yemen_filter: false
     notes: Local news. RSS 2.0, 50 items, newest 2026-10-02. Index of 8 category feeds at /rss.
+    active: false
   - url: https://t.me/s/alwahdawinet2004
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate; Telegram channel linked from https://alwahdawi.net/ (seen 2026-10-04). The site's verified
       RSS (alwahdawi.net/rss_news/rss_1.xml) is already in the old registry.
@@ -764,6 +772,7 @@
     does not state the affiliation itself. Newsroom: not documented (unknown). Unresolved. The About page says it
     is "issued by the Popular Unionist Nasserist Organization in Yemen" (first online in June 2004) but gives no
     city. The contact page is a form only. Sources: https://alwahdawi.net/page-1'
+  wikidata: Q4118233
 - id: yemen-mopic
   name: Ministry of Planning and International Cooperation, Republic of Yemen (PLC government)
   name_native: وزارة التخطيط والتعاون الدولي
@@ -787,7 +796,13 @@
     handle: MopicYemen
     url: https://www.facebook.com/MopicYemen
     handle_evidence: https://mopicyemen.org/
-  feeds: []
+  feeds:
+  - url: https://mopicyemen.org/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-05
+    yemen_filter: false
+    notes: 'found by the registry check on 2026-10-05: declared by https://mopicyemen.org/'
   selection:
     reason: The government ministry that coordinates international aid, donor relations and development planning;
       its statements on humanitarian response, donor meetings and economic recovery are the government's voice on
@@ -822,7 +837,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: 'WordPress site, but no RSS link was visible on the homepage, so no feed is listed (a /feed/ endpoint is
     likely but was not seen; test it before adding). The homepage title calls it the ministry''s e-services portal.
     LinkedIn link on the site is generic. Reshuffle source: https://www.alquds.co.uk/اليمن-تعديل-وزاري-يشمل-3-وزارات-بينها-ا/'

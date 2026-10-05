@@ -232,6 +232,7 @@
     yemen_filter: true
     notes: candidate, channel id linked from the KSrelief website footer (https://www.ksrelief.org/en/Statistics/YearDetails/2026);
       covers all countries, so filter for Yemen
+    active: false
   selection:
     reason: Saudi Arabia's state humanitarian agency; Yemen is its largest country programme (38 projects and about
       USD 107 million, about 54 percent of its 2026 spending).
@@ -272,10 +273,11 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: The 126,234 follower figure is for the Arabic X account @KSRelief and dates from a November 2021 third-party
     audit report (speakrj); it is stale and likely understated. The Arabic handle is evidenced only by that report.
     No RSS feed on ksrelief.org.
+  wikidata: Q132472730
 - id: coalition-joint-forces-command
   name: Joint Forces Command of the Coalition to Restore Legitimacy in Yemen
   name_native: قيادة القوات المشتركة لتحالف دعم الشرعية في اليمن
@@ -377,6 +379,7 @@
     yemen_filter: true
     notes: candidate, channel id linked from mofa.gov.ae news pages (https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran);
       general channel, filter for Yemen
+    active: false
   selection:
     reason: Foreign ministry of the coalition's second military power in Yemen from 2015 until its withdrawal on
       30 December 2025; its December 2025 statements disputing Saudi accusations over Mukalla marked the open Saudi-Emirati
@@ -419,7 +422,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: No RSS feed on mofa.gov.ae (news section https://www.mofa.gov.ae/en/MediaHub/News). Statements are also
     carried by WAM. UAE Ministry of Defence and UAE missions were evaluated separately and excluded (see excluded
     file).
@@ -454,6 +457,13 @@
     notes: candidate, WordPress REST endpoint of the English site; a single-post URL of this API (https://www.fm.gov.om/en/wp-json/wp/v2/posts/12796)
       appeared in search results and the collection returned 2026 posts when fetched on 2026-10-04. General ministry
       news, filter for Yemen.
+    active: false
+  - url: https://www.fm.gov.om/en/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-05
+    yemen_filter: true
+    notes: 'found by the registry check on 2026-10-05: declared by https://www.fm.gov.om/'
   selection:
     reason: Oman is the principal mediator between the Houthis, Saudi Arabia, the US and the UN; Muscat hosts the
       Houthi negotiating delegation and Yemen-related talks.
@@ -508,12 +518,20 @@
   - ar
   platform: website
   source_type: government
-  accounts: []
+  accounts:
+  - platform: x
+    handle: StateDept
+    url: https://x.com/StateDept
+    handle_evidence: https://www.wikidata.org/wiki/Q789915
   feeds: []
   selection:
     reason: US foreign-policy voice on Yemen (Houthi terrorist designations and sanctions, Red Sea security, support
       to the PLC government, contacts with Saudi Arabia, Oman and the UAE).
-    audience_evidence: []
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 444000
+      as_of: 2025-05-11
+      source_url: https://www.wikidata.org/wiki/Q789915
     influence_evidence:
       regional_importance: high
       cited_by_other_media: high
@@ -554,6 +572,7 @@
   notes: state.gov blocks automated fetches (HTTP 403 on the RSS page and bureau pages), so no feed URL and no X
     handle could be evidenced here; the department is known to publish RSS feeds, to be added once a feed URL is
     seen on state.gov. The Near Eastern Affairs bureau is folded into this record rather than kept separate.
+  wikidata: Q789915
 - id: us-embassy-yemen
   name: U.S. Mission to Yemen (U.S. Embassy Sanaa, operating from Riyadh)
   category: DIPLOMATIC_MISSION
@@ -592,6 +611,7 @@
     notes: candidate, WordPress REST endpoint of the mission website; returned posts dated June-August 2026 when
       fetched on 2026-10-04. Low volume (a few posts a month). The YouTube account uses a /user/ URL, so no channel
       id is evidenced for a YouTube feed.
+    active: false
   selection:
     reason: The US diplomatic mission dedicated to Yemen; its statements and the head of mission's meetings with
       the PLC and government express US policy toward the Yemeni parties.
@@ -632,7 +652,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: Most day-to-day output is on X (not collected). Head-of-mission dates from the Wikipedia list of US ambassadors
     to Yemen (https://en.wikipedia.org/wiki/List_of_ambassadors_of_the_United_States_to_Yemen).
 - id: us-centcom
@@ -714,6 +734,7 @@
   notes: No RSS link found on centcom.mil pages fetched; the social-media page lists English, Arabic, Farsi, Hebrew,
     Russian, Urdu and Dari/Pashto accounts (only English and Arabic recorded here). Kept despite low 2026 Yemen
     output because of its role in 2024-2025; reassess if output stays nil.
+  wikidata: Q1476046
 - id: us-mission-un
   name: United States Mission to the United Nations (USUN)
   category: DIPLOMATIC_MISSION
@@ -746,6 +767,7 @@
     yemen_filter: true
     notes: candidate, WordPress REST endpoint of the mission website; returned September-October 2026 remarks when
       fetched on 2026-10-04. Covers every UN topic, so filter for Yemen.
+    active: false
   selection:
     reason: US statements at the monthly Security Council meetings on Yemen and on the 2140 sanctions regime, the
       Hodeidah mission (UNMHA) and Red Sea resolutions.
@@ -782,8 +804,9 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: Yemen is a small share of USUN output; keep only with the Yemen keyword filter.
+  wikidata: Q7890766
 - id: iran-mfa
   name: Ministry of Foreign Affairs of the Islamic Republic of Iran (including the Spokesperson's office)
   name_native: وزارت امور خارجه جمهوری اسلامی ایران
@@ -888,8 +911,8 @@
   feeds:
   - url: https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office&world_locations%5B%5D=yemen
     type: atom
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: false
     notes: candidate, built from the documented GOV.UK pattern (finder URL + .atom) with the Yemen world-location
       filter; the Yemen news page https://www.gov.uk/world/yemen/news is the human-readable equivalent. Not yet
@@ -898,7 +921,11 @@
     reason: UK foreign ministry; the UK is the penholder on Yemen at the UN Security Council and issues regular
       statements on the Houthis, the Red Sea and humanitarian aid; in September 2026 it condemned the Houthi resumption
       of conflict and offered Saudi Arabia aerial refuelling.
-    audience_evidence: []
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 28000
+      as_of: 2025-05-31
+      source_url: https://www.wikidata.org/wiki/Q358834
     influence_evidence:
       regional_importance: high
       cited_by_other_media: high
@@ -941,6 +968,7 @@
   notes: The FCDO organisation page shows no feed link, so the Atom URL follows the GOV.UK pattern and must be tested.
     Yemen is one topic among many for the ministry, hence the world-location filter. UK Mission to the UN and British
     Embassy Yemen are separate records.
+  wikidata: Q358834
 - id: british-embassy-yemen
   name: British Embassy Sana'a (UK Mission to Yemen, operating from Riyadh and Amman)
   name_native: السفارة البريطانية في اليمن
@@ -975,6 +1003,7 @@
     yemen_filter: false
     notes: candidate, built from the documented GOV.UK pattern (append .atom to the world-location news page https://www.gov.uk/world/yemen/news,
       linked from FCDO statements). Not yet fetched.
+    active: false
   selection:
     reason: The UK diplomatic mission dedicated to Yemen; carries British messaging to the PLC government and Yemeni
       parties and publishes the UK Yemen news page.
@@ -1015,6 +1044,7 @@
   active: false
   notes: The embassy page itself carries only status and contact information; its news items sit on the Yemen world-location
     page. Atom feed is a pattern-based candidate.
+  wikidata: Q59290392
 - id: uk-mission-un
   name: UK Mission to the United Nations (New York)
   category: DIPLOMATIC_MISSION
@@ -1119,6 +1149,7 @@
     yemen_filter: true
     notes: candidate, channel id linked from a mofa.gov.qa statement page (https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue);
       general channel, filter for Yemen
+    active: false
   selection:
     reason: Gulf state outside the Saudi-led coalition since 2017 whose foreign ministry issues recurring statements
       on Yemen (prisoner-exchange welcomes, the southern issue, the Houthi-Saudi escalation) and whose positions
@@ -1160,7 +1191,7 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: true
+  active: false
   notes: No RSS link seen on the statement pages fetched. Statements are also carried by QNA (media record qna-qatar-news-agency).
     Arabic-language X handle not evidenced. Yemen is a minor share of ministry output.
 - id: israel-idf
@@ -1205,8 +1236,8 @@
   feeds:
   - url: https://t.me/s/idfofficial
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate, public web preview of the official English-language IDF Telegram channel linked from https://www.idf.il/en/;
       fetched 2026-10-04 and showed posts up to about 23 September 2026, none on Yemen (they covered Gaza, the West
@@ -1215,7 +1246,11 @@
     reason: Israeli military that struck Houthi ports, power plants and leadership in Yemen in 2024-2025 (including
       the August 2025 strike that killed the Houthi prime minister, per press reports) and reports interceptions
       of Houthi missiles and drones; the Houthis are an active front for Israel.
-    audience_evidence: []
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 210000
+      as_of: 2025-02-09
+      source_url: https://www.wikidata.org/wiki/Q58967
     influence_evidence:
       regional_importance: high
       cited_by_other_media: high
@@ -1255,11 +1290,12 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: The IDF Arabic-language spokesperson (Avichay Adraee, announced to retire soon on 11 November 2025 per
     Times of Israel) is the main channel for Yemen evacuation warnings; that is a person account and belongs to
     another slice, and no institutional Arabic IDF handle was evidenced. The Prime Minister's Office was assessed
     and not kept as a separate record (see excluded file). Active false until the Telegram feed is verified.
+  wikidata: Q58967
 - id: eu-delegation-yemen
   name: Delegation of the European Union to Yemen
   name_native: بعثة الاتحاد الأوروبي إلى اليمن
@@ -1334,6 +1370,7 @@
   notes: Created from a fetch of the delegation page after the search budget ran out; no RSS or YouTube link was
     shown on it, so no feed is listed (EEAS pages may expose feeds not seen here). Based in Amman, Jordan (country
     JO).
+  wikidata: Q131381464
 - id: russia-mission-un
   name: Permanent Mission of the Russian Federation to the United Nations
   name_native: Постоянное представительство Российской Федерации при ООН
@@ -1367,8 +1404,8 @@
   feeds:
   - url: https://t.me/s/russiaun
     type: telegram_public
-    verified: false
-    verified_at: null
+    verified: true
+    verified_at: 2026-10-05
     yemen_filter: true
     notes: candidate, public web preview of the mission Telegram channel linked from https://russiaun.ru/en; covers
       every UN topic, so filter for Yemen. Check robots.txt before collecting. The YouTube account uses a /user/
@@ -1377,7 +1414,11 @@
     reason: Russia is a permanent Security Council member that opposes expanding Yemen sanctions on the Houthis
       and speaks at the Council's Yemen meetings, giving the Russian position on the Houthis, the sanctions regime
       and the Red Sea.
-    audience_evidence: []
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 5680
+      as_of: 2025-07-14
+      source_url: https://www.wikidata.org/wiki/Q56326903
     influence_evidence:
       regional_importance: medium
       cited_by_other_media: low
@@ -1415,10 +1456,11 @@
   scores:
     reliability_score: null
   access_policy: metadata_only
-  active: false
+  active: true
   notes: 'Borderline: Yemen is a small share of its output, kept for the Russian position in the Council. Made from
     a fetch of the mission site after the search budget ran out. The Russian Ministry of Foreign Affairs and the
     Russian embassy for Yemen were not checked (see excluded file).'
+  wikidata: Q56326903
 - id: ukmto
   name: UK Maritime Trade Operations (UKMTO)
   category: OFFICIAL_GOVERNMENT
