@@ -4,8 +4,8 @@
    (robots.txt honoured, identifying user agent, no bypassing), parse it, and record the
    status, item count, newest item date and the share of Yemen-relevant items.
 2. Discovery: for sources where no listed feed worked, look for feeds the source itself
-   publishes: feed links its homepage declares (<link rel="alternate">), the public preview
-   of its listed Telegram channels, and the channel feed of its listed YouTube channels.
+   publishes: feed links its homepage declares (<link rel="alternate">) and the public
+   preview of its listed Telegram channels. (YouTube channel feeds are robots-disallowed.)
    Every candidate is fetched and parsed the same way; nothing is guessed from URL patterns.
 4. Candidates: Wikidata queries for public figures who currently hold a Yemeni public
    office or are Yemeni public figures with a listed X, Telegram or YouTube account, and for
@@ -24,7 +24,6 @@ from __future__ import annotations
 
 import datetime as dt
 import json
-import re
 import sys
 import time
 from pathlib import Path
@@ -108,7 +107,6 @@ def check_feeds(fetcher: Fetcher, records: list[dict]) -> list[dict]:
 
 SOCIAL_HOSTS = {"x.com", "twitter.com", "t.me", "youtube.com", "facebook.com", "instagram.com", "tiktok.com"}
 FEED_TYPES = {"application/rss+xml": "rss", "application/atom+xml": "atom"}
-YT_CHANNEL = re.compile(r"(UC[0-9A-Za-z_-]{22})")
 MAX_AUTODISCOVERED = 3
 
 
@@ -124,25 +122,6 @@ def _homepage_feeds(fetcher: Fetcher, url: str) -> list[tuple[str, str, str]]:
         if ftype and "comment" not in href.lower() and href not in [o[0] for o in out]:
             out.append((href, ftype, f"declared by {url}"))
     return out[:MAX_AUTODISCOVERED]
-
-
-def _youtube_feed(fetcher: Fetcher, account: dict) -> tuple[str, str, str] | None:
-    url = account.get("url") or ""
-    m = YT_CHANNEL.search(url)
-    if not m:
-        res = fetcher.get(url)
-        page = res.content.decode("utf-8", errors="replace")
-        canon = re.search(
-            r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[0-9A-Za-z_-]{22})"', page
-        )
-        m = canon or re.search(r'"externalId":"(UC[0-9A-Za-z_-]{22})"', page)
-    if not m:
-        return None
-    return (
-        f"https://www.youtube.com/feeds/videos.xml?channel_id={m.group(1)}",
-        "youtube",
-        f"channel feed of {url}",
-    )
 
 
 def discover(fetcher: Fetcher, records: list[dict], checked: list[dict]) -> list[dict]:
@@ -173,10 +152,6 @@ def discover(fetcher: Fetcher, records: list[dict], checked: list[dict]) -> list
                     cands.append(
                         (f"https://t.me/s/{handle}", "telegram_public", f"public preview of {acc['url']}")
                     )
-                elif acc.get("platform") == "youtube" and acc.get("url"):
-                    found = _youtube_feed(fetcher, acc)
-                    if found:
-                        cands.append(found)
             except Exception as exc:
                 results.append(
                     {

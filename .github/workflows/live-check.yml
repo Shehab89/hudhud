@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", ".github/workflows/live-check.yml"]
+    paths: ["database/seeds/sources/**", "backend/hudhud/ingest/**", "scripts/registry_check.py", "scripts/live_report.py", ".github/workflows/live-check.yml"]
 
 permissions:
   contents: write
@@ -34,6 +34,9 @@ jobs:
     env:
       DATABASE_URL: postgresql+psycopg://hudhud:hudhud@localhost:5432/hudhud
       NLP_BACKEND: fallback
+      # Official sources publish weekly rather than hourly; a two-week window lets one run
+      # show them. The daily pipeline keeps the default window and accumulates instead.
+      LOOKBACK_DAYS: "14"
       USER_AGENT: "HudhudBot/0.1 (+https://github.com/${{ github.repository }}; research crawler; respects robots.txt)"
     steps:
       - uses: actions/checkout@v4

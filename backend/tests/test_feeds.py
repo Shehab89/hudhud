@@ -39,6 +39,21 @@ def test_malformed_feed_raises_parse_error():
         parse_rss(b"<html><body>Access denied</body")
 
 
+def test_hand_made_feed_with_html_entities_is_repaired():
+    # Seen live: feeds that use &nbsp; or bare & are not XML, and the strict parser drops them.
+    feed = (
+        '<?xml version="1.0" encoding="windows-1256"?><rss version="2.0"><channel><title>T</title>'
+        "<item><title>\u0627\u0644\u064a\u0645\u0646&nbsp;\u0627\u0644\u064a\u0648\u0645 & \u0639\u062f\u0646\x0b</title>"
+        "<link>https://example.org/a?x=1&y=2</link></item></channel></rss>"
+    ).encode("windows-1256")
+    items = parse_rss(feed)
+    assert len(items) == 1
+    assert (
+        items[0].title == "\u0627\u0644\u064a\u0645\u0646 \u0627\u0644\u064a\u0648\u0645 & \u0639\u062f\u0646"
+    )
+    assert items[0].url == "https://example.org/a?x=1&y=2"
+
+
 GOOGLE_NEWS = b"""<?xml version="1.0"?><rss version="2.0"><channel>
 <item><title>Talks resume in Muscat - Example Times</title>
 <link>https://news.google.com/rss/articles/abc</link>

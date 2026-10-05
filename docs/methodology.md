@@ -109,11 +109,13 @@ compared on what they published; no group is treated as more truthful than anoth
 
 ## 3. Collection
 
-* Inputs: publisher RSS/Atom feeds, official YouTube channel feeds, the public web
-  preview of public Telegram channels (`t.me/s/<channel>`, only where robots.txt
-  allows), Google News RSS search queries and the GDELT DOC 2.0 API. X (Twitter)
-  accounts are registered but not collected: the X API is paid and scraping X is not
-  permitted (REQUIRES CONFIGURATION). Aggregator items are attributed to the original publisher when its domain is
+* Inputs: publisher RSS/Atom feeds, the public web preview of public Telegram channels
+  (`t.me/s/<channel>`, only where robots.txt allows), Google News RSS search queries and
+  the GDELT DOC 2.0 API. X (Twitter) accounts are registered but not collected: the X API
+  is paid and scraping X is not permitted (REQUIRES CONFIGURATION). YouTube channels are
+  registered but not collected either, because YouTube's robots.txt disallows its
+  channel feeds. Sites whose robots.txt or anti-bot protection refuses our crawler are
+  recorded as such and skipped, never worked around. Aggregator items are attributed to the original publisher when its domain is
   in the registry.
 * Politeness: robots.txt honoured, identifying user agent with a contact URL,
   conditional requests (ETag / Last-Modified), concurrency cap, retries only on

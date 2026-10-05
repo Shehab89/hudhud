@@ -17,7 +17,7 @@ export const en: Block[] = [
     "Each source records the Yemeni camp and the foreign state it belongs to or is documented to back, with evidence links, a confidence and an assessment date. Without evidence the value is \"not assessed\". Classifications keep their history.",
   ] },
   { id: "collection", title: "Collection", body: [
-    "Items come from publishers' RSS/Atom feeds, official YouTube channel feeds, the public web preview of public Telegram channels (only where robots.txt allows), and Google News and GDELT queries about Yemen. X accounts are listed but not collected, because the X API is paid and scraping X is not permitted.",
+    "Items come from publishers' RSS/Atom feeds, the public web preview of public Telegram channels (only where robots.txt allows), and Google News and GDELT queries about Yemen. X accounts are listed but not collected, because the X API is paid and scraping X is not permitted. YouTube channels are listed but not collected, because YouTube's robots.txt disallows its channel feeds. Sites that refuse our crawler are skipped, never worked around.",
     "The collector respects robots.txt, identifies itself, uses conditional requests, and never bypasses paywalls, logins, CAPTCHAs or other access controls. It stores metadata and the feed's short excerpt, not full texts; readers are linked to the publisher.",
     "General-interest feeds are filtered for Yemen relevance using a multilingual term list. Collection runs daily; failures are retried with backoff and logged per feed, and one failing source never stops the run.",
   ] },
@@ -81,7 +81,7 @@ export const ar: Block[] = [
     "يسجّل كل مصدر المعسكر اليمني والدولة الأجنبية التي ينتمي إليها أو يُوثَّق دعمه لها، مع روابط الأدلة ودرجة الثقة وتاريخ التقييم. ومن دون أدلة تكون القيمة «غير مقيَّمة». وتحتفظ التصنيفات بتاريخها.",
   ] },
   { id: "collection", title: "الجمع", body: [
-    "تأتي المواد من خلاصات RSS/Atom للناشرين، وخلاصات قنوات يوتيوب الرسمية، والمعاينة العامة لقنوات تيليغرام العامة (حيث يسمح ملف robots.txt فقط)، واستعلامات Google News وGDELT عن اليمن. حسابات إكس مسجلة لكنها لا تُجمع، لأن واجهة إكس مدفوعة ولا يُسمح بكشط الموقع.",
+    "تأتي المواد من خلاصات RSS/Atom للناشرين، والمعاينة العامة لقنوات تيليغرام العامة (حيث يسمح ملف robots.txt فقط)، واستعلامات Google News وGDELT عن اليمن. حسابات إكس مسجلة لكنها لا تُجمع، لأن واجهة إكس مدفوعة ولا يُسمح بكشط الموقع. قنوات يوتيوب مسجلة لكنها لا تُجمع، لأن ملف robots.txt في يوتيوب يمنع خلاصات القنوات. المواقع التي ترفض زاحفنا تُتخطى ولا يُتحايل عليها.",
     "يحترم الجامع ملف robots.txt ويعرّف بنفسه ويستخدم الطلبات المشروطة، ولا يتجاوز أبداً جدران الدفع أو تسجيل الدخول أو CAPTCHA أو أي ضوابط وصول. ويحفظ البيانات الوصفية والمقتطف القصير من الخلاصة، لا النصوص الكاملة، ويُحال القارئ إلى الناشر.",
     "تُصفّى الخلاصات العامة بحسب صلتها باليمن عبر قائمة مصطلحات متعددة اللغات. يعمل الجمع يومياً، وتُعاد المحاولة عند الفشل مع تأخير متزايد ويُسجَّل لكل خلاصة، ولا يوقف تعطّل مصدر واحد التشغيل.",
   ] },

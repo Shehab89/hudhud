@@ -92,8 +92,9 @@ export const PLATFORM: Record<string, T> = {
   tiktok: { en: "TikTok", ar: "تيك توك" }, tv: { en: "TV", ar: "تلفزيون" }, radio: { en: "Radio", ar: "إذاعة" }, wire: { en: "Wire", ar: "وكالة" },
 };
 
-/** Which account platforms the pipeline can collect. X needs the paid API: REQUIRES CONFIGURATION. */
-export const COLLECTABLE = new Set(["telegram", "youtube", "website"]);
+/** Which account platforms the pipeline can collect. X needs the paid API (REQUIRES CONFIGURATION);
+ * YouTube's robots.txt disallows its channel feeds. */
+export const COLLECTABLE = new Set(["telegram", "website"]);
 
 export const L = {
   category: (k: string | null | undefined, l: Locale) => lab(CATEGORY, k, l),

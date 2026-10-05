@@ -11,6 +11,8 @@ X (Twitter) is not collected: its API is paid and scraping it is not permitted
 from __future__ import annotations
 
 import datetime as dt
+import html
+import html.entities
 import json
 import re
 from dataclasses import dataclass, field
@@ -59,10 +61,34 @@ def _excerpt(text: str) -> str:
     return cut[: cut.rfind(" ")] + " …" if " " in cut else cut + " …"
 
 
+_XML_ENTITIES = {b"amp", b"lt", b"gt", b"quot", b"apos"}
+_NAMED_ENTITY = re.compile(rb"&([A-Za-z][A-Za-z0-9]{1,31});")
+_BARE_AMP = re.compile(rb"&(?!#?[A-Za-z0-9]+;)")
+_CONTROL = re.compile(rb"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+
+
+def _repair_xml(content: bytes) -> bytes:
+    """Fix the usual hand-made-feed errors without touching the text: HTML entities that XML
+    does not define, bare ampersands and control characters. Works on bytes, so it is safe for
+    any ASCII-compatible encoding (UTF-8, windows-1256)."""
+
+    def entity(m: re.Match) -> bytes:
+        name = m.group(1)
+        if name in _XML_ENTITIES:
+            return m.group(0)
+        code = html.entities.name2codepoint.get(name.decode())
+        return b"&#%d;" % code if code else b"&amp;" + name + b";"
+
+    return _CONTROL.sub(b"", _BARE_AMP.sub(b"&amp;", _NAMED_ENTITY.sub(entity, content)))
+
+
 def parse_rss(content: bytes) -> list[RawItem]:
     parsed = feedparser.parse(content)
     if parsed.bozo and not parsed.entries:
-        raise FeedParseError(f"malformed feed: {getattr(parsed, 'bozo_exception', 'unknown error')}")
+        repaired = feedparser.parse(_repair_xml(content))
+        if not repaired.entries:
+            raise FeedParseError(f"malformed feed: {getattr(parsed, 'bozo_exception', 'unknown error')}")
+        parsed = repaired
     if not parsed.entries and not parsed.get("feed"):
         raise FeedParseError("not a feed")
     feed_lang = (parsed.feed.get("language") or "")[:2].lower() or None

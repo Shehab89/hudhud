@@ -166,7 +166,9 @@ Computed by the loader and stored with its components:
 
 * `rss`, `atom`: a feed URL published by the source.
 * `youtube`: `https://www.youtube.com/feeds/videos.xml?channel_id=<id>` (YouTube's public
-  channel feed). Titles and descriptions only.
+  channel feed). **Not collected**: YouTube's robots.txt disallows `/feeds/videos.xml`
+  (confirmed by the live check of 2026-10-05), so these feeds stay registered but inactive.
+  YouTube subscriber counts are still valid audience evidence.
 * `telegram_public`: `https://t.me/s/<channel>`, the public web preview of a public
   channel. Collected only where robots.txt allows it.
 * X (Twitter) accounts are registered under `accounts` but **not collected**: the X API is

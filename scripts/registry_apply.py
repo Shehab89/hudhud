@@ -18,14 +18,16 @@ registry_check.py in CI (published on the live-snapshot branch). Rules:
   record by a hard identifier (official website or handle), the count names its platform
   and date, the date is recent enough, and the record has no figure for that metric yet.
   The Wikidata item is cited as the source. Researched figures are never overwritten.
-* A handle is added from Wikidata only when the record has no account on that platform and
-  Wikidata lists exactly one handle for it; the Wikidata item is cited as handle evidence.
+* An X or Telegram handle is added from Wikidata only when the record has no account on that
+  platform, Wikidata lists exactly one well-formed handle for it, and the item matched the
+  record by a hard identifier; the Wikidata item is cited as handle evidence.
 """
 
 from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -40,11 +42,13 @@ METRIC = {
     "facebook": "facebook_followers",
     "instagram": "instagram_followers",
 }
-ACCOUNT_URL = {
-    "x": "https://x.com/{}",
-    "telegram": "https://t.me/{}",
-    "facebook": "https://www.facebook.com/{}",
-    "instagram": "https://www.instagram.com/{}",
+# Only accounts that matter for collection or the registry are taken from Wikidata: Telegram
+# (collected through its public preview) and X (registered). Handles must look like handles;
+# Wikidata sometimes stores Telegram invite codes, which are not channels.
+ACCOUNT_URL = {"x": "https://x.com/{}", "telegram": "https://t.me/{}"}
+HANDLE_SHAPE = {
+    "x": re.compile(r"^[A-Za-z0-9_]{1,15}$"),
+    "telegram": re.compile(r"^[A-Za-z][A-Za-z0-9_]{4,31}$"),
 }
 # Counts older than this are reported but not used as current audience evidence.
 MAX_AGE_DAYS = 3 * 365
@@ -131,9 +135,18 @@ def add_discovered(recs: dict[str, dict], found: list[dict], log: list[str]) -> 
 
 
 def apply_wikidata(recs: dict[str, dict], wiki: dict, today: dt.date, log: list[str]) -> None:
+    # An item matched by several records (e.g. one agency item listing the domains of both
+    # rival Saba agencies) cannot tell them apart, so none of them takes anything from it.
+    seen: dict[str, int] = {}
+    for sid, info in wiki.items():
+        if not sid.startswith("_") and info.get("qid"):
+            seen[info["qid"]] = seen.get(info["qid"], 0) + 1
     for sid, info in wiki.items():
         rec = recs.get(sid)
         if sid.startswith("_") or not rec or not info.get("qid"):
+            continue
+        if seen[info["qid"]] > 1 and rec.get("wikidata") != info["qid"]:
+            log.append(f"ambiguous {sid}: {info['qid']} also matches another record; skipped")
             continue
         qid = info["qid"]
         cite = f"https://www.wikidata.org/wiki/{qid}"
@@ -164,6 +177,8 @@ def apply_wikidata(recs: dict[str, dict], wiki: dict, today: dt.date, log: list[
             if platform in platforms or len(handles) != 1 or platform not in ACCOUNT_URL:
                 continue
             handle = handles[0].lstrip("@")
+            if not HANDLE_SHAPE[platform].match(handle):
+                continue
             rec.setdefault("accounts", []).append(
                 {
                     "platform": platform,

@@ -97,7 +97,8 @@ data = {
 
 md = [
     "# Live ingestion report\n",
-    f"Real (non-demo) articles: **{total}** from **{len(per_source)}** outlets.",
+    f"Real (non-demo) articles: **{total}** from **{len(per_source)}** outlets, "
+    f"published in the last {os.environ.get('LOOKBACK_DAYS', '3')} days.",
     f"Active feeds: {len(feeds)}; health: {health}.",
     f"Feed health by type: {by_type}.",
     f"Languages: {dict(langs)}.\n",
