@@ -78,8 +78,15 @@ jobs:
           python scripts/registry_check.py snapshot
           cat snapshot/registry_check.md >> "$GITHUB_STEP_SUMMARY"
       - name: Run pipeline on live feeds
-        run: hudhud run --trigger github_actions --stages "${{ inputs.stages || 'ingest,dedup,analyse,topics,metrics' }}"
+        # Stop after 45 minutes so the report and the log still get published when a stage is slow.
+        timeout-minutes: 45
+        continue-on-error: true
+        run: |
+          mkdir -p snapshot
+          set -o pipefail
+          hudhud run --trigger github_actions --stages "${{ inputs.stages || 'ingest,dedup,analyse,topics,metrics' }}" 2>&1 | tee snapshot/pipeline.log
       - name: Report
+        if: always()
         run: |
           mkdir -p snapshot
           python scripts/live_report.py snapshot
@@ -88,6 +95,7 @@ jobs:
             --exclude-table-data=users --exclude-table-data=saved_queries --exclude-table-data=annotations \
             -f snapshot/live.dump
       - name: Publish to live-snapshot branch
+        if: always()
         run: |
           cd snapshot
           git init -q -b live-snapshot

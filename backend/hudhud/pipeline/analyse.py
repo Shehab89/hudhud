@@ -7,6 +7,7 @@ instead of deleting them, so historical results stay reproducible.
 
 from __future__ import annotations
 
+import time
 from dataclasses import dataclass, field
 
 import numpy as np
@@ -112,17 +113,32 @@ def _retire(session: Session, model, article_id: int) -> None:
 
 
 def run_analyse(session: Session, run_id: int | None, batch_size: int = 64, limit: int | None = None) -> dict:
+    started = time.monotonic()
     ctx = build_context(session)
+    context_seconds = round(time.monotonic() - started, 1)
     q = (
         select(m.Article.id)
         .where(m.Article.processing_status == "deduped", m.Article.deleted_at.is_(None))
         .order_by(m.Article.id)
     )
     ids = list(session.scalars(q.limit(limit) if limit else q))
+    log.info(
+        "analyse_start",
+        articles=len(ids),
+        models=ctx.use_models,
+        embedder=ctx.embedder.name,
+        context_seconds=context_seconds,
+    )
     for start in range(0, len(ids), batch_size):
         batch = [session.get(m.Article, i) for i in ids[start : start + batch_size]]
         _analyse_batch(ctx, batch, run_id)
         session.commit()
+        log.info(
+            "analyse_progress",
+            done=min(start + batch_size, len(ids)),
+            total=len(ids),
+            elapsed_seconds=round(time.monotonic() - started, 1),
+        )
     log.info("analyse_done", **ctx.stats, models=ctx.use_models, embedder=ctx.embedder.name)
     return ctx.stats | {"embedder": ctx.embedder.name, "transformer_models": ctx.use_models}
 
@@ -148,7 +164,9 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
     need = [a for a in todo if have.get(a.id) != a.content_hash]
     vectors: dict[int, np.ndarray] = {}
     if need:
+        t_embed = time.monotonic()
         vecs = ctx.embedder.embed_documents([article_text(a.title, a.excerpt) for a in need])
+        log.info("embedded_batch", articles=len(need), seconds=round(time.monotonic() - t_embed, 1))
         for a, v in zip(need, vecs, strict=True):
             session.merge(
                 m.ArticleEmbedding(
@@ -171,6 +189,7 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
     session.flush()
     semantic_links(session, [a.id for a in todo], ctx.embed_mv, getattr(ctx.embedder, "semantic", False))
 
+    t_articles = time.monotonic()
     for a in todo:
         try:
             with session.begin_nested():
@@ -191,6 +210,7 @@ def _analyse_batch(ctx: Context, batch: list[m.Article], run_id: int | None) -> 
                 )
             )
             a.processing_status = "error"
+    log.info("analysed_batch", articles=len(todo), seconds=round(time.monotonic() - t_articles, 1))
 
 
 def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
