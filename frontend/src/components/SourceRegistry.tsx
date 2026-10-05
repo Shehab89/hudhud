@@ -23,11 +23,11 @@ const UI = {
   en: { cats: "Source categories", search: "Search sources", filters: "Filters", all: "All", tier: "Selection basis", region: "Region", camp: "Yemeni camp", regional: "Regional alignment",
     lang: "Language", collected: "Only sources collected now", showing: "sources", of: "of", sort: "Sort", sInf: "Influence", sName: "Name", sArt: "Articles",
     reset: "Clear filters", evidence: "evidence", draft: "draft, pending expert review", feeds: "feeds", noFeed: "not collected yet", none: "No source matches these filters.",
-    open: "Open profile", xNote: "X is listed but not collected (the X API requires paid configuration).", articles: "articles" },
+    open: "Open profile", xNote: "Listed, not collected: the X API requires paid configuration, and Facebook and Instagram are not collected.", legend: "● collected account", articles: "articles" },
   ar: { cats: "فئات المصادر", search: "ابحث في المصادر", filters: "التصفية", all: "الكل", tier: "أساس الاختيار", region: "المنطقة", camp: "المعسكر اليمني", regional: "الانحياز الإقليمي",
     lang: "اللغة", collected: "المصادر التي تُجمع حاليًا فقط", showing: "مصدرًا", of: "من", sort: "الترتيب", sInf: "التأثير", sName: "الاسم", sArt: "المقالات",
     reset: "مسح التصفية", evidence: "أدلة", draft: "مسودة بانتظار مراجعة الخبراء", feeds: "تغذيات", noFeed: "لا يُجمع بعد", none: "لا يوجد مصدر يطابق هذه التصفية.",
-    open: "فتح الملف", xNote: "حسابات إكس مسجلة لكنها لا تُجمع (واجهة إكس تتطلب إعدادًا مدفوعًا).", articles: "مقالة" },
+    open: "فتح الملف", xNote: "مسجل ولا يُجمع: واجهة إكس تتطلب إعدادًا مدفوعًا، ولا تُجمع حسابات فيسبوك وإنستغرام.", legend: "● حساب يُجمع", articles: "مقالة" },
 };
 
 function Facet({ title, children }: { title: string; children: React.ReactNode }) {
@@ -128,13 +128,14 @@ export default function SourceRegistry({ sources, l, d }: { sources: Src[]; l: L
               <select value={sort} onChange={(e) => setSort(e.target.value as typeof sort)} className="rounded-md border border-line bg-surface px-2 py-1 text-sm text-ink">
                 <option value="influence">{u.sInf}</option><option value="name">{u.sName}</option><option value="articles">{u.sArt}</option></select></label>
           </div>
-          <p className="text-xs text-muted max-w-3xl">{sc.note}</p>
+          <p className="text-xs text-muted max-w-3xl">{sc.note} <span className="text-accent-2">{u.legend}</span>. {u.xNote}</p>
           {view.length === 0 && <p className="py-10 text-center text-muted">{u.none}</p>}
           <ul className="flex flex-col gap-2">
             {view.map((s) => {
               const ev = s.orientation?.evidence_items ?? [];
-              const camp = !["unknown", "not_applicable"].includes(s.yemen_political_alignment) ? s.yemen_political_alignment : null;
-              const reg = !["unknown", "not_applicable"].includes(s.regional_alignment) ? s.regional_alignment : null;
+              const camp = !["unknown", "not_applicable", "none_documented"].includes(s.yemen_political_alignment) ? s.yemen_political_alignment : null;
+              const reg = !["unknown", "not_applicable", "none_documented"].includes(s.regional_alignment) ? s.regional_alignment : null;
+              const noneDoc = s.yemen_political_alignment === "none_documented" || s.regional_alignment === "none_documented";
               return (
                 <li key={s.slug} className="rounded-lg border border-line bg-surface p-4 grid gap-x-6 gap-y-3 md:grid-cols-[minmax(0,5fr)_minmax(0,3fr)] xl:grid-cols-[minmax(0,5fr)_minmax(0,3fr)_minmax(0,3fr)] items-start">
                   <div className="min-w-0 flex flex-col gap-1">
@@ -159,7 +160,7 @@ export default function SourceRegistry({ sources, l, d }: { sources: Src[]; l: L
                     <div className="flex flex-wrap items-center gap-1.5">
                       {camp && <span className="rounded-full border border-accent-2 text-accent-2 px-2 py-0.5">{L.yemen(camp, l)}</span>}
                       {reg && <span className="rounded-full border border-line px-2 py-0.5">{L.regional(reg, l)}</span>}
-                      {!camp && !reg && <span className="rounded-full border border-line text-muted px-2 py-0.5">{L.yemen("unknown", l)}</span>}
+                      {!camp && !reg && <span className="rounded-full border border-line text-muted px-2 py-0.5">{L.yemen(noneDoc ? "none_documented" : "unknown", l)}</span>}
                       {s.classification_confidence !== null && (camp || reg) && <span className="num text-muted">{s.classification_confidence.toFixed(2)}</span>}
                       {ev.length > 0 && <a href={ev[0].url} target="_blank" rel="noopener noreferrer" className="text-accent-2 hover:underline">{ev.length} {u.evidence} ↗</a>}
                     </div>
@@ -167,8 +168,8 @@ export default function SourceRegistry({ sources, l, d }: { sources: Src[]; l: L
                     {s.accounts.length > 0 && (
                       <div className="flex flex-wrap gap-1">{s.accounts.map((a) => (
                         <a key={a.url} href={a.url} target="_blank" rel="noopener noreferrer" title={COLLECTABLE.has(a.platform) ? undefined : u.xNote}
-                          className={`rounded px-1.5 py-0.5 ${COLLECTABLE.has(a.platform) ? "bg-surface-2" : "bg-surface-2 text-muted line-through decoration-muted/50"}`}>
-                          {L.platform(a.platform, l)} @{a.handle}</a>))}</div>
+                          className={`rounded border px-1.5 py-0.5 ${COLLECTABLE.has(a.platform) ? "border-accent-2/50" : "border-line text-muted"}`}>
+                          {COLLECTABLE.has(a.platform) && <span aria-hidden className="text-accent-2">● </span>}{L.platform(a.platform, l)} @{a.handle}</a>))}</div>
                     )}
                     <span className="text-muted">{s.active && s.feeds ? `${s.feeds} ${u.feeds} · ${s.health_status}` : u.noFeed} · <span className="num">{s.articles}</span> {u.articles}</span>
                   </div>

@@ -267,13 +267,29 @@ def _profile_stats(db: DB, f: Filters, source_ids: list[int]) -> dict:
         .group_by(m.Event.event_type)
         .order_by(func.count(func.distinct(m.Event.id)).desc())
     ).all()
+    names = {
+        slug: (en, ar)
+        for slug, en, ar in db.execute(
+            select(m.Category.slug, m.Category.name_en, m.Category.name_ar).where(
+                m.Category.slug.in_([c for c, _ in cats])
+            )
+        )
+    }
     total = db.scalar(select(func.count()).select_from(ids)) or 0
     return {
         "articles": total,
         "places": [{"slug": r[0], "name_en": r[1], "name_ar": r[2], "articles": r[3]} for r in places],
         "events": [{"event_type": t, "events": n} for t, n in events],
         "series": [{"day": d.date(), "articles": n} for d, n in series],
-        "categories": [{"slug": s, "articles": n} for s, n in cats],
+        "categories": [
+            {
+                "slug": s,
+                "name_en": names.get(s, (None, None))[0],
+                "name_ar": names.get(s, (None, None))[1],
+                "articles": n,
+            }
+            for s, n in cats
+        ],
         "sentiment": sentiment,
         "tone": [{"tone": t, "articles": n} for t, n in tone],
         "frames": [{"slug": r[0], "name_en": r[1], "name_ar": r[2], "articles": r[3]} for r in frames],
@@ -643,6 +659,7 @@ def _compare_groups(db: DB, f: Filters, groups: list[Group]) -> dict:
                 "filter": [gf.model_dump(exclude_defaults=True) for gf in g.any],
                 "source_count": len(srcs),
                 "collected_sources": sum(1 for s in srcs if s.active),
+                "demo_sources": sum(1 for s in srcs if s.is_demo),
                 "content_types": content_types,
                 "sources": [
                     {

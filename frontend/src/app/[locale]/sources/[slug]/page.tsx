@@ -98,7 +98,7 @@ export default async function SourcePage(props: PageProps<{ slug: string }>) {
             {comp.not_scored?.length ? <p className="text-xs text-muted">{u.halo}</p> : null}
             {sel.yemen_coverage?.frequency && <p className="text-xs text-muted">{u.coverage}: {L.frequency(sel.yemen_coverage.frequency, l)}{sel.yemen_coverage.evidence ? `. ${sel.yemen_coverage.evidence}` : ""}</p>}
             {sel.influence_evidence?.note && <p className="text-xs text-muted">{sel.influence_evidence.note}</p>}
-            {[...(sel.influence_evidence?.urls ?? []), ...(sel.yemen_coverage?.urls ?? [])].map((x) => <a key={x} href={x} target="_blank" rel="noopener noreferrer" className="text-xs text-accent-2 break-all">{x}</a>)}
+            {[...new Set([...(sel.influence_evidence?.urls ?? []), ...(sel.yemen_coverage?.urls ?? [])])].map((x) => <a key={x} href={x} target="_blank" rel="noopener noreferrer" className="text-xs text-accent-2 break-all">{x}</a>)}
           </Panel>
           <Panel className="flex flex-col gap-2 min-w-0">
             <h3 className="label-caps text-muted">{u.audience}</h3>
