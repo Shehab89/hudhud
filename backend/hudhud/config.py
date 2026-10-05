@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     zero_shot_model: str = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
     ner_model: str = "Davlan/xlm-roberta-base-ner-hrl"
     use_transformer_ner: bool = False
+    # Emotion and tone by zero-shot NLI cost 20 model passes per article (about 40 s on a CI
+    # runner), three quarters of the analysis time. Off by default: emotion and tone then come
+    # from the lexicon and are recorded as method=lexicon. Turn on where there is time or a GPU.
+    zero_shot_affect: bool = False
     # The per-article analysis stops after this many seconds (0 = no limit); articles it did not
     # reach are analysed by the next run. Results are committed every ``analyse_commit_every``.
     analyse_max_seconds: float = 0

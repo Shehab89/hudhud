@@ -415,7 +415,7 @@ def _analyse_article(ctx: Context, a: m.Article, vec: np.ndarray) -> None:
     )
     for kind in ("emotion", "tone"):
         with ctx.timed(kind):
-            res = affect.analyse_distribution(kind, text, ctx.use_models)
+            res = affect.analyse_distribution(kind, text, ctx.use_models and get_settings().zero_shot_affect)
         session.add(
             m.EmotionAnalysis(
                 article_id=a.id,

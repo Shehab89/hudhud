@@ -49,6 +49,7 @@ def test_model_results_fit_the_columns_and_name_their_model(deduped, monkeypatch
     session = deduped
     monkeypatch.setattr(affect, "_sentiment_pipe", fake_sentiment_pipe)
     monkeypatch.setattr(classify_mod, "_zero_shot_pipeline", lambda: FakeZeroShot())
+    monkeypatch.setattr(get_settings(), "zero_shot_affect", True)
     ctx = analyse_mod.build_context(session)
     ctx.use_models = True
     ctx.zero_shot_mv = ctx.model_mv(get_settings().zero_shot_model)
@@ -121,3 +122,22 @@ def test_time_budget_defers_articles_and_the_next_run_finishes_them(deduped, mon
     assert second["deferred"] == 0 and second["analysed"] == waiting
     assert second["embedded"] == 0  # embeddings were cached by the first run
     assert session.scalar(select(func.count(m.SentimentAnalysis.id))) == waiting
+
+
+def test_emotion_and_tone_use_the_lexicon_unless_zero_shot_is_switched_on(deduped, monkeypatch):
+    session = deduped
+    monkeypatch.setattr(affect, "_sentiment_pipe", fake_sentiment_pipe)
+    monkeypatch.setattr(classify_mod, "_zero_shot_pipeline", lambda: FakeZeroShot())
+    assert get_settings().zero_shot_affect is False
+    ctx = analyse_mod.build_context(session)
+    ctx.use_models = True
+    ctx.zero_shot_mv = ctx.model_mv(get_settings().zero_shot_model)
+    arts = session.scalars(
+        select(m.Article).where(m.Article.processing_status == "deduped", m.Article.duplicate_of_id.is_(None))
+    ).all()
+    analyse_mod._analyse_batch(ctx, analyse_mod._embed_batch(ctx, arts), None)
+    session.commit()
+    assert set(session.scalars(select(m.EmotionAnalysis.method))) == {"lexicon"}
+    assert set(session.scalars(select(m.SentimentAnalysis.method))) == {
+        "model"
+    }  # sentiment still uses models

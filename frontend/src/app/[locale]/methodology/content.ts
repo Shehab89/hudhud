@@ -34,7 +34,7 @@ export const en: Block[] = [
     "Every result records the method, the model and its version, the prompt version for language-model results, and the analysis version, so any number can be traced and re-computed.",
   ] },
   { id: "affect", title: "Sentiment, emotion and tone", body: [
-    "Sentiment uses multilingual transformer models (XLM-RoBERTa, with an Arabic-specific CAMeLBERT model for Arabic). When models are unavailable a transparent lexicon is used and the result is labelled as such.",
+    "Sentiment uses multilingual transformer models (XLM-RoBERTa, with an Arabic-specific CAMeLBERT model for Arabic). Emotion and tone are read from a transparent multilingual lexicon by default (a zero-shot model can be switched on where there is computing time). When models are unavailable a lexicon is used for sentiment too, and every result is labelled with the method that produced it.",
     "News is mostly neutral reporting of negative events. A negative label therefore usually reflects the events described, not the outlet's attitude.",
   ] },
   { id: "framing", title: "Framing", body: [
@@ -98,7 +98,7 @@ export const ar: Block[] = [
     "تسجّل كل نتيجة الطريقة والنموذج وإصداره وإصدار التعليمات لنتائج النموذج اللغوي وإصدار التحليل، فيمكن تتبّع أي رقم وإعادة حسابه.",
   ] },
   { id: "affect", title: "المشاعر والعواطف والنبرة", body: [
-    "تستخدم المشاعر نماذج محوّلات متعددة اللغات (XLM-RoBERTa، ونموذج CAMeLBERT المخصص للعربية). وعند تعذّر النماذج يُستخدم معجم شفاف وتُوسم النتيجة بذلك.",
+    "تستخدم المشاعر نماذج محوّلات متعددة اللغات (XLM-RoBERTa، ونموذج CAMeLBERT المخصص للعربية). أما العواطف والنبرة فتُقرأ افتراضياً من معجم شفاف متعدد اللغات (ويمكن تشغيل نموذج دون تدريب مسبق حيث يتوفر وقت حوسبة). وعند تعذّر النماذج يُستخدم المعجم للمشاعر أيضاً، وتُوسم كل نتيجة بالطريقة التي أنتجتها.",
     "الأخبار في معظمها تغطية محايدة لأحداث سلبية؛ لذا يعكس الوسم السلبي عادة الأحداث الموصوفة لا موقف المنفذ.",
   ] },
   { id: "framing", title: "التأطير", body: [

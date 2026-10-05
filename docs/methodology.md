@@ -192,8 +192,10 @@ subcategories and keywords in several languages.
 ## 8. Sentiment, emotion and tone (B)
 
 * Transformer backend: `cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual`,
-  with `CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment` for Arabic; emotions and
-  tone via zero-shot NLI.
+  with `CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment` for Arabic. Emotions and tone
+  come from the lexicon by default; with `ZERO_SHOT_AFFECT=true` they are scored by
+  zero-shot NLI instead (20 model passes per article, about 40 s per article on a CPU
+  runner, so it is off for scheduled runs). Each stored row says which method produced it.
 * Fallback backend: a transparent multilingual lexicon (`database/seeds/lexicons.yaml`),
   labelled `method = lexicon`.
 * Output: polarity (positive / neutral / negative / uncertain), a probability
