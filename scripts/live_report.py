@@ -97,9 +97,7 @@ with eng.connect() as c:
         .all()
     )
     status = dict(
-        c.execute(
-            text("select processing_status, count(*) from articles where not is_demo group by 1")
-        ).all()
+        c.execute(text("select processing_status, count(*) from articles where not is_demo group by 1")).all()
     )
     # what actually produced the stored results: method and model per analysis table
     produced = c.execute(

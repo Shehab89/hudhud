@@ -32,6 +32,15 @@ produced it.
 |---|---|
 | **MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7** (MIT) | **secondary model** in confidence routing (0.60–0.85 band); 100 languages |
 
+**Speed on CPU (measured 2026-10-05 on a GitHub Actions runner, 4 vCPU AMD EPYC, torch 2.14 CPU).**
+One zero-shot pass scores one text against one candidate label. For a 600-character text:
+1.38 s per label with the pipeline's defaults (torch used 2 threads), 1.14 s with the labels
+scored as one batch, 0.94 s with batching and all 4 threads. Real articles in a live run cost
+about 2 s per label (Arabic text makes more tokens). Emotion plus tone is 20 labels per article,
+so `ZERO_SHOT_AFFECT` is off by default (emotion and tone then use the lexicon); the category
+re-rank (up to 6 labels) and frame confirmation stay on. int8 dynamic quantisation was tried
+and failed on this model (dtype error), so it is not used.
+
 ## Named entities
 
 The default is a curated **gazetteer** (aliases in many languages, typed by usage), which
