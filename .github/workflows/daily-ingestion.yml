@@ -55,6 +55,11 @@ jobs:
           restore-keys: hf-models-
       - run: hudhud migrate
       - run: hudhud seed
+      - name: Import pasted posts (accounts we cannot collect, such as X)
+        run: |
+          shopt -s nullglob
+          files=(data/social-posts/*.csv data/social-posts/*.json)
+          if [ ${#files[@]} -gt 0 ]; then hudhud import-posts "${files[@]}"; else echo "no pasted posts"; fi
       - name: Run pipeline
         run: |
           if [ -n "${{ inputs.stages }}" ]; then

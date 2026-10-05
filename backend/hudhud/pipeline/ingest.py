@@ -76,13 +76,15 @@ def store_item(
     domain_map: dict[str, int],
     stats: IngestStats,
     now: dt.datetime,
+    lookback_days: int | None = None,
 ) -> m.Article | None:
     settings = get_settings()
     stats.items_seen += 1
     published = item.published_at
     if published and published > now + dt.timedelta(hours=6):
         published = now  # feeds sometimes carry future/local-time dates
-    if published and published < now - dt.timedelta(days=settings.lookback_days):
+    window = settings.lookback_days if lookback_days is None else lookback_days
+    if published and published < now - dt.timedelta(days=window):
         stats.filtered_old += 1
         return None
 

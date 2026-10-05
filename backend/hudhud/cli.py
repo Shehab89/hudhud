@@ -78,6 +78,17 @@ def cmd_demo(args) -> int:
     return 0
 
 
+def cmd_import_posts(args) -> int:
+    from hudhud.db.session import session_scope
+    from hudhud.ingest.manual import import_posts, read_rows
+
+    rows = [row for path in args.files for row in read_rows(Path(path))]
+    with session_scope() as s:
+        result = import_posts(s, rows, dry_run=args.dry_run)
+    _print({"dry_run": args.dry_run} | result.as_dict())
+    return 1 if result.rejected and not (result.inserted or result.updated or result.unchanged) else 0
+
+
 def cmd_check_sources(_args) -> int:
     """Validate the YAML source registry without touching the database."""
     import yaml
@@ -133,6 +144,12 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("seed", help="load registry seeds (sources, taxonomy, actors, models)").set_defaults(
         fn=cmd_seed
     )
+    ip = sub.add_parser(
+        "import-posts", help="store posts pasted into CSV/JSON files (accounts we cannot collect)"
+    )
+    ip.add_argument("files", nargs="+")
+    ip.add_argument("--dry-run", action="store_true", help="check the rows without storing them")
+    ip.set_defaults(fn=cmd_import_posts)
     sub.add_parser("check-sources", help="validate the source registry YAML").set_defaults(
         fn=cmd_check_sources
     )
