@@ -1,0 +1,2021 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: al-jazeera-arabic
+  name: Al Jazeera Arabic
+  name_native: قناة الجزيرة
+  category: MEDIA
+  tier: A
+  url: https://www.aljazeera.net/
+  country: QA
+  region: gulf
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: AJArabic
+    url: https://x.com/AJArabic
+    handle_evidence: https://www.aljazeera.net/where/mideast/arab/yemen/
+  - platform: youtube
+    handle: aljazeera
+    url: https://www.youtube.com/@aljazeera
+    handle_evidence: https://www.aljazeera.net/where/mideast/arab/yemen/
+    followers: 23100000
+    followers_as_of: 2026-10-04
+    followers_source: https://vidiq.com/youtube-stats/top/country/qa
+  - platform: telegram
+    handle: AjaNews
+    url: https://t.me/AjaNews
+    handle_evidence: https://www.aljazeera.net/where/mideast/arab/yemen/
+    followers: 1320000
+    followers_as_of: 2026-10-04
+    followers_source: https://t.me/s/AjaNews
+  - platform: facebook
+    handle: aljazeerachannel
+    url: https://www.facebook.com/aljazeerachannel
+    handle_evidence: https://www.aljazeera.net/where/mideast/arab/yemen/
+  feeds:
+  - url: https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Al Jazeera Net main feed (about 25 items).
+  - url: https://t.me/s/AjaNews
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; public channel @AjaNews is linked in the aljazeera.net footer (seen 2026-10-04); documented
+      t.me/s pattern. Site RSS carried over from old registry.
+  selection:
+    reason: Most-watched pan-Arab news channel; runs a dedicated Yemen section that published several Yemen items
+      a day in October 2026.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 23100000
+      as_of: 2026-10
+      source_url: https://vidiq.com/youtube-stats/top/country/qa
+    - metric: youtube_subscribers
+      value: 20000000
+      as_of: 2025-03
+      source_url: https://network.aljazeera.net/en/press-releases/al-jazeera-arabic%E2%80%99s-channel-youtube-surpasses-20-million-subscribers
+    - metric: monthly_visits
+      value: 21530000
+      as_of: 2026-08
+      source_url: https://semrush.com/website/aljazeera.net/overview
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Al Jazeera's Yemen bureau was closed by Yemeni authorities in 2018 and its reporting on the war has
+        been the subject of academic study, which shows its weight in Yemen discourse.
+      urls:
+      - https://www.aljazeera.com/news/2018/1/9/al-jazeera-bureau-in-yemen-forcibly-closed
+      - https://arabmediasociety.com/the-qatari-crisis-and-al-jazeeras-coverage-of-the-war-in-yemen/
+    yemen_coverage:
+      frequency: daily
+      evidence: Dedicated Yemen section (أخبار اليمن); eight Yemen items dated 3-4 October 2026 on the section page.
+      urls:
+      - https://www.aljazeera.net/where/mideast/arab/yemen/
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: qatar
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'State Media Monitor (2024-2026 cycles) classifies Al Jazeera Media Network as State-Controlled:
+      fully owned by the Emir of Qatar, state allocations often above 90% of funding; the US Department of Justice
+      also determined it is controlled and funded by the government of Qatar. Yemen lean checked: Gasim (2018, Arab
+      Media & Society) found coverage of the Saudi-led coalition turned sharply more negative after the 2017 Gulf
+      crisis, a Qatari state-interest effect; no reputable source found documenting backing of a specific Yemeni
+      camp.'
+    evidence_urls:
+    - https://statemediamonitor.com/2024/07/al-jazeera-media-network-ajmn/
+    - https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network
+    - https://arabmediasociety.com/the-qatari-crisis-and-al-jazeeras-coverage-of-the-war-in-yemen/
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: 'Al Jazeera Media Network: Wikipedia describes it as a private foundation for public benefit primarily
+      funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: YouTube count from vidiq top-Qatar chart as displayed 2026-10-04 (no date on page). A Facebook page 'الجزيرة
+    - اليمن' (facebook.com/AJArabic.Yemen) appeared in search results but could not be confirmed as official (robots
+    blocked), so it is not listed. yemen_coverage is an estimate, not measured.
+- id: al-jazeera-english
+  name: Al Jazeera English
+  category: MEDIA
+  tier: A
+  url: https://www.aljazeera.com/
+  country: QA
+  region: gulf
+  languages:
+  - en
+  platform: tv
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: AJEnglish
+    url: https://x.com/AJEnglish
+    handle_evidence: https://www.aljazeera.com/where/yemen/
+  - platform: youtube
+    handle: aljazeeraenglish
+    url: https://www.youtube.com/@aljazeeraenglish
+    handle_evidence: https://www.aljazeera.com/where/yemen/
+    followers: 18000000
+    followers_as_of: 2026-10-04
+    followers_source: https://vidiq.com/youtube-stats/top/country/qa
+  - platform: instagram
+    handle: aljazeeraenglish
+    url: https://www.instagram.com/aljazeeraenglish
+    handle_evidence: https://www.aljazeera.com/where/yemen/
+  feeds:
+  - url: https://www.aljazeera.com/xml/rss/all.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 26 items).
+  selection:
+    reason: Global English-language news channel with a dedicated Yemen page and daily Yemen reporting, including
+      explainers and on-the-ground features during the 2026 fighting.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 18000000
+      as_of: 2026-10
+      source_url: https://vidiq.com/youtube-stats/top/country/qa
+    - metric: monthly_visits
+      value: 52120000
+      as_of: 2026-08
+      source_url: https://de.semrush.com/website/aljazeera.com/overview/
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Its Yemen war coverage is the subject of academic content analysis (Gasim 2018).
+      urls:
+      - https://arabmediasociety.com/the-qatari-crisis-and-al-jazeeras-coverage-of-the-war-in-yemen/
+    yemen_coverage:
+      frequency: daily
+      evidence: Dedicated Yemen page; seven Yemen stories dated 2-4 October 2026 (e.g. "Why is fighting intensifying
+        in Yemen's Taiz governorate?").
+      urls:
+      - https://www.aljazeera.com/where/yemen/
+      - https://www.aljazeera.com/news/2026/10/4/why-is-fighting-intensifying-in-yemens-taiz-governorate
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: qatar
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'Part of Al Jazeera Media Network, which State Media Monitor classifies as State-Controlled
+      (owned by the Emir of Qatar, mostly state-funded). Yemen lean checked: Gasim (2018) content analysis of Al
+      Jazeera English found a sharp rise in negative coverage of the Saudi-led coalition after June 2017; no source
+      found documenting backing of a specific Yemeni camp.'
+    evidence_urls:
+    - https://statemediamonitor.com/2024/07/al-jazeera-media-network-ajmn/
+    - https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network
+    - https://arabmediasociety.com/the-qatari-crisis-and-al-jazeeras-coverage-of-the-war-in-yemen/
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: 'Al Jazeera Media Network: Wikipedia describes it as a private foundation for public benefit primarily
+      funded by the government of Qatar.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Jazeera
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: No Yemen-specific RSS found; site-wide feed https://www.aljazeera.com/xml/rss/all.xml (yemen_filter true)
+    is carried over from the old registry. YouTube count from vidiq top-Qatar chart as displayed 2026-10-04. yemen_coverage
+    is an estimate, not measured.
+- id: al-arabiya
+  name: Al Arabiya
+  name_native: العربية
+  category: MEDIA
+  tier: A
+  url: https://www.alarabiya.net/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: tv
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: AlArabiya
+    url: https://x.com/AlArabiya
+    handle_evidence: https://www.alarabiya.net/arab-and-world/yemen/archive
+  - platform: youtube
+    handle: alarabiya
+    url: https://www.youtube.com/alarabiya
+    handle_evidence: https://www.alarabiya.net/arab-and-world/yemen/archive
+    followers: 19300000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/handle/alarabiya
+  - platform: telegram
+    handle: alarabiya
+    url: https://t.me/alarabiya
+    handle_evidence: https://www.alarabiya.net/arab-and-world/yemen/archive
+    followers: 116000
+    followers_as_of: 2026-10-04
+    followers_source: https://t.me/s/alarabiya
+  - platform: facebook
+    handle: AlArabiya
+    url: https://www.facebook.com/AlArabiya
+    handle_evidence: https://www.alarabiya.net/arab-and-world/yemen/archive
+  - platform: x
+    handle: AlArabiya_Eng
+    url: https://x.com/AlArabiya_Eng
+    handle_evidence: https://english.alarabiya.net/tools/tags?tag=yemen
+  feeds:
+  - url: https://www.alarabiya.net/feed/rss2/ar.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic homepage feed; small (about 8 items) so poll frequently.
+  - url: https://english.alarabiya.net/feed/rss2/en.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Al Arabiya English homepage feed (about 20 items).
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCahpxixMCwoANAftn6IxkTg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCahpxixMCwoANAftn6IxkTg shown on https://socialblade.com/youtube/handle/alarabiya
+      (seen 2026-10-04); documented YouTube channel-feed pattern.
+  - url: https://t.me/s/alarabiya
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; telegram.me/alarabiya is linked from alarabiya.net (seen 2026-10-04); documented t.me/s pattern.
+  selection:
+    reason: Leading Saudi-owned pan-Arab news channel with a dedicated Yemen section updated several times a day
+      and a correspondent network inside Yemen.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 19300000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/alarabiya
+    - metric: monthly_visits
+      value: 9970000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/alarabiya.net/overview/
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Its Yemen reporting is studied academically alongside IRNA Arabic as one pole of the regional media
+        contest over Yemen; an Al Arabiya / Al Hadath reporter, Mohammed Aydah, was killed by a car bomb in Mukalla
+        in June 2026.
+      urls:
+      - https://journal.uinjkt.ac.id/index.php/litteratura/article/view/39420
+      - https://www.khaleejtimes.com/world/mena/saudi-arabia-al-arabiya-tv-reporter-killed-car-bomb-yemen?amp=1
+    yemen_coverage:
+      frequency: daily
+      evidence: Dedicated Yemen archive; ten Yemen items in the 24 hours to 4 October 2026. The English site has
+        a Yemen tag with about 5,000 items, but it was last updated in January 2026.
+      urls:
+      - https://www.alarabiya.net/arab-and-world/yemen/archive
+      - https://english.alarabiya.net/tools/tags?tag=yemen
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: 'Owned by MBC Group, in which Saudi Arabia''s Public Investment Fund holds a controlling
+      54% stake (2025); State Media Monitor classifies MBC as Captured Public/State-Managed and says its editorial
+      direction aligns closely with official Saudi positions. Yemen lean: Rahman and Abubakar (2024) critical discourse
+      analysis found Al-Arabiya.net showed ''a negative bias towards the Houthi group while supporting the Yemeni
+      government'' (then led by Hadi, now the PLC).'
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/middle-east-broadcasting-center-mbc/
+    - https://en.wikipedia.org/wiki/Al_Arabiya
+    - https://journal.uinjkt.ac.id/index.php/litteratura/article/view/39420
+    method: academic_source
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Subsidiary of MBC Group, based in Riyadh. Wikipedia reports Saudi Arabia's Public Investment Fund
+      acquired a 54% stake in MBC Group in 2025.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Arabiya
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Headquarters moved from Dubai to Riyadh (completed July 2025, per Wikipedia). English edition (english.alarabiya.net)
+    kept under this record; its Yemen tag is updated irregularly. Site feeds carried over from the old registry.
+    yemen_coverage is an estimate, not measured.
+- id: al-hadath
+  name: Al Hadath
+  name_native: الحدث
+  category: MEDIA
+  tier: A
+  url: https://www.alhadath.net/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  accounts:
+  - platform: x
+    handle: AlHadath
+    url: https://x.com/AlHadath
+    handle_evidence: https://www.alhadath.net/yemen
+  - platform: youtube
+    handle: AlHadath
+    url: https://www.youtube.com/channel/UCrj5BGAhtWxDfqbza9T9hqA
+    handle_evidence: https://www.alhadath.net/yemen
+    followers: 6940000
+    followers_as_of: 2026-10-04
+    followers_source: https://vidiq.com/youtube-stats/channel/UCrj5BGAhtWxDfqbza9T9hqA/
+  - platform: facebook
+    handle: AlHadath
+    url: https://www.facebook.com/AlHadath/
+    handle_evidence: https://www.alhadath.net/yemen
+  - platform: instagram
+    handle: alhadath
+    url: https://www.instagram.com/alhadath/
+    handle_evidence: https://www.alhadath.net/yemen
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCrj5BGAhtWxDfqbza9T9hqA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id linked from the alhadath.net footer and the feed link shown on https://www.youtube.com/@AlHadath
+      (seen 2026-10-04).
+  selection:
+    reason: Saudi-owned 24-hour political news channel (Al Arabiya's sister) with a dedicated Yemen section updated
+      daily during the 2026 fighting.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 6940000
+      as_of: 2026-10
+      source_url: https://vidiq.com/youtube-stats/channel/UCrj5BGAhtWxDfqbza9T9hqA/
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Wikipedia notes it runs country-specific social pages, including an Al Hadath Yemen page on X.
+      urls:
+      - https://en.wikipedia.org/wiki/Al_Hadath
+    yemen_coverage:
+      frequency: daily
+      evidence: Dedicated Yemen section; seven Yemen items dated 3-4 October 2026.
+      urls:
+      - https://www.alhadath.net/yemen
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.75
+    classification_evidence: 'Owned by MBC Group (PIF holds 54%); State Media Monitor lists Al Arabiya and Al Hadath
+      as common-control news operations of MBC, which it classifies as Captured Public/State-Managed with editorial
+      direction aligned with official Saudi positions. Yemen lean checked: the academic finding of pro-government
+      framing concerns Al-Arabiya.net; no study found on Al Hadath itself, so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/middle-east-broadcasting-center-mbc/
+    - https://en.wikipedia.org/wiki/Al_Hadath
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: New id (not in old registry). No site RSS found; active false until the YouTube feed is verified. An X
+    account @Alhadath_Ymn ('الحدث اليمني') appeared in search results but could not be confirmed as an official
+    Al Hadath account (X blocked fetching), so it is not listed. Much Yemen copy is shared with alarabiya.net; expect
+    syndication duplicates.
+- id: asharq-al-awsat
+  name: Asharq Al-Awsat
+  name_native: الشرق الأوسط
+  category: MEDIA
+  tier: A
+  url: https://aawsat.com/
+  country: GB
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: newspaper
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: aawsat_News
+    url: https://x.com/aawsat_News
+    handle_evidence: https://aawsat.com/
+  - platform: facebook
+    handle: asharqalawsat.a
+    url: https://www.facebook.com/asharqalawsat.a
+    handle_evidence: https://aawsat.com/
+  - platform: instagram
+    handle: asharqalawsat
+    url: https://www.instagram.com/asharqalawsat/
+    handle_evidence: https://aawsat.com/
+  - platform: tiktok
+    handle: aawsat_news
+    url: https://www.tiktok.com/@aawsat_news
+    handle_evidence: https://aawsat.com/
+  feeds:
+  - url: https://aawsat.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic site-wide feed (100+ items). Channel title reads 'Mailchimptemplate'.
+  - url: https://english.aawsat.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English edition site-wide feed.
+  selection:
+    reason: Saudi-owned pan-Arab daily of record with a dedicated Yemen tag carrying several Yemen stories a day,
+      including exclusive comment from the coalition.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 5550000
+      as_of: 2024-04
+      source_url: https://www.semrush.com/website/alaraby.co.uk/competitors/
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Wikipedia calls it historically the leading pan-Arab daily (circulation 234,561 in 2004); its Yemen
+        desk obtains on-record coalition statements (e.g. 3 October 2026).
+      urls:
+      - https://en.wikipedia.org/wiki/Asharq_Al-Awsat
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen location tag; eight Yemen items between 3 and 4 October 2026.
+      urls:
+      - https://aawsat.com/tags/location-%D8%A7%D9%84%D9%8A%D9%85%D9%86
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: 'Published by Saudi Research and Media Group, which Wikipedia says has close ties to
+      the Mohammed bin Salman government and is considered a government outlet in the West; Wikipedia says the paper
+      was founded with the approval of the royal family and is noted for its support of the Saudi government. Yemen
+      lean checked: Wikipedia and the SRMG article; no academic or watchdog source on its Yemen framing was found
+      (search budget ran out), so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Asharq_Al-Awsat
+    - https://en.wikipedia.org/wiki/Saudi_Research_and_Media_Group
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Saudi-owned pan-Arab daily headquartered in London; published by Saudi Research and Media Group
+      (SRMG). Wikipedia names Faisal bin Salman Al Saud as owner.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Asharq_Al-Awsat
+    - https://en.wikipedia.org/wiki/Saudi_Research_and_Media_Group
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Traffic figure is from Semrush's competitor list on the alaraby.co.uk page (April 2024 data); no newer
+    citable figure found. No Yemen-tag RSS found; site feeds (aawsat.com/feed, english.aawsat.com/feed) carried
+    over from the old registry. No YouTube or Telegram link on the homepage. yemen_coverage is an estimate, not
+    measured. Based in London but Saudi-owned; country set to GB (base).
+- id: sky-news-arabia
+  name: Sky News Arabia
+  name_native: سكاي نيوز عربية
+  category: MEDIA
+  tier: A
+  url: https://www.skynewsarabia.com/
+  country: AE
+  region: gulf
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: skynewsarabia
+    url: https://x.com/skynewsarabia
+    handle_evidence: https://www.skynewsarabia.com/
+  - platform: youtube
+    handle: skynewsarabia
+    url: https://www.youtube.com/skynewsarabia
+    handle_evidence: https://www.skynewsarabia.com/
+    followers: 7360000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/handle/skynewsarabia
+  - platform: facebook
+    handle: SkyNewsArabia
+    url: https://www.facebook.com/SkyNewsArabia
+    handle_evidence: https://www.skynewsarabia.com/
+  - platform: instagram
+    handle: skynewsarabia
+    url: https://www.instagram.com/skynewsarabia/
+    handle_evidence: https://www.skynewsarabia.com/
+  feeds:
+  - url: https://www.skynewsarabia.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: '''Today''s news'' site-wide feed (50+ items).'
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCIJXOvggjKtCagMfxvcCzAA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCIJXOvggjKtCagMfxvcCzAA shown on https://socialblade.com/youtube/handle/skynewsarabia
+      for the youtube.com/skynewsarabia channel linked from skynewsarabia.com (seen 2026-10-04).
+  selection:
+    reason: Abu Dhabi-based 24-hour Arabic news channel, now fully UAE-owned, with a Yemen news category that carried
+      several Yemen stories a day in October 2026.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 7360000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/skynewsarabia
+    - metric: tv_reach
+      value: 50000000
+      as_of: 2012-05
+      source_url: https://en.wikipedia.org/wiki/Sky_News_Arabia
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Its editorial line drew controversy (Sudan ban in November 2025; Sky's exit from the joint venture on
+        31 May 2026), per Wikipedia.
+      urls:
+      - https://en.wikipedia.org/wiki/Sky_News_Arabia
+    yemen_coverage:
+      frequency: daily
+      evidence: The Middle East section labels Yemen items 'أخبار اليمن'; on 4 October 2026 it showed four Yemen
+        stories (Houthi claim on Aramco, Bab al-Mandab, Saudi missile interceptions, more than 80 killed in Taiz).
+      urls:
+      - https://www.skynewsarabia.com/middle-east
+      - https://www.skynewsarabia.com/middle-east/1895770-اليمن-أكثر-80-قتيلا-معارك-تعز
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: uae
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: 'Wikipedia: a 50/50 joint venture of Sky and International Media Investments (a UAE
+      government entity) from 2012; Sky withdrew on 31 May 2026, leaving it wholly UAE-owned; Wikipedia records
+      coverage controversies tied to UAE positions (Qatar 2017, Sudan 2025). Yemen lean checked: the Wikipedia controversy
+      list has no Yemen item and no watchdog or academic source on its Yemen or STC framing was found, so no Yemen
+      camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_News_Arabia
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: 'Headquartered in Abu Dhabi. Wikipedia: fully owned by International Media Investments (UAE government
+      entity) since 31 May 2026, when Sky Group withdrew from the former 50/50 joint venture.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sky_News_Arabia
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Reach figure is the channel's own launch claim (more than 50 million households, The National, 6 May 2012,
+    cited on Wikipedia), so it is dated; the current YouTube count is from Social Blade as displayed 2026-10-04.
+    The site still uses the Sky News Arabia brand as of 2026-10-04 despite Sky's exit; watch for a rebrand. The
+    exact URL of the Yemen category was not extractable. Site RSS (skynewsarabia.com/rss) carried over from the
+    old registry. yemen_coverage is an estimate, not measured.
+- id: al-ain-news
+  name: Al Ain News
+  name_native: العين الإخبارية
+  category: MEDIA
+  tier: A
+  url: https://al-ain.com/
+  country: AE
+  region: gulf
+  languages:
+  - ar
+  - fa
+  - tr
+  - fr
+  - am
+  platform: website
+  source_type: news_website
+  source_group: arab_gulf
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: AlAinNews
+    url: https://x.com/AlAinNews
+    handle_evidence: https://al-ain.com/
+  - platform: youtube
+    handle: AlAinNews
+    url: https://www.youtube.com/c/AlAinNews
+    handle_evidence: https://al-ain.com/
+    followers: 715000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/c/alainnews
+  - platform: facebook
+    handle: AlAinNews
+    url: https://www.facebook.com/AlAinNews
+    handle_evidence: https://al-ain.com/
+  - platform: instagram
+    handle: AlAinNews
+    url: https://www.instagram.com/AlAinNews/
+    handle_evidence: https://al-ain.com/
+  - platform: tiktok
+    handle: alainnews
+    url: https://www.tiktok.com/@alainnews
+    handle_evidence: https://al-ain.com/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQqkDCzglMefUmIl6rcE0eA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCQqkDCzglMefUmIl6rcE0eA shown on https://socialblade.com/youtube/c/alainnews for
+      the channel linked from al-ain.com (seen 2026-10-04).
+  selection:
+    reason: Abu Dhabi-based digital news outlet with a Yemen tag in its main navigation and several Yemen stories
+      a day, including exclusives from Taiz and on the Southern Transitional Council.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 715000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/c/alainnews
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Publishes in five languages from Abu Dhabi, with offices in Cairo and Alexandria (own about page).
+      urls:
+      - https://al-ain.com/about-us
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen (اليمن) is a main-navigation tag (https://al-ain.com/tag/21476/, which returned 404 to the
+        fetch tool); the homepage on 4 October 2026 carried four Yemen stories.
+      urls:
+      - https://al-ain.com/article/yemen-houthi-military-operations
+      - https://al-ain.com/article/taiz-houthi-militias-yemen-siege
+      - https://al-ain.com/article/houthi-southern-transitional-council-mobilization
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: uae
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.65
+    classification_evidence: 'Its about page says it is a brand of ''العالمية للاستثمارات الإعلامية منطقة حرة ذ.م.م.''
+      (International Media Investments FZ LLC), headquartered in Abu Dhabi; Wikipedia''s article on The National
+      describes International Media Investments as a subsidiary of Abu Dhabi Media Investment Corporation, owned
+      by Mansour bin Zayed Al Nahyan (UAE Vice President). The match of the Arabic company name to IMI is our reading,
+      hence the lower confidence. Yemen lean checked: no watchdog or academic source on its Yemen framing found,
+      so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://al-ain.com/about-us
+    - https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: ''
+    evidence_urls: []
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id with no verified feed in the old registry; no site RSS link found on the homepage. active false
+    until the YouTube feed (or a site feed) is verified. yemen_coverage is an estimate, not measured. No working
+    feed found on 2026-10-02; kept for the record. al-ain.com/feed returned 404; homepage lists no feed links. Ownership
+    not documented in a source fetched for this file.
+- id: al-araby-al-jadeed
+  name: Al-Araby Al-Jadeed
+  name_native: العربي الجديد
+  category: MEDIA
+  tier: A
+  url: https://www.alaraby.co.uk/
+  country: GB
+  region: gulf
+  languages:
+  - ar
+  platform: website
+  source_type: news_website
+  source_group: arab_pan
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: alaraby_ar
+    url: https://x.com/alaraby_ar
+    handle_evidence: https://www.alaraby.co.uk/
+  - platform: youtube
+    handle: العربي الجديد
+    url: https://www.youtube.com/channel/UCQ2BzTiRUbL3z4K22dTB5dg
+    handle_evidence: https://vidiq.com/youtube-stats/channel/UCQ2BzTiRUbL3z4K22dTB5dg
+    followers: 226000
+    followers_as_of: 2026-10-04
+    followers_source: https://vidiq.com/youtube-stats/channel/UCQ2BzTiRUbL3z4K22dTB5dg
+  feeds:
+  - url: https://www.alaraby.co.uk/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Site-wide feed (about 10 items); poll frequently.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQ2BzTiRUbL3z4K22dTB5dg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id from a vidiq stats page whose channel links to www.alaraby.co.uk (seen 2026-10-04).
+  selection:
+    reason: London-based, Qatari-owned pan-Arab daily with a Yemen section in its navigation and several Yemen stories
+      a day during the 2026 fighting.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 226000
+      as_of: 2026-10
+      source_url: https://vidiq.com/youtube-stats/channel/UCQ2BzTiRUbL3z4K22dTB5dg
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Founded in 2014 with the backing of Qatar's emir and directed by Azmi Bishara (Wikipedia); a leading
+        Qatari-aligned print voice alongside Al Jazeera.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen section linked from the homepage (https://www.alaraby.co.uk/news/yemen, which returned 404
+        to the fetch tool); five Yemen headlines on the homepage on 4 October 2026.
+      urls:
+      - https://www.alaraby.co.uk/
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: qatar
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.7
+    classification_evidence: 'Wikipedia: owned by the Qatar-based Fadaat Media and founded in 2014 by Qatari emir
+      Tamim bin Hamad Al Thani; director Azmi Bishara acknowledged sensitivity to ''the people that finance you''.
+      Yemen lean checked: Wikipedia; no watchdog or academic source on its Yemen framing found, so no Yemen camp
+      is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: London-based pan-Arab outlet owned by Qatari company Fadaat Media; Wikipedia cites academic analysis
+      that it was established by Emir Tamim bin Hamad Al Thani.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Araby_Al-Jadeed
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Audience figure is YouTube only (vidiq, displayed 2026-10-04); no current web-traffic figure found. Site
+    RSS (alaraby.co.uk/rss) carried over from the old registry; no Yemen-section RSS found. English edition The
+    New Arab is not selected separately (see excluded list). yemen_coverage is an estimate, not measured.
+- id: press-tv
+  name: Press TV
+  name_native: پرس تی وی
+  category: MEDIA
+  tier: A
+  url: https://www.presstv.ir/
+  country: IR
+  region: iran
+  languages:
+  - en
+  platform: tv
+  source_type: tv
+  source_group: iran
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: PressTV
+    url: https://x.com/PressTV
+    handle_evidence: https://www.presstv.co.uk/
+  - platform: telegram
+    handle: presstv
+    url: https://t.me/presstv
+    handle_evidence: https://www.presstv.co.uk/
+    followers: 93100
+    followers_as_of: 2026-10-04
+    followers_source: https://t.me/s/presstv
+  - platform: instagram
+    handle: presstvchannel
+    url: https://instagram.com/presstvchannel
+    handle_evidence: https://www.presstv.co.uk/
+  - platform: facebook
+    handle: PressTV.Highlights
+    url: https://m.facebook.com/PressTV.Highlights
+    handle_evidence: https://www.presstv.co.uk/
+  feeds:
+  - url: https://www.presstv.co.uk/rss.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: presstv.ir/rss.xml redirects (302) here. Site-wide feed (100+ items).
+  - url: https://t.me/s/presstv
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; t.me/presstv is linked from the Press TV homepage (presstv.ir redirects to presstv.co.uk,
+      seen 2026-10-04); documented t.me/s pattern. Site RSS presstv.co.uk/rss.xml carried over from the old registry.
+  selection:
+    reason: Iranian state broadcaster's English-language channel, the main English outlet of the Iran-aligned axis,
+      with frequent Yemen coverage that relays the Sanaa authorities' military statements.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 93100
+      as_of: 2026-10
+      source_url: https://t.me/s/presstv
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Subject of repeated Western regulatory action (Ofcom licence revoked 2012, US domain seizure 2021, OFAC
+        SDN listing 2023, YouTube removals 2019-2020) per Wikipedia, which limits its measurable Western reach.
+      urls:
+      - https://en.wikipedia.org/wiki/Press_TV
+    yemen_coverage:
+      frequency: daily
+      evidence: Three Yemen stories on the homepage dated 3 October 2026 (Aramco strike claim, 'capital for capital'
+        warning, Ansarullah advances).
+      urls:
+      - https://www.presstv.co.uk/Detail/2026/10/03/777556/Yemeni-forces-strike-Aramco-facilities-in-Riyadh-in-response-to-Saudi-aggression
+      - https://www.presstv.co.uk/Detail/2026/10/03/777509/Ansarullah-fighters-advancing-against-Saudi-forces
+    institutional_importance:
+      level: low
+      note: State broadcaster; its output reflects Iranian state messaging.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: iran_axis
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'Owned by Islamic Republic of Iran Broadcasting (IRIB), the Iranian state broadcaster
+      (Wikipedia). Yemen lean checked: Wikipedia has no Yemen material and no watchdog or academic study of Press
+      TV''s Yemen framing was retrievable (search budget exhausted); its October 2026 headlines call Ansar Allah
+      forces ''Yemeni forces'', but that is our own observation, not a documented source, so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Press_TV
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: State-funded division of Islamic Republic of Iran Broadcasting (IRIB).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Press_TV
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: presstv.ir redirects (302) to presstv.co.uk. Audience evidence is Telegram only; X follower count not retrievable.
+    The Telegram preview showed posts up to 24 September 2026 when fetched, so it may lag. yemen_coverage is an
+    estimate, not measured.
+- id: al-mayadeen
+  name: Al Mayadeen
+  name_native: الميادين
+  category: MEDIA
+  tier: A
+  url: https://www.almayadeen.net/
+  country: LB
+  region: levant
+  languages:
+  - ar
+  - en
+  platform: tv
+  source_type: tv
+  source_group: arab_levant
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: youtube
+    handle: almayadeentv
+    url: https://www.youtube.com/@almayadeentv
+    handle_evidence: https://vidiq.com/youtube-stats/channel/UCZCFHCU-2eGF7V5ciMkoPHw
+    followers: 1540000
+    followers_as_of: 2026-10
+    followers_source: https://vidiq.com/youtube-stats/channel/UCZCFHCU-2eGF7V5ciMkoPHw
+  - platform: youtube
+    handle: almayadeennews
+    url: https://www.youtube.com/@almayadeennews
+    handle_evidence: https://socialblade.com/youtube/handle/almayadeennews
+    followers: 1510000
+    followers_as_of: 2026-10
+    followers_source: https://socialblade.com/youtube/handle/almayadeennews
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9YbjpvsFZytS0DnO1FnTKw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UC9YbjpvsFZytS0DnO1FnTKw (Al Mayadeen News, @almayadeennews) shown on https://socialblade.com/youtube/handle/almayadeennews
+      (seen 2026-10-05); documented YouTube channel-feed pattern. Official status of the channel is inferred from
+      its title and Lebanon location, not from a link on almayadeen.net.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCZCFHCU-2eGF7V5ciMkoPHw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCZCFHCU-2eGF7V5ciMkoPHw (Al Mayadeen Channel) shown on https://vidiq.com/youtube-stats/channel/UCZCFHCU-2eGF7V5ciMkoPHw
+      (seen 2026-10-05); documented YouTube channel-feed pattern.
+  selection:
+    reason: Beirut-based pan-Arab channel of the Iran-aligned axis, with a dedicated Yemen country page and regular
+      reports and interviews from Sanaa authorities, Saudi and Israeli strikes and the 2026 Aramco attacks.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 1540000
+      as_of: 2026-10
+      source_url: https://vidiq.com/youtube-stats/channel/UCZCFHCU-2eGF7V5ciMkoPHw
+    - metric: youtube_subscribers
+      value: 1510000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/almayadeennews
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Launched in 2012; Wikipedia records a Saudi-controlled Arabsat ban in 2015 and Israeli cabinet moves
+        to close it in November 2023, which shows its weight in regional contests over narratives.
+      urls:
+      - https://en.wikipedia.org/wiki/Al_Mayadeen
+      - https://www.i24news.tv/en/news/middle-east/levant-turkey/1699864992-israel-s-cabinet-approves-closure-of-lebanese-al-mayadeen-network
+    yemen_coverage:
+      frequency: weekly
+      evidence: The site has a Yemen country page (almayadeen.net/country/Yemen, listed in search results; the fetch
+        tool got a 403) and a stream of Yemen items in its news/politics section; the only dated item seen is a
+        31 August 2025 programme on a Houthi leader's speech. No 2026-dated Yemen item could be confirmed before
+        the search budget ran out, so weekly is a conservative estimate.
+      urls:
+      - https://www.almayadeen.net/country/Yemen
+      - https://www.almayadeen.net/episodes-tv/2025/8/31/%D8%A7%D9%84%D8%B3%D9%8A%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A-%D8%B4%D8%B9%D8%A8%D9%86%D8%A7-%D9%8A%D9%86%D8%A7%D8%AC%D9%8A-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A--%D9%86%D8%AD%D9%86-%D9%85%D8%B9%D9%83%D9%85-%D9%88%D9%86%D8%AF%D8%B9%D9%85%D9%83%D9%85/%D8%AA%D8%BA%D8%B7%D9%8A%D8%A9-%D8%AE%D8%A7%D8%B5%D8%A9
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.65
+    classification_evidence: 'Ownership is opaque (Wikipedia), so this is an editorial-alignment finding, not an
+      ownership one: Wikipedia summarises several sources as describing it as pro-Hezbollah and Iran-aligned, and
+      Media Bias/Fact Check (updated March 2024) says it is often referred to as pro-Hezbollah and believed to receive
+      backing from Syria, Iran and possibly Hezbollah, which the channel denies. Yemen lean checked: Wikipedia and
+      Media Bias/Fact Check do not discuss Yemen, and the 2022 Al Jazeera Institute study of Yemen war bulletins
+      did not analyse Al Mayadeen, so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Mayadeen
+    - https://mediabiasfactcheck.com/al-mayadeen-bias/
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Beirut-based channel founded in 2012 by former Al Jazeera staff; ownership opaque (initially 'anonymous
+      Arab businessmen').
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al_Mayadeen
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed. active false until a YouTube feed is verified. YouTube
+    counts are from vidiq and Social Blade pages as displayed 2026-10-05 (no date shown). A second page, vidiq's
+    UC9YbjpvsFZytS0DnO1FnTKw, belongs to the same network by title only. No X, Telegram or site-RSS handle could
+    be evidenced (almayadeen.net homepage links were not extractable; search budget ran out). Semrush has no usable
+    almayadeen.net traffic page. yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02;
+    kept for the record. /rss and english.almayadeen.net/rss returned HTTP 403.
+- id: anadolu-agency
+  name: Anadolu Agency
+  name_native: وكالة الأناضول
+  category: MEDIA
+  tier: A
+  url: https://www.aa.com.tr/
+  country: TR
+  region: turkey
+  languages:
+  - tr
+  - en
+  - ar
+  platform: wire
+  source_type: news_agency
+  source_group: turkey
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  accounts:
+  - platform: x
+    handle: anadoluagency
+    url: https://x.com/anadoluagency
+    handle_evidence: https://www.aa.com.tr/en
+  - platform: facebook
+    handle: anadoluagencyenglish
+    url: https://www.facebook.com/anadoluagencyenglish
+    handle_evidence: https://www.aa.com.tr/en
+  - platform: youtube
+    handle: anadoluagency
+    url: https://www.youtube.com/user/anadoluagency
+    handle_evidence: https://www.aa.com.tr/en
+  - platform: instagram
+    handle: anadoluagency
+    url: https://www.instagram.com/anadoluagency
+    handle_evidence: https://www.aa.com.tr/en
+  feeds:
+  - url: https://www.aa.com.tr/en/rss/default?cat=middle-east
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English Middle East feed (about 31 items). Channel title is generic 'Anadolu Ajansı Güncel Haberler'.
+  - url: https://www.aa.com.tr/en/rss/default?cat=world
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: English World feed.
+  - url: https://www.aa.com.tr/ar/rss/default?cat=الدول-العربية
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Arabic 'Arab countries' feed (Arabic items checked). URL contains Arabic; percent-encode if needed. cat=guncel
+      errored on the ar site.
+  - url: https://www.aa.com.tr/tr/rss/default?cat=dunya
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Turkish World feed (30 items).
+  - url: https://www.aa.com.tr/en/rss/default?cat=live
+    type: rss
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; RSS link shown on the aa.com.tr/en homepage (seen 2026-10-05); general live feed, so Yemen
+      items need keyword filtering. Verified feeds of the old registry (4) carry over.
+  selection:
+    reason: Turkey's state news agency, whose English and Arabic services file frequent Yemen wire reports (Taiz
+      front, Saudi strikes, Houthi claims) that are widely re-used by other outlets.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 7800000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/aa.com.tr/overview/
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: medium
+      note: Wikipedia says it operates in 13 languages in over 100 countries and runs the largest Arabic news service
+        in the Middle East (a claim attributed to former leadership); its Yemen items are in the dated English wire
+        stream listed below.
+      urls:
+      - https://en.wikipedia.org/wiki/Anadolu_Agency
+    yemen_coverage:
+      frequency: weekly
+      evidence: Nine Yemen wire items appeared in one search, e.g. 'Yemen's Houthi group shelled a government judicial
+        complex in Taiz' (26 August 2026) and later items on Saudi strikes on Sanaa and the capture of the Samea
+        fortress in Taiz. Only one item was individually dated by us, so weekly is conservative.
+      urls:
+      - https://www.aa.com.tr/en/middle-east/yemen-s-houthis-target-complex-in-taiz-for-2nd-time-in-month-news-agency/4038465
+      - https://aa.com.tr/en/middle-east/houthis-say-saudi-arabia-launches-strikes-on-sanaa-3-yemeni-provinces/4075617
+      - https://aa.com.tr/en/middle-east/yemeni-forces-capture-samea-fortress-in-taiz-after-fierce-clashes-with-houthis/4077217
+    institutional_importance:
+      level: none
+      note: News agency, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: turkey
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'Wikipedia: a state-run news organisation; a 2016 academic study cited there found
+      Turkish public news producers controlled by officials from a small network close to the AKP leadership. Yemen
+      lean checked: Wikipedia has no Yemen material and no watchdog or academic study of its Yemen framing was found,
+      so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Anadolu_Agency
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: State-run news agency headquartered in Ankara.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Anadolu_Agency
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Existing id with 4 verified feeds in the old registry. Traffic is the Semrush figure for the whole aa.com.tr
+    domain (all languages, Turkey rank 239), not Yemen or Arabic only. No Arabic-edition URL was verified in this
+    pass. yemen_coverage is an estimate, not measured. Covers both the Turkey and pan-Arab (Anadolu Arabic) scope.
+- id: reuters
+  name: Reuters
+  name_native: رويترز
+  category: MEDIA
+  tier: A
+  url: https://www.reuters.com/
+  country: GB
+  region: global
+  languages:
+  - en
+  - ar
+  platform: wire
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: youtube
+    handle: reuters
+    url: https://www.youtube.com/@reuters
+    handle_evidence: https://socialblade.com/youtube/handle/reuters
+    followers: 4330000
+    followers_as_of: 2026-10
+    followers_source: https://socialblade.com/youtube/handle/reuters
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UChqUTb7kYRX8-EiaN3XFrSQ
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UChqUTb7kYRX8-EiaN3XFrSQ shown on https://socialblade.com/youtube/handle/reuters
+      (seen 2026-10-05); documented YouTube channel-feed pattern. No Reuters site RSS feed was found in this pass
+      (reuters.com was blocked to the fetch tool).
+  selection:
+    reason: The leading international wire; its Yemen dispatches (Houthi attacks on Saudi Arabia, Red Sea shipping,
+      Yemen government statements) are syndicated across the press and are among the most-cited English-language
+      Yemen reporting.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 74980000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/reuters.com/overview/
+    - metric: youtube_subscribers
+      value: 4330000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/reuters
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Wikipedia reports about 2,500 journalists in 165 countries and over 105 million monthly readers as of
+        December 2024 (self-reported); Reuters copy appears verbatim in other outlets' live blogs (for example the
+        Times of Israel, 2 October 2026).
+      urls:
+      - https://en.wikipedia.org/wiki/Reuters
+      - https://www.timesofisrael.com/liveblog_entry/houthis-say-saudis-launched-94-strikes-in-areas-in-yemen-under-their-control-in-past-24-hours/
+    yemen_coverage:
+      frequency: weekly
+      evidence: Dated Reuters wire items on Yemen include 'Houthis say they attacked Riyadh and Aramco facilities
+        in Yanbu' (24 September 2026, reporting by Enas Alashray and Yomna Ehab) and the 2 October 2026 item on
+        Saudi strikes carried by the Times of Israel as Reuters. Actual output during the 2026 fighting is probably
+        higher; reuters.com was blocked to the fetch tool so its own section could not be counted.
+      urls:
+      - https://www.internazionale.it/ultime-notizie-reuters/2026/09/24/houthis-say-they-attacked-riyadh-and-aramco-facilities-in-yanbu
+      - https://www.timesofisrael.com/liveblog_entry/houthis-say-saudis-launched-94-strikes-in-areas-in-yemen-under-their-control-in-past-24-hours/
+    institutional_importance:
+      level: none
+      note: Wire service, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: independent
+    classification_confidence: 0.7
+    classification_evidence: 'Checked: Wikipedia says Reuters is a division of Thomson Reuters, controlled by the
+      Thomson family through Woodbridge, and is bound by the Reuters Trust Principles for independence; there is
+      no state ownership. No watchdog or academic source documenting a Yemen camp or a foreign-state alignment was
+      found, so none is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Reuters
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Thomson Reuters Corporation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Reuters
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or another feed)
+    is verified. Traffic is the Semrush figure for the whole reuters.com domain. Semrush page title read 'August
+    2026'. reuters.com and apnews.com blocked the fetch tool, so Yemen frequency rests on syndicated copies. Reuters
+    discontinued its public RSS feeds in 2020; no public feed found. Coverage reachable via Google News / GDELT.
+- id: associated-press
+  name: Associated Press
+  name_native: أسوشيتد برس
+  category: MEDIA
+  tier: A
+  url: https://apnews.com/
+  country: US
+  region: global
+  languages:
+  - en
+  - es
+  - ar
+  platform: wire
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: youtube
+    handle: associatedpress
+    url: https://www.youtube.com/@associatedpress
+    handle_evidence: https://socialblade.com/youtube/handle/associatedpress
+    followers: 4650000
+    followers_as_of: 2026-10
+    followers_source: https://socialblade.com/youtube/handle/associatedpress
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC52X5wxOL_s5yw0dQk7NtgA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UC52X5wxOL_s5yw0dQk7NtgA shown on https://socialblade.com/youtube/handle/associatedpress
+      (seen 2026-10-05); documented YouTube channel-feed pattern.
+  selection:
+    reason: US-based global wire cooperative with a long-standing Yemen bureau tradition; its Yemen dispatches (Houthi
+      attacks on Saudi Arabia and shipping, front-line fighting) are syndicated by hundreds of outlets.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 71980000
+      as_of: 2026-07
+      source_url: https://www.semrush.com/website/apnews.com/overview/
+    - metric: youtube_subscribers
+      value: 4650000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/associatedpress
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Wikipedia describes a not-for-profit cooperative with 235 bureaus in 94 countries publishing in English,
+        Spanish and Arabic; its copy is carried verbatim by regional papers (for example the Nashua Telegraph, 21
+        July 2026).
+      urls:
+      - https://en.wikipedia.org/wiki/Associated_Press
+      - https://www.nashuatelegraph.com/news/business/2026/07/21/yemens-iranian-backed-houthis-say-they-will-block-saudi-shipping-at-red-sea-gateway/
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Dated AP item: ''Yemen''s Iranian-backed Houthis say they will block Saudi shipping at Red Sea
+        gateway'' (21 July 2026, Associated Press, via Nashua Telegraph); further AP Yemen stories on Houthi attacks
+        on government forces circulated through syndication, and AP keeps a Yemen hub page (apnews.com/hub/yemen,
+        blocked to our fetch tool). Weekly is conservative.'
+      urls:
+      - https://www.nashuatelegraph.com/news/business/2026/07/21/yemens-iranian-backed-houthis-say-they-will-block-saudi-shipping-at-red-sea-gateway/
+      - https://apnews.com/hub/yemen
+    institutional_importance:
+      level: none
+      note: Wire service, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: independent
+    classification_confidence: 0.7
+    classification_evidence: 'Checked: Wikipedia describes AP as a not-for-profit cooperative owned by member newspapers
+      and broadcasters, with no state ownership. No watchdog or academic source documenting a Yemen camp or foreign-state
+      alignment was found, so none is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Associated_Press
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Not-for-profit cooperative owned by US member news organisations.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Associated_Press
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or another feed)
+    is verified. Traffic is the Semrush figure for the whole apnews.com domain; the page title read 'July 2026'.
+    apnews.com was blocked to the fetch tool. The old registry URL for this id was https://apnews.com/hub/yemen
+    (a Yemen hub page, not a feed). AP publishes no official public RSS; a Yemen hub page exists at apnews.com/hub/yemen.
+    No public RSS feed found; recorded for reference.
+- id: afp
+  name: Agence France-Presse
+  name_native: وكالة الصحافة الفرنسية
+  category: MEDIA
+  tier: A
+  url: https://www.afp.com/en
+  country: FR
+  region: global
+  languages:
+  - en
+  - fr
+  - ar
+  platform: wire
+  source_type: wire
+  source_group: international_wire
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: youtube
+    handle: afp
+    url: https://www.youtube.com/@afp
+    handle_evidence: https://socialblade.com/youtube/handle/afp
+    followers: 2670000
+    followers_as_of: 2026-10
+    followers_source: https://socialblade.com/youtube/handle/afp
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC86dbj-lbDks_hZ5gRKL49Q
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UC86dbj-lbDks_hZ5gRKL49Q ('AFP News Agency', @afp) shown on https://socialblade.com/youtube/handle/afp
+      (seen 2026-10-05); documented YouTube channel-feed pattern.
+  selection:
+    reason: Global wire with a Middle East and North Africa hub and a full Arabic service; its Yemen dispatches
+      (Saudi strikes, Houthi-run health ministry casualty counts, Taiz fighting) are re-used across Arabic, French
+      and English media.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 2670000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/afp
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Wikipedia reports about 2,400 staff in 260 cities and 150 countries, publishing in French, English,
+        Arabic, Portuguese, Spanish and German; AFP copy is carried by L'Orient Today and CP24 (27 September 2026).
+      urls:
+      - https://en.wikipedia.org/wiki/Agence_France-Presse
+      - https://today.lorientlejour.com/article/1548803/seven-people-killed-in-strike-on-market-in-yemen-houthi-run-health-ministry-says.html
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'Two AFP Yemen items dated 27 September 2026 were found in syndication: ''Seven people killed in
+        strike on market in Yemen, Houthi-run health ministry says'' (L''Orient Today) and ''Houthis say Saudi strikes
+        on Yemen''s Taiz leave dozens of casualties'' (CP24); L''Orient Today also ran other Houthi-Saudi items
+        in the same weeks (agency credit not checked). afp.com itself is a corporate site, so frequency rests on
+        syndicated copies.'
+      urls:
+      - https://today.lorientlejour.com/article/1548803/seven-people-killed-in-strike-on-market-in-yemen-houthi-run-health-ministry-says.html
+      - https://www.cp24.com/news/world/2026/09/27/houthis-say-saudi-strikes-on-yemens-taiz-leave-dozens-of-casualties/
+    institutional_importance:
+      level: none
+      note: Wire service, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: mixed
+    classification_confidence: 0.6
+    classification_evidence: 'Checked Wikipedia: AFP is a private organisation with special status under a 1957
+      law guaranteeing independence from the French government; the state sits on the board through three appointees
+      and funds about one third of revenue (EUR 113.3 million of EUR 321.9 million in 2022) as compensation for
+      general-interest missions plus commercial subscriptions. That is a hybrid funding model, not state ownership,
+      so no foreign-state alignment is assigned; no source documenting a Yemen camp was found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Agence_France-Presse
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Autonomous public entity under French statute (1957 law).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Agence_France-Presse
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or another feed)
+    is verified. Only YouTube reach could be cited (no usable web-traffic page for afp.com, which is a corporate
+    site). afp.com and the AFP Arabic service pages were not fetchable in this pass. AFP sells its wire to subscribers;
+    no public RSS found. No public RSS feed found; recorded for reference.
+- id: france24-arabic
+  name: France 24 Arabic
+  name_native: فرانس 24
+  category: MEDIA
+  tier: A
+  url: https://www.france24.com/ar/
+  country: FR
+  region: europe
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: medium
+  accounts:
+  - platform: youtube
+    handle: france24_ar
+    url: https://www.youtube.com/@france24_ar
+    handle_evidence: https://socialblade.com/youtube/handle/france24_ar/achievements
+    followers: 4550000
+    followers_as_of: 2026-10
+    followers_source: https://socialblade.com/youtube/handle/france24_ar/achievements
+  feeds:
+  - url: https://www.france24.com/ar/rss
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: robots.txt blocked the fetch tool, so not verified.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCdTyuXgmJkG_O8_75eqej-w
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCdTyuXgmJkG_O8_75eqej-w (channel title 'France 24 Arabic', @france24_ar) shown
+      on https://socialblade.com/youtube/handle/france24_ar/achievements (seen 2026-10-05); documented YouTube channel-feed
+      pattern.
+  selection:
+    reason: The Arabic service of the French state international broadcaster, reaching Yemen's neighbourhood and
+      diaspora, with regular dated reporting on the 2026 Houthi-Saudi escalation and the Taiz front.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 4550000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/france24_ar/achievements
+    - metric: monthly_visits
+      value: 7910000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/france24.com/overview/
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Launched in April 2007 for the Maghreb and Middle East (Wikipedia). The web-traffic figure is for the
+        whole france24.com domain (all languages, France rank 533), not the Arabic site alone.
+      urls:
+      - https://en.wikipedia.org/wiki/France_24
+    yemen_coverage:
+      frequency: weekly
+      evidence: 'At least ten dated Yemen items between 5 September and 4 October 2026 in one search (dates in the
+        URLs: 20260905, 20260906, 20260907, 20260910, 20260917, 20260919, 20260927, 20260928, 20261002, 20261004),
+        including a 4 October piece on Houthis cutting a main road to Taiz and a 2 October video on Taiz.'
+      urls:
+      - https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261004-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D9%82%D8%B7%D8%B9%D9%88%D9%86-%D8%B7%D8%B1%D9%8A%D9%82%D8%A7-%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A7-%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%AA%D8%B9%D8%B2%D9%91-%D9%81%D9%8A-%D8%AC%D9%86%D9%88%D8%A8-%D8%BA%D8%B1%D8%A8-%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D9%88%D9%8A%D8%AD%D8%A7%D8%B5%D8%B1%D9%88%D9%86%D9%87%D8%A7
+      - https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20260910-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D8%AA%D9%87%D9%85%D9%88%D9%86-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A8%D8%B4%D9%86-%D9%86%D8%AD%D9%88-40-%D8%BA%D8%A7%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D8%B6%D9%8A%D8%A9
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: eu
+    domestic_political_orientation: public_service
+    classification_confidence: 0.6
+    classification_evidence: 'Wikipedia: France 24 is entirely owned by the French government through the state
+      holding company France Medias Monde (full control by 2008); the same page notes critics who see a ''French
+      vision'' mandate and also editorial disputes with African governments. State ownership by an EU member state
+      is recorded as eu alignment with moderate confidence because the broadcaster operates under editorial-independence
+      rules; no source on a Yemen camp was found (Wikipedia has no Yemen material), so none is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_24
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: France Médias Monde, 100% owned by the French State; funded by state subsidies and, since 2022,
+      VAT revenue.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/France_24
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed, so active false until the YouTube feed (or a site feed)
+    is verified. No France 24 Arabic RSS URL was seen in this pass. YouTube count from Social Blade as displayed
+    2026-10-05. The france24.com/ar homepage could not be fetched (permission not granted), so social links beyond
+    YouTube were not evidenced. yemen_coverage is an estimate, not measured. No working feed found on 2026-10-02;
+    kept for the record.
+- id: rt-arabic
+  name: RT Arabic
+  name_native: روسيا اليوم
+  category: MEDIA
+  tier: A
+  url: https://arabic.rt.com/
+  country: RU
+  region: russia
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: international_arabic_service
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts: []
+  feeds:
+  - url: https://arabic.rt.com/rss/
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Returned HTTP 403 to the fetch tool, so not verified.
+  selection:
+    reason: Russian state-funded Arabic channel with a steady stream of reports on the 2026 Houthi-Saudi escalation,
+      US contacts with the Houthis and Saudi military preparations.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 701700
+      as_of: 2026-10
+      source_url: https://qoruz.com/RTarabic/youtube
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: medium
+      note: Broadcasting since May 2007 from Moscow (Wikipedia and the qoruz channel page); the RT network has faced
+        bans since 2022 (EU, Canada, YouTube, Meta), which limits its Western reach but not its Arabic-language
+        reach.
+      urls:
+      - https://en.wikipedia.org/wiki/RT_(TV_network)
+    yemen_coverage:
+      frequency: weekly
+      evidence: Nine RT Arabic items on the Houthi-Saudi escalation appeared in one search, with article numbers
+        1829904 to 1837493 (for example the item on Houthi claims against Riyadh and Aramco in Yanbu, number 1836635,
+        which matches the 24 September 2026 events reported by Reuters). Individual dates were not confirmed because
+        the long article URLs could not be fetched.
+      urls:
+      - https://arabic.rt.com/middle_east/1836635-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D8%B9%D9%84%D9%86%D9%88%D9%86-%D9%82%D8%B5%D9%81-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%88%D8%B4%D8%B1%D9%83%D8%A9-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D9%8A%D9%86%D8%A8%D8%B9/
+      - https://arabic.rt.com/middle_east/1835029-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D9%87%D8%AF%D8%AF%D9%88%D9%86-%D8%A8%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D8%B7%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: russia
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'Wikipedia: RT is state-controlled, owned by the non-profit ANO TV-Novosti founded
+      by the state news agency RIA Novosti, and funded through the Russian Federal Agency for Press and Mass Media
+      (82 billion rubles allocated for 2022-2024). Yemen lean checked: Wikipedia has no Yemen material and no watchdog
+      or academic study of RT Arabic''s Yemen framing was found, so no Yemen camp is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_(TV_network)
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Parent company TV-Novosti, an autonomous non-commercial organisation owned by the Russian Federation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/RT_Arabic
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Existing id; old registry had no verified feed, so active false until a feed is found and verified. The
+    official YouTube handle and channel id were not evidenced (the qoruz page gives only the name and 701.7K subscribers,
+    shown as 'as of October 2026'), and no RT Arabic RSS or Telegram link was seen, so no account or feed is listed.
+    arabic.rt.com homepage required permission and could not be fetched. yemen_coverage is an estimate, not measured.
+    No working feed found on 2026-10-02; kept for the record.
+- id: middle-east-eye
+  name: Middle East Eye
+  name_native: ميدل إيست آي
+  category: MEDIA
+  tier: A
+  url: https://www.middleeasteye.net/
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: website
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: MiddleEastEye
+    url: https://x.com/MiddleEastEye
+    handle_evidence: https://www.middleeasteye.net/
+  - platform: youtube
+    handle: MiddleEastEye
+    url: https://www.youtube.com/channel/UCR0fZh5SBxxMNYdg0VzRFkg
+    handle_evidence: https://www.middleeasteye.net/
+  - platform: facebook
+    handle: MiddleEastEye
+    url: https://www.facebook.com/MiddleEastEye
+    handle_evidence: https://www.middleeasteye.net/
+  - platform: instagram
+    handle: middleeasteye
+    url: https://www.instagram.com/middleeasteye
+    handle_evidence: https://www.middleeasteye.net/
+  - platform: tiktok
+    handle: middleeasteye
+    url: https://www.tiktok.com/@middleeasteye
+    handle_evidence: https://www.middleeasteye.net/
+  feeds:
+  - url: https://www.middleeasteye.net/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-01 (incl. Sanaa item).
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCR0fZh5SBxxMNYdg0VzRFkg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCR0fZh5SBxxMNYdg0VzRFkg is linked from the middleeasteye.net homepage (seen 2026-10-05);
+      documented YouTube channel-feed pattern. The site has Yemen pages (middleeasteye.net/countries/yemen and /topics/yemen-war)
+      but no RSS link was found on the homepage; the old registry's verified feed carries over.
+  selection:
+    reason: London-based English-language news site with a dedicated Yemen country page and a Yemen war topic, running
+      live-blog updates and reporting on the 2026 Saudi-Houthi fighting, Taiz and displacement.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 1710000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/middleeasteye.net/overview/
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Wikipedia says it was blocked in the UAE in 2016 after its Yemen reporting, in Egypt in 2019 and in
+        Jordan in 2025, and that it has published reporting on the UAE's role in the Yemen war; Jamal Khashoggi
+        wrote for it.
+      urls:
+      - https://en.wikipedia.org/wiki/Middle_East_Eye
+    yemen_coverage:
+      frequency: weekly
+      evidence: Yemen war topic page and country page; one search returned nine recent items including live-blog
+        updates ('Houthis say Saudi Arabia launched 28 strikes in Yemen over 24 hours', 'Battle in Yemen's Taiz
+        kills scores of combatants') and features on Pakistani arms deliveries, UK refuelling support and displacement.
+        Individual dates were not extractable.
+      urls:
+      - https://www.middleeasteye.net/topics/yemen-war
+      - https://www.middleeasteye.net/countries/yemen
+      - https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-saudi-arabia-launched-28-strikes-yemen-over-24-hours
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked Wikipedia: formally owned by M.E.E. Limited with Jamal Bessasso as sole director
+      holding over 75% of shares; the Saudi, UAE, Egyptian and Bahraini governments have alleged covert Qatari funding,
+      which MEE denies, and no source proving it was found, so no regional alignment is assigned and the domestic
+      label is left as unknown. Yemen lean checked: Wikipedia reports critical coverage of the UAE''s role in the
+      Yemen war and a UAE block after it; no study documenting backing of a specific Yemeni camp was found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Eye
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: M.E.E. Limited, formally owned by Jamal Bessasso; Saudi Arabia/UAE/Egypt/Bahrain alleged Qatari
+      funding (2017), which MEE denies.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Middle_East_Eye
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Existing id with 1 verified feed in the old registry (carried over). Social links are those listed on the
+    middleeasteye.net homepage on 2026-10-05; no follower counts were retrieved. Semrush page read August 2026.
+    Funding allegations are contested; orientation left unknown pending stronger evidence.
+- id: al-monitor
+  name: Al-Monitor
+  category: MEDIA
+  tier: A
+  url: https://www.al-monitor.com/
+  country: US
+  region: north_america
+  languages:
+  - en
+  platform: website
+  source_type: news_website
+  source_group: international_newspaper
+  geographic_focus:
+  - regional_mena
+  yemen_coverage: high
+  accounts: []
+  feeds:
+  - url: https://www.al-monitor.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: All-news feed; items dated 2026-10-02 (incl. WFP Yemen item).
+  selection:
+    reason: Washington-based Middle East news and analysis site with a Yemen country page that carried about ten
+      Yemen stories between September and 5 October 2026 on the Saudi-Houthi escalation, the Yemeni government offensive
+      and regional diplomacy.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 363980
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/al-monitor.com/overview/
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Wikipedia says it was founded in 2012 by Jamal Daniel and quotes the International Press Institute praising
+        its reporting and analysis; it is widely read by policy audiences in Washington.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Monitor
+    yemen_coverage:
+      frequency: weekly
+      evidence: The Yemen page (al-monitor.com/yemen) listed ten stories dated September to 5 October 2026, e.g.
+        'Saudi Arabia accuses Houthis of drone attack in Medina' (5 October 2026), 'Yemeni government launches offensive
+        to seize all areas from Iran-backed Houthis' (October 2026) and 'Yemen separatists urge US not to let Saudi
+        Arabia call the shots' (September 2026).
+      urls:
+      - https://www.al-monitor.com/yemen
+      - https://www.al-monitor.com/originals/2026/10/yemeni-government-launches-offensive-seize-all-areas-iran-backed-houthis
+      - https://www.al-monitor.com/originals/2026/09/yemen-separatists-urge-us-not-let-saudi-arabia-call-shots
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: independent
+    classification_confidence: 0.45
+    classification_evidence: 'Checked Wikipedia: founded by Arab-American businessman Jamal Daniel, no state ownership
+      recorded, and the International Press Institute describes it as vigorously independent; the page does not
+      give a current ownership structure or discuss Yemen. No watchdog or academic source documenting a Yemen camp
+      or foreign-state alignment was found, so none is assigned.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Monitor
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Founded 2012 by Jamal Daniel; operational management partnership with North Base Media since 2018.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Monitor
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Existing id with 1 verified feed in the old registry (carried over). The homepage fetch showed no social-account
+    links, so no accounts are listed. Semrush page read August 2026.
+- id: times-of-israel
+  name: The Times of Israel
+  category: MEDIA
+  tier: A
+  url: https://www.timesofisrael.com/
+  country: IL
+  region: levant
+  languages:
+  - en
+  platform: website
+  source_type: news_website
+  accounts:
+  - platform: x
+    handle: timesofisrael
+    url: https://x.com/timesofisrael
+    handle_evidence: https://www.timesofisrael.com/
+  - platform: facebook
+    handle: timesofisrael
+    url: https://www.facebook.com/timesofisrael
+    handle_evidence: https://www.timesofisrael.com/
+  - platform: instagram
+    handle: timesofisrael
+    url: https://www.instagram.com/timesofisrael/
+    handle_evidence: https://www.timesofisrael.com/
+  - platform: youtube
+    handle: TimesofIsrael
+    url: https://www.youtube.com/user/TimesofIsrael
+    handle_evidence: https://www.timesofisrael.com/
+  feeds: []
+  selection:
+    reason: Israel's leading English-language news site; its live blog carries frequent Yemen entries (Houthi claims
+      against Saudi Arabia and Israel, Saudi strikes), many drawn from wires, and it is a main English-language
+      window on how Israel reads the Houthis.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 11160000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/timesofisrael.com/overview/
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Wikipedia says the site reported 8 million unique monthly users and 75 million monthly pageviews in
+        2025 (self-reported) and entered Press Gazette's top-50 ranking after its November 2023 traffic jump.
+      urls:
+      - https://en.wikipedia.org/wiki/The_Times_of_Israel
+    yemen_coverage:
+      frequency: weekly
+      evidence: Search returned about nine Yemen live-blog entries (Houthi attacks on southern Saudi Arabia, Saudi
+        strikes on Sanaa, a downed Saudi jet claim); the one dated by us is 2 October 2026 ('Houthis say Saudis
+        launched 94 strikes in areas in Yemen under their control in past 24 hours', credited Times of Israel/Reuters).
+      urls:
+      - https://www.timesofisrael.com/liveblog_entry/houthis-say-saudis-launched-94-strikes-in-areas-in-yemen-under-their-control-in-past-24-hours/
+      - https://www.timesofisrael.com/liveblog_entry/yemens-houthis-announce-drone-and-missile-attack-on-base-in-southern-saudi-arabia/
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: center
+    classification_confidence: 0.6
+    classification_evidence: 'Checked Wikipedia: co-founded by David Horovitz and Seth Klarman, describes itself
+      as independent of any party and is described as centrist by multiple sources; no state ownership. The registry''s
+      regional_alignment list has no Israel value, so none_documented is used and Israeli state or government positions
+      are not implied. No source documenting a Yemen camp was found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Times_of_Israel
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: New id (not in old registry). No RSS or YouTube channel id was seen in this pass, so no feed is listed
+    and active is false until one is added and verified. Social links are those on the timesofisrael.com homepage
+    on 2026-10-05; no follower counts. Semrush extract gave no month label for this page (others fetched the same
+    day read August 2026). The site also publishes Hebrew, Arabic, French and Persian editions.
+- id: jerusalem-post
+  name: The Jerusalem Post
+  name_native: ג'רוזלם פוסט
+  category: MEDIA
+  tier: A
+  url: https://www.jpost.com/
+  country: IL
+  region: levant
+  languages:
+  - en
+  platform: website
+  source_type: newspaper
+  accounts:
+  - platform: x
+    handle: Jerusalem_Post
+    url: https://x.com/Jerusalem_Post
+    handle_evidence: https://www.jpost.com/tags/houthi
+  - platform: facebook
+    handle: TheJerusalemPost
+    url: https://www.facebook.com/TheJerusalemPost
+    handle_evidence: https://www.jpost.com/tags/houthi
+  - platform: youtube
+    handle: UCLLLdCANnMAdMyrXdYbSlxg
+    url: https://www.youtube.com/channel/UCLLLdCANnMAdMyrXdYbSlxg
+    handle_evidence: https://www.jpost.com/tags/houthi
+  - platform: telegram
+    handle: The_Jerusalem_Post
+    url: https://t.me/The_Jerusalem_Post
+    handle_evidence: https://www.jpost.com/tags/houthi
+  - platform: instagram
+    handle: thejerusalem_post
+    url: https://www.instagram.com/thejerusalem_post/
+    handle_evidence: https://www.jpost.com/tags/houthi
+  feeds:
+  - url: https://www.jpost.com/rss
+    type: rss
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; RSS link listed on the jpost.com page https://www.jpost.com/tags/houthi (seen 2026-10-05);
+      site-wide index, so Yemen items need keyword filtering. The Houthi tag page itself (https://www.jpost.com/tags/houthi)
+      is a page, not a feed.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCLLLdCANnMAdMyrXdYbSlxg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id UCLLLdCANnMAdMyrXdYbSlxg linked from the jpost.com page https://www.jpost.com/tags/houthi
+      (seen 2026-10-05); documented YouTube channel-feed pattern.
+  - url: https://t.me/s/The_Jerusalem_Post
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; t.me/The_Jerusalem_Post is linked from jpost.com (seen 2026-10-05); documented t.me/s pattern.
+  selection:
+    reason: Israel's long-running English daily, whose Houthi tag carried about ten stories between 22 September
+      and 2 October 2026 on the Saudi-Houthi escalation, Israeli and US policy toward the Houthis and Red Sea security.
+    audience_evidence:
+    - metric: monthly_visits
+      value: 9820000
+      as_of: 2026-08
+      source_url: https://www.semrush.com/website/jpost.com/overview/
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Wikipedia gives weekday print circulation of 90,000 and notes controversies, including a 2020 report
+        that the Israeli Ministry of Strategic Affairs paid it to publish content and fake op-ed personas used for
+        UAE-aligned opinion pieces.
+      urls:
+      - https://en.wikipedia.org/wiki/The_Jerusalem_Post
+    yemen_coverage:
+      frequency: daily
+      evidence: The Houthi tag page listed ten stories dated 22 September to 2 October 2026 (eight distinct days),
+        e.g. 'Yemen's Houthis threaten to strike Saudi bridges in retaliation for airstrikes' (28 September 2026)
+        and 'Saudi coalition says it intercepts Houthi missiles, drones targeting Khamis Mushait, Riyadh' (26 September
+        2026).
+      urls:
+      - https://www.jpost.com/tags/houthi
+    institutional_importance:
+      level: none
+      note: News outlet, selected for audience.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: center_right
+    classification_confidence: 0.55
+    classification_evidence: 'Checked Wikipedia: owned by Eli Azur through Mirkaei Tikshoret; it describes itself
+      as Israeli centre and is widely seen as centre-right in Israel; no state ownership. The registry''s regional_alignment
+      list has no Israel value, so none_documented is used and Israeli state positions are not implied. Yemen lean
+      checked: Wikipedia has no Yemen material and no study of its Yemen framing was found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/The_Jerusalem_Post
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: New id (not in old registry). active false until a feed is verified. Social links are those listed on the
+    jpost.com Houthi tag page on 2026-10-05; no follower counts. Semrush extract gave no month label for this page
+    (others fetched the same day read August 2026). The jpost.com homepage itself required permission to fetch.

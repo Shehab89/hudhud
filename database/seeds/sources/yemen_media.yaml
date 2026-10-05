@@ -1,0 +1,2137 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: yemen-shabab
+  name: Yemen Shabab TV / Yemen Shabab Net
+  name_native: قناة يمن شباب الفضائية / يمن شباب نت
+  category: MEDIA
+  tier: A
+  url: https://www.yemenshabab.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: yemen_independent
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: tvyemenshabab
+    url: https://www.youtube.com/channel/UC0tSaXfJ_YIXshmvFlEsUcg
+    handle_evidence: https://www.yemenshabab.net/
+    followers: 3840000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/handle/tvyemenshabab
+  - platform: x
+    handle: YemenShababNet
+    url: https://x.com/YemenShababNet
+    handle_evidence: https://www.yemenshabab.net/
+  - platform: facebook
+    handle: TvYemenShabab
+    url: https://www.facebook.com/TvYemenShabab
+    handle_evidence: https://www.yemenshabab.net/
+  - platform: instagram
+    handle: tvYemenShabab
+    url: https://www.instagram.com/tvYemenShabab/
+    handle_evidence: https://www.yemenshabab.net/
+  - platform: telegram
+    handle: YemenShababNet
+    url: https://t.me/YemenShababNet
+    handle_evidence: https://www.yemenshabab.net/
+  feeds:
+  - url: https://www.yemenshabab.net/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, ~70 items, newest 2026-10-02.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC0tSaXfJ_YIXshmvFlEsUcg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UC0tSaXfJ_YIXshmvFlEsUcg seen on Social Blade (handle tvyemenshabab) and vidIQ;
+      the channel is linked from yemenshabab.net (youtube.com/user/yemenshabab).
+  - url: https://t.me/s/YemenShababNet
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram link telegram.me/YemenShababNet is in the yemenshabab.net header/footer (fetched
+      2026-10-04). Public status not checked.
+  selection:
+    reason: Satellite news channel with the second-largest YouTube audience of any Yemeni channel (3.84M subscribers,
+      Social Blade Yemen rank 2) and daily Yemen news output; website active with same-day headlines on 2026-10-04.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 3840000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/lists/top/100/subscribers/all/YE
+    - metric: youtube_subscribers
+      value: 3847327
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UC0tSaXfJ_YIXshmvFlEsUcg
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Listed among Yemen's main satellite channels by Wikipedia and Media Landscapes; on air (Eutelsat 7 West
+        A per LyngSat, Oct 2026). 1.76 billion total YouTube views (Social Blade).
+      urls:
+      - https://en.wikipedia.org/wiki/Television_in_Yemen
+      - https://www.lyngsat.com/freetv/Yemen.html
+      - https://socialblade.com/youtube/handle/tvyemenshabab
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage shows Yemen headlines dated 2026-10-04; the YouTube channel uploads 12-25 videos a day
+        (Social Blade, late Sep - early Oct 2026).
+      urls:
+      - https://www.yemenshabab.net/
+      - https://socialblade.com/youtube/handle/tvyemenshabab
+    institutional_importance:
+      level: none
+      note: Private channel.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: 'Islah / Muslim Brotherhood-leaning per New Lines (2024); Wikipedia: associated with anti-Houthi
+      currents aligned with the recognised government. Self-describes as independent.'
+    regional_alignment: qatar
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.5
+    classification_evidence: New Lines Magazine (2024-05-23) lists Belqees TV, Yemen Shabab TV and Al-Mahriah as
+      'pro-Brotherhood TV channels broadcasting from Istanbul (heavily funded by Qatar and legally licensed by Turkish
+      authorities)'. Wikipedia (Television in Yemen) says it 'became associated with anti-Houthi political currents,
+      particularly those aligned with the internationally recognized government' and moved operations to Turkey
+      and Qatar. No ownership record found; the site calls itself 'an independent news website'. Qatar funding rests
+      on one press source (confidence about 0.4).
+    evidence_urls:
+    - https://newlinesmag.com/reportage/in-exile-in-turkey-yemens-muslim-brothers-cling-to-caliphate-dreams/
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Website of the Yemen Shabab (Yemen Youth) TV channel, which operates from Turkey and Qatar (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Same id as the old registry's 'Yemen Shabab Net' (yemenshabab.net), which is the channel's own website
+    (channel and site e-mails both listed there); the old verified site feed carries over. operating_base outside_yemen
+    from Wikipedia (operations moved to Turkey and Qatar); exact 2026 studio city not confirmed. Unlike Belqees,
+    no report found of a 2025 closure in Turkey; LyngSat (updated 2026-10-03) still lists it on Eutelsat 7 West
+    A. TV and website share the brand; registered here as a news website because the feed is the website's.
+- id: al-mahriah-tv
+  name: Al-Mahriah TV
+  name_native: قناة المهرية الفضائية
+  category: MEDIA
+  tier: A
+  url: https://www.youtube.com/channel/UCuP3I0KTQqLR0z9GT6mls9w
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  operating_base: outside_yemen
+  accounts:
+  - platform: youtube
+    handle: almahriahtv
+    url: https://www.youtube.com/channel/UCuP3I0KTQqLR0z9GT6mls9w
+    handle_evidence: https://socialblade.com/youtube/handle/almahriahtv
+    followers: 3590000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/handle/almahriahtv
+  - platform: youtube
+    handle: almahriahtvnews
+    url: https://www.youtube.com/@almahriahtvnews
+    handle_evidence: https://socialblade.com/youtube/lists/top/100/subscribers/all/YE
+    followers: 741000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/lists/top/100/subscribers/all/YE
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCuP3I0KTQqLR0z9GT6mls9w
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCuP3I0KTQqLR0z9GT6mls9w seen on Social Blade (handle almahriahtv, 'قناة المهرية
+      الفضائية', created 2019-10-15).
+  selection:
+    reason: Satellite channel with the largest YouTube audience of any Yemeni news channel after Yemen Shabab (3.59M
+      main channel plus 741K news channel); on air in 2026 and the subject of an April 2026 suspension order in
+      Shabwa, a sign of political weight in the south-east.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 3590000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/almahriahtv
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Founded 2019 (YouTube channel created 2019-10-15). On Eutelsat 7 West A (LyngSat, Oct 2026). Shabwa's
+        information office suspended its operations in the governorate in April 2026, condemned by press-freedom
+        groups.
+      urls:
+      - https://www.lyngsat.com/freetv/Yemen.html
+      - https://www.yemenmonitor.com/?p=169520
+      - https://marsadak.org/en/marsadak-condemns-almahriya-tv-suspension-shabwa-yemen-press-freedom/
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen-focused news channel; Social Blade ranks it 4th of all Yemeni YouTube channels, with 59,705
+        videos.
+      urls:
+      - https://socialblade.com/youtube/handle/almahriahtv
+    institutional_importance:
+      level: none
+      note: Private channel.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: Described as Islah-led / pro-Brotherhood; strongly critical of the Saudi and UAE roles, especially
+      in al-Mahra.
+    regional_alignment: qatar
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.45
+    classification_evidence: New Lines Magazine (2024-05-23) names Al-Mahriah with Belqees and Yemen Shabab as 'pro-Brotherhood
+      TV channels broadcasting from Istanbul (heavily funded by Qatar ...)'. South24 (2022-07-27), an STC-aligned
+      outlet and so an adversarial source, says Al-Mahria is 'based in Turkey and led by the Islah leader Mukhtar
+      Al-Rahbi'. No ownership filing or watchdog profile found.
+    evidence_urls:
+    - https://newlinesmag.com/reportage/in-exile-in-turkey-yemens-muslim-brothers-cling-to-caliphate-dreams/
+    - https://south24.net/news/news.php?nid=2830
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: New record (not in old registry). Official website not found (web search budget exhausted before it could
+    be checked), so url is the YouTube channel; add the site and X/Facebook accounts once evidenced. operating_base
+    outside_yemen from New Lines and South24 (Istanbul/Turkey); 2026 location not reconfirmed. Second YouTube channel
+    'قناة المهرية الفضائية ـ أخبار' (handle almahriahtvnews, 741K) seen only in the Social Blade Yemen top-100 list;
+    its channel id was not seen, so no feed is listed for it.
+- id: belqees
+  name: Belqees TV / Belqees Net
+  name_native: قناة بلقيس الفضائية / بلقيس نت
+  category: MEDIA
+  tier: A
+  url: https://www.belqees.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: youtube
+  source_type: tv
+  source_group: yemen_independent
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: belqeestv
+    url: https://www.youtube.com/channel/UCxA_zZwALQMmVMSZyLKC-Nw
+    handle_evidence: https://socialblade.com/youtube/lists/top/100/subscribers/all/YE
+    followers: 1369647
+    followers_as_of: 2026-10-04
+    followers_source: https://socialcounts.org/youtube-live-subscriber-count/UCxA_zZwALQMmVMSZyLKC-Nw
+  - platform: x
+    handle: BelqeesTV
+    url: https://x.com/BelqeesTV
+    handle_evidence: https://socialcounts.org/youtube-live-subscriber-count/UCxA_zZwALQMmVMSZyLKC-Nw
+  - platform: facebook
+    handle: belqees.tv
+    url: https://www.facebook.com/belqees.tv
+    handle_evidence: https://socialcounts.org/youtube-live-subscriber-count/UCxA_zZwALQMmVMSZyLKC-Nw
+  feeds:
+  - url: https://rss.belqees.net/feeds
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'Belqees News', 40 items, newest 2026-09-28.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCxA_zZwALQMmVMSZyLKC-Nw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id seen on SocialCounts and Social Blade ('قناة بلقيس الفضائية Belqees TV'); Social
+      Blade shows daily uploads into October 2026.
+  selection:
+    reason: Major Yemeni news brand (1.37M YouTube subscribers) that kept publishing on digital platforms after
+      its satellite broadcast was suspended on 2025-11-28; YouTube uploads continue daily in Oct 2026.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 1369647
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UCxA_zZwALQMmVMSZyLKC-Nw
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Owned by Nobel laureate Tawakkol Karman; launched 2014-2015; its closure in Istanbul was covered by
+        Türkiye Today and Yemeni media.
+      urls:
+      - https://en.wikipedia.org/wiki/Belqees_TV
+      - https://www.turkiyetoday.com/region/the-sudden-shutdown-of-yemens-belqees-tv-channel-in-istanbul-sparks-controversy-3210760
+      - https://www.yemenmonitor.com/?p=156819
+    yemen_coverage:
+      frequency: daily
+      evidence: Social Blade shows 1-7 YouTube uploads a day through 2026-10-04.
+      urls:
+      - https://socialblade.com/youtube/handle/belqeestv
+    institutional_importance:
+      level: none
+      note: Private outlet.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: Owned by Tawakkol Karman; described as Muslim Brotherhood-affiliated / pro-Brotherhood. Self-describes
+      as independent ('صوت اليمنيين').
+    regional_alignment: qatar
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.4
+    classification_evidence: 'Wikipedia: owned by Tawakkol Karman, ''known for affiliation to the Muslim Brotherhood'',
+      established with help of the Doha Centre for Media Freedom. New Lines (2024-05-23): one of the ''pro-Brotherhood
+      TV channels broadcasting from Istanbul (heavily funded by Qatar ...)'', ''initially funded from Doha''. Low
+      confidence because Karman''s own Islah membership was frozen in 2018 and the channel''s line is critical of
+      the Saudi-led coalition, so it does not map neatly onto Islah''s party line.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Belqees_TV
+    - https://newlinesmag.com/reportage/in-exile-in-turkey-yemens-muslim-brothers-cling-to-caliphate-dreams/
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Founded and owned by Tawakkol Karman; the TV channel moved from Sanaa to Istanbul and ended broadcasting
+      in late Nov 2025 (Wikipedia). The website belqees.net was still publishing in Sept 2026.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Belqees_TV
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry''s Belqees (belqees.net); its verified site feed carries over. Satellite broadcast
+    suspended 2025-11-28 (Yemen Monitor 2025-11-29: ''force majeure''; Türkiye Today 2025-12-04: management says
+    unrelated to Turkish authorities; Wikipedia cites financial problems, Turkish policy and a Moroccan complaint).
+    The statement said work continues on digital platforms. belqees.net could not be fetched from the research environment,
+    so whether the website still updates was not confirmed; the YouTube channel does (Oct 2026). platform set to
+    youtube for that reason. Not on LyngSat''s Yemen list (Oct 2026). Bureau in Istanbul (Wikipedia). TV broadcasting
+    reportedly ended Nov 2025; track the website feed only.'
+- id: suhail-tv
+  name: Suhail TV
+  name_native: قناة سهيل الفضائية
+  category: MEDIA
+  tier: A
+  url: https://suhail.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: SuhailChannel1
+    url: https://www.youtube.com/user/SuhailChannel1
+    handle_evidence: https://suhail.net/
+    followers: 1360000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/user/suhailchannel1
+  - platform: x
+    handle: suhailchannel
+    url: https://x.com/suhailchannel
+    handle_evidence: https://suhail.net/
+  - platform: facebook
+    handle: suhail.channel
+    url: https://www.facebook.com/suhail.channel
+    handle_evidence: https://suhail.net/
+  - platform: instagram
+    handle: suhail.channel
+    url: https://www.instagram.com/suhail.channel/
+    handle_evidence: https://suhail.net/
+  feeds:
+  - url: https://suhail.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but WebFetch received HTML. /rss is 404.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCdwvdJ8RAp4CUORuUUCRzVA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCdwvdJ8RAp4CUORuUUCRzVA read from youtube.com/user/SuhailChannel1 (linked from
+      suhail.net) and Social Blade.
+  selection:
+    reason: Islah's satellite channel since 2009, with 1.36M YouTube subscribers and a website publishing same-day
+      Yemen news on 2026-10-04; the main broadcast voice of the Islah camp.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 1360000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/user/suhailchannel1
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Covered the 2011 uprising as the main opposition channel; raided by the Houthis in 2014 and moved abroad.
+        On Eutelsat 7 West A (LyngSat, Oct 2026).
+      urls:
+      - https://en.wikipedia.org/wiki/Suhail_TV
+      - https://worldcrunch.com/world-affairs/tuning-in-to-suhail-tv-where-airing-yemens-revolution-is-a-risky-affair/
+      - https://www.lyngsat.com/freetv/Yemen.html
+    yemen_coverage:
+      frequency: daily
+      evidence: suhail.net lead headline dated 2026-10-04 (Islah Taiz statement).
+      urls:
+      - https://suhail.net/
+    institutional_importance:
+      level: low
+      note: Party-operated channel; speaks for Islah's media line, not for a state institution.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: Operated by the Yemeni Congregation for Reform (Islah)
+    regional_alignment: unknown
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'Wikipedia: ''affiliated with the Al-Islah party''. Media Landscapes: ''operated by
+      Al-Islah political party''. Wikipedia (Television in Yemen) gives its headquarters as Riyadh.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Suhail_TV
+    - https://medialandscapes.org/country/yemen/media/television
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Founded in Sanaa in 2009; moved abroad after a Houthi raid in 2014 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Suhail_TV
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (suhail.net; its rss.php candidate carries over). operating_base outside_yemen:
+    Wikipedia says it moved abroad after the 2014 Houthi raid; Wikipedia''s Television in Yemen page says headquartered
+    in Riyadh (not independently confirmed for 2026). Regional alignment left unknown: being hosted in Riyadh is
+    not by itself evidence of editorial alignment. Website active (2026-10-02).'
+- id: yemen-today-tv
+  name: Yemen Today TV
+  name_native: قناة اليمن اليوم الفضائية
+  category: MEDIA
+  tier: A
+  url: https://www.youtube.com/channel/UC8__N8LvNWsdJFrxUCRS9Jw
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  operating_base: outside_yemen
+  accounts:
+  - platform: youtube
+    handle: yementdy
+    url: https://www.youtube.com/channel/UC8__N8LvNWsdJFrxUCRS9Jw
+    handle_evidence: https://socialblade.com/youtube/handle/yementdy
+    followers: 459787
+    followers_as_of: 2026-10-04
+    followers_source: https://socialcounts.org/youtube-live-subscriber-count/UC8__N8LvNWsdJFrxUCRS9Jw
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC8__N8LvNWsdJFrxUCRS9Jw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id from Social Blade (handle yementdy, created 2018-03-09) and SocialCounts; Social
+      Blade shows uploads on 2026-10-04.
+  selection:
+    reason: The GPC/Saleh-family satellite channel, relaunched outside Yemen after the Houthis seized its Sanaa
+      headquarters in December 2017; 460K YouTube subscribers and daily uploads in Oct 2026. Main broadcast voice
+      of the anti-Houthi GPC current.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 459787
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UC8__N8LvNWsdJFrxUCRS9Jw
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: high
+      note: Built by Ali Abdullah Saleh's GPC network; its Sanaa HQ was stormed on 2017-12-02, the day Saleh was
+        killed (CPJ). On Nilesat 201 and Eutelsat 7 West A (LyngSat, Oct 2026).
+      urls:
+      - https://cpj.org/2017/12/yemeni-tv-guards-injured-others-taken-hostage-b/amp/
+      - https://en.wikipedia.org/wiki/Television_in_Yemen
+      - https://www.lyngsat.com/freetv/Yemen.html
+    yemen_coverage:
+      frequency: daily
+      evidence: Self-described Yemeni news and general channel; 68,800 YouTube videos, uploading on 2026-10-04 (Social
+        Blade).
+      urls:
+      - https://socialblade.com/youtube/handle/yementdy
+    institutional_importance:
+      level: low
+      note: Faction-linked private channel.
+  alignment:
+    yemen_political_alignment: gpc_plc
+    sub_alignment: Saleh-family faction of the General People's Congress (anti-Houthi since December 2017)
+    regional_alignment: unknown
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.6
+    classification_evidence: 'Wikipedia (Television in Yemen): ''closely associated with Yemen''s General People''s
+      Congress (GPC) party and the political network of the former President Ali Abdullah Saleh''; after 2017 it
+      split into ''one pro Houthi faction from Sana''a and other pro Saleh faction broadcast from Egypt''. CPJ (2017-12):
+      station ''linked to the People''s Congress Party of former President Ali Abdullah Saleh''; Houthi gunmen stormed
+      its Sanaa HQ and detained about 40 staff. The YouTube channel monitored here was created on 2018-03-09, after
+      the split, consistent with the relaunched pro-Saleh version. Which GPC leadership (Ahmed Ali Saleh''s circle
+      or the wing abroad) directs it today is not documented.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    - https://cpj.org/2017/12/yemeni-tv-guards-injured-others-taken-hostage-b/amp/
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: New record. Official website and X/Facebook handles not found before the web-search budget ran out; url
+    is the YouTube channel. operating_base outside_yemen from Wikipedia (Egypt); 2026 base not reconfirmed. gpc_plc
+    is used for the anti-Houthi GPC current; it is a camp label, not a claim of formal PLC control. Do not confuse
+    with the Houthi-held Sanaa remnant of the 2017 split.
+- id: al-joumhouriya-tv
+  name: Al-Joumhouriya TV
+  name_native: قناة الجمهورية
+  category: MEDIA
+  tier: A
+  url: https://www.youtube.com/@aljoumhouriyaTV
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  operating_base: unknown
+  accounts:
+  - platform: youtube
+    handle: aljoumhouriyaTV
+    url: https://www.youtube.com/@aljoumhouriyaTV
+    handle_evidence: https://www.altkia.com/al-joumhouriyah-tv/
+    followers: 412000
+    followers_as_of: 2026-10-04
+    followers_source: https://socialblade.com/youtube/handle/aljoumhouriyatv
+  - platform: x
+    handle: AlJoumhouriyaTV
+    url: https://x.com/aljoumhouriyatv
+    handle_evidence: https://www.altkia.com/al-joumhouriyah-tv/
+  - platform: facebook
+    handle: aljoumhouriyaTV
+    url: https://www.facebook.com/aljoumhouriyaTV/
+    handle_evidence: https://www.altkia.com/al-joumhouriyah-tv/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWogsiH6pvmJlXJ1IvTMxQ
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCUWogsiH6pvmJlXJ1IvTMxQ seen on the channel page youtube.com/@aljoumhouriyaTV
+      and on Social Blade.
+  selection:
+    reason: Yemeni 24-hour news channel on Nilesat with 412K YouTube subscribers (Social Blade Yemen rank 66-68);
+      one of the few TV channels of the anti-Houthi republican camp outside Islah and the GPC.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 412000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/aljoumhouriyatv
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: low
+      note: Recent channel (YouTube channel created 2023-10-28 per Social Blade); on Nilesat 301 (LyngSat, Oct 2026).
+        224 million total YouTube views.
+      urls:
+      - https://socialblade.com/youtube/handle/aljoumhouriyatv
+      - https://www.lyngsat.com/freetv/Yemen.html
+    yemen_coverage:
+      frequency: daily
+      evidence: Describes itself as covering Yemeni news around the clock; 24,682 YouTube videos.
+      urls:
+      - https://www.altkia.com/al-joumhouriyah-tv/
+      - https://socialblade.com/youtube/handle/aljoumhouriyatv
+    institutional_importance:
+      level: none
+      note: No documented institutional owner.
+  alignment:
+    yemen_political_alignment: unknown
+    sub_alignment: ''
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.0
+    classification_evidence: Ownership not documented in any source reached. Al-Mashhad Al-Yemeni (2026-09-14) reports
+      a departing presenter's message addressed to Tareq Saleh, his praise for the 'National Resistance' project,
+      and an editorial rule against criticising any component of the legitimacy (PLC) camp. That points to Tareq
+      Saleh's National Resistance but does not state ownership, so the value stays unknown pending a direct source.
+    evidence_urls:
+    - https://www.almashhad.news/news/494584
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: New record, kept as the most likely National Resistance (Tareq Saleh) broadcast outlet, but the link is
+    NOT yet evidenced. Candidate value national_resistance (confidence about 0.4) once a direct source is found.
+    Handles come from a TV-directory page (altkia.com) and the channel's own YouTube page (which names @aljoumhouriyatv);
+    the X and Facebook pages could not be fetched (robots). Official website not found. Not to be confused with
+    the state daily Al-Jumhuriya (Taiz) or Syrian/Lebanese outlets of the same name.
+- id: al-masirah
+  name: Al-Masirah TV
+  name_native: قناة المسيرة الفضائية
+  category: MEDIA
+  tier: A
+  url: https://www.masirahtv.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: tv
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts: []
+  feeds:
+  - url: https://english.masirahtv.net/rss.php
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0, 50 items, newest 2026-10-02.
+  - url: https://www.masirahtv.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Arabic site returned 403 to WebFetch; path assumed from the English site.
+  selection:
+    reason: The Houthi movement's own satellite channel and the primary outlet of Ansar Allah; routinely quoted
+      by international wires as the source for Houthi claims and strike reports.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: AFP (via eNCA, 2025-09-10) quotes Al-Masirah for casualty reports after Israeli strikes on Houthi military
+        media in Sanaa. FDD (2026-09-03) describes it as the Houthis' primary TV channel, broadcasting on Eutelsat
+        in Arabic and English. LyngSat (Oct 2026) lists Almasirah TV and Almasirah Mubasher on Eutelsat 70B, 7 West
+        A and 8 West B.
+      urls:
+      - https://www.enca.com/news/israel-launches-deadly-strike-yemen-rebel-media-arm
+      - https://www.fdd.org/analysis/2026/09/03/houthi-propaganda-laid-the-groundwork-for-military-escalation/
+      - https://www.lyngsat.com/freetv/Yemen.html
+      - https://en.wikipedia.org/wiki/Al-Masirah
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen-focused 24-hour channel; old registry's English RSS feed (english.masirahtv.net/rss.php) was
+        verified with current items on 2026-10-02.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Masirah
+    institutional_importance:
+      level: medium
+      note: Owned by the Houthi movement; board president Mohammed Abdulsalam is the movement's spokesman and chief
+        negotiator (Wikipedia), so it functions as the movement's media voice.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Owned and operated by the Houthi movement
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: 'Wikipedia: owned by the Houthi movement, board president Mohammed Abdulsalam; Television
+      in Yemen: ''owned and operated by The Houthi Movement ... the group''s primary media outlet''. Academic study
+      (Alowaa 2024, DergiPark): ''affiliated with Ansar Allah (Houthis)''. regional_alignment iran_axis: Wikipedia
+      says it launched in Beirut with backup studios at Hezbollah HQ (ownership/hosting link to the Iran-led axis);
+      confidence for that dimension about 0.6.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masirah
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    - https://dergipark.org.tr/en/pub/aid/article/1491423
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Owned by the Houthi movement; launched Jan 2012 in Beirut; board president Mohammed Abdulsalam,
+      the movement's spokesman. US authorities seized associated domains in June 2021 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masirah
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its verified English RSS feed carries over. No audience figure could be evidenced:
+    its YouTube channel was removed (2015 and later Houthi channel bans in July 2023) and X suspended @MasirahTV
+    in October 2020 (Arab News), so it is absent from the Social Blade Yemen top 100. Current Telegram/Facebook
+    handles were not found with evidence. operating_base kept as outside_yemen because Wikipedia gives Beirut as
+    headquarters, although the channel clearly reports from Sanaa; recheck. operating_base set to outside_yemen
+    because Wikipedia says the channel operates from Beirut (with backup studios at Hezbollah HQ). It also clearly
+    works from Sanaa; recheck whether the main newsroom is now Sanaa (sanaa_controlled). almasirah.net is blocked
+    to the fetcher and almasirah.net.ye has a TLS error; english.almasirah.net.ye redirects to english.masirahtv.net.'
+- id: saba-sanaa
+  name: Saba News Agency (Sanaa)
+  name_native: وكالة الأنباء اليمنية (سبأ) - صنعاء
+  category: MEDIA
+  tier: B
+  url: https://www.saba.ye/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: wire
+  source_type: news_agency
+  source_group: yemen_state_sanaa
+  operating_base: sanaa_controlled
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts: []
+  feeds:
+  - url: https://www.saba.ye/ar/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: 'Not verifiable from the research environment: WebFetch refused saba.ye because its robots.txt returned
+      HTTP 500. Path is a guess to test from the ingest host.'
+  selection:
+    reason: Official news agency of the Sanaa (Ansar Allah) authorities; the wire through which the Supreme Political
+      Council and Sanaa ministries publish statements, quoted by international media as 'Houthi-run Saba'.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: 'State Media Monitor (June 2026): one of ''two parallel wires with competing headlines and figures'',
+        the Houthi version run from Sanaa, multilingual.'
+      urls:
+      - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+      - https://statemediamonitor.com/yemen/
+    yemen_coverage:
+      frequency: daily
+      evidence: National wire of the Sanaa authorities (State Media Monitor).
+      urls:
+      - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    institutional_importance:
+      level: high
+      note: Official voice of the de facto authorities that govern most of Yemen's population.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Supreme Political Council (Sanaa) state agency
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: State Media Monitor classifies the Houthi version of SABA as State-Controlled by the
+      Supreme Political Council / Houthi authorities, run from Sana'a (saba.ye).
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    - https://statemediamonitor.com/yemen/
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: State news agency in Sanaa under Ansar Allah (Houthi) authorities since they seized it in January
+      2015.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry. Tier B (institutional importance): no audience figure found, and saba.ye
+    could not be fetched (robots.txt HTTP 500), so its social accounts could not be read from its own site. State
+    Media Monitor notes Houthi-linked accounts have faced platform action. Do not merge with saba-irg. Outlet confirmed
+    by Wikipedia and State Media Monitor. Site could not be fetched (robots.txt error), so no feed is verified yet.
+    Retry from the ingest host before activating.'
+- id: saba-irg
+  name: Saba News Agency (government)
+  name_native: وكالة الأنباء اليمنية (سبأ)
+  category: MEDIA
+  tier: B
+  url: https://www.sabanew.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  - fr
+  platform: wire
+  source_type: news_agency
+  source_group: yemen_state_irg
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: x
+    handle: sabanew_
+    url: https://x.com/sabanew_
+    handle_evidence: https://www.sabanew.net/
+  - platform: telegram
+    handle: sabanewa
+    url: https://t.me/sabanewa
+    handle_evidence: https://www.sabanew.net/
+    followers: 3320
+    followers_as_of: 2026-10-04
+    followers_source: https://t.me/s/sabanewa
+  feeds:
+  - url: https://www.sabanew.net/rss.php?lang=ar
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'البث العام', 20 items, newest 2026-10-02.
+  - url: https://www.sabanew.net/rss.php?lang=en
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0, 20 items, newest 2026-10-01. Returns the same channel title as the Arabic feed; check language
+      of items on ingest.
+  - url: https://t.me/s/sabanewa
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram channel linked from sabanew.net (fetched 2026-10-04); public preview loaded, but
+      the newest visible post was dated 2026-08-15, so the channel may be updated irregularly. The site RSS feeds
+      already verified in the old registry are the primary source.
+  selection:
+    reason: Official news agency of the internationally recognised government / Presidential Leadership Council;
+      publishes presidential, cabinet and ministry statements daily (headlines dated 2026-10-04).
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 3320
+      as_of: 2026-10
+      source_url: https://t.me/s/sabanewa
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: One of the two rival Saba wires (State Media Monitor, June 2026); the reference source for official
+        PLC/government positions.
+      urls:
+      - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage shows multiple items dated 2026-10-04.
+      urls:
+      - https://www.sabanew.net/
+    institutional_importance:
+      level: high
+      note: Official wire of the internationally recognised government.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: State agency of the Presidential Leadership Council / government
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: State Media Monitor classifies the government version of SABA as State-Controlled by
+      the internationally recognised government, working from government-held and exile/diplomatic locations.
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+    - https://statemediamonitor.com/yemen/
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: State news agency operated by the internationally recognised government (IRG/PLC). Rival of the
+      Sanaa-run Saba at saba.ye since the January 2015 Houthi seizure of the agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saba_News_Agency
+    - https://statemediamonitor.com/2026/06/yemen-news-agency-saba/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its two verified RSS feeds carry over. Tier B: the agency''s own social reach
+    is small (Telegram 3.3K); its weight is institutional. operating_base left unknown as in the old record (Aden
+    vs Riyadh not documented). The Facebook page linked from the site (facebook.com/وكالة-سبأ-للأنباء-219974595116533)
+    is not listed as an account because its handle is a numeric page id; add if wanted. One of two agencies using
+    the Saba name; do not merge with saba-sanaa. operating_base left unknown: State Media Monitor says it runs ''from
+    exile locations'' and RSF reported its Aden office ransacked by separatists, so whether it works from Aden or
+    Riyadh today is not documented. Newsroom: not documented (unknown). Contested and unresolved. RSF (2019-07-03)
+    places the IRG Saba headquarters in Aden and reports it ransacked by separatists. Arabi21 (2021-06-02) reports
+    STC-affiliated gunmen seizing Saba''s Aden HQ to run it as an "Aden News Agency". The About page (pre-2010 text)
+    records a Riyadh office opened in 2004. State Media Monitor (June 2026) says it works from "government-held
+    and exile/diplomatic locations" and that the PLC is based in Aden. Aden has been government-held since January
+    2026 (Fall of Aden), so government_controlled (Aden) is plausible for 2026, but no source confirms the newsroom
+    returned to its Aden building. Candidate value: government_controlled, low confidence (about 0.4). Sources:
+    https://rsf.org/fr/actualites/yemen-lagence-de-presse-gouvernementale-saccagee, https://arabi21.com/story/1362638,
+    https://statemediamonitor.com/2026/06/yemen-news-agency-saba/, https://www.sabanew.net/story/ar/1'
+- id: aic-tv
+  name: Aden Independent Channel (AIC)
+  name_native: قناة عدن المستقلة
+  category: MEDIA
+  tier: A
+  url: https://www.aicaden.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: tv
+  source_type: tv
+  source_group: yemen_actor_affiliated
+  operating_base: unknown
+  geographic_focus:
+  - south
+  - aden
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: UCbFmpx9BeQBf4H6mIYLpZXQ
+    url: https://www.youtube.com/channel/UCbFmpx9BeQBf4H6mIYLpZXQ
+    handle_evidence: https://socialcounts.org/youtube-live-subscriber-count/UCbFmpx9BeQBf4H6mIYLpZXQ
+    followers: 271897
+    followers_as_of: 2026-10-04
+    followers_source: https://socialcounts.org/youtube-live-subscriber-count/UCbFmpx9BeQBf4H6mIYLpZXQ
+  - platform: x
+    handle: aicadentv
+    url: https://x.com/aicadentv
+    handle_evidence: https://www.altkia.com/%D8%AA%D8%B1%D8%AF%D8%AF-%D9%82%D9%86%D8%A7%D8%A9-%D8%B9%D8%AF%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D9%84%D8%A9/
+  - platform: facebook
+    handle: aicadentv
+    url: https://www.facebook.com/aicadentv
+    handle_evidence: https://www.altkia.com/%D8%AA%D8%B1%D8%AF%D8%AF-%D9%82%D9%86%D8%A7%D8%A9-%D8%B9%D8%AF%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D9%84%D8%A9/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCbFmpx9BeQBf4H6mIYLpZXQ
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCbFmpx9BeQBf4H6mIYLpZXQ seen on SocialCounts ('قناة عدن المستقلة AIC HDTV', 'صوت
+      شعب الجنوب').
+  selection:
+    reason: The main broadcast voice of the southern separatist camp (Southern Transitional Council); 272K YouTube
+      subscribers and 78,500 videos. Went off air for nearly two months after the December 2025 to January 2026
+      events and resumed broadcasting from inside Aden in February 2026, so its status is itself part of the story.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 271897
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UCbFmpx9BeQBf4H6mIYLpZXQ
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Described by The New Arab (2026-02-22) as affiliated with the STC; listed on Nilesat and Eutelsat 7
+        West A in Wikipedia/TV directories. 103.7 million total YouTube views.
+      urls:
+      - https://www.newarab.com/news/yemeni-government-forces-close-stc-offices-aden
+      - https://en.wikipedia.org/wiki/Television_in_Yemen
+      - https://socialcounts.org/youtube-live-subscriber-count/UCbFmpx9BeQBf4H6mIYLpZXQ
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen- and south-focused news and talk channel; 78,528 YouTube videos (SocialCounts). Resumed news
+        bulletins from Aden on 2026-02-21 (The New Arab).
+      urls:
+      - https://www.newarab.com/news/yemeni-government-forces-close-stc-offices-aden
+      - https://socialcounts.org/youtube-live-subscriber-count/UCbFmpx9BeQBf4H6mIYLpZXQ
+    institutional_importance:
+      level: low
+      note: Faction-affiliated channel of a movement whose status changed in January 2026.
+  alignment:
+    yemen_political_alignment: stc
+    sub_alignment: Southern separatist camp (STC); the STC announced its dissolution on 2026-01-09 after its leader
+      left for the UAE, but some southern factions rejected it, so the camp label is kept for the channel's editorial
+      line.
+    regional_alignment: unknown
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.7
+    classification_evidence: 'The New Arab (2026-02-22): ''affiliated with the STC''. South24 (2026-05-04, an STC-sympathetic
+      outlet and so a weak source) reports that STC leader Aidarous al-Zubaidi''s recorded address was aired by
+      AIC on 2026-05-03 during a mass rally in Aden. The channel''s own tagline is ''Voice of the Southern People''.
+      Wikipedia (Television in Yemen) lists it as a separate private channel (''Aden Mustakilla AIC TV''), while
+      a TV directory (altkia) describes it as operating under the state broadcasting authority, so legal ownership
+      is not clear. No UAE funding evidence found, so regional_alignment stays unknown.'
+    evidence_urls:
+    - https://www.newarab.com/news/yemeni-government-forces-close-stc-offices-aden
+    - https://south24.net/news/news.php?nid=5469
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Satellite channel on Eutelsat 7 West A; LyngSat lists website aicaden.net.
+    evidence_urls:
+    - https://www.lyngsat.com/tvchannels/ye/AIC-TV.html
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (aicaden.net, no verified feed); the YouTube feed is new. The website aicaden.net
+    was not fetched, so whether it still updates is unconfirmed. Handles from a TV directory (altkia) only; official
+    pages not checked. operating_base left unknown: the channel broadcasts from Aden (The New Arab, Feb 2026), but
+    control of Aden changed in January 2026 (government and Saudi-backed forces), so stc_controlled would be outdated.
+    aicaden.net returned 403 to WebFetch; no feed found. operating_base left unknown rather than stc_controlled:
+    Aden-based, but the STC announced its dissolution on 2026-01-10 and who controls Aden today is not documented
+    here. Newsroom: Aden (pre-2026) (unknown). Unresolved. Bluewin/dpa (Jan 2026) calls AIC "allied with the separatists"
+    and says it filmed the Aden protests, so it was still active in Aden in January 2026. No source found on whether
+    the channel still broadcasts from Aden after the PLC takeover, or moved, for example to the UAE. Arabic and
+    English searches gave nothing on it. Keep unknown. Sources: https://www.bluewin.ch/en/news/international/large-demonstration-in-yemen-due-to-dissolution-of-separatist-organization-li.3043869,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
+- id: aden-al-ghad
+  name: Aden Al-Ghad
+  name_native: صحيفة عدن الغد
+  category: MEDIA
+  tier: A
+  url: https://www.adngad.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: news_website
+  source_group: yemen_independent
+  operating_base: government_controlled
+  geographic_focus:
+  - aden
+  - south
+  yemen_coverage: primary
+  accounts:
+  - platform: telegram
+    handle: adenalghad_news
+    url: https://t.me/adenalghad_news
+    handle_evidence: https://www.adngad.net/
+    followers: 15400
+    followers_as_of: 2026-10-05
+    followers_source: https://t.me/s/adenalghad_news
+  - platform: youtube
+    handle: adengad
+    url: https://www.youtube.com/@adengad
+    handle_evidence: https://www.adngad.net/
+  - platform: x
+    handle: adenalghad
+    url: https://x.com/adenalghad
+    handle_evidence: https://www.adngad.net/
+  - platform: facebook
+    handle: ADENALGHAD.NET
+    url: https://www.facebook.com/ADENALGHAD.NET
+    handle_evidence: https://www.adngad.net/
+  feeds:
+  - url: https://www.adngad.net/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'عدن الغد', 25 items, newest 2026-10-02. adengad.net 302-redirects to adngad.net.
+  - url: https://t.me/s/adenalghad_news
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram handle adenalghad_news linked from adngad.net (fetched 2026-10-05); public preview
+      loaded with posts. The site's own RSS feeds verified in the old registry carry over.
+  selection:
+    reason: Aden-based news site (founded 2007) listed by Fanack among Yemen's main outlets, with same-day Yemen
+      and Aden reporting (site last updated 2026-10-04). Its offices were stormed in early February 2026, an event
+      covered by Al Jazeera and press-freedom groups.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 15400
+      as_of: 2026-10
+      source_url: https://t.me/s/adenalghad_news
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Fanack lists it among Yemen's main outlets (established 2007 by Southern Movement affiliates). The February
+        2026 attack on its office drew calls for investigation from government officials and rights groups (Al Jazeera,
+        2026-02-03). Facebook and YouTube reach not measured.
+      urls:
+      - https://fanack.com/yemen/media-in-yemen/
+      - https://www.aljazeera.net/news/2026/2/3/بعد-اقتحام-عدن-الغد-ما-قدرة-أجهزة
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage shows items updated 2026-10-04; sections on Aden news, politics, reports and interviews.
+      urls:
+      - https://www.adngad.net/
+    institutional_importance:
+      level: none
+      note: Private news company.
+  alignment:
+    yemen_political_alignment: southern_other
+    sub_alignment: Founded by southern-movement affiliates; calls itself independent. Current editorial line not
+      independently assessed. Its office was attacked in February 2026 by armed men whom Tawakkol Karman attributed
+      to the dissolved STC.
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.3
+    classification_evidence: 'Fanack: ''Aden al-Ghad: established 2007 by Southern Movement affiliates in Aden''.
+      The site describes itself as ''the first independent electronic newspaper managed from within Aden''. Journalism
+      Research (2024) lists it as the ''Aden Al-Ghad company'' with a political-news focus and no funding details.
+      No watchdog or academic assessment of its current line was found, so confidence is low.'
+    evidence_urls:
+    - https://fanack.com/yemen/media-in-yemen/
+    - https://www.adngad.net/
+    - https://journalismresearch.org/wp-content/uploads/2024/08/Yemen-Funding-Journalism-1.pdf
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Editor-in-chief Fathi Bin Lazraq (CPJ). Offices were stormed on 2026-02-01 by gunmen CPJ says were
+      affiliated with the dissolved STC.
+    evidence_urls:
+    - https://cpj.org/2026/02/gunmen-storm-yemens-aden-al-ghad-offices-injuring-staff/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its verified feed carries over. Audience is a Telegram count only (the weakest
+    of the three platforms for Yemeni news; Facebook is likely larger but was not measurable). operating_base government_controlled
+    because Aden passed to government and Saudi-backed forces in January 2026 (Al Jazeera 2026-01-07; The New Arab
+    2026-02-22). The editor-in-chief is a public figure in his role; not recorded here. Newsroom: Aden (government_controlled).
+    CPJ (Feb 2026) reports the attack on its Aden headquarters on 2026-02-01 by gunmen linked to the dissolved STC.
+    Marsadak reports a raid and closure of the Aden HQ on 2025-09-27 (STC period), with editor Fathi bin Lazraq
+    detained at Kabota police station. The Aden office was attacked under both authorities. The value reflects post-January-2026
+    government control. Confidence about 0.75. Sources: https://cpj.org/2026/02/gunmen-storm-yemens-aden-al-ghad-offices-injuring-staff/,
+    https://marsadak.org/en/marsadak-condemn-the-raid-and-closure-of-aden-al-ghad-newspaper-and-the-detention-of-its-editor-in-chief/,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
+- id: al-ayyam
+  name: Al-Ayyam
+  name_native: صحيفة الأيام
+  category: MEDIA
+  tier: A
+  url: https://www.alayyam.info/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: newspaper
+  source_group: yemen_independent
+  operating_base: government_controlled
+  geographic_focus:
+  - aden
+  - south
+  yemen_coverage: primary
+  accounts:
+  - platform: telegram
+    handle: AlayyamAden
+    url: https://t.me/AlayyamAden
+    handle_evidence: https://www.alayyam.info/
+    followers: 1490
+    followers_as_of: 2026-10-05
+    followers_source: https://t.me/s/AlayyamAden
+  - platform: youtube
+    handle: UCW2R6JM7V_AibLc9dABVlnA
+    url: https://www.youtube.com/channel/UCW2R6JM7V_AibLc9dABVlnA
+    handle_evidence: https://www.alayyam.info/
+    followers: 720
+    followers_as_of: 2026-10-05
+    followers_source: https://socialcounts.org/youtube-live-subscriber-count/UCW2R6JM7V_AibLc9dABVlnA
+  - platform: x
+    handle: alayyam_info
+    url: https://x.com/alayyam_info
+    handle_evidence: https://www.alayyam.info/
+  - platform: facebook
+    handle: ALAYYAM.NEWS
+    url: https://www.facebook.com/ALAYYAM.NEWS
+    handle_evidence: https://www.alayyam.info/
+  feeds:
+  - url: https://t.me/s/AlayyamAden
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram handle AlayyamAden linked from alayyam.info (fetched 2026-10-05); public preview
+      loaded.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCW2R6JM7V_AibLc9dABVlnA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCW2R6JM7V_AibLc9dABVlnA listed on alayyam.info and SocialCounts ('صحيفة الأيام');
+      small channel (98 videos).
+  selection:
+    reason: Aden's historic independent daily (founded 1958 by the Bashraheel family), most widely read in the south
+      according to Media Landscapes, with the website publishing same-day political coverage on 2026-10-03. Kept
+      for historical weight in southern discourse; current measured reach is small.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 1490
+      as_of: 2026-10
+      source_url: https://t.me/s/AlayyamAden
+    - metric: youtube_subscribers
+      value: 720
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UCW2R6JM7V_AibLc9dABVlnA
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: low
+      historical_importance: high
+      note: Closed by the Sanaa government in May 2009 on accusations of supporting separatism; its offices were
+        attacked (CPJ, RSF); reappeared in May 2014 (Wikipedia). Its Facebook reach was not measurable.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Ayyam_(Yemen)
+      - https://cpj.org/2011/01/a-year-after-siege-al-ayyam-is-sorely-missed-in-ye/
+      - https://medialandscapes.org/country/yemen/media/print
+    yemen_coverage:
+      frequency: daily
+      evidence: Site headline dated 2026-10-03 on Saudi Arabia and the south; sections on Aden, politics and economy.
+      urls:
+      - https://www.alayyam.info/
+    institutional_importance:
+      level: none
+      note: Private family-owned newspaper.
+  alignment:
+    yemen_political_alignment: independent
+    sub_alignment: Southern-focused. The 2009 closure was justified by accusations of supporting separatism. Self-described
+      independent daily.
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.3
+    classification_evidence: 'Wikipedia: owned by the Bashraheel family, described as independent, shut in 2009
+      for ''supporting separatism''. Media Landscapes calls it ''privately owned; pro-reform'', which is ambiguous
+      (it may refer to Islah) and conflicts with the ''independent'' label, so confidence is low. No current-period
+      assessment found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Ayyam_(Yemen)
+    - https://medialandscapes.org/country/yemen/media/print
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Private Aden daily.
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (no verified feed there); the Telegram and YouTube feeds are new candidates.
+    The site did not advertise an RSS feed in the fetched summary; check the page source. Measured reach is the
+    lowest of the selected outlets, so the influence score will be driven by coverage and history, not audience.
+    operating_base government_controlled rests on the January 2026 change of control in Aden. Homepage active (items
+    dated 2026-10-02) but no feed link; /rss, /feed, /rss.xml and /rss.php all returned 404. Candidate for sitemap
+    or HTML scraping. Newsroom: Aden (government_controlled). Media Landscapes: "Based in Aden". Aden was under
+    STC de facto control 2019 to January 2026 and under PLC/government control since 2026-01-07, so the territory
+    label changed. The value reflects 2026. Confidence about 0.7. Sources: https://medialandscapes.org/country/yemen/media/print,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
+- id: mareb-press
+  name: Mareb Press
+  name_native: مأرب برس
+  category: MEDIA
+  tier: A
+  url: https://marebpress.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: news_website
+  source_group: yemen_independent
+  operating_base: unknown
+  geographic_focus:
+  - national
+  - marib
+  yemen_coverage: primary
+  accounts:
+  - platform: telegram
+    handle: marebpress1
+    url: https://t.me/marebpress1
+    handle_evidence: https://marebpress.net/
+    followers: 21500
+    followers_as_of: 2026-10-05
+    followers_source: https://t.me/s/marebpress1
+  - platform: x
+    handle: marebpress_2
+    url: https://x.com/marebpress_2
+    handle_evidence: https://marebpress.net/
+  feeds:
+  - url: https://marebpress.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but returned an HTML page to WebFetch, not XML.
+  - url: https://t.me/s/marebpress1
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram handle marebpress1 linked from marebpress.net (fetched 2026-10-05). The preview's
+      newest visible post looked old (December 2023 per the fetch summary), so the channel may be dormant; the site
+      itself shows current military coverage. The site's RSS link was seen but its URL was not captured.
+  selection:
+    reason: One of Yemen's oldest online newspapers (launched 2006), described by International Media Support as
+      among the serious outlets with significant audiences and by a RAND report as among the highest-quality independent
+      sources on the Houthi insurgency; the site covers the 2026 military escalation.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 21500
+      as_of: 2026-10
+      source_url: https://t.me/s/marebpress1
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: 'Wikipedia cites International Media Support and a RAND Corporation report; blocked by Houthi-run YemenNet
+        on 2015-03-26 and by Iran (Citizen Lab). Fanack: ''one of the most popular online publications in Yemen''.'
+      urls:
+      - https://en.wikipedia.org/wiki/Mareb_Press
+      - https://fanack.com/yemen/media-in-yemen/
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage fetched 2026-10-05 leads with government operations against Houthi forces; copyright 2006-2026.
+      urls:
+      - https://marebpress.net/
+    institutional_importance:
+      level: none
+      note: Private outlet.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Described as loyal to the internationally recognised government and critical of the Houthis;
+      a 2024 funding report lists it among Islah-linked outlets.
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Wikipedia: ''independent media outlet considered loyal to the internationally recognized
+      government and critical of the Houthis''. A Journalism Research summary (2024) groups Marib Press with Islah
+      party outlets; that summary was read second-hand and is not conclusive. No ownership record found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mareb_Press
+    - https://journalismresearch.org/wp-content/uploads/2024/08/Yemen-Funding-Journalism-1.pdf
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Online newspaper launched 2006 in Marib; headquarters moved to Sanaa in 2012 (Wikipedia). Owner
+      not documented.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Mareb_Press
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (no verified feed there). Wikipedia says it launched in Marib in 2006 and
+    moved its HQ to Sanaa in 2012; its current base was not found, hence operating_base unknown. The homepage fetch
+    named the site ''maarebpress.net'' in its summary; marebpress.net is the URL listed in the old registry and
+    on Wikipedia. Homepage active. rss.php may serve XML to a normal client; retest from the ingest host. Newsroom:
+    Marib (government_controlled). GCHR''s defender profile names Mohammed Al-Salihi as editor-in-chief of Marib
+    Press and places him and the outlet in Marib (an arrest warrant was issued against him in Marib on 2023-06-07
+    over reports on judicial corruption there). Wikipedia says it was founded in Marib in 2006 and moved its HQ
+    to Sanaa in 2012. It still says the HQ is in Sanaa, but it also says Houthi-run YemenNet has blocked the site
+    since March 2015, so the Sanaa claim looks out of date. The homepage (fetched 2026-10-02) gives no address,
+    and the about page is blocked by robots.txt. CAVEAT: CPJ (Sept 2025, https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/)
+    names Mohamed al-Salhi as editor-in-chief of a different outlet, Barran Press, also based in Marib. GCHR may
+    have mixed up the outlet names, or al-Salhi may edit both. Searches did not settle this. Confidence about 0.5.
+    Sources: https://www.gc4hr.org/defenders/mohammed-al-salihi/, https://en.wikipedia.org/wiki/Mareb_Press, https://cpj.org/2025/09/yemens-houthi-rebels-block-access-to-independent-news-platform/'
+- id: yemen-monitor
+  name: Yemen Monitor
+  name_native: يمن مونيتور
+  category: MEDIA
+  tier: A
+  url: https://www.yemenmonitor.com/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: news_website
+  source_group: yemen_independent
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts: []
+  feeds:
+  - url: https://www.yemenmonitor.com/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Arabic RSS 2.0, 10 items, newest 2026-10-02.
+  - url: https://www.yemenmonitor.com/en/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0, 10 items, newest 2026-09-27.
+  selection:
+    reason: Yemeni news and analysis site in Arabic and English with a very large archive (about 36,850 local-news
+      articles) and same-day coverage of the 2026 military escalation (headlines of 2026-10-05); with sections on
+      Houthi affairs, rights and freedoms, and analysis.
+    audience_evidence: []
+    influence_evidence:
+      note: No audience figure, ranking or outside citation count could be evidenced in this run (web-search budget
+        ran out). Influence indicators are therefore left unrated rather than guessed. Its pages are cited by other
+        Hudhud records (Belqees closure, Al-Mahriah suspension), which only shows that it reports press-freedom
+        events.
+      urls:
+      - https://www.yemenmonitor.com/
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage fetched 2026-10-05 shows Houthi military, telecom and Red Sea items; sections for local
+        news, analysis, rights and freedoms, international, sports, culture and opinion.
+      urls:
+      - https://www.yemenmonitor.com/
+    institutional_importance:
+      level: none
+      note: Private outlet.
+  alignment:
+    yemen_political_alignment: unknown
+    sub_alignment: ''
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.0
+    classification_evidence: 'Ownership, funding and editorial lean not found: neither the homepage summary nor
+      the sources reached (Media Landscapes, Fanack, Journalism Research 2024) assess it. Left unknown.'
+    evidence_urls: []
+    method: unknown
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Belongs to the Yemen Monitor Network for Press and Media, described as a private Yemeni media institution
+      (self-description).
+    evidence_urls:
+    - https://www.yemenmonitor.com/about
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its two verified feeds carry over. Social accounts exist (the homepage links
+    Facebook and X) but their handles were not captured, so none are listed. No audience figure: add monthly visits
+    or social followers when a source can be read. Kept because it is a long-running, bilingual, Yemen-only outlet
+    with an already verified feed; it is the weakest-evidenced tier A record in this file. Newsroom: not documented
+    (unknown). Unresolved. The English homepage (fetched 2026-10-02) shows no about page, address, publisher or
+    editor, only social links. The guessed Arabic about URL returned 404. English and Arabic searches found no third-party
+    profile (CPJ, RSF, Wikipedia) that gives a location. Sources: https://www.yemenmonitor.com/en/'
+- id: al-masdar-online
+  name: Al-Masdar Online
+  name_native: المصدر أونلاين
+  category: MEDIA
+  tier: A
+  url: https://almasdaronline.com/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: news_website
+  source_group: yemen_independent
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts: []
+  feeds:
+  - url: https://almasdaronline.com/rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: 403 to WebFetch, as were /feed and the homepage. Path untested.
+  selection:
+    reason: One of Yemen's leading independent news websites (print weekly from 2007, daily website from 2009),
+      banned in Houthi-held areas and operating from abroad since the Houthis raided its Sanaa offices in March
+      2015; a well-known Yemeni source for politics and conflict reporting.
+    audience_evidence: []
+    influence_evidence:
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Blocked by the Yemeni authorities in February 2010 (RSF); offices raided and print edition ended on
+        2015-03-26 (Wikipedia, citing press-freedom groups); assessed by BBC Monitoring as largely balanced (Wikipedia).
+        No audience figure could be evidenced: the homepage returned HTTP 403 and web search ran out.'
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Masdar_Online
+      - https://rsf.org/en/al-masdar-online-blocked
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen-only news site; Wikipedia describes it as a leading Yemeni news website. 2026 activity not
+        confirmed because the homepage could not be fetched.
+      urls:
+      - https://en.wikipedia.org/wiki/Al-Masdar_Online
+    institutional_importance:
+      level: none
+      note: Private outlet run by the Al-Masdar Media Foundation.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: Described as supportive of Islah and critical of the Houthis and the STC; self-described independent.
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.4
+    classification_evidence: 'Wikipedia: ''largely balanced coverage'' per BBC Monitoring, though supportive of
+      Islah and critical of the Houthis and the STC. A Journalism Research summary (2024), read second-hand, lists
+      Al-Masdar Online with Islah-linked outlets. No ownership filing found.'
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masdar_Online
+    - https://journalismresearch.org/wp-content/uploads/2024/08/Yemen-Funding-Journalism-1.pdf
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Al-Masdar Media Foundation; began as a weekly print paper on 13 Nov 2007, online from 2009 (Wikipedia).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Al-Masdar_Online
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (no verified feed there, so active depends on a new feed being found; the
+    site returned HTTP 403 to the fetch tool, which may mean bot protection). No accounts or feeds listed because
+    none were evidenced. Wikipedia says it operates from outside Yemen. Do not confuse with Al-Masdar News (Syria-focused).
+    The site blocks the research fetcher (403). The domain almasdaronline.info is now an unrelated gambling site;
+    do not use it. Newsroom: not documented (unknown). Partly resolved: the newsroom is not in Sanaa-controlled
+    territory, but the city is not documented. Wikipedia says the Houthis ransacked its Sanaa offices on 2015-03-26
+    and that it "resumed operations in a digital-only format based outside of Houthi-controlled Yemen where it is
+    banned". That wording does not say whether it is in government-held Yemen or abroad. The site returns 403 to
+    the fetcher, so its own about/contact page could not be checked. A search for a named city found nothing. Publisher:
+    Al-Masdar Media Foundation (Wikipedia). Orientation left as is (the existing unknown with dimension reflects
+    mixed evidence). Sources: https://en.wikipedia.org/wiki/Al-Masdar_Online'
+- id: 26-september-irg
+  name: 26 September Net (Yemeni Armed Forces, government)
+  name_native: سبتمبر نت - موقع القوات المسلحة اليمنية
+  category: MEDIA
+  tier: B
+  url: https://www.26sepnews.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: news_website
+  source_group: yemen_state_irg
+  content_type: official_statement
+  operating_base: government_controlled
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: facebook
+    handle: 26sepnews
+    url: https://www.facebook.com/26sepnews
+    handle_evidence: https://www.26sepnews.net/
+  - platform: x
+    handle: septnet26
+    url: https://x.com/septnet26
+    handle_evidence: https://www.26sepnews.net/
+  - platform: youtube
+    handle: 26sepnews
+    url: https://www.youtube.com/@26sepnews
+    handle_evidence: https://www.26sepnews.net/
+  feeds:
+  - url: https://www.26sepnews.net/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Arabic RSS 2.0 'سبتمبر نت', 10 items, newest 2026-10-02.
+  - url: https://en.26sepnews.net/feed/
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: English RSS 2.0 '26 September Net', 10 items, newest 2026-10-01.
+  selection:
+    reason: Official news site and spokesperson outlet of the government's Armed Forces under the Ministry of Defense
+      Moral Guidance Directorate; the channel through which the government side publishes military announcements
+      on the front lines (lead story on 2026-10-04 on coalition support for forces).
+    audience_evidence: []
+    influence_evidence:
+      cited_by_other_media: low
+      note: 'Reach not measured. Its weight is institutional: it carries the military line of the recognised government.'
+      urls:
+      - https://www.26sepnews.net/
+    yemen_coverage:
+      frequency: daily
+      evidence: 'Homepage fetched 2026-10-04: newest story 30 minutes old; sections on armed forces, local reports
+        and interviews.'
+      urls:
+      - https://www.26sepnews.net/
+    institutional_importance:
+      level: medium
+      note: Official voice of the government's armed forces, at a time of renewed ground fighting (Taiz offensive,
+        October 2026).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Ministry of Defense (government) armed forces spokesperson site
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: The site's meta description identifies it as the official website of the Yemen Armed
+      Forces spokesperson, run under the Ministry of Defense Moral Guidance Directorate (own page, fetched 2026-10-04);
+      self-description.
+    evidence_urls:
+    - https://www.26sepnews.net/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Self-described official spokesman website of the Yemeni Armed Forces (IRG). Wikipedia lists 26sepnews.net
+      as the government (PLC) version of 26 September.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its two verified feeds carry over (none repeated here). Tier B and an official
+    source: analyse as an official military statement, not as journalism. It describes itself as a spokesperson
+    site, so a later review may move it to OFFICIAL_GOVERNMENT. Do not merge with 26-september-sanaa, the rival
+    Houthi-run Ministry of Defense site of the same name. Military media. Do not merge with 26-september-sanaa.
+    Newsroom: not documented (unknown). Unresolved. The site calls itself the official spokesman site of the armed
+    forces but gives no address. Wikipedia says only that the IRG "maintains its own separate version", with no
+    city (the Sanaa offices were seized by the Houthis in 2014). The IRG Ministry of Defense and Moral Guidance
+    Department have worked from Marib and Aden, but no source found ties the website''s newsroom to either. Al-Ain
+    (2022, https://al-ain.com/article/brotherhood-yemen-houthis-marib), a UAE outlet hostile to Islah, alleges Islah
+    activists staff the Moral Guidance Department and 26 September. That is an adversarial claim, not used for orientation.
+    Sources: https://www.26sepnews.net/, https://en.wikipedia.org/wiki/26_September_(newspaper)'
+- id: 26-september-sanaa
+  name: 26 September (Sanaa)
+  name_native: صحيفة 26 سبتمبر
+  category: MEDIA
+  tier: B
+  url: https://www.26sep.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: newspaper
+  source_group: yemen_state_sanaa
+  content_type: official_statement
+  operating_base: sanaa_controlled
+  geographic_focus:
+  - national
+  - sanaa
+  yemen_coverage: primary
+  accounts:
+  - platform: telegram
+    handle: yemseb
+    url: https://t.me/yemseb
+    handle_evidence: https://www.26sep.net/
+    followers: 439
+    followers_as_of: 2026-10-05
+    followers_source: https://t.me/s/yemseb
+  - platform: x
+    handle: 26sepnet
+    url: https://x.com/26sepnet
+    handle_evidence: https://www.26sep.net/
+  - platform: facebook
+    handle: 26sepyemen
+    url: https://www.facebook.com/26sepyemen
+    handle_evidence: https://www.26sep.net/
+  feeds:
+  - url: https://www.26sep.net/index.php?format=feed&type=rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS envelope but zero items on 2026-10-02. /rss and /feed return 404.
+  - url: https://t.me/s/yemseb
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram handle yemseb linked from 26sep.net (fetched 2026-10-05); public preview loaded (newest
+      visible post about 26 September), 439 subscribers.
+  selection:
+    reason: Weekly newspaper and news site of the Ministry of Defense in Sanaa, the Houthi-run armed-forces outlet
+      (editor-in-chief listed on the site as Brigadier Yahya Qassem Sareea), with an archive from 2003; carries
+      the military line of the Sanaa authorities (headlines of 2026-10-05 on armed forces repelling 'enemy formations').
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 439
+      as_of: 2026-10
+      source_url: https://t.me/s/yemseb
+    influence_evidence:
+      cited_by_other_media: low
+      note: Media Landscapes lists 26 September as owned by the Ministry of Defence and supporting the Houthis.
+        The reach figure is a small Telegram count only; its weight is institutional.
+      urls:
+      - https://medialandscapes.org/country/yemen/media/print
+      - https://www.26sep.net/
+    yemen_coverage:
+      frequency: daily
+      evidence: Site latest content dated 2026-10-05; sections on local news, military fronts, economy, culture
+        and international affairs.
+      urls:
+      - https://www.26sep.net/
+    institutional_importance:
+      level: medium
+      note: Armed-forces outlet of the de facto authorities in Sanaa.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: Ministry of Defense of the Sanaa authorities
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.8
+    classification_evidence: 'Media Landscapes: owned by the Ministry of Defence, supports the Houthi rebels. The
+      site itself names the Ministry of Defense as publisher and its content frames the government side as ''the
+      enemy''. Sanaa''s Ministry of Defense belongs to the Houthi-led Supreme Political Council administration (the
+      same attribution State Media Monitor uses for the other Sanaa state media).'
+    evidence_urls:
+    - https://medialandscapes.org/country/yemen/media/print
+    - https://www.26sep.net/
+    method: ownership_analysis
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Armed forces newspaper published by the Moral Guidance Department. Since 2014 the Sanaa edition
+      is the official outlet of the Houthi-aligned side (Wikipedia). The site calls itself the Ministry of Defense's
+      official website.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/26_September_(newspaper)
+    - https://medialandscapes.org/country/yemen/media/print
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Same id as the old registry (no verified feed there, hence active false until the Telegram or a site feed
+    is verified). Publishes PDF editions. Tier B: analyse as an official/armed-forces statement. Do not merge with
+    26-september-irg. Military media. One of two outlets named 26 September; the IRG version is 26-september-irg.
+    Homepage active; Joomla feed is empty.'
+- id: yemen-tv-government
+  name: Yemen TV (government)
+  name_native: قناة اليمن الفضائية (الحكومة)
+  category: MEDIA
+  tier: B
+  url: https://yementv.tv/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: tv
+  source_type: tv
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts: []
+  feeds: []
+  selection:
+    reason: State broadcaster of the internationally recognised government and the Presidential Leadership Council,
+      one of two rival 'Yemen TV' operations since the 2015 split; classed State-Controlled by State Media Monitor
+      (June 2026).
+    audience_evidence: []
+    influence_evidence:
+      note: 'No viewership figure exists in the sources reached (State Media Monitor: none published). Weight is
+        institutional.'
+      urls:
+      - https://statemediamonitor.com/2026/06/yemen-tv/
+    yemen_coverage:
+      frequency: daily
+      evidence: 'State Media Monitor: the PLC version operates an official website and live stream; the site itself
+        could not be fetched (robots.txt timeout), so current output is unconfirmed.'
+      urls:
+      - https://statemediamonitor.com/2026/06/yemen-tv/
+    institutional_importance:
+      level: medium
+      note: Broadcast voice of the recognised government; funded by it with no published accounts (State Media Monitor).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: State broadcaster (Presidential Leadership Council / Cabinet)
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: 'State Media Monitor: ''State-Controlled'' for 2022-2026, ''the broadcast voice of
+      its controlling authority''. Wikipedia: since January 2015 the channel split into a pro-government faction
+      (Aden and Saudi Arabia) and a pro-Houthi faction (Sanaa); lists yementv.tv as the official website close to
+      the Cabinet.'
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/yemen-tv/
+    - https://en.wikipedia.org/wiki/Television_in_Yemen
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'New record. active false: no feed or social handle was evidenced, and yementv.tv could not be fetched.
+    The Wikipedia Yemen TV page gives yementv.tv as the pro-government site but does not give separate Sanaa-version
+    URLs, so the Houthi-run Sanaa Yemen TV is not recorded (see excluded list). Wikipedia dates the split to January
+    2015 and the Sanaa version to the Houthi seizure; State Media Monitor says the Sanaa operation is controlled
+    by the Supreme Political Council.'
+- id: al-thawra-sanaa
+  name: Al-Thawra (Sanaa)
+  name_native: صحيفة الثورة
+  category: MEDIA
+  tier: B
+  url: https://althawranews.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: newspaper
+  source_group: yemen_state_sanaa
+  content_type: official_statement
+  operating_base: sanaa_controlled
+  geographic_focus:
+  - national
+  - sanaa
+  yemen_coverage: primary
+  accounts: []
+  feeds: []
+  selection:
+    reason: Yemen's historic state daily (founded 1962), controlled by the Houthi authorities in Sanaa since 2014;
+      State Media Monitor (June 2026) classes it State-Controlled. Kept as the Sanaa government's print-origin voice
+      alongside Saba and Al-Masirah.
+    audience_evidence: []
+    influence_evidence:
+      historical_importance: high
+      note: 'Fanack: state-owned daily founded 1962 with an estimated circulation of 60,000 in 2012, under Houthi
+        control since 2014. No current audience figure.'
+      urls:
+      - https://fanack.com/yemen/media-in-yemen/
+      - https://statemediamonitor.com/yemen/
+    yemen_coverage:
+      frequency: daily
+      evidence: Yemen-only state daily; State Media Monitor lists it among active state media. The website could
+        not be fetched (TLS hostname mismatch on althawranews.net), so current output is unconfirmed.
+      urls:
+      - https://statemediamonitor.com/yemen/
+    institutional_importance:
+      level: medium
+      note: Official daily of the de facto authorities in Sanaa.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: State daily under Houthi (Supreme Political Council) control
+    regional_alignment: unknown
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: 'State Media Monitor lists Al-Thawra as State-Controlled by the Houthi authorities,
+      Sana''a. Fanack: under Houthi control since 2014. Media Landscapes: follows the Houthi political agenda.'
+    evidence_urls:
+    - https://statemediamonitor.com/yemen/
+    - https://fanack.com/yemen/media-in-yemen/
+    - https://medialandscapes.org/country/yemen/media/print
+    method: media_watchdog
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: State daily of Al-Thawra Press and Publishing, run under the Houthi authorities (Supreme Political
+      Council) since 2015 (State Media Monitor).
+    evidence_urls:
+    - https://statemediamonitor.com/2026/06/al-thawra-press-and-publishing/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Same id as the old registry (althawranews.net, no verified feed). active false until a working feed is
+    verified; the site's TLS certificate did not match the hostname when fetched in October 2026. The 60,000 circulation
+    is a 2012 figure and is not used as an audience value. Tier B. URL from State Media Monitor. althawranews.net
+    and althawrah.ye both timed out from the research fetcher, so no feed is verified.
+- id: sanaa-center
+  name: Sana'a Center for Strategic Studies
+  name_native: مركز صنعاء للدراسات الاستراتيجية
+  category: THINK_TANK
+  tier: A
+  url: https://sanaacenter.org/
+  country: YE
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: think_tank
+  source_group: think_tank_research
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: sanaacenter
+    url: https://www.youtube.com/channel/UCw9jgwgCvj4oFT7Rq196qug
+    handle_evidence: https://sanaacenter.org/
+    followers: 26000
+    followers_as_of: 2026-10-05
+    followers_source: https://socialblade.com/youtube/handle/sanaacenter
+  - platform: x
+    handle: sanaacenter
+    url: https://x.com/sanaacenter
+    handle_evidence: https://sanaacenter.org/
+  - platform: facebook
+    handle: sanaacenter
+    url: https://www.facebook.com/sanaacenter
+    handle_evidence: https://sanaacenter.org/
+  - platform: instagram
+    handle: sanaacenterorg
+    url: https://www.instagram.com/sanaacenterorg/
+    handle_evidence: https://sanaacenter.org/
+  - platform: tiktok
+    handle: sanaacenterorg
+    url: https://www.tiktok.com/@sanaacenterorg
+    handle_evidence: https://sanaacenter.org/
+  feeds:
+  - url: https://sanaacenter.org/feed
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: All-content feed; newest item 2026-09-16 (all Yemen-focused).
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCw9jgwgCvj4oFT7Rq196qug
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCw9jgwgCvj4oFT7Rq196qug seen on Social Blade (handle sanaacenter, created 2014-11-29).
+      The site feed verified in the old registry carries over.
+  selection:
+    reason: 'A Yemen-focused think tank that describes itself as independent (founded 2014): publishes The Yemen
+      Review, policy research and analysis in English and Arabic, with new items on 2026-10-02 (Taiz battle, aid
+      workers) and 2026-09-16.'
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 26000
+      as_of: 2026-10
+      source_url: https://socialblade.com/youtube/handle/sanaacenter
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: ACLED lists it as a local data-collection partner and Just Security carries its authors (both seen in
+        search results, not fetched); donors named on its own site include several European governments and the
+        EU. X, Facebook and newsletter reach were not measurable.
+      urls:
+      - https://sanaacenter.org/about-us
+      - https://acleddata.com/research-local-data-collection-partner/sanaa-center-strategic-studies
+      - https://justsecurity.org/author/centersanaa
+    yemen_coverage:
+      frequency: weekly
+      evidence: Homepage lists publications on 2026-10-02 (two items) and 2026-09-16; programmes on political transformation,
+        economy, transitional justice and climate.
+      urls:
+      - https://sanaacenter.org/
+    institutional_importance:
+      level: none
+      note: Non-governmental research centre.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.6
+    classification_evidence: 'Checked: the centre''s own about page (self-described independent; funded by the Netherlands,
+      Germany, UK, Norway, Sweden, Canada, Switzerland, the EU, Open Society Foundations and UN agencies) and the
+      search results listing its funders and partners. No watchdog or academic study assigning it to a Yemeni camp
+      was found. Donor funding is recorded in notes, not treated as regional alignment.'
+    evidence_urls:
+    - https://sanaacenter.org/about-us
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Independent Yemeni think tank.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Sanaa_Center_for_Strategic_Studies
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its verified feed carries over. Leadership per its about page: Maged Al-Madhaji
+    (Chairperson), Yasmeen Al-Eryani and Osamah Al-Rawhani (executive directors); public roles only. Its 2026 base
+    (Sanaa vs abroad) was not documented, so operating_base unknown. The YouTube count is the only audience figure
+    found.'
+- id: south24
+  name: South24 Center for News and Studies
+  name_native: مركز سوث24 للأخبار والدراسات
+  category: THINK_TANK
+  tier: A
+  url: https://south24.net/
+  country: CH
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: think_tank
+  source_group: yemen_local
+  operating_base: outside_yemen
+  geographic_focus:
+  - south
+  - aden
+  yemen_coverage: primary
+  accounts:
+  - platform: youtube
+    handle: UCqnCqHHLQgD70-jiGZ6hT4A
+    url: https://www.youtube.com/channel/UCqnCqHHLQgD70-jiGZ6hT4A
+    handle_evidence: https://south24.net/
+    followers: 3000
+    followers_as_of: 2026-10-05
+    followers_source: https://socialcounts.org/youtube-live-subscriber-count/UCqnCqHHLQgD70-jiGZ6hT4A
+  - platform: x
+    handle: south24_net
+    url: https://x.com/south24_net
+    handle_evidence: https://south24.net/
+  - platform: facebook
+    handle: south24.net
+    url: https://www.facebook.com/south24.net
+    handle_evidence: https://south24.net/
+  - platform: instagram
+    handle: south24center
+    url: https://www.instagram.com/south24center/
+    handle_evidence: https://south24.net/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCqnCqHHLQgD70-jiGZ6hT4A
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id UCqnCqHHLQgD70-jiGZ6hT4A listed on south24.net and SocialCounts ('مركز سوث 24 للأخبار
+      والدراسات'). No site feed URL was captured.
+  selection:
+    reason: News and research centre specialised in southern Yemen, publishing in Arabic and English (latest items
+      on Houthi advances at Bab al-Mandab and conflict maps in 2026); English- and Arabic-language coverage of the
+      southern question, including STC events such as AIC's May 2026 broadcast.
+    audience_evidence:
+    - metric: youtube_subscribers
+      value: 3000
+      as_of: 2026-10
+      source_url: https://socialcounts.org/youtube-live-subscriber-count/UCqnCqHHLQgD70-jiGZ6hT4A
+    influence_evidence:
+      note: Search results returned dozens of South24 articles on southern events in 2026 (visibility, not a citation
+        count). No outside citation data found.
+      urls:
+      - https://south24.net/news/news.php?nid=5469
+    yemen_coverage:
+      frequency: weekly
+      evidence: Homepage summary shows items from the past days and weeks; its news section carries STC and Aden
+        events dated 2026-05-04 and 2026-01.
+      urls:
+      - https://south24.net/
+      - https://south24.net/news/news.php?nid=5469
+    institutional_importance:
+      level: none
+      note: Non-governmental centre.
+  alignment:
+    yemen_political_alignment: unknown
+    sub_alignment: Coverage centres on the southern question and STC events; ownership and funding are not disclosed.
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.0
+    classification_evidence: The site footer gives Switzerland as headquarters and an office in Aden, with no funding
+      or affiliation statement. Its coverage (for example 'Mass Rally in Aden Marks STC Founding Anniversary and
+      Backs Al-Zubaidi', 2026-05-04) is sympathetic to the STC, but no watchdog, academic or press source assigning
+      an alignment was found in this run, so the value stays unknown.
+    evidence_urls:
+    - https://south24.net/news/news.php?nid=5469
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Non-profit registered in Switzerland (Sept 2019, CHE-466.313.874) and licensed in Aden; founder
+      and chairman Ayad Qassem (self-description).
+    evidence_urls:
+    - https://south24.net/news/aboutuse.php
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (no verified feed there; a site RSS feed should be looked for). country CH
+    from the site footer (HQ Switzerland, office in Aden); the old registry had YE. Earlier records in this file
+    (al-mahriah-tv) describe South24 as STC-aligned; that is the earlier run''s reading and is not backed by an
+    outside source here. Self-describes as independent; no third-party assessment found, so orientation left unknown.
+    No feed found (/feed, /rss, /news/rss.php all 404). Articles under /news/news.php?nid= (ar) and /news/newse.php?nid=
+    (en). Newsroom: Switzerland (head office); regional office in Aden since Feb 2022 (outside_yemen). Self-description:
+    registered in Switzerland (Sept 2019) with its head office there, and a regional office in Aden opened February
+    2022 (licensed by the Ministry of Social Affairs and Labor in Aden, no. 560). Where the editorial work is actually
+    done is not stated, and it is likely split between the two. If the registry means the place reporting is produced,
+    government_controlled (Aden, since Jan 2026; STC-controlled before) is an equally defensible reading. Confidence
+    about 0.5. Note: South24 coverage in June 2026 treats the STC as still existing ("never dissolved"). Sources:
+    https://south24.net/news/aboutuse.php'
+- id: abaad-studies
+  name: Abaad Studies and Research Center
+  name_native: مركز أبعاد للدراسات والبحوث
+  category: RESEARCH_ORGANIZATION
+  tier: A
+  url: https://abaadstudies.org/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: research
+  operating_base: unknown
+  accounts:
+  - platform: telegram
+    handle: abaadstudies
+    url: https://t.me/abaadstudies
+    handle_evidence: https://abaadstudies.org/
+    followers: 625
+    followers_as_of: 2026-10-05
+    followers_source: https://t.me/s/abaadstudies
+  - platform: x
+    handle: abaadstudies
+    url: https://x.com/abaadstudies
+    handle_evidence: https://abaadstudies.org/
+  - platform: facebook
+    handle: AbaadStudies
+    url: https://www.facebook.com/AbaadStudies
+    handle_evidence: https://abaadstudies.org/
+  feeds:
+  - url: https://t.me/s/abaadstudies
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram handle abaadstudies linked from abaadstudies.org (fetched 2026-10-05); public preview
+      loaded with September 2026 posts. The site says an RSS feed exists but its URL was not captured.
+  selection:
+    reason: Yemeni research centre (licensed 2010) publishing Arabic and English analysis on the Houthi movement,
+      tribes, the Red Sea and Bab al-Mandab security; output continues through September 2026.
+    audience_evidence:
+    - metric: telegram_subscribers
+      value: 625
+      as_of: 2026-10
+      source_url: https://t.me/s/abaadstudies
+    influence_evidence:
+      note: Measured reach is small and no outside citations were found in this run; kept for sustained Yemen-only
+        output and a licensed Yemeni research identity. Influence indicators are left unrated.
+      urls:
+      - https://abaadstudies.org/
+    yemen_coverage:
+      frequency: weekly
+      evidence: Website and Telegram carry Yemen-conflict analyses dated September 2026.
+      urls:
+      - https://abaadstudies.org/
+      - https://t.me/s/abaadstudies
+    institutional_importance:
+      level: none
+      note: Non-governmental research centre.
+  alignment:
+    yemen_political_alignment: unknown
+    sub_alignment: ''
+    regional_alignment: unknown
+    domestic_political_orientation: unknown
+    classification_confidence: 0.0
+    classification_evidence: 'Own site: non-profit licensed by Yemen''s Ministry of Social Affairs (licence 436,
+      18 October 2010); funding not stated. No outside assessment of its orientation was found.'
+    evidence_urls:
+    - https://abaadstudies.org/
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'New record. Weakest audience evidence of the three research records: kept at the brief''s request on activity
+    alone; drop if a stricter reach floor is applied. Its base within Yemen was not stated beyond ''Republic of
+    Yemen''.'

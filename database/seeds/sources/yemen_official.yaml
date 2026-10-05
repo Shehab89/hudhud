@@ -1,0 +1,828 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: yemen-presidency-plc
+  name: Presidency of the Republic of Yemen / Presidential Leadership Council (office of the chairman)
+  name_native: رئاسة الجمهورية اليمنية - مجلس القيادة الرئاسي
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://presidentalalimi.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts: []
+  feeds: []
+  selection:
+    reason: Official website of the chairman of the Presidential Leadership Council, the head of state of the internationally
+      recognised government; publishes republican decrees, PLC meetings and presidential statements.
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage on 2026-10-04 listed items dated 2026-10-04, 2026-09-30 and 2026-09-28 (PLC chairman announcing
+        military operations, National Defence Council statements).
+      urls:
+      - https://presidentalalimi.net/
+    institutional_importance:
+      level: high
+      note: Issues the decrees that appoint the government (e.g. the February 2026 cabinet decree and the January
+        2026 decree naming Shaya al-Zindani prime minister). Wikipedia's PLC article lists presidentalalimi.net
+        as the council's website.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Office of PLC chairman Rashad al-Alimi
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: It is the PLC chairman's own official site (self-description "Official Website President
+      Dr. Rashad Al-Alimi Chairman of the Presidential Leadership Council"). Regional alignment from reporting that
+      describes the PLC government as Saudi-backed (Al-Monitor, Sept 2026); the January 2026 government was formed
+      after consultations in Riyadh (Al Jazeera, Feb 2026).
+    evidence_urls:
+    - https://presidentalalimi.net/en/news1583.html
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    - https://www.al-monitor.com/originals/2026/09/yemen-separatists-urge-us-not-let-saudi-arabia-call-shots
+    - https://www.aljazeera.com/news/2026/2/6/new-yemen-government-formed-with-shaya-mohsin-al-zindani-as-prime-minister
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'No RSS link found on the site. The X (presidentrashad), Facebook (PresidentRashadAlAlimi) and YouTube
+    (channel UCul1Hqh-4RSa5u67w1b5LVA) accounts linked from the site are named after the chairman and are registered
+    on the persons-slice SOCIAL_ACCOUNT record rashad-al-alimi, so they are not repeated here; that record carries
+    the YouTube feed. active: false because the website itself has no feed. PLC membership in 2026 (Wikipedia):
+    al-Zubaidi dismissed 2026-01-07, al-Bahsani dismissed 2026-01-15, Mahmoud al-Subaihi and Salem al-Khanbashi
+    added 2026-01-15. operating_base: the presidency is formally in Aden, but the chairman also works from Riyadh.'
+- id: yemen-pmo
+  name: Prime Minister's Office / Council of Ministers, Republic of Yemen (PLC government)
+  name_native: رئاسة مجلس الوزراء - الجمهورية اليمنية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://pmo-ye.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts:
+  - platform: x
+    handle: Yemen_PM
+    url: https://x.com/Yemen_PM
+    handle_evidence: https://pmo-ye.net/
+  - platform: facebook
+    handle: YemenPM
+    url: https://www.facebook.com/YemenPM/
+    handle_evidence: https://pmo-ye.net/
+  - platform: youtube
+    handle: UCvl55RnNu0L4S80dgEZcrKQ
+    url: https://www.youtube.com/channel/UCvl55RnNu0L4S80dgEZcrKQ
+    handle_evidence: https://pmo-ye.net/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCvl55RnNu0L4S80dgEZcrKQ
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id from the YouTube link on https://pmo-ye.net/ (seen 2026-10-04).
+  selection:
+    reason: Official portal of the prime minister and cabinet of the internationally recognised government (cabinet
+      decisions, statements, press conferences).
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage on 2026-10-04 carried October 2026 statements on the humanitarian situation, military operations
+        and government meetings.
+      urls:
+      - https://pmo-ye.net/
+    institutional_importance:
+      level: high
+      note: Executive head of the PLC government. Prime minister since January 2026 is Shaya Mohsen al-Zindani,
+        who formed a 34-member cabinet on 2026-02-06 and also held the foreign ministry until the July 2026 reshuffle.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: The government's own portal (self-description). Regional alignment from reporting on
+      the Saudi-backed government formed after consultations in Riyadh.
+    evidence_urls:
+    - https://pmo-ye.net/
+    - https://www.aljazeera.com/news/2026/2/6/new-yemen-government-formed-with-shaya-mohsin-al-zindani-as-prime-minister
+    - https://www.al-monitor.com/originals/2026/09/yemen-separatists-urge-us-not-let-saudi-arabia-call-shots
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Wikipedia''s Cabinet of Yemen article names pmo-ye.net as the PM office site. No RSS link seen; only the
+    YouTube feed is a candidate. Contact mediaoffice@pmo-ye.net. PM history: Salem bin Breik (2025) resigned January
+    2026; al-Zindani appointed by PLC decree (presidentalalimi.net/en/news1549.html).'
+- id: yemen-mofa
+  name: Ministry of Foreign Affairs and Expatriates, Republic of Yemen (PLC government)
+  name_native: وزارة الخارجية وشؤون المغتربين - الجمهورية اليمنية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.mofa-ye.org/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts:
+  - platform: x
+    handle: yemen_mofa
+    url: https://x.com/yemen_mofa
+    handle_evidence: https://www.mofa-ye.org/Pages/36202/
+  - platform: facebook
+    handle: YemMOFA
+    url: https://www.facebook.com/YemMOFA
+    handle_evidence: https://www.mofa-ye.org/Pages/36202/
+  - platform: youtube
+    handle: Yemenmofa
+    url: https://www.youtube.com/c/Yemenmofa
+    handle_evidence: https://www.mofa-ye.org/Pages/36202/
+  feeds: []
+  selection:
+    reason: Foreign ministry of the internationally recognised government; publishes the government's diplomatic
+      positions, statements on UN processes and Red Sea and Houthi issues, in Arabic and English.
+    yemen_coverage:
+      frequency: daily
+      evidence: Bilingual news section with dated pages (e.g. 2026-01-16 item on the decree appointing a new prime
+        minister).
+      urls:
+      - https://www.mofa-ye.org/Pages/36202/
+    institutional_importance:
+      level: high
+      note: Official diplomatic voice of the recognised state. Minister since the July 2026 reshuffle is Dr. Afrah
+        Abdulaziz al-Zuba, the first woman in the post (Al-Quds Al-Arabi, Al Jazeera, 2026-07-23/24).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: The ministry's own website (self-description). Regional alignment from reporting on
+      the Saudi-backed PLC government.
+    evidence_urls:
+    - https://www.mofa-ye.org/Pages/36202/
+    - https://www.alquds.co.uk/اليمن-تعديل-وزاري-يشمل-3-وزارات-بينها-ا/
+    - https://www.al-monitor.com/originals/2026/09/yemen-separatists-urge-us-not-let-saudi-arabia-call-shots
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'No RSS link on the site header/footer and the YouTube link uses a /c/ vanity URL, so no channel id is
+    evidenced and no YouTube feed is listed. active: false until a collectable feed is found (try a Google News
+    site: query on mofa-ye.org). Do not confuse with mofa.gov.ye, which is controlled by the Sanaa authorities (see
+    sanaa-mofa).'
+- id: yemen-cby-aden
+  name: Central Bank of Yemen (Aden headquarters)
+  name_native: البنك المركزي اليمني - المركز الرئيسي عدن
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.cby-ye.com/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts:
+  - platform: x
+    handle: cby_hq
+    url: https://x.com/cby_hq
+    handle_evidence: https://www.cby-ye.com/
+  - platform: telegram
+    handle: cby_hq
+    url: https://t.me/cby_hq
+    handle_evidence: https://www.cby-ye.com/
+  - platform: facebook
+    handle: cby.hq
+    url: https://www.facebook.com/cby.hq
+    handle_evidence: https://www.cby-ye.com/
+  - platform: youtube
+    handle: '@CBY_HQ'
+    url: https://www.youtube.com/@CBY_HQ
+    handle_evidence: https://www.cby-ye.com/
+  feeds:
+  - url: https://t.me/s/cby_hq
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; public preview of the Telegram channel linked from the header of https://www.cby-ye.com/ (seen
+      2026-10-04). Check robots.txt before collection.
+  selection:
+    reason: Central bank of the internationally recognised government (Aden headquarters); its circulars, licence
+      suspensions and exchange-rate measures are a core source on the Yemeni economic and banking split.
+    yemen_coverage:
+      frequency: weekly
+      evidence: Homepage on 2026-10-04 listed Decision No. 18 (2026-09-24) suspending exchange-company licences,
+        Decision No. 17, the National Import Regulation Committee's seventh meeting and the governor's meetings
+        with banks and UNDP.
+      urls:
+      - https://www.cby-ye.com/
+    institutional_importance:
+      level: high
+      note: Monetary authority recognised internationally; the bank has been split since 2016 between CBY-Aden and
+        CBY-Sanaa (Wikipedia), and decisions of each side drive the banking conflict.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: The bank's own site; Wikipedia describes the bifurcation into CBY-Aden (recognised
+      government) and CBY-Sanaa. regional_alignment none_documented - checked the bank's site and Wikipedia; no
+      source documents the bank itself as aligned with a foreign state (it receives Saudi deposits, but that is
+      support, not documented alignment of its output).
+    evidence_urls:
+    - https://www.cby-ye.com/
+    - https://en.wikipedia.org/wiki/Central_Bank_of_Yemen
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: English site at https://english.cby-ye.com/. No RSS link seen. YouTube uses an @handle without a visible
+    channel id, so no YouTube feed is listed. Also has a WhatsApp channel (https://whatsapp.com/channel/0029Vadpz1m11ulNoRxUIX3i)
+    and LinkedIn (cby-hq), not collectable. Governor not named on the homepage; Wikipedia lists Ahmed Ghaleb al-Maabqi
+    (2021-) but this was not re-verified for 2026.
+- id: hocc-sanaa
+  name: Humanitarian Operations Coordination Center (HOCC), Sanaa authorities
+  name_native: مركز تنسيق العمليات الإنسانية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://en.hocc.gov.ye/
+  country: YE
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: sanaa_controlled
+  accounts: []
+  feeds: []
+  selection:
+    reason: Body of the Ansar Allah-led authorities in Sanaa that issues the Red Sea and Gulf of Aden shipping bans,
+      sanctions lists, press releases and notices to shipowners; widely reported by maritime and wire media.
+    yemen_coverage:
+      frequency: monthly
+      evidence: Press releases and "recent events" pages dated 2026-09-15, 2026-08-07 and 2026-08-01 (Press Release
+        No. 001/2026); Reuters-sourced report of a 2026-07-20 HOCC email telling shipping companies to avoid Saudi
+        ports.
+      urls:
+      - https://en.hocc.gov.ye/
+      - https://www.koreatimes.co.kr/world/20260721/houthis-warn-shipping-companies-to-avoid-saudi-ports-email-shows
+      - https://maritime-executive.com/article/houthis-publish-a-safety-faq-for-red-sea-shipping
+    institutional_importance:
+      level: high
+      note: The Sanaa authorities' official channel to the shipping industry on Red Sea attacks and bans. Its Arabic
+        site says it was created by Supreme Political Council Decision No. 95 (17 February 2024), sits under the
+        Office of the Supreme Commander of the Armed Forces and is headquartered in Sanaa.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: De facto authorities in Sanaa (Supreme Political Council); not the internationally recognised
+      government
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.9
+    classification_evidence: Created by the Sanaa Supreme Political Council and attached to the Sanaa armed forces
+      command (its own Arabic site); Reuters/Korea Times and Maritime Executive describe it as a Houthi body. Regional
+      alignment from Al Jazeera reporting on the Houthis as Iran's ally.
+    evidence_urls:
+    - https://ar.hocc.gov.ye/
+    - https://www.koreatimes.co.kr/world/20260721/houthis-warn-shipping-companies-to-avoid-saudi-ports-email-shows
+    - https://maritime-executive.com/article/houthis-publish-a-safety-faq-for-red-sea-shipping
+    - https://www.aljazeera.com/news/2025/6/20/yemen-houthis-mull-over-help-ally-iran-israel
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Official source of the de facto authorities in Sanaa; it uses the name ''Republic of Yemen'' but is not
+    the recognised government. No RSS or social links on en.hocc.gov.ye or ar.hocc.gov.ye (fetched 2026-10-04);
+    it offers email alerts only. Press releases at https://en.hocc.gov.ye/Articles/PressReleases/ and events at
+    /Articles/RecentEvents/ (numeric ids), so a sitemap or page-diff collector would be needed. active: false until
+    a collectable feed exists.'
+- id: sanaa-mofa
+  name: Ministry of Foreign Affairs and Expatriates, Sanaa authorities
+  name_native: وزارة الخارجية والمغتربين - صنعاء
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://mofa.gov.ye/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: sanaa_controlled
+  accounts: []
+  feeds: []
+  selection:
+    reason: Foreign ministry of the Ansar Allah-led Sanaa authorities; issues their diplomatic positions (e.g. on
+      Red Sea navigation, the UN process and Saudi Arabia), which HOCC and Saba Sanaa relay.
+    yemen_coverage:
+      frequency: weekly
+      evidence: HOCC republished a Sanaa foreign ministry statement on Bab al-Mandab navigation dated 2026-09-15.
+      urls:
+      - https://en.hocc.gov.ye/
+    institutional_importance:
+      level: medium
+      note: Diplomatic voice of the de facto authorities, recognised only by Iran (Wikipedia, SPC article). Its
+        minister Jamal Amer was killed in the Israeli strike of 2025-08-28 (Al Jazeera Arabic); the successor was
+        not verified.
+  alignment:
+    yemen_political_alignment: ansar_allah
+    sub_alignment: De facto authorities in Sanaa (Supreme Political Council government); not the internationally
+      recognised government
+    regional_alignment: iran_axis
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: Wikipedia's article on the ministry lists mofa.gov.ye as the website of the SPC (Sanaa)
+      side and mofa-ye.org as the PLC side. The SPC is the Ansar Allah-led authority. Regional alignment from Al
+      Jazeera reporting on the Houthis as Iran's ally.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_and_Expatriates_(Yemen)
+    - https://en.wikipedia.org/wiki/Supreme_Political_Council
+    - https://www.aljazeera.com/news/2025/6/20/yemen-houthis-mull-over-help-ally-iran-israel
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'mofa.gov.ye could not be fetched on 2026-10-04 (robots.txt connection timeout), so no feed or social account
+    could be checked. Wikipedia still names Hisham Sharaf as SPC foreign minister, which is out of date (Jamal Amer
+    held the post from 2024 until his death on 2025-08-28: https://www.aljazeera.net/encyclopedia/2025/9/1/أبرز-قادة-الحوثيين-الذين-اغتالتهم).
+    The current minister was not verified. Statements are also carried by Saba Sanaa (saba-sanaa, media slice).'
+- id: stc-official
+  name: Southern Transitional Council (renamed Southern Arab Transitional Council, 2026), official site
+  name_native: المجلس الانتقالي الجنوبي العربي
+  category: POLITICAL_ORGANIZATION
+  tier: B
+  url: https://www.stcaden.com/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: movement
+  source_group: yemen_actor_affiliated
+  content_type: political_statement
+  operating_base: unknown
+  geographic_focus:
+  - south
+  - aden
+  yemen_coverage: primary
+  accounts:
+  - platform: x
+    handle: STCSouthArabia
+    url: https://x.com/STCSouthArabia
+    handle_evidence: https://stcaden.com/
+  - platform: facebook
+    handle: STCSouthArabia
+    url: https://www.facebook.com/STCSouthArabia
+    handle_evidence: https://stcaden.com/
+  - platform: telegram
+    handle: STCSouthArabia
+    url: https://t.me/STCSouthArabia
+    handle_evidence: https://stcaden.com/
+  feeds:
+  - url: https://www.stcaden.com/rss
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: RSS 2.0 'كل الأخبار', 11 items, newest 2026-10-02.
+  - url: https://t.me/s/STCSouthArabia
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; stcaden.com links Telegram as the malformed URL http://t.me/telegram.me/STCSouthArabia (seen
+      2026-10-04); handle STCSouthArabia inferred from it and from the matching X and Facebook handles. Check the
+      channel exists before collecting. The site RSS (https://www.stcaden.com/rss) is already in the old registry.
+  selection:
+    reason: Official platform of the main southern separatist organisation; publishes statements of its presidency,
+      General Secretariat and local bodies, which remain central to the southern question despite the disputed January
+      2026 dissolution.
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage on 2026-10-04 carried a statement of an expanded extraordinary meeting of central and local
+        bodies, a "presidential" message to southern forces and the emblem of a 14 October 2026 mobilisation event.
+      urls:
+      - https://stcaden.com/
+    institutional_importance:
+      level: high
+      note: '2026 status, as the sources describe it: after the Saudi-backed campaign in Hadramawt and al-Mahra
+        and the PLC takeover of Aden (2026-01-07), STC members in Riyadh led by secretary-general Ahmed Saeed bin
+        Brik announced the council''s dissolution on 2026-01-09 (Anadolu, Al Jazeera). The UAE-based spokesman Anwar
+        al-Tamimi and members abroad rejected it as made under pressure and said the STC remained operational (Wikipedia).
+        Chairman Aidarus al-Zubaidi left Aden on 2026-01-07 for Somaliland and then the UAE (Wikipedia) and was
+        dismissed from the PLC. The council renamed itself the Southern Arab Transitional Council around April-May
+        2026 (Erem News), held a mass rally in Aden on 2026-05-04 (South24), and in September 2026 its foreign-affairs
+        representative Amr al-Bidh spoke from Abu Dhabi, calling the dissolution coerced (Al-Monitor). It therefore
+        operates as a contested, partly exiled organisation with activity still visible in Aden.'
+  alignment:
+    yemen_political_alignment: stc
+    sub_alignment: Faction that rejected the January 2026 dissolution (al-Zubaidi, al-Tamimi, al-Bidh); not the
+      Riyadh-based members who announced it
+    regional_alignment: uae
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: The site presents itself as the council's official platform. Wikipedia (2026 in Yemen)
+      calls the STC UAE-backed; its spokesman and foreign-affairs representative operate from the UAE (Wikipedia;
+      Al-Monitor, 2026-09-17).
+    evidence_urls:
+    - https://stcaden.com/
+    - https://en.wikipedia.org/wiki/2026_in_Yemen
+    - https://en.wikipedia.org/wiki/Southern_Transitional_Council
+    - https://www.al-monitor.com/originals/2026/09/yemen-separatists-urge-us-not-let-saudi-arabia-call-shots
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Official platform of the Southern Transitional Council (self-description).
+    evidence_urls:
+    - https://www.stcaden.com/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Old id kept (stc-official); its verified RSS https://www.stcaden.com/rss carries over. Sources for the
+    2026 status: https://www.aa.com.tr/en/middle-east/yemen-s-stc-announces-dissolution-of-all-bodies-ends-operations/3794864
+    ; https://aljazeera.com/news/2026/1/9/yemens-separatist-southern-transitional-council-announces-its-dissolution
+    ; https://south24.net/news/newse.php?nid=5469 ; https://www.eremnews.com/news/arab-world/ezubz6l ; https://en.wikipedia.org/wiki/Fall_of_Aden_(2026).
+    operating_base unknown: the organisation is active in Aden (government-held since January 2026) while its leadership
+    is partly in the UAE. Treat output as that of the faction rejecting the dissolution; the Riyadh-based former
+    members speak through other channels. English site: https://en.stcaden.com/ (Wikipedia). The STC''s status after
+    the January 2026 dissolution is contested; recheck before labelling outputs. operating_base left unknown for
+    the same reason. Newsroom: Aden (contested) (unknown). Contested, so left unknown. The STC''s main HQ is in
+    Aden. Wikipedia (Fall of Aden 2026) says PLC forces took Aden on 2026-01-07 and the STC announced its dissolution
+    on 2026-01-09. South24 (June 2026) reports the Aden HQ reopening after a two-day closure by "a military force",
+    with the STC rejecting the dissolution. The organisation runs in a government-held city while its legal status
+    is disputed, and part of its leadership (al-Zubaidi) is in the UAE per Wikipedia. stc_controlled no longer fits.
+    government_controlled for the territory, or outside_yemen for leadership, are both arguable. Sources: https://south24.net/news/newse.php?nid=5543,
+    https://en.wikipedia.org/wiki/Fall_of_Aden_(2026)'
+- id: alislah-net
+  name: Yemeni Congregation for Reform (Islah), official party website
+  name_native: التجمع اليمني للإصلاح
+  category: POLITICAL_ORGANIZATION
+  tier: B
+  url: https://alislah-ye.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: party
+  source_group: yemen_actor_affiliated
+  content_type: political_statement
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: x
+    handle: Islahyem
+    url: https://x.com/Islahyem
+    handle_evidence: https://alislah-ye.net/
+  - platform: facebook
+    handle: Islahyem
+    url: https://www.facebook.com/Islahyem
+    handle_evidence: https://alislah-ye.net/
+  - platform: youtube
+    handle: Islahyem
+    url: https://www.youtube.com/Islahyem
+    handle_evidence: https://alislah-ye.net/
+  feeds:
+  - url: https://alislah-ye.net/rss.php
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Linked from the homepage, but WebFetch received HTML.
+  selection:
+    reason: Official website of Islah, the largest party in the anti-Houthi camp and a pillar of the PLC government;
+      publishes the party's statements and positions of its branches.
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage on 2026-10-04 carried items on the PLC's announcement of military operations, the Taiz
+        branch's call for mobilisation and the al-Mahra branch's statement.
+      urls:
+      - https://alislah-ye.net/
+    institutional_importance:
+      level: high
+      note: Holds 44 of 301 parliamentary seats and backs the internationally recognised government (Wikipedia);
+        one of the main political forces in Marib and Taiz.
+  alignment:
+    yemen_political_alignment: islah
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.85
+    classification_evidence: The party's own website (self-description; Wikipedia lists alislah-ye.net as the official
+      site). Regional alignment from Wikipedia, which documents the party's support for the Saudi-led coalition
+      side and Saudi financial support to Islah institutions; links to Qatar and Turkey are often alleged but were
+      not checked here.
+    evidence_urls:
+    - https://alislah-ye.net/
+    - https://en.wikipedia.org/wiki/Al-Islah_(Yemen)
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Official website of the Yemeni Congregation for Reform (Islah) (self-description).
+    evidence_urls:
+    - https://alislah-ye.net/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Old id kept (alislah-net); its candidate RSS http://alislah-ye.net/rss.php (linked from the homepage)
+    carries over and still needs testing from the ingest host. YouTube link is a legacy /Islahyem user URL with
+    no visible channel id, so no YouTube feed is listed. Islah''s newspaper Al-Sahwa (alsahwa-net) and Suhail TV
+    are media-slice records. Chair per Wikipedia: Mohammed al-Yadoumi (not re-verified for 2026). operating_base
+    unknown: the site gives no address. Homepage active (2026-10-02). Retest rss.php from the ingest host. Newsroom:
+    not documented (unknown). Unresolved. The homepage footer gives no address. The About page is at content.php?id=1
+    (not fetched) and the contact page is feedback.php. No third-party source found that says where Islah''s party
+    website is edited (Marib, Taiz, Riyadh or Istanbul are all plausible). Left unknown. Sources: https://alislah-ye.net/'
+- id: al-eshteraki-net
+  name: Yemeni Socialist Party (Al-Eshteraki Net, party platform)
+  name_native: الحزب الاشتراكي اليمني - الاشتراكي نت
+  category: POLITICAL_ORGANIZATION
+  tier: B
+  url: https://www.aleshteraki.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: party
+  source_group: yemen_actor_affiliated
+  content_type: political_statement
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: x
+    handle: aleshteraki
+    url: https://x.com/aleshteraki
+    handle_evidence: https://www.aleshteraki.net/
+  - platform: youtube
+    handle: UCXaVL8G6Q5dWiHN3y5WsaFg
+    url: https://www.youtube.com/channel/UCXaVL8G6Q5dWiHN3y5WsaFg
+    handle_evidence: https://www.aleshteraki.net/
+  feeds:
+  - url: https://www.aleshteraki.net/?format=feed&type=rss
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS envelope, zero items.
+  - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=240
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS but 3 items, newest 2023-09-23 (stale opinion module).
+  - url: https://www.aleshteraki.net/component/k2/itemlist?format=feed&moduleID=241
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Valid RSS but 3 items, newest 2023-04-07 (stale).
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCXaVL8G6Q5dWiHN3y5WsaFg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id from the YouTube link on https://www.aleshteraki.net/ (seen 2026-10-04). Activity
+      of the channel not checked.
+  selection:
+    reason: Platform of the Yemeni Socialist Party, the historic ruling party of South Yemen and a member of the
+      anti-Houthi party alliance; publishes party statements and political-bureau positions.
+    yemen_coverage:
+      frequency: weekly
+      evidence: Homepage dated 2026-10-04 with 2026 headlines; old-registry check (2026-10-02) found its RSS modules
+        stale, so frequency is a cautious estimate.
+      urls:
+      - https://www.aleshteraki.net/
+    institutional_importance:
+      level: medium
+      note: Smaller in parliament than Islah or the GPC, but a long-standing national party with ministers in post-Riyadh
+        Agreement cabinets; its leadership backs the internationally recognised government (Wikipedia).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Yemeni Socialist Party (leadership of secretary-general Abdulrahman al-Saqqaf); a pro-Houthi
+      splinter exists
+    regional_alignment: none_documented
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.7
+    classification_evidence: The site presents itself as the YSP's platform (old registry; homepage). Wikipedia
+      says the al-Saqqaf-led party backs the internationally recognised government and received two ministers after
+      the Riyadh Agreement, while a splinter ("YSP - Anti-Aggression") supports the Houthis. regional_alignment
+      none_documented - Wikipedia and the site checked; no documented foreign-state alignment.
+    evidence_urls:
+    - https://www.aleshteraki.net/
+    - https://en.wikipedia.org/wiki/Yemeni_Socialist_Party
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Platform of the Yemeni Socialist Party (site self-description).
+    evidence_urls:
+    - https://www.aleshteraki.net/
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Old id kept (al-eshteraki-net); taken over from the media slice by agreement with yemen-media. Old-registry
+    feeds were empty or stale (Joomla/K2 RSS), so collection depends on the candidate YouTube feed passing the CI
+    test; set active: false if it fails. Wikipedia lists the party website as aleshtraky.com; the site links an
+    archive at aleshteraky.com/archive. It hosts PDF issues of the party paper Al-Thawri. Secretary-general per
+    Wikipedia is al-Saqqaf (since 2014), not re-verified for 2026. Homepage active (2026-10-02) but no feed carries
+    current items. Newsroom: not documented (unknown). Unresolved. The contact page shows "contact information cannot
+    be found" and the footer has no address. News is datelined from Taiz, Shabwah and Marib. No third-party source
+    on the newsroom location. Sources: https://www.aleshteraki.net/contactus'
+- id: al-wahdawi-net
+  name: Nasserist Unionist People's Organisation (Al-Wahdawi Net, party website)
+  name_native: التنظيم الوحدوي الشعبي الناصري - الوحدوي نت
+  category: POLITICAL_ORGANIZATION
+  tier: B
+  url: https://alwahdawi.net/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: party
+  source_group: yemen_actor_affiliated
+  content_type: political_statement
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts:
+  - platform: x
+    handle: alwahdawi2004
+    url: https://x.com/alwahdawi2004
+    handle_evidence: https://alwahdawi.net/
+  - platform: facebook
+    handle: alwahdawi.net
+    url: https://www.facebook.com/alwahdawi.net
+    handle_evidence: https://alwahdawi.net/
+  - platform: telegram
+    handle: alwahdawinet2004
+    url: https://t.me/alwahdawinet2004
+    handle_evidence: https://alwahdawi.net/
+  feeds:
+  - url: https://alwahdawi.net/rss_news/rss_1.xml
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: false
+    notes: Local news. RSS 2.0, 50 items, newest 2026-10-02. Index of 8 category feeds at /rss.
+  - url: https://t.me/s/alwahdawinet2004
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; Telegram channel linked from https://alwahdawi.net/ (seen 2026-10-04). The site's verified
+      RSS (alwahdawi.net/rss_news/rss_1.xml) is already in the old registry.
+  selection:
+    reason: Website of the Nasserist Unionist People's Organisation, one of the anti-Houthi parties of the pro-government
+      alliance, strong in Taiz; carries party statements and Yemen news daily.
+    yemen_coverage:
+      frequency: daily
+      evidence: Homepage in October 2026 carried items on the government's military operations, PM al-Zindani and
+        Red Sea incidents; old-registry RSS had 50 items with newest 2026-10-02.
+      urls:
+      - https://alwahdawi.net/
+    institutional_importance:
+      level: medium
+      note: A small parliamentary party (3 seats in 2003) but part of the pro-government party coalition and a voice
+        of Taiz politics; Wikipedia gives alwahdawi.net as the party website.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Nasserist Unionist People's Organisation
+    regional_alignment: none_documented
+    domestic_political_orientation: movement_aligned
+    classification_confidence: 0.7
+    classification_evidence: Wikipedia lists www.alwahdawi.net as the party's website and says the party opposed
+      the Houthi takeover from the beginning, on the internationally recognised government's side; the site's About
+      page says it is issued by the organisation (old registry). regional_alignment none_documented - Wikipedia
+      and the site checked.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Nasserist_Unionist_People%27s_Organisation
+    - https://alwahdawi.net/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Al-Wahdawi is listed by Wikipedia as the 'Organ of the Naseri Unionist People's Organization';
+      RSF calls it an opposition weekly.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/List_of_newspapers_in_Yemen
+    - https://rsf.org/en/editor-opposition-weekly-al-wahdawi-threatened
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Old id kept (al-wahdawi-net); taken over from the media slice by agreement with yemen-media. The site
+    mixes general news with party content, so expect mostly news-style items. Wikipedia names Abdulmalik al-Mekhlafi
+    as leader; not re-verified for 2026. Linked to the party through the print weekly of the same name; the website
+    does not state the affiliation itself. Newsroom: not documented (unknown). Unresolved. The About page says it
+    is "issued by the Popular Unionist Nasserist Organization in Yemen" (first online in June 2004) but gives no
+    city. The contact page is a form only. Sources: https://alwahdawi.net/page-1'
+- id: yemen-mopic
+  name: Ministry of Planning and International Cooperation, Republic of Yemen (PLC government)
+  name_native: وزارة التخطيط والتعاون الدولي
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://mopicyemen.org/
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: website
+  source_type: government
+  content_type: official_statement
+  operating_base: government_controlled
+  accounts:
+  - platform: x
+    handle: mopic_yemen
+    url: https://x.com/mopic_yemen
+    handle_evidence: https://mopicyemen.org/
+  - platform: facebook
+    handle: MopicYemen
+    url: https://www.facebook.com/MopicYemen
+    handle_evidence: https://mopicyemen.org/
+  feeds: []
+  selection:
+    reason: The government ministry that coordinates international aid, donor relations and development planning;
+      its statements on humanitarian response, donor meetings and economic recovery are the government's voice on
+      aid and the economy.
+    yemen_coverage:
+      frequency: weekly
+      evidence: Homepage on 2026-10-04 listed items dated 2026-10-04 (minister with UNICEF), 2026-10-01 (humanitarian
+        response with a UN official) and 2026-09-29 (economic resilience project committee in Amman).
+      urls:
+      - https://mopicyemen.org/
+    institutional_importance:
+      level: medium
+      note: Counterpart of UN agencies and donors for the recognised government. Linked from the Prime Minister's
+        Office portal (pmo-ye.net, which links mopic-yemen.org, redirecting to mopicyemen.org). Minister since the
+        July 2026 reshuffle is Badr Muhammad Mubarak Baslama (Al-Quds Al-Arabi); his predecessor Afrah al-Zuba became
+        foreign minister.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.85
+    classification_evidence: The ministry's own website, linked from the PLC government's prime-minister portal.
+      regional_alignment none_documented - only the ministry's site and the PMO portal were checked; no source documents
+      a foreign-state alignment of this ministry's output specifically.
+    evidence_urls:
+    - https://mopicyemen.org/
+    - https://pmo-ye.net/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'WordPress site, but no RSS link was visible on the homepage, so no feed is listed (a /feed/ endpoint is
+    likely but was not seen; test it before adding). The homepage title calls it the ministry''s e-services portal.
+    LinkedIn link on the site is generic. Reshuffle source: https://www.alquds.co.uk/اليمن-تعديل-وزاري-يشمل-3-وزارات-بينها-ا/'

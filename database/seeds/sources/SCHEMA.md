@@ -3,7 +3,8 @@
 Hudhud monitors a **small, curated source universe**, not every outlet that ever
 mentions Yemen. Each `*.yaml` file in this folder is a list of source records loaded
 by `hudhud seed`. Files under `archive/` are the earlier, broader registry; they are
-kept for reference and are **not** loaded.
+kept for reference and are **not** loaded. `EXCLUDED.md` lists candidates that were
+considered and not selected, with the reason.
 
 The registry answers two separate questions about every source, and keeps them apart:
 

@@ -43,6 +43,14 @@ evidence (each figure with its source URL and date), influence evidence, how oft
 covers Yemen, and its institutional importance with a note. The earlier broad registry
 is kept in `sources/archive/` for reference and is not collected.
 
+The full list, with every selection-record field, is published in
+[source-selection.md](source-selection.md) and [source-selection.csv](source-selection.csv)
+(generated from the registry by `scripts/registry_table.py`). Candidates that were
+considered and not selected are listed with the reason in
+`database/seeds/sources/EXCLUDED.md`. Feeds are checked against the live web in CI
+(`scripts/registry_check.py`), and only feeds that were fetched and parsed are marked
+verified.
+
 ### Influence and institutional importance are different things
 
 * **Influence** (0 to 100) is computed by the loader from the evidence (rubric

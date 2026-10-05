@@ -1,0 +1,732 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: rashad-al-alimi
+  name: Rashad al-Alimi
+  name_native: رشاد العليمي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/presidentrashad
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Chairman of the Presidential Leadership Council (head of state of the internationally recognised government)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: presidentrashad
+    url: https://x.com/presidentrashad
+    handle_evidence: https://www.presidentalalimi.net/en/news932.html
+  - platform: facebook
+    handle: PresidentRashadAlAlimi
+    url: https://www.facebook.com/PresidentRashadAlAlimi/
+    handle_evidence: https://www.presidentalalimi.net/en/news932.html
+  - platform: youtube
+    handle: UCul1Hqh-4RSa5u67w1b5LVA
+    url: https://www.youtube.com/channel/UCul1Hqh-4RSa5u67w1b5LVA
+    handle_evidence: https://www.presidentalalimi.net/en/news932.html
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCul1Hqh-4RSa5u67w1b5LVA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; channel id linked from the footer of the official presidential website presidentalalimi.net
+  selection:
+    reason: Personal/official accounts of the head of the Presidential Leadership Council; his posts are the top-level
+      statements of the internationally recognised government.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: His posts on X are quoted by Arab media (e.g. Maspero, December 2025, on the Hadramawt crisis).
+      urls:
+      - https://www.maspero.eg/arab-and-world/2025/12/27/916241/العليمي-يثمن-الاستجابة-العاجلة-لتحالف-دعم-الشرعية-لأجل-حماية-المدنيين-بحضرموت
+    yemen_coverage:
+      frequency: weekly
+      evidence: Posts about Yemeni state affairs, the Houthis and the south; all output concerns Yemen.
+      urls:
+      - https://www.presidentalalimi.net/en/news932.html
+    institutional_importance:
+      level: high
+      note: Head of the PLC since April 2022; still chairman in 2026 (Wikipedia, 2026 in Yemen).
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: PLC chairman
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: He heads the PLC, the Saudi-backed internationally recognised government (alignment
+      by office held).
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Presidential_Leadership_Council
+    - https://en.wikipedia.org/wiki/2026_in_Yemen
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Accounts taken from the official presidential website footer. No follower count found from a citable source;
+    audience_evidence left empty. X is registered, not collected.
+- id: moammar-al-eryani
+  name: Moammar al-Eryani
+  name_native: معمر الإرياني
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/ERYANIM
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: government_controlled
+  holder:
+    kind: person
+    role: Minister of Information, Culture and Tourism of the internationally recognised government (reappointed
+      in the Zindani cabinet, 6 Feb 2026)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: ERYANIM
+    url: https://x.com/ERYANIM
+    handle_evidence: https://www.arabnews.jp/en/middle-east/article_87394/
+    followers: 426800
+    followers_as_of: '2026-10-04'
+    followers_source: https://en.rattibha.com/ERYANIM
+  feeds: []
+  selection:
+    reason: The government's chief information official and its most prolific poster on X; his threads on the Houthis
+      and Iran are routinely quoted by Arab News, Al Arabiya and Saudi media.
+    audience_evidence:
+    - metric: x_followers
+      value: 426800
+      as_of: 2026-10
+      source_url: https://en.rattibha.com/ERYANIM
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: medium
+      note: Arab News and Al Arabiya regularly report his X posts as news.
+      urls:
+      - https://www.arabnews.jp/en/middle-east/article_87394/
+      - https://themedialine.org/mideast-daily-news/al-eryani-confronting-houthis-is-key-to-regional-and-global-security/print
+    yemen_coverage:
+      frequency: daily
+      evidence: Posts several times a week, almost entirely on Yemen (Houthis, Iran, government affairs).
+      urls:
+      - https://www.arabnews.jp/en/middle-east/article_87394/
+    institutional_importance:
+      level: high
+      note: Minister of Information in the PLC government; confirmed in the cabinet decree of 6 Feb 2026.
+  alignment:
+    yemen_political_alignment: plc_government
+    sub_alignment: Minister of Information (GPC background)
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: Serving cabinet minister of the Saudi-backed PLC government (Republican Decree No.
+      3 of 2026).
+    evidence_urls:
+    - https://presidentalalimi.net/en/news1582.html
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle confirmed by an Arab News embed of his tweet (Jan 2023). Follower count read from the rattibha.com
+    mirror of the X profile on 2026-10-04; the mirror's snapshot date is not shown, so treat as approximate. X is
+    registered, not collected.
+- id: badr-albusaidi
+  name: Badr Albusaidi
+  name_native: بدر بن حمد البوسعيدي
+  category: SOCIAL_ACCOUNT
+  tier: B
+  url: https://x.com/badralbusaidi
+  country: OM
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  holder:
+    kind: person
+    role: Foreign Minister of Oman (since August 2020); Oman hosts and mediates Ansar Allah's contacts with Saudi
+      Arabia, the US and the UN
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: badralbusaidi
+    url: https://x.com/badralbusaidi
+    handle_evidence: https://fm.gov.om/
+  feeds: []
+  selection:
+    reason: Oman is the main channel to Ansar Allah (its negotiators are based in Muscat); the foreign minister's
+      posts announce and frame mediation steps on Yemen and the Red Sea.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: medium
+      note: Wikipedia records his December 2025 Riyadh mediation over the Hadramawt crisis and his 2026 US-Iran
+        mediation.
+      urls:
+      - https://en.wikipedia.org/wiki/Badr_Albusaidi
+      - https://archive.fm.gov.om/en/1358/
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen is one of several files he posts about (also Iran-US talks, Gaza); Yemen-related posts come
+        with each mediation round.
+      urls:
+      - https://en.wikipedia.org/wiki/Badr_Albusaidi
+    institutional_importance:
+      level: high
+      note: Serving Omani foreign minister (Wikipedia, 2026); Oman mediates between Ansar Allah, Saudi Arabia and
+        the UN.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: oman
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: He is Oman's serving foreign minister; the Omani foreign ministry website names @badralbusaidi
+      as the minister's account.
+    evidence_urls:
+    - https://fm.gov.om/
+    method: self_description
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Handle named on the Omani Foreign Ministry homepage (fm.gov.om), which credits posts to ''@badralbusaidi''.
+    General feed: yemen_filter needed if a collector is configured. No follower count found from a citable page.
+    X is registered, not collected.'
+- id: farea-al-muslimi
+  name: Farea al-Muslimi
+  name_native: فارع المسلمي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/almuslimi
+  country: GB
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Research Fellow, Middle East and North Africa Programme, Chatham House
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: almuslimi
+    url: https://x.com/almuslimi
+    handle_evidence: https://www.chathamhouse.org/about-us/our-people/farea-al-muslimi
+  feeds: []
+  selection:
+    reason: Yemeni analyst at Chatham House whose account comments on Yemeni politics, the Houthis and Gulf policy.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Chatham House research fellow (MENA Programme) working on Yemen.
+      urls:
+      - https://www.chathamhouse.org/about-us/our-people/farea-al-muslimi
+    yemen_coverage:
+      frequency: daily
+      evidence: His account and his Chatham House work focus on Yemen and the Gulf.
+      urls:
+      - https://www.chathamhouse.org/about-us/our-people/farea-al-muslimi
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: 'Checked his Chatham House profile: an analyst at an independent research institute;
+      no documented affiliation with a Yemeni party or foreign state.'
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle linked from his Chatham House profile. No citable follower count could be retrieved (X profile pages
+    cannot be fetched; web search budget exhausted); audience_evidence left empty, selection rests on influence
+    indicators. X is registered, not collected.
+- id: nadwa-al-dawsari
+  name: Nadwa al-Dawsari
+  name_native: ندوى الدوسري
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/ndawsari
+  country: US
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Associate Fellow, Middle East Institute; conflict analyst with over 20 years of work on Yemen (tribes,
+      the Houthis, Marib)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: ndawsari
+    url: https://x.com/ndawsari
+    handle_evidence: https://www.mei.edu/profile/nadwa-al-dawsari
+  feeds: []
+  selection:
+    reason: Yemen conflict analyst (tribal politics, the Houthis) at the Middle East Institute; her account posts
+      mostly on Yemen.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'MEI profile: researcher and conflict analyst with over 20 years'' experience in Yemen, focusing on
+        the Houthis and their cross-border operations.'
+      urls:
+      - https://www.mei.edu/profile/nadwa-al-dawsari
+    yemen_coverage:
+      frequency: daily
+      evidence: Account and research focus on Yemen and the Houthis.
+      urls:
+      - https://www.mei.edu/profile/nadwa-al-dawsari
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked her MEI profile; no documented party or state affiliation. Her published analysis
+      is strongly critical of the Houthis, which is a stance, not an affiliation.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle linked from her MEI profile. No citable follower count retrieved; audience_evidence empty. X is
+    registered, not collected.
+- id: maged-al-madhaji
+  name: Maged al-Madhaji
+  name_native: ماجد المذحجي
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/MAlmadhaji
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Chairperson and co-founder, Sana'a Center for Strategic Studies
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: MAlmadhaji
+    url: https://x.com/MAlmadhaji
+    handle_evidence: https://sanaacenter.org/member/maged-almadhaji
+  feeds: []
+  selection:
+    reason: Co-founder and chair of Yemen's best-known independent think tank; comments on Yemeni politics for Arabic
+      media.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Sana''a Center profile: ''one of Yemen''s most prominent political and human rights activists''; regularly
+        provides commentary on Yemeni affairs for Arabic media.'
+      urls:
+      - https://sanaacenter.org/member/maged-almadhaji
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/maged-almadhaji
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.
+- id: elisabeth-kendall
+  name: Elisabeth Kendall
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/Dr_E_Kendall
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: President of Girton College, University of Cambridge; Chair of the Board of Trustees, Sana'a Center; scholar
+      of Yemen and militant jihadism
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: Dr_E_Kendall
+    url: https://x.com/Dr_E_Kendall
+    handle_evidence: https://sanaacenter.org/member/elisabeth-kendall
+  feeds: []
+  selection:
+    reason: UK academic on Yemen (AQAP, the Houthis, information warfare) with extensive fieldwork; her account
+      posts on Yemeni security.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Sana''a Center profile: research on the Houthi movement, AQAP, violent extremism and information warfare,
+        with extensive fieldwork.'
+      urls:
+      - https://sanaacenter.org/member/elisabeth-kendall
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/elisabeth-kendall
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.
+- id: abdulghani-al-iryani
+  name: Abdulghani al-Iryani
+  name_native: عبدالغني الإرياني
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/AbdulGhani1959
+  country: YE
+  region: yemen
+  languages:
+  - en
+  - ar
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Senior Researcher, Sana'a Center (peace process and state transformation)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: AbdulGhani1959
+    url: https://x.com/AbdulGhani1959
+    handle_evidence: https://sanaacenter.org/member/abdulghani-aliryani
+  feeds: []
+  selection:
+    reason: Veteran Yemeni analyst of the peace process; posts commentary on negotiations and governance.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Sana''a Center profile: three decades as a political and development consultant (UN, World Bank) on
+        governance and conflict resolution.'
+      urls:
+      - https://sanaacenter.org/member/abdulghani-aliryani
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/abdulghani-aliryani
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.
+- id: maysaa-shuja-al-deen
+  name: Maysaa Shuja al-Deen
+  name_native: ميساء شجاع الدين
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/maysaashujaa
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Senior Researcher, Sana'a Center (the Houthi movement, Zaydism, armed movements)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: maysaashujaa
+    url: https://x.com/maysaashujaa
+    handle_evidence: https://sanaacenter.org/member/maysaa-shuja-aldeen
+  feeds: []
+  selection:
+    reason: Specialist on the Houthi movement whose analysis appears in Arabic and English outlets; posts on Yemeni
+      politics.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Sana''a Center profile: expertise in ideology and armed movements and the Houthi movement; published
+        in Jadaliyya, Al-Monitor and Assafir al-Arabi.'
+      urls:
+      - https://sanaacenter.org/member/maysaa-shuja-aldeen
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/maysaa-shuja-aldeen
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.
+- id: hussam-radman
+  name: Hussam Radman
+  name_native: حسام ردمان
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/hu_rdman
+  country: YE
+  region: yemen
+  languages:
+  - ar
+  - en
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: unknown
+  holder:
+    kind: person
+    role: Senior Researcher, Sana'a Center (armed groups and security; southern Yemen)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: hu_rdman
+    url: https://x.com/hu_rdman
+    handle_evidence: https://sanaacenter.org/member/hussam-radman
+  feeds: []
+  selection:
+    reason: Analyst of southern Yemen and armed groups, a key subject after the 2025-2026 Hadramawt and Aden events.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: 'Sana''a Center profile: research on political and security developments in Yemen; former investigative
+        journalist covering southern Yemen and the west coast.'
+      urls:
+      - https://sanaacenter.org/member/hussam-radman
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/hussam-radman
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.
+- id: thomas-juneau
+  name: Thomas Juneau
+  name_native: ''
+  category: SOCIAL_ACCOUNT
+  tier: A
+  url: https://x.com/thomasjuneau
+  country: CA
+  region: north_america
+  languages:
+  - en
+  - fr
+  platform: x
+  source_type: person
+  content_type: social_post
+  operating_base: outside_yemen
+  holder:
+    kind: person
+    role: Non-Resident Research Fellow, Sana'a Center (Yemen, Iran, the Houthis)
+    public_figure: true
+  accounts:
+  - platform: x
+    handle: thomasjuneau
+    url: https://x.com/thomasjuneau
+    handle_evidence: https://sanaacenter.org/member/thomas-juneau
+  feeds: []
+  selection:
+    reason: Academic who publishes on Yemen, the Houthis and Iran's role; Sana'a Center non-resident fellow.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: low
+      cited_by_other_media: medium
+      historical_importance: low
+      note: Sana'a Center lists him as a non-resident research fellow.
+      urls:
+      - https://sanaacenter.org/member/thomas-juneau
+      - https://sanaacenter.org/about-us/team
+    yemen_coverage:
+      frequency: weekly
+      evidence: Research and public commentary focus on Yemen (Sana'a Center profile).
+      urls:
+      - https://sanaacenter.org/member/thomas-juneau
+    institutional_importance:
+      level: low
+      note: Researcher; selected for influence, not office.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.5
+    classification_evidence: Checked the Sana'a Center profile; no documented affiliation with a Yemeni party or
+      a foreign state.
+    evidence_urls: []
+    method: manual_research
+    assessment_date: '2026-10-04'
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Handle listed on the Sana'a Center team page and member profile. No citable follower count retrieved (X
+    profiles cannot be fetched; web search budget exhausted), so audience_evidence is empty. X is registered, not
+    collected.

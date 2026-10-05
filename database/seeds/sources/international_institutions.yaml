@@ -1,0 +1,1137 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: osesgy
+  name: Office of the Special Envoy of the Secretary-General for Yemen (OSESGY)
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://osesgy.unmissions.org/
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: intergovernmental
+  content_type: institutional_publication
+  operating_base: outside_yemen
+  accounts:
+  - platform: x
+    handle: OSE_Yemen
+    url: https://twitter.com/OSE_Yemen
+    handle_evidence: https://osesgy.unmissions.org/en/contact-us
+  - platform: facebook
+    handle: OSESGY
+    url: https://www.facebook.com/OSESGY/
+    handle_evidence: https://osesgy.unmissions.org/en/contact-us
+  - platform: telegram
+    handle: OSESGY1
+    url: https://t.me/OSESGY1
+    handle_evidence: https://osesgy.unmissions.org/en/contact-us
+  - platform: youtube
+    handle: osesgycomms1496
+    url: https://www.youtube.com/@osesgycomms1496
+    handle_evidence: https://osesgy.unmissions.org/en/contact-us
+  feeds:
+  - url: https://t.me/s/OSESGY1
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; public preview of the Telegram channel t.me/OSESGY1 linked from https://osesgy.unmissions.org/en/contact-us
+      (documented t.me/s/ pattern).
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCDuoMw3Nywwg5b1ncFbr3sg
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: 'candidate; channel id UCDuoMw3Nywwg5b1ncFbr3sg read on https://www.youtube.com/c/osesgyyemen (search
+      result), which describes itself as the official YouTube page of OSESGY. CAUTION: the OSESGY website links
+      a different-looking handle (@osesgycomms1496) whose channel id was not obtained; CI should confirm which channel
+      is current.'
+  selection:
+    reason: The UN mediation office for Yemen; its statements and the Envoy's monthly Security Council briefings
+      set the international framing of the peace process.
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Envoy briefings are reported in UN meetings coverage and Security Council Report forecasts; UN News
+        carries the Envoy's statements (for example the May 2026 detainee-release agreement).
+      urls:
+      - https://www.securitycouncilreport.org/monthly-forecast/2026-04/yemen-88.php
+      - https://news.un.org/en/story/2026/05/1167511
+      - https://press.un.org/en/2026/sc16387.doc.htm
+    yemen_coverage:
+      frequency: weekly
+      evidence: Publishes Envoy statements, meeting readouts and briefing transcripts several times a month (for
+        example 21 April 2026 Military Coordination Committee meeting, 14 July 2026 Muscat visit).
+      urls:
+      - https://osesgy.unmissions.org/en/node/135076
+      - https://osesgy.unmissions.org/en/node/136240
+    institutional_importance:
+      level: high
+      note: Mandated UN mediator between the Yemeni parties; Hans Grundberg was Special Envoy as of the July 2026
+        Muscat visit. Under resolution 2813 (2026) residual UNMHA functions transition to this office.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: It is an office of the UN Secretariat headed by the Secretary-General's Special Envoy.
+    evidence_urls:
+    - https://osesgy.unmissions.org/en/contact-us
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Country XX: UN office; media contacts listed on the contact page use Amman (+962) numbers. No RSS link
+    found on the website (checked contact page and news pages). A WhatsApp channel is also linked from the site
+    (not collectable). Follower counts not collected: no citable page found.'
+- id: un-security-council
+  name: United Nations Security Council (Yemen file, incl. 2140 Sanctions Committee and Panel of Experts)
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://press.un.org/en/content/security-council/press-release
+  country: XX
+  region: global
+  languages:
+  - en
+  - fr
+  platform: website
+  source_type: intergovernmental
+  content_type: institutional_publication
+  operating_base: outside_yemen
+  accounts: []
+  feeds: []
+  selection:
+    reason: The Council's resolutions, press statements and monthly Yemen meetings are the legal and diplomatic
+      frame of the conflict (resolution 2216, the 2140 sanctions regime, UNMHA).
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Council decisions and press statements on Yemen are reported by UN News and international media; Security
+        Council Report tracks each Yemen meeting.
+      urls:
+      - https://www.securitycouncilreport.org/monthly-forecast/2026-04/yemen-88.php
+      - https://www.globalsecurity.org/military/library/news/2025/11/mil-251114-unsc02.htm
+    yemen_coverage:
+      frequency: monthly
+      evidence: Monthly Yemen briefing and consultations, plus press statements and emergency meetings in 2026 (press
+        statement on escalation in Yemen and attacks against Saudi Arabia, press statement for the Houthi detentions
+        anniversary of 6 June, resolution 2813 on UNMHA, 2140 Committee consideration of Panel of Experts ad hoc
+        reports).
+      urls:
+      - https://press.un.org/en/2026/sc16458.doc.htm
+      - https://press.un.org/en/2026/sc16378.doc.htm
+      - https://press.un.org/en/2026/sc16283.doc.htm
+      - https://press.un.org/en/2026/sc16461.doc.htm
+      - https://press.un.org/en/2026/sc16431.doc.htm
+    institutional_importance:
+      level: high
+      note: Resolution 2801 (2025) renewed the 2140 targeted sanctions to 14 November 2026 and the Panel of Experts
+        mandate to 15 December 2026 (renewal decisions due in late 2026); resolution 2813 (2026) closed UNMHA on
+        31 March 2026.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: UN Charter organ; its outputs are collective decisions of member states, with individual
+      members' statements recorded in meetings coverage.
+    evidence_urls:
+    - https://press.un.org/en/content/security-council/press-release
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'No RSS feed for UN Meetings Coverage (press.un.org) could be evidenced; WebFetch of press.un.org pages
+    returned 404 to the research fetcher on 2026-10-04 (likely bot filtering). The 2140 Committee and Panel of Experts
+    are kept inside this record rather than as separate sources: the Panel''s final and ad hoc reports are occasional
+    (a few per year) and are announced through Council press releases. Meetings coverage records individual Council
+    members'' statements; analysis should attribute them to the member state, not to the Council. Inactive until
+    a collectable feed is found.'
+- id: un-news
+  name: UN News
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://news.un.org/en/
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  - fr
+  - es
+  - ru
+  - zh
+  - pt
+  - sw
+  platform: website
+  source_type: intergovernmental
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: outside_yemen
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts: []
+  feeds:
+  - url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: true
+    notes: Middle East region feed listed by third-party directories but returned 404 on 2026-10-02 (as did the
+      all-news feed); feed paths may have changed.
+  - url: https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml
+    type: rss
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; listed by feed directories (rss.feedspot.com/unnews_rss_feeds, feedbagel.com/site/un.org).
+      Returned 404 to the research WebFetch on 2026-10-04, as did the Middle East region feed already in the old
+      registry; feeder.co reports another topic feed with the same path pattern as working, so the 404 may be fetcher-specific.
+      CI to test.
+  - url: https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml
+    type: rss
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; listed by feed directories (rss.feedspot.com/unnews_rss_feeds, feedbagel.com/site/un.org).
+      Same 404 caveat as above.
+  selection:
+    reason: Official news service of the UN Secretariat; publishes the Secretary-General's, Envoy's and agencies'
+      Yemen statements in eight languages, including Arabic.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Primary public channel for UN system statements on Yemen; maintains a Yemen focus page.
+      urls:
+      - https://news.un.org/en/focus/yemen
+      - https://www.un.org/ar/node/89524
+    yemen_coverage:
+      frequency: weekly
+      evidence: Yemen focus page carried stories dated 16, 21 and 24 September 2026 (displacement, the UN condemnation
+        of an attempted Houthi strike on Riyadh, child hunger); further Yemen stories in January, February, May,
+        June and September 2026.
+      urls:
+      - https://news.un.org/en/focus/yemen
+      - https://news.un.org/en/story/2026/09/1168390
+      - https://news.un.org/en/story/2026/09/1168480
+      - https://news.un.org/en/story/2026/06/1167728
+      - https://news.un.org/en/story/2026/02/1166951
+    institutional_importance:
+      level: medium
+      note: Speaks for the UN Secretariat (Department of Global Communications) rather than for a decision-making
+        body; it relays the positions of the Secretary-General, the Envoy, OCHA and agencies.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.9
+    classification_evidence: UN-produced news outlet listed by the UN among its official news outlets, published
+      in eight languages.
+    evidence_urls:
+    - https://www.un.org/ar/node/89524
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: News service of the UN Department of Global Communications.
+    evidence_urls: []
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'The Secretary-General''s spokesperson noon briefings are not a separate record: no Yemen-usable feed was
+    found, and their Yemen content is relayed by UN News and press.un.org. No Arabic UN News feed URL could be evidenced.
+    X/YouTube accounts not recorded (no handle evidence collected).'
+- id: un-ocha
+  name: UN Office for the Coordination of Humanitarian Affairs (OCHA), Yemen
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.unocha.org/yemen
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  accounts: []
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=OCHA
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: 'candidate; built from the documented example query at https://apidoc.reliefweb.int/parameters (country
+      + source filter; source.shortname field per https://apidoc.reliefweb.int/fields-tables). REQUIRES CONFIGURATION:
+      since 1 Nov 2025 the ReliefWeb API needs a pre-approved appname. The ReliefWeb source shortname ''OCHA'' is
+      assumed and must be confirmed by CI.'
+  selection:
+    reason: Coordinates the humanitarian response in Yemen and publishes the Humanitarian Needs and Response Plan,
+      humanitarian updates and flash updates that set the figures other actors quote.
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: OCHA figures (people in need, appeal size, displacement, civilian casualties) are routinely cited; in
+        September 2026 OCHA statements covered hostilities in Yemen and strikes injuring civilians in Saudi Arabia.
+      urls:
+      - https://www.developmentaid.org/news-stream/post/210638/ocha-highlights-humanitarian-crises-in-yemen-saudi-arabia-opt-and-drc
+      - https://reliefweb.int/report/yemen/yemen-humanitarian-crisis-deepens-aid-agencies-appeal-us216-billion-assist-millions-2026-enar
+    yemen_coverage:
+      frequency: weekly
+      evidence: Yemen-specific outputs include the 2026 HNRP launch (18 March 2026; US$2.16 billion for 12 million
+        of 22.3 million people in need), periodic humanitarian updates, and statements during the September 2026
+        escalation.
+      urls:
+      - https://reliefweb.int/report/yemen/yemen-humanitarian-crisis-deepens-aid-agencies-appeal-us216-billion-assist-millions-2026-enar
+      - https://reliefweb.int/report/yemen/yemen-humanitarian-update-issue-6-augustseptember-2024-enar
+      - https://www.developmentaid.org/news-stream/post/210638/ocha-highlights-humanitarian-crises-in-yemen-saudi-arabia-opt-and-drc
+    institutional_importance:
+      level: high
+      note: UN humanitarian coordination body; supports the Humanitarian Coordinator and manages the Yemen Humanitarian
+        Fund.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: Part of the UN Secretariat.
+    evidence_urls:
+    - https://reliefweb.int/report/yemen/yemen-humanitarian-crisis-deepens-aid-agencies-appeal-us216-billion-assist-millions-2026-enar
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: UN Office for the Coordination of Humanitarian Affairs.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/United_Nations_Office_for_the_Coordination_of_Humanitarian_Affairs
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Weekly frequency is a judgement from 2026 outputs (HNRP, updates, statements during the September escalation);
+    OCHA Yemen''s own channel list was not found. Old registry noted unocha.org/rss.xml returned 403. No OCHA Yemen
+    X handle evidenced (the yemen.un.org OCHA page lists only UN-in-Yemen accounts, recorded under un-yemen-rchc).
+    Operating base left unknown: OCHA has offices in both Sanaa and Aden areas, but UN operations in Houthi-controlled
+    areas were paused (see wfp record). Yemen page exists; unocha.org/rss.xml returned 403 on 2026-10-02. OCHA Yemen
+    reports are syndicated via ReliefWeb. No public RSS feed found; recorded for reference.'
+- id: reliefweb
+  name: ReliefWeb (Yemen updates)
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://reliefweb.int/country/yem
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  - fr
+  platform: website
+  source_type: aggregator
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: outside_yemen
+  geographic_focus:
+  - national
+  yemen_coverage: primary
+  accounts: []
+  feeds:
+  - url: https://reliefweb.int/country/yem/rss.xml
+    type: rss
+    verified: false
+    yemen_filter: false
+    notes: Returned HTTP 403 to the research fetcher on 2026-10-02; Yemen country feed, not verified. ReliefWeb
+      API v2 (api.reliefweb.int) is an alternative but requires an approved appname.
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=primary_country.iso3&filter[conditions][0][value]=yem
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: 'candidate; ReliefWeb API v2 query for reports whose primary country is Yemen, following the documented
+      filter syntax at https://apidoc.reliefweb.int/parameters and the primary_country field at https://apidoc.reliefweb.int/fields-tables.
+      REQUIRES CONFIGURATION: pre-approved appname needed since 1 Nov 2025. The country RSS feed (reliefweb.int/country/yem/rss.xml)
+      is carried over from the old registry.'
+  selection:
+    reason: OCHA's information service and the main public repository of humanitarian reports on Yemen from UN agencies,
+      NGOs and authorities.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Hosts the reports of OCHA, IOM DTM, WFP, UNICEF and NGO coalitions that other sources cite; it is a
+        publisher of record, not an author.
+      urls:
+      - https://reliefweb.int/report/yemen/yemen-rapid-displacement-tracking-update-1-7-march-2026
+      - https://live.libnanews.com/event/ev-1775137493967-e3e9
+    yemen_coverage:
+      frequency: weekly
+      evidence: New Yemen documents appear at least weekly (for example IOM DTM weekly rapid displacement updates,
+        the 2026 HNRP, and an April 2026 joint INGO statement on the funding collapse).
+      urls:
+      - https://reliefweb.int/report/yemen/rapid-displacement-tracking-yemen-idp-dashboard-reporting-period-8-14-february-2026
+      - https://reliefweb.int/report/yemen/yemen-rapid-displacement-tracking-update-1-7-march-2026
+      - https://reliefweb.int/report/yemen/yemen-humanitarian-crisis-deepens-aid-agencies-appeal-us216-billion-assist-millions-2026-enar
+    institutional_importance:
+      level: medium
+      note: Run by UN OCHA; carries official documents of many institutions, so each item must be attributed to
+        its original source organisation (the API returns the source field).
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.85
+    classification_evidence: Service provided by UN OCHA (site tagline "a service provided by UN OCHA"); content
+      comes from many organisations, so the label describes the platform, not each document.
+    evidence_urls:
+    - https://reliefweb.int/report/yemen/yemen-humanitarian-crisis-deepens-aid-agencies-appeal-us216-billion-assist-millions-2026-enar
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Information service of UN OCHA.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/ReliefWeb
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Overlap: agency records in this file (un-ocha, wfp, unicef, who-yemen, unhcr-yemen, iom-yemen) use source-filtered
+    ReliefWeb API queries; deduplicate by ReliefWeb report id and attribute items to the agency record. Weekly is
+    a conservative frequency; volume is likely higher. Country XX: UN service, no single national base.'
+- id: un-yemen-rchc
+  name: United Nations in Yemen (Office of the Resident and Humanitarian Coordinator)
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://yemen.un.org/en
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: intergovernmental
+  content_type: institutional_publication
+  operating_base: unknown
+  accounts:
+  - platform: x
+    handle: UNinYE
+    url: https://twitter.com/UNinYE
+    handle_evidence: https://yemen.un.org/en/225349-ocha-yemen
+  - platform: facebook
+    handle: UNinYE
+    url: https://www.facebook.com/UNinYE
+    handle_evidence: https://yemen.un.org/en/225349-ocha-yemen
+  - platform: youtube
+    handle: UNYemen
+    url: https://www.youtube.com/UNYemen
+    handle_evidence: https://yemen.un.org/en/225349-ocha-yemen
+  - platform: instagram
+    handle: unrcyemen
+    url: https://www.instagram.com/unrcyemen/
+    handle_evidence: https://yemen.un.org/en/225349-ocha-yemen
+  feeds: []
+  selection:
+    reason: Voice of the UN country team in Yemen; the Resident and Humanitarian Coordinator speaks for the UN system
+      on access, detained UN staff and the humanitarian plan.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: RC/HC statements and meetings with Yemeni authorities are published on yemen.un.org.
+      urls:
+      - https://yemen.un.org/en/node/310212
+    yemen_coverage:
+      frequency: monthly
+      evidence: Press releases and statements on yemen.un.org, for example the 17 February 2026 meeting of RC/HC
+        Julien Harneis with the Minister of Planning and International Cooperation in Aden on the 2026 HNRP and
+        the 2027-2029 Cooperation Framework.
+      urls:
+      - https://yemen.un.org/en/node/310212
+    institutional_importance:
+      level: high
+      note: Senior UN official in-country; the post holder changed in 2026 (Julien Harneis in February 2026; the
+        March 2026 HNRP release names Zeina Ali as acting Humanitarian Coordinator). Verify current holder before
+        quoting.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: Official site of the United Nations country team in Yemen.
+    evidence_urls:
+    - https://yemen.un.org/en/node/310212
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: No RSS link found on yemen.un.org pages fetched; the YouTube channel id for youtube.com/UNYemen could not
+    be read, so no YouTube feed is listed. Inactive until a collectable feed is found. Not in the original slice
+    list; added because the RC/HC is the UN system's senior in-country voice.
+- id: wfp
+  name: World Food Programme (WFP), Yemen
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.wfp.org/countries/yemen
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: WFPYemen
+    url: https://twitter.com/WFPYemen
+    handle_evidence: https://wfp.org/countries/yemen
+  - platform: facebook
+    handle: WFPinYemen
+    url: https://business.facebook.com/WFPinYemen/
+    handle_evidence: https://wfp.org/countries/yemen
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=WFP
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: 'candidate; built from the documented example query at https://apidoc.reliefweb.int/parameters. REQUIRES
+      CONFIGURATION (pre-approved appname). Source shortname ''WFP'' assumed; CI to confirm. wfp.org has no RSS
+      link (old registry: /rss.xml returned 404).'
+  selection:
+    reason: Runs the largest food-assistance operation in Yemen; its statements on food insecurity, funding cuts
+      and access shape the humanitarian narrative.
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: WFP figures on acute food insecurity (18.3 million) and malnutrition are widely repeated; its suspension
+        of activities in Houthi-controlled areas is itself a political fact in Yemen discourse.
+      urls:
+      - https://wfp.org/countries/yemen
+    yemen_coverage:
+      frequency: monthly
+      evidence: Country page and news releases updated through 2026, stating that WFP activities in areas under
+        the Houthi de facto authorities are suspended in line with a pause of all UN operations there mandated by
+        the Secretary-General.
+      urls:
+      - https://wfp.org/countries/yemen
+    institutional_importance:
+      level: high
+      note: UN food agency; operational decisions (suspension in Houthi areas, ration cuts) are contested by the
+        parties.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: UN agency.
+    evidence_urls:
+    - https://wfp.org/countries/yemen
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: UN agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/World_Food_Programme
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: X handle recorded as listed on the WFP Yemen country page (twitter.com/WFPYemen); not WFP_Yemen. Follower
+    counts not collected. Monthly is conservative; output rose during the 2026 escalation. No RSS link on wfp.org/news;
+    /rss.xml returned 404. WFP Yemen updates are syndicated via ReliefWeb. No public RSS feed found; recorded for
+    reference.
+- id: unicef
+  name: UNICEF Yemen
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.unicef.org/yemen/
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  geographic_focus:
+  - national
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: UNICEF_Yemen
+    url: https://twitter.com/UNICEF_Yemen
+    handle_evidence: https://www.unicef.org/yemen/where-we-work
+  - platform: facebook
+    handle: unicefyemen
+    url: https://www.facebook.com/unicefyemen/
+    handle_evidence: https://www.unicef.org/yemen/where-we-work
+  - platform: instagram
+    handle: unicef_yemen
+    url: https://www.instagram.com/unicef_yemen/
+    handle_evidence: https://www.unicef.org/yemen/where-we-work
+  - platform: youtube
+    handle: UNICEFYemen
+    url: https://www.youtube.com/user/UNICEFYemen
+    handle_evidence: https://www.unicef.org/yemen/where-we-work
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=UNICEF
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: 'candidate; built from the documented example at https://apidoc.reliefweb.int/parameters (the fields
+      table cites UNICEF as a source.shortname example). REQUIRES CONFIGURATION (pre-approved appname). Old registry:
+      UNICEF press-release RSS paths returned 404.'
+  selection:
+    reason: Main UN voice on children in Yemen (casualties, malnutrition, cholera, education); its Yemen press releases
+      are frequently quoted.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: high
+      historical_importance: high
+      note: UNICEF child-casualty and malnutrition figures recur in coverage (for example the 2022 figure of more
+        than 11,000 children killed or injured).
+      urls:
+      - https://www.unicef.org/yemen/press-releases/more-11000-children-killed-or-injured-yemen
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen country-office press releases dated 16 September 2026 (renewed hostilities push over 12 million
+        children deeper into crisis) and 25 September 2026 (hunger and malnutrition as violence escalates).
+      urls:
+      - https://www.unicef.org/yemen/press-releases/more-11000-children-killed-or-injured-yemen
+    institutional_importance:
+      level: medium
+      note: UN agency leading nutrition, WASH and education clusters; co-chairs monitoring of grave violations against
+        children.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: UN agency country office.
+    evidence_urls:
+    - https://www.unicef.org/yemen/where-we-work
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: UN agency.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/UNICEF
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: The September 2026 press releases were read as related links on the cited UNICEF Yemen page. A YouTube
+    feed needs the channel id of youtube.com/user/UNICEFYemen, which was not obtained. Press-release RSS paths returned
+    404 on 2026-10-02. Syndicated via ReliefWeb. No public RSS feed found; recorded for reference.
+- id: iom-yemen
+  name: International Organization for Migration (IOM) Yemen, incl. Displacement Tracking Matrix (DTM)
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://yemen.iom.int/
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: intergovernmental
+  content_type: institutional_publication
+  operating_base: unknown
+  accounts: []
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=IOM
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
+      (pre-approved appname). IOM DTM Yemen weekly Rapid Displacement Tracking updates are published on ReliefWeb
+      (see yemen_coverage urls). Source shortname 'IOM' assumed; CI to confirm.
+  selection:
+    reason: IOM's DTM is the reference count of new displacement in Yemen; its weekly figures were the most-cited
+      displacement numbers during the 2026 West Coast and Taiz fighting.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: high
+      historical_importance: medium
+      note: September 2026 DTM figures (displacement passing 46,000, 76,000, then 145,000 across eight governorates,
+        over half in Taiz) were reported by international and South Asian outlets.
+      urls:
+      - https://www.developmentaid.org/news-stream/post/210947/yemen-displacement-surpasses-145000-as-west-coast-conflict-intensifies
+      - https://www.developmentaid.org/news-stream/post/210530/iom-warns-yemen-displacement-surpasses-76000-amid-intensifying-fighting
+      - https://telanganatoday.com/yemen-displacement-surges-past-46000-as-clashes-intensify
+    yemen_coverage:
+      frequency: weekly
+      evidence: Weekly DTM Rapid Displacement Tracking updates (for example 8-14 February 2026 and 1-7 March 2026),
+        plus IOM statements during the September 2026 escalation quoting Chief of Mission Abdusattor Esoev.
+      urls:
+      - https://reliefweb.int/report/yemen/rapid-displacement-tracking-yemen-idp-dashboard-reporting-period-8-14-february-2026
+      - https://reliefweb.int/report/yemen/yemen-rapid-displacement-tracking-update-1-7-march-2026
+      - https://www.developmentaid.org/news-stream/post/210947/yemen-displacement-surpasses-145000-as-west-coast-conflict-intensifies
+    institutional_importance:
+      level: medium
+      note: UN-related intergovernmental migration agency; produces displacement data used by the humanitarian system
+        and the media, and covers migrants transiting Yemen from the Horn of Africa.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: Intergovernmental organisation (UN-related agency); DTM is its data programme.
+    evidence_urls:
+    - https://reliefweb.int/report/yemen/yemen-rapid-displacement-tracking-update-1-7-march-2026
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'URL yemen.iom.int is the IOM Yemen domain seen in a search result (a 2023 appeal PDF under yemen.iom.int);
+    the homepage itself was not fetched. Account evidence is weak and not recorded: a yemen.un.org video page credits
+    ''@IOMYemen'' (platform not stated, probably YouTube) and a 2018 web-archive capture shows twitter.com/iom_yemen;
+    neither confirmed for 2026. dtm.iom.int Yemen page not evidenced (search budget exhausted).'
+- id: unhcr-yemen
+  name: UNHCR Yemen
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.unhcr.org/countries/yemen
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  accounts: []
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=UNHCR
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
+      (pre-approved appname). Source shortname 'UNHCR' assumed; CI to confirm.
+  selection:
+    reason: UN refugee agency in Yemen (protection and shelter cluster lead; refugees and asylum seekers from the
+      Horn of Africa); issues statements on mass displacement.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: UNHCR's September 2026 warning on displacement from the Taiz and West Coast fighting was reported internationally.
+      urls:
+      - https://www.jurist.org/news/2026/09/worsening-conflict-in-yemen-fuels-mass-displacement-amid-growing-humanitarian-emergency-unhcr-says/
+    yemen_coverage:
+      frequency: monthly
+      evidence: Statement of 23 September 2026 (more than 5.2 million internally displaced; Taiz over 60% of new
+        displacement), with Representative Armen Yedgaryan; operational updates on data.unhcr.org.
+      urls:
+      - https://www.jurist.org/news/2026/09/worsening-conflict-in-yemen-fuels-mass-displacement-amid-growing-humanitarian-emergency-unhcr-says/
+      - https://data.unhcr.org/es/documents/download/124197
+    institutional_importance:
+      level: medium
+      note: UN agency with a protection mandate for refugees and IDPs in Yemen.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: UN agency.
+    evidence_urls:
+    - https://www.jurist.org/news/2026/09/worsening-conflict-in-yemen-fuels-mass-displacement-amid-growing-humanitarian-emergency-unhcr-says/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'No UNHCR Yemen social account evidenced (unhcr.org fetch blocked by robots rate limiting on 2026-10-04).
+    Borderline inclusion: keep only if the ReliefWeb feed yields regular Yemen items.'
+- id: who-yemen
+  name: World Health Organization (WHO) Yemen
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.emro.who.int/countries/yem/
+  country: XX
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  accounts: []
+  feeds:
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=WHO
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate; built from the documented example at https://apidoc.reliefweb.int/parameters. REQUIRES CONFIGURATION
+      (pre-approved appname). Source shortname 'WHO' assumed; CI to confirm. The EMRO Yemen news page mentions RSS
+      feeds but no feed URL could be read.
+  selection:
+    reason: Lead UN health agency in Yemen; its cholera, measles and health-system statements drive health coverage
+      of the conflict.
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: high
+      note: WHO's role in the cholera epidemics made it a recurring source in Yemen coverage; in 2026 it warned
+        of rising cholera and measles outbreaks.
+      urls:
+      - https://epinews.emphnet.net/en/news/who-warns-of-rising-health-risks-in-yemen-amid-new-waves-of-infectious-diseases
+      - https://news.un.org/en/story/2026/09/1168480
+    yemen_coverage:
+      frequency: monthly
+      evidence: WHO Yemen warnings on infectious disease (July 2026) and emergency health appeals; Yemen news section
+        on the EMRO site.
+      urls:
+      - https://epinews.emphnet.net/en/news/who-warns-of-rising-health-risks-in-yemen-amid-new-waves-of-infectious-diseases
+      - https://www.emro.who.int/countries/yem/yemen-recent-news.html
+      - https://www.who.int/publications/m/item/yemen-who-2024-health-emergency-appeal
+    institutional_importance:
+      level: medium
+      note: UN specialised agency leading the health cluster.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: intergovernmental
+    classification_confidence: 0.95
+    classification_evidence: UN specialised agency country office under the Eastern Mediterranean Regional Office.
+    evidence_urls:
+    - https://www.emro.who.int/countries/yem/yemen-recent-news.html
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'URL is the EMRO Yemen country section (the who.int Yemen pages seen were publications). Accounts not recorded:
+    the only evidence is a yemen.un.org video page crediting ''@WHOYEMEN'' as a YouTube reference, without a channel
+    id. The cited UN News story on cholera and measles (Sept 2026) is known only by its title; WHO attribution not
+    confirmed. Borderline inclusion.'
+- id: icrc
+  name: International Committee of the Red Cross (ICRC), Yemen delegation
+  name_native: ICRC
+  category: INTERNATIONAL_INSTITUTION
+  tier: B
+  url: https://www.icrc.org/en/where-we-work/yemen
+  country: CH
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: humanitarian
+  source_group: international_humanitarian
+  content_type: institutional_publication
+  operating_base: unknown
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  accounts:
+  - platform: x
+    handle: icrc_ye
+    url: https://twitter.com/icrc_ye
+    handle_evidence: https://www.icrc.org/en/where-we-work/yemen
+  - platform: facebook
+    handle: ICRCye
+    url: https://www.facebook.com/ICRCye/
+    handle_evidence: https://www.icrc.org/en/where-we-work/yemen
+  feeds:
+  - url: https://www.icrc.org/en/rss/news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: News feed; newest item 2026-10-01.
+  - url: https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME&filter[operator]=AND&filter[conditions][0][field]=country&filter[conditions][0][value]=Yemen&filter[conditions][1][field]=source.shortname&filter[conditions][1][value]=ICRC
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate Yemen-specific alternative to the global ICRC news feed (https://www.icrc.org/en/rss/news,
+      verified in the old registry with yemen_filter true and carried over). Built from the documented example at
+      https://apidoc.reliefweb.int/parameters; REQUIRES CONFIGURATION (pre-approved appname); shortname 'ICRC' assumed.
+  selection:
+    reason: Neutral intermediary in Yemen's detainee releases and a frontline medical-aid actor; its statements
+      on detainees and civilian harm carry weight with all parties.
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: ICRC implements UN-brokered detainee release agreements (May 2026 Amman agreement, following earlier
+        exchanges).
+      urls:
+      - https://www.icrc.org/en/where-we-work/yemen
+      - https://news.un.org/en/story/2026/05/1167511
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen items dated 13 Feb, 14 May, 15 May, 29 July and 18 Sept 2026 (detainee release preparations
+        after the Amman agreement; 22 tonnes of medical supplies for front-line hospitals).
+      urls:
+      - https://www.icrc.org/en/where-we-work/yemen
+    institutional_importance:
+      level: high
+      note: Holds a mandate under the Geneva Conventions; Head of Delegation in Yemen Christine Cipolla (named in
+        the May 2026 release).
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: not_applicable
+    domestic_political_orientation: independent
+    classification_confidence: 0.8
+    classification_evidence: The ICRC is a private Swiss humanitarian institution with an international mandate
+      under the Geneva Conventions, not an intergovernmental body, hence 'independent' rather than 'intergovernmental'.
+    evidence_urls:
+    - https://www.icrc.org/en/where-we-work/yemen
+    - https://en.wikipedia.org/wiki/International_Committee_of_the_Red_Cross
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Private humanitarian institution based in Geneva with a mandate under the Geneva Conventions.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/International_Committee_of_the_Red_Cross
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry; its verified global news RSS is carried over. X handle as linked from the
+    ICRC Yemen page (twitter.com/icrc_ye?lang=en). Not intergovernmental: recorded as INTERNATIONAL_INSTITUTION
+    because of its treaty-based mandate.'
+- id: human-rights-watch
+  name: Human Rights Watch
+  category: RESEARCH_ORGANIZATION
+  tier: A
+  url: https://www.hrw.org/middle-east/n-africa/yemen
+  country: US
+  region: global
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: research
+  source_group: international_humanitarian
+  content_type: analysis
+  operating_base: outside_yemen
+  geographic_focus:
+  - global
+  yemen_coverage: medium
+  accounts:
+  - platform: x
+    handle: hrw
+    url: https://twitter.com/hrw
+    handle_evidence: https://www.hrw.org/middle-east/n-africa/yemen
+  - platform: youtube
+    handle: HumanRightsWatch
+    url: https://www.youtube.com/user/HumanRightsWatch
+    handle_evidence: https://www.hrw.org/middle-east/n-africa/yemen
+  - platform: facebook
+    handle: HumanRightsWatch
+    url: https://www.facebook.com/HumanRightsWatch
+    handle_evidence: https://www.hrw.org/middle-east/n-africa/yemen
+  - platform: instagram
+    handle: humanrightswatch
+    url: https://www.instagram.com/humanrightswatch/
+    handle_evidence: https://www.hrw.org/middle-east/n-africa/yemen
+  feeds:
+  - url: https://www.hrw.org/rss/news
+    type: rss
+    verified: true
+    verified_at: 2026-10-02
+    yemen_filter: true
+    notes: Global news feed; items dated 2026-10-01. A Yemen-specific country feed (/rss/country/yemen) returned
+      404.
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCoS-mm5bC5eY07AaKntKzgw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate; channel id read on https://www.youtube.com/user/HumanRightsWatch (linked from the HRW Yemen
+      page). Global channel, Yemen filter needed. The verified global news RSS (https://www.hrw.org/rss/news) is
+      carried over from the old registry.
+  selection:
+    reason: Sustained documentation of violations by all parties in Yemen (Houthi detentions of UN and civil-society
+      staff, attacks on civilians in Yemen and Saudi Arabia, excessive force against protesters); widely quoted
+      by media and cited in UN debates.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Major international human-rights monitor with a dedicated Yemen page and Arabic output; its Yemen findings
+        are routinely reported by international and Arab media.
+      urls:
+      - https://www.hrw.org/middle-east/n-africa/yemen
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen items dated 17 Mar, 7 Jun, 26 Jul, 28 Jul, 25 Aug, 26 Aug, 7 Sep and 15 Sep 2026 (news releases,
+        dispatches, statements, a report).
+      urls:
+      - https://www.hrw.org/middle-east/n-africa/yemen
+    institutional_importance:
+      level: none
+      note: Non-governmental; selected for influence, not institutional standing.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.6
+    classification_evidence: Checked the HRW Yemen page (2026 items criticise Houthi detentions and attacks, and
+      strikes endangering civilians in Yemen and Saudi Arabia); no documented affiliation with a Yemeni party or
+      a state was found in this research. No watchdog or academic source on editorial lean was consulted.
+    evidence_urls:
+    - https://www.hrw.org/middle-east/n-africa/yemen
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: International non-governmental human rights organisation.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Human_Rights_Watch
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: 'Same id as the old registry (feeds and ownership carried over). AUDIENCE EVIDENCE MISSING: the session''s
+    web-search budget ran out before follower counts could be sourced, and the YouTube page did not expose a subscriber
+    count; add x_followers / youtube_subscribers with a source_url before relying on the influence score. HRW also
+    has Bluesky, LinkedIn and TikTok accounts linked from its site (not recorded: platforms outside the schema list
+    or not collectable).'
+- id: acled
+  name: Armed Conflict Location & Event Data (ACLED)
+  category: RESEARCH_ORGANIZATION
+  tier: A
+  url: https://acleddata.com/
+  country: US
+  region: global
+  languages:
+  - en
+  platform: website
+  source_type: research
+  source_group: think_tank_research
+  content_type: analysis
+  operating_base: outside_yemen
+  geographic_focus:
+  - global
+  yemen_coverage: high
+  accounts:
+  - platform: x
+    handle: ACLEDINFO
+    url: https://twitter.com/ACLEDINFO
+    handle_evidence: https://acleddata.com/
+  - platform: youtube
+    handle: UCbN6PMoEeDcfOGkKHvz-1cw
+    url: https://www.youtube.com/channel/UCbN6PMoEeDcfOGkKHvz-1cw
+    handle_evidence: https://acleddata.com/
+  - platform: facebook
+    handle: ACLEDINFO
+    url: https://www.facebook.com/ACLEDINFO/
+    handle_evidence: https://acleddata.com/
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCbN6PMoEeDcfOGkKHvz-1cw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: 'candidate; channel id from the YouTube link on https://acleddata.com/ (documented YouTube feed pattern).
+      Global channel, low Yemen share expected. No RSS on acleddata.com or the Yemen Conflict Monitor page (old
+      registry: /feed/ returned 404).'
+  selection:
+    reason: Runs a dedicated Yemen Conflict Monitor; its event data and analyses (Houthi activity, Red Sea and Bab
+      al-Mandab, AQAP/IS) are the standard quantitative reference on political violence in Yemen.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: ACLED casualty and event counts for Yemen are widely used by media, researchers and UN reporting.
+      urls:
+      - https://acleddata.com/monitor/yemen-conflict-monitor
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen Conflict Monitor analyses dated 19 Aug 2026 (Houthi activity in Yemen and Saudi Arabia), 2
+        Sep 2026 (IS and al-Qaeda), 1 Oct 2026 (Houthi gains around Bab al-Mandab), plus monthly Middle East overviews.
+      urls:
+      - https://acleddata.com/monitor/yemen-conflict-monitor
+    institutional_importance:
+      level: none
+      note: Non-governmental data organisation; selected for influence.
+  alignment:
+    yemen_political_alignment: none_documented
+    sub_alignment: ''
+    regional_alignment: none_documented
+    domestic_political_orientation: unknown
+    classification_confidence: 0.6
+    classification_evidence: Checked the ACLED homepage and Yemen Conflict Monitor; no documented affiliation with
+      a Yemeni party or state was found in this research. Funding sources were not reviewed.
+    evidence_urls:
+    - https://acleddata.com/monitor/yemen-conflict-monitor
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  ownership:
+    description: Armed Conflict Location & Event Data, non-profit.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Armed_Conflict_Location_and_Event_Data
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Same id as the old registry. AUDIENCE EVIDENCE MISSING (web-search budget exhausted); add a sourced follower
+    count before relying on the influence score. ACLED data API needs registration and is not a publication feed.
+    The YouTube account handle field holds the channel id because no @handle was shown. Conflict-event dataset (API
+    requires registration/key). acleddata.com/feed/ returned 404 on 2026-10-02. No public RSS feed found; recorded
+    for reference.

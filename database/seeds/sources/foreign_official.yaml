@@ -1,0 +1,1482 @@
+# Curated source registry. Format and rules: SCHEMA.md. Researched 2026-10-04; every figure,
+# handle and alignment cites its evidence. Feeds marked verified: false are candidates until checked.
+- id: saudi-mofa
+  name: Ministry of Foreign Affairs of Saudi Arabia
+  name_native: وزارة الخارجية السعودية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.mofa.gov.sa/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  wikidata: Q6867032
+  accounts:
+  - platform: x
+    handle: KSAmofa
+    url: https://x.com/KSAmofa
+    handle_evidence: https://en.rattibha.com/KSAMOFA
+  - platform: x
+    handle: KSAmofaEN
+    url: https://x.com/KSAmofaEN
+    handle_evidence: https://en.rattibha.com/KSAmofaEN
+  feeds: []
+  selection:
+    reason: Foreign-policy voice of the state that leads the Coalition to Restore Legitimacy in Yemen and is the
+      main external backer of the PLC government; a direct party to the renewed Saudi-Houthi hostilities of July-September
+      2026.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Its Yemen statements are quoted by Saudi, Yemeni and international media and answered by the Yemeni
+        government (for example the 20 July 2026 statement rejecting Houthi blockade accusations, welcomed by Yemen's
+        MOFA on 21 July 2026).
+      urls:
+      - https://english.ajel.sa/saudi-arabia/j2s9nkcdd
+      - https://www.mofa-ye.org/Pages/38003/
+    yemen_coverage:
+      frequency: weekly
+      evidence: Issues Yemen statements and readouts of calls with Yemeni and foreign officials regularly; Yemen
+        statements in July 2026 during the collapse of the truce.
+      urls:
+      - https://english.ajel.sa/saudi-arabia/j2s9nkcdd
+    institutional_importance:
+      level: high
+      note: Saudi Arabia leads the coalition supporting the PLC government, hosts the PLC and the Yemeni government
+        in Riyadh, and is the counterpart of the Houthis in the Saudi-Houthi track; Minister Faisal bin Farhan in
+        office since October 2019.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the Saudi government's own foreign ministry.
+    evidence_urls:
+    - https://www.mofa.gov.sa/
+    - https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Saudi_Arabia)
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: No RSS feed found on mofa.gov.sa (homepage fetch showed no feed or social links; deeper pages timed out).
+    X handles are evidenced only by a third-party thread-reader mirror (rattibha), which also shows follower counts
+    of unknown date; counts not recorded. Confirm the handles against the ministry's own site before use. Statements
+    are also carried by SPA (media record spa-saudi-press-agency).
+- id: saudi-embassy-yemen
+  name: Embassy of the Kingdom of Saudi Arabia to the Republic of Yemen
+  name_native: سفارة المملكة العربية السعودية لدى الجمهورية اليمنية
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://ye.saudiembassy.sa/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: KSAembassyYE
+    url: https://x.com/KSAembassyYE
+    handle_evidence: https://www.eyeofriyadh.com/ar/directory/details/6763_embassy-of-the-kingdom-of-saudi-arabia-in-yemen
+  feeds: []
+  selection:
+    reason: The embassy headed by Ambassador Mohammed Al Jaber is the main channel of Saudi political engagement
+      with Yemeni parties (PLC, government, STC, tribes) and of the ambassador's frequent public meetings.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: high
+      note: The ambassador's meetings with UN, US, Swedish and Yemeni officials are routinely reported by Saudi
+        and Yemeni media.
+      urls:
+      - https://english.aawsat.com/gulf/5260775-saudi-ambassador-yemen-meets-un-special-envoy
+      - https://english.ajel.sa/news/saudi-arabias-ambassador-meets-swedish-envoy-for-yemen
+    yemen_coverage:
+      frequency: weekly
+      evidence: The mission exists solely for Yemen; its ambassador's meetings are reported most weeks.
+      urls:
+      - https://english.aawsat.com/gulf/5260775-saudi-ambassador-yemen-meets-un-special-envoy
+    institutional_importance:
+      level: high
+      note: Saudi Arabia's resident mission for Yemen (offices listed in Sanaa and Aden on its site; the embassy
+        moved from Sanaa to Aden in 2015 and works largely from Riyadh). Its head also supervises SDRPY.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is Saudi Arabia's own diplomatic mission to Yemen.
+    evidence_urls:
+    - https://ye.saudiembassy.sa/
+    - https://en.wikipedia.org/wiki/List_of_ambassadors_of_Saudi_Arabia_to_Yemen
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The embassy website (part of the unified saudiembassy.sa portal) shows only a 2017 news item and no feed
+    or social links. X handle KSAembassyYE is evidenced only by a Riyadh business directory listing (Eye of Riyadh);
+    confirm before use. The ambassador's own account belongs in a person record (other slice).
+- id: sdrpy
+  name: Saudi Development and Reconstruction Program for Yemen (SDRPY)
+  name_native: البرنامج السعودي لتنمية وإعمار اليمن
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.sdrpy.gov.sa/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  accounts: []
+  feeds: []
+  selection:
+    reason: Saudi state program created by royal decree in 2018 that channels Saudi development money, fuel grants
+      and deposits into Yemen; its announcements are a main vehicle of Saudi economic messaging on Yemen.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Its project launches and fuel grants are reported by Saudi and Yemeni media (for example USD 150 million
+        in petroleum support in Q2 2026; SAR 1.9 billion of projects launched in 2026).
+      urls:
+      - https://alriyadhdaily.com/article/78a4048e25c043db99ddaa60275b20ad
+      - https://www.arabnews.pk/node/2651776/middle-east
+    yemen_coverage:
+      frequency: weekly
+      evidence: All of its output concerns Yemen.
+      urls:
+      - https://alriyadhdaily.com/article/78a4048e25c043db99ddaa60275b20ad
+    institutional_importance:
+      level: high
+      note: Established by royal decree in 2018, supervised by the Saudi ambassador to Yemen; works in 14 Yemeni
+        governorates with over 300 projects; main funder of fuel for power stations in government-held areas.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.98
+    classification_evidence: A Saudi government program created by royal decree, on a .gov.sa domain.
+    evidence_urls:
+    - https://en.wikipedia.org/wiki/Saudi_Development_and_Reconstruction_Program_for_Yemen
+    - https://saudipedia.com/%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9-%D9%88%D8%A5%D8%B9%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D9%8A%D9%85%D9%86
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Website sdrpy.gov.sa confirmed by Wikipedia and Saudipedia. No feed and no social handle could be evidenced
+    in this research (searches for its X handle returned nothing); add them after checking the site footer.
+- id: ksrelief
+  name: King Salman Humanitarian Aid and Relief Centre (KSrelief)
+  name_native: مركز الملك سلمان للإغاثة والأعمال الإنسانية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.ksrelief.org/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: humanitarian
+  accounts:
+  - platform: x
+    handle: KSRelief_EN
+    url: https://x.com/KSRelief_EN
+    handle_evidence: https://www.ksrelief.org/en/Statistics/YearDetails/2026
+  - platform: x
+    handle: KSRelief
+    url: https://x.com/KSRelief
+    handle_evidence: https://www.speakrj.com/audit/report/KSRelief/twitter
+    followers: 126234
+    followers_as_of: 2021-11-28
+    followers_source: https://www.speakrj.com/audit/report/KSRelief/twitter
+  - platform: youtube
+    handle: UC2NqaSOEk6SAmTt4kqnA7Vw
+    url: https://www.youtube.com/channel/UC2NqaSOEk6SAmTt4kqnA7Vw
+    handle_evidence: https://www.ksrelief.org/en/Statistics/YearDetails/2026
+  - platform: facebook
+    handle: ksrelief.org
+    url: https://www.facebook.com/ksrelief.org
+    handle_evidence: https://www.ksrelief.org/en/Statistics/YearDetails/2026
+  - platform: instagram
+    handle: ksrelief
+    url: https://www.instagram.com/ksrelief/
+    handle_evidence: https://www.ksrelief.org/en/Statistics/YearDetails/2026
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UC2NqaSOEk6SAmTt4kqnA7Vw
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, channel id linked from the KSrelief website footer (https://www.ksrelief.org/en/Statistics/YearDetails/2026);
+      covers all countries, so filter for Yemen
+  selection:
+    reason: Saudi Arabia's state humanitarian agency; Yemen is its largest country programme (38 projects and about
+      USD 107 million, about 54 percent of its 2026 spending).
+    audience_evidence:
+    - metric: x_followers
+      value: 126234
+      as_of: 2021-11
+      source_url: https://www.speakrj.com/audit/report/KSRelief/twitter
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Its Yemen distributions and projects are reported daily by SPA and Saudi media.
+      urls:
+      - https://english.ajel.sa/news/ksrelief-distributes-12k-sleeping-bags-in-yemen
+      - https://www.arabnews.pk/node/2639518/saudi-arabia
+    yemen_coverage:
+      frequency: weekly
+      evidence: Yemen is its largest programme in 2026 (38 projects); Yemen distribution and project reports appear
+        several times a week in SPA and Saudi media.
+      urls:
+      - https://www.ksrelief.org/en/Statistics/YearDetails/2026
+    institutional_importance:
+      level: medium
+      note: Main Saudi humanitarian channel into Yemen and part of Saudi soft-power messaging on the war.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.97
+    classification_evidence: A Saudi government centre named for and established by the King.
+    evidence_urls:
+    - https://www.ksrelief.org/en/Statistics/YearDetails/2026
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: The 126,234 follower figure is for the Arabic X account @KSRelief and dates from a November 2021 third-party
+    audit report (speakrj); it is stale and likely understated. The Arabic handle is evidenced only by that report.
+    No RSS feed on ksrelief.org.
+- id: coalition-joint-forces-command
+  name: Joint Forces Command of the Coalition to Restore Legitimacy in Yemen
+  name_native: قيادة القوات المشتركة لتحالف دعم الشرعية في اليمن
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.spa.gov.sa/
+  country: SA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: wire
+  source_type: government
+  accounts: []
+  feeds: []
+  selection:
+    reason: Military command of the Saudi-led coalition; its official spokesperson announces strikes, interceptions
+      and warnings, and it is a direct party to the July-September 2026 Saudi-Houthi hostilities.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Statements by the coalition spokesperson (Maj. Gen. Turki al-Maliki) are carried by SPA, QNA, AP and
+        others, e.g. the 4 July 2026 warning of an "unprecedented" response, the 8 September 2026 statement on attacks
+        on southern Saudi cities and the 24 September 2026 statement.
+      urls:
+      - https://www.gulf-times.com/article/728598/qatar/coalition-to-restore-legitimacy-in-yemen-vows-unprecedented-response-to-any-attempt-to-target-saudi-arabia
+      - https://english.aawsat.com/node/5291920
+      - https://ny1.com/nyc/all-boroughs/ap-top-news/2026/09/08/houthi-attacks-on-saudi-arabia-wound-73-people-officials-say
+      - https://tribune.com.pk/story/2631200/saudi-arabia-reports-fresh-houthi-attacks-issues-warning-for-makkah
+    yemen_coverage:
+      frequency: weekly
+      evidence: Since the truce collapsed in July 2026 the coalition has issued statements on Houthi attacks and
+        its operations several times a month; all of its output concerns Yemen.
+      urls:
+      - https://tribune.com.pk/story/2631200/saudi-arabia-reports-fresh-houthi-attacks-issues-warning-for-makkah
+    institutional_importance:
+      level: high
+      note: The coalition's military command; in December 2025 its spokesperson's statement on the Mukalla strike
+        triggered the UAE's public rebuttal and withdrawal, and in 2026 it announces Saudi military action in Yemen.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: saudi
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: A Saudi-led military command whose statements are issued through the Saudi Press Agency;
+      the UAE left the coalition's Yemen operations in December 2025.
+    evidence_urls:
+    - https://www.gulf-times.com/article/728598/qatar/coalition-to-restore-legitimacy-in-yemen-vows-unprecedented-response-to-any-attempt-to-target-saudi-arabia
+    - https://www.mofa.gov.ae/en/mediahub/news/2025/12/30/uae-saudi-arabia
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'No website, feed or institutional account of its own was found; statements are distributed through the
+    Saudi Press Agency (url points to SPA, media record spa-saudi-press-agency) and picked up by QNA and others.
+    Collect via SPA with a coalition keyword filter. The spokesperson is a person record in another slice. Earlier
+    English name: Coalition to Support Legitimacy in Yemen.'
+- id: uae-mofa
+  name: Ministry of Foreign Affairs of the United Arab Emirates
+  name_native: وزارة الخارجية الإماراتية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.mofa.gov.ae/
+  country: AE
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: MOFAUAE
+    url: https://x.com/MOFAUAE
+    handle_evidence: https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran
+  - platform: youtube
+    handle: UCaLi43UPoOiV7t3w17uQsxA
+    url: https://www.youtube.com/channel/UCaLi43UPoOiV7t3w17uQsxA
+    handle_evidence: https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran
+  - platform: facebook
+    handle: Mofauae
+    url: https://www.facebook.com/Mofauae/
+    handle_evidence: https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran
+  - platform: instagram
+    handle: mofauae
+    url: https://www.instagram.com/mofauae
+    handle_evidence: https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCaLi43UPoOiV7t3w17uQsxA
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, channel id linked from mofa.gov.ae news pages (https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran);
+      general channel, filter for Yemen
+  selection:
+    reason: Foreign ministry of the coalition's second military power in Yemen from 2015 until its withdrawal on
+      30 December 2025; its December 2025 statements disputing Saudi accusations over Mukalla marked the open Saudi-Emirati
+      split over southern Yemen, and it still issues Yemen statements in 2026.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Its 30 December 2025 statement on Yemen was reported worldwide (The National, Khaleej Times, Long War
+        Journal); 2026 statements condemn Houthi attacks on Saudi Arabia (Najran, 7 August 2026).
+      urls:
+      - https://www.mofa.gov.ae/en/mediahub/news/2025/12/30/uae-saudi-arabia
+      - https://www.thenationalnews.com/news/gulf/2026/01/05/uae-saudi-arabia-yemen/
+      - https://www.khaleejtimes.com/uae/uae-mofa-statement-yemen
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen statements in December 2025 (prisoner exchange, Mukalla, withdrawal) and in July-September
+        2026 (condemnations of Houthi attacks on Saudi Arabia).
+      urls:
+      - https://www.mofa.gov.ae/en/MediaHub/News/2025/12/24/UAE-Yemen
+      - https://www.mofa.gov.ae/en/mediahub/news/2026/8/7/uae-najran
+    institutional_importance:
+      level: high
+      note: The UAE withdrew its remaining counter-terrorism personnel from Yemen on 30 December 2025 after a Saudi
+        strike on vehicles at Mukalla; it keeps humanitarian and development programmes (over USD 8 billion since
+        2015 by its own count) and remains a key external actor for southern Yemeni forces.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uae
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the UAE government's own foreign ministry.
+    evidence_urls:
+    - https://www.mofa.gov.ae/en/mediahub/news/2025/12/30/uae-saudi-arabia
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: No RSS feed on mofa.gov.ae (news section https://www.mofa.gov.ae/en/MediaHub/News). Statements are also
+    carried by WAM. UAE Ministry of Defence and UAE missions were evaluated separately and excluded (see excluded
+    file).
+- id: oman-mofa
+  name: Ministry of Foreign Affairs of the Sultanate of Oman
+  name_native: وزارة الخارجية العمانية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.fm.gov.om/
+  country: OM
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: FMofOman
+    url: https://x.com/FMofOman
+    handle_evidence: https://www.fm.gov.om/en/
+  - platform: instagram
+    handle: fmofoman
+    url: https://www.instagram.com/fmofoman/
+    handle_evidence: https://www.fm.gov.om/en/
+  feeds:
+  - url: https://www.fm.gov.om/en/wp-json/wp/v2/posts
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, WordPress REST endpoint of the English site; a single-post URL of this API (https://www.fm.gov.om/en/wp-json/wp/v2/posts/12796)
+      appeared in search results and the collection returned 2026 posts when fetched on 2026-10-04. General ministry
+      news, filter for Yemen.
+  selection:
+    reason: Oman is the principal mediator between the Houthis, Saudi Arabia, the US and the UN; Muscat hosts the
+      Houthi negotiating delegation and Yemen-related talks.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: high
+      note: Its ministry readouts of meetings with the UN and US envoys for Yemen and its Yemen statements are quoted
+        by Gulf and international media.
+      urls:
+      - https://www.fm.gov.om/en/12796/
+      - https://www.omanobserver.om/article/1109186/oman/foreign-minister-receives-us-special-envoy-for-yemen
+    yemen_coverage:
+      frequency: monthly
+      evidence: Ministry posts on Yemen in 2026 include "Oman condemns missile threats against Saudi Arabia" (14
+        July 2026), "Oman stresses need to avoid escalation in Red Sea" (23 July 2026) and "Riyadh - Oman in meeting
+        about political process in Yemen" (10 August 2026).
+      urls:
+      - https://www.fm.gov.om/en/wp-json/wp/v2/posts?search=Yemen
+    institutional_importance:
+      level: high
+      note: Foreign Minister Sayyid Badr Albusaidi's ministry runs the Muscat channel used for Saudi-Houthi, US-Houthi
+        and prisoner-exchange talks.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: oman
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the Omani government's own foreign ministry.
+    evidence_urls:
+    - https://www.fm.gov.om/en/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: No RSS link is shown on the site; the WordPress REST endpoint is the candidate feed. Statements are also
+    carried by the Oman News Agency (media record ona-oman-news-agency).
+- id: us-state-department
+  name: United States Department of State (Bureau of Near Eastern Affairs and Office of the Spokesperson)
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.state.gov/
+  country: US
+  region: north_america
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: government
+  accounts: []
+  feeds: []
+  selection:
+    reason: US foreign-policy voice on Yemen (Houthi terrorist designations and sanctions, Red Sea security, support
+      to the PLC government, contacts with Saudi Arabia, Oman and the UAE).
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: State Department statements on Yemen are quoted by Arab and international media; in January 2026 the
+        Secretary of State called the UAE foreign minister over the Saudi-UAE crisis in Yemen, and in September
+        2026 the department warned that the Saudi-Houthi conflict could escalate rapidly.
+      urls:
+      - https://www.thenationalnews.com/news/gulf/2026/01/05/uae-saudi-arabia-yemen/
+      - https://www.kurdistan24.net/en/story/940713
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen appears in department statements, readouts and travel warnings several times in 2026; Yemen-specific
+        statements were not counted directly because state.gov returned HTTP 403 to fetches.
+      urls:
+      - https://www.state.gov/u-s-relations-with-yemen/
+    institutional_importance:
+      level: high
+      note: The US leads Western policy on the Houthis (Foreign Terrorist Organization designation, sanctions, naval
+        posture). The post of Special Envoy for Yemen has been vacant since 20 January 2025, so Yemen policy statements
+        come from the department, the White House and the Mission to Yemen.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: us
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the US government's own foreign ministry.
+    evidence_urls:
+    - https://www.state.gov/u-s-relations-with-yemen/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: state.gov blocks automated fetches (HTTP 403 on the RSS page and bureau pages), so no feed URL and no X
+    handle could be evidenced here; the department is known to publish RSS feeds, to be added once a feed URL is
+    seen on state.gov. The Near Eastern Affairs bureau is folded into this record rather than kept separate.
+- id: us-embassy-yemen
+  name: U.S. Mission to Yemen (U.S. Embassy Sanaa, operating from Riyadh)
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://ye.usembassy.gov/
+  country: US
+  region: north_america
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: USEmbassyYemen
+    url: https://x.com/USEmbassyYemen
+    handle_evidence: https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+  - platform: facebook
+    handle: USEmbassyYemen
+    url: https://www.facebook.com/USEmbassyYemen/
+    handle_evidence: https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+  - platform: instagram
+    handle: usembassyyemen
+    url: https://www.instagram.com/usembassyyemen/
+    handle_evidence: https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+  - platform: youtube
+    handle: USEmbassyYemen
+    url: https://www.youtube.com/user/USEmbassyYemen
+    handle_evidence: https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+  feeds:
+  - url: https://ye.usembassy.gov/wp-json/wp/v2/posts
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate, WordPress REST endpoint of the mission website; returned posts dated June-August 2026 when
+      fetched on 2026-10-04. Low volume (a few posts a month). The YouTube account uses a /user/ URL, so no channel
+      id is evidenced for a YouTube feed.
+  selection:
+    reason: The US diplomatic mission dedicated to Yemen; its statements and the head of mission's meetings with
+      the PLC and government express US policy toward the Yemeni parties.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Its heads of mission's meetings and statements are reported by Yemeni government outlets and regional
+        media.
+      urls:
+      - https://presidentalalimi.net/en/news742.html
+      - https://www.arabnews.com/node/2529751/amp
+    yemen_coverage:
+      frequency: monthly
+      evidence: All output concerns Yemen; website posts in 2026 include the arrival of Chargé d'Affaires Neil Hop
+        (5 August 2026) and a health alert (31 August 2026).
+      urls:
+      - https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+    institutional_importance:
+      level: high
+      note: Embassy Sanaa suspended operations in February 2015; the Yemen Affairs Unit works from the US Embassy
+        in Riyadh. Ambassador Steven Fagin's term ended on 3 July 2026; Neil Hop has been Chargé d'Affaires since
+        5 August 2026.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: us
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the US government's own diplomatic mission to Yemen.
+    evidence_urls:
+    - https://ye.usembassy.gov/neil-hop-arrives-as-charge-daffaires-for-the-u-s-mission-to-yemen/
+    - https://www.state.gov/u-s-relations-with-yemen/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Most day-to-day output is on X (not collected). Head-of-mission dates from the Wikipedia list of US ambassadors
+    to Yemen (https://en.wikipedia.org/wiki/List_of_ambassadors_of_the_United_States_to_Yemen).
+- id: us-centcom
+  name: United States Central Command (CENTCOM)
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.centcom.mil/
+  country: US
+  region: north_america
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: government
+  content_type: official_statement
+  accounts:
+  - platform: x
+    handle: CENTCOM
+    url: https://x.com/CENTCOM
+    handle_evidence: https://www.centcom.mil/MEDIA/SOCIAL-MEDIA/
+  - platform: x
+    handle: CENTCOMArabic
+    url: https://x.com/CENTCOMArabic
+    handle_evidence: https://www.centcom.mil/MEDIA/SOCIAL-MEDIA/
+  - platform: facebook
+    handle: CENTCOM
+    url: https://www.facebook.com/CENTCOM
+    handle_evidence: https://www.centcom.mil/MEDIA/SOCIAL-MEDIA/
+  - platform: facebook
+    handle: CENTCOMArabic
+    url: https://www.facebook.com/CENTCOMArabic
+    handle_evidence: https://www.centcom.mil/MEDIA/SOCIAL-MEDIA/
+  - platform: instagram
+    handle: USCENTCOM
+    url: https://www.instagram.com/USCENTCOM
+    handle_evidence: https://www.centcom.mil/MEDIA/SOCIAL-MEDIA/
+  feeds: []
+  selection:
+    reason: US combatant command that ran the 2024-2025 strike campaigns against the Houthis (including Operation
+      Rough Rider from 15 March 2025) and reports interdictions of weapons bound for the Houthis.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Its strike announcements and target counts (e.g. "over 800 targets" by April 2025) were widely reported.
+      urls:
+      - https://www.centcom.mil/MEDIA/STATEMENTS/Statements-View/Article/4121382/centcom-forces-launch-large-scale-operation-against-iran-backed-houthis-in-yemen/
+      - https://www.shafaq.com/en/World/CENTCOM-Over-800-Houthi-targets-hit-since-March-in-Yemen
+    yemen_coverage:
+      frequency: occasional
+      evidence: Yemen statements were frequent in 2024-2025 (strikes, Ras Isa port, interdictions by Yemeni partners
+        on 14 August 2025); the statements list checked on 2026-10-04 showed no Yemen item in 2026, when its releases
+        centred on Iran operations, and in September 2026 the US President said the Houthis had agreed not to attack
+        US forces.
+      urls:
+      - https://www.centcom.mil/MEDIA/STATEMENTS/
+      - https://www.kurdistan24.net/en/story/940713
+    institutional_importance:
+      level: high
+      note: The US military authority for Yemen and the Red Sea; any renewed US action against the Houthis would
+        be announced by it.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: us
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is a US Department of Defense combatant command.
+    evidence_urls:
+    - https://www.centcom.mil/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: No RSS link found on centcom.mil pages fetched; the social-media page lists English, Arabic, Farsi, Hebrew,
+    Russian, Urdu and Dari/Pashto accounts (only English and Arabic recorded here). Kept despite low 2026 Yemen
+    output because of its role in 2024-2025; reassess if output stays nil.
+- id: us-mission-un
+  name: United States Mission to the United Nations (USUN)
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://usun.usmission.gov/
+  country: US
+  region: north_america
+  languages:
+  - en
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: USUN
+    url: https://x.com/USUN
+    handle_evidence: https://usun.usmission.gov/
+  - platform: facebook
+    handle: USattheUN
+    url: https://www.facebook.com/USattheUN
+    handle_evidence: https://usun.usmission.gov/
+  - platform: instagram
+    handle: usun
+    url: https://instagram.com/usun/
+    handle_evidence: https://usun.usmission.gov/
+  feeds:
+  - url: https://usun.usmission.gov/wp-json/wp/v2/posts
+    type: api
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, WordPress REST endpoint of the mission website; returned September-October 2026 remarks when
+      fetched on 2026-10-04. Covers every UN topic, so filter for Yemen.
+  selection:
+    reason: US statements at the monthly Security Council meetings on Yemen and on the 2140 sanctions regime, the
+      Hodeidah mission (UNMHA) and Red Sea resolutions.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: US Council remarks on Yemen are cited by UN and regional media; on 1 October 2026 USUN criticised Russia
+        and China for obstructing expert appointments for the Yemen sanctions panel.
+      urls:
+      - https://usun.usmission.gov/remarks-at-a-un-general-assembly-meeting-on-russias-and-chinas-use-of-veto-of-a-un-security-council-resolution-on-iran-sanctions/
+    yemen_coverage:
+      frequency: monthly
+      evidence: The Security Council meets on Yemen monthly and the US is a permanent member; 2026 Yemen-specific
+        USUN remarks were not individually verified (the site search returned unfiltered results).
+      urls:
+      - https://usun.usmission.gov/remarks-at-a-un-general-assembly-meeting-on-russias-and-chinas-use-of-veto-of-a-un-security-council-resolution-on-iran-sanctions/
+    institutional_importance:
+      level: medium
+      note: Permanent Security Council member's mission; shapes Yemen sanctions and mandate renewals.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: us
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the US government's own mission to the UN.
+    evidence_urls:
+    - https://usun.usmission.gov/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: Yemen is a small share of USUN output; keep only with the Yemen keyword filter.
+- id: iran-mfa
+  name: Ministry of Foreign Affairs of the Islamic Republic of Iran (including the Spokesperson's office)
+  name_native: وزارت امور خارجه جمهوری اسلامی ایران
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://en.mfa.gov.ir/portal
+  country: IR
+  region: iran
+  languages:
+  - fa
+  - ar
+  - en
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: IRIMFA_EN
+    url: https://x.com/IRIMFA_EN
+    handle_evidence: https://hyderabad.mfa.gov.ir/en/newsview/579041/official-twitter-accounts-of-the-ministry-of-foreign-affairs
+  - platform: x
+    handle: IRIMFA_AR
+    url: https://x.com/IRIMFA_AR
+    handle_evidence: https://hyderabad.mfa.gov.ir/en/newsview/579041/official-twitter-accounts-of-the-ministry-of-foreign-affairs
+  - platform: x
+    handle: IRIMFA
+    url: https://x.com/IRIMFA
+    handle_evidence: https://hyderabad.mfa.gov.ir/en/newsview/579041/official-twitter-accounts-of-the-ministry-of-foreign-affairs
+  feeds: []
+  selection:
+    reason: Foreign ministry of the Houthis' main external backer and the only state that treats the Sanaa authorities
+      as Yemen's government; its spokesperson answers on Yemen in the weekly press briefing and rebuts US and Saudi
+      accusations of Iranian involvement.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: The spokesperson's 10 September 2026 rejection of the US Secretary of State's description of the Houthis
+        as Iranian proxies ("an independent Yemeni actor") was reported by Indian and Lebanese outlets; the UN ambassador's
+        15 July 2026 rebuttal of US claims on Yemen was carried by IRNA.
+      urls:
+      - https://www.republicworld.com/world-news/baghaei-slams-rubio-for-calling-houthi-iran-s-proxy-calls-group-independent-yemeni-actor-2026-09-10-136684
+      - https://live.libnanews.com/event/ev-1788995359945-45aa
+    yemen_coverage:
+      frequency: monthly
+      evidence: Yemen comes up in the spokesperson's briefings when Yemen is in the news (Saudi-Houthi hostilities,
+        US statements on Houthis); not a daily topic for a ministry focused on the US, Israel and the nuclear file.
+      urls:
+      - https://www.republicworld.com/world-news/baghaei-slams-rubio-for-calling-houthi-iran-s-proxy-calls-group-independent-yemeni-actor-2026-09-10-136684
+    institutional_importance:
+      level: high
+      note: Iran is the principal external supporter of the Houthis in the view of the US, Saudi Arabia and the
+        Yemeni government (which Iran denies); it has an ambassador in Sanaa and Mahan Air began Tehran-Sanaa flights
+        in June 2026.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: iran_axis
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the Iranian government's own foreign ministry, whose official position backs
+      the Sanaa authorities.
+    evidence_urls:
+    - https://en.mfa.gov.ir/portal
+    - https://en.wikipedia.org/wiki/Iran%E2%80%93Yemen_relations
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The English site (en.mfa.gov.ir/portal) showed no RSS link, social links or Yemen items on its homepage
+    when fetched on 2026-10-04; handles come from a MOFA consulate page (Hyderabad) listing the ministry's official
+    accounts, whose list also names a former minister's personal account (not recorded). Statements are also carried
+    by IRNA (media record irna). Follower counts not found.
+- id: uk-fcdo
+  name: Foreign, Commonwealth & Development Office (FCDO), United Kingdom
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.gov.uk/government/organisations/foreign-commonwealth-development-office
+  country: GB
+  region: europe
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: FCDOGovUK
+    url: https://x.com/FCDOGovUK
+    handle_evidence: https://www.gov.uk/government/organisations/foreign-commonwealth-development-office
+  - platform: youtube
+    handle: ukforeignoffice
+    url: https://www.youtube.com/@ukforeignoffice
+    handle_evidence: https://www.gov.uk/government/organisations/foreign-commonwealth-development-office
+  - platform: instagram
+    handle: ForeignAndDevelopmentOffice
+    url: https://www.instagram.com/ForeignAndDevelopmentOffice
+    handle_evidence: https://www.gov.uk/government/organisations/foreign-commonwealth-development-office
+  feeds:
+  - url: https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office&world_locations%5B%5D=yemen
+    type: atom
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate, built from the documented GOV.UK pattern (finder URL + .atom) with the Yemen world-location
+      filter; the Yemen news page https://www.gov.uk/world/yemen/news is the human-readable equivalent. Not yet
+      fetched.
+  selection:
+    reason: UK foreign ministry; the UK is the penholder on Yemen at the UN Security Council and issues regular
+      statements on the Houthis, the Red Sea and humanitarian aid; in September 2026 it condemned the Houthi resumption
+      of conflict and offered Saudi Arabia aerial refuelling.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: FCDO statements on Yemen are reproduced by Saudi, Yemeni and international media (10 September 2026
+        statement on the Houthi restart of the conflict; 21 September 2026 announcement of RAF refuelling support
+        to Saudi defensive missions).
+      urls:
+      - https://www.gov.uk/government/news/fcdo-statement-on-the-situation-in-yemen-10-september
+      - https://www.cp24.com/news/world/2026/09/21/uk-to-offer-saudi-arabia-aerial-refueling-to-counter-houthi-attacks/
+    yemen_coverage:
+      frequency: monthly
+      evidence: UK government Yemen news page lists FCDO statements on 21 July 2026 (Houthi threats against Saudi
+        Arabia) and 10 September 2026, plus Security Council statements on 14 April and 13 July 2026.
+      urls:
+      - https://www.gov.uk/world/yemen/news
+      - https://www.gov.uk/government/news/fcdo-statement-on-houthi-threats-against-saudi-arabia
+    institutional_importance:
+      level: high
+      note: Penholder on Yemen at the Security Council (Security Council Report, June 2026); UK forces took part
+        in strikes on the Houthis with the US in 2024; the British Embassy in Sana'a has been suspended since 2015
+        and works from Riyadh and Amman.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uk
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the UK government's own foreign ministry.
+    evidence_urls:
+    - https://www.gov.uk/government/organisations/foreign-commonwealth-development-office
+    - https://www.securitycouncilreport.org/monthly-forecast/2026-06/yemen-89.php
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: The FCDO organisation page shows no feed link, so the Atom URL follows the GOV.UK pattern and must be tested.
+    Yemen is one topic among many for the ministry, hence the world-location filter. UK Mission to the UN and British
+    Embassy Yemen are separate records.
+- id: british-embassy-yemen
+  name: British Embassy Sana'a (UK Mission to Yemen, operating from Riyadh and Amman)
+  name_native: السفارة البريطانية في اليمن
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://www.gov.uk/world/organisations/british-embassy-sana-a
+  country: GB
+  region: europe
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: ukinyemen
+    url: https://x.com/ukinyemen
+    handle_evidence: https://www.gov.uk/world/organisations/british-embassy-sana-a
+  - platform: facebook
+    handle: ukinyemen
+    url: https://www.facebook.com/ukinyemen
+    handle_evidence: https://www.gov.uk/world/organisations/british-embassy-sana-a
+  - platform: instagram
+    handle: britishembassyyemen
+    url: https://www.instagram.com/britishembassyyemen/
+    handle_evidence: https://www.gov.uk/world/organisations/british-embassy-sana-a
+  feeds:
+  - url: https://www.gov.uk/world/yemen/news.atom
+    type: atom
+    verified: false
+    verified_at: null
+    yemen_filter: false
+    notes: candidate, built from the documented GOV.UK pattern (append .atom to the world-location news page https://www.gov.uk/world/yemen/news,
+      linked from FCDO statements). Not yet fetched.
+  selection:
+    reason: The UK diplomatic mission dedicated to Yemen; carries British messaging to the PLC government and Yemeni
+      parties and publishes the UK Yemen news page.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Meetings of the British ambassador with Yemeni ministers are reported by Yemeni government media (for
+        example the foreign minister's meeting on 1 July 2024; no 2026 example was checked).
+      urls:
+      - https://www.mofa-ye.org/Pages/28226/
+    yemen_coverage:
+      frequency: monthly
+      evidence: All output concerns Yemen; the UK government Yemen news page shows items on 14 April, 13 July, 21
+        July and 10 September 2026.
+      urls:
+      - https://www.gov.uk/world/yemen/news
+    institutional_importance:
+      level: medium
+      note: Embassy operations in Sana'a were suspended on 11 February 2015; the ambassador and team are based in
+        Riyadh and Amman. The UK is penholder on Yemen at the Security Council.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uk
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the UK government's own diplomatic mission to Yemen.
+    evidence_urls:
+    - https://www.gov.uk/world/organisations/british-embassy-sana-a
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The embassy page itself carries only status and contact information; its news items sit on the Yemen world-location
+    page. Atom feed is a pattern-based candidate.
+- id: uk-mission-un
+  name: UK Mission to the United Nations (New York)
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://www.gov.uk/world/organisations/uk-mission-to-un-in-new-york
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: UKUN_NewYork
+    url: https://x.com/UKUN_NewYork
+    handle_evidence: https://www.gov.uk/world/organisations/uk-mission-to-un-in-new-york
+  - platform: instagram
+    handle: ukun
+    url: https://www.instagram.com/ukun
+    handle_evidence: https://www.gov.uk/world/organisations/uk-mission-to-un-in-new-york
+  feeds:
+  - url: https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=uk-mission-to-the-united-nations-new-york&keywords=Yemen
+    type: atom
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, GOV.UK finder pattern + .atom with a Yemen keyword; the organisation slug uk-mission-to-the-united-nations-new-york
+      is taken from gov.uk URLs seen in search results (https://gov.uk/world/uk-mission-to-the-united-nations-new-york/news)
+      and is unconfirmed as a finder filter value. Not yet fetched.
+  selection:
+    reason: Delivers the UK's monthly statements at Security Council meetings on Yemen; the UK is the penholder
+      on Yemen, drafting Council resolutions and press statements.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: medium
+      historical_importance: high
+      note: UK Council statements on Yemen are published on gov.uk and cited by UN-focused and Yemeni media (for
+        example 14 January 2026 on southern disunity and Houthi detentions; 13 July 2026 condemning Houthi attacks
+        on Saudi Arabia).
+      urls:
+      - https://www.globalsecurity.org/military/library/news/2026/01/mil-260114-ukfcdo02.htm
+      - https://www.gov.uk/world/yemen/news
+    yemen_coverage:
+      frequency: monthly
+      evidence: The Council meets on Yemen monthly and the UK speaks at each meeting as penholder.
+      urls:
+      - https://www.securitycouncilreport.org/monthly-forecast/2026-06/yemen-89.php
+    institutional_importance:
+      level: high
+      note: Penholder on Yemen at the Security Council (Security Council Report, June 2026), so its texts shape
+        sanctions, UNMHA and other mandates.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uk
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the UK government's own mission to the UN.
+    evidence_urls:
+    - https://www.gov.uk/world/organisations/uk-mission-to-un-in-new-york
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Yemen is a small share of the mission's output; use the Yemen keyword filter. Council statements also appear
+    under the FCDO publisher on gov.uk. Feed is a pattern-based candidate.
+- id: qatar-mofa
+  name: Ministry of Foreign Affairs of the State of Qatar
+  name_native: وزارة الخارجية القطرية
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://mofa.gov.qa/en
+  country: QA
+  region: gulf
+  languages:
+  - ar
+  - en
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: MofaQatar_EN
+    url: https://x.com/MofaQatar_EN
+    handle_evidence: https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue
+  - platform: instagram
+    handle: Mofa.Qatar
+    url: https://www.instagram.com/Mofa.Qatar
+    handle_evidence: https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue
+  - platform: youtube
+    handle: UCmrI7PgmVvVERMp1TbvFBIQ
+    url: https://www.youtube.com/channel/UCmrI7PgmVvVERMp1TbvFBIQ
+    handle_evidence: https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue
+  feeds:
+  - url: https://www.youtube.com/feeds/videos.xml?channel_id=UCmrI7PgmVvVERMp1TbvFBIQ
+    type: youtube
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, channel id linked from a mofa.gov.qa statement page (https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue);
+      general channel, filter for Yemen
+  selection:
+    reason: Gulf state outside the Saudi-led coalition since 2017 whose foreign ministry issues recurring statements
+      on Yemen (prisoner-exchange welcomes, the southern issue, the Houthi-Saudi escalation) and whose positions
+      are echoed by Qatar-based media.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: Its statements are carried by QNA and the Peninsula (3 January 2026 welcome of the PLC chairman's Riyadh
+        conference call on the southern issue; 21 July 2026 condemnation of Houthi remarks accusing Saudi Arabia
+        of besieging Yemenis).
+      urls:
+      - https://mofa.gov.qa/en/latest-articles/statements/qatar-welcomes-efforts-by-the-legitimate-yemeni-government-to-support-dialogue-and-address-the-southern-issue
+      - https://qna.org.qa/en/News-Area/News/2026-7/21/qatar-strongly-condemns-houthi-remarks-accusing-saudi-arabia-of-besieging-yemenis-and-imposing-maritime-embargo
+    yemen_coverage:
+      frequency: occasional
+      evidence: Yemen statements seen in April 2023 and December 2025 (prisoner exchange), 3 January 2026 and 21
+        July 2026; no more frequent series was counted. Borderline for inclusion.
+      urls:
+      - https://mofa.gov.qa/en/statements/qatar-welcomes-the-prisoner-exchange-process-in-yemen
+      - https://thepeninsulaqatar.com/article/21/07/2026/qatar-strongly-condemns-houthi-remarks-accusing-saudi-arabia-of-besieging-yemenis-and-imposing-maritime-embargo
+    institutional_importance:
+      level: medium
+      note: Qatar left the coalition in 2017, no longer has a military role in Yemen, and is not a mediator in the
+        Houthi tracks (that is Oman); kept for state-level coverage of the Gulf and because of its media influence.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: qatar
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the Qatari government's own foreign ministry.
+    evidence_urls:
+    - https://mofa.gov.qa/en
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: true
+  notes: No RSS link seen on the statement pages fetched. Statements are also carried by QNA (media record qna-qatar-news-agency).
+    Arabic-language X handle not evidenced. Yemen is a minor share of ministry output.
+- id: israel-idf
+  name: Israel Defense Forces (IDF Spokesperson's Unit)
+  name_native: דובר צה"ל
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://www.idf.il/en/
+  country: IL
+  region: levant
+  languages:
+  - en
+  - he
+  - ar
+  platform: website
+  source_type: government
+  accounts:
+  - platform: x
+    handle: idf
+    url: https://x.com/idf
+    handle_evidence: https://www.idf.il/en/
+  - platform: telegram
+    handle: idfofficial
+    url: https://t.me/idfofficial
+    handle_evidence: https://www.idf.il/en/
+  - platform: youtube
+    handle: IsraelDefenseForces
+    url: https://www.youtube.com/c/IsraelDefenseForces
+    handle_evidence: https://www.idf.il/en/
+  - platform: facebook
+    handle: idfonline
+    url: https://www.facebook.com/idfonline/
+    handle_evidence: https://www.idf.il/en/
+  - platform: instagram
+    handle: idf
+    url: https://www.instagram.com/idf/
+    handle_evidence: https://www.idf.il/en/
+  - platform: tiktok
+    handle: idf
+    url: https://www.tiktok.com/@idf
+    handle_evidence: https://www.idf.il/en/
+  feeds:
+  - url: https://t.me/s/idfofficial
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, public web preview of the official English-language IDF Telegram channel linked from https://www.idf.il/en/;
+      fetched 2026-10-04 and showed posts up to about 23 September 2026, none on Yemen (they covered Gaza, the West
+      Bank, Lebanon and Syria). Check robots.txt before collecting.
+  selection:
+    reason: Israeli military that struck Houthi ports, power plants and leadership in Yemen in 2024-2025 (including
+      the August 2025 strike that killed the Houthi prime minister, per press reports) and reports interceptions
+      of Houthi missiles and drones; the Houthis are an active front for Israel.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: IDF strike announcements and interception statements are the main source for Israeli action on Yemen
+        in Arab and international media (e.g. its 28 March 2026 statement that it intercepted a missile fired from
+        Yemen).
+      urls:
+      - https://news.cgtn.com/news/2026-03-28/news-1LSD1llVMeQ/share_amp.html
+      - https://www.israelhayom.com/2025/09/16/idf-launches-new-operation-in-yemen
+      - https://bdnews24.com/world/6812c1b39124
+    yemen_coverage:
+      frequency: occasional
+      evidence: Weekly in 2025 during the exchange of strikes; in 2026 Yemen items appear around the Iran war (Houthi
+        launch at Israel on 28 March 2026, the first since the US-Israeli strikes on Iran of 28 February) and in
+        Israeli preparations reported on 13 September 2026; no IDF Yemen post was seen on its Telegram channel in
+        late September 2026.
+      urls:
+      - https://news.cgtn.com/news/2026-03-28/news-1LSD1llVMeQ/share_amp.html
+      - https://www.kurdistan24.net/en/story/939041
+    institutional_importance:
+      level: high
+      note: Israel is a direct belligerent against the Houthis and the target of their missile fire; Israeli action
+        could resume at any time and is announced by the IDF or the Defence Minister.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: israel
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.95
+    classification_evidence: It is the Israeli state's own military.
+    evidence_urls:
+    - https://www.idf.il/en/
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The IDF Arabic-language spokesperson (Avichay Adraee, announced to retire soon on 11 November 2025 per
+    Times of Israel) is the main channel for Yemen evacuation warnings; that is a person account and belongs to
+    another slice, and no institutional Arabic IDF handle was evidenced. The Prime Minister's Office was assessed
+    and not kept as a separate record (see excluded file). Active false until the Telegram feed is verified.
+- id: eu-delegation-yemen
+  name: Delegation of the European Union to Yemen
+  name_native: بعثة الاتحاد الأوروبي إلى اليمن
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://www.eeas.europa.eu/delegations/yemen_en
+  country: JO
+  region: europe
+  languages:
+  - en
+  - ar
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: euinyemen
+    url: https://x.com/euinyemen
+    handle_evidence: https://www.eeas.europa.eu/delegations/yemen_en
+  - platform: facebook
+    handle: EUinYemen
+    url: https://www.facebook.com/EUinYemen
+    handle_evidence: https://www.eeas.europa.eu/delegations/yemen_en
+  - platform: instagram
+    handle: euinyemen
+    url: https://www.instagram.com/euinyemen
+    handle_evidence: https://www.eeas.europa.eu/delegations/yemen_en
+  feeds: []
+  selection:
+    reason: The EU's resident diplomatic mission for Yemen and the channel for EU statements, humanitarian and stabilisation
+      funding and meetings with the PLC government and local authorities; the EU is one of the largest donors to
+      Yemen.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: medium
+      historical_importance: medium
+      note: The delegation's meetings with Yemeni officials (including a week-long visit to Taiz by the head of
+        delegation) and its funding calls are reported on its own pages and by Yemeni government media; no third-party
+        count was made.
+      urls:
+      - https://www.eeas.europa.eu/delegations/yemen_en
+    yemen_coverage:
+      frequency: weekly
+      evidence: All of its output concerns Yemen; the delegation page lists several 2026 items (a Europe Day event
+        in Aden attended by the Yemeni prime minister and foreign minister, the head of delegation's visit to Taiz,
+        and a call for proposals on women's economic empowerment). Posting frequency on X was not measured, so weekly
+        is an estimate.
+      urls:
+      - https://www.eeas.europa.eu/delegations/yemen_en
+    institutional_importance:
+      level: medium
+      note: The delegation is based in Amman, not in Yemen; it speaks for the EU and its member states' joint positions
+        and funding, alongside the EU Special Representative and EU naval operation Aspides in the Red Sea (both
+        outside this record).
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: eu
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is an official diplomatic mission of the European Union (European External Action
+      Service).
+    evidence_urls:
+    - https://www.eeas.europa.eu/delegations/yemen_en
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: Created from a fetch of the delegation page after the search budget ran out; no RSS or YouTube link was
+    shown on it, so no feed is listed (EEAS pages may expose feeds not seen here). Based in Amman, Jordan (country
+    JO).
+- id: russia-mission-un
+  name: Permanent Mission of the Russian Federation to the United Nations
+  name_native: Постоянное представительство Российской Федерации при ООН
+  category: DIPLOMATIC_MISSION
+  tier: B
+  url: https://russiaun.ru/en
+  country: RU
+  region: russia
+  languages:
+  - ru
+  - en
+  platform: website
+  source_type: diplomatic
+  accounts:
+  - platform: x
+    handle: RussiaUN
+    url: https://x.com/RussiaUN
+    handle_evidence: https://russiaun.ru/en
+  - platform: telegram
+    handle: russiaun
+    url: https://t.me/russiaun
+    handle_evidence: https://russiaun.ru/en
+  - platform: facebook
+    handle: RussiaUN
+    url: https://www.facebook.com/RussiaUN/
+    handle_evidence: https://russiaun.ru/en
+  - platform: youtube
+    handle: RUSUNPRESS
+    url: https://www.youtube.com/user/RUSUNPRESS/
+    handle_evidence: https://russiaun.ru/en
+  feeds:
+  - url: https://t.me/s/russiaun
+    type: telegram_public
+    verified: false
+    verified_at: null
+    yemen_filter: true
+    notes: candidate, public web preview of the mission Telegram channel linked from https://russiaun.ru/en; covers
+      every UN topic, so filter for Yemen. Check robots.txt before collecting. The YouTube account uses a /user/
+      URL, so no channel id is evidenced for a YouTube feed.
+  selection:
+    reason: Russia is a permanent Security Council member that opposes expanding Yemen sanctions on the Houthis
+      and speaks at the Council's Yemen meetings, giving the Russian position on the Houthis, the sanctions regime
+      and the Red Sea.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: medium
+      cited_by_other_media: low
+      historical_importance: medium
+      note: Security Council Report (June 2026) records Council divisions on Yemen, with China and Russia opposing
+        expanded sanctions on the Houthis while France, the UK and the US press for more pressure. No third-party
+        count of media citations of the mission's Yemen remarks was made.
+      urls:
+      - https://www.securitycouncilreport.org/monthly-forecast/2026-06/yemen-89.php
+    yemen_coverage:
+      frequency: occasional
+      evidence: The mission's home page fetched on 2026-10-04 showed statements on other Middle East files, peacekeeping
+        and artificial intelligence and no Yemen item; Yemen appears only when the Council meets on Yemen (monthly
+        in 2026, with emergency meetings on 10 July and 10 September 2026 per Security Council Report), and Russian
+        Yemen remarks in 2026 were not individually checked.
+      urls:
+      - https://www.securitycouncilreport.org/whatsinblue/yemen/page/1
+    institutional_importance:
+      level: medium
+      note: Russia holds a Council veto on Yemen mandates, sanctions and Red Sea texts; its mission is the main
+        public channel for the Russian position on Yemen in the absence of a Russian embassy voice evidenced in
+        this research.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: russia
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.99
+    classification_evidence: It is the Russian government's own mission to the UN.
+    evidence_urls:
+    - https://russiaun.ru/en
+    method: self_description
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: 'Borderline: Yemen is a small share of its output, kept for the Russian position in the Council. Made from
+    a fetch of the mission site after the search budget ran out. The Russian Ministry of Foreign Affairs and the
+    Russian embassy for Yemen were not checked (see excluded file).'
+- id: ukmto
+  name: UK Maritime Trade Operations (UKMTO)
+  category: OFFICIAL_GOVERNMENT
+  tier: B
+  url: https://ukmto.org/
+  country: GB
+  region: europe
+  languages:
+  - en
+  platform: website
+  source_type: government
+  accounts: []
+  feeds: []
+  selection:
+    reason: The UK maritime security information centre whose incident reports and warnings are the main public
+      source for Houthi attacks and suspicious approaches on shipping in the Red Sea, Bab al-Mandab and Gulf of
+      Aden; media routinely quote it for incidents off Yemen.
+    audience_evidence: []
+    influence_evidence:
+      regional_importance: high
+      cited_by_other_media: high
+      historical_importance: high
+      note: Wire and regional media quote UKMTO for ship incidents off Hodeidah and the Red Sea (reports in July
+        2026), and a UKMTO report of 31 August 2026 counted seven Red Sea attacks on shipping and six deaths since
+        the Houthi maritime blockade announced on 22 July 2026.
+      urls:
+      - https://english.ahram.org.eg/News/575588.aspx
+      - https://newsonair.gov.in/british-military-says-attack-on-cargo-ship-in-red-sea-off-coast-of-yemen/
+      - https://english.aawsat.com/arab-world/4760176-ukmto-receives-report-ship-incident-near-yemens-hodeidah-port
+    yemen_coverage:
+      frequency: weekly
+      evidence: Incident notices for the Red Sea and Gulf of Aden recur through 2026, with a surge after the 22
+        July 2026 Houthi blockade announcement; the frequency is an estimate from press reports, and its incident
+        list was not counted directly.
+      urls:
+      - https://english.ahram.org.eg/News/575588.aspx
+    institutional_importance:
+      level: medium
+      note: A UK government-linked maritime reporting centre (listed on the noonsite directory as a Royal Navy unit
+        in Dubai) that shipping companies and naval forces rely on; it reports incidents rather than setting policy.
+  alignment:
+    yemen_political_alignment: not_applicable
+    sub_alignment: ''
+    regional_alignment: uk
+    domestic_political_orientation: state_aligned
+    classification_confidence: 0.9
+    classification_evidence: UKMTO is a UK Royal Navy-operated centre per the noonsite directory listing; its own
+      homepage fetched on 2026-10-04 did not state its parent body.
+    evidence_urls:
+    - https://www.noonsite.com/business/ukmto-uk-maritime-trade-organization-rn-dubai/
+    - https://ukmto.org/
+    method: manual_research
+    assessment_date: 2026-10-04
+    review_status: draft
+  scores:
+    reliability_score: null
+  access_policy: metadata_only
+  active: false
+  notes: The homepage shows an email alert subscription, no RSS feed and no social links, so no feed or account
+    is listed (it also posts on X, but the handle was not evidenced). Revisit the incident-list pages for a machine-readable
+    feed. Covers the Gulf, Hormuz and Indian Ocean as well, so Yemen items need filtering by region.
