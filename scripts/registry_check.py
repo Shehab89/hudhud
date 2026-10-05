@@ -7,11 +7,15 @@
    publishes: feed links its homepage declares (<link rel="alternate">), the public preview
    of its listed Telegram channels, and the channel feed of its listed YouTube channels.
    Every candidate is fetched and parsed the same way; nothing is guessed from URL patterns.
+4. Candidates: Wikidata queries for public figures who currently hold a Yemeni public
+   office or are Yemeni public figures with a listed X, Telegram or YouTube account, and for
+   diplomatic missions in or of Yemen. These are suggestions for review only: nothing is
+   added to the registry automatically, and every figure keeps its Wikidata citation.
 3. Wikidata: for each source, find its Wikidata item (the record's `wikidata` id, or a
    name search accepted only when the item's official website or a social handle matches
    the record) and read its social handles and dated follower counts (P8687).
 
-Writes feeds_check.json, discovered.json, wikidata.json and registry_check.md into the directory given as
+Writes feeds_check.json, discovered.json, wikidata.json, candidates.json and registry_check.md into the directory given as
 the first argument. It changes nothing in the registry: results are folded in by hand,
 with the Wikidata item cited as the source of any figure taken from it.
 """
@@ -36,6 +40,8 @@ from hudhud.ingest.relevance import RELEVANCE_THRESHOLD, yemen_relevance
 
 ROOT = Path(__file__).resolve().parents[1]
 WD_API = "https://www.wikidata.org/w/api.php"
+WD_SPARQL = "https://query.wikidata.org/sparql"
+YEMEN = "Q805"
 # Wikidata properties
 P_WEBSITE, P_X, P_YT, P_TG, P_FB, P_IG = "P856", "P2002", "P2397", "P3789", "P2013", "P2003"
 P_FOLLOWERS, P_TIME, P_X_ID = "P8687", "P585", "P6552"
@@ -317,6 +323,99 @@ def enrich(records: list[dict]) -> dict:
     return out
 
 
+# ---------------------------------------------------------------- candidates
+
+CANDIDATE_QUERIES = {
+    # People holding a public office whose jurisdiction or country is Yemen, with no end date.
+    "office_holders": """
+SELECT DISTINCT ?item ?role WHERE {
+  ?item p:P39 ?st . ?st ps:P39 ?pos .
+  FILTER NOT EXISTS { ?st pq:P582 [] }
+  { ?pos wdt:P1001 wd:%(yemen)s } UNION { ?pos wdt:P17 wd:%(yemen)s }
+  FILTER EXISTS { ?item wdt:P2002|wdt:P3789|wdt:P2397 [] }
+  ?pos rdfs:label ?role . FILTER(LANG(?role) = "en")
+}""",
+    # Living Yemeni citizens with an X, Telegram or YouTube account (politicians, journalists,
+    # analysts); occupation is shown so private individuals can be ruled out on review.
+    "yemeni_public_figures": """
+SELECT DISTINCT ?item ?role WHERE {
+  ?item wdt:P27 wd:%(yemen)s ; wdt:P31 wd:Q5 .
+  FILTER EXISTS { ?item wdt:P2002|wdt:P3789|wdt:P2397 [] }
+  FILTER NOT EXISTS { ?item wdt:P570 [] }
+  OPTIONAL { ?item wdt:P106 ?occ . ?occ rdfs:label ?role . FILTER(LANG(?role) = "en") }
+}""",
+    # Embassies and missions located in Yemen, or operated by Yemen.
+    "diplomatic_missions": """
+SELECT DISTINCT ?item ?role WHERE {
+  ?item wdt:P31 ?type . ?type rdfs:label "embassy"@en .
+  { ?item wdt:P17 wd:%(yemen)s } UNION { ?item wdt:P137 wd:%(yemen)s }
+  BIND("embassy" AS ?role)
+}""",
+}
+
+
+def sparql(client: httpx.Client, query: str) -> list[dict]:
+    for attempt in range(3):
+        r = client.get(WD_SPARQL, params={"query": query, "format": "json"})
+        if r.status_code == 429 or r.status_code >= 500:
+            time.sleep(5 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        return r.json()["results"]["bindings"]
+    r.raise_for_status()
+    return []
+
+
+def candidates(records: list[dict]) -> dict:
+    """Suggestions for review: public figures and missions not yet in the registry."""
+    wd = Wikidata()
+    have = {rec.get("wikidata") for rec in records if rec.get("wikidata")}
+    have_handles = {
+        (a.get("platform"), str(a.get("handle", "")).lower().lstrip("@"))
+        for rec in records
+        for a in rec.get("accounts") or []
+    }
+    roles: dict[str, dict[str, set]] = {}
+    out: dict = {"queries": {}, "candidates": []}
+    for name, q in CANDIDATE_QUERIES.items():
+        try:
+            rows = sparql(wd.client, q % {"yemen": YEMEN})
+        except httpx.HTTPError as exc:
+            out["queries"][name] = f"error: {str(exc)[:200]}"
+            continue
+        out["queries"][name] = len(rows)
+        for row in rows:
+            qid = row["item"]["value"].rsplit("/", 1)[-1]
+            entry = roles.setdefault(qid, {"found_by": set(), "roles": set()})
+            entry["found_by"].add(name)
+            if row.get("role"):
+                entry["roles"].add(row["role"]["value"])
+    ids = [q for q in roles if q not in have]
+    for qid, ent in wd.entities(ids).items():
+        info = summarise(ent)
+        handles = info["handles"]
+        if any((p, h.lower().lstrip("@")) in have_handles for p, hs in handles.items() for h in hs):
+            continue
+        best = max((f["value"] for f in info["followers"].values()), default=0)
+        out["candidates"].append(
+            {
+                "qid": qid,
+                "wikidata": f"https://www.wikidata.org/wiki/{qid}",
+                "label_en": info["label_en"],
+                "label_ar": ent.get("labels", {}).get("ar", {}).get("value"),
+                "found_by": sorted(roles[qid]["found_by"]),
+                "roles": sorted(roles[qid]["roles"]),
+                "websites": info["websites"],
+                "handles": handles,
+                "followers": info["followers"],
+                "max_followers": best,
+                "enwiki": info["enwiki"],
+            }
+        )
+    out["candidates"].sort(key=lambda c: -c["max_followers"])
+    return out
+
+
 # ---------------------------------------------------------------- report
 
 
@@ -334,6 +433,11 @@ def main() -> None:
         fetcher.close()
     wiki = enrich(records)
     (out / "wikidata.json").write_text(json.dumps(wiki, ensure_ascii=False, indent=1))
+    try:
+        cands = candidates(records)
+    except Exception as exc:  # suggestions are optional; never fail the check for them
+        cands = {"error": str(exc)[:300], "candidates": []}
+    (out / "candidates.json").write_text(json.dumps(cands, ensure_ascii=False, indent=1))
 
     ok = [f for f in feeds if f.get("ok")]
     new = [f for f in found if f.get("ok") and f.get("items")]
@@ -341,7 +445,8 @@ def main() -> None:
         "# Registry check\n",
         f"Sources: {len(records)}. Feeds checked: {len(feeds)}, parsed: {len(ok)}.",
         f"Feeds discovered and parsed for sources without a working feed: {len(new)}.",
-        f"Wikidata items matched: {len([k for k in wiki if not k.startswith('_')])}.\n",
+        f"Wikidata items matched: {len([k for k in wiki if not k.startswith('_')])}.",
+        f"Wikidata candidates for review: {len(cands['candidates'])} {cands.get('queries', cands.get('error'))}.\n",
         "## Listed feeds\n",
         "| Source | Type | Feed | Result | Items | Yemen-relevant | Newest |",
         "|---|---|---|---|---|---|---|",
